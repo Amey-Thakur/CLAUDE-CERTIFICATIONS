@@ -19,6 +19,27 @@ n=$(grep -n -m1 '</div>' site-src/certificates/README.md | cut -d: -f1)
 { cat .github/pages/certificates-header.md; tail -n +$((n + 1)) site-src/certificates/README.md; } > site-src/certificates/README.md.tmp
 mv site-src/certificates/README.md.tmp site-src/certificates/README.md
 
+# GitHub-friendly <details> blocks become Material's native collapsible
+# callouts on the site, so the markdown inside them renders properly.
+PYBIN=""
+for candidate in python3 python py; do
+  if "$candidate" -c "import sys" >/dev/null 2>&1; then PYBIN="$candidate"; break; fi
+done
+"$PYBIN" - <<'PY'
+import re
+from pathlib import Path
+pattern = re.compile(r'<details><summary>(.*?)</summary>\n\n(.*?)\n\n</details>', re.S)
+def repl(m):
+    title, body = m.group(1), m.group(2)
+    indented = '\n'.join('    ' + line if line.strip() else '' for line in body.split('\n'))
+    return f'??? success "{title}"\n\n{indented}'
+for md in Path('site-src').rglob('*.md'):
+    t = md.read_text(encoding='utf-8')
+    new = pattern.sub(repl, t)
+    if new != t:
+        md.write_text(new, encoding='utf-8')
+PY
+
 # Search engines get a per-page meta description, injected here so the
 # repository markdown stays clean, and a robots.txt pointing at the sitemap.
 PYBIN=""
