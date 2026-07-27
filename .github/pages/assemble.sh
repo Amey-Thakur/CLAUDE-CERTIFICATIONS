@@ -43,6 +43,26 @@ for md in Path('site-src').rglob('*.md'):
         md.write_text(new, encoding='utf-8')
 PY
 
+# GitHub alert blockquotes become Material admonitions, so the same markup
+# renders as a themed callout in both places.
+"$PYBIN" - <<'PY'
+import re
+from pathlib import Path
+KINDS = {"NOTE": "note", "TIP": "tip", "IMPORTANT": "info",
+         "WARNING": "warning", "CAUTION": "danger"}
+pattern = re.compile(r'^> \[!(NOTE|TIP|IMPORTANT|WARNING|CAUTION)\]\n((?:^>.*\n?)*)', re.M)
+def repl(m):
+    kind = KINDS[m.group(1)]
+    body = [re.sub(r'^> ?', '', line) for line in m.group(2).rstrip('\n').split('\n')]
+    indented = '\n'.join('    ' + line if line.strip() else '' for line in body)
+    return f'!!! {kind}\n\n{indented}\n'
+for md in Path('site-src').rglob('*.md'):
+    t = md.read_text(encoding='utf-8')
+    new = pattern.sub(repl, t)
+    if new != t:
+        md.write_text(new, encoding='utf-8')
+PY
+
 # GitHub-friendly <details> blocks become Material's native collapsible
 # callouts on the site, so the markdown inside them renders properly.
 PYBIN=""

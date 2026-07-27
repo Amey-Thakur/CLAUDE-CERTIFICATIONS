@@ -17,8 +17,8 @@ collected and organized so you can spend your time studying, not searching.
 
 Built and maintained by [Amey Thakur](https://github.com/Amey-Thakur) after completing the program's curriculum. This is a community resource, not an official Anthropic repository: the official program lives on [Anthropic Partner Academy](https://anthropic-partners.skilljar.com/), and exams are delivered by [Pearson VUE](https://www.pearsonvue.com/us/en/anthropic.html).
 
-> I worked through every course and collected all of this while preparing myself. None of it required anything you do not already have: the official material is free, the blueprints tell you exactly what is tested, and the rest is steady work. I put it in one place so your time goes into learning rather than looking. If it helps you get certified, it did its job.
->
+> [!NOTE]
+> I worked through every course and collected all of this while preparing myself. None of it required anything you do not already have: the official material is free, the blueprints tell you exactly what is tested, and the rest is steady work. I put it in one place so your time goes into learning rather than looking. If it helps you get certified, it did its job.<br>
 > — Amey
 
 ## The certifications
@@ -60,7 +60,10 @@ flowchart TD
 
 ## Questions and community
 
-Ask questions, share how your exam went, and compare preparation notes in [Discussions](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/discussions). One firm rule from the exam NDA: never post real exam questions or answers. Found a broken link or an outdated fact? [Open an issue](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/issues/new/choose).
+Ask questions, share how your exam went, and compare preparation notes in [Discussions](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/discussions). Found a broken link or an outdated fact? [Open an issue](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/issues/new/choose).
+
+> [!IMPORTANT]
+> Every candidate accepts a non-disclosure agreement covering exam questions, answer options, and scenarios, and it extends explicitly to online forums. Never post or request real exam content here. Blueprints, official sample questions, and the practice material in this repository are all fair game.
 
 Contributions that keep facts current are welcome; see [CONTRIBUTING.md](.github/CONTRIBUTING.md).
 

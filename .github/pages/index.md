@@ -8,8 +8,8 @@
 
 This site is the readable version of the [CLAUDE-CERTIFICATIONS repository](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS), built and maintained by [Amey Thakur](https://github.com/Amey-Thakur) after completing the program's curriculum. It is a community resource, not an official Anthropic site: the official program lives on [Anthropic Partner Academy](https://anthropic-partners.skilljar.com/), and exams are delivered by [Pearson VUE](https://www.pearsonvue.com/us/en/anthropic.html).
 
-> I worked through every course and collected all of this while preparing myself. None of it required anything you do not already have: the official material is free, the blueprints tell you exactly what is tested, and the rest is steady work. I put it in one place so your time goes into learning rather than looking. If it helps you get certified, it did its job.
->
+> [!NOTE]
+> I worked through every course and collected all of this while preparing myself. None of it required anything you do not already have: the official material is free, the blueprints tell you exactly what is tested, and the rest is steady work. I put it in one place so your time goes into learning rather than looking. If it helps you get certified, it did its job.<br>
 > — Amey
 
 <p>
@@ -61,7 +61,10 @@ All twenty-one Anthropic Academy course completion certificates behind this prog
 
 ## Questions and community
 
-Ask questions and compare preparation notes in [GitHub Discussions](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/discussions). One firm rule from the exam NDA: never post real exam questions or answers. Found a broken link or an outdated fact? [Open an issue](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/issues/new/choose).
+Ask questions and compare preparation notes in [GitHub Discussions](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/discussions). Found a broken link or an outdated fact? [Open an issue](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/issues/new/choose).
+
+> [!IMPORTANT]
+> Every candidate accepts a non-disclosure agreement covering exam questions, answer options, and scenarios, and it extends explicitly to online forums. Never post or request real exam content there. Blueprints, official sample questions, and the practice material in this repository are all fair game.
 
 ---
 
