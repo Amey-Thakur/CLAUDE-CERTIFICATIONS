@@ -45,7 +45,7 @@ end to end| RF[Architect - Foundations]
 ```
 
 1. **Pick your exam.** Advising customers: [Associate](associate-foundations/README.md). Building with the API, Claude Code, or MCP: [Developer](developer-foundations/README.md). Designing solutions end to end: [Architect Foundations](architect-foundations/README.md), then [Architect Professional](architect-professional/README.md). Unsure: [how the certifications connect](guide/learning-paths.md).
-2. **Study.** Read your exam's study guide and notes, then the [study strategy](guide/study-strategy.md) for a working plan, the [courses](guide/learning-paths.md) and [official resources](guide/resources.md) that teach the material, and [practice with Claude](guide/practice.md) to test yourself against the blueprint.
+2. **Study.** Read your exam's study guide and notes, then the [study strategy](guide/study-strategy.md) for a working plan, the [courses](guide/learning-paths.md) and [official resources](guide/resources.md) that teach the material, and [practice with Claude](guide/practice.md) to test yourself against the blueprint. Clone the repository and open Claude Code inside it, and the built-in [exam coach skill](.claude/skills/exam-coach/SKILL.md) quizzes you directly from the blueprints.
 3. **Book and sit.** The [registration guide](guide/registration.md) covers everything from partner email issues to the proctoring network allowlist. Policies on retakes, validity, and appeals are in [policies](guide/policies.md), and quick answers in the [FAQ](guide/faq.md).
 
 ## What is where

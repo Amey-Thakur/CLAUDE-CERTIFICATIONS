@@ -2,6 +2,8 @@
 
 There is no official practice exam, and the [exam NDA](policies.md#confidentiality) forbids sharing real questions. What remains, and works well, is generating your own practice from the published blueprints using Claude itself. The questions Claude produces are practice aids in the official style, not leaked items, which keeps this method both effective and clean.
 
+The fastest route: this repository ships the coach as a built-in [Claude skill](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/blob/main/.claude/skills/exam-coach/SKILL.md). Clone the repository, open Claude Code inside it, and say "quiz me for the Developer exam". The skill reads the blueprints and exam guides in place and runs the whole coaching loop, including domain-weighted quizzes, drills, and a timed-style mock exam with a score-report-style breakdown. The prompts below do the same anywhere else Claude runs.
+
 Setup that makes every prompt below better: create a Claude Project, upload the [exam guide PDF](../guide/official-sources.md) for your certification as knowledge, and set the Project instructions to "You are an exam coach for the {certification name} exam. Ground everything in the attached exam guide. Never invent facts about the exam itself."
 
 ## Blueprint quiz generator
