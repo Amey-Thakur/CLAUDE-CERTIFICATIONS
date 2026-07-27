@@ -35,6 +35,9 @@ Each certification has its own folder containing the study guide, the official e
 
 Every exam: 120 minutes, closed book, proctored by Pearson VUE online or at a test center, passing score 720 of 1,000, credential valid 12 months with free renewal, badge via Credly. Fees are list prices in USD; partner tiers receive automatic discounts. Registration requires a Claude Partner Network company email.
 
+> [!TIP]
+> Every one of the 21 courses is free on the public [Anthropic Academy](https://anthropic.skilljar.com/), no partner account needed. Only the proctored exams require Claude Partner Network membership, so you can learn the whole syllabus before deciding whether to certify.
+
 ## Start here
 
 ```mermaid

@@ -13,6 +13,9 @@ Your certification belongs to you, not your employer. It stays with you if you c
 - Reschedule or cancel free of charge until 24 hours before the appointment; cancellation in that window is fully refunded.
 - Inside 24 hours, or on a no-show, the fee is forfeited.
 
+> [!WARNING]
+> Reschedule or cancel at least 24 hours before your appointment. Inside that window, and on a no-show, the full fee is forfeited.
+
 ## Retakes
 
 ```mermaid

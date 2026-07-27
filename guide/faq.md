@@ -62,6 +62,9 @@ Delivery moved to Pearson VUE and badging to Credly on June 30, 2026. If you reg
 
 ## Preparation
 
+> [!NOTE]
+> There is no official practice exam. The previous platform's was retired in the Pearson migration, so the sample questions inside each exam guide are the only official items, alongside this repository's [practice engine](quiz.md).
+
 **Is there a practice exam?** No. The previous platform's practice exam was retired in the Pearson migration. Each exam guide contains official sample questions with rationales, and this repository's [study strategy](study-strategy.md) covers how to use them.
 
 **How should I prepare?** Start with the exam guide for your certification; it lists the domains and task statements and is the authoritative scope. Then use the [prep courses](learning-paths.md#certification-prep-courses), which vary in coverage by certification.

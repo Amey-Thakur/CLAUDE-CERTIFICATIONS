@@ -21,6 +21,9 @@ Certification is currently available only to people at Claude Partner Network or
 
 If you see "You aren't signed in with a partner company employee email", check that you used your company address. If the error persists, email [partner-support@anthropic.com](mailto:partner-support@anthropic.com). Domain changes take 7 to 10 days, so resolve this well before you plan to sit the exam. The same applies if your company uses several domains: certify under the recognized one, or ask for the others to be rolled up to your parent domain, otherwise the certification will not credit to your partner account.
 
+> [!WARNING]
+> Partner domain record changes take 7 to 10 days. If your company email is not recognised, or a partner discount does not appear at checkout, resolve it well before you plan to sit the exam rather than on the day.
+
 ## Registering
 
 1. Open the page for your certification from the [certifications overview](https://anthropic-partners.skilljar.com/page/partner-certifications).

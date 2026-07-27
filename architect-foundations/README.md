@@ -69,6 +69,9 @@ Task statements per domain, condensed from section 6 of the guide:
 
 ## The six exam scenarios
 
+> [!TIP]
+> This is the largest preparation advantage available on any of the four exams: the scenarios are published in advance, and four of these six frame every question you will see. Rehearse each one until its likely questions are predictable.
+
 Four of these six published scenarios appear on each exam sitting, selected at random. Knowing them in advance is an unusual and significant preparation advantage.
 
 | # | Scenario | Primary domains |

@@ -10,6 +10,9 @@ The fastest route: this repository ships the coach as a built-in [Claude skill](
 
 Setup that makes every prompt below better: create a Claude Project, upload the [exam guide PDF](../guide/official-sources.md) for your certification as knowledge, and set the Project instructions to "You are an exam coach for the {certification name} exam. Ground everything in the attached exam guide. Never invent facts about the exam itself."
 
+> [!IMPORTANT]
+> Generated questions are study aids, never real exam items. The item bank is confidential and rotates, so treating any question set as "the real ones" is both a policy violation and a poor strategy.
+
 ## Blueprint quiz generator
 
 Paste a domain's objectives from your certification's study page, then:

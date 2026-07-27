@@ -11,6 +11,9 @@ Everything on this page is recommendation, written from having worked through th
 5. **Use the sample questions as calibration, not practice.** There is no practice exam. Each guide has three or more official samples with rationales. The rationales matter more than the questions: they show what the exam considers a wrong answer and why. To drill beyond the samples without touching the NDA, generate your own questions from the blueprint using [Practice with Claude](practice.md).
 6. **Book the exam once your checklist is mostly green.** An open purchase has no scheduling deadline, and rescheduling is free until 24 hours out, so booking early costs nothing and sets a deadline.
 
+> [!IMPORTANT]
+> The exam guide for your certification is the authoritative scope. Every guide states it plainly: if a topic is not in the blueprint, it is not on the exam. Study the blueprint before any course.
+
 ## Per-certification emphasis
 
 **[Associate – Foundations](../associate-foundations/README.md).** The heaviest domain is evaluating outputs (21%), not writing prompts (14%). Practice reviewing Claude's answers for fabricated details, verifying claims against sources, and deciding what needs human review. Build at least one Project with instructions and knowledge sources. The governance domain rewards knowing when not to upload sensitive data and how to anonymize.
