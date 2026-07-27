@@ -26,8 +26,8 @@ Everything on this page is recommendation, written from having worked through th
 For one Foundations exam alongside a full-time job. Compress or stretch to fit; this is structure, not prescription.
 
 ```mermaid
+%%{init: {"theme": "base", "themeVariables": {"cScale0": "#c15f3c", "cScaleLabel0": "#ffffff", "cScale1": "#7d8c5c", "cScaleLabel1": "#ffffff", "cScale2": "#4f7d8c", "cScaleLabel2": "#ffffff"}}}%%
 timeline
-    title Three weeks to a Foundations exam
     Week 1, scope : Read the exam guide : Build the blueprint checklist : Work the prep courses
     Week 2, depth : Close the red and yellow items : Build the real thing the guide asks for
     Week 3, close : Reread the guide : Official sample questions : System test on the exam machine : Sit the exam

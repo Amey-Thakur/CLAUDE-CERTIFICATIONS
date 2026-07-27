@@ -58,24 +58,29 @@ nav:
       - Study guide: associate-foundations/README.md
       - Study notes: associate-foundations/notes.md
       - Practice questions: associate-foundations/practice-questions.md
+      - Mock exam: associate-foundations/mock-exam.md
   - Developer - Foundations:
       - Study guide: developer-foundations/README.md
       - Study notes: developer-foundations/notes.md
       - Practice questions: developer-foundations/practice-questions.md
+      - Mock exam: developer-foundations/mock-exam.md
   - Architect - Foundations:
       - Study guide: architect-foundations/README.md
       - Study notes: architect-foundations/notes.md
       - Practice questions: architect-foundations/practice-questions.md
+      - Mock exam: architect-foundations/mock-exam.md
   - Architect - Professional:
       - Study guide: architect-professional/README.md
       - Study notes: architect-professional/notes.md
       - Practice questions: architect-professional/practice-questions.md
+      - Mock exam: architect-professional/mock-exam.md
   - Program guide:
       - Overview: guide/README.md
       - Learning paths and courses: guide/learning-paths.md
       - Anthropic courses: guide/courses.md
       - Study strategy: guide/study-strategy.md
       - Official resources: guide/resources.md
+      - Practice engine: guide/quiz.md
       - Practice with Claude: guide/practice.md
       - Registration and scheduling: guide/registration.md
       - Certification policies: guide/policies.md

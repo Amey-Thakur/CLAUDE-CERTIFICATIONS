@@ -20,12 +20,12 @@ This site is the readable version of the [CLAUDE-CERTIFICATIONS repository](http
 
 ## The certifications
 
-| Certification | Questions | Fee | Study guide | Notes | Exam guide | Practice |
-| --- | --- | --- | --- | --- | --- | --- |
-| Associate – Foundations | 60 | $99 | [Guide](associate-foundations/README.md) | [Notes](associate-foundations/notes.md) | [PDF](associate-foundations/exam-guide.pdf) | [Questions](associate-foundations/practice-questions.md) |
-| Developer – Foundations | 53 | $125 | [Guide](developer-foundations/README.md) | [Notes](developer-foundations/notes.md) | [PDF](developer-foundations/exam-guide.pdf) | [Questions](developer-foundations/practice-questions.md) |
-| Architect – Foundations | 60 | $125 | [Guide](architect-foundations/README.md) | [Notes](architect-foundations/notes.md) | [PDF](architect-foundations/exam-guide.pdf) | [Questions](architect-foundations/practice-questions.md) |
-| Architect – Professional | 63 | $175 | [Guide](architect-professional/README.md) | [Notes](architect-professional/notes.md) | [PDF](architect-professional/exam-guide.pdf) | [Questions](architect-professional/practice-questions.md) |
+| Certification | Questions | Fee | Study guide | Notes | Exam guide | Practice | Mock |
+| --- | --- | --- | --- | --- | --- | --- | --- |
+| Associate – Foundations | 60 | $99 | [Guide](associate-foundations/README.md) | [Notes](associate-foundations/notes.md) | [PDF](associate-foundations/exam-guide.pdf) | [Questions](associate-foundations/practice-questions.md) | [Mock](associate-foundations/mock-exam.md) |
+| Developer – Foundations | 53 | $125 | [Guide](developer-foundations/README.md) | [Notes](developer-foundations/notes.md) | [PDF](developer-foundations/exam-guide.pdf) | [Questions](developer-foundations/practice-questions.md) | [Mock](developer-foundations/mock-exam.md) |
+| Architect – Foundations | 60 | $125 | [Guide](architect-foundations/README.md) | [Notes](architect-foundations/notes.md) | [PDF](architect-foundations/exam-guide.pdf) | [Questions](architect-foundations/practice-questions.md) | [Mock](architect-foundations/mock-exam.md) |
+| Architect – Professional | 63 | $175 | [Guide](architect-professional/README.md) | [Notes](architect-professional/notes.md) | [PDF](architect-professional/exam-guide.pdf) | [Questions](architect-professional/practice-questions.md) | [Mock](architect-professional/mock-exam.md) |
 
 Every exam: 120 minutes, closed book, proctored by Pearson VUE online or at a test center, passing score 720 of 1,000, credential valid 12 months with free renewal, badge via Credly. Fees are list prices in USD; partner tiers receive automatic discounts. Registration requires a Claude Partner Network company email.
 
@@ -41,7 +41,7 @@ flowchart TD
 ```
 
 1. **Pick your exam** with the table above, or read [how the certifications connect](guide/learning-paths.md).
-2. **Study** with your exam's study guide and notes, the [study strategy](guide/study-strategy.md), the [21 official courses](guide/courses.md) and [official resources](guide/resources.md) that teach the material, and [practice with Claude](guide/practice.md) to test yourself against the blueprint.
+2. **Study** with your exam's study guide and notes, the [study strategy](guide/study-strategy.md), the [21 official courses](guide/courses.md) and [official resources](guide/resources.md) that teach the material, and the [practice engine](guide/quiz.md) to test yourself: a shuffled, timed, scored exam drawn from 100 original questions.
 3. **Book and sit** with the [registration guide](guide/registration.md); [policies](guide/policies.md) and the [FAQ](guide/faq.md) cover the rest.
 
 ## The maintainer's certificates

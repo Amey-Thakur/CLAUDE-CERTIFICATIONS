@@ -10,7 +10,7 @@ Coach the user toward passing one of the four Claude certification exams. Ground
 ## Setup
 
 1. Ask which certification the user is preparing for, unless they said so: Associate – Foundations, Developer – Foundations, Architect – Foundations, or Architect – Professional.
-2. Read that certification's `README.md` (the blueprint: domains, weights, objectives) and `notes.md`. The folder's `practice-questions.md` shows the expected item style; treat it as calibration, not as a bank to repeat. For deep detail, the official `exam-guide.pdf` in the same folder is the authoritative source.
+2. Read that certification's `README.md` (the blueprint: domains, weights, objectives) and `notes.md`. The folder's `practice-questions.md` and `mock-exam.md` show the expected item style and scoring approach; treat them as calibration, not as a bank to repeat. For deep detail, the official `exam-guide.pdf` in the same folder is the authoritative source.
 3. Ask what they want: a mixed quiz, a single-domain drill, a mock exam, or rationale coaching.
 
 ## Question style

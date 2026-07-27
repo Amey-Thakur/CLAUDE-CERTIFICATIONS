@@ -21,6 +21,7 @@ flowchart LR
 | [Anthropic courses](courses.md) | All 21 official courses: what each teaches, where to enroll, and which exam it serves |
 | [Study strategy](study-strategy.md) | You have chosen an exam and want a plan |
 | [Official resources](resources.md) | Anthropic's documentation, courses, engineering articles, videos, and code, mapped to each exam |
+| [Practice engine](quiz.md) | A shuffled, timed, scored exam drawn from the 100-question bank, in the browser or a terminal |
 | [Practice with Claude](practice.md) | Generating blueprint-based practice questions with Claude, within the exam NDA |
 | [Registration and scheduling](registration.md) | Booking the exam, fixing partner email issues, preparing your machine |
 | [Certification policies](policies.md) | Retakes, validity, renewal, appeals, proctoring rules |

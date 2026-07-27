@@ -24,5 +24,10 @@
   "architect-foundations/practice-questions.md": "Ten original scenario-based practice questions for the Claude Certified Architect Foundations exam, with answers and rationales.",
   "architect-professional/practice-questions.md": "Ten original practice questions for the Claude Certified Architect Professional exam, with answers and rationales.",
   "guide/glossary.md": "Glossary of Claude certification terms: blueprint, scaled score, cut score, MQC, OnVUE, Credly, renewal, and more.",
-  "guide/courses.md": "All 21 official Anthropic Claude courses: what each teaches, free enrollment links, exam relevance, and verified completion certificates."
+  "guide/courses.md": "All 21 official Anthropic Claude courses: what each teaches, free enrollment links, exam relevance, and verified completion certificates.",
+  "associate-foundations/mock-exam.md": "Timed 15-question mock exam for the Claude Certified Associate Foundations exam, with answer key, domain breakdown, and score interpretation.",
+  "developer-foundations/mock-exam.md": "Timed 15-question mock exam for the Claude Certified Developer Foundations exam, with answer key, domain breakdown, and score interpretation.",
+  "architect-foundations/mock-exam.md": "Timed 15-question mock exam for the Claude Certified Architect Foundations exam, with answer key, domain breakdown, and score interpretation.",
+  "architect-professional/mock-exam.md": "Timed 15-question mock exam for the Claude Certified Architect Professional exam, with answer key, domain breakdown, and score interpretation.",
+  "guide/quiz.md": "Free shuffled, timed practice exam for the Claude certifications, drawn from 100 original questions with per-domain scoring."
 }

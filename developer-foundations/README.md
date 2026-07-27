@@ -2,7 +2,7 @@
 
 The Claude Certified Developer – Foundations certification validates that an individual can build, integrate, and ship production-grade applications, agents, and workflows on the Claude platform. It covers the Claude API and client SDKs, the Claude Agent SDK, Claude Code, prompt and context engineering, evaluation and debugging, model selection and cost management, security, and tool and MCP development.
 
-This page condenses the official exam guide and program pages. The [exam guide](exam-guide.pdf) (version 1.0, effective July 2026) is the authoritative reference, and the maintainer's study notes for this exam are in [notes.md](notes.md), with original practice questions in [practice-questions.md](practice-questions.md).
+This page condenses the official exam guide and program pages. The [exam guide](exam-guide.pdf) (version 1.0, effective July 2026) is the authoritative reference, and the maintainer's study notes for this exam are in [notes.md](notes.md), with original practice questions in [practice-questions.md](practice-questions.md) and a timed [mock exam](mock-exam.md).
 
 ## Exam facts
 
