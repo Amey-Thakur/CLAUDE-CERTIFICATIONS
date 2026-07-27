@@ -19,6 +19,7 @@ jobs:
         uses: DavidAnson/markdownlint-cli2-action@v24
         with:
           globs: "**/*.md"
+          config: .github/.markdownlint.jsonc
       - name: Spell check
         uses: codespell-project/actions-codespell@v2
         with:

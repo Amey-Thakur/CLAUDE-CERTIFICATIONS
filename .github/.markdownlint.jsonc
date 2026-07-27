@@ -1,6 +1,16 @@
 {
-  // GitHub templates render inside the app UI, so a top-level heading
-  // would duplicate the page title.
-  "extends": "../.markdownlint.jsonc",
-  "MD041": false
+  // Shared config for markdownlint-cli2. CI passes this path explicitly;
+  // run locally with: npx markdownlint-cli2 --config .github/.markdownlint.jsonc "**/*.md"
+  "default": true,
+  // Long lines are fine; prose is not wrapped.
+  "MD013": false,
+  // Inline HTML is used for centered headers and certificate galleries.
+  "MD033": false,
+  // Pages may open with a centered HTML header, and GitHub templates
+  // render inside the app UI where a top-level heading would duplicate the title.
+  "MD041": false,
+  // Bold lead-ins are used deliberately for domain lists.
+  "MD036": false,
+  // Duplicate headings are allowed when not siblings (changelog sections).
+  "MD024": { "siblings_only": true }
 }

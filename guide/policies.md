@@ -53,7 +53,7 @@ flowchart LR
 
 ## Confidentiality
 
-Exam content is confidential. Taking an exam commits you not to share, reproduce, or discuss its questions in any form, including in study groups and online forums. This obligation is part of the terms accepted at registration, and it is why this repository's [discussion rules](../CONTRIBUTING.md#discussions) prohibit posting real exam questions.
+Exam content is confidential. Taking an exam commits you not to share, reproduce, or discuss its questions in any form, including in study groups and online forums. This obligation is part of the terms accepted at registration, and it is why this repository's [discussion rules](../.github/CONTRIBUTING.md#discussions) prohibit posting real exam questions.
 
 ## Appeals
 

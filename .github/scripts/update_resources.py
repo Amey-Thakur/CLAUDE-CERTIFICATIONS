@@ -6,8 +6,8 @@ and replaces the local copy only when the content actually changed.
 Standard library only.
 
 Usage:
-    python scripts/update_resources.py          # download and update
-    python scripts/update_resources.py --check  # report reachability only
+    python .github/scripts/update_resources.py          # download and update
+    python .github/scripts/update_resources.py --check  # report reachability only
 """
 
 import hashlib
@@ -15,7 +15,7 @@ import sys
 import urllib.request
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+REPO_ROOT = Path(__file__).resolve().parent.parent.parent
 
 S3 = (
     "https://everpath-course-content.s3-accelerate.amazonaws.com/"

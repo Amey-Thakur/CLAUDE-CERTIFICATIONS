@@ -1,8 +1,8 @@
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="../assets/logos/anthropic-wordmark-dark.svg">
-  <img src="../assets/logos/anthropic-wordmark.svg" alt="Anthropic" width="180">
+  <source media="(prefers-color-scheme: dark)" srcset="../.github/assets/logos/anthropic-wordmark-dark.svg">
+  <img src="../.github/assets/logos/anthropic-wordmark.svg" alt="Anthropic" width="180">
 </picture>
 
 # Course completion certificates

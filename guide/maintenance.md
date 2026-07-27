@@ -23,7 +23,7 @@ Every documentation page carries a "facts last verified" date in its footer. Upd
 **Monthly, manual.** Run the resource updater and review what changed:
 
 ```bash
-python scripts/update_resources.py
+python .github/scripts/update_resources.py
 ```
 
 The script re-downloads every mirrored official PDF, verifies each file is a valid PDF, and reports which files changed by hash. If an exam guide changed, diff the exam facts (version, item counts, domains, weights, fees) against the matching documentation page, update the page, update its footer date, and record the change in CHANGELOG.md.
@@ -52,7 +52,7 @@ Tag releases as `vX.Y.Z`. A release is warranted whenever the mirrored PDFs chan
 ## Repository settings worth preserving
 
 - Issues use the three templates (broken link or error, outdated content, resource suggestion); blank issues are disabled to keep reports actionable.
-- Discussions are enabled and seeded; the participation rules live in [CONTRIBUTING.md](../CONTRIBUTING.md#discussions). The non-negotiable rule is that real exam content is never shared, per the exam NDA.
+- Discussions are enabled and seeded; the participation rules live in [CONTRIBUTING.md](../.github/CONTRIBUTING.md#discussions). The non-negotiable rule is that real exam content is never shared, per the exam NDA.
 - Workflows: lint (markdownlint and codespell) and link checking (lychee) run on pull requests, so contributions are self-checking.
 - Dependabot updates the pinned workflow actions.
 

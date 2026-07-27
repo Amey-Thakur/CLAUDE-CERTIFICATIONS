@@ -20,7 +20,7 @@ jobs:
       - name: Check all links, including mirrored PDF sources
         uses: lycheeverse/lychee-action@v2
         with:
-          args: --config lychee.toml --no-progress .
+          args: --config .github/lychee.toml --no-progress .
           fail: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

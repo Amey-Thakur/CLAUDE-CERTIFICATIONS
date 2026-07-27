@@ -1,4 +1,4 @@
-# Link checker configuration. Run locally with: lychee --config lychee.toml .
+# Link checker configuration. Run locally with: lychee --config .github/lychee.toml .
 timeout = 30
 max_retries = 2
 

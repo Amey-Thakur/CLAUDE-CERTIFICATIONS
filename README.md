@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="assets/logos/claude-symbol.svg" alt="Claude symbol" width="80">
+<img src=".github/assets/logos/claude-symbol.svg" alt="Claude symbol" width="80">
 
 # Claude Certifications
 
@@ -55,25 +55,25 @@ end to end| RF[Architect - Foundations]
 | [associate-foundations](associate-foundations/) · [developer-foundations](developer-foundations/) · [architect-foundations](architect-foundations/) · [architect-professional](architect-professional/) | One folder per certification: study guide, official exam guide PDF, study notes |
 | [guide](guide/) | Program-wide pages: learning paths, study strategy, registration, policies, FAQ, plus the official policy PDFs and their [provenance](guide/official-sources.md) |
 | [certificates](certificates/) | The maintainer's 21 Anthropic Academy course certificates, with previews and verification links |
-| [scripts](scripts/) | Keeps the mirrored official PDFs current |
+| [.github](.github/) | Repository housekeeping: CI, templates, logo assets, and the [script](.github/scripts/update_resources.py) that keeps mirrored PDFs current |
 
 ## Questions and community
 
 Ask questions, share how your exam went, and compare preparation notes in [Discussions](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/discussions). One firm rule from the exam NDA: never post real exam questions or answers. Found a broken link or an outdated fact? [Open an issue](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/issues/new/choose).
 
-Contributions that keep facts current are welcome; see [CONTRIBUTING.md](CONTRIBUTING.md).
+Contributions that keep facts current are welcome; see [CONTRIBUTING.md](.github/CONTRIBUTING.md).
 
 ---
 
 <div align="center">
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/logos/anthropic-wordmark-dark.svg">
-  <img src="assets/logos/anthropic-wordmark.svg" alt="Anthropic" width="160">
+  <source media="(prefers-color-scheme: dark)" srcset=".github/assets/logos/anthropic-wordmark-dark.svg">
+  <img src=".github/assets/logos/anthropic-wordmark.svg" alt="Anthropic" width="160">
 </picture>
 
 <sub>Not affiliated with or endorsed by Anthropic. Claude and Anthropic are trademarks of Anthropic PBC.<br>
 Repository text is <a href="LICENSE">MIT licensed</a>; mirrored documents and logo artwork keep their own provenance
-(<a href="guide/official-sources.md">sources</a>, <a href="assets/logos/README.md">logos</a>).</sub>
+(<a href="guide/official-sources.md">sources</a>, <a href=".github/assets/logos/README.md">logos</a>).</sub>
 
 </div>
