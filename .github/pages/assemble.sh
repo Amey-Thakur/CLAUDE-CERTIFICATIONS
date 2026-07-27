@@ -19,6 +19,29 @@ n=$(grep -n -m1 '</div>' site-src/certificates/README.md | cut -d: -f1)
 { cat .github/pages/certificates-header.md; tail -n +$((n + 1)) site-src/certificates/README.md; } > site-src/certificates/README.md.tmp
 mv site-src/certificates/README.md.tmp site-src/certificates/README.md
 
+# YouTube thumbnail links become real embedded players on the site;
+# GitHub keeps the clickable thumbnails, which it renders and iframes it does not.
+PYBIN=""
+for candidate in python3 python py; do
+  if "$candidate" -c "import sys" >/dev/null 2>&1; then PYBIN="$candidate"; break; fi
+done
+"$PYBIN" - <<'PY'
+import re
+from pathlib import Path
+pattern = re.compile(r'\[!\[([^\]]*)\]\(https://img\.youtube\.com/vi/([\w-]+)/hqdefault\.jpg\)\]\(https://www\.youtube\.com/watch\?v=[\w-]+\)')
+def repl(m):
+    title, vid = m.group(1), m.group(2)
+    return (f'<div class="video-embed"><iframe src="https://www.youtube-nocookie.com/embed/{vid}" '
+            f'title="{title}" frameborder="0" loading="lazy" '
+            f'allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" '
+            f'allowfullscreen></iframe></div>')
+for md in Path('site-src').rglob('*.md'):
+    t = md.read_text(encoding='utf-8')
+    new = pattern.sub(repl, t)
+    if new != t:
+        md.write_text(new, encoding='utf-8')
+PY
+
 # GitHub-friendly <details> blocks become Material's native collapsible
 # callouts on the site, so the markdown inside them renders properly.
 PYBIN=""

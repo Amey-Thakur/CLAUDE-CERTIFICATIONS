@@ -4,11 +4,13 @@ Everything here is published by Anthropic or its official partners. Third-party 
 
 ## Courses
 
+All 21 official courses, with descriptions, enrollment links, and exam relevance, are catalogued in [Anthropic courses](courses.md). The platforms that host them:
+
 | Resource | What it is |
 | --- | --- |
+| [Anthropic Academy](https://anthropic.skilljar.com/) | The public academy: every course free, no partner account needed |
 | [Anthropic Partner Academy](https://anthropic-partners.skilljar.com/) | The certification program's home: prep paths, registration, and partner-exclusive content. Requires a partner sign-in |
-| [Anthropic Academy](https://anthropic.skilljar.com/) | The public academy. Open equivalents of many partner courses, including [Introduction to Model Context Protocol](https://anthropic.skilljar.com/introduction-to-model-context-protocol), no partner account needed |
-| [Anthropic on Coursera](https://www.coursera.org/partners/anthropic) | The same core courses (Building with the Claude API, Claude Code in Action, MCP) on Coursera |
+| [Anthropic on Coursera](https://www.coursera.org/partners/anthropic) | Core courses (Building with the Claude API, Claude Code in Action, MCP) delivered through Coursera |
 | [Build with Claude](https://www.anthropic.com/learn/build-with-claude) | Anthropic's index of learning paths for API development |
 
 ## Documentation
@@ -35,15 +37,27 @@ Anthropic's engineering blog covers the exact judgment the scenario questions te
 
 ## Videos
 
-From [Anthropic's YouTube channel](https://www.youtube.com/@anthropic-ai), sessions that map directly to exam domains:
+Sessions from [Anthropic's YouTube channel](https://www.youtube.com/@anthropic-ai) that map directly to exam domains. Each plays here on the website; on GitHub the thumbnails link out to YouTube.
 
-| Video | Covers | Most relevant to |
-| --- | --- | --- |
-| [Prompting 101](https://www.youtube.com/watch?v=ysPbXH0LpIE) | Prompt structure and iteration, from the Code w/ Claude conference | Associate, Developer |
-| [Claude Code best practices](https://www.youtube.com/watch?v=gv0WHhKelSE) | Configuration, workflows, and working habits, from Code w/ Claude | Developer, Architect Foundations |
-| [Mastering Claude Code in 30 minutes](https://www.youtube.com/watch?v=6eBSHbLKuN0) | End-to-end Claude Code usage | Developer, Architect Foundations |
+### Prompting 101
 
-The [Academy courses](#courses) are themselves video curricula; for structured watching, they are the primary official video resource.
+Prompt structure, iteration, and the habits behind reliable output, recorded at the Code w/ Claude conference. Relevant to the Associate and Developer exams.
+
+[![Prompting 101, an Anthropic conference session on prompt engineering](https://img.youtube.com/vi/ysPbXH0LpIE/hqdefault.jpg)](https://www.youtube.com/watch?v=ysPbXH0LpIE)
+
+### Claude Code best practices
+
+Configuration, workflows, and working habits for Claude Code, from Anthropic's Cal Rueb at Code w/ Claude. Relevant to the Developer and Architect Foundations exams.
+
+[![Claude Code best practices, an Anthropic conference session](https://img.youtube.com/vi/gv0WHhKelSE/hqdefault.jpg)](https://www.youtube.com/watch?v=gv0WHhKelSE)
+
+### Mastering Claude Code in 30 minutes
+
+A compact end-to-end tour of Claude Code. Relevant to the Developer and Architect Foundations exams.
+
+[![Mastering Claude Code in 30 minutes, an Anthropic video walkthrough](https://img.youtube.com/vi/6eBSHbLKuN0/hqdefault.jpg)](https://www.youtube.com/watch?v=6eBSHbLKuN0)
+
+The [Academy courses](courses.md) are themselves video curricula; for structured watching, they are the primary official video resource.
 
 ## Code
 

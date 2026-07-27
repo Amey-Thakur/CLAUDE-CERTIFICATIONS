@@ -13,7 +13,7 @@ Every certificate links to its issued PDF and its Skilljar verification record.
 
 </div>
 
-Course completion certificates are distinct from the certification credentials themselves, which are issued as Credly badges after a proctored exam. Source copies live in the maintainer's [ACHIEVEMENTS repository](https://github.com/Amey-Thakur/ACHIEVEMENTS#anthropic-courses); course descriptions and enrollment links are in [Learning paths and courses](../guide/learning-paths.md#course-catalog). Where a certificate carries a printed issue date, it is shown; the others are issued without one.
+Course completion certificates are distinct from the certification credentials themselves, which are issued as Credly badges after a proctored exam. Source copies live in the maintainer's [ACHIEVEMENTS repository](https://github.com/Amey-Thakur/ACHIEVEMENTS#anthropic-courses); course descriptions and enrollment links are in [Anthropic courses](../guide/courses.md). Where a certificate carries a printed issue date, it is shown; the others are issued without one.
 
 ## Claude platform
 

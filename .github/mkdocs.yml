@@ -73,6 +73,7 @@ nav:
   - Program guide:
       - Overview: guide/README.md
       - Learning paths and courses: guide/learning-paths.md
+      - Anthropic courses: guide/courses.md
       - Study strategy: guide/study-strategy.md
       - Official resources: guide/resources.md
       - Practice with Claude: guide/practice.md

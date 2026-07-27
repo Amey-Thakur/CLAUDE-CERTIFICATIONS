@@ -34,6 +34,25 @@
   margin-bottom: 1.8em;
 }
 
+/* Embedded videos stay 16:9 at any width. */
+.video-embed {
+  position: relative;
+  width: 100%;
+  max-width: 46rem;
+  padding-top: 56.25%;
+  margin: 1.2em 0 2em;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.video-embed iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
 /* Show the right Anthropic wordmark for the active color scheme. */
 [data-md-color-scheme="default"] .only-dark {
   display: none;

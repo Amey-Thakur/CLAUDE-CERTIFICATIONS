@@ -18,6 +18,7 @@ flowchart LR
 | Page | Read it when |
 | --- | --- |
 | [Learning paths and courses](learning-paths.md) | Choosing a certification, or picking courses to prepare with |
+| [Anthropic courses](courses.md) | All 21 official courses: what each teaches, where to enroll, and which exam it serves |
 | [Study strategy](study-strategy.md) | You have chosen an exam and want a plan |
 | [Official resources](resources.md) | Anthropic's documentation, courses, engineering articles, videos, and code, mapped to each exam |
 | [Practice with Claude](practice.md) | Generating blueprint-based practice questions with Claude, within the exam NDA |
