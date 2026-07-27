@@ -1,6 +1,19 @@
 # Program guide
 
-Everything about the certification program that is not specific to a single exam. The four certifications each have their own folder at the repository root with a study guide, the official exam guide PDF, and study notes.
+Everything about the certification program that is not specific to a single exam. The four certifications each have their own folder at the repository root with a study guide, the official exam guide PDF, study notes, and practice questions.
+
+The whole journey, end to end:
+
+```mermaid
+flowchart LR
+    C[Prep courses on Partner Academy] --> R[Register and pay]
+    R --> X[Proctored exam, 120 minutes]
+    X -->|pass at 720 or above| B[Credly badge, valid 12 months]
+    X -->|fail| W[Wait 14, 30, then 90 days and retake]
+    W --> X
+    B --> N[Free renewal assessment before expiry]
+    N --> B
+```
 
 | Page | Read it when |
 | --- | --- |
@@ -11,6 +24,7 @@ Everything about the certification program that is not specific to a single exam
 | [Registration and scheduling](registration.md) | Booking the exam, fixing partner email issues, preparing your machine |
 | [Certification policies](policies.md) | Retakes, validity, renewal, appeals, proctoring rules |
 | [Frequently asked questions](faq.md) | Quick answers, from pricing to badges |
+| [Glossary](glossary.md) | The program's terms, defined once |
 | [Official sources](official-sources.md) | Provenance of every mirrored PDF |
 | [Maintenance guide](maintenance.md) | Contributing to or maintaining this repository |
 

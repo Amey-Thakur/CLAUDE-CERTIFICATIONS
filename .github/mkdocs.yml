@@ -56,15 +56,19 @@ nav:
   - Associate - Foundations:
       - Study guide: associate-foundations/README.md
       - Study notes: associate-foundations/notes.md
+      - Practice questions: associate-foundations/practice-questions.md
   - Developer - Foundations:
       - Study guide: developer-foundations/README.md
       - Study notes: developer-foundations/notes.md
+      - Practice questions: developer-foundations/practice-questions.md
   - Architect - Foundations:
       - Study guide: architect-foundations/README.md
       - Study notes: architect-foundations/notes.md
+      - Practice questions: architect-foundations/practice-questions.md
   - Architect - Professional:
       - Study guide: architect-professional/README.md
       - Study notes: architect-professional/notes.md
+      - Practice questions: architect-professional/practice-questions.md
   - Program guide:
       - Overview: guide/README.md
       - Learning paths and courses: guide/learning-paths.md
@@ -74,6 +78,7 @@ nav:
       - Registration and scheduling: guide/registration.md
       - Certification policies: guide/policies.md
       - Frequently asked questions: guide/faq.md
+      - Glossary: guide/glossary.md
       - Official sources: guide/official-sources.md
       - Maintenance guide: guide/maintenance.md
   - Certificates: certificates/README.md

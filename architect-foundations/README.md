@@ -2,7 +2,7 @@
 
 The Claude Certified Architect – Foundations certification validates that practitioners can make informed decisions about tradeoffs when implementing real-world solutions with Claude. It tests foundational knowledge across Claude Code, the Claude Agent SDK, the Claude API, and Model Context Protocol, the core technologies used to build production-grade applications with Claude.
 
-This exam differs from the other three: every question is framed by one of six published production scenarios, and the exam guide is by far the most detailed of the four, with full task statements, preparation exercises, and an appendix of in-scope technologies. The [exam guide](exam-guide.pdf) (version 1.0, effective July 2026) is the authoritative reference, and the maintainer's study notes for this exam are in [notes.md](notes.md).
+This exam differs from the other three: every question is framed by one of six published production scenarios, and the exam guide is by far the most detailed of the four, with full task statements, preparation exercises, and an appendix of in-scope technologies. The [exam guide](exam-guide.pdf) (version 1.0, effective July 2026) is the authoritative reference, and the maintainer's study notes for this exam are in [notes.md](notes.md), with original practice questions in [practice-questions.md](practice-questions.md).
 
 ## Exam facts
 

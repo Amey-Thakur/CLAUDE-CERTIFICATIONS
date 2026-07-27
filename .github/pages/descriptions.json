@@ -18,5 +18,10 @@
   "guide/faq.md": "Claude certification FAQ: costs and discounts, eligibility, exam format, passing score, retakes, validity, badges, and support.",
   "guide/official-sources.md": "Provenance and source links for every mirrored official Claude certification PDF: exam guides, policies, and terms.",
   "guide/maintenance.md": "How the Claude Certifications repository and website stay current: routines, editorial rules, and release strategy.",
-  "certificates/README.md": "Twenty-one verified Anthropic Academy course completion certificates earned by Amey Thakur, with previews and verification links."
+  "certificates/README.md": "Twenty-one verified Anthropic Academy course completion certificates earned by Amey Thakur, with previews and verification links.",
+  "associate-foundations/practice-questions.md": "Ten original practice questions for the Claude Certified Associate Foundations exam, with answers and rationales.",
+  "developer-foundations/practice-questions.md": "Ten original practice questions for the Claude Certified Developer Foundations exam, with answers and rationales.",
+  "architect-foundations/practice-questions.md": "Ten original scenario-based practice questions for the Claude Certified Architect Foundations exam, with answers and rationales.",
+  "architect-professional/practice-questions.md": "Ten original practice questions for the Claude Certified Architect Professional exam, with answers and rationales.",
+  "guide/glossary.md": "Glossary of Claude certification terms: blueprint, scaled score, cut score, MQC, OnVUE, Credly, renewal, and more."
 }
