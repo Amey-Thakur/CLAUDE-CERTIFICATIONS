@@ -1,0 +1,14 @@
+# Link checker configuration. Run locally with: lychee --config lychee.toml .
+timeout = 30
+max_retries = 2
+
+# 403 and 429 are accepted because some official hosts answer bot traffic
+# with them while serving browsers normally.
+accept = ["200..=204", "403", "429"]
+
+exclude = [
+  "^mailto:",
+  # Requires an authenticated session; anonymous requests are rejected.
+  "^https://github\\.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/security/",
+  "^https://github\\.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/issues/new",
+]

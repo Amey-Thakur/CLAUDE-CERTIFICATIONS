@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Questions about the exams
+    url: https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/discussions
+    about: Preparation questions and exam experiences belong in Discussions, not issues.
+  - name: Official certification FAQ
+    url: https://anthropic-partners.skilljar.com/page/faq-certifications
+    about: Program questions answered by Anthropic directly.
