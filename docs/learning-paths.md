@@ -30,7 +30,7 @@ Note: the Associate exam does not count toward Claude Partner Network tier eligi
 The [CPN learning path](https://anthropic-partners.skilljar.com/page/claude-partner-network-learning-path) is the introductory foundation for new partners and the first step toward certification. It contains four courses:
 
 1. [Introduction to agent skills](https://anthropic-partners.skilljar.com/introduction-to-agent-skills): building, configuring, and sharing Skills in Claude Code
-2. [Building with the Claude API](https://anthropic-partners.skilljar.com/building-with-the-claude-api): working with Anthropic models through the API
+2. [Building with the Claude API](https://anthropic-partners.skilljar.com/claude-with-the-anthropic-api): working with Anthropic models through the API
 3. [Introduction to Model Context Protocol](https://anthropic-partners.skilljar.com/introduction-to-model-context-protocol): building MCP servers and clients in Python, covering tools, resources, and prompts
 4. [Claude Code in Action](https://anthropic-partners.skilljar.com/claude-code-in-action): running long, hands-off Claude Code sessions with steering, configuration, automation, and verification
 
@@ -64,7 +64,7 @@ Developer and integration:
 
 | Course | Covers |
 | --- | --- |
-| [Building with the Claude API](https://anthropic-partners.skilljar.com/building-with-the-claude-api) | The full span of working with Anthropic models through the API |
+| [Building with the Claude API](https://anthropic-partners.skilljar.com/claude-with-the-anthropic-api) | The full span of working with Anthropic models through the API |
 | [Introduction to Model Context Protocol](https://anthropic-partners.skilljar.com/introduction-to-model-context-protocol) | MCP servers and clients from scratch in Python |
 | [Model Context Protocol: Advanced Topics](https://anthropic-partners.skilljar.com/model-context-protocol-advanced-topics) | Sampling, notifications, file system access, transports, production servers |
 | [Introduction to agent skills](https://anthropic-partners.skilljar.com/introduction-to-agent-skills) | Building, configuring, and distributing Skills |
@@ -74,8 +74,8 @@ Deployment platforms:
 
 | Course | Covers |
 | --- | --- |
-| [Claude with Amazon Bedrock](https://anthropic-partners.skilljar.com/claude-with-amazon-bedrock) | Running Claude on AWS, from the AWS accreditation program |
-| [Claude on Google Cloud](https://anthropic-partners.skilljar.com/claude-on-google-cloud) | Working with Anthropic models on Google Cloud and Vertex AI |
+| [Claude with Amazon Bedrock](https://anthropic-partners.skilljar.com/claude-in-amazon-bedrock) | Running Claude on AWS, from the AWS accreditation program |
+| [Claude on Google Cloud](https://anthropic-partners.skilljar.com/claude-with-google-vertex) | Working with Anthropic models on Google Cloud and Vertex AI |
 
 AI Fluency:
 

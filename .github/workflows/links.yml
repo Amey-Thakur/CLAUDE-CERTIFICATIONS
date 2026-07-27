@@ -16,7 +16,7 @@ jobs:
     name: Check links
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
       - name: Check all links, including mirrored PDF sources
         uses: lycheeverse/lychee-action@v2
         with:

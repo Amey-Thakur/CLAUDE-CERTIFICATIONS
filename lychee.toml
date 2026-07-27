@@ -11,4 +11,6 @@ exclude = [
   # Requires an authenticated session; anonymous requests are rejected.
   "^https://github\\.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/security/",
   "^https://github\\.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/issues/new",
+  # Answers 500 to non-browser clients; works in a real browser.
+  "^https://system-test\\.onvue\\.com",
 ]
