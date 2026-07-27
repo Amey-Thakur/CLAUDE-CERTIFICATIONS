@@ -50,7 +50,6 @@ The exam guide recommends, but does not require:
 ```mermaid
 %%{init: {"theme": "base", "themeVariables": {"pie1": "#d97757", "pie2": "#c9a227", "pie3": "#7d8c5c", "pie4": "#7a93ab", "pie5": "#a17ba5", "pie6": "#5f9c93", "pie7": "#c8b08a", "pie8": "#cfa18c", "pieOpacity": "1"}}}%%
 pie showData
-    title Domain weights (%)
     "Output Evaluation and Validation" : 21
     "Workflow Integration and Solution Design" : 16
     "Governance, Risk, and Responsible Use" : 15
