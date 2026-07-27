@@ -1,0 +1,77 @@
+site_name: Claude Certifications
+site_description: Study guides, official exam documents, and preparation resources for the Anthropic Claude certifications.
+site_url: https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/
+repo_url: https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS
+repo_name: Amey-Thakur/CLAUDE-CERTIFICATIONS
+edit_uri: ""
+docs_dir: ../site-src
+site_dir: ../_site
+use_directory_urls: false
+
+theme:
+  name: material
+  logo: assets/logos/claude-symbol.svg
+  favicon: assets/logos/claude-symbol.svg
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - search.suggest
+    - content.code.copy
+    - toc.follow
+
+copyright: "Maintained by Amey Thakur. Not affiliated with or endorsed by Anthropic. Claude and Anthropic are trademarks of Anthropic PBC."
+
+extra_css:
+  - stylesheets/extra.css
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+
+nav:
+  - Home: index.md
+  - Associate - Foundations:
+      - Study guide: associate-foundations/README.md
+      - Study notes: associate-foundations/notes.md
+  - Developer - Foundations:
+      - Study guide: developer-foundations/README.md
+      - Study notes: developer-foundations/notes.md
+  - Architect - Foundations:
+      - Study guide: architect-foundations/README.md
+      - Study notes: architect-foundations/notes.md
+  - Architect - Professional:
+      - Study guide: architect-professional/README.md
+      - Study notes: architect-professional/notes.md
+  - Program guide:
+      - Overview: guide/README.md
+      - Learning paths and courses: guide/learning-paths.md
+      - Study strategy: guide/study-strategy.md
+      - Registration and scheduling: guide/registration.md
+      - Certification policies: guide/policies.md
+      - Frequently asked questions: guide/faq.md
+      - Official sources: guide/official-sources.md
+      - Maintenance guide: guide/maintenance.md
+  - Certificates: certificates/README.md

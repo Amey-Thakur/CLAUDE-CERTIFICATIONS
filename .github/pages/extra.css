@@ -1,0 +1,38 @@
+/* Anthropic-flavored palette: coral primary on warm ivory. */
+
+:root {
+  --md-primary-fg-color: #c15f3c;
+  --md-primary-fg-color--light: #d97757;
+  --md-primary-fg-color--dark: #9c4a2f;
+  --md-accent-fg-color: #d97757;
+}
+
+[data-md-color-scheme="default"] {
+  --md-default-bg-color: #faf9f5;
+  --md-code-bg-color: #f0eee6;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #1f1e1b;
+  --md-code-bg-color: #2a2924;
+}
+
+.md-typeset h1,
+.md-typeset h2 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: 500;
+}
+
+/* Certificate gallery images breathe a little. */
+.md-typeset table img {
+  border-radius: 4px;
+}
+
+/* Show the right Anthropic wordmark for the active color scheme. */
+[data-md-color-scheme="default"] .only-dark {
+  display: none;
+}
+
+[data-md-color-scheme="slate"] .only-light {
+  display: none;
+}
