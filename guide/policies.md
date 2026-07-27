@@ -15,6 +15,14 @@ Your certification belongs to you, not your employer. It stays with you if you c
 
 ## Retakes
 
+```mermaid
+flowchart LR
+    A1[Attempt 1] -->|fail: wait 14 days| A2[Attempt 2]
+    A2 -->|fail: wait 30 days| A3[Attempt 3]
+    A3 -->|fail: wait 90 days| A4[Attempt 4]
+    A1 & A2 & A3 & A4 -->|pass| C[Certified]
+```
+
 - Waiting periods after a failed attempt: 14 days after the first, 30 days after the second, 90 days after the third.
 - Maximum four attempts per exam in any rolling 12-month period. Both the waiting period and the attempt count reset when an exam moves to a new version.
 - Limits apply per exam, so failing one certification does not block registering for a different one.

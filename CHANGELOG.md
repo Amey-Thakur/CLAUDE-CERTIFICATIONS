@@ -12,5 +12,5 @@ Notable changes to this repository. The format follows [Keep a Changelog](https:
 - Registration and scheduling guide, including OnVUE system setup, the network domain allowlist, and the application shutdown list
 - Certification policies summary and condensed FAQ, including the June 30, 2026 Pearson and Credly migration notes
 - Study strategy with per-exam emphasis and checklists
-- Maintainer's twenty Anthropic Academy course completion certificates with previews, issue dates, and verification links where issued
+- Maintainer's twenty-one Anthropic Academy course completion certificates with previews, issue dates, and verification links where issued
 - Maintenance guide, resource update script, issue templates, pull request template, and CI for markdown lint, spell check, and link checking

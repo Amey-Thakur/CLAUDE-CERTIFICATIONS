@@ -82,7 +82,7 @@ AI Fluency:
 | Course | Covers |
 | --- | --- |
 | [AI Fluency: Framework & Foundations](https://anthropic-partners.skilljar.com/ai-fluency-framework-foundations) | Collaborating with AI effectively, efficiently, ethically, and safely |
-| AI Fluency for educators, students, nonprofits, small businesses, and builders | Role-specific adaptations of the framework |
+| AI Fluency for educators, pK-12 educators, students, nonprofits, small businesses, and builders | Role-specific adaptations of the framework |
 | Teaching AI Fluency | Teaching and assessing AI Fluency in instructor-led settings |
 
 Partner-exclusive content, such as the [Partner Basecamp](https://anthropic-partners.skilljar.com/partner-basecamp) program, the CPN Connect broadcast library, and model launch briefings, requires a partner sign-in and is visible from the [Academy home page](https://anthropic-partners.skilljar.com/).

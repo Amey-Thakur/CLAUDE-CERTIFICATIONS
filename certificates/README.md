@@ -7,7 +7,7 @@
 
 # Course completion certificates
 
-**All twenty Anthropic Academy courses behind the certification program, completed by [Amey Thakur](https://github.com/Amey-Thakur).**
+**All twenty-one Anthropic Academy courses behind the certification program, completed by [Amey Thakur](https://github.com/Amey-Thakur).**
 
 Every certificate links to its issued PDF and its Skilljar verification record.
 
@@ -127,17 +127,22 @@ Course completion certificates are distinct from the certification credentials t
 <sub><a href="ai-fluency-for-educators.pdf">PDF</a> · <a href="https://verify.skilljar.com/c/qteo2nkjtrhp">Verify</a></sub>
 </td>
 <td align="center" width="33%">
+<a href="ai-fluency-for-pk-12-educators.pdf"><img src="previews/ai-fluency-for-pk-12-educators.png" alt="AI Fluency for pK-12 Educators certificate of completion issued to Amey Thakur" width="270"></a><br>
+<b>AI Fluency for pK-12 Educators</b><br>
+<sub><a href="ai-fluency-for-pk-12-educators.pdf">PDF</a> · <a href="https://verify.skilljar.com/c/hhc5c3uo3nw3">Verify</a></sub>
+</td>
+<td align="center" width="33%">
 <a href="ai-fluency-for-students.pdf"><img src="previews/ai-fluency-for-students.png" alt="AI Fluency for students certificate of completion issued to Amey Thakur" width="270"></a><br>
 <b>AI Fluency for students</b><br>
 <sub><a href="ai-fluency-for-students.pdf">PDF</a> · <a href="https://verify.skilljar.com/c/2t46zznf8d6c">Verify</a></sub>
 </td>
+</tr>
+<tr>
 <td align="center" width="33%">
 <a href="ai-fluency-for-nonprofits.pdf"><img src="previews/ai-fluency-for-nonprofits.png" alt="AI Fluency for nonprofits certificate of completion issued to Amey Thakur" width="270"></a><br>
 <b>AI Fluency for nonprofits</b><br>
 <sub><a href="ai-fluency-for-nonprofits.pdf">PDF</a> · <a href="https://verify.skilljar.com/c/i5pueehh68uv">Verify</a></sub>
 </td>
-</tr>
-<tr>
 <td align="center" width="33%">
 <a href="ai-fluency-for-small-businesses.pdf"><img src="previews/ai-fluency-for-small-businesses.png" alt="AI Fluency for Small Businesses certificate of completion issued to Amey Thakur" width="270"></a><br>
 <b>AI Fluency for Small Businesses</b><br>

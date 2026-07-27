@@ -32,6 +32,18 @@ Every exam: 120 minutes, closed book, proctored by Pearson VUE online or at a te
 
 ## Start here
 
+```mermaid
+flowchart TD
+    Q{What do you do?}
+    Q -->|Advise customers and
+run engagements| A[Associate - Foundations]
+    Q -->|Build with the API,
+Claude Code, or MCP| D[Developer - Foundations]
+    Q -->|Design solutions
+end to end| RF[Architect - Foundations]
+    RF -. then .-> RP[Architect - Professional]
+```
+
 1. **Pick your exam.** Advising customers: [Associate](associate-foundations/README.md). Building with the API, Claude Code, or MCP: [Developer](developer-foundations/README.md). Designing solutions end to end: [Architect Foundations](architect-foundations/README.md), then [Architect Professional](architect-professional/README.md). Unsure: [how the certifications connect](guide/learning-paths.md).
 2. **Study.** Read your exam's study guide and notes, then the [study strategy](guide/study-strategy.md) for a working plan and the [courses](guide/learning-paths.md) that prepare for it.
 3. **Book and sit.** The [registration guide](guide/registration.md) covers everything from partner email issues to the proctoring network allowlist. Policies on retakes, validity, and appeals are in [policies](guide/policies.md), and quick answers in the [FAQ](guide/faq.md).
@@ -42,7 +54,7 @@ Every exam: 120 minutes, closed book, proctored by Pearson VUE online or at a te
 | --- | --- |
 | [associate-foundations](associate-foundations/) · [developer-foundations](developer-foundations/) · [architect-foundations](architect-foundations/) · [architect-professional](architect-professional/) | One folder per certification: study guide, official exam guide PDF, study notes |
 | [guide](guide/) | Program-wide pages: learning paths, study strategy, registration, policies, FAQ, plus the official policy PDFs and their [provenance](guide/official-sources.md) |
-| [certificates](certificates/) | The maintainer's 20 Anthropic Academy course certificates, with previews and verification links |
+| [certificates](certificates/) | The maintainer's 21 Anthropic Academy course certificates, with previews and verification links |
 | [scripts](scripts/) | Keeps the mirrored official PDFs current |
 
 ## Questions and community
