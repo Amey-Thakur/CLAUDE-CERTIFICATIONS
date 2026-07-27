@@ -1,0 +1,39 @@
+# Name: CITATION.cff
+# Purpose: Machine-readable citation metadata for this repository.
+# Description: GitHub reads this file to offer a "Cite this repository" button
+#   and to format the reference, so anyone can credit this project correctly in
+#   papers, posts, and other work.
+# License: MIT
+# Authors: Amey Thakur (https://github.com/Amey-Thakur)
+#          Archit Konde (https://github.com/Archit-Konde)
+# Date: 2026-07-27
+cff-version: 1.2.0
+title: "Claude Certifications: study guides and official resources for the Anthropic Claude certification program"
+message: "If you use this resource, please cite it using the metadata below."
+type: software
+authors:
+  - given-names: Amey
+    family-names: Thakur
+    email: ameythakur20@gmail.com
+    website: "https://github.com/Amey-Thakur"
+  - given-names: Archit
+    family-names: Konde
+    email: architkonde19@gmail.com
+    website: "https://github.com/Archit-Konde"
+repository-code: "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS"
+url: "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS"
+license: MIT
+version: "1.0.0"
+date-released: "2026-07-27"
+keywords:
+  - anthropic
+  - claude
+  - claude-certification
+  - anthropic-certification
+  - exam-guide
+  - study-guide
+  - learning-path
+  - exam-preparation
+  - claude-code
+  - claude-api
+  - model-context-protocol

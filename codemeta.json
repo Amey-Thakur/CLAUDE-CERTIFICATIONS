@@ -1,0 +1,45 @@
+{
+  "@context": "https://w3id.org/codemeta/3.0",
+  "@type": "SoftwareSourceCode",
+  "name": "Claude Certifications",
+  "description": "Study guides, official exam documents, and preparation resources for the Anthropic Claude certifications: Associate, Developer, and Architect.",
+  "version": "1.0.0",
+  "dateCreated": "2026-07-27",
+  "dateModified": "2026-07-27",
+  "license": "https://spdx.org/licenses/MIT",
+  "codeRepository": "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS",
+  "issueTracker": "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/issues",
+  "url": "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS",
+  "programmingLanguage": ["Python"],
+  "operatingSystem": ["Windows", "macOS", "Linux"],
+  "applicationCategory": "Education",
+  "keywords": [
+    "anthropic",
+    "claude",
+    "claude-certification",
+    "anthropic-certification",
+    "exam-guide",
+    "study-guide",
+    "learning-path",
+    "exam-preparation",
+    "claude-code",
+    "claude-api",
+    "model-context-protocol"
+  ],
+  "author": [
+    {
+      "@type": "Person",
+      "givenName": "Amey",
+      "familyName": "Thakur",
+      "email": "ameythakur20@gmail.com",
+      "url": "https://github.com/Amey-Thakur"
+    },
+    {
+      "@type": "Person",
+      "givenName": "Archit",
+      "familyName": "Konde",
+      "email": "architkonde19@gmail.com",
+      "url": "https://github.com/Archit-Konde"
+    }
+  ]
+}
