@@ -19,9 +19,9 @@ Which role fits:
 
 | Role | For | Certifications |
 | --- | --- | --- |
-| Associate | Consultants, sellers, and delivery leads who guide customers toward the right Claude use cases | [Associate – Foundations](associate-foundations.md) |
-| Developer | Engineers who build with the Claude API, Claude Code, and MCP, from first integration to production agents | [Developer – Foundations](developer-foundations.md) |
-| Architect | Partners who design Claude solutions end to end: deployment platforms, agentic architectures, evaluation, cost, and safety | [Architect – Foundations](architect-foundations.md), [Architect – Professional](architect-professional.md) |
+| Associate | Consultants, sellers, and delivery leads who guide customers toward the right Claude use cases | [Associate – Foundations](../associate-foundations/README.md) |
+| Developer | Engineers who build with the Claude API, Claude Code, and MCP, from first integration to production agents | [Developer – Foundations](../developer-foundations/README.md) |
+| Architect | Partners who design Claude solutions end to end: deployment platforms, agentic architectures, evaluation, cost, and safety | [Architect – Foundations](../architect-foundations/README.md), [Architect – Professional](../architect-professional/README.md) |
 
 Note: the Associate exam does not count toward Claude Partner Network tier eligibility. The Developer and both Architect exams do.
 

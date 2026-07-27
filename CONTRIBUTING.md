@@ -14,7 +14,7 @@ This repository's single job is to keep an accurate, well-organized picture of t
 3. Summaries of official text must be rewritten in your own words. Do not paste blocks of Anthropic's pages into markdown; the mirrored PDFs carry the official wording.
 4. If you touch a volatile fact, update the "facts last verified" footer date of that page and add a line to CHANGELOG.md.
 5. CI must pass: markdown lint, spell check, and link check run on every pull request. Run the link checker locally with `lychee .` if you want a faster loop.
-6. Refreshing mirrored PDFs: run `python scripts/update_resources.py`, commit the changed files, and update the last-checked date in pdfs/README.md.
+6. Refreshing mirrored PDFs: run `python scripts/update_resources.py`, commit the changed files, and update the last-checked date in guide/official-sources.md.
 
 ## Discussions
 

@@ -2,7 +2,19 @@
 
 Exams are purchased through Anthropic Partner Academy and delivered by Pearson VUE, either online proctored through OnVUE or at a Pearson test center. This page covers the full path from registration to exam day, including the computer and network preparation that most often causes problems.
 
-Official references: the [exam registration guide](../pdfs/policies/claude-certification-exam-registration-guide.pdf) (PDF with screenshots of every step) and the [computer and network setup page](https://anthropic-partners.skilljar.com/page/computer-and-network-setup).
+Official references: the [exam registration guide](exam-registration-guide.pdf) (PDF with screenshots of every step) and the [computer and network setup page](https://anthropic-partners.skilljar.com/page/computer-and-network-setup).
+
+```mermaid
+flowchart LR
+    A[Certification page on
+Partner Academy] --> B[Register and pay]
+    B --> C[Create Pearson VUE account]
+    C --> D[Schedule: online or test center]
+    D --> E[System test and machine prep]
+    E --> F[Sit the exam]
+    F --> G[Score on screen]
+    G --> H[Credly badge email]
+```
 
 ## Eligibility
 
@@ -13,8 +25,8 @@ If you see "You aren't signed in with a partner company employee email", check t
 ## Registering
 
 1. Open the page for your certification from the [certifications overview](https://anthropic-partners.skilljar.com/page/partner-certifications).
-2. Download and read the exam guide, the [terms and conditions](../pdfs/policies/certification-terms-and-conditions.pdf), and the [exam policy](../pdfs/policies/anthropic-certification-exam-policy.pdf). Registering constitutes acceptance of all three.
-3. Register and pay by credit card. Any partner-tier discount is applied automatically at checkout. If a discount you expect is missing, see the [FAQ on pricing](exam-faq.md#pricing-and-discounts) before paying.
+2. Download and read the exam guide, the [terms and conditions](certification-terms-and-conditions.pdf), and the [exam policy](anthropic-certification-exam-policy.pdf). Registering constitutes acceptance of all three.
+3. Register and pay by credit card. Any partner-tier discount is applied automatically at checkout. If a discount you expect is missing, see the [FAQ on pricing](faq.md#pricing-and-discounts) before paying.
 4. Follow the confirmation email to create your Pearson VUE account and sign in.
 5. Schedule your session: pick a date, and choose online proctoring or a test center. There is no deadline for sitting the exam after purchase.
 

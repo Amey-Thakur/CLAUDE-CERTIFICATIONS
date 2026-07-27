@@ -33,7 +33,7 @@ The script re-downloads every mirrored official PDF, verifies each file is a val
 ## Editorial rules
 
 - Facts and recommendations stay separated. Certification pages state official facts first and put advice under a clearly labeled preparation section.
-- Every mirrored document keeps its source URL and last-checked date in [pdfs/README.md](../pdfs/README.md).
+- Every mirrored document keeps its source URL and last-checked date in [guide/official-sources.md](official-sources.md).
 - Plain, formal prose. No emojis, no decorative badges, no marketing language, sentence case headings.
 - Summaries of official text are rewritten, not copied. The mirrored PDFs carry the official wording.
 - Every image has alt text. Tables stay narrow enough to read on a phone.

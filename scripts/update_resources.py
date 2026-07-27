@@ -23,31 +23,31 @@ S3 = (
 )
 
 RESOURCES = {
-    "pdfs/exam-guides/claude-certified-associate-foundations-exam-guide.pdf": S3.format(
+    "associate-foundations/exam-guide.pdf": S3.format(
         instructor="6nizmqk8tpzpfjvt6qmmav7rh",
         doc="1783542847%2FClaude+Certified+Associate+%E2%80%93+Foundations+Exam+Guide.pdf",
     ),
-    "pdfs/exam-guides/claude-certified-developer-foundations-exam-guide.pdf": S3.format(
+    "developer-foundations/exam-guide.pdf": S3.format(
         instructor="6nizmqk8tpzpfjvt6qmmav7rh",
         doc="1783542875%2FClaude+Certified+Developer+%E2%80%93+Foundations+Exam+Guide.pdf",
     ),
-    "pdfs/exam-guides/claude-certified-architect-foundations-exam-guide.pdf": S3.format(
+    "architect-foundations/exam-guide.pdf": S3.format(
         instructor="6nizmqk8tpzpfjvt6qmmav7rh",
         doc="1783542750%2FClaude+Certified+Architect+%E2%80%93+Foundations+Exam+Guide.pdf",
     ),
-    "pdfs/exam-guides/claude-certified-architect-professional-exam-guide.pdf": S3.format(
+    "architect-professional/exam-guide.pdf": S3.format(
         instructor="6nizmqk8tpzpfjvt6qmmav7rh",
         doc="1783542810%2FClaude+Certified+Architect+%E2%80%93+Professional+Exam+Guide.pdf",
     ),
-    "pdfs/policies/anthropic-certification-exam-policy.pdf": S3.format(
+    "guide/anthropic-certification-exam-policy.pdf": S3.format(
         instructor="34hhd92iyp94a0gtbr15cy5jk",
         doc="1782870704%2FAnthropic+Certification+Exam+Policy.pdf",
     ),
-    "pdfs/policies/certification-terms-and-conditions.pdf": S3.format(
+    "guide/certification-terms-and-conditions.pdf": S3.format(
         instructor="34hhd92iyp94a0gtbr15cy5jk",
         doc="1782870634%2FCertification+Terms+and+Conditions.pdf",
     ),
-    "pdfs/policies/claude-certification-exam-registration-guide.pdf": S3.format(
+    "guide/exam-registration-guide.pdf": S3.format(
         instructor="6nizmqk8tpzpfjvt6qmmav7rh",
         doc="1783542947%2FClaude+Certification+Program+-+Exam+Registration+Guide.pdf",
     ),
@@ -99,7 +99,7 @@ def main() -> int:
         print(f"\n{failures} document(s) failed. If a source URL moved, find the new link on")
         print("https://anthropic-partners.skilljar.com/page/partner-certifications and update RESOURCES.")
     elif not check_only:
-        print("\nDone. If files changed: review them, update the dates in pdfs/README.md,")
+        print("\nDone. If files changed: review them, update the dates in guide/official-sources.md,")
         print("check the affected docs pages, and record the change in CHANGELOG.md.")
 
     return 1 if failures else 0

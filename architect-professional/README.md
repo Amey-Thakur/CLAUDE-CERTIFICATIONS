@@ -2,7 +2,7 @@
 
 The Claude Certified Architect – Professional certification validates that an individual can design, build, and deliver production-grade AI solutions on the Claude platform: selecting models, architectures, and API patterns; applying prompt and context engineering; integrating Claude into enterprise systems; and incorporating evaluation, security, compliance, and governance into designs. Anthropic summarizes the distinction from Foundations this way: Foundations proves an architect can build with Claude, Professional proves they can design and govern Claude solutions at enterprise scale.
 
-This page condenses the official exam guide and program pages. The [exam guide](../pdfs/exam-guides/claude-certified-architect-professional-exam-guide.pdf) (version 1.0, effective July 2026) is the authoritative reference.
+This page condenses the official exam guide and program pages. The [exam guide](exam-guide.pdf) (version 1.0, effective July 2026) is the authoritative reference, and the maintainer's study notes for this exam are in [notes.md](notes.md).
 
 ## Exam facts
 
@@ -13,7 +13,7 @@ This page condenses the official exam guide and program pages. The [exam guide](
 | Time limit | 120 minutes, with about 135 minutes of total seat time |
 | Delivery | Pearson VUE, online proctored or at a test center |
 | Passing score | 720 on a scaled range of 100 to 1,000 |
-| Fee | 175 USD, before any [partner-tier discount](exam-faq.md#pricing-and-discounts) |
+| Fee | 175 USD, before any [partner-tier discount](../guide/faq.md#pricing-and-discounts) |
 | Validity | 12 months from the award date |
 | Prerequisites | None. Architect – Foundations is not required and does not upgrade into Professional |
 | Language | English |
@@ -47,6 +47,18 @@ The exam guide recommends, but does not require:
 | 6 | Stakeholder Communication & Lifecycle Management | 14% |
 | 7 | Developer Productivity & Operational Enablement | 7% |
 
+```mermaid
+pie showData
+    title Domain weights (%)
+    "Integration" : 19
+    "Solution Design & Architecture" : 17
+    "Evaluation, Testing & Optimization" : 16
+    "Governance, Safety & Risk Management" : 14
+    "Stakeholder Communication & Lifecycle Management" : 14
+    "Claude Models, Prompting & Context Engineering" : 13
+    "Developer Productivity & Operational Enablement" : 7
+```
+
 Summary of what each domain tests. The full objective lists are in section 6 of the exam guide.
 
 1. **Solution Design & Architecture.** Translating business problems into Claude-based solutions; designing end-to-end architectures with feedback loops; choosing among workflow, agentic, and augmented-LLM patterns; multi-agent orchestration; aligning designs to business value and performance SLAs.
@@ -61,11 +73,11 @@ Summary of what each domain tests. The full objective lists are in section 6 of 
 
 | Document | Local copy | Source |
 | --- | --- | --- |
-| Exam guide | [PDF](../pdfs/exam-guides/claude-certified-architect-professional-exam-guide.pdf) | [Partner Academy certifications page](https://anthropic-partners.skilljar.com/page/partner-certifications) |
-| Exam policy | [PDF](../pdfs/policies/anthropic-certification-exam-policy.pdf) | Same page |
-| Terms and conditions | [PDF](../pdfs/policies/certification-terms-and-conditions.pdf) | Same page |
+| Exam guide | [PDF](exam-guide.pdf) | [Partner Academy certifications page](https://anthropic-partners.skilljar.com/page/partner-certifications) |
+| Exam policy | [PDF](../guide/anthropic-certification-exam-policy.pdf) | Same page |
+| Terms and conditions | [PDF](../guide/certification-terms-and-conditions.pdf) | Same page |
 
-Registration: [Claude Certified Architect – Professional Certification](https://anthropic-partners.skilljar.com/claude-certified-architect-professional-certification). Prep courses: [Architect – Professional prep path](https://anthropic-partners.skilljar.com/path/claude-certified-architect-professional) (5 courses). The registration process itself is described in [Registration and scheduling](exam-registration.md).
+Registration: [Claude Certified Architect – Professional Certification](https://anthropic-partners.skilljar.com/claude-certified-architect-professional-certification). Prep courses: [Architect – Professional prep path](https://anthropic-partners.skilljar.com/path/claude-certified-architect-professional) (5 courses). The registration process itself is described in [Registration and scheduling](../guide/registration.md).
 
 ## Preparing
 
@@ -85,9 +97,9 @@ Points worth noting before you schedule:
 
 ## Related certifications
 
-- [Claude Certified Architect – Foundations](architect-foundations.md), the natural starting point for the architect track
-- [Claude Certified Developer – Foundations](developer-foundations.md), for hands-on implementation depth
-- [Claude Certified Associate – Foundations](associate-foundations.md), for non-developers who apply Claude to business workflows
+- [Claude Certified Architect – Foundations](../architect-foundations/README.md), the natural starting point for the architect track
+- [Claude Certified Developer – Foundations](../developer-foundations/README.md), for hands-on implementation depth
+- [Claude Certified Associate – Foundations](../associate-foundations/README.md), for non-developers who apply Claude to business workflows
 
 ---
 

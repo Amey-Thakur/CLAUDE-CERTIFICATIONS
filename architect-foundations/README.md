@@ -2,7 +2,7 @@
 
 The Claude Certified Architect – Foundations certification validates that practitioners can make informed decisions about tradeoffs when implementing real-world solutions with Claude. It tests foundational knowledge across Claude Code, the Claude Agent SDK, the Claude API, and Model Context Protocol, the core technologies used to build production-grade applications with Claude.
 
-This exam differs from the other three: every question is framed by one of six published production scenarios, and the exam guide is by far the most detailed of the four, with full task statements, preparation exercises, and an appendix of in-scope technologies. The [exam guide](../pdfs/exam-guides/claude-certified-architect-foundations-exam-guide.pdf) (version 1.0, effective July 2026) is the authoritative reference.
+This exam differs from the other three: every question is framed by one of six published production scenarios, and the exam guide is by far the most detailed of the four, with full task statements, preparation exercises, and an appendix of in-scope technologies. The [exam guide](exam-guide.pdf) (version 1.0, effective July 2026) is the authoritative reference, and the maintainer's study notes for this exam are in [notes.md](notes.md).
 
 ## Exam facts
 
@@ -14,7 +14,7 @@ This exam differs from the other three: every question is framed by one of six p
 | Time limit | 120 minutes, with about 135 minutes of total seat time |
 | Delivery | Pearson VUE, online proctored or at a test center |
 | Passing score | 720 on a scaled range of 100 to 1,000 |
-| Fee | 125 USD, before any [partner-tier discount](exam-faq.md#pricing-and-discounts). Increased from 99 USD on June 30, 2026 |
+| Fee | 125 USD, before any [partner-tier discount](../guide/faq.md#pricing-and-discounts). Increased from 99 USD on June 30, 2026 |
 | Validity | 12 months from the award date |
 | Prerequisites | None. No course is required |
 | Language | English |
@@ -34,6 +34,16 @@ The ideal candidate is a solution architect who designs and implements productio
 | 3 | Claude Code Configuration & Workflows | 20% |
 | 4 | Prompt Engineering & Structured Output | 20% |
 | 5 | Context Management & Reliability | 15% |
+
+```mermaid
+pie showData
+    title Domain weights (%)
+    "Agentic Architecture & Orchestration" : 27
+    "Claude Code Configuration & Workflows" : 20
+    "Prompt Engineering & Structured Output" : 20
+    "Tool Design & MCP Integration" : 18
+    "Context Management & Reliability" : 15
+```
 
 Task statements per domain, condensed from section 6 of the guide:
 
@@ -86,11 +96,11 @@ The guide's appendix lists what may appear on the exam. Highlights worth studyin
 
 | Document | Local copy | Source |
 | --- | --- | --- |
-| Exam guide | [PDF](../pdfs/exam-guides/claude-certified-architect-foundations-exam-guide.pdf) | [Partner Academy certifications page](https://anthropic-partners.skilljar.com/page/partner-certifications) |
-| Exam policy | [PDF](../pdfs/policies/anthropic-certification-exam-policy.pdf) | Same page |
-| Terms and conditions | [PDF](../pdfs/policies/certification-terms-and-conditions.pdf) | Same page |
+| Exam guide | [PDF](exam-guide.pdf) | [Partner Academy certifications page](https://anthropic-partners.skilljar.com/page/partner-certifications) |
+| Exam policy | [PDF](../guide/anthropic-certification-exam-policy.pdf) | Same page |
+| Terms and conditions | [PDF](../guide/certification-terms-and-conditions.pdf) | Same page |
 
-Registration: [Claude Certified Architect – Foundations Certification](https://anthropic-partners.skilljar.com/claude-certified-architect-foundations-certification). Prep courses: [Architect – Foundations prep courses](https://anthropic-partners.skilljar.com/page/claude-certified-architect-foundations-prep-courses). The registration process itself is described in [Registration and scheduling](exam-registration.md).
+Registration: [Claude Certified Architect – Foundations Certification](https://anthropic-partners.skilljar.com/claude-certified-architect-foundations-certification). Prep courses: [Architect – Foundations prep courses](https://anthropic-partners.skilljar.com/page/claude-certified-architect-foundations-prep-courses). The registration process itself is described in [Registration and scheduling](../guide/registration.md).
 
 ## Preparing
 
@@ -106,13 +116,13 @@ Points worth noting before you schedule:
 
 - Agentic Architecture & Orchestration is the heaviest domain at 27%. Combined with Tool Design & MCP Integration, nearly half the exam is agent and tool design.
 - If you attempted this exam before June 30, 2026 and did not pass, the earlier failed attempt was cleared in the Pearson migration and you can register without a waiting period.
-- Anthropic describes this certification as proving an architect can build with Claude, while [Architect – Professional](architect-professional.md) proves they can design and govern solutions at enterprise scale. There is no prerequisite in either direction and Foundations does not upgrade automatically.
+- Anthropic describes this certification as proving an architect can build with Claude, while [Architect – Professional](../architect-professional/README.md) proves they can design and govern solutions at enterprise scale. There is no prerequisite in either direction and Foundations does not upgrade automatically.
 
 ## Related certifications
 
-- [Claude Certified Developer – Foundations](developer-foundations.md), which tests overlapping technologies from an implementation perspective
-- [Claude Certified Architect – Professional](architect-professional.md), the next step for enterprise-scale design and governance
-- [Claude Certified Associate – Foundations](associate-foundations.md), for non-developers who apply Claude to business workflows
+- [Claude Certified Developer – Foundations](../developer-foundations/README.md), which tests overlapping technologies from an implementation perspective
+- [Claude Certified Architect – Professional](../architect-professional/README.md), the next step for enterprise-scale design and governance
+- [Claude Certified Associate – Foundations](../associate-foundations/README.md), for non-developers who apply Claude to business workflows
 
 ---
 

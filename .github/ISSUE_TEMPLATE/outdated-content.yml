@@ -8,7 +8,7 @@ body:
     attributes:
       label: Where
       description: The page containing the outdated fact
-      placeholder: docs/exam-faq.md
+      placeholder: guide/faq.md
     validations:
       required: true
   - type: textarea

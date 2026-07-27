@@ -8,4 +8,4 @@ If you find a security problem, such as a mirrored file that appears tampered wi
 
 ## Verifying mirrored documents
 
-Every mirrored PDF's source URL is listed in [pdfs/README.md](pdfs/README.md). If you want certainty, download the document from the official source and compare hashes. If a mirrored file ever differs from its official source, treat the official source as correct and please report the discrepancy.
+Every mirrored PDF's source URL is listed in [guide/official-sources.md](guide/official-sources.md). If you want certainty, download the document from the official source and compare hashes. If a mirrored file ever differs from its official source, treat the official source as correct and please report the discrepancy.

@@ -2,7 +2,7 @@
 
 The Claude Certified Developer – Foundations certification validates that an individual can build, integrate, and ship production-grade applications, agents, and workflows on the Claude platform. It covers the Claude API and client SDKs, the Claude Agent SDK, Claude Code, prompt and context engineering, evaluation and debugging, model selection and cost management, security, and tool and MCP development.
 
-This page condenses the official exam guide and program pages. The [exam guide](../pdfs/exam-guides/claude-certified-developer-foundations-exam-guide.pdf) (version 1.0, effective July 2026) is the authoritative reference.
+This page condenses the official exam guide and program pages. The [exam guide](exam-guide.pdf) (version 1.0, effective July 2026) is the authoritative reference, and the maintainer's study notes for this exam are in [notes.md](notes.md).
 
 ## Exam facts
 
@@ -13,7 +13,7 @@ This page condenses the official exam guide and program pages. The [exam guide](
 | Time limit | 120 minutes, with about 135 minutes of total seat time |
 | Delivery | Pearson VUE, online proctored or at a test center |
 | Passing score | 720 on a scaled range of 100 to 1,000 |
-| Fee | 125 USD, before any [partner-tier discount](exam-faq.md#pricing-and-discounts) |
+| Fee | 125 USD, before any [partner-tier discount](../guide/faq.md#pricing-and-discounts) |
 | Validity | 12 months from the award date |
 | Prerequisites | None. No course is required |
 | Language | English |
@@ -46,6 +46,19 @@ The exam guide recommends, but does not require:
 | 6 | Prompt and Context Engineering | 11.0% |
 | 7 | Security and Safety | 8.1% |
 | 8 | Tools and MCPs | 10.6% |
+
+```mermaid
+pie showData
+    title Domain weights (%)
+    "Applications and Integration" : 33.1
+    "Model Selection and Optimization" : 16.8
+    "Agents and Workflows" : 14.7
+    "Prompt and Context Engineering" : 11.0
+    "Tools and MCPs" : 10.6
+    "Security and Safety" : 8.1
+    "Claude Code" : 3.1
+    "Eval, Testing, and Debugging" : 2.6
+```
 
 Unlike the other exams, this blueprint publishes a weight for every individual skill. The share of the overall exam is shown in parentheses.
 
@@ -100,11 +113,11 @@ Unlike the other exams, this blueprint publishes a weight for every individual s
 
 | Document | Local copy | Source |
 | --- | --- | --- |
-| Exam guide | [PDF](../pdfs/exam-guides/claude-certified-developer-foundations-exam-guide.pdf) | [Partner Academy certifications page](https://anthropic-partners.skilljar.com/page/partner-certifications) |
-| Exam policy | [PDF](../pdfs/policies/anthropic-certification-exam-policy.pdf) | Same page |
-| Terms and conditions | [PDF](../pdfs/policies/certification-terms-and-conditions.pdf) | Same page |
+| Exam guide | [PDF](exam-guide.pdf) | [Partner Academy certifications page](https://anthropic-partners.skilljar.com/page/partner-certifications) |
+| Exam policy | [PDF](../guide/anthropic-certification-exam-policy.pdf) | Same page |
+| Terms and conditions | [PDF](../guide/certification-terms-and-conditions.pdf) | Same page |
 
-Registration: [Claude Certified Developer – Foundations Certification](https://anthropic-partners.skilljar.com/claude-certified-developer-foundations-certification). Prep courses: [Developer – Foundations prep path](https://anthropic-partners.skilljar.com/path/claude-certified-developer-foundations) (5 courses). The registration process itself is described in [Registration and scheduling](exam-registration.md).
+Registration: [Claude Certified Developer – Foundations Certification](https://anthropic-partners.skilljar.com/claude-certified-developer-foundations-certification). Prep courses: [Developer – Foundations prep path](https://anthropic-partners.skilljar.com/path/claude-certified-developer-foundations) (5 courses). The registration process itself is described in [Registration and scheduling](../guide/registration.md).
 
 ## Preparing
 
@@ -126,9 +139,9 @@ Points worth noting before you schedule:
 
 ## Related certifications
 
-- [Claude Certified Associate – Foundations](associate-foundations.md), for non-developers who apply Claude to business workflows
-- [Claude Certified Architect – Foundations](architect-foundations.md), which tests many of the same technologies from a design and tradeoff perspective
-- [Claude Certified Architect – Professional](architect-professional.md), for end-to-end solution design and governance at enterprise scale
+- [Claude Certified Associate – Foundations](../associate-foundations/README.md), for non-developers who apply Claude to business workflows
+- [Claude Certified Architect – Foundations](../architect-foundations/README.md), which tests many of the same technologies from a design and tradeoff perspective
+- [Claude Certified Architect – Professional](../architect-professional/README.md), for end-to-end solution design and governance at enterprise scale
 
 ---
 

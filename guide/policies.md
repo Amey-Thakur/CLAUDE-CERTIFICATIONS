@@ -1,6 +1,6 @@
 # Certification policies
 
-A condensed reference to the policies that govern every Claude certification exam. The binding documents are the [Certification Terms and Conditions](../pdfs/policies/certification-terms-and-conditions.pdf) and the [Anthropic Certification Exam Policy](../pdfs/policies/anthropic-certification-exam-policy.pdf), which you accept when you register, together with the [official policies page](https://anthropic-partners.skilljar.com/page/policies-certifications). Where this summary and those documents differ, the documents apply.
+A condensed reference to the policies that govern every Claude certification exam. The binding documents are the [Certification Terms and Conditions](certification-terms-and-conditions.pdf) and the [Anthropic Certification Exam Policy](anthropic-certification-exam-policy.pdf), which you accept when you register, together with the [official policies page](https://anthropic-partners.skilljar.com/page/policies-certifications). Where this summary and those documents differ, the documents apply.
 
 ## Ownership of the credential
 

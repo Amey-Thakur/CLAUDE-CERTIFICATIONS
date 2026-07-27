@@ -16,13 +16,13 @@ Condensed from the [official certification FAQ](https://anthropic-partners.skill
 
 ## Registration, scheduling, and format
 
-**How do I register?** From the certification's page on Partner Academy: pay there, then schedule on Pearson VUE, online proctored or at a test center. The full walkthrough is in [Registration and scheduling](exam-registration.md).
+**How do I register?** From the certification's page on Partner Academy: pay there, then schedule on Pearson VUE, online proctored or at a test center. The full walkthrough is in [Registration and scheduling](registration.md).
 
 **What is the format?** Multiple-choice and scenario-based multiple-response questions, 120 minutes of testing, roughly 135 minutes of seat time. Per-exam question counts: Associate 60, Developer 53, Architect Foundations 60, Architect Professional 63.
 
 **Is it open book?** No. Closed book, no notes or documentation, no AI assistants, and no browser translation tools.
 
-**Technical requirements?** Run [Pearson's system test](https://system-test.onvue.com) before exam day and clear the corporate-network requirements in [Registration and scheduling](exam-registration.md#preparing-your-computer-for-an-online-proctored-exam).
+**Technical requirements?** Run [Pearson's system test](https://system-test.onvue.com) before exam day and clear the corporate-network requirements in [Registration and scheduling](registration.md#preparing-your-computer-for-an-online-proctored-exam).
 
 **Can I reschedule or cancel?** Free until 24 hours before the appointment, with a full refund for cancellation. Later than that, or a no-show, forfeits the fee.
 
@@ -58,7 +58,7 @@ Condensed from the [official certification FAQ](https://anthropic-partners.skill
 
 ## The Pearson migration
 
-Delivery moved to Pearson VUE and badging to Credly on June 30, 2026. If you registered or certified before then, see [the migration notes](exam-policies.md#the-june-30-2026-platform-migration) covering transferred registrations, cleared Architect Foundations attempts, extended validity, and missing badge emails.
+Delivery moved to Pearson VUE and badging to Credly on June 30, 2026. If you registered or certified before then, see [the migration notes](policies.md#the-june-30-2026-platform-migration) covering transferred registrations, cleared Architect Foundations attempts, extended validity, and missing badge emails.
 
 ## Preparation
 

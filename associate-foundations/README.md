@@ -2,7 +2,7 @@
 
 The Claude Certified Associate – Foundations certification validates that an individual can apply Claude to complete business and productivity tasks with minimal guidance. It covers using built-in platform features to streamline workflows, identifying opportunities to improve processes, selecting approaches that balance quality, efficiency, and cost, and recognizing when to escalate technical work to a Claude Developer or Architect.
 
-This page condenses the official exam guide and program pages. The [exam guide](../pdfs/exam-guides/claude-certified-associate-foundations-exam-guide.pdf) (version 1.0, effective July 2026) is the authoritative reference.
+This page condenses the official exam guide and program pages. The [exam guide](exam-guide.pdf) (version 1.0, effective July 2026) is the authoritative reference, and the maintainer's study notes for this exam are in [notes.md](notes.md).
 
 ## Exam facts
 
@@ -13,7 +13,7 @@ This page condenses the official exam guide and program pages. The [exam guide](
 | Time limit | 120 minutes, with about 135 minutes of total seat time |
 | Delivery | Pearson VUE, online proctored or at a test center |
 | Passing score | 720 on a scaled range of 100 to 1,000 |
-| Fee | 99 USD, before any [partner-tier discount](exam-faq.md#pricing-and-discounts) |
+| Fee | 99 USD, before any [partner-tier discount](../guide/faq.md#pricing-and-discounts) |
 | Validity | 12 months from the award date |
 | Prerequisites | None. No course is required |
 | Language | English |
@@ -24,7 +24,7 @@ Registration requires a partner company email address recognized in the Claude P
 
 The certification is intended for professionals who use Claude as a productivity tool in roles such as operations, marketing, project management, education, communications, and consulting. Candidates sit between casual prompt users and technical practitioners: they translate business objectives into effective Claude interactions, evaluate generated content critically, and know when human review or escalation is required.
 
-It is not intended for software developers building against APIs or designing agentic systems. That scope belongs to the [Developer](developer-foundations.md) and [Architect](architect-foundations.md) certifications.
+It is not intended for software developers building against APIs or designing agentic systems. That scope belongs to the [Developer](../developer-foundations/README.md) and [Architect](../architect-foundations/README.md) certifications.
 
 ## Recommended experience
 
@@ -47,6 +47,18 @@ The exam guide recommends, but does not require:
 | 6 | Governance, Risk, and Responsible Use | 15% |
 | 7 | Troubleshooting and Optimization | 10% |
 
+```mermaid
+pie showData
+    title Domain weights (%)
+    "Output Evaluation and Validation" : 21
+    "Workflow Integration and Solution Design" : 16
+    "Governance, Risk, and Responsible Use" : 15
+    "Prompting and Task Execution" : 14
+    "Product and Model Selection" : 12
+    "Configuration and Knowledge Management" : 12
+    "Troubleshooting and Optimization" : 10
+```
+
 Summary of what each domain tests. The full objective lists are in section 6 of the exam guide.
 
 1. **Prompting and Task Execution.** Writing effective prompts, decomposing complex requests, iterating to improve output, and adapting strategy to the task type.
@@ -61,11 +73,11 @@ Summary of what each domain tests. The full objective lists are in section 6 of 
 
 | Document | Local copy | Source |
 | --- | --- | --- |
-| Exam guide | [PDF](../pdfs/exam-guides/claude-certified-associate-foundations-exam-guide.pdf) | [Partner Academy certifications page](https://anthropic-partners.skilljar.com/page/partner-certifications) |
-| Exam policy | [PDF](../pdfs/policies/anthropic-certification-exam-policy.pdf) | Same page |
-| Terms and conditions | [PDF](../pdfs/policies/certification-terms-and-conditions.pdf) | Same page |
+| Exam guide | [PDF](exam-guide.pdf) | [Partner Academy certifications page](https://anthropic-partners.skilljar.com/page/partner-certifications) |
+| Exam policy | [PDF](../guide/anthropic-certification-exam-policy.pdf) | Same page |
+| Terms and conditions | [PDF](../guide/certification-terms-and-conditions.pdf) | Same page |
 
-Registration: [Claude Certified Associate – Foundations Certification](https://anthropic-partners.skilljar.com/claude-certified-associate-foundations-certification). Prep courses: [Associate – Foundations prep path](https://anthropic-partners.skilljar.com/path/claude-certified-associate-foundations) (8 courses). The registration process itself is described in [Registration and scheduling](exam-registration.md).
+Registration: [Claude Certified Associate – Foundations Certification](https://anthropic-partners.skilljar.com/claude-certified-associate-foundations-certification). Prep courses: [Associate – Foundations prep path](https://anthropic-partners.skilljar.com/path/claude-certified-associate-foundations) (8 courses). The registration process itself is described in [Registration and scheduling](../guide/registration.md).
 
 ## Preparing
 
@@ -88,9 +100,9 @@ Points that commonly surprise candidates, all drawn from the official documents:
 
 ## Related certifications
 
-- [Claude Certified Developer – Foundations](developer-foundations.md), for engineers who build with the API, Claude Code, and MCP
-- [Claude Certified Architect – Foundations](architect-foundations.md), for practitioners who design solutions and weigh implementation tradeoffs
-- [Claude Certified Architect – Professional](architect-professional.md), for architects who govern production systems at enterprise scale
+- [Claude Certified Developer – Foundations](../developer-foundations/README.md), for engineers who build with the API, Claude Code, and MCP
+- [Claude Certified Architect – Foundations](../architect-foundations/README.md), for practitioners who design solutions and weigh implementation tradeoffs
+- [Claude Certified Architect – Professional](../architect-professional/README.md), for architects who govern production systems at enterprise scale
 
 ---
 
