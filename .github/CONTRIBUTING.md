@@ -15,6 +15,7 @@ This repository's single job is to keep an accurate, well-organized picture of t
 4. If you touch a volatile fact, update the "facts last verified" footer date of that page and add a line to CHANGELOG.md.
 5. CI must pass: markdown lint, spell check, and link check run on every pull request. Run the link checker locally with `lychee --config .github/lychee.toml .` if you want a faster loop.
 6. Refreshing mirrored PDFs: run `python .github/scripts/update_resources.py`, commit the changed files, and update the last-checked date in guide/official-sources.md.
+7. Adding or renaming a page: also add it to the nav section of `.github/mkdocs.yml` so it appears on the [website](https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/), which rebuilds automatically on every push to main.
 
 ## Discussions
 

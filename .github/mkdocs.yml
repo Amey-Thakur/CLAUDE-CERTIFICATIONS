@@ -2,7 +2,7 @@ site_name: Claude Certifications
 site_description: Study guides, official exam documents, and preparation resources for the Anthropic Claude certifications.
 site_url: https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/
 repo_url: https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS
-repo_name: Amey-Thakur/CLAUDE-CERTIFICATIONS
+repo_name: GitHub
 edit_uri: ""
 docs_dir: ../site-src
 site_dir: ../_site
@@ -10,7 +10,7 @@ use_directory_urls: false
 
 theme:
   name: material
-  logo: assets/logos/claude-symbol.svg
+  logo: assets/logos/claude-symbol-ivory.svg
   favicon: assets/logos/claude-symbol.svg
   palette:
     - media: "(prefers-color-scheme: light)"

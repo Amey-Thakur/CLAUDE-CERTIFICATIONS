@@ -56,6 +56,12 @@ Tag releases as `vX.Y.Z`. A release is warranted whenever the mirrored PDFs chan
 - Workflows: lint (markdownlint and codespell) and link checking (lychee) run on pull requests, so contributions are self-checking.
 - Dependabot updates the pinned workflow actions.
 
+## The website
+
+The site at [amey-thakur.github.io/CLAUDE-CERTIFICATIONS](https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/) is built from this repository on every push to main by the pages workflow. The repository stays the single source of truth: .github/pages/assemble.sh copies the certification folders, the guide, and the certificates into a build tree and adjusts the few links that would otherwise point outside the site, then MkDocs Material builds it using .github/mkdocs.yml. The landing page is .github/pages/index.md and the styling is .github/pages/extra.css.
+
+When adding or renaming a page, add it to the nav section of .github/mkdocs.yml, or it will build without appearing in the site navigation.
+
 ## Takedown stance
 
 The mirrored PDFs are Anthropic's property, republished here for candidate convenience with full attribution. If Anthropic or its representatives request removal, remove the files promptly, leave the source links in place, and note the change in the changelog.

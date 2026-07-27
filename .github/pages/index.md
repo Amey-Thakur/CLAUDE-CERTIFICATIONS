@@ -8,6 +8,12 @@
 
 This site is the readable version of the [CLAUDE-CERTIFICATIONS repository](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS), built and maintained by [Amey Thakur](https://github.com/Amey-Thakur) after completing the program's curriculum. It is a community resource, not an official Anthropic site: the official program lives on [Anthropic Partner Academy](https://anthropic-partners.skilljar.com/), and exams are delivered by [Pearson VUE](https://www.pearsonvue.com/us/en/anthropic.html).
 
+<p>
+  <a class="github-button" href="https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Amey-Thakur/CLAUDE-CERTIFICATIONS on GitHub">Star</a>
+  <a class="github-button" href="https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork Amey-Thakur/CLAUDE-CERTIFICATIONS on GitHub">Fork</a>
+  <script async defer src="https://buttons.github.io/buttons.js"></script>
+</p>
+
 ## The certifications
 
 | Certification | Questions | Fee | Study guide | Notes | Exam guide |
