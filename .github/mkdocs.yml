@@ -56,21 +56,25 @@ nav:
   - Home: index.md
   - Associate - Foundations:
       - Study guide: associate-foundations/README.md
+      - Cheat sheet: associate-foundations/cheat-sheet.md
       - Study notes: associate-foundations/notes.md
       - Practice questions: associate-foundations/practice-questions.md
       - Mock exam: associate-foundations/mock-exam.md
   - Developer - Foundations:
       - Study guide: developer-foundations/README.md
+      - Cheat sheet: developer-foundations/cheat-sheet.md
       - Study notes: developer-foundations/notes.md
       - Practice questions: developer-foundations/practice-questions.md
       - Mock exam: developer-foundations/mock-exam.md
   - Architect - Foundations:
       - Study guide: architect-foundations/README.md
+      - Cheat sheet: architect-foundations/cheat-sheet.md
       - Study notes: architect-foundations/notes.md
       - Practice questions: architect-foundations/practice-questions.md
       - Mock exam: architect-foundations/mock-exam.md
   - Architect - Professional:
       - Study guide: architect-professional/README.md
+      - Cheat sheet: architect-professional/cheat-sheet.md
       - Study notes: architect-professional/notes.md
       - Practice questions: architect-professional/practice-questions.md
       - Mock exam: architect-professional/mock-exam.md

@@ -30,5 +30,9 @@
   "architect-foundations/mock-exam.md": "Timed 15-question mock exam for the Claude Certified Architect Foundations exam, with answer key, domain breakdown, and score interpretation.",
   "architect-professional/mock-exam.md": "Timed 15-question mock exam for the Claude Certified Architect Professional exam, with answer key, domain breakdown, and score interpretation.",
   "guide/quiz.md": "Free shuffled, timed practice exam for the Claude certifications, drawn from 100 original questions with per-domain scoring.",
-  "guide/course-notes.md": "Per-course notes on all 21 Anthropic Claude courses: what each is worth, what to watch for, and the order to take them."
+  "guide/course-notes.md": "Per-course notes on all 21 Anthropic Claude courses: what each is worth, what to watch for, and the order to take them.",
+  "associate-foundations/cheat-sheet.md": "One-page Claude Certified Associate Foundations cheat sheet: exam facts, domain weights, the rules that decide questions, and exam-day traps.",
+  "developer-foundations/cheat-sheet.md": "One-page Claude Certified Developer Foundations cheat sheet: exam facts, domain weights, the rules that decide questions, and exam-day traps.",
+  "architect-foundations/cheat-sheet.md": "One-page Claude Certified Architect Foundations cheat sheet: exam facts, domain weights, the rules that decide questions, and exam-day traps.",
+  "architect-professional/cheat-sheet.md": "One-page Claude Certified Architect Professional cheat sheet: exam facts, domain weights, the rules that decide questions, and exam-day traps."
 }

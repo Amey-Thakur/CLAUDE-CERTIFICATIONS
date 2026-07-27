@@ -144,6 +144,16 @@
   box-shadow: inset 0 0 0 1px var(--md-primary-fg-color);
 }
 
+.quiz__option.is-correct {
+  border-color: #4c9a6a;
+  box-shadow: inset 0 0 0 1px #4c9a6a;
+}
+
+.quiz__option.is-incorrect {
+  border-color: var(--md-primary-fg-color);
+  opacity: 0.75;
+}
+
 .quiz__nav {
   display: flex;
   gap: 0.5rem;

@@ -23,14 +23,70 @@ This site is the readable version of the [CLAUDE-CERTIFICATIONS repository](http
 [![Release](https://img.shields.io/github/v/release/Amey-Thakur/CLAUDE-CERTIFICATIONS?label=release&color=c15f3c)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/releases/latest)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/blob/main/LICENSE)
 
+## Try one question
+
+<div id="taster" class="quiz"></div>
+
+<script>
+(function () {
+  var mount = document.getElementById("taster");
+  if (!mount) return;
+  var LETTERS = ["A", "B", "C", "D"];
+  function el(t, c, x) { var n = document.createElement(t); if (c) n.className = c; if (x !== undefined) n.textContent = x; return n; }
+  function shuffle(a) { for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
+
+  fetch("assets/question-bank.json").then(function (r) { return r.json(); }).then(function (bank) {
+    var q = bank.questions[Math.floor(Math.random() * bank.questions.length)];
+    var pairs = shuffle(Object.keys(q.options).sort().map(function (k) {
+      return { text: q.options[k], correct: k === q.answer };
+    }));
+    var card = el("div", "quiz__card");
+    card.appendChild(el("p", "quiz__meta", bank.exams[q.exam].title + "  ·  " + q.domain));
+    card.appendChild(el("p", "quiz__question", q.question));
+    var list = el("div", "quiz__options");
+    var done = false;
+    pairs.forEach(function (pair, i) {
+      var b = el("button", "quiz__option", LETTERS[i] + ". " + pair.text);
+      b.type = "button";
+      b.addEventListener("click", function () {
+        if (done) return;
+        done = true;
+        pairs.forEach(function (p2, j) {
+          var node = list.children[j];
+          if (p2.correct) node.classList.add("is-correct");
+          else if (j === i) node.classList.add("is-incorrect");
+        });
+        var verdict = el("p", "quiz__review-r", (pair.correct ? "Correct. " : "Not quite. ") + q.rationale);
+        card.insertBefore(verdict, foot);
+      });
+      list.appendChild(b);
+    });
+    card.appendChild(list);
+    var foot = el("p", "quiz__meta");
+    var more = el("a", null, "Take a full practice exam");
+    more.href = "guide/quiz.html";
+    foot.appendChild(more);
+    foot.appendChild(document.createTextNode("  ·  100 questions across the four certifications"));
+    card.appendChild(foot);
+    mount.appendChild(card);
+  }).catch(function () {
+    var p = el("p");
+    var a = el("a", null, "Open the practice engine");
+    a.href = "guide/quiz.html";
+    p.appendChild(a);
+    mount.appendChild(p);
+  });
+})();
+</script>
+
 ## The certifications
 
-| Certification | Questions | Fee | Study guide | Notes | Exam guide | Practice | Mock |
-| --- | --- | --- | --- | --- | --- | --- | --- |
-| Associate – Foundations | 60 | $99 | [Guide](associate-foundations/README.md) | [Notes](associate-foundations/notes.md) | [PDF](associate-foundations/exam-guide.pdf) | [Questions](associate-foundations/practice-questions.md) | [Mock](associate-foundations/mock-exam.md) |
-| Developer – Foundations | 53 | $125 | [Guide](developer-foundations/README.md) | [Notes](developer-foundations/notes.md) | [PDF](developer-foundations/exam-guide.pdf) | [Questions](developer-foundations/practice-questions.md) | [Mock](developer-foundations/mock-exam.md) |
-| Architect – Foundations | 60 | $125 | [Guide](architect-foundations/README.md) | [Notes](architect-foundations/notes.md) | [PDF](architect-foundations/exam-guide.pdf) | [Questions](architect-foundations/practice-questions.md) | [Mock](architect-foundations/mock-exam.md) |
-| Architect – Professional | 63 | $175 | [Guide](architect-professional/README.md) | [Notes](architect-professional/notes.md) | [PDF](architect-professional/exam-guide.pdf) | [Questions](architect-professional/practice-questions.md) | [Mock](architect-professional/mock-exam.md) |
+| Certification | Questions | Fee | Study guide | Notes | Exam guide | Practice | Mock | Cheat sheet |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Associate – Foundations | 60 | $99 | [Guide](associate-foundations/README.md) | [Notes](associate-foundations/notes.md) | [PDF](associate-foundations/exam-guide.pdf) | [Questions](associate-foundations/practice-questions.md) | [Mock](associate-foundations/mock-exam.md) | [Sheet](associate-foundations/cheat-sheet.md) |
+| Developer – Foundations | 53 | $125 | [Guide](developer-foundations/README.md) | [Notes](developer-foundations/notes.md) | [PDF](developer-foundations/exam-guide.pdf) | [Questions](developer-foundations/practice-questions.md) | [Mock](developer-foundations/mock-exam.md) | [Sheet](developer-foundations/cheat-sheet.md) |
+| Architect – Foundations | 60 | $125 | [Guide](architect-foundations/README.md) | [Notes](architect-foundations/notes.md) | [PDF](architect-foundations/exam-guide.pdf) | [Questions](architect-foundations/practice-questions.md) | [Mock](architect-foundations/mock-exam.md) | [Sheet](architect-foundations/cheat-sheet.md) |
+| Architect – Professional | 63 | $175 | [Guide](architect-professional/README.md) | [Notes](architect-professional/notes.md) | [PDF](architect-professional/exam-guide.pdf) | [Questions](architect-professional/practice-questions.md) | [Mock](architect-professional/mock-exam.md) | [Sheet](architect-professional/cheat-sheet.md) |
 
 Every exam: 120 minutes, closed book, proctored by Pearson VUE online or at a test center, passing score 720 of 1,000, credential valid 12 months with free renewal, badge via Credly. Fees are list prices in USD; partner tiers receive automatic discounts. Registration requires a Claude Partner Network company email.
 
