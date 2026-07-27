@@ -37,7 +37,7 @@ Ten original practice questions written for this repository against the public [
 
 <details><summary>Answer and rationale</summary>
 
-**B.** Structure, explicit constraints, and an example of the target format are the highest-leverage fixes for a formatting and tone miss. Re-rolling (A) leaves the deficiency in place, a larger model does not learn unstated requirements (C), and over-fragmentation destroys coherence (D).
+**B.** Structure, explicit constraints, and an example of the target format are the most effective fixes for a formatting and tone miss. Re-rolling (A) leaves the deficiency in place, a larger model does not learn unstated requirements (C), and over-fragmentation destroys coherence (D).
 
 </details>
 

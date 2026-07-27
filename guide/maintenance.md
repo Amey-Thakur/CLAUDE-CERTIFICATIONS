@@ -10,9 +10,9 @@ The repository's value is that its facts match the official program. The volatil
 | --- | --- | --- |
 | Prices, discounts, question counts | README, all four certification pages, FAQ | [Certifications page](https://anthropic-partners.skilljar.com/page/partner-certifications), exam guides |
 | Exam guide versions and blueprints | Certification pages, mirrored PDFs | Exam guide PDFs on the certifications page |
-| Policies: retakes, validity, renewal | exam-policies.md, exam-faq.md | [Policies page](https://anthropic-partners.skilljar.com/page/policies-certifications), policy PDFs |
-| Course catalog and prep paths | learning-paths.md | [All courses](https://anthropic-partners.skilljar.com/page/all-courses), [prep courses](https://anthropic-partners.skilljar.com/page/claude-certification-exam-prep-courses) |
-| OnVUE requirements | exam-registration.md | [Setup page](https://anthropic-partners.skilljar.com/page/computer-and-network-setup) |
+| Policies: retakes, validity, renewal | guide/policies.md, guide/faq.md | [Policies page](https://anthropic-partners.skilljar.com/page/policies-certifications), policy PDFs |
+| Course catalog and prep paths | guide/learning-paths.md | [All courses](https://anthropic-partners.skilljar.com/page/all-courses), [prep courses](https://anthropic-partners.skilljar.com/page/claude-certification-exam-prep-courses) |
+| OnVUE requirements | guide/registration.md | [Setup page](https://anthropic-partners.skilljar.com/page/computer-and-network-setup) |
 
 Every documentation page carries a "facts last verified" date in its footer. Update that date only after actually re-checking the page's facts against the sources above.
 
