@@ -35,7 +35,7 @@ theme:
     - content.code.copy
     - toc.follow
 
-copyright: "Maintained by Amey Thakur. Not affiliated with or endorsed by Anthropic. Claude and Anthropic are trademarks of Anthropic PBC."
+copyright: 'Maintained by <a href="https://github.com/Amey-Thakur">Amey Thakur</a>. Not affiliated with or endorsed by Anthropic. Claude and Anthropic are trademarks of Anthropic PBC.'
 
 extra_css:
   - stylesheets/extra.css
