@@ -53,6 +53,8 @@ The collaboration framework: working with AI effectively, efficiently, ethically
 
 ## Suggested order
 
+The maintainer's per-course notes, including what each is worth and what to watch for, are in [Course notes](course-notes.md).
+
 This is the repository's recommendation: start with Claude 101 and Claude Platform 101 for shared vocabulary, then follow your track. Associate candidates continue through AI Fluency: Framework & Foundations and Introduction to Claude Cowork. Developer and Architect candidates take Building with the Claude API, both MCP courses, Claude Code 101, Claude Code in Action, agent skills, and subagents; add the deployment-platform course matching your cloud. The role-specific AI Fluency editions fit wherever your work does. Certification prep paths on [Partner Academy](learning-paths.md#certification-prep-courses) sequence these for each exam.
 
 ---

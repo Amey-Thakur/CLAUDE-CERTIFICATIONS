@@ -49,7 +49,7 @@ flowchart TD
 ```
 
 1. **Pick your exam** with the table above, or read [how the certifications connect](guide/learning-paths.md).
-2. **Study** with your exam's study guide and notes, the [study strategy](guide/study-strategy.md), the [21 official courses](guide/courses.md) and [official resources](guide/resources.md) that teach the material, and the [practice engine](guide/quiz.md) to test yourself: a shuffled, timed, scored exam drawn from 100 original questions.
+2. **Study** with your exam's study guide and notes, the [study strategy](guide/study-strategy.md), the [21 official courses](guide/courses.md) with [per-course notes](guide/course-notes.md) and [official resources](guide/resources.md) that teach the material, and the [practice engine](guide/quiz.md) to test yourself: a shuffled, timed, scored exam drawn from 100 original questions.
 3. **Book and sit** with the [registration guide](guide/registration.md); [policies](guide/policies.md) and the [FAQ](guide/faq.md) cover the rest.
 
 ## The maintainer's certificates

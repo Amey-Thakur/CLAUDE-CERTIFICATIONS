@@ -13,6 +13,21 @@ Setup that makes every prompt below better: create a Claude Project, upload the 
 > [!IMPORTANT]
 > Generated questions are study aids, never real exam items. The item bank is confidential and rotates, so treating any question set as "the real ones" is both a policy violation and a poor strategy.
 
+## Slash commands in Claude Code
+
+Cloning the repository and opening Claude Code inside it gives six commands that read the blueprints and the question bank directly:
+
+| Command | What it does |
+| --- | --- |
+| `/cert:diagnostic` | A short blueprint-weighted assessment that ranks your weak domains by what they cost on the real exam |
+| `/cert:drill` | Teaches and tests one domain, escalating on success and re-teaching after repeated misses |
+| `/cert:mock` | A timed paper under exam conditions, scored with a per-domain breakdown |
+| `/cert:prep-plan` | A study plan shaped by your hours, experience, and target date |
+| `/cert:weekly-plan` | One week of dated sessions, each with material and a verifiable output |
+| `/cert:score-check` | Reads a score report and decides: book it, close the gap, or rebuild |
+
+The prompts below do the same work anywhere else Claude runs.
+
 ## Blueprint quiz generator
 
 Paste a domain's objectives from your certification's study page, then:

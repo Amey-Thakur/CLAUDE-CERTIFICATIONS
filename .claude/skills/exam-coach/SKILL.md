@@ -13,6 +13,8 @@ Coach the user toward passing one of the four Claude certification exams. Ground
 2. Read that certification's `README.md` (the blueprint: domains, weights, objectives) and `notes.md`. The folder's `practice-questions.md` and `mock-exam.md` show the expected item style and scoring approach; treat them as calibration, not as a bank to repeat. For deep detail, the official `exam-guide.pdf` in the same folder is the authoritative source.
 3. Ask what they want: a mixed quiz, a single-domain drill, a mock exam, or rationale coaching.
 
+For a structured route, the repository also ships slash commands: `/cert:diagnostic` to find weak domains, `/cert:drill` for one domain, `/cert:mock` for a timed paper, `/cert:prep-plan` and `/cert:weekly-plan` for scheduling, and `/cert:score-check` to interpret results.
+
 ## Question style
 
 Match the official item style described in the exam guides:
