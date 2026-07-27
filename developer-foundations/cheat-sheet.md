@@ -57,7 +57,33 @@ One domain is a third of the paper. Claude Code and Eval together are under 6%, 
 | Fixed five-step process | Workflow, model used inside it |
 | Long session degrading | Prune, compact, delegate |
 
-## Exam day
+## Working the clock
+
+53 items in 120 minutes is a comfortable pace, slightly over two minutes each. My approach:
+
+- **First pass, about 65 minutes.** Answer what you know. Code-shaped questions read slowly; do not let one long snippet eat five minutes. Flag and move.
+- **Second pass, about 35 minutes.** Work the flags. API mechanics questions in particular tend to resolve once you have seen several: the exam is internally consistent about what it considers good practice.
+- **Last 20 minutes.** Re-read every multiple-response item and confirm the number of selections.
+
+## Reading a question the way it is written
+
+Each scenario states a constraint: cost, latency, reliability, security, or maintainability. Identify it in the first sentence, then eliminate. The pattern across almost every item is the same: the correct option changes the structure of the system, and the distractors adjust a parameter, add a bigger model, or ask the model nicely.
+
+Specifically, be suspicious of any option containing "increase max_tokens", "raise temperature", "use a larger model", or "add an instruction to the prompt" when the problem is correctness, cost, format, or security. Those are the exam's standard wrong answers.
+
+## The morning of
+
+- Run the system test again on the exam machine, even if it passed last week
+- Close everything on the shutdown list before check-in, including the Claude desktop app
+- ID ready, room clear, desk clear, second monitor unplugged
+- Check-in takes longer than you expect; start early
+- 135 minutes of seat time; eat first
+
+## If you blank
+
+Skip and keep moving. One hard item costs one mark; stalling costs several. On this exam in particular, later items often jog the concept you needed for an earlier one.
+
+## Exam day logistics
 
 - ID name must match your registration exactly
 - Closed book. No notes, no documentation, no translation tools

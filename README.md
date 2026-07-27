@@ -15,6 +15,8 @@ collected and organized so you can spend your time studying, not searching.
 [![Release](https://img.shields.io/github/v/release/Amey-Thakur/CLAUDE-CERTIFICATIONS?label=release&color=c15f3c)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/releases/latest)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
 
+<img src=".github/assets/roadmap.png" alt="Claude certification roadmap: all four certifications with exam codes, fees, item counts, domain weights, and the courses that prepare for each" width="100%">
+
 </div>
 
 ---

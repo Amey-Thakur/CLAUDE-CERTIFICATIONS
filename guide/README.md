@@ -19,6 +19,7 @@ flowchart LR
 | --- | --- |
 | [Learning paths and courses](learning-paths.md) | Choosing a certification, or picking courses to prepare with |
 | [Anthropic courses](courses.md) | All 21 official courses: what each teaches, where to enroll, and which exam it serves |
+| Cheat sheets ([Associate](../associate-foundations/cheat-sheet.md), [Developer](../developer-foundations/cheat-sheet.md), [Architect F](../architect-foundations/cheat-sheet.md), [Architect P](../architect-professional/cheat-sheet.md)) | One printable page per exam: facts, weights, the rules that decide questions, timing, and traps |
 | [Course notes](course-notes.md) | The maintainer's take on each course: what it is worth, what to watch for, and the order to take them |
 | [Study strategy](study-strategy.md) | You have chosen an exam and want a plan |
 | [Official resources](resources.md) | Anthropic's documentation, courses, engineering articles, videos, and code, mapped to each exam |

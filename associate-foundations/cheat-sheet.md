@@ -53,7 +53,33 @@ Evaluating output is worth half again as much as writing prompts. Study accordin
 | Output format keeps missing | State the format explicitly, with an example |
 | Something worked and now does not | Find the change before changing anything |
 
-## Exam day
+## Working the clock
+
+60 items in 120 minutes is two minutes each, and you will not need two minutes for most of them. My approach:
+
+- **First pass, about 70 minutes.** Answer everything you know. If an item needs more than 90 seconds of thought, choose your best option, flag it, and move. An unanswered item scores zero; a flagged guess is a free option to change your mind.
+- **Second pass, about 30 minutes.** Only the flagged ones. You will find that several are now obvious, because later items remind you of the framing.
+- **Last 20 minutes.** Re-read the multiple-response items specifically. They are where careless marks are lost, because it is easy to select two when the item says three.
+
+## Reading a question the way it is written
+
+Every scenario names a constraint: cost, privacy, speed, policy, or scale. Find that constraint first, then eliminate every option that does not address it. Two options usually survive; the better one is the one that changes the system rather than compensating around it.
+
+When two options both look right, ask which one a careful professional would defend in front of the person who owns the risk. That is nearly always the intended answer.
+
+## The morning of
+
+- Run the system test again on the exam machine, even if it passed last week
+- Close everything on the shutdown list before check-in, not during it
+- Have the ID ready, room clear, desk clear, second monitor unplugged
+- Check-in takes longer than you expect; start the process early
+- Eat something. 135 minutes of seat time is longer than it sounds
+
+## If you blank
+
+Skip it and keep moving. The blueprint is finite and the items are independent; one hard question costs one mark, and stalling on it costs five. Come back in the second pass and the answer is often obvious.
+
+## Exam day logistics
 
 - ID name must match your registration exactly
 - Closed book. No notes, no documentation, no translation tools, no second monitor

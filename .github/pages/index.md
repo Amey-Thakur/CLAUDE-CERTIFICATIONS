@@ -79,6 +79,10 @@ This site is the readable version of the [CLAUDE-CERTIFICATIONS repository](http
 })();
 </script>
 
+## The whole program on one page
+
+![Claude certification roadmap: all four certifications with exam codes, fees, item counts, domain weights, and the courses that prepare for each](assets/roadmap.png)
+
 ## The certifications
 
 | Certification | Questions | Fee | Study guide | Notes | Exam guide | Practice | Mock | Cheat sheet |

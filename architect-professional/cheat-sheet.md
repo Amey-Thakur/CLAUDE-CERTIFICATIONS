@@ -53,7 +53,36 @@ Governance and stakeholder communication are 28% combined. Technical candidates 
 | HIPAA | US protected health information: de-identify before it leaves the boundary |
 | FedRAMP | US federal cloud deployments: authorized environments and controls |
 
-## Exam day
+## Working the clock
+
+63 items in 120 minutes, just under two minutes each, and the scenarios are longer than on the Foundations exams.
+
+- **First pass, about 75 minutes.** Answer what you know and flag the rest. Design questions with several defensible options are the ones to flag; they reward a second look more than any other type.
+- **Second pass, about 30 minutes.** Work the flags. By then you will have absorbed what this exam considers good architecture, and the previously ambiguous items usually resolve.
+- **Last 15 minutes.** Re-read multiple-response items and confirm selection counts.
+
+## Reading a question the way it is written
+
+At this level, most options are defensible and only one is best. Two questions resolve nearly every item:
+
+1. **What constraint does the scenario actually state?** Cost, latency, compliance, scale, auditability, or stakeholder trust. The best option addresses that one, not the others.
+2. **Which option would survive a design review?** The exam consistently prefers the choice that removes a risk over the choice that monitors it, and the choice that is measurable over the choice that is merely reasonable.
+
+Expect governance and stakeholder items to feel softer than the technical ones. They are not easier and they are 28% of the paper: answer them with the same rigour, choosing the option that is honest, segmented, and defensible rather than the one that sounds reassuring.
+
+## The morning of
+
+- Run the system test again on the exam machine, even if it passed last week
+- Close everything on the shutdown list before check-in, including the Claude desktop app
+- ID ready, room clear, desk clear, second monitor unplugged
+- Check-in takes longer than you expect; start early
+- 135 minutes of seat time; eat first
+
+## If you blank
+
+Skip and return. Long scenarios reward a second reading with fresh eyes far more than they reward staring.
+
+## Exam day logistics
 
 - ID name must match your registration exactly
 - Closed book. No notes, no documentation, no translation tools

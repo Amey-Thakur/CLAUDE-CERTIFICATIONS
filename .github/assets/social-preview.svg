@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" width="1280" height="640" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif" role="img" aria-label="Claude Certifications: study guides, official exam documents, and a practice engine for all four Anthropic Claude certifications">
+  <rect width="1280" height="640" fill="#faf9f5"/>
+  <rect x="0" y="0" width="1280" height="8" fill="#c15f3c"/>
+
+  <g transform="translate(96,120)">
+    <path d="M14 0 L17.2 12.6 L27 4.1 L20.6 15.4 L33.6 13.1 L22.4 20 L33.6 26.9 L20.6 24.6 L27 35.9 L17.2 27.4 L14 40 L10.8 27.4 L1 35.9 L7.4 24.6 L-5.6 26.9 L5.6 20 L-5.6 13.1 L7.4 15.4 L1 4.1 L10.8 12.6 Z" fill="#d97757" transform="scale(1.5)"/>
+  </g>
+
+  <text x="96" y="268" font-size="62" font-weight="600" fill="#1f1e1b">Claude Certifications</text>
+  <text x="96" y="314" font-size="25" fill="#3d3a35">One place to prepare for every Anthropic Claude certification.</text>
+
+  <g transform="translate(96,372)" font-size="19" fill="#3d3a35">
+    <circle cx="6" cy="-6" r="4" fill="#c15f3c"/>
+    <text x="26" y="0">All four exam guides, blueprints, and policies</text>
+    <circle cx="6" cy="34" r="4" fill="#7d8c5c"/>
+    <text x="26" y="40">100 practice questions with a shuffled, timed engine</text>
+    <circle cx="6" cy="74" r="4" fill="#4f7d8c"/>
+    <text x="26" y="80">21 official courses, study notes, and one-page cheat sheets</text>
+  </g>
+
+  <g transform="translate(96,536)">
+    <rect x="0" y="0" width="1088" height="1" fill="#e0ddd4"/>
+    <text x="0" y="36" font-size="18" fill="#6b6862">amey-thakur.github.io/CLAUDE-CERTIFICATIONS</text>
+    <text x="1088" y="36" font-size="17" fill="#8a857c" text-anchor="end">Free and open source</text>
+  </g>
+</svg>

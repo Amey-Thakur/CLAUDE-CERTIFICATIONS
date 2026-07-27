@@ -56,7 +56,34 @@ Context Management & Reliability       15%  ████████████
 
 `stop_reason` values, PostToolUse hooks, `allowedTools`, the Task tool for subagents, `.mcp.json` with environment expansion, `isError`, `.claude/skills/SKILL.md` frontmatter (`context: fork`, `allowed-tools`, `argument-hint`), `/memory`, `/compact`, `--resume`, `fork_session`, the Explore subagent, `tool_choice`, Message Batches (50% saving, 24-hour window, `custom_id`, no multi-turn tool calling), lost-in-the-middle effects, scratchpad files, confidence calibration.
 
-## Exam day
+## Working the clock
+
+60 items across 4 scenarios in 120 minutes. The scenarios each carry a block of questions, so pace by block rather than by item.
+
+- **Read each scenario once, carefully, before its questions.** Two minutes spent understanding the system saves more than it costs, because every question in the block leans on it.
+- **First pass, about 70 minutes.** Work each block in order. Flag anything needing more than 90 seconds.
+- **Second pass, about 30 minutes.** Return to the flags with the whole scenario now familiar.
+- **Last 20 minutes.** Re-read multiple-response items and confirm selection counts.
+
+## Reading a question the way it is written
+
+Because you know the six scenarios in advance, you can walk in already knowing what each one is about to test. Use that: when the block opens, recall the primary domains listed for that scenario and expect the questions to sit there.
+
+Within a question, find the constraint (reliability, cost, context limits, safety, maintainability) and eliminate everything that does not address it. The winning option almost always removes a structural weakness; the distractors add capacity, add supervision, or ask the model to be careful.
+
+## The morning of
+
+- Run the system test again on the exam machine, even if it passed last week
+- Close everything on the shutdown list before check-in, including the Claude desktop app
+- ID ready, room clear, desk clear, second monitor unplugged
+- Check-in takes longer than you expect; start early
+- 135 minutes of seat time; eat first
+
+## If you blank
+
+Move on within the block and come back. Scenario questions are mutually reinforcing: a later question in the same block often clarifies what an earlier one was asking.
+
+## Exam day logistics
 
 - ID name must match your registration exactly
 - Closed book. No notes, no documentation, no translation tools
