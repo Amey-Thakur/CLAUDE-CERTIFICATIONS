@@ -36,3 +36,13 @@
 [data-md-color-scheme="slate"] .only-light {
   display: none;
 }
+
+/* Mermaid pie and timeline text stays readable in dark mode; slice
+   percentage labels keep their dark fill against the colored slices. */
+[data-md-color-scheme="slate"] .mermaid .pieTitleText,
+[data-md-color-scheme="slate"] .mermaid g.legend text,
+[data-md-color-scheme="slate"] .mermaid .timeline-node text,
+[data-md-color-scheme="slate"] .mermaid .sectionTitle,
+[data-md-color-scheme="slate"] .mermaid .titleText {
+  fill: #e3e1dc !important;
+}
