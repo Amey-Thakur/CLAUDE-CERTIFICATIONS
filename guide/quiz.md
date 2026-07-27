@@ -78,7 +78,7 @@ The questions are original, written against the public blueprints. They are not 
     mount.appendChild(card);
   }
 
-  function render() {
+  function render(keepScroll) {
     var item = state.questions[state.index];
     mount.innerHTML = "";
     var card = el("div", "quiz__card");
@@ -102,7 +102,7 @@ The questions are original, written against the public blueprints. They are not 
       var b = el("button", "quiz__option", LETTERS[i] + ". " + pair.text);
       b.type = "button";
       if (item.given === i) b.classList.add("is-selected");
-      b.addEventListener("click", function () { item.given = i; render(); });
+      b.addEventListener("click", function () { item.given = i; render(true); });
       list.appendChild(b);
     });
     card.appendChild(list);
@@ -123,6 +123,7 @@ The questions are original, written against the public blueprints. They are not 
     nav.appendChild(next);
     card.appendChild(nav);
     mount.appendChild(card);
+    if (!keepScroll) card.scrollIntoView({ behavior: "smooth", block: "start" });
 
     if (state.tick) clearInterval(state.tick);
     state.tick = setInterval(function () {
