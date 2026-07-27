@@ -1,0 +1,22 @@
+{
+  "index.md": "Free study guides, official exam guide PDFs, blueprints, costs, and preparation resources for all four Anthropic Claude certification exams.",
+  "associate-foundations/README.md": "Claude Certified Associate Foundations exam guide: CCAO-F blueprint, domains and weights, cost, format, and how to prepare.",
+  "associate-foundations/notes.md": "Study notes for the Claude Certified Associate Foundations exam, organized by blueprint domain with a recall list.",
+  "developer-foundations/README.md": "Claude Certified Developer Foundations exam guide: CCDV-F blueprint with per-skill weights, cost, format, and how to prepare.",
+  "developer-foundations/notes.md": "Study notes for the Claude Certified Developer Foundations exam: API mechanics, agents, tools, MCP, security, and cost management.",
+  "architect-foundations/README.md": "Claude Certified Architect Foundations exam guide: CCAR-F blueprint, the six published exam scenarios, cost, and how to prepare.",
+  "architect-foundations/notes.md": "Study notes for the Claude Certified Architect Foundations exam: scenario rehearsal, agentic loops, MCP design, and Claude Code configuration.",
+  "architect-professional/README.md": "Claude Certified Architect Professional exam guide: CCAR-P blueprint, domains and weights, cost, format, and how to prepare.",
+  "architect-professional/notes.md": "Study notes for the Claude Certified Architect Professional exam: architecture patterns, RAG, evaluation, governance, and stakeholder domains.",
+  "guide/README.md": "The Claude certification program guide: learning paths, study strategy, official resources, registration, policies, and FAQ.",
+  "guide/learning-paths.md": "How the four Claude certifications connect, the prep courses for each exam, and the full Anthropic Academy course catalog.",
+  "guide/study-strategy.md": "A study method for Claude certification exams: blueprint checklists, per-exam emphasis, a three-week plan, and exam-day tactics.",
+  "guide/resources.md": "Official Anthropic study resources for Claude certifications: documentation, courses, engineering articles, videos, and code.",
+  "guide/practice.md": "Generate practice questions for Claude certification exams using Claude and the official blueprints, within the exam NDA.",
+  "guide/registration.md": "How to register for a Claude certification exam: Partner Academy checkout, Pearson VUE scheduling, OnVUE setup, and exam day rules.",
+  "guide/policies.md": "Claude certification policies: retakes, 12-month validity, free renewal, appeals, proctoring rules, and the Pearson migration.",
+  "guide/faq.md": "Claude certification FAQ: costs and discounts, eligibility, exam format, passing score, retakes, validity, badges, and support.",
+  "guide/official-sources.md": "Provenance and source links for every mirrored official Claude certification PDF: exam guides, policies, and terms.",
+  "guide/maintenance.md": "How the Claude Certifications repository and website stay current: routines, editorial rules, and release strategy.",
+  "certificates/README.md": "Twenty-one verified Anthropic Academy course completion certificates earned by Amey Thakur, with previews and verification links."
+}
