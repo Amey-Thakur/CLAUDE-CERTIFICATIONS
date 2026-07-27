@@ -37,6 +37,16 @@
   display: none;
 }
 
+/* Footer links carry the theme color so the maintainer credit reads as a link. */
+.md-footer-copyright a {
+  color: var(--md-primary-fg-color--light);
+}
+
+.md-footer-copyright a:hover {
+  color: var(--md-accent-fg-color);
+  text-decoration: underline;
+}
+
 /* Mermaid pie and timeline text stays readable in dark mode; slice
    percentage labels keep their dark fill against the colored slices. */
 [data-md-color-scheme="slate"] .mermaid .pieTitleText,
