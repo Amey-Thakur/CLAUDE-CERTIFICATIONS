@@ -19,10 +19,9 @@ This site is the readable version of the [CLAUDE-CERTIFICATIONS repository](http
   <script async defer src="https://buttons.github.io/buttons.js"></script>
 </p>
 
-[![Latest release](https://img.shields.io/github/v/release/Amey-Thakur/CLAUDE-CERTIFICATIONS?style=flat-square&color=c15f3c&label=release)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/releases)
-[![Checks](https://img.shields.io/github/actions/workflow/status/Amey-Thakur/CLAUDE-CERTIFICATIONS/checks.yml?branch=main&style=flat-square&label=checks)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/actions/workflows/checks.yml)
-[![Links](https://img.shields.io/github/actions/workflow/status/Amey-Thakur/CLAUDE-CERTIFICATIONS/links.yml?branch=main&style=flat-square&label=links)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/actions/workflows/links.yml)
-[![License](https://img.shields.io/github/license/Amey-Thakur/CLAUDE-CERTIFICATIONS?style=flat-square&color=lightgrey)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/blob/main/LICENSE)
+[![Checks](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/actions/workflows/checks.yml/badge.svg)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/actions/workflows/checks.yml)
+[![Release](https://img.shields.io/github/v/release/Amey-Thakur/CLAUDE-CERTIFICATIONS?label=release&color=c15f3c)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/releases/latest)
+[![License](https://img.shields.io/badge/license-MIT-lightgrey)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/blob/main/LICENSE)
 
 ## The certifications
 
