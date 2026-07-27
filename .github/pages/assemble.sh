@@ -76,7 +76,9 @@ for rel, desc in json.loads(Path('.github/pages/descriptions.json').read_text(en
     p = Path('site-src') / rel
     text = p.read_text(encoding='utf-8')
     if not text.startswith('---'):
-        p.write_text(f'---\ndescription: {desc}\n---\n\n{text}', encoding='utf-8')
+        # Quoted: descriptions contain colons, which are YAML mapping syntax unquoted.
+        safe = desc.replace('"', "'")
+        p.write_text(f'---\ndescription: "{safe}"\n---\n\n{text}', encoding='utf-8')
 PY
 printf 'User-agent: *\nAllow: /\nSitemap: https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/sitemap.xml\n' > site-src/robots.txt
 

@@ -17,6 +17,10 @@ collected and organized so you can spend your time studying, not searching.
 
 Built and maintained by [Amey Thakur](https://github.com/Amey-Thakur) after completing the program's curriculum. This is a community resource, not an official Anthropic repository: the official program lives on [Anthropic Partner Academy](https://anthropic-partners.skilljar.com/), and exams are delivered by [Pearson VUE](https://www.pearsonvue.com/us/en/anthropic.html).
 
+> I worked through every course and collected all of this while preparing myself. None of it required anything you do not already have: the official material is free, the blueprints tell you exactly what is tested, and the rest is steady work. I put it in one place so your time goes into learning rather than looking. If it helps you get certified, it did its job.
+>
+> — Amey
+
 ## The certifications
 
 Each certification has its own folder containing the study guide, the official exam guide PDF, the maintainer's study notes, and original practice questions.
