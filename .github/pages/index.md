@@ -40,7 +40,7 @@ end to end| RF[Architect - Foundations]
 ```
 
 1. **Pick your exam** with the table above, or read [how the certifications connect](guide/learning-paths.md).
-2. **Study** with your exam's study guide and notes, the [study strategy](guide/study-strategy.md), and the [courses](guide/learning-paths.md) that prepare for it.
+2. **Study** with your exam's study guide and notes, the [study strategy](guide/study-strategy.md), the [courses](guide/learning-paths.md) and [official resources](guide/resources.md) that teach the material, and [practice with Claude](guide/practice.md) to test yourself against the blueprint.
 3. **Book and sit** with the [registration guide](guide/registration.md); [policies](guide/policies.md) and the [FAQ](guide/faq.md) cover the rest.
 
 ## The maintainer's certificates
