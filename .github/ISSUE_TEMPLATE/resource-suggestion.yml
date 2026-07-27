@@ -1,0 +1,22 @@
+name: Resource suggestion
+description: An official resource or improvement this repository should include
+title: "Suggestion: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: What should be added or improved
+    validations:
+      required: true
+  - type: input
+    id: source
+    attributes:
+      label: Official source, if this is a resource
+      placeholder: https://anthropic-partners.skilljar.com/
+  - type: textarea
+    id: why
+    attributes:
+      label: Why it helps candidates
+    validations:
+      required: true

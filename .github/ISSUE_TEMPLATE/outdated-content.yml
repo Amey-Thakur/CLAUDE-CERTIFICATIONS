@@ -1,0 +1,26 @@
+name: Outdated or incorrect content
+description: A documented fact no longer matches the official program
+title: "Outdated: "
+labels: [documentation]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Where
+      description: The page containing the outdated fact
+      placeholder: docs/exam-faq.md
+    validations:
+      required: true
+  - type: textarea
+    id: current
+    attributes:
+      label: What the repository says
+    validations:
+      required: true
+  - type: textarea
+    id: correct
+    attributes:
+      label: What is actually true, with the official source
+      description: A link to the Partner Academy page or official PDF that shows the current fact
+    validations:
+      required: true

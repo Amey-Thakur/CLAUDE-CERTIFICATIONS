@@ -1,0 +1,10 @@
+{
+  // Shared config for markdownlint-cli2, used by CI and editors.
+  "default": true,
+  // Long lines are fine; prose is not wrapped.
+  "MD013": false,
+  // Bold lead-ins are used deliberately for domain lists.
+  "MD036": false,
+  // Duplicate headings are allowed when not siblings (changelog sections).
+  "MD024": { "siblings_only": true }
+}

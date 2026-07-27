@@ -1,0 +1,6 @@
+{
+  // GitHub templates render inside the app UI, so a top-level heading
+  // would duplicate the page title.
+  "extends": "../.markdownlint.jsonc",
+  "MD041": false
+}

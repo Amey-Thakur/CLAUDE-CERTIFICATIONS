@@ -1,0 +1,25 @@
+name: Broken link or error
+description: A link is dead, a file will not open, or something in the repository is broken
+title: "Broken: "
+labels: [bug]
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Where
+      description: The page or file containing the problem
+      placeholder: docs/exam-registration.md
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is broken
+      description: The link, file, or behavior, and what happens when you try it
+    validations:
+      required: true
+  - type: input
+    id: replacement
+    attributes:
+      label: Working replacement, if known
+      placeholder: https://
