@@ -38,12 +38,14 @@
 }
 
 /* Footer links carry the theme color so the maintainer credit reads as a link. */
+.md-footer-meta .md-footer-copyright a,
 .md-footer-copyright a {
-  color: var(--md-primary-fg-color--light);
+  color: var(--md-primary-fg-color--light) !important;
 }
 
+.md-footer-meta .md-footer-copyright a:hover,
 .md-footer-copyright a:hover {
-  color: var(--md-accent-fg-color);
+  color: var(--md-accent-fg-color) !important;
   text-decoration: underline;
 }
 

@@ -6,8 +6,7 @@ Official references: the [exam registration guide](exam-registration-guide.pdf) 
 
 ```mermaid
 flowchart LR
-    A[Certification page on
-Partner Academy] --> B[Register and pay]
+    A[Certification page on Partner Academy] --> B[Register and pay]
     B --> C[Create Pearson VUE account]
     C --> D[Schedule: online or test center]
     D --> E[System test and machine prep]
@@ -72,8 +71,7 @@ flowchart TD
     S2 --> S3[Close blocking applications]
     S3 --> T2[Run the test again]
     T2 -->|passes| OK
-    T2 -->|still fails| ALT[Personal computer on a personal network,
-or book a Pearson test center]
+    T2 -->|still fails| ALT[Personal computer on a personal network, or book a Pearson test center]
 ```
 
 The official recommendation when the corporate machine cannot be fixed is one of two alternatives: use a personal computer on a personal network, or book a Pearson test center instead.
@@ -99,15 +97,11 @@ Testing accommodations are requested through [Pearson's accommodation process](h
 ```mermaid
 flowchart TD
     P{What kind of problem?}
-    P -->|Scheduling, proctoring,
-exam day| PV[Pearson VUE support]
+    P -->|Scheduling, proctoring, exam day| PV[Pearson VUE support]
     P -->|Digital badge| CR[Credly support]
-    P -->|Partner domain
-or crediting| PS[partner-support]
-    P -->|Name correction
-or record transfer| CS[certifications-support]
-    P -->|Academy platform
-or course access| AS[academy-support]
+    P -->|Partner domain or crediting| PS[partner-support]
+    P -->|Name correction or record transfer| CS[certifications-support]
+    P -->|Academy platform or course access| AS[academy-support]
 ```
 
 | Issue | Contact |

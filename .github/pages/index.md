@@ -30,12 +30,9 @@ Every exam: 120 minutes, closed book, proctored by Pearson VUE online or at a te
 ```mermaid
 flowchart TD
     Q{What do you do?}
-    Q -->|Advise customers and
-run engagements| A[Associate - Foundations]
-    Q -->|Build with the API,
-Claude Code, or MCP| D[Developer - Foundations]
-    Q -->|Design solutions
-end to end| RF[Architect - Foundations]
+    Q -->|Advise customers and run engagements| A[Associate - Foundations]
+    Q -->|Build with the API, Claude Code, or MCP| D[Developer - Foundations]
+    Q -->|Design solutions end to end| RF[Architect - Foundations]
     RF -. then .-> RP[Architect - Professional]
 ```
 
