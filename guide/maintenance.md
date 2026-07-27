@@ -26,7 +26,7 @@ Every documentation page carries a "facts last verified" date in its footer. Upd
 python .github/scripts/update_resources.py
 ```
 
-The script re-downloads every mirrored official PDF, verifies each file is a valid PDF, and reports which files changed by hash. If an exam guide changed, diff the exam facts (version, item counts, domains, weights, fees) against the matching documentation page, update the page, update its footer date, and record the change in CHANGELOG.md.
+The script re-downloads every mirrored official PDF, verifies each file is a valid PDF, and reports which files changed by hash. If an exam guide changed, diff the exam facts (version, item counts, domains, weights, fees) against the matching documentation page, update the page, update its footer date, and note the change in the next release.
 
 **When Anthropic announces changes.** Program changes have historically landed as dated cutovers (the June 30, 2026 Pearson migration; the August 31, 2026 Global Premier discount expiry). Dated facts like these are written into the pages deliberately so that stale ones are findable: search the docs for the current year to audit them.
 
@@ -41,13 +41,13 @@ The script re-downloads every mirrored official PDF, verifies each file is a val
 
 ## Release strategy
 
-The repository uses semantic-flavored releases recorded in [CHANGELOG.md](../CHANGELOG.md):
+The repository uses semantic-flavored [GitHub releases](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/releases), with the change summary written in the release notes:
 
 - **Major**: structural reorganization, or coverage of a new certification program area
 - **Minor**: new documents, new mirrored PDFs, updated exam guide versions
 - **Patch**: corrections, refreshed dates, link fixes
 
-Tag releases as `vX.Y.Z`. A release is warranted whenever the mirrored PDFs change or a certification's facts change, so that anyone consuming the repository can pin a known-good state.
+Tag releases as `vX.Y.Z`. A release is warranted whenever the mirrored PDFs change or a certification's facts change, so that anyone consuming the repository can pin a known-good state. Release notes carry the dated record of what changed, since commit messages are uniform by convention.
 
 ## Repository settings worth preserving
 
@@ -64,7 +64,7 @@ When adding or renaming a page, add it to the nav section of .github/mkdocs.yml,
 
 ## Takedown stance
 
-The mirrored PDFs are Anthropic's property, republished here for candidate convenience with full attribution. If Anthropic or its representatives request removal, remove the files promptly, leave the source links in place, and note the change in the changelog.
+The mirrored PDFs are Anthropic's property, republished here for candidate convenience with full attribution. If Anthropic or its representatives request removal, remove the files promptly, leave the source links in place, and note the change in the next release.
 
 ---
 

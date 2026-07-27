@@ -24,6 +24,5 @@ mv site-src/certificates/README.md.tmp site-src/certificates/README.md
 BLOB="https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/blob/main"
 find site-src -name '*.md' -exec sed -i \
   -e "s|(../.github/CONTRIBUTING.md#discussions)|(${BLOB}/.github/CONTRIBUTING.md#discussions)|g" \
-  -e "s|(../CHANGELOG.md)|(${BLOB}/CHANGELOG.md)|g" \
   -e "s|(../README.md)|(../index.md)|g" \
   {} +

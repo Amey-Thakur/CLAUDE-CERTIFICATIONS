@@ -100,7 +100,7 @@ def main() -> int:
         print("https://anthropic-partners.skilljar.com/page/partner-certifications and update RESOURCES.")
     elif not check_only:
         print("\nDone. If files changed: review them, update the dates in guide/official-sources.md,")
-        print("check the affected docs pages, and record the change in CHANGELOG.md.")
+        print("check the affected docs pages, and note the change in the next release.")
 
     return 1 if failures else 0
 
