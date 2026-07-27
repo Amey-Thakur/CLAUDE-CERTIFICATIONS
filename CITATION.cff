@@ -4,8 +4,7 @@
 #   and to format the reference, so anyone can credit this project correctly in
 #   papers, posts, and other work.
 # License: MIT
-# Authors: Amey Thakur (https://github.com/Amey-Thakur)
-#          Archit Konde (https://github.com/Archit-Konde)
+# Author: Amey Thakur (https://github.com/Amey-Thakur)
 # Date: 2026-07-27
 cff-version: 1.2.0
 title: "Claude Certifications: study guides and official resources for the Anthropic Claude certification program"
@@ -16,10 +15,6 @@ authors:
     family-names: Thakur
     email: ameythakur20@gmail.com
     website: "https://github.com/Amey-Thakur"
-  - given-names: Archit
-    family-names: Konde
-    email: architkonde19@gmail.com
-    website: "https://github.com/Archit-Konde"
 repository-code: "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS"
 url: "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS"
 license: MIT
