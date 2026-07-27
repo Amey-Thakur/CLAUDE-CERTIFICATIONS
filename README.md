@@ -11,6 +11,12 @@ collected and organized so you can spend your time studying, not searching.
 
 [Website](https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/) · [Certifications](#the-certifications) · [Start here](#start-here) · [Program guide](guide/README.md) · [Certificates](certificates/README.md) · [Discussions](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/discussions)
 
+[![Latest release](https://img.shields.io/github/v/release/Amey-Thakur/CLAUDE-CERTIFICATIONS?style=flat-square&color=c15f3c&label=release)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/releases)
+[![Checks](https://img.shields.io/github/actions/workflow/status/Amey-Thakur/CLAUDE-CERTIFICATIONS/checks.yml?branch=main&style=flat-square&label=checks)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/actions/workflows/checks.yml)
+[![Links](https://img.shields.io/github/actions/workflow/status/Amey-Thakur/CLAUDE-CERTIFICATIONS/links.yml?branch=main&style=flat-square&label=links)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/actions/workflows/links.yml)
+[![Website](https://img.shields.io/github/actions/workflow/status/Amey-Thakur/CLAUDE-CERTIFICATIONS/pages.yml?branch=main&style=flat-square&color=4f7d8c&label=website)](https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/)
+[![License](https://img.shields.io/github/license/Amey-Thakur/CLAUDE-CERTIFICATIONS?style=flat-square&color=lightgrey)](LICENSE)
+
 </div>
 
 ---
