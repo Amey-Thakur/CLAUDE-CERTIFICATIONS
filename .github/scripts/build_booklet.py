@@ -53,8 +53,12 @@ body {
 }
 .page {
   position: relative;
+  display: flex; flex-direction: column;
   width: 297mm; height: 210mm;
-  padding: 16mm 18mm 14mm;
+  /* The footer is absolutely positioned 8mm from the bottom and stands about
+     11mm tall, so the content box has to stop clear of it rather than run
+     underneath. Everything below is measured against the 170mm that leaves. */
+  padding: 16mm 18mm 24mm;
   page-break-after: always;
   overflow: hidden;
   background: #faf9f5;
@@ -73,8 +77,14 @@ a { color: #c15f3c; text-decoration: none; }
 a:hover { text-decoration: underline; }
 .foot a { color: #6b6862; }
 .cols { display: flex; gap: 10mm; }
-.col { flex: 1; }
-img.full { width: 100%; height: auto; display: block; border: 1px solid #e0ddd4; border-radius: 2mm; }
+.cols.grow { flex: 1 0 auto; }
+.col { flex: 1; display: flex; flex-direction: column; }
+.col > * { flex-shrink: 0; }
+/* An illustration takes the height left over on its page and scales to it,
+   so the picture is as large as the page allows and no gap is left below. */
+.media { flex: 1; min-height: 0; display: flex; align-items: center; justify-content: center; }
+.media img { max-width: 100%; max-height: 100%; width: auto; height: auto;
+             display: block; border: 1px solid #e0ddd4; border-radius: 2mm; }
 table { width: 100%; border-collapse: collapse; font-size: 9.5pt; }
 th { text-align: left; font-size: 8.5pt; text-transform: uppercase; letter-spacing: 0.5pt;
      color: #8a857c; font-weight: 700; padding: 0 0 1.5mm; border-bottom: 1px solid #e0ddd4; }
@@ -102,6 +112,19 @@ li { margin-bottom: 1.2mm; }
 .kv div { min-width: 24mm; }
 .kv .v { font-size: 15pt; font-weight: 600; color: #1f1e1b; }
 .kv .k { font-size: 8.5pt; color: #8a857c; }
+/* Declared last so it outranks the margin shorthand of whatever it moves. */
+.push { margin-top: auto; }
+.blueprint td { vertical-align: middle; }
+.contents td { padding: 5.6mm 0; font-size: 10.5pt; }
+.roomy p, .roomy li { font-size: 11.5pt; line-height: 1.8; }
+.roomy .lead { font-size: 13pt; }
+.roomy .small { font-size: 10pt; }
+.roomy .callout { font-size: 11pt; line-height: 1.75; }
+.roomy ol, .roomy ul { line-height: 1.8; }
+.roomy li { margin-bottom: 2.4mm; }
+.tight p, .tight li { font-size: 9.8pt; line-height: 1.5; }
+.tight h3 { margin-bottom: 1.8mm; }
+.tight .callout { font-size: 9.5pt; }
 """
 
 ACCENTS = {"associate-foundations": "#c15f3c", "developer-foundations": "#7d8c5c",
@@ -116,19 +139,39 @@ def foot(label, number=None):
             f'<span class="spacer">{label}</span>{page_no}</div>')
 
 
-def page(body, label="Claude Certifications", accent=None):
+def page(body, label="Claude Certifications", accent=None, cls="", title=None):
     """A page is stamped with its part label; numbering is applied at assembly."""
     band = f'<div class="rule-top" style="background:{accent}"></div>' if accent else '<div class="rule-top"></div>'
-    return f'<section class="page" data-label="{label}">{band}{body}__FOOT__</section>'
+    named = f' data-title="{title}"' if title else ""
+    return f'<section class="{("page " + cls).strip()}" data-label="{label}"{named}>{band}{body}__FOOT__</section>'
+
+
+def page_title(html):
+    """The heading a page introduces itself with, used to build the openers."""
+    named = re.search(r'data-title="([^"]+)"', html)
+    if named:
+        return named.group(1)
+    m = re.search(r"<h1[^>]*>(.*?)</h1>", html, re.S) or re.search(r"<h2[^>]*>(.*?)</h2>", html, re.S)
+    return re.sub(r"<[^>]+>", "", m.group(1)).strip() if m else "Continued"
 
 
 def part_opener(number, title, blurb, contents, accent):
-    items = "".join(f'<li>{c}</li>' for c in contents)
-    return page(f'''<div style="display:flex;flex-direction:column;height:100%;justify-content:center;max-width:200mm">
-        <div style="font-size:12pt;font-weight:700;letter-spacing:1.4pt;color:{accent}">PART {number}</div>
-        <h1 style="font-size:38pt;margin-top:3mm">{title}</h1>
-        <p class="lead" style="font-size:13pt;max-width:170mm">{blurb}</p>
-        <ul style="margin-top:4mm;font-size:11pt;color:#6b6862">{items}</ul>
+    """The pages in this part, with their numbers, so the opener is a way in
+    rather than a title card. The list is derived from the pages themselves."""
+    rows = "".join(
+        f'<tr><td style="padding:3.6mm 0">{heading}</td>'
+        f'<td style="width:12mm;text-align:right;font-weight:600;color:{accent}">{num}</td></tr>'
+        for heading, num in contents)
+    return page(f'''<div class="cols grow" style="gap:16mm">
+        <div class="col" style="justify-content:center">
+          <div style="font-size:12pt;font-weight:700;letter-spacing:1.4pt;color:{accent}">PART {number}</div>
+          <h1 style="font-size:40pt;margin-top:3mm">{title}</h1>
+          <p class="lead" style="font-size:13pt">{blurb}</p>
+        </div>
+        <div class="col" style="justify-content:center;max-width:104mm">
+          <h3>In this part</h3>
+          <table><tbody>{rows}</tbody></table>
+        </div>
       </div>''', f"Part {number}: {title}", accent)
 
 
@@ -162,7 +205,7 @@ def cover():
 def foreword():
     return page(f'''<h3>A note from {AUTHOR}</h3>
       <h1 style="font-size:25pt;max-width:200mm">Why this booklet exists</h1>
-      <div class="cols" style="margin-top:2mm">
+      <div class="cols grow" style="margin-top:2mm">
         <div class="col">
           <p>I sat down to prepare for these certifications and found the material scattered: the blueprint in one
           PDF, the policies in another, the courses on a platform behind a sign-in, the registration mechanics
@@ -183,11 +226,11 @@ def foreword():
           <p>Read the roadmap, pick the exam that matches the work you already do, and work its page. Keep the cheat
           sheet for the day before. If a fact here disagrees with the official exam guide, believe the guide, and
           please tell me so I can fix it.</p>
-          <div class="callout" style="margin-top:4mm">I put this in one place so your time goes into learning rather
-          than looking. If it helps you get certified, it did its job. Good luck.
+          <div class="callout push" style="margin-bottom:0">I put this in one place so your time goes
+          into learning rather than looking. If it helps you get certified, it did its job. Good luck.
           <div style="margin-top:2.5mm;font-weight:600">{AUTHOR}</div></div>
         </div>
-      </div>''', "A note from the author")
+      </div>''', "A note from the author", cls="roomy")
 
 
 def contents(entries):
@@ -201,8 +244,8 @@ def contents(entries):
     return page(f'''<h1>What is in this booklet</h1>
       <p class="lead muted" style="max-width:205mm">Five parts, in the order a candidate needs them: choose the exam,
       learn what it measures, prepare for it, sit it, and know where to go afterwards.</p>
-      <table style="margin-top:5mm"><tbody>{"".join(rows)}</tbody></table>
-      <div class="callout" style="margin-top:5mm"><strong>How to use it.</strong> If you already know which exam you
+      <table class="contents" style="margin-top:3mm"><tbody>{"".join(rows)}</tbody></table>
+      <div class="callout push" style="margin-bottom:0"><strong>How to use it.</strong> If you already know which exam you
       are taking, go straight to its pages in Part 2 and keep the cheat sheet for the day before. Everything here is
       derived from the official exam guides, which remain the authoritative source and are mirrored in the
       repository.</div>''', "Contents")
@@ -212,7 +255,7 @@ def contents(entries):
 def image_page(title, blurb, image, label, note=None):
     tail = (f'<p class="small" style="margin-top:3mm">{note}</p>') if note else ""
     return page(f'''<h2>{title}</h2><p class="muted" style="max-width:210mm">{blurb}</p>
-      <img class="full" src="{data_uri(image)}" alt="{title}" style="margin-top:3mm;max-height:128mm;object-fit:contain">{tail}''', label)
+      <div class="media" style="margin-top:3mm"><img src="{data_uri(image)}" alt="{title}"></div>{tail}''', label)
 
 
 def flashcard_page(label):
@@ -221,13 +264,11 @@ def flashcard_page(label):
       <p class="muted" style="max-width:210mm">Every fact, domain weight, rule, and glossary term in this booklet is
       also a flashcard. One hundred and ten of them, generated from the same source as everything you have read, so
       they cannot drift out of date.</p>
-      <div class="cols" style="margin-top:4mm">
-        <div class="col"><img class="full" src="{data_uri("flashcard-front.png")}"
-          alt="A flashcard asking which domain carries the most weight on the Developer Foundations exam"
-          style="max-height:74mm;object-fit:contain"></div>
-        <div class="col"><img class="full" src="{data_uri("flashcard-back.png")}"
-          alt="The same card turned over, showing applications and integration at 33 percent"
-          style="max-height:74mm;object-fit:contain"></div>
+      <div class="cols grow" style="margin-top:4mm">
+        <div class="col"><div class="media"><img src="{data_uri("flashcard-front.png")}"
+          alt="A flashcard asking which domain carries the most weight on the Developer Foundations exam"></div></div>
+        <div class="col"><div class="media"><img src="{data_uri("flashcard-back.png")}"
+          alt="The same card turned over, showing applications and integration at 33 percent"></div></div>
       </div>
       <p class="small" style="margin-top:4mm">Turn them in the browser, filtered by exam or by topic, at
       {link(SITE + "/guide/flashcards", SITE_URL + "/guide/flashcards.html")}, or download the deck as a single
@@ -255,7 +296,7 @@ def worked_question_page(label):
           D. Lower the temperature
         </div>
       </div>
-      <div class="cols" style="margin-top:4mm">
+      <div class="cols grow" style="margin-top:4mm">
         <div class="col">
           <h3>The answer is C</h3>
           <p>Agent loops need engineered termination: an iteration budget, detection of repeated identical
@@ -288,7 +329,7 @@ def prompts_page(label):
       <p class="lead muted" style="max-width:215mm">Claude is the most patient tutor you will get, but only if
       you ask properly. These two do more than any others. Type them as written, replacing the
       <span class="fill">coral italics</span> with your own details.</p>
-      <div class="cols" style="margin-top:3mm">
+      <div class="cols grow" style="margin-top:3mm">
         <div class="col">
           <h3>Find out where you actually stand</h3>
           <p class="small">Run this before you study anything. It produces a ranked list, which beats working
@@ -318,7 +359,7 @@ def prompts_page(label):
           rehearsal, and one that reads a real score report and tells you the smallest gap to close, are at
           {link(SITE + "/guide/prompts", SITE_URL + "/guide/prompts.html")}</p>
         </div>
-      </div>''', label)
+      </div>''', label, cls="roomy")
 
 
 def hard_won_page(label):
@@ -367,7 +408,7 @@ def hard_won_page(label):
       <p class="lead muted" style="max-width:220mm">Ten things that are all published somewhere, and that
       almost nobody reads until it is too late to act on them. If you take one page from this booklet, take
       this one.</p>
-      <div class="cols" style="margin-top:3mm;font-size:9.5pt">
+      <div class="cols grow" style="margin-top:3mm;font-size:9.5pt">
         <div class="col">{left}</div>
         <div class="col">{right}</div>
       </div>''', label)
@@ -398,7 +439,8 @@ def proof_page(label):
     strip = "".join(
         f'<img src="data:image/png;base64,'
         f'{base64.b64encode((ROOT / "certificates" / "previews" / s).read_bytes()).decode()}"'
-        f' style="width:23%;border:1px solid #e0ddd4;border-radius:1mm">' for s in shots)
+        f' alt="Course completion certificate for {s[:-4].replace(chr(45), chr(32)).title()}"'
+        f' style="width:18%;border:1px solid #e0ddd4;border-radius:1mm">' for s in shots)
 
     half = (len(groups) + 1) // 2
     left = "".join(block(g) for g in groups[:half])
@@ -410,16 +452,16 @@ def proof_page(label):
       completed before this booklet was written. Each certificate is issued by Anthropic Education, carries its
       own Skilljar verification record, and can be checked by anyone.</p>
 
-      <div style="display:flex;gap:2%;margin:3mm 0 2mm">{strip}</div>
+      <div style="display:flex;justify-content:space-between;margin:2mm 0 1.5mm">{strip}</div>
 
-      <div class="cols">
+      <div class="cols grow">
         <div class="col">{left}</div>
         <div class="col">{right}</div>
       </div>
 
       <p class="small" style="margin-top:2mm">Every certificate, its PDF, and its verification link is at
       {link(SITE + "/certificates", SITE_URL + "/certificates/index.html")}. The courses are free to anyone on
-      the public Academy.</p>''', label)
+      the public Academy.</p>''', label, cls="tight")
 
 
 def glossary_page(label):
@@ -441,7 +483,7 @@ def glossary_page(label):
       <h1 style="font-size:25pt">The words the exams assume you know</h1>
       <p class="lead muted" style="max-width:220mm">The exam guides use these terms without defining them, and
       questions are written on the assumption that you read them the way the programme does. {len(rows)} terms.</p>
-      <div class="cols" style="margin-top:3mm">
+      <div class="cols grow" style="margin-top:3mm">
         <div class="col">{column(rows[:half])}</div>
         <div class="col">{column(rows[half:])}</div>
       </div>''', label)
@@ -464,25 +506,33 @@ def cert_page(cert, label=None):
         <div><div class="v">{cert["fee"]}</div><div class="k">list fee</div></div>
         <div><div class="v">12</div><div class="k">months valid</div></div>
       </div>
-      <div class="cols">
+      <div class="cols grow">
         <div class="col" style="max-width:100mm">
           <h3>Where the marks are</h3>
-          <table><tbody>{domains}</tbody></table>
-          <h3 style="margin-top:5mm">Who it is for</h3>
-          <p style="font-size:10pt">{cert["audience"]}. {cert["note"]}.</p>
+          <!-- The blueprint shares its column, so an exam with five domains
+               fills the page as evenly as one with eight. -->
+          <div style="flex:1;display:flex"><table class="blueprint" style="height:100%">
+            <tbody>{domains}</tbody></table></div>
+          <div style="padding-top:6mm">
+            <h3>Who it is for</h3>
+            <p style="font-size:10pt;margin-bottom:0">{cert["audience"]}. {cert["note"]}.</p>
+          </div>
         </div>
         <div class="col">
           <h3>If you remember nothing else</h3>
           <ol>{rules}</ol>
-          <h3 style="margin-top:4mm">Prepare with</h3>
-          <p style="font-size:9.5pt" class="muted">{prep}</p>
+          <div class="push" style="padding-top:6mm">
+            <h3>Prepare with</h3>
+            <p style="font-size:9.5pt;margin-bottom:0" class="muted">{prep}</p>
+          </div>
         </div>
-      </div>''', label or f'{cert["role"].title()} {cert["level"]}')
+      </div>''', label or f'{cert["role"].title()} {cert["level"]}',
+      title=f'Claude Certified {cert["role"].title()}, {cert["level"]}')
 
 
 def preparing():
     return page('''<h1>Preparing</h1>
-      <div class="cols">
+      <div class="cols grow">
         <div class="col">
           <h3>A method that works</h3>
           <ol>
@@ -510,12 +560,12 @@ def preparing():
           against the blueprint. They are not exam items, and treating any question set as "the real ones" is both a
           policy violation and a poor strategy, because the item bank is confidential and rotates.</div>
         </div>
-      </div>''', "Part 3: Prepare")
+      </div>''', "Part 3: Prepare", cls="roomy")
 
 
 def policies():
     return page('''<h1>Policies and scoring</h1>
-      <div class="cols">
+      <div class="cols grow">
         <div class="col">
           <h3>How the score is built</h3>
           <p>Each exam is criterion-referenced: you are measured against a fixed standard set by subject matter
@@ -541,7 +591,7 @@ def policies():
           Partner Network organizations, registering with a recognised company email. Domain record changes take 7 to
           10 days, so resolve any email problem well before you plan to sit.</div>
         </div>
-      </div>''', "Part 4: Sit it")
+      </div>''', "Part 4: Sit it", cls="roomy")
 
 
 def repository_page():
@@ -551,7 +601,7 @@ def repository_page():
       <p class="lead muted" style="max-width:215mm">This booklet is a snapshot, printed on a date. The repository is
       the living version: maintained, link-checked every week, and updated when Anthropic changes the program. These
       are the things paper cannot do.</p>
-      <div class="cols" style="margin-top:3mm">
+      <div class="cols grow" style="margin-top:3mm">
         <div class="col">
           <h3>Practise, not just read</h3>
           <p>A bank of original practice questions with a shuffled, timed engine that runs in your browser or your
@@ -585,14 +635,14 @@ def repository_page():
           no paywall, no email capture. Take it, use it, fork it, and send it to whoever is studying next.
           <div style="margin-top:2mm;font-weight:600">{link(REPO, REPO_URL)}</div></div>
         </div>
-      </div>''', "Part 5: Keep going")
+      </div>''', "Part 5: Keep going", cls="tight")
 
 
 def closing():
     return page(f'''<h1>Where to go next</h1>
-      <div class="cols">
+      <div class="cols grow">
         <div class="col">
-          <h3>Three places to go</h3>
+          <h3>Four places to go</h3>
           <p style="font-size:11pt"><strong>{link(REPO, REPO_URL)}</strong><br>
           <span class="muted">The repository: practice engine, flashcards, progress tracker, and the mirrored
           official documents.</span></p>
@@ -602,6 +652,9 @@ def closing():
           <p style="font-size:11pt"><strong>{link("anthropic.skilljar.com", "https://anthropic.skilljar.com/")}</strong><br>
           <span class="muted">The official courses, free, without a partner account. Registration and the exams
           run through Anthropic Partner Academy and Pearson VUE.</span></p>
+          <p style="font-size:11pt"><strong>{link(REPO + "/discussions", REPO_URL + "/discussions")}</strong><br>
+          <span class="muted">Questions about preparing, answered where the next candidate can find them. The one
+          firm rule is that real exam content is never posted.</span></p>
         </div>
         <div class="col">
           <h3>If this helped</h3>
@@ -610,14 +663,17 @@ def closing():
           never posted.</p>
           <p>If it saved you time, starring the repository is the whole marketing budget: it is how the next
           candidate searching for this finds it instead of a braindump site.</p>
-          <div class="callout">Whatever you are preparing for, the path is the same: read the blueprint, close the
-          gaps honestly, build something real, and book the date. You do not need permission or a better moment.
-          <div style="margin-top:2.5mm;font-weight:600">{AUTHOR}</div></div>
-          <p class="small">Facts drawn from the official Anthropic exam guides and program pages, verified against
-          them on publication. A community study resource, not affiliated with or endorsed by Anthropic. Claude and
-          Anthropic are trademarks of Anthropic PBC.</p>
         </div>
-      </div>''', "Thank you")
+      </div>
+      <!-- The parting note runs the width of the page rather than sitting in
+           one column, which is what left the last page looking half used. -->
+      <div class="callout" style="margin:0 0 2.5mm">Whatever you are preparing for, the path is the same: read the
+      blueprint, close the gaps honestly, build something real, and book the date. You do not need permission or a
+      better moment.
+      <span style="font-weight:600;margin-left:1mm">{AUTHOR}</span></div>
+      <p class="small" style="margin-bottom:0">Facts drawn from the official Anthropic exam guides and program
+      pages, verified against them on publication. A community study resource, not affiliated with or endorsed by
+      Anthropic. Claude and Anthropic are trademarks of Anthropic PBC.</p>''', "Thank you", cls="roomy")
 
 
 def build_html():
@@ -630,7 +686,6 @@ def build_html():
     parts.append((1, "Choose your exam",
                   "Four certifications across three roles, with no prerequisites in either direction. Pick the one "
                   "that matches the work you already do.",
-                  ["Which certification is yours", "The roadmap: every exam side by side"],
                   [image_page("Which certification is yours?",
                               "Pick the exam that matches the work you already do.",
                               "card-choose-certification.png", "Part 1: Choose your exam"),
@@ -656,17 +711,11 @@ def build_html():
     parts.append((2, "Know your exam",
                   "A page of facts and a cheat sheet for each certification: the blueprint with real domain weights, "
                   "and the rules that decide questions.",
-                  ["Associate, Developer, and both Architect exams",
-                   "The six published Architect Foundations scenarios"],
                   exam_pages))
 
     parts.append((3, "Prepare",
                   "What to study, in what order, and how to practise without touching material you are not allowed "
                   "to touch.",
-                  ["The official curriculum and the exam each course serves",
-                   "A three-week plan that fits alongside a job", "The flashcard deck",
-                   "One question worked through, and two prompts worth keeping",
-                   "A method, and practising within the agreement"],
                   [image_page("The official curriculum",
                               "Every Anthropic course, free on the public Academy, and the exam each one serves.",
                               "card-courses.png", "Part 3: Prepare",
@@ -683,7 +732,6 @@ def build_html():
     parts.append((4, "Sit it",
                   "Booking, proctoring, and the day itself, then what the result means and what happens if it is not "
                   "the one you wanted.",
-                  ["The exam-day checklist", "Scoring, retakes, validity, and renewal"],
                   [image_page("Exam day", "Most failed sittings are logistics, not knowledge.",
                               "card-exam-day.png", "Part 4: Sit it",
                               f'The complete network allowlist and application shutdown list are at {link(SITE, SITE_URL)}'),
@@ -694,16 +742,12 @@ def build_html():
 
     parts.append((5, "Keep going",
                   "You now have everything the exam asks of you. What follows is where to find the parts that keep moving.",
-                  ["The vocabulary the exams assume", "The twenty-one course certificates behind it",
-                   "What the living version does that paper cannot", "Where to go next"],
                   [glossary_page("Part 5: Keep going"), proof_page("Part 5: Keep going"),
                    repository_page(), closing()]))
 
     # First pass: lay out pages so the contents can carry real numbers.
     pages, entries = [], []
-    layout = []
-    for num, title, blurb, bullets, body_pages in parts:
-        layout.append((num, title, blurb, bullets, body_pages))
+    layout = list(parts)
 
     # The front matter is assembled first so the contents can count it rather
     # than assume it. Adding a front page now corrects the page numbers itself.
@@ -711,14 +755,16 @@ def build_html():
     contents_at = front.index(None)
 
     running = len(front) + 1
-    for num, title, blurb, bullets, body_pages in layout:
+    part_contents = []
+    for num, title, blurb, body_pages in layout:
         entries.append((num, title, blurb, running))
+        part_contents.append([(page_title(b), running + 1 + i) for i, b in enumerate(body_pages)])
         running += 1 + len(body_pages)
 
     front[contents_at] = contents(entries)
     pages.extend(front)
-    for i, (num, title, blurb, bullets, body_pages) in enumerate(layout):
-        pages.append(part_opener(num, title, blurb, bullets, accents[i]))
+    for i, (num, title, blurb, body_pages) in enumerate(layout):
+        pages.append(part_opener(num, title, blurb, part_contents[i], accents[i]))
         pages.extend(body_pages)
 
     numbered = []
