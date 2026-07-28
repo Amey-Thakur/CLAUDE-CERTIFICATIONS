@@ -2,19 +2,19 @@
  "exams": {
   "associate-foundations": {
    "title": "Claude Certified Associate - Foundations",
-   "count": 50
+   "count": 80
   },
   "developer-foundations": {
    "title": "Claude Certified Developer - Foundations",
-   "count": 50
+   "count": 80
   },
   "architect-foundations": {
    "title": "Claude Certified Architect - Foundations",
-   "count": 50
+   "count": 80
   },
   "architect-professional": {
    "title": "Claude Certified Architect - Professional",
-   "count": 50
+   "count": 80
   }
  },
  "questions": [
@@ -769,6 +769,456 @@
    "rationale": "System integrations belong to the Developer and Architect scope; recognizing that boundary is an Associate competency"
   },
   {
+   "id": "associate-foundations-mock-1",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Output Evaluation and Validation",
+   "question": "Claude returns a policy answer that matches your expectation exactly, with no citation. What does the match tell you?",
+   "options": {
+    "A": "The answer is confirmed, since it agrees with your understanding",
+    "B": "The answer is probably correct but should be reworded",
+    "C": "Nothing about accuracy, because agreement with an expectation is not evidence",
+    "D": "The model has read the policy document"
+   },
+   "answer": "C",
+   "rationale": "Agreement with what you already believed is the easiest error to miss, since nothing prompts a check. Neither confirmation (A), rewording (B), nor an assumption about retrieval (D) establishes that the claim is true"
+  },
+  {
+   "id": "associate-foundations-mock-2",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Output Evaluation and Validation",
+   "question": "A colleague asks Claude to check its own earlier answer, and it confirms the answer. How much weight does the confirmation carry?",
+   "options": {
+    "A": "None on its own, because the check is not independent of the thing being checked",
+    "B": "Substantial, because the model reviewed its own reasoning",
+    "C": "Substantial if the confirmation is detailed",
+    "D": "It depends on the model used"
+   },
+   "answer": "A",
+   "rationale": "Self-review is not an independent source and cannot establish correctness. Detail (C) and model choice (D) do not make a self-check independent"
+  },
+  {
+   "id": "associate-foundations-mock-3",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Output Evaluation and Validation",
+   "question": "A report drafted with Claude contains one figure you cannot verify from any available source. What is the appropriate handling before circulation?",
+   "options": {
+    "A": "Circulate it with a general disclaimer about AI assistance",
+    "B": "Keep the figure and mark it as an estimate",
+    "C": "Ask Claude to provide a source and keep whatever it returns",
+    "D": "Remove the figure and note that it could not be verified"
+   },
+   "answer": "D",
+   "rationale": "An unverifiable claim should not be presented as fact, and a labelled gap is honest. A blanket disclaimer (A) does not address the specific figure, an unfounded estimate (B) misrepresents it, and a citation produced on demand (C) needs the same verification"
+  },
+  {
+   "id": "associate-foundations-mock-4",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Workflow Integration and Solution Design",
+   "question": "Which of these is the strongest candidate to hand to Claude in a monthly close process?",
+   "options": {
+    "A": "Approving the final journal entries",
+    "B": "Drafting the variance commentary from figures that are already agreed",
+    "C": "Deciding which variances require investigation",
+    "D": "Signing off the reconciliation"
+   },
+   "answer": "B",
+   "rationale": "Drafting from agreed inputs is bounded and checkable. Approval (A), sign-off (D), and the decision about what to investigate (C) all carry accountability"
+  },
+  {
+   "id": "associate-foundations-mock-5",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Workflow Integration and Solution Design",
+   "question": "A workflow produces good output but nobody uses it. What should be examined first?",
+   "options": {
+    "A": "Whether the model should be upgraded",
+    "B": "Whether the output arrives where the work actually happens, in a form people can act on",
+    "C": "Whether the prompt is long enough",
+    "D": "Whether more people need training"
+   },
+   "answer": "B",
+   "rationale": "Adoption usually fails on fit with the existing process rather than on output quality. Model (A) and prompt length (C) address quality that is already acceptable, and training (D) treats a symptom"
+  },
+  {
+   "id": "associate-foundations-mock-6",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Governance, Risk, and Responsible Use",
+   "question": "A team wants to paste anonymised customer feedback into Claude for theme analysis. What remains a risk after names are removed?",
+   "options": {
+    "A": "Nothing, since anonymisation removes the risk entirely",
+    "B": "The model may store the text permanently",
+    "C": "Theme analysis is unreliable on anonymised data",
+    "D": "Free text can still identify people through specific details, so review before sending is still needed"
+   },
+   "answer": "D",
+   "rationale": "Removing names does not remove identifying detail from free text, which is why a review step remains. Treating anonymisation as complete (A) is the error tested, and neither storage assumptions (B) nor reliability (C) is the governance issue here"
+  },
+  {
+   "id": "associate-foundations-mock-7",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Governance, Risk, and Responsible Use",
+   "question": "Who should decide whether a Claude-assisted output is fit to send to a customer?",
+   "options": {
+    "A": "The person accountable for the customer relationship",
+    "B": "Whoever wrote the prompt",
+    "C": "The model, if asked to assess its own output",
+    "D": "Nobody, if the workflow was approved in advance"
+   },
+   "answer": "A",
+   "rationale": "Accountability for the outgoing communication decides the question. Prompt authorship (B) is incidental, self-assessment (C) is not independent, and prior approval of a workflow (D) does not review this instance"
+  },
+  {
+   "id": "associate-foundations-mock-8",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Prompting and Task Execution",
+   "question": "A prompt works well until the input document is much longer than usual, when quality drops. What is the most likely explanation?",
+   "options": {
+    "A": "The model became less capable",
+    "B": "The prompt is too short",
+    "C": "The relevant material is now competing with far more surrounding text",
+    "D": "Longer documents always produce worse output"
+   },
+   "answer": "C",
+   "rationale": "Dilution across a much longer input is the usual cause of this pattern. The model has not changed (A), prompt length (B) is not the variable that changed, and length alone is not determinative (D)"
+  },
+  {
+   "id": "associate-foundations-mock-9",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Prompting and Task Execution",
+   "question": "You want the same analysis applied to fifty documents with consistent output. What matters most?",
+   "options": {
+    "A": "Using the largest model available",
+    "B": "Processing the documents in one conversation",
+    "C": "Reviewing only a sample of the outputs",
+    "D": "Fixing the prompt and the required output structure, and applying both unchanged to every document"
+   },
+   "answer": "D",
+   "rationale": "Consistency across a set comes from holding the instruction and the output shape constant. Model size (A) does not create consistency, one long conversation (B) invites drift, and sampling (C) is a review policy rather than a design"
+  },
+  {
+   "id": "associate-foundations-mock-10",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Product and Model Selection",
+   "question": "A task must return an answer within a second for an interactive interface, and the work is simple classification. What follows?",
+   "options": {
+    "A": "Use the most capable model to be safe",
+    "B": "Batch the requests",
+    "C": "Use the smallest model that meets the accuracy requirement, since latency is the binding constraint",
+    "D": "Increase the context supplied"
+   },
+   "answer": "C",
+   "rationale": "With a hard latency requirement and a simple task, the smallest sufficient model is the fit. The most capable model (A) spends latency for accuracy that is not needed, batching (B) breaks interactivity, and more context (D) adds cost and time"
+  },
+  {
+   "id": "associate-foundations-mock-11",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Product and Model Selection",
+   "question": "What is the correct reading of a model's published benchmark score when choosing for a specific business task?",
+   "options": {
+    "A": "It predicts performance on your task",
+    "B": "It is a general signal that does not substitute for evaluating on your own task",
+    "C": "It is irrelevant",
+    "D": "It determines the price you should expect to pay"
+   },
+   "answer": "B",
+   "rationale": "Benchmarks indicate general capability and cannot stand in for measurement on the actual task. Treating them as predictive (A) or irrelevant (C) are both wrong, and they do not set price (D)"
+  },
+  {
+   "id": "associate-foundations-mock-12",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Configuration and Knowledge Management",
+   "question": "Two teams keep separate copies of the same reference documents in their own projects. What is the main risk?",
+   "options": {
+    "A": "The copies drift apart, and the two teams begin answering the same question differently",
+    "B": "Higher storage cost",
+    "C": "Slower responses",
+    "D": "The model becomes confused between projects"
+   },
+   "answer": "A",
+   "rationale": "Duplicated knowledge diverges as each copy is maintained separately, producing inconsistent answers. Storage (B) and speed (C) are minor, and projects do not leak into one another (D)"
+  },
+  {
+   "id": "associate-foundations-mock-13",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Configuration and Knowledge Management",
+   "question": "What is the right first step when setting up a project for a recurring task?",
+   "options": {
+    "A": "Decide what the task needs to know every time, and add only that",
+    "B": "Upload every document the team owns",
+    "C": "Write the longest possible instruction",
+    "D": "Add documents as questions come up, without review"
+   },
+   "answer": "A",
+   "rationale": "A deliberate, minimal base keeps retrieval sharp and is maintainable. Uploading everything (B) and accreting without review (D) both dilute, and instruction length (C) is not the question"
+  },
+  {
+   "id": "associate-foundations-mock-14",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Troubleshooting and Optimization",
+   "question": "A user reports that Claude gave a wrong answer, but you cannot reproduce it. What is the most useful next step?",
+   "options": {
+    "A": "Assume the user made an error",
+    "B": "Obtain the exact prompt, inputs, and configuration they used",
+    "C": "Increase the model size for everyone",
+    "D": "Add a warning to the interface"
+   },
+   "answer": "B",
+   "rationale": "Reproduction depends on the exact conditions, and gathering them is the only way to diagnose. Dismissing the report (A) discards the signal, and a model change (C) or a warning (D) acts before the cause is known"
+  },
+  {
+   "id": "associate-foundations-mock-15",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Troubleshooting and Optimization",
+   "question": "Output quality varies between runs of an identical prompt on identical input. What does this indicate?",
+   "options": {
+    "A": "The system is broken",
+    "B": "The temperature must be zero for all tasks",
+    "C": "Some variation is expected, and the task needs constraints tight enough that the variation does not matter",
+    "D": "The input must be shortened"
+   },
+   "answer": "C",
+   "rationale": "Generation is not deterministic, so the design must tolerate variation within acceptable bounds. Treating it as breakage (A) misreads normal behaviour, a universal temperature rule (B) is too blunt, and input length (D) is unrelated"
+  },
+  {
+   "id": "associate-foundations-mock-1",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Output Evaluation and Validation",
+   "question": "A summary cites a statistic that turns out to be correct. Does that validate the rest of the summary?",
+   "options": {
+    "A": "Yes, one verified claim indicates the whole is reliable",
+    "B": "Yes, if the statistic was the hardest claim",
+    "C": "No, each material claim needs its own check",
+    "D": "Only if the source was named"
+   },
+   "answer": "C",
+   "rationale": "Verification does not generalise from one claim to the others. Treating it as a proxy for the whole (A, B) is the error tested, and naming a source (D) does not verify the remaining claims"
+  },
+  {
+   "id": "associate-foundations-mock-2",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Output Evaluation and Validation",
+   "question": "Claude declines to answer part of a request and explains why. How should this be read?",
+   "options": {
+    "A": "As information about a limit or a policy that is worth understanding before proceeding",
+    "B": "As a failure that should be worked around",
+    "C": "As a sign the prompt was too long",
+    "D": "As a reason to switch models"
+   },
+   "answer": "A",
+   "rationale": "A refusal with a reason is a signal about the task, not an obstacle to route around. Working around it (B) ignores the reason, and neither prompt length (C) nor model choice (D) is indicated"
+  },
+  {
+   "id": "associate-foundations-mock-3",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Output Evaluation and Validation",
+   "question": "You need to know whether a long report supports a specific conclusion. What is the most reliable approach?",
+   "options": {
+    "A": "Ask for a summary and read that",
+    "B": "Ask whether the report supports the conclusion",
+    "C": "Ask for a confidence score",
+    "D": "Ask for the passages that bear on the conclusion, then read those passages yourself"
+   },
+   "answer": "D",
+   "rationale": "Retrieving the evidence and reading it keeps the judgment with you. A summary (A) and a direct verdict (B) hand the judgment to the model, and a confidence score (C) is not evidence"
+  },
+  {
+   "id": "associate-foundations-mock-4",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Workflow Integration and Solution Design",
+   "question": "A manual process takes four hours and produces a document nobody reads. What should happen before automating it?",
+   "options": {
+    "A": "Automate it, since four hours is significant",
+    "B": "Establish whether the document is needed at all",
+    "C": "Automate it and measure adoption afterwards",
+    "D": "Split it across more people"
+   },
+   "answer": "B",
+   "rationale": "Automating unnecessary work makes waste faster. Proceeding regardless (A, C) skips the question, and redistributing it (D) does not address whether it is needed"
+  },
+  {
+   "id": "associate-foundations-mock-5",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Workflow Integration and Solution Design",
+   "question": "Which sequencing is correct when introducing Claude to a recurring team process?",
+   "options": {
+    "A": "Automate the whole process, then refine",
+    "B": "Start with the step that is bounded and checkable, prove it, then extend",
+    "C": "Start with the hardest step, since it has most value",
+    "D": "Let each person adopt it however they prefer"
+   },
+   "answer": "B",
+   "rationale": "A bounded first step produces evidence and trust cheaply. Full automation first (A) risks everything at once, the hardest step (C) is the least likely to succeed early, and uncoordinated adoption (D) produces drift"
+  },
+  {
+   "id": "associate-foundations-mock-6",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Governance, Risk, and Responsible Use",
+   "question": "A policy forbids sending customer data to external services. A colleague asks Claude to summarise a customer email. What applies?",
+   "options": {
+    "A": "Nothing, because summarising is not sending",
+    "B": "The policy only if the customer is named",
+    "C": "Nothing, because the output stays internal",
+    "D": "The policy, since the email is customer data"
+   },
+   "answer": "D",
+   "rationale": "Submitting the content is the act the policy governs. Framing it as summarising (A) or by where the output goes (C) misreads the policy, and it is not limited to named individuals (B)"
+  },
+  {
+   "id": "associate-foundations-mock-7",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Governance, Risk, and Responsible Use",
+   "question": "What is the correct response to a request that a model output be presented as human-written to a customer?",
+   "options": {
+    "A": "Decline to misrepresent it, and raise the disclosure question with whoever owns the relationship",
+    "B": "Comply, since the customer cares about quality not provenance",
+    "C": "Comply if the output was heavily edited",
+    "D": "Comply and record the decision internally"
+   },
+   "answer": "A",
+   "rationale": "Actively misrepresenting provenance is the issue, and it belongs to the person accountable for the relationship. Editing (C) and internal records (D) do not make the representation true, and quality (B) is not the point"
+  },
+  {
+   "id": "associate-foundations-mock-8",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Prompting and Task Execution",
+   "question": "A prompt asks for a recommendation and gets a balanced discussion instead. What is the most likely cause?",
+   "options": {
+    "A": "The model is incapable of recommending",
+    "B": "The temperature is too high",
+    "C": "The prompt did not state that a single recommendation with a reason was required",
+    "D": "The input was too short"
+   },
+   "answer": "C",
+   "rationale": "Output shape follows the instruction, and no decision was requested. Incapability (A) is not the issue, and neither temperature (B) nor input length (D) determines whether a recommendation is given"
+  },
+  {
+   "id": "associate-foundations-mock-9",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Prompting and Task Execution",
+   "question": "What is the most effective way to get output pitched at the right level for a specific audience?",
+   "options": {
+    "A": "Ask for it to be clear",
+    "B": "Ask for a shorter response",
+    "C": "Ask for simpler words",
+    "D": "Name the audience and what they already know"
+   },
+   "answer": "D",
+   "rationale": "Naming the reader and their prior knowledge is what calibrates level. Clarity (A), length (B), and vocabulary (C) are consequences rather than the instruction"
+  },
+  {
+   "id": "associate-foundations-mock-10",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Product and Model Selection",
+   "question": "A colleague uses the largest model for every task including formatting. What should you point out?",
+   "options": {
+    "A": "Nothing, capability is never wasted",
+    "B": "That the largest model is less accurate on simple tasks",
+    "C": "That matching the model to the work saves cost without losing anything on simple tasks",
+    "D": "That formatting should be done manually"
+   },
+   "answer": "C",
+   "rationale": "Fit-to-task is the principle, and simple work does not benefit from extra capability. Capability is not free (A), larger models are not less accurate on simple tasks (B), and manual work (D) is not the alternative"
+  },
+  {
+   "id": "associate-foundations-mock-11",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Product and Model Selection",
+   "question": "When does the choice of interface matter more than the choice of model?",
+   "options": {
+    "A": "Never, the model determines the outcome",
+    "B": "When the obstacle is how people supply context and act on output, not the quality of the answer",
+    "C": "Only for very large teams",
+    "D": "Only when cost is constrained"
+   },
+   "answer": "B",
+   "rationale": "Where adoption or context-supply is the bottleneck, interface dominates. Treating the model as decisive (A) misses that, and neither team size (C) nor cost (D) defines the case"
+  },
+  {
+   "id": "associate-foundations-mock-12",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Configuration and Knowledge Management",
+   "question": "What is the risk of adding a document to project knowledge without removing the version it replaces?",
+   "options": {
+    "A": "Both versions can be drawn on, producing answers that mix current and superseded material",
+    "B": "Storage cost",
+    "C": "Slower responses",
+    "D": "The project will refuse to answer"
+   },
+   "answer": "A",
+   "rationale": "Superseded material remains retrievable and contradicts the current version. Storage (B) and speed (C) are minor, and the project does not refuse (D)"
+  },
+  {
+   "id": "associate-foundations-mock-13",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Configuration and Knowledge Management",
+   "question": "Which is the better test of whether something belongs in project knowledge?",
+   "options": {
+    "A": "Whether every conversation in the project would benefit from it",
+    "B": "Whether it is long enough to be worth uploading",
+    "C": "Whether it was recently created",
+    "D": "Whether it is confidential"
+   },
+   "answer": "A",
+   "rationale": "Recurrence across conversations is what distinguishes shared knowledge from prompt content. Length (B), recency (C), and sensitivity (D) are unrelated to that test"
+  },
+  {
+   "id": "associate-foundations-mock-14",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Troubleshooting and Optimization",
+   "question": "A previously reliable prompt now returns shorter answers than before. What is worth checking first?",
+   "options": {
+    "A": "Whether the model is deprecated",
+    "B": "Whether the input or the instructions changed, including anything added to the project",
+    "C": "Whether the network is slow",
+    "D": "Whether the account has hit a limit"
+   },
+   "answer": "B",
+   "rationale": "A behavioural change points to a change in inputs or configuration. Deprecation (A), network (C), and limits (D) produce errors rather than shorter answers"
+  },
+  {
+   "id": "associate-foundations-mock-15",
+   "exam": "associate-foundations",
+   "source": "mock",
+   "domain": "Troubleshooting and Optimization",
+   "question": "Someone reports that Claude is wrong about a fact that it stated correctly last week. What is the most useful first question?",
+   "options": {
+    "A": "Which model did you use",
+    "B": "How long was the conversation",
+    "C": "What exactly did you ask, and what did it reply",
+    "D": "Have you tried again"
+   },
+   "answer": "C",
+   "rationale": "The exact exchange is what makes the claim examinable. Model (A), length (B), and retrying (D) may matter later but none of them establishes what happened"
+  },
+  {
    "id": "developer-foundations-practice-1",
    "exam": "developer-foundations",
    "source": "practice",
@@ -1517,6 +1967,456 @@
    },
    "answer": "C",
    "rationale": "Traces localize the fault to the integration layer: correct reasoning over wrong inputs is a retrieval defect"
+  },
+  {
+   "id": "developer-foundations-mock-1",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Applications and Integration",
+   "question": "A service sends the same 8,000-token system prompt on every request and cost is dominated by input tokens. What is the first change to evaluate?",
+   "options": {
+    "A": "Rewriting the system prompt to be shorter",
+    "B": "Switching to a cheaper model",
+    "C": "Caching the stable prefix so it is not reprocessed on every call",
+    "D": "Reducing the number of requests"
+   },
+   "answer": "C",
+   "rationale": "A large unchanging prefix repeated per call is what caching addresses, without losing any instruction. Shortening (A) sacrifices capability, a cheaper model (B) trades quality, and fewer requests (D) changes the product"
+  },
+  {
+   "id": "developer-foundations-mock-2",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Applications and Integration",
+   "question": "An endpoint must return within 500 ms but the model needs longer for a good answer. What is the appropriate pattern?",
+   "options": {
+    "A": "Return an acknowledgement immediately and deliver the result through a callback or poll",
+    "B": "Truncate the model's output",
+    "C": "Use the smallest model regardless of quality",
+    "D": "Increase the timeout on the client"
+   },
+   "answer": "A",
+   "rationale": "Decoupling acceptance from completion satisfies the latency contract without degrading the answer. Truncation (B) and a minimal model (C) sacrifice the result, and the timeout (D) is the stated constraint"
+  },
+  {
+   "id": "developer-foundations-mock-3",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Applications and Integration",
+   "question": "What does a stop reason indicating the maximum token limit tell you?",
+   "options": {
+    "A": "The input was too long",
+    "B": "The request was malformed",
+    "C": "The model refused the request",
+    "D": "The output was cut off before the model finished"
+   },
+   "answer": "D",
+   "rationale": "That stop reason reports that generation hit the output ceiling. An oversized input (A) fails before generation, and neither a malformed request (B) nor a refusal (C) produces this reason"
+  },
+  {
+   "id": "developer-foundations-mock-4",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Applications and Integration",
+   "question": "A tool result returns 50,000 tokens of JSON, most of it unused. What is the right fix?",
+   "options": {
+    "A": "Raise the model's context limit",
+    "B": "Change the tool to return only the fields the task needs",
+    "C": "Summarise the JSON with a second model call",
+    "D": "Call the tool less frequently"
+   },
+   "answer": "B",
+   "rationale": "Tools should return what the task requires, which preserves context for reasoning. A larger window (A) delays the problem, a second call (C) adds cost and failure surface, and calling less often (D) does not change the payload"
+  },
+  {
+   "id": "developer-foundations-mock-5",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Applications and Integration",
+   "question": "Which condition warrants a retry with backoff rather than surfacing an error?",
+   "options": {
+    "A": "The request contained an invalid parameter",
+    "B": "The service returned a rate limit or a transient server error",
+    "C": "The model returned an answer you disagree with",
+    "D": "The response exceeded the expected length"
+   },
+   "answer": "B",
+   "rationale": "Rate limits and transient server errors are the recoverable class. An invalid parameter (A) will fail identically, and disagreement (C) or length (D) are not transport failures"
+  },
+  {
+   "id": "developer-foundations-mock-6",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Model Selection and Optimization",
+   "question": "A workload runs nightly over 50,000 records with no interactive requirement. Which choice reduces cost most?",
+   "options": {
+    "A": "Streaming each request",
+    "B": "Using the largest model for accuracy",
+    "C": "Increasing concurrency against the standard endpoint",
+    "D": "Submitting the work as a batch"
+   },
+   "answer": "D",
+   "rationale": "Large, uniform, latency-tolerant work is exactly the batch case, and it is materially cheaper. Streaming (A) serves interactive use, the largest model (B) raises cost, and concurrency (C) does not change unit price"
+  },
+  {
+   "id": "developer-foundations-mock-7",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Model Selection and Optimization",
+   "question": "Accuracy on a simple extraction task is identical between a small and a large model. What should be deployed?",
+   "options": {
+    "A": "The small model, since it meets the requirement at lower cost",
+    "B": "The large model, in case inputs change",
+    "C": "Both, alternating between them",
+    "D": "The newest model available"
+   },
+   "answer": "A",
+   "rationale": "Where the requirement is met, the cheaper option is correct, and changing inputs are handled by re-evaluating. Insurance against hypothetical change (B), alternation (C), and recency (D) all spend without benefit"
+  },
+  {
+   "id": "developer-foundations-mock-8",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Model Selection and Optimization",
+   "question": "A task requires the model to plan across many interacting constraints and revise as it goes. What does this argue for?",
+   "options": {
+    "A": "The smallest model, to keep cost down",
+    "B": "Splitting the task across several small models",
+    "C": "A more capable model, since the work is reasoning-heavy",
+    "D": "A longer prompt with the same model"
+   },
+   "answer": "C",
+   "rationale": "Multi-step reasoning under interacting constraints is where capability differences show. A small model (A) and splitting (B) both fragment the reasoning, and prompt length (D) does not add capability"
+  },
+  {
+   "id": "developer-foundations-mock-9",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Agents and Workflows",
+   "question": "An agent is given ten tools, three of which overlap in purpose. What is the likely consequence?",
+   "options": {
+    "A": "Faster execution, since more options are available",
+    "B": "Lower token cost",
+    "C": "Better error handling",
+    "D": "More frequent wrong tool selection"
+   },
+   "answer": "D",
+   "rationale": "Overlapping tools make selection ambiguous, which is where agents go wrong. Overlap does not improve speed (A), reduce cost (B), or help error handling (C)"
+  },
+  {
+   "id": "developer-foundations-mock-10",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Agents and Workflows",
+   "question": "What should terminate an agent loop?",
+   "options": {
+    "A": "A fixed wall-clock timeout only",
+    "B": "The model deciding it is finished",
+    "C": "An explicit success condition, with a step ceiling as a backstop",
+    "D": "Running out of context"
+   },
+   "answer": "C",
+   "rationale": "A defined success condition ends the loop correctly, and the ceiling bounds the failure case. A timeout alone (A) does not recognise success, the model's own judgment (B) is not a guarantee, and exhausting context (D) is a failure rather than a termination"
+  },
+  {
+   "id": "developer-foundations-mock-11",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Prompt and Context Engineering",
+   "question": "Where should a stable instruction that must apply to every turn be placed?",
+   "options": {
+    "A": "At the end of the latest user message",
+    "B": "In the system prompt",
+    "C": "Repeated in each user message",
+    "D": "In a tool description"
+   },
+   "answer": "B",
+   "rationale": "The system prompt is designed for persistent framing across the exchange. Placing it in user turns (A, C) mixes configuration with input, and tool descriptions (D) govern tool selection"
+  },
+  {
+   "id": "developer-foundations-mock-12",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Prompt and Context Engineering",
+   "question": "Which change most improves output that is correct but inconsistently formatted?",
+   "options": {
+    "A": "Providing an example of the exact output required",
+    "B": "Raising the temperature",
+    "C": "Asking for the output to be neat",
+    "D": "Using a larger model"
+   },
+   "answer": "A",
+   "rationale": "An example defines the target unambiguously, which is what formatting consistency needs. Higher temperature (B) increases variance, a vague adjective (C) does not specify, and a larger model (D) does not know your format"
+  },
+  {
+   "id": "developer-foundations-mock-13",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Tools and MCPs",
+   "question": "What is the most important property of a tool description?",
+   "options": {
+    "A": "It states what the tool does, when to use it, and what each parameter means",
+    "B": "It is short",
+    "C": "It lists the implementation language",
+    "D": "It matches the function name exactly"
+   },
+   "answer": "A",
+   "rationale": "The description is the model's only basis for choosing and calling the tool correctly. Brevity (B) is secondary to clarity, and implementation detail (C) and naming (D) do not guide selection"
+  },
+  {
+   "id": "developer-foundations-mock-14",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Security and Safety",
+   "question": "Content retrieved from an external site contains instructions aimed at the model. What is the correct defence?",
+   "options": {
+    "A": "Instruct the model in the system prompt to ignore such content",
+    "B": "Treat retrieved content as untrusted data and bound the model's permissions outside the prompt",
+    "C": "Scan for known injection phrases and block them",
+    "D": "Use a model with a larger context window"
+   },
+   "answer": "B",
+   "rationale": "The durable control is that the model cannot exceed its granted permissions regardless of what the content says. Prompt instructions (A) and phrase filters (C) are bypassable, and context size (D) is irrelevant"
+  },
+  {
+   "id": "developer-foundations-mock-15",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Eval, Testing, and Debugging",
+   "question": "A prompt change improved results on the five examples you tested. What should happen before it reaches production?",
+   "options": {
+    "A": "Ship it, since all five improved",
+    "B": "Ask the model to compare the two prompts",
+    "C": "Evaluate it against a held-out set that reflects real inputs, on defined criteria",
+    "D": "Ship it to a small percentage of traffic and watch error rates"
+   },
+   "answer": "C",
+   "rationale": "Five hand-picked cases cannot separate a real gain from noise, which is what an evaluation set settles. Self-comparison (B) is not measurement, and shipping first (A, D) makes users the test"
+  },
+  {
+   "id": "developer-foundations-mock-1",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Applications and Integration",
+   "question": "A request fails with an authentication error after working for months. What is the most likely cause?",
+   "options": {
+    "A": "A transient service fault",
+    "B": "The prompt became too long",
+    "C": "A credential that expired, was rotated, or lost its permissions",
+    "D": "The model was deprecated"
+   },
+   "answer": "C",
+   "rationale": "Authentication failures point at the credential rather than the payload. A transient fault (A) presents differently, and neither prompt length (B) nor deprecation (D) produces an auth error"
+  },
+  {
+   "id": "developer-foundations-mock-2",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Applications and Integration",
+   "question": "What is the purpose of correlating a request identifier through an integration?",
+   "options": {
+    "A": "It lets a specific response be traced back to the request that produced it",
+    "B": "It reduces token cost",
+    "C": "It improves model accuracy",
+    "D": "It is required by the API"
+   },
+   "answer": "A",
+   "rationale": "Correlation exists for traceability, which is what debugging asynchronous or batched work depends on. It does not affect cost (B) or accuracy (C), and it is a design practice rather than a requirement (D)"
+  },
+  {
+   "id": "developer-foundations-mock-3",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Applications and Integration",
+   "question": "An integration must handle a response that stops early because the model called a tool. What does the application do next?",
+   "options": {
+    "A": "Treat it as an error and retry",
+    "B": "Return the partial text to the user",
+    "C": "Increase the output token limit",
+    "D": "Execute the tool and return its result so the model can continue"
+   },
+   "answer": "D",
+   "rationale": "A tool-use stop is a handoff, and the loop continues once the result is returned. Retrying (A) repeats the request, returning partial text (B) discards the work, and the token limit (C) is unrelated"
+  },
+  {
+   "id": "developer-foundations-mock-4",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Applications and Integration",
+   "question": "Which is the strongest reason to put a queue between an application and the model?",
+   "options": {
+    "A": "It makes responses more accurate",
+    "B": "It absorbs bursts so load stays within rate limits without dropping work",
+    "C": "It reduces the token count",
+    "D": "It removes the need for retries"
+   },
+   "answer": "B",
+   "rationale": "A queue smooths demand against a rate-limited dependency. It does not change accuracy (A) or token counts (C), and retries remain necessary (D)"
+  },
+  {
+   "id": "developer-foundations-mock-5",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Applications and Integration",
+   "question": "A response arrives well-formed but semantically wrong for the input. Where should investigation start?",
+   "options": {
+    "A": "The transport layer",
+    "B": "The prompt and the exact context supplied for that input",
+    "C": "The rate limit configuration",
+    "D": "The output token limit"
+   },
+   "answer": "B",
+   "rationale": "A well-formed but wrong answer points at what the model was told, not how it was delivered. Transport (A), limits (C), and output caps (D) produce failures of delivery rather than of meaning"
+  },
+  {
+   "id": "developer-foundations-mock-6",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Model Selection and Optimization",
+   "question": "What is the practical consequence of choosing a model with a much larger context window than the task needs?",
+   "options": {
+    "A": "Better accuracy on every task",
+    "B": "Fewer rate limit errors",
+    "C": "More reliable structured output",
+    "D": "Cost and latency that the task does not require"
+   },
+   "answer": "D",
+   "rationale": "Unused capacity is paid for in cost and time. A larger window does not itself improve accuracy (A), reduce rate limiting (B), or make structure more reliable (C)"
+  },
+  {
+   "id": "developer-foundations-mock-7",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Model Selection and Optimization",
+   "question": "How should a team decide when to move a task to a smaller model?",
+   "options": {
+    "A": "When measurement shows the smaller model meets the task's stated quality bar",
+    "B": "When the budget is exceeded",
+    "C": "When the task becomes high volume",
+    "D": "When latency becomes a complaint"
+   },
+   "answer": "A",
+   "rationale": "The decision is evidence-led against a defined bar. Budget (B), volume (C), and latency (D) create pressure to look, but they do not establish that quality holds"
+  },
+  {
+   "id": "developer-foundations-mock-8",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Agents and Workflows",
+   "question": "A long-running agent needs to keep a decision it made twenty steps ago. What is the correct mechanism?",
+   "options": {
+    "A": "Rely on the context window retaining it",
+    "B": "Increase the temperature",
+    "C": "Write it into an explicit state that is carried forward regardless of compaction",
+    "D": "Restart the agent periodically"
+   },
+   "answer": "C",
+   "rationale": "Durable state must be explicit, because context is finite and compaction is lossy. Relying on the window (A) fails at length, temperature (B) is unrelated, and restarting (D) loses the decision"
+  },
+  {
+   "id": "developer-foundations-mock-9",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Agents and Workflows",
+   "question": "What distinguishes a workflow from an agent in practice?",
+   "options": {
+    "A": "Workflows are shorter",
+    "B": "Agents cannot use tools",
+    "C": "Workflows cannot call the model",
+    "D": "In a workflow the control flow is fixed in advance; in an agent the model chooses the next step"
+   },
+   "answer": "D",
+   "rationale": "Who decides the next step is the distinction that matters. Length (A) is incidental, agents do use tools (B), and workflows do call the model (C)"
+  },
+  {
+   "id": "developer-foundations-mock-10",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Prompt and Context Engineering",
+   "question": "A prompt contains an instruction that contradicts an example in the same prompt. What is the likely outcome?",
+   "options": {
+    "A": "The instruction always wins",
+    "B": "The example always wins",
+    "C": "Behaviour becomes unpredictable between the two",
+    "D": "The request is rejected"
+   },
+   "answer": "C",
+   "rationale": "Contradictory signals produce inconsistent behaviour rather than a defined precedence. Neither the instruction (A) nor the example (B) reliably wins, and the request is not rejected (D)"
+  },
+  {
+   "id": "developer-foundations-mock-11",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Prompt and Context Engineering",
+   "question": "What is the effect of placing the most important instruction in the middle of a very long prompt?",
+   "options": {
+    "A": "None, position is irrelevant",
+    "B": "It is more likely to be overlooked than if it were at a boundary",
+    "C": "It is followed more closely",
+    "D": "It causes an error"
+   },
+   "answer": "B",
+   "rationale": "Material at the edges of a long input is attended to more reliably than material buried in the middle. Position is not neutral (A) or advantageous here (C), and it does not error (D)"
+  },
+  {
+   "id": "developer-foundations-mock-12",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Tools and MCPs",
+   "question": "When should a tool return an identifier rather than the full object?",
+   "options": {
+    "A": "When the object is large and the model only needs it to make a subsequent call",
+    "B": "Never, the model needs the full object",
+    "C": "Always, to reduce cost",
+    "D": "Only for write operations"
+   },
+   "answer": "A",
+   "rationale": "Returning a handle keeps context free when the payload is only needed for a later call. Always returning everything (B) or nothing (C) ignores the task, and the rule is not about writes (D)"
+  },
+  {
+   "id": "developer-foundations-mock-13",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Tools and MCPs",
+   "question": "An MCP server is added and the agent's success rate falls. What should be checked first?",
+   "options": {
+    "A": "Whether the new tools overlap with existing ones and have distinguishable descriptions",
+    "B": "The server's uptime",
+    "C": "The model version",
+    "D": "The network latency"
+   },
+   "answer": "A",
+   "rationale": "A new tool surface most often degrades selection through overlap and unclear descriptions. Uptime (B) and latency (D) present as errors or slowness, and the model did not change (C)"
+  },
+  {
+   "id": "developer-foundations-mock-14",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Security and Safety",
+   "question": "A model output will be rendered directly into a web page. What must the application do?",
+   "options": {
+    "A": "Nothing, model output is safe",
+    "B": "Treat the output as untrusted and escape or sanitise it before rendering",
+    "C": "Ask the model not to produce markup",
+    "D": "Use a larger model"
+   },
+   "answer": "B",
+   "rationale": "Anything rendered into a page is escaped regardless of source, since output can be influenced by input. Assuming safety (A) and instructing the model (C) are not controls, and model size (D) is irrelevant"
+  },
+  {
+   "id": "developer-foundations-mock-15",
+   "exam": "developer-foundations",
+   "source": "mock",
+   "domain": "Eval, Testing, and Debugging",
+   "question": "What does a regression suite protect against that a one-off evaluation does not?",
+   "options": {
+    "A": "Slow responses",
+    "B": "Rate limits",
+    "C": "A change that improves the target behaviour while quietly breaking another",
+    "D": "Cost increases"
+   },
+   "answer": "C",
+   "rationale": "Regressions are silent by definition and are caught by continuously testing what must not break. Latency (A), limits (B), and cost (D) are operational signals rather than correctness"
   },
   {
    "id": "architect-foundations-practice-1",
@@ -2269,6 +3169,456 @@
    "rationale": "Measuring only validated records is a biased sample; calibration needs coverage of all documents"
   },
   {
+   "id": "architect-foundations-mock-1",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Agentic Architecture",
+   "question": "A pipeline has four steps whose order never varies and whose outputs are each checkable. What should it be?",
+   "options": {
+    "A": "An agent that plans each run",
+    "B": "Four agents, one per step",
+    "C": "A deterministic workflow with model calls at defined points",
+    "D": "A single prompt covering all four steps"
+   },
+   "answer": "C",
+   "rationale": "A known fixed order is encoded rather than rediscovered, which is cheaper and testable per step. Runtime planning (A, B) adds nondeterminism, and one prompt (D) removes the checkpoints"
+  },
+  {
+   "id": "architect-foundations-mock-2",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Agentic Architecture",
+   "question": "What is the principal cost of introducing a subagent?",
+   "options": {
+    "A": "It loses the context the parent held unless the handoff carries it explicitly",
+    "B": "It requires a larger model",
+    "C": "It cannot use tools",
+    "D": "It doubles token cost in every case"
+   },
+   "answer": "A",
+   "rationale": "Delegation buys isolation and pays in context, which is why handoffs must be explicit. A subagent does not require a larger model (B), can use tools (C), and cost varies with the work (D)"
+  },
+  {
+   "id": "architect-foundations-mock-3",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Agentic Architecture",
+   "question": "An autonomous step would modify production data. What does the architecture require?",
+   "options": {
+    "A": "A more capable model",
+    "B": "A longer system prompt describing caution",
+    "C": "A retry policy",
+    "D": "A checkpoint where a person authorises the action, or a reversible mechanism"
+   },
+   "answer": "D",
+   "rationale": "Irreversible external effects need an authorisation boundary or reversibility, enforced outside the model. Capability (A), instruction (B), and retries (C) do not bound the consequence"
+  },
+  {
+   "id": "architect-foundations-mock-4",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Agentic Architecture",
+   "question": "What most helps diagnose an agentic failure after the fact?",
+   "options": {
+    "A": "The final output alone",
+    "B": "A trace of each step's inputs, tool calls, and outputs",
+    "C": "The total token count",
+    "D": "The model version"
+   },
+   "answer": "B",
+   "rationale": "A per-step trace reconstructs a nondeterministic run, which is what diagnosis needs. The final output (A), token totals (C), and version (D) do not show where it diverged"
+  },
+  {
+   "id": "architect-foundations-mock-5",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Claude Code Configuration & Workflows",
+   "question": "Where should repository-wide conventions for Claude Code live?",
+   "options": {
+    "A": "In each developer's local configuration",
+    "B": "In a CLAUDE.md committed to the repository",
+    "C": "In the team's chat channel",
+    "D": "In the CI configuration only"
+   },
+   "answer": "B",
+   "rationale": "Committed project memory is shared, versioned, and reviewed with the code. Local configuration (A) does not propagate, chat (C) is not read as context, and CI (D) covers automation rather than interactive work"
+  },
+  {
+   "id": "architect-foundations-mock-6",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Claude Code Configuration & Workflows",
+   "question": "Which task is best suited to headless Claude Code in CI?",
+   "options": {
+    "A": "Exploratory debugging of an unfamiliar failure",
+    "B": "Designing a new module's architecture",
+    "C": "Pair programming with a developer",
+    "D": "A repeatable, well-specified check that runs on every pull request"
+   },
+   "answer": "D",
+   "rationale": "Headless execution suits bounded, repeatable work that runs unattended. Exploration (A), design (B), and pairing (C) all depend on a person in the loop"
+  },
+  {
+   "id": "architect-foundations-mock-7",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Claude Code Configuration & Workflows",
+   "question": "What is a hook for?",
+   "options": {
+    "A": "Running a deterministic action at a defined point, independently of the model",
+    "B": "Storing reusable instructions",
+    "C": "Holding project context",
+    "D": "Selecting the model"
+   },
+   "answer": "A",
+   "rationale": "Hooks execute as code at fixed points, which is how a guarantee is enforced. Instructions (B) and context (C) belong in project memory, and model choice (D) is configuration"
+  },
+  {
+   "id": "architect-foundations-mock-8",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Prompt Engineering & Structured Output",
+   "question": "A pipeline needs output that always conforms to a fixed shape. What is the correct mechanism?",
+   "options": {
+    "A": "Requesting the shape in the prompt and parsing the result",
+    "B": "Post-processing prose with regular expressions",
+    "C": "Declaring the shape as a schema the model must satisfy, and validating on receipt",
+    "D": "Lowering the temperature"
+   },
+   "answer": "C",
+   "rationale": "A declared schema makes the shape a contract rather than a request, and validation closes the loop. Prompt requests (A), text parsing (B), and temperature (D) leave the shape to chance"
+  },
+  {
+   "id": "architect-foundations-mock-9",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Prompt Engineering & Structured Output",
+   "question": "How should a schema handle a value the source may not contain?",
+   "options": {
+    "A": "Omit the field silently",
+    "B": "Supply a plausible default",
+    "C": "Return an empty string in all cases",
+    "D": "Define an explicit representation for absence"
+   },
+   "answer": "D",
+   "rationale": "Absence must be representable so a genuine gap is distinguishable from a failure. Silent omission (A) is ambiguous, a plausible default (B) fabricates, and an empty string (C) conflates absence with an empty value"
+  },
+  {
+   "id": "architect-foundations-mock-10",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Prompt Engineering & Structured Output",
+   "question": "Extraction succeeds on typical inputs and fails on unusual ones. What is the most effective response?",
+   "options": {
+    "A": "Raise the temperature",
+    "B": "Use a larger model",
+    "C": "Add examples covering the unusual formats and state what to return when a field is missing",
+    "D": "Ask the model to be careful with unusual inputs"
+   },
+   "answer": "C",
+   "rationale": "The unusual cases fail because they were never specified, and examples plus a missing-value rule specify them. Temperature (A) adds variance, model size (B) is not aimed at the gap, and exhortation (D) is not specification"
+  },
+  {
+   "id": "architect-foundations-mock-11",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Tool Design & MCP Integration",
+   "question": "What is the clearest sign that a tool surface needs redesign rather than better prompting?",
+   "options": {
+    "A": "It exposes more than five tools",
+    "B": "The model repeatedly selects a tool that cannot satisfy the request",
+    "C": "The tools are implemented in different services",
+    "D": "The tools return large payloads"
+   },
+   "answer": "B",
+   "rationale": "Repeated wrong selection indicates the tools are not distinguishable from their descriptions, which is a design fault. Tool count (A) and implementation topology (C) are not faults, and payload size (D) is a separate problem"
+  },
+  {
+   "id": "architect-foundations-mock-12",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Tool Design & MCP Integration",
+   "question": "How should a tool that deletes records be constrained?",
+   "options": {
+    "A": "By enforcing authorisation and scope outside the model",
+    "B": "By a description warning the model to use it carefully",
+    "C": "By requiring more parameters",
+    "D": "By declaring it last among the tools"
+   },
+   "answer": "A",
+   "rationale": "Destructive capability is bounded by the surrounding system, since a description is a request rather than a control. Extra parameters (C) and ordering (D) do not limit authority"
+  },
+  {
+   "id": "architect-foundations-mock-13",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Tool Design & MCP Integration",
+   "question": "An MCP integration exposes an entire database through one general query tool. What is the architectural concern?",
+   "options": {
+    "A": "The model's authority is unbounded, and least privilege cannot be applied",
+    "B": "It will be slow",
+    "C": "It uses too many tokens",
+    "D": "It cannot return structured output"
+   },
+   "answer": "A",
+   "rationale": "A single unrestricted tool removes the ability to scope what the model may reach. Speed (B) and tokens (C) are secondary, and structured output (D) is achievable either way"
+  },
+  {
+   "id": "architect-foundations-mock-14",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Context Management & Reliability",
+   "question": "Quality degrades steadily through a long agentic run. What is the most likely cause?",
+   "options": {
+    "A": "The model version changed mid-run",
+    "B": "Accumulated context has diluted the material that matters",
+    "C": "The temperature is too low",
+    "D": "The tools have become slower"
+   },
+   "answer": "B",
+   "rationale": "Progressive degradation over a long run is the signature of context accumulation. Versions do not change mid-run (A), low temperature (C) reduces variety rather than quality, and tool latency (D) does not affect correctness"
+  },
+  {
+   "id": "architect-foundations-mock-15",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Context Management & Reliability",
+   "question": "What must happen for state to survive a compaction boundary?",
+   "options": {
+    "A": "Nothing, the model retains what matters",
+    "B": "The context window must be enlarged",
+    "C": "The decisions and constraints that must persist are written into an explicit carried-forward summary",
+    "D": "The run must restart"
+   },
+   "answer": "C",
+   "rationale": "Compaction is lossy, so persistence must be deliberate. Relying on recall (A) is unreliable, a larger window (B) only moves the boundary, and restarting (D) discards the work"
+  },
+  {
+   "id": "architect-foundations-mock-1",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Agentic Architecture",
+   "question": "An agentic design calls the same expensive tool repeatedly with identical arguments. What does this indicate?",
+   "options": {
+    "A": "Healthy retry behaviour",
+    "B": "The tool is too fast",
+    "C": "The agent is not retaining or reusing the result, which points at the state design",
+    "D": "The model is too capable"
+   },
+   "answer": "C",
+   "rationale": "Repeating an identical call means the prior result is not available to the agent, which is a state problem. It is not retry behaviour (A), and neither tool speed (B) nor capability (D) explains it"
+  },
+  {
+   "id": "architect-foundations-mock-2",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Agentic Architecture",
+   "question": "What determines whether two lines of work belong in separate subagents?",
+   "options": {
+    "A": "Whether each needs context the other would pollute",
+    "B": "Their combined length",
+    "C": "Whether they use different tools",
+    "D": "Whether they can run in parallel"
+   },
+   "answer": "A",
+   "rationale": "Context isolation is the reason subagents exist. Length (B), tool difference (C), and parallelism (D) can all be handled within one context"
+  },
+  {
+   "id": "architect-foundations-mock-3",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Agentic Architecture",
+   "question": "Which design most reduces the cost of a wrong autonomous decision?",
+   "options": {
+    "A": "A larger model",
+    "B": "A longer prompt",
+    "C": "More tools",
+    "D": "Making the action reversible, or gating it behind confirmation"
+   },
+   "answer": "D",
+   "rationale": "Reversibility and gating bound the consequence, which is what the risk is. Capability (A), prompt length (B), and tools (C) affect the chance of error rather than its cost"
+  },
+  {
+   "id": "architect-foundations-mock-4",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Claude Code Configuration & Workflows",
+   "question": "A CLAUDE.md has grown to several thousand lines. What is the likely effect?",
+   "options": {
+    "A": "Better results, because more context is available",
+    "B": "The instructions that matter compete with material that no longer applies",
+    "C": "No effect, since it is read once",
+    "D": "Faster responses"
+   },
+   "answer": "B",
+   "rationale": "Project memory is context and dilutes like any other. More is not automatically better (A), it is not free (C), and it does not speed anything up (D)"
+  },
+  {
+   "id": "architect-foundations-mock-5",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Claude Code Configuration & Workflows",
+   "question": "What should be true of a skill before it is committed to a shared repository?",
+   "options": {
+    "A": "It is long enough to be useful",
+    "B": "It encodes a procedure the team genuinely repeats, and it is reviewable",
+    "C": "It is written by the most senior engineer",
+    "D": "It covers every edge case"
+   },
+   "answer": "B",
+   "rationale": "A shared skill is justified by genuine repetition and must be reviewable like code. Length (A), authorship (C), and exhaustiveness (D) do not establish that"
+  },
+  {
+   "id": "architect-foundations-mock-6",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Claude Code Configuration & Workflows",
+   "question": "Why is committed configuration preferable to per-developer configuration for team conventions?",
+   "options": {
+    "A": "It is faster to load",
+    "B": "It uses less context",
+    "C": "It cannot be overridden",
+    "D": "It is versioned, reviewed, and applies to everyone including automation"
+   },
+   "answer": "D",
+   "rationale": "Shared, reviewed, versioned context is what makes a convention hold across people and CI. Speed (A) and context size (B) are not the reason, and it can still be overridden locally (C)"
+  },
+  {
+   "id": "architect-foundations-mock-7",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Prompt Engineering & Structured Output",
+   "question": "A schema-validated response fails validation once in every few hundred calls. What is the correct handling?",
+   "options": {
+    "A": "Define a fallback path: retry, then fail explicitly rather than passing invalid data on",
+    "B": "Ignore it, since the rate is low",
+    "C": "Disable validation to avoid the failures",
+    "D": "Increase the output token limit"
+   },
+   "answer": "A",
+   "rationale": "A rare failure still needs a defined path, and silently passing invalid data is the outcome to prevent. Ignoring it (B) and disabling validation (C) do exactly that, and the token limit (D) is not the cause"
+  },
+  {
+   "id": "architect-foundations-mock-8",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Prompt Engineering & Structured Output",
+   "question": "What is the advantage of validating structured output at the boundary rather than downstream?",
+   "options": {
+    "A": "It is cheaper",
+    "B": "It removes the need for a schema",
+    "C": "The failure is caught where it can still be retried or rejected, before it contaminates later steps",
+    "D": "It improves model accuracy"
+   },
+   "answer": "C",
+   "rationale": "Catching at the boundary contains the fault. It is not primarily a cost question (A), the schema is what makes it possible (B), and it does not change the model's accuracy (D)"
+  },
+  {
+   "id": "architect-foundations-mock-9",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Prompt Engineering & Structured Output",
+   "question": "A structured extraction must record where in the source each value came from. What does this require?",
+   "options": {
+    "A": "A larger model",
+    "B": "A longer prompt",
+    "C": "A second extraction pass",
+    "D": "The schema to include a provenance field the model must populate"
+   },
+   "answer": "D",
+   "rationale": "Anything the output must carry has to be part of the declared shape. Model size (A) and prompt length (B) do not create a field, and a second pass (C) is unnecessary if the schema asks for it"
+  },
+  {
+   "id": "architect-foundations-mock-10",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Tool Design & MCP Integration",
+   "question": "Two tools do nearly the same thing with different names. What is the architectural fault?",
+   "options": {
+    "A": "Duplication of code",
+    "B": "Higher latency",
+    "C": "The model has no reliable basis for choosing between them",
+    "D": "Increased token cost"
+   },
+   "answer": "C",
+   "rationale": "Ambiguity at the point of selection is the fault, because the model chooses from descriptions. Code duplication (A), latency (B), and cost (D) are secondary consequences"
+  },
+  {
+   "id": "architect-foundations-mock-11",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Tool Design & MCP Integration",
+   "question": "What should a tool do when given arguments it cannot satisfy?",
+   "options": {
+    "A": "Return the closest result it can",
+    "B": "Return a clear error stating what was wrong, so the model can correct the call",
+    "C": "Return an empty result",
+    "D": "Raise an exception that terminates the run"
+   },
+   "answer": "B",
+   "rationale": "An informative error keeps the model able to adapt. A closest-guess (A) and an empty result (C) are silently wrong, and terminating (D) discards a recoverable run"
+  },
+  {
+   "id": "architect-foundations-mock-12",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Tool Design & MCP Integration",
+   "question": "An MCP tool exposes a write operation that the use case never needs. What should happen?",
+   "options": {
+    "A": "Remove it, because unused authority is unnecessary risk",
+    "B": "Leave it, since it may be useful later",
+    "C": "Document that it should not be used",
+    "D": "Rename it to discourage use"
+   },
+   "answer": "A",
+   "rationale": "Authority that is not needed should not be granted. Retaining it for possible future use (B), documenting (C), or renaming (D) all leave the capability reachable"
+  },
+  {
+   "id": "architect-foundations-mock-13",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Context Management & Reliability",
+   "question": "What is the earliest reliable signal that context management has failed in a long run?",
+   "options": {
+    "A": "The agent begins repeating work or contradicting earlier decisions",
+    "B": "The run takes longer than expected",
+    "C": "Token cost rises",
+    "D": "A tool returns an error"
+   },
+   "answer": "A",
+   "rationale": "Repetition and self-contradiction are the behavioural signature of lost state. Duration (B) and cost (C) rise for many reasons, and a tool error (D) is unrelated"
+  },
+  {
+   "id": "architect-foundations-mock-14",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Context Management & Reliability",
+   "question": "Why is a defined success criterion necessary for a reliable agentic system?",
+   "options": {
+    "A": "It reduces token cost",
+    "B": "Without it there is no way to tell completion from failure, so the system cannot stop correctly or be measured",
+    "C": "It makes the prompt shorter",
+    "D": "It is required by the platform"
+   },
+   "answer": "B",
+   "rationale": "Termination and measurement both depend on a definition of done. Cost (A), prompt length (C), and platform requirements (D) are not the reason"
+  },
+  {
+   "id": "architect-foundations-mock-15",
+   "exam": "architect-foundations",
+   "source": "mock",
+   "domain": "Context Management & Reliability",
+   "question": "A reliability requirement says wrong output must never reach the user unnoticed. What does the design need?",
+   "options": {
+    "A": "A more capable model",
+    "B": "More examples in the prompt",
+    "C": "A detection step with a defined action when it fires",
+    "D": "A longer context window"
+   },
+   "answer": "C",
+   "rationale": "Preventing silent error requires detection plus a response. Capability (A), examples (B), and context (D) improve the average case without catching the bad one"
+  },
+  {
    "id": "architect-professional-practice-1",
    "exam": "architect-professional",
    "source": "practice",
@@ -3017,6 +4367,456 @@
    },
    "answer": "A",
    "rationale": "Least privilege plus approval gates on writes reduces the surface rather than monitoring it"
+  },
+  {
+   "id": "architect-professional-mock-1",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Integration",
+   "question": "A client requires that inference run inside their own AWS account. What does this determine?",
+   "options": {
+    "A": "The model family only",
+    "B": "That a data processing agreement is sufficient",
+    "C": "Deployment through Amazon Bedrock in the client's account and region",
+    "D": "That request logging must be disabled"
+   },
+   "answer": "C",
+   "rationale": "Running inside the client's own cloud boundary is what the requirement describes. A contract (B) and logging settings (D) do not keep the data in the account, and the model family (A) is a separate choice"
+  },
+  {
+   "id": "architect-professional-mock-2",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Integration",
+   "question": "An enterprise standardised on Google Cloud wants identity and audit handled by existing controls. What follows?",
+   "options": {
+    "A": "Deploy through Vertex AI so the platform's identity, billing, and audit apply",
+    "B": "Use the Claude API and rebuild the controls",
+    "C": "Use Bedrock for feature parity",
+    "D": "Let each team decide"
+   },
+   "answer": "A",
+   "rationale": "Aligning with the governed platform makes existing controls apply without duplication. Rebuilding (B) drifts, a different cloud (C) creates a second control plane, and per-team choice (D) removes governance"
+  },
+  {
+   "id": "architect-professional-mock-3",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Integration",
+   "question": "What is the main architectural benefit of routing all model traffic through one internal service?",
+   "options": {
+    "A": "Lower token prices",
+    "B": "It removes the need for evaluation",
+    "C": "It guarantees lower latency",
+    "D": "Authentication, rate limiting, logging, and routing are applied consistently in one place"
+   },
+   "answer": "D",
+   "rationale": "A single integration point is where cross-cutting concerns are enforced and changed once. It does not change unit price (A), remove evaluation (B), or reduce latency (C)"
+  },
+  {
+   "id": "architect-professional-mock-4",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Solution Design",
+   "question": "Two designs both satisfy the requirement; one is materially simpler. What decides?",
+   "options": {
+    "A": "The more capable design, since headroom is valuable",
+    "B": "Whether any stated requirement needs the extra capability, against the ongoing cost of complexity",
+    "C": "Whichever the team prefers to build",
+    "D": "The one with more components, for flexibility"
+   },
+   "answer": "B",
+   "rationale": "Complexity is paid for continuously, so it must be bought by a real requirement. Headroom (A), preference (C), and speculative flexibility (D) pay that cost without justification"
+  },
+  {
+   "id": "architect-professional-mock-5",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Solution Design",
+   "question": "A required compliance control depends on the model behaving correctly. What is the correct judgment?",
+   "options": {
+    "A": "Acceptable if measured accuracy is very high",
+    "B": "Not acceptable: a required control must be enforced deterministically outside the model",
+    "C": "Acceptable with a documented residual risk",
+    "D": "Acceptable if a larger model is used"
+   },
+   "answer": "B",
+   "rationale": "A control that must hold needs a guarantee, which probabilistic behaviour cannot supply. High accuracy (A), documentation (C), and model size (D) do not convert a tendency into a guarantee"
+  },
+  {
+   "id": "architect-professional-mock-6",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Solution Design",
+   "question": "Where should the boundary of automation be drawn in a solution that makes customer-affecting decisions?",
+   "options": {
+    "A": "Wherever the model performs well in testing",
+    "B": "As far as the budget allows",
+    "C": "At whatever the client requests",
+    "D": "Where accountability for the decision sits, keeping those decisions with a person"
+   },
+   "answer": "D",
+   "rationale": "Accountability determines what may be automated at all, and that boundary is an architectural decision. Test performance (A), budget (B), and unexamined requests (C) do not address responsibility"
+  },
+  {
+   "id": "architect-professional-mock-7",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Evaluation, Testing & Optimization",
+   "question": "What must exist before a solution is declared production-ready?",
+   "options": {
+    "A": "A defined success criterion and measured performance against representative data",
+    "B": "A successful demonstration",
+    "C": "Sign-off from the engineering team",
+    "D": "A completed cost model"
+   },
+   "answer": "A",
+   "rationale": "Readiness is a measured claim against a stated bar. A demonstration (B), consensus (C), and cost (D) do not establish whether it works"
+  },
+  {
+   "id": "architect-professional-mock-8",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Evaluation, Testing & Optimization",
+   "question": "An evaluation set contains only cases the system already handles. What is the effect?",
+   "options": {
+    "A": "It provides a reliable quality measure",
+    "B": "It is fine if it is large",
+    "C": "It overstates performance and conceals the failures that matter",
+    "D": "It matters only in regulated contexts"
+   },
+   "answer": "C",
+   "rationale": "An unrepresentative sample measures the wrong distribution, and size does not correct bias. It is not reliable (A), scale does not fix it (B), and the problem is general (D)"
+  },
+  {
+   "id": "architect-professional-mock-9",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Governance, Safety & Risk Management",
+   "question": "How should a request to log every prompt and response for audit be handled?",
+   "options": {
+    "A": "Implement it, since audit takes precedence",
+    "B": "Decline, because logging creates risk",
+    "C": "Log responses but not prompts",
+    "D": "Establish what the audit requires, because prompts and responses may contain personal or confidential data"
+   },
+   "answer": "D",
+   "rationale": "Audit and data protection are both real, and the design must serve the audit purpose without retaining more than warranted. Blanket action (A) or refusal (B) ignores one side, and an arbitrary split (C) is unjustified"
+  },
+  {
+   "id": "architect-professional-mock-10",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Governance, Safety & Risk Management",
+   "question": "Who is accountable when an automated Claude workflow produces a harmful decision?",
+   "options": {
+    "A": "The model provider",
+    "B": "The engineer who wrote the prompt",
+    "C": "The organisation that deployed it",
+    "D": "No one, because the decision was automated"
+   },
+   "answer": "C",
+   "rationale": "Deploying an automated decision means owning its outcomes. The provider (A) supplies a capability, individual authorship (B) does not transfer organisational responsibility, and automation does not remove accountability (D)"
+  },
+  {
+   "id": "architect-professional-mock-11",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Stakeholder Communication & Lifecycle Management",
+   "question": "A sponsor asks for one number that shows whether the solution is working. What is the right response?",
+   "options": {
+    "A": "Give the headline accuracy figure",
+    "B": "Give the measure tied to the decision they face, and state what it does not cover",
+    "C": "Explain that this cannot be reduced to a number",
+    "D": "Give the model's benchmark score"
+   },
+   "answer": "B",
+   "rationale": "A useful metric matches the decision and is honest about its limits. A bare accuracy figure (A) and a benchmark (D) can mislead, and refusing (C) fails the sponsor"
+  },
+  {
+   "id": "architect-professional-mock-12",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Stakeholder Communication & Lifecycle Management",
+   "question": "A ten-user pilot is about to expand to two thousand users. What should the architect raise first?",
+   "options": {
+    "A": "Which assumptions held at ten users and may not hold at two thousand",
+    "B": "Licence cost",
+    "C": "Whether a larger model is needed",
+    "D": "The training rollout plan"
+   },
+   "answer": "A",
+   "rationale": "Scale invalidates assumptions about inputs, support, and edge cases, and surfacing those is the architect's contribution. Cost (B), model size (C), and training (D) follow from knowing what breaks"
+  },
+  {
+   "id": "architect-professional-mock-13",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Claude Models, Prompting & Context Engineering",
+   "question": "How should a model be chosen for a solution containing several distinct tasks?",
+   "options": {
+    "A": "Match each task to the smallest model meeting its requirement, and evaluate the choices",
+    "B": "One model everywhere, for simplicity",
+    "C": "The largest model everywhere, for safety",
+    "D": "The newest model everywhere"
+   },
+   "answer": "A",
+   "rationale": "Different tasks have different requirements, and matching each keeps cost proportionate on evidence. Uniform choices (B, C, D) optimise for convenience rather than fit"
+  },
+  {
+   "id": "architect-professional-mock-14",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Claude Models, Prompting & Context Engineering",
+   "question": "How should the context window be treated in a production design?",
+   "options": {
+    "A": "As capacity to fill as completely as possible",
+    "B": "As a budget allocated deliberately between instructions, retrieved material, and working state",
+    "C": "As a concern only for long documents",
+    "D": "As a setting to increase whenever quality drops"
+   },
+   "answer": "B",
+   "rationale": "Context is scarce and its allocation drives quality, so it is designed. Filling it (A) dilutes, it matters beyond long documents (C), and enlarging it (D) does not fix allocation"
+  },
+  {
+   "id": "architect-professional-mock-15",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Developer Productivity & Operational Enablement",
+   "question": "An organisation wants consistent Claude Code practice across dozens of repositories. What is most durable?",
+   "options": {
+    "A": "A policy document circulated once",
+    "B": "A single training session",
+    "C": "Committed project memory and shared skills in each repository, reviewed like code",
+    "D": "Requiring approval for every use"
+   },
+   "answer": "C",
+   "rationale": "Conventions persist when they live in the repository and are reviewed with the work. Policies (A) and training (B) fade, and per-use approval (D) adds friction without conveying practice"
+  },
+  {
+   "id": "architect-professional-mock-1",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Integration",
+   "question": "A client will not accept a solution whose behaviour cannot be explained to their auditor. What does this constrain?",
+   "options": {
+    "A": "The model family only",
+    "B": "The cost model",
+    "C": "The architecture, which must make decisions traceable and the controls inspectable",
+    "D": "The deployment region"
+   },
+   "answer": "C",
+   "rationale": "Auditability is an architectural property covering tracing and inspectable controls. Model family (A), cost (B), and region (D) do not by themselves make behaviour explicable"
+  },
+  {
+   "id": "architect-professional-mock-2",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Integration",
+   "question": "What is the main risk of building directly against a single cloud's model service with no abstraction?",
+   "options": {
+    "A": "Moving later becomes expensive, because the coupling reaches into application code",
+    "B": "Higher token cost",
+    "C": "Lower accuracy",
+    "D": "Slower responses"
+   },
+   "answer": "A",
+   "rationale": "Coupling determines the cost of change, which is the architectural concern. Cost (B), accuracy (C), and latency (D) are not consequences of the coupling itself"
+  },
+  {
+   "id": "architect-professional-mock-3",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Integration",
+   "question": "A solution must serve users in two regions with different data residency rules. What follows?",
+   "options": {
+    "A": "One deployment in the cheaper region",
+    "B": "A single deployment with encryption in transit",
+    "C": "Whichever region has the lowest latency",
+    "D": "Separate deployments whose data stays within each region's boundary"
+   },
+   "answer": "D",
+   "rationale": "Residency is satisfied by keeping the data within each boundary. A single deployment (A, B) moves data across it, and latency (C) does not address the rule"
+  },
+  {
+   "id": "architect-professional-mock-4",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Solution Design",
+   "question": "A requirement is stated as make it as accurate as possible. What should the architect do?",
+   "options": {
+    "A": "Choose the largest model and optimise from there",
+    "B": "Establish the accuracy the use case actually needs and what an error costs",
+    "C": "Build the most complex design the budget allows",
+    "D": "Defer the question until after the pilot"
+   },
+   "answer": "B",
+   "rationale": "An unbounded requirement cannot be designed against or verified, so it must be made concrete. Defaulting to maximum capability (A, C) spends without a target, and deferring (D) leaves the design unanchored"
+  },
+  {
+   "id": "architect-professional-mock-5",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Solution Design",
+   "question": "Two components each work correctly but the system fails intermittently at their boundary. What does this suggest?",
+   "options": {
+    "A": "One component needs a larger model",
+    "B": "The contract between them is underspecified, particularly for edge and error cases",
+    "C": "The system needs more components",
+    "D": "The failure is transient and can be retried"
+   },
+   "answer": "B",
+   "rationale": "Boundary failures between correct components point at the contract. Capability (A) and more components (C) do not define the interface, and retrying (D) hides it"
+  },
+  {
+   "id": "architect-professional-mock-6",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Governance, Safety & Risk Management",
+   "question": "A design proposes storing every model interaction indefinitely. What should the architect raise?",
+   "options": {
+    "A": "Nothing, retention is always safer",
+    "B": "That storage is expensive",
+    "C": "That it will slow the system",
+    "D": "Why the data is needed, for how long, and what obligations retention creates"
+   },
+   "answer": "D",
+   "rationale": "Retention creates obligations and risk, so purpose and duration must justify it. Treating retention as free of risk (A) is the error, and cost (B) and speed (C) are minor by comparison"
+  },
+  {
+   "id": "architect-professional-mock-7",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Governance, Safety & Risk Management",
+   "question": "How should a solution handle the case where the model is confident and wrong?",
+   "options": {
+    "A": "Design so that consequential outputs are verified against something independent of the model",
+    "B": "Trust the confidence signal",
+    "C": "Ask the model to double-check",
+    "D": "Use two models and take the agreement"
+   },
+   "answer": "A",
+   "rationale": "Independence is what catches confident error. Confidence (B) is not evidence, self-checking (C) is not independent, and two models can agree and both be wrong (D)"
+  },
+  {
+   "id": "architect-professional-mock-8",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Evaluation, Testing & Optimization",
+   "question": "An evaluation shows 94% accuracy. What else must be known before this is actionable?",
+   "options": {
+    "A": "The model version only",
+    "B": "The token cost of the evaluation",
+    "C": "What the 6% look like, and what each failure costs",
+    "D": "How long the evaluation took"
+   },
+   "answer": "C",
+   "rationale": "A headline rate is only meaningful alongside the shape and cost of the failures. Version (A), cost (B), and duration (D) do not describe the risk"
+  },
+  {
+   "id": "architect-professional-mock-9",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Evaluation, Testing & Optimization",
+   "question": "What should happen when a model version is updated beneath a production solution?",
+   "options": {
+    "A": "Nothing, versions are compatible",
+    "B": "Increase monitoring for a week",
+    "C": "Roll back automatically if complaints rise",
+    "D": "Re-run the evaluation suite before the change reaches production traffic"
+   },
+   "answer": "D",
+   "rationale": "A change to the thing that determines behaviour invalidates prior measurement. Assuming compatibility (A) is unsafe, and monitoring (B) or reacting to complaints (C) detects after users are affected"
+  },
+  {
+   "id": "architect-professional-mock-10",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Stakeholder Communication & Lifecycle Management",
+   "question": "A stakeholder asks why the solution cannot simply be fully automated. What is the most useful answer?",
+   "options": {
+    "A": "That the technology is not ready",
+    "B": "That automation is always risky",
+    "C": "Which specific decisions carry accountability or are unverifiable, and what automating them would risk",
+    "D": "That the budget does not allow it"
+   },
+   "answer": "C",
+   "rationale": "A specific, reasoned boundary is actionable and can be revisited. Generic claims about readiness (A) or risk (B) are not, and budget (D) is not the reason"
+  },
+  {
+   "id": "architect-professional-mock-11",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Stakeholder Communication & Lifecycle Management",
+   "question": "What should be handed over with a solution so it survives its first year?",
+   "options": {
+    "A": "The source code",
+    "B": "The evaluation suite, the criteria, the owner, and the routine for re-checking",
+    "C": "A recorded demonstration",
+    "D": "A list of prompts used"
+   },
+   "answer": "B",
+   "rationale": "Continuity depends on being able to measure and maintain, with someone responsible. Code (A), a demonstration (C), and prompts (D) are artefacts without the means to verify them"
+  },
+  {
+   "id": "architect-professional-mock-12",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Claude Models, Prompting & Context Engineering",
+   "question": "A team reports the solution has become worse, but nothing was deployed. What is the most likely explanation?",
+   "options": {
+    "A": "The inputs or the surrounding usage changed",
+    "B": "The model degraded on its own",
+    "C": "The prompts wore out",
+    "D": "The evaluation was wrong originally"
+   },
+   "answer": "A",
+   "rationale": "Behaviour changes with what is fed to it, and distribution drift is the usual cause. Models do not degrade unprompted (B), prompts do not wear out (C), and the original evaluation is not the first suspect (D)"
+  },
+  {
+   "id": "architect-professional-mock-13",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Claude Models, Prompting & Context Engineering",
+   "question": "How should prompts that determine production behaviour be managed?",
+   "options": {
+    "A": "Versioned, owned, reviewed, and evaluated on change, like code",
+    "B": "Edited in place when someone notices a problem",
+    "C": "Kept in a shared document for easy editing",
+    "D": "Frozen after launch"
+   },
+   "answer": "A",
+   "rationale": "Anything that determines production behaviour needs the lifecycle of code. Ad hoc edits (B) and open documents (C) invite unreviewed change, and freezing (D) blocks improvement"
+  },
+  {
+   "id": "architect-professional-mock-14",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Developer Productivity & Operational Enablement",
+   "question": "An organisation asks how to measure whether Claude Code is worth the licence cost. What should be measured?",
+   "options": {
+    "A": "Number of tool invocations",
+    "B": "Change in the delivery outcomes the tooling was adopted to improve",
+    "C": "Number of users onboarded",
+    "D": "Hours spent in the tool"
+   },
+   "answer": "B",
+   "rationale": "Value is the outcome moved, not the activity generated. Invocations (A), onboarding (C), and time in tool (D) measure usage rather than benefit"
+  },
+  {
+   "id": "architect-professional-mock-15",
+   "exam": "architect-professional",
+   "source": "mock",
+   "domain": "Developer Productivity & Operational Enablement",
+   "question": "What most often blocks a team from getting good results from Claude Code on an existing codebase?",
+   "options": {
+    "A": "The size of the repository",
+    "B": "The programming language",
+    "C": "The absence of committed context describing the conventions and structure",
+    "D": "The number of contributors"
+   },
+   "answer": "C",
+   "rationale": "Missing project context is the usual cause, and it is the one the team can fix. Size (A), language (B), and contributor count (D) do not by themselves prevent good results"
   }
  ]
 }

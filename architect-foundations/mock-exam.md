@@ -1,4 +1,4 @@
-# Mock exam: Architect – Foundations
+# Mock exam 1: Architect – Foundations
 
 A timed practice exam in the official style: scenario-framed, domains hidden, answers at the end. Unlike the [practice questions](practice-questions.md), this measures readiness rather than teaching. Original questions written against the public [blueprint](README.md#skills-measured) and the [six published scenarios](README.md#the-six-exam-scenarios); not items from the live exam, which is covered by a non-disclosure agreement.
 
@@ -168,4 +168,4 @@ Tally misses by domain; two or more in one domain marks your next study target, 
 
 ---
 
-Written by the maintainer for self-assessment. [Study guide](README.md) · [Study notes](notes.md) · [Practice questions](practice-questions.md) · [Repository index](../README.md)
+Written by the maintainer for self-assessment. [Study guide](README.md) · [Study notes](notes.md) · [Mock 2](mock-exam-2.md) · [Mock 3](mock-exam-3.md) · [Practice questions](practice-questions.md) · [Repository index](../README.md)

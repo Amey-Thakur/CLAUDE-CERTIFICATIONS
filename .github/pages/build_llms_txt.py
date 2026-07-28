@@ -33,7 +33,7 @@ GUIDE = [
     ("course-notes", "Per-course notes: what each is worth and the order to take them in"),
     ("resources", "Official documentation, engineering articles, and code"),
     ("videos", "Anthropic's official videos, arranged by exam"),
-    ("quiz", "A shuffled, timed practice engine drawn from 200 original questions"),
+    ("quiz", "A shuffled, timed practice engine drawn from 320 original questions"),
     ("practice", "How to practise, and what practice material exists"),
     ("flashcards", "110 flashcards, free for Anki, Quizlet, or RemNote"),
     ("tracker", "A progress tracker weighted by each domain's share of the exam"),

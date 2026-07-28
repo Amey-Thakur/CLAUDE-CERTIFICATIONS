@@ -1,4 +1,4 @@
-# Mock exam: Associate – Foundations
+# Mock exam 1: Associate – Foundations
 
 A timed practice exam in the official style. Unlike the [practice questions](practice-questions.md), the domains are hidden and the answers sit at the end, so this measures readiness rather than teaching. Original questions written against the public [blueprint](README.md#skills-measured); not items from the live exam, which is covered by a non-disclosure agreement.
 
@@ -150,4 +150,4 @@ Tally your misses by domain using the key above; two or more misses in one domai
 
 ---
 
-Written by the maintainer for self-assessment. [Study guide](README.md) · [Study notes](notes.md) · [Practice questions](practice-questions.md) · [Repository index](../README.md)
+Written by the maintainer for self-assessment. [Study guide](README.md) · [Study notes](notes.md) · [Mock 2](mock-exam-2.md) · [Mock 3](mock-exam-3.md) · [Practice questions](practice-questions.md) · [Repository index](../README.md)

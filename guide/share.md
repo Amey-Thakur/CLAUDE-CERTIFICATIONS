@@ -65,7 +65,7 @@ So I collected all of it in one open repository:
 - Every official exam guide and policy, mirrored with sources and dates
 - The blueprint for each exam with real domain weights, so you study what is actually tested
 - A one-page cheat sheet per exam for the day before
-- 200 original practice questions with a shuffled, timed engine
+- 320 original practice questions, three mock exams per certification, and a shuffled timed engine
 - Registration, proctoring setup, and the exam-day checklist
 
 Free, no sign-up, and no exam content: everything is built from published material.
