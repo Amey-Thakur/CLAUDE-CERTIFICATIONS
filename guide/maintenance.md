@@ -30,6 +30,30 @@ The script re-downloads every mirrored official PDF, verifies each file is a val
 
 **When Anthropic announces changes.** Program changes have historically landed as dated cutovers (the June 30, 2026 Pearson migration; the August 31, 2026 Global Premier discount expiry). Dated facts like these are written into the pages deliberately so that stale ones are findable: search the docs for the current year to audit them.
 
+## Regenerating the derived files
+
+Most of what this repository ships is generated from a source somewhere else in it, so edit the source and rebuild rather than editing the output. Every script is standard library only.
+
+`build_images.py` holds `CERTS`, the exam facts every other script and image is built from. Change an exam fact there, not in the outputs.
+
+| Command | Reads | Writes |
+| --- | --- | --- |
+| `python .github/scripts/build_question_bank.py` | the practice and mock markdown in each exam folder | `question-bank.json` |
+| `python .github/scripts/build_tracker.py` | `CERTS` | `.github/assets/tracker.json` |
+| `python .github/scripts/build_flashcards.py` | `CERTS` and [glossary.md](glossary.md) | `flashcards.tsv`, `guide/flashcards.md`, `.github/assets/flashcards.json` |
+| `python .github/scripts/build_images.py --render` | `CERTS`, which it defines | the roadmap, the four cheat sheets, the social preview, both flashcard faces |
+| `python .github/scripts/build_extra_images.py --render` | shared helpers from `build_images.py` | the six supporting cards |
+| `python .github/scripts/build_booklet.py --render` | every image above, plus the glossary and the certificates gallery | `claude-certifications-booklet.pdf` |
+| `python .github/scripts/update_resources.py` | the official source URLs | the mirrored PDFs |
+
+Each image script writes an SVG next to its PNG. The SVG is an intermediate the renderer consumes; nothing else reads it, and it is committed only so the vector artwork is available without running the script.
+
+Rendering needs headless Chrome. Set `CHROME_PATH` if it is not on the path.
+
+Order matters when several things change at once: question bank, then tracker and flashcards, then images, then the booklet, because the booklet embeds the images and reads the flashcard count.
+
+Continuous integration regenerates the question bank, the tracker, and the flashcards on every push and fails if the committed files differ, so those three can never drift. The images and the booklet are not rebuilt in CI because they need a browser; rebuild them yourself whenever `CERTS`, the glossary, or the certificates gallery changes.
+
 ## Editorial rules
 
 - Facts and recommendations stay separated. Certification pages state official facts first and put advice under a clearly labeled preparation section.
