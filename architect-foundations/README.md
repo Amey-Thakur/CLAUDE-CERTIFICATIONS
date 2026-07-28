@@ -69,6 +69,8 @@ Task statements per domain, condensed from section 6 of the guide:
 
 ## The six exam scenarios
 
+![The six published Architect Foundations exam scenarios and what each one tests](../.github/assets/card-architect-scenarios.png)
+
 > [!TIP]
 > This is the largest preparation advantage available on any of the four exams: the scenarios are published in advance, and four of these six frame every question you will see. Rehearse each one until its likely questions are predictable.
 

@@ -30,6 +30,7 @@ flowchart LR
 | [Frequently asked questions](faq.md) | Quick answers, from pricing to badges |
 | [Glossary](glossary.md) | The program's terms, defined once |
 | [Official sources](official-sources.md) | Provenance of every mirrored PDF |
+| [Share this](share.md) | Links, ready-to-use copy, and images for passing this on |
 | [Maintenance guide](maintenance.md) | Contributing to or maintaining this repository |
 
 Official PDFs in this folder: the [Anthropic Certification Exam Policy](anthropic-certification-exam-policy.pdf), the [Certification Terms and Conditions](certification-terms-and-conditions.pdf), and the illustrated [Exam Registration Guide](exam-registration-guide.pdf). Each certification's exam guide sits in that certification's folder.

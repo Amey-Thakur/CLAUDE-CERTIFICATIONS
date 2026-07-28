@@ -162,13 +162,15 @@ def avatar(x, y, size):
     )
 
 
-def footer(width, y):
+def footer(width, y, note=None):
     """Shared credit strip: who made it, where it lives, and whose program it documents."""
     parts = [f'<line x1="70" y1="{y}" x2="{width - 70}" y2="{y}" stroke="{RULE}"/>']
     parts.append(avatar(70, y + 20, 40))
     parts.append(f'<text x="124" y="{y + 40}" font-size="15" font-weight="600" fill="{BODY}">{AUTHOR}</text>')
     parts.append(f'<text x="124" y="{y + 58}" font-size="13.5" fill="{MUTED}">{REPO}</text>')
-    parts.append(anthropic_wordmark(width - 200, y + 34, 130))
+    parts.append(anthropic_wordmark(width - 200, y + 26, 130))
+    if note:
+        parts.append(f'<text x="{width - 70}" y="{y + 62}" font-size="12" fill="{FAINT}" text-anchor="end">{esc(note)}</text>')
     return "".join(parts)
 
 
@@ -217,7 +219,7 @@ def social_preview():
         out.append(f'<text x="{cx + 26}" y="{cy + 23}" font-size="15" fill="{MUTED}">{esc(sub)}</text>')
 
     out.append(f'<text x="70" y="452" font-size="15.5" fill="{BODY}">Free, open source, and written by someone who sat the exams. No sign-up, no paywall, no braindumps.</text>')
-    out.append(footer(W, 492))
+    out.append(footer(W, 492, "Facts drawn from the official Anthropic exam guides"))
     out.append("</svg>")
     return "\n".join(out)
 
@@ -268,7 +270,7 @@ def roadmap():
     out.append(f'<rect x="70" y="{strip}" width="{W - 140}" height="48" rx="8" fill="#f0eee6"/>')
     out.append(f'<text x="94" y="{strip + 30}" font-size="13.5" fill="{BODY}">Every exam: 120 minutes  ·  closed book  ·  Pearson VUE, online or test centre  ·  pass at 720 of 1000  ·  valid 12 months, free renewal  ·  badge via Credly  ·  partner tiers get 50% off</text>')
 
-    out.append(footer(W, strip + 76))
+    out.append(footer(W, strip + 76, "Facts drawn from the official Anthropic exam guides"))
     out.append("</svg>")
     return "\n".join(out)
 
@@ -316,7 +318,7 @@ def cheat_sheet(cert):
     out.append(f'<text x="94" y="660" font-size="13.5" fill="{BODY}">Answer everything, unanswered scores zero  ·  flag and return rather than stalling  ·  read how many responses each item wants  ·  find the stated constraint, then eliminate</text>')
 
     out.append(f'<text x="70" y="716" font-size="13.5" fill="{MUTED}">Full sheet, study guide, notes, practice questions, and a timed mock exam: {SITE}</text>')
-    out.append(footer(W, 752))
+    out.append(footer(W, 752, "Facts drawn from the official Anthropic exam guide"))
     out.append("</svg>")
     return "\n".join(out)
 

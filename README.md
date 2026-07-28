@@ -42,7 +42,9 @@ Each certification has its own folder containing the study guide, the official e
 Every exam: 120 minutes, closed book, proctored by Pearson VUE online or at a test center, passing score 720 of 1,000, credential valid 12 months with free renewal, badge via Credly. Fees are list prices in USD; partner tiers receive automatic discounts. Registration requires a Claude Partner Network company email.
 
 > [!TIP]
-> Every one of the 21 courses is free on the public [Anthropic Academy](https://anthropic.skilljar.com/), no partner account needed. Only the proctored exams require Claude Partner Network membership, so you can learn the whole syllabus before deciding whether to certify.
+> Every course in the program is free on the public [Anthropic Academy](https://anthropic.skilljar.com/), no partner account needed. Only the proctored exams require Claude Partner Network membership, so you can learn the whole syllabus before deciding whether to certify.
+>
+> Prefer one file? The whole guide is a printable booklet: [claude-certifications-booklet.pdf](claude-certifications-booklet.pdf), with the roadmap, every cheat sheet, the curriculum, the exam-day checklist, and the policies.
 
 ## Start here
 
@@ -74,6 +76,8 @@ Ask questions, share how your exam went, and compare preparation notes in [Discu
 
 > [!IMPORTANT]
 > Every candidate accepts a non-disclosure agreement covering exam questions, answer options, and scenarios, and it extends explicitly to online forums. Never post or request real exam content here. Blueprints, official sample questions, and the practice material in this repository are all fair game.
+
+Preparing someone else? The [share kit](guide/share.md) has the links, ready-to-use copy, and images.
 
 Contributions that keep facts current are welcome; see [CONTRIBUTING.md](.github/CONTRIBUTING.md).
 

@@ -4,6 +4,8 @@ The certification program is backed by free courses on [Anthropic Partner Academ
 
 ## How the certifications connect
 
+![Which Claude certification is yours: the four exams with who each is for, what it costs, and what it measures](../.github/assets/card-choose-certification.png)
+
 There are three roles and four certifications. Foundations is the entry level for each role; the Architect role adds a Professional level. There are no formal prerequisites anywhere: you can sit any exam directly, and Architect – Foundations does not upgrade into Architect – Professional.
 
 ```mermaid

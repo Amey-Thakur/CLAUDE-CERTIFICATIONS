@@ -11,6 +11,7 @@ cp -r associate-foundations developer-foundations architect-foundations architec
 cp -r .github/assets/logos site-src/assets/logos
 cp question-bank.json site-src/assets/question-bank.json
 cp .github/assets/*.png .github/assets/*.svg site-src/assets/
+cp claude-certifications-booklet.pdf site-src/assets/
 rm -f site-src/assets/logos/README.md
 cp .github/pages/extra.css site-src/stylesheets/extra.css
 cp .github/pages/index.md site-src/index.md

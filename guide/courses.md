@@ -2,6 +2,8 @@
 
 Every course behind the certification program, one entry each: what it teaches, where to take it, which exam it serves, and the maintainer's completion certificate as proof each one is real and finishable. All 21 are free on the public [Anthropic Academy](https://anthropic.skilljar.com/), no partner account needed; partners see the same courses with prep-path structure on [Partner Academy](https://anthropic-partners.skilljar.com/), and several are also on [Coursera](https://www.coursera.org/partners/anthropic).
 
+![Every official Anthropic course and the certification exam it serves](../.github/assets/card-courses.png)
+
 ## Claude platform
 
 For everyday and platform fluency, and the backbone of [Associate – Foundations](../associate-foundations/README.md) preparation.
