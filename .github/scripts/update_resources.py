@@ -54,10 +54,28 @@ RESOURCES = {
 }
 
 
+MAX_BYTES = 32 * 1024 * 1024
+
+
 def fetch(url: str) -> bytes:
+    """Download one mirrored document.
+
+    Two guards, because this writes into the repository from the network. The
+    response is capped so a misbehaving host cannot exhaust memory, and the
+    URL that actually served the bytes has to still be HTTPS: redirects are
+    followed by default, and a redirect to plaintext would let anything on the
+    path substitute the document.
+    """
+    if not url.lower().startswith("https://"):
+        raise OSError(f"refusing a non-HTTPS source: {url}")
     request = urllib.request.Request(url, headers={"User-Agent": "claude-certifications-updater"})
     with urllib.request.urlopen(request, timeout=60) as response:
-        return response.read()
+        if not response.geturl().lower().startswith("https://"):
+            raise OSError(f"redirected off HTTPS to {response.geturl()}")
+        data = response.read(MAX_BYTES + 1)
+    if len(data) > MAX_BYTES:
+        raise OSError(f"response exceeds {MAX_BYTES // 1024 // 1024} MB")
+    return data
 
 
 def main() -> int:

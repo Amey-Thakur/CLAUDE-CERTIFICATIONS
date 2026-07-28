@@ -17,11 +17,8 @@ This site is the readable version of the [CLAUDE-CERTIFICATIONS repository](http
 >
 > Amey Thakur
 
-<p>
-  <a class="github-button" href="https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star Amey-Thakur/CLAUDE-CERTIFICATIONS on GitHub">Star</a>
-  <a class="github-button" href="https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/fork" data-icon="octicon-repo-forked" data-size="large" data-show-count="true" aria-label="Fork Amey-Thakur/CLAUDE-CERTIFICATIONS on GitHub">Fork</a>
-  <script async defer src="https://buttons.github.io/buttons.js"></script>
-</p>
+[![Star the repository on GitHub](https://img.shields.io/github/stars/Amey-Thakur/CLAUDE-CERTIFICATIONS?style=social)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS)
+[![Fork the repository on GitHub](https://img.shields.io/github/forks/Amey-Thakur/CLAUDE-CERTIFICATIONS?style=social)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/fork)
 
 [![Checks](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/actions/workflows/checks.yml/badge.svg)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/actions/workflows/checks.yml)
 [![Release](https://img.shields.io/github/v/release/Amey-Thakur/CLAUDE-CERTIFICATIONS?label=release&color=c15f3c)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/releases/latest)
