@@ -1,0 +1,66 @@
+{% extends "base.html" %}
+
+<!--
+  The page a reader lands on after a stale link or a typo. It extends the site's
+  own base template, so it carries the same header, palette, and footer as every
+  other page, and every path below is absolute, because GitHub Pages serves this
+  file for a missing URL at any depth.
+-->
+
+{% block htmltitle %}
+  <title>Page not found - {{ config.site_name }}</title>
+{% endblock %}
+
+{% block content %}
+  <div class="notfound">
+    <p class="notfound__code">404</p>
+    <h1 class="notfound__title">That page is not here</h1>
+    <p class="notfound__lead">
+      The link is either out of date or slightly wrong. Nothing has been taken down. Everything below is
+      one click away, and the search box in the header covers the whole site.
+    </p>
+
+    <div class="notfound__grid">
+      <div class="notfound__group">
+        <h2>Start somewhere</h2>
+        <ul>
+          <li><a href="{{ 'index.html' | url }}">Home</a>, the whole program on one page</li>
+          <li><a href="{{ 'guide/learning-paths.html' | url }}">Which certification to take</a></li>
+          <li><a href="{{ 'guide/index.html' | url }}">The program guide</a></li>
+          <li><a href="{{ 'guide/faq.html' | url }}">Frequently asked questions</a></li>
+        </ul>
+      </div>
+
+      <div class="notfound__group">
+        <h2>The four exams</h2>
+        <ul>
+          <li><a href="{{ 'associate-foundations/index.html' | url }}">Associate, Foundations</a></li>
+          <li><a href="{{ 'developer-foundations/index.html' | url }}">Developer, Foundations</a></li>
+          <li><a href="{{ 'architect-foundations/index.html' | url }}">Architect, Foundations</a></li>
+          <li><a href="{{ 'architect-professional/index.html' | url }}">Architect, Professional</a></li>
+        </ul>
+      </div>
+
+      <div class="notfound__group">
+        <h2>Study with</h2>
+        <ul>
+          <li><a href="{{ 'guide/quiz.html' | url }}">The practice engine</a></li>
+          <li><a href="{{ 'guide/flashcards.html' | url }}">Flashcards</a></li>
+          <li><a href="{{ 'guide/tracker.html' | url }}">Progress tracker</a></li>
+          <li><a href="{{ 'assets/claude-certifications-booklet.pdf' | url }}">The printable booklet</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="notfound__foot">
+      <img class="notfound__avatar" src="{{ 'assets/avatar.jpg' | url }}" alt="" width="44" height="44">
+      <div class="notfound__who">
+        <strong>Amey Thakur</strong>
+        <span>
+          If a link on this site is broken, please
+          <a href="{{ config.repo_url }}/issues/new">open an issue</a> and it will be fixed.
+        </span>
+      </div>
+    </div>
+  </div>
+{% endblock %}

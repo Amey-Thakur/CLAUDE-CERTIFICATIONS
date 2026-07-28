@@ -10,6 +10,7 @@ mkdir -p site-src/assets site-src/stylesheets site-src/javascripts
 cp -r associate-foundations developer-foundations architect-foundations architect-professional guide certificates site-src/
 cp -r .github/assets/logos site-src/assets/logos
 cp question-bank.json site-src/assets/question-bank.json
+cp -r .github/pages/overrides site-src/overrides
 cp .github/pages/dropdown.js site-src/javascripts/dropdown.js
 cp .github/assets/tracker.json site-src/assets/tracker.json
 cp .github/assets/flashcards.json site-src/assets/flashcards.json

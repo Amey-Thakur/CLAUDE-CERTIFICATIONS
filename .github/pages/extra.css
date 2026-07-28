@@ -620,6 +620,130 @@
   font-variant-numeric: tabular-nums;
 }
 
+/* The 404 page. Same palette and spacing as the rest of the site, so a wrong
+   link reads as part of the documentation rather than a dead end. */
+.notfound {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 3.5rem 0 4rem;
+}
+
+.notfound__code {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 3.4rem;
+  line-height: 1;
+  color: var(--md-primary-fg-color);
+}
+
+.notfound__title {
+  margin: 0.6rem 0 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.7rem;
+  font-weight: 500;
+  color: var(--md-default-fg-color);
+}
+
+.notfound__lead {
+  max-width: 34rem;
+  margin: 1rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.75;
+  color: var(--md-default-fg-color--light);
+}
+
+.notfound__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(13rem, 1fr));
+  gap: 1.6rem 2.4rem;
+  margin-top: 2.8rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.notfound__group h2 {
+  margin: 0 0 0.7rem;
+  /* The section labels are kickers, not headings, so they keep the body face
+     rather than the serif the theme gives every other h2. */
+  font-family: inherit;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--md-default-fg-color--light);
+}
+
+.notfound__group ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0.78rem;
+  line-height: 1.5;
+}
+
+.notfound__group li {
+  margin: 0 0 0.55rem;
+  color: var(--md-default-fg-color--light);
+}
+
+.notfound__group a {
+  color: var(--md-primary-fg-color);
+  text-decoration: none;
+}
+
+.notfound__group a:hover {
+  color: var(--md-accent-fg-color);
+  text-decoration: underline;
+}
+
+.notfound__foot {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-top: 2.6rem;
+  padding-top: 1.4rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.notfound__avatar {
+  width: 44px;
+  height: 44px;
+  flex: none;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.notfound__who {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.74rem;
+  line-height: 1.6;
+  color: var(--md-default-fg-color--light);
+}
+
+.notfound__who strong {
+  color: var(--md-default-fg-color);
+}
+
+.notfound__who a {
+  color: var(--md-primary-fg-color);
+}
+
+@media screen and (max-width: 44.9375em) {
+  .notfound {
+    padding: 2.5rem 0 3rem;
+  }
+
+  .notfound__code {
+    font-size: 2.8rem;
+  }
+
+  .notfound__title {
+    font-size: 1.4rem;
+  }
+}
+
 /* Printing: drop the interface, keep the document. */
 @media print {
   .md-header,
