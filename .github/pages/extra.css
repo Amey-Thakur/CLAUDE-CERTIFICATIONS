@@ -256,3 +256,105 @@
 [data-md-color-scheme="slate"] .mermaid .titleText {
   fill: #e3e1dc !important;
 }
+
+/* Progress tracker rows. */
+.tracker__row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--md-default-fg-color--lightest);
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.tracker__row:hover .tracker__label {
+  color: var(--md-primary-fg-color);
+}
+
+.tracker__row input {
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--md-primary-fg-color);
+  flex: none;
+}
+
+.tracker__label {
+  flex: 1;
+  line-height: 1.4;
+}
+
+.tracker__weight {
+  color: var(--md-default-fg-color--light);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Printing: drop the interface, keep the document. */
+@media print {
+  .md-header,
+  .md-tabs,
+  .md-sidebar,
+  .md-footer,
+  .md-top,
+  .md-dialog,
+  .md-content__button,
+  .quiz__button,
+  .github-button,
+  #taster,
+  #quiz-app,
+  #tracker {
+    display: none !important;
+  }
+
+  .md-main__inner,
+  .md-content,
+  .md-grid {
+    margin: 0 !important;
+    max-width: none !important;
+  }
+
+  .md-typeset {
+    color: #000;
+    font-size: 10.5pt;
+  }
+
+  .md-typeset a {
+    color: #000;
+    text-decoration: underline;
+  }
+
+  .md-typeset h1,
+  .md-typeset h2,
+  .md-typeset h3 {
+    page-break-after: avoid;
+    color: #000;
+  }
+
+  .md-typeset table,
+  .md-typeset pre,
+  .md-typeset .admonition,
+  .md-typeset details,
+  .md-typeset .mermaid,
+  .video-embed {
+    page-break-inside: avoid;
+  }
+
+  .md-typeset img,
+  .md-typeset .mermaid svg {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  .video-embed {
+    display: none;
+  }
+
+  /* Answers stay hidden on paper unless the reader opened them. */
+  .md-typeset details[open] {
+    border: 1px solid #999;
+  }
+
+  @page {
+    margin: 16mm;
+  }
+}

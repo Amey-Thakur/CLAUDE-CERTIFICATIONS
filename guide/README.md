@@ -23,6 +23,7 @@ flowchart LR
 | [Course notes](course-notes.md) | The maintainer's take on each course: what it is worth, what to watch for, and the order to take them |
 | [Study strategy](study-strategy.md) | You have chosen an exam and want a plan |
 | [Official resources](resources.md) | Anthropic's documentation, courses, engineering articles, videos, and code, mapped to each exam |
+| [Progress tracker](tracker.md) | Tick each domain as you cover it; progress is weighted by exam share |
 | [Practice engine](quiz.md) | A shuffled, timed, scored exam drawn from the 100-question bank, in the browser or a terminal |
 | [Practice with Claude](practice.md) | Generating blueprint-based practice questions with Claude, within the exam NDA |
 | [Registration and scheduling](registration.md) | Booking the exam, fixing partner email issues, preparing your machine |

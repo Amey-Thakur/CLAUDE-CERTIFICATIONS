@@ -10,6 +10,7 @@ mkdir -p site-src/assets site-src/stylesheets
 cp -r associate-foundations developer-foundations architect-foundations architect-professional guide certificates site-src/
 cp -r .github/assets/logos site-src/assets/logos
 cp question-bank.json site-src/assets/question-bank.json
+cp .github/assets/tracker.json site-src/assets/tracker.json
 cp .github/assets/*.png .github/assets/*.svg site-src/assets/
 cp claude-certifications-booklet.pdf site-src/assets/
 rm -f site-src/assets/logos/README.md

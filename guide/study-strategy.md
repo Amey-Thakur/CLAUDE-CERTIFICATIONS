@@ -42,6 +42,8 @@ timeline
 - **Week 2: depth.** Work the red and yellow checklist items through documentation and hands-on building. This is the week to build the real thing the guide asks for: a Project, an application, an agent, or an extraction pipeline depending on your exam.
 - **Week 3: close.** Reread the guide. Work the sample questions and rationales. Rerun the [system test, network checks, and application shutdown list](registration.md#preparing-your-computer-for-an-online-proctored-exam) on the machine you will test with. Sit the exam early in a day when you are fresh.
 
+The [progress tracker](tracker.md) keeps this checklist for you in the browser, weighted by how much of the exam each domain carries.
+
 ## Exam week checklist
 
 - [ ] Name on Pearson registration exactly matches your photo ID

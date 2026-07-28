@@ -1,0 +1,176 @@
+{
+ "exams": {
+  "associate-foundations": {
+   "title": "Claude Certified Associate - Foundations",
+   "code": "CCAO-F",
+   "accent": "#c15f3c",
+   "domains": [
+    {
+     "name": "Output evaluation",
+     "weight": 21
+    },
+    {
+     "name": "Workflow integration",
+     "weight": 16
+    },
+    {
+     "name": "Governance and risk",
+     "weight": 15
+    },
+    {
+     "name": "Prompting",
+     "weight": 14
+    },
+    {
+     "name": "Product and model choice",
+     "weight": 12
+    },
+    {
+     "name": "Configuration",
+     "weight": 12
+    },
+    {
+     "name": "Troubleshooting",
+     "weight": 10
+    }
+   ],
+   "milestones": [
+    "Read the exam guide end to end",
+    "Turn the blueprint into a red, amber, green checklist",
+    "Work the prep courses for this exam",
+    "Build the thing the guide asks you to build",
+    "Work the official sample questions and their rationales",
+    "Score 80% or better on a timed mock exam",
+    "Run the OnVUE system test on the machine you will use",
+    "Book the exam"
+   ]
+  },
+  "developer-foundations": {
+   "title": "Claude Certified Developer - Foundations",
+   "code": "CCDV-F",
+   "accent": "#7d8c5c",
+   "domains": [
+    {
+     "name": "Applications and integration",
+     "weight": 33
+    },
+    {
+     "name": "Model selection and cost",
+     "weight": 17
+    },
+    {
+     "name": "Agents and workflows",
+     "weight": 15
+    },
+    {
+     "name": "Prompt and context",
+     "weight": 11
+    },
+    {
+     "name": "Tools and MCP",
+     "weight": 11
+    },
+    {
+     "name": "Security and safety",
+     "weight": 8
+    },
+    {
+     "name": "Claude Code, eval",
+     "weight": 6
+    }
+   ],
+   "milestones": [
+    "Read the exam guide end to end",
+    "Turn the blueprint into a red, amber, green checklist",
+    "Work the prep courses for this exam",
+    "Build the thing the guide asks you to build",
+    "Work the official sample questions and their rationales",
+    "Score 80% or better on a timed mock exam",
+    "Run the OnVUE system test on the machine you will use",
+    "Book the exam"
+   ]
+  },
+  "architect-foundations": {
+   "title": "Claude Certified Architect - Foundations",
+   "code": "CCAR-F",
+   "accent": "#4f7d8c",
+   "domains": [
+    {
+     "name": "Agentic architecture",
+     "weight": 27
+    },
+    {
+     "name": "Claude Code workflows",
+     "weight": 20
+    },
+    {
+     "name": "Prompting, structured output",
+     "weight": 20
+    },
+    {
+     "name": "Tool design and MCP",
+     "weight": 18
+    },
+    {
+     "name": "Context and reliability",
+     "weight": 15
+    }
+   ],
+   "milestones": [
+    "Read the exam guide end to end",
+    "Turn the blueprint into a red, amber, green checklist",
+    "Work the prep courses for this exam",
+    "Build the thing the guide asks you to build",
+    "Work the official sample questions and their rationales",
+    "Score 80% or better on a timed mock exam",
+    "Run the OnVUE system test on the machine you will use",
+    "Book the exam"
+   ]
+  },
+  "architect-professional": {
+   "title": "Claude Certified Architect - Professional",
+   "code": "CCAR-P",
+   "accent": "#8a5f8c",
+   "domains": [
+    {
+     "name": "Integration",
+     "weight": 19
+    },
+    {
+     "name": "Solution design",
+     "weight": 17
+    },
+    {
+     "name": "Evaluation and testing",
+     "weight": 16
+    },
+    {
+     "name": "Governance and risk",
+     "weight": 14
+    },
+    {
+     "name": "Stakeholders, lifecycle",
+     "weight": 14
+    },
+    {
+     "name": "Models and prompting",
+     "weight": 13
+    },
+    {
+     "name": "Developer enablement",
+     "weight": 7
+    }
+   ],
+   "milestones": [
+    "Read the exam guide end to end",
+    "Turn the blueprint into a red, amber, green checklist",
+    "Work the prep courses for this exam",
+    "Build the thing the guide asks you to build",
+    "Work the official sample questions and their rationales",
+    "Score 80% or better on a timed mock exam",
+    "Run the OnVUE system test on the machine you will use",
+    "Book the exam"
+   ]
+  }
+ }
+}
