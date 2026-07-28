@@ -20,7 +20,7 @@ If the bank has fewer questions than a domain's allocation needs, write addition
 
 Produce a readiness profile:
 
-- Overall score, and how it maps to the readiness bands in the certification's `mock-exam.md`
+- Overall score, and how it maps to the readiness bands in the certification's `mock-exam-1.md`
 - A table of every domain: questions asked, correct, and the domain's exam weight
 - Weak domains, ranked by the product of error rate and exam weight, so the ranking reflects what will actually cost marks
 - For each weak domain, the two or three specific objectives from the blueprint that the missed questions map to

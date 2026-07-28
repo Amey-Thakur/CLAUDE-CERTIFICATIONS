@@ -1,6 +1,6 @@
 # Mock exam 2: Architect – Professional
 
-A second timed practice exam in the official style, with fifteen questions that appear nowhere else in this repository. Take it after [mock exam 1](mock-exam.md) and the [practice questions](practice-questions.md), when you want a fresh measure rather than a review. Original questions written against the public [blueprint](README.md#skills-measured); not items from the live exam, which is covered by a non-disclosure agreement.
+A second timed practice exam in the official style, with fifteen questions that appear nowhere else in this repository. Take it after [mock exam 1](mock-exam-1.md) and the [practice questions](practice-questions.md), when you want a fresh measure rather than a review. Original questions written against the public [blueprint](README.md#skills-measured); not items from the live exam, which is covered by a non-disclosure agreement.
 
 **How to take it.** 15 questions, 30 minutes, closed book: no notes, no documentation, no Claude. Several questions test judgment about governance and stakeholders, which carry real weight on this exam. Score yourself with the [key](#answer-key) and the [readiness table](#interpreting-your-score) afterwards.
 
@@ -153,4 +153,4 @@ Tally your misses by domain using the key above; two or more misses in one domai
 
 ---
 
-Written by the maintainer for self-assessment. [Study guide](README.md) · [Study notes](notes.md) · [Mock 1](mock-exam.md) · [Mock 3](mock-exam-3.md) · [Practice questions](practice-questions.md) · [Repository index](../README.md)
+Written by the maintainer for self-assessment. [Study guide](README.md) · [Study notes](notes.md) · [Mock 1](mock-exam-1.md) · [Mock 3](mock-exam-3.md) · [Practice questions](practice-questions.md) · [Repository index](../README.md)

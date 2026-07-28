@@ -10,7 +10,7 @@ use_directory_urls: false
 
 theme:
   name: material
-  custom_dir: pages/overrides
+  custom_dir: overrides
   logo: assets/logos/claude-symbol-ivory.svg
   favicon: assets/logos/claude-symbol.svg
   palette:
@@ -64,7 +64,7 @@ nav:
       - Cheat sheet: associate-foundations/cheat-sheet.md
       - Study notes: associate-foundations/notes.md
       - Practice questions: associate-foundations/practice-questions.md
-      - Mock exam 1: associate-foundations/mock-exam.md
+      - Mock exam 1: associate-foundations/mock-exam-1.md
       - Mock exam 2: associate-foundations/mock-exam-2.md
       - Mock exam 3: associate-foundations/mock-exam-3.md
   - Developer - Foundations:
@@ -72,7 +72,7 @@ nav:
       - Cheat sheet: developer-foundations/cheat-sheet.md
       - Study notes: developer-foundations/notes.md
       - Practice questions: developer-foundations/practice-questions.md
-      - Mock exam 1: developer-foundations/mock-exam.md
+      - Mock exam 1: developer-foundations/mock-exam-1.md
       - Mock exam 2: developer-foundations/mock-exam-2.md
       - Mock exam 3: developer-foundations/mock-exam-3.md
   - Architect - Foundations:
@@ -80,7 +80,7 @@ nav:
       - Cheat sheet: architect-foundations/cheat-sheet.md
       - Study notes: architect-foundations/notes.md
       - Practice questions: architect-foundations/practice-questions.md
-      - Mock exam 1: architect-foundations/mock-exam.md
+      - Mock exam 1: architect-foundations/mock-exam-1.md
       - Mock exam 2: architect-foundations/mock-exam-2.md
       - Mock exam 3: architect-foundations/mock-exam-3.md
   - Architect - Professional:
@@ -88,7 +88,7 @@ nav:
       - Cheat sheet: architect-professional/cheat-sheet.md
       - Study notes: architect-professional/notes.md
       - Practice questions: architect-professional/practice-questions.md
-      - Mock exam 1: architect-professional/mock-exam.md
+      - Mock exam 1: architect-professional/mock-exam-1.md
       - Mock exam 2: architect-professional/mock-exam-2.md
       - Mock exam 3: architect-professional/mock-exam-3.md
   - Program guide:

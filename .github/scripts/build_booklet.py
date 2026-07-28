@@ -97,6 +97,7 @@ li { margin-bottom: 1.2mm; }
 .chip { font-size: 9.5pt; font-weight: 600; padding: 1.6mm 4mm; border-radius: 10mm; }
 .byline { display: flex; align-items: center; gap: 4mm; margin-top: 12mm; }
 .byline img { width: 16mm; height: 16mm; border: 1px solid #e0ddd4; }
+.fill { color: #c15f3c; font-style: italic; }
 .callout { background: #f0eee6; border-radius: 2mm; padding: 4mm 5mm; margin: 3mm 0; font-size: 10pt; }
 .kv { display: flex; gap: 6mm; margin-bottom: 4mm; flex-wrap: wrap; }
 .kv div { min-width: 24mm; }
@@ -286,15 +287,16 @@ def prompts_page(label):
     return page(f'''<h3>Study with Claude</h3>
       <h1 style="font-size:24pt">Two prompts worth keeping</h1>
       <p class="lead muted" style="max-width:215mm">Claude is the most patient tutor you will get, but only if
-      you ask properly. These two do more than any others. Type them as written and fill in the braces.</p>
+      you ask properly. These two do more than any others. Type them as written, replacing the
+      <span class="fill">coral italics</span> with your own details.</p>
       <div class="cols" style="margin-top:3mm">
         <div class="col">
           <h3>Find out where you actually stand</h3>
           <p class="small">Run this before you study anything. It produces a ranked list, which beats working
           through the syllabus in order.</p>
           <div class="callout small" style="line-height:1.6">
-            You are helping me prepare for the {{exam}} exam. Here is the published blueprint with the weight
-            of each domain: {{paste the domain table}}.<br><br>
+            You are helping me prepare for the <span class="fill">Claude Certified Architect, Foundations</span> exam. Here is the published blueprint with the weight
+            of each domain: <span class="fill">paste the domain table</span>.<br><br>
             Ask me one question at a time, twelve in total, spread across the domains in proportion to their
             weight. Scenario-based, one best answer, four options. Do not tell me the answer until I have
             committed to one.<br><br>
@@ -307,8 +309,8 @@ def prompts_page(label):
           <p class="small">The highest-value minute in your preparation. A wrong answer you understand is worth
           more than ten right ones you guessed.</p>
           <div class="callout small" style="line-height:1.6">
-            I got this practice question wrong. Question: {{paste it with all four options}}. I chose:
-            {{your answer}}. The correct answer is: {{the answer}}.<br><br>
+            I got this practice question wrong. Question: <span class="fill">paste it with all four options</span>. I chose:
+            <span class="fill">your answer</span>. The correct answer is: <span class="fill">the correct answer</span>.<br><br>
             Do not just restate the rationale. Tell me what rule the question is actually testing, why the
             option I chose is attractive and what constraint it fails, what would have to change in the
             scenario for my answer to become correct, and two other situations where the same rule decides it.

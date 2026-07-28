@@ -113,7 +113,7 @@ def build():
         folder = REPO_ROOT / slug
         found = []
         found += parse_practice(folder / "practice-questions.md", slug)
-        for mock in ("mock-exam.md", "mock-exam-2.md", "mock-exam-3.md"):
+        for mock in ("mock-exam-1.md", "mock-exam-2.md", "mock-exam-3.md"):
             if (folder / mock).exists():
                 found += parse_mock(folder / mock, slug)
         bank["exams"][slug] = {"title": title, "count": len(found)}

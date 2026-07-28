@@ -5,7 +5,7 @@ A shuffled, timed, scored practice exam drawn from the repository's bank of 100 
 The questions are original, written against the public blueprints. They are not items from the live exam, which is covered by a [non-disclosure agreement](policies.md#confidentiality).
 
 <div id="quiz-app" class="quiz">
-  <noscript>The interactive engine needs JavaScript. Use the command line runner below, or read the written <a href="../associate-foundations/practice-questions.md">practice questions</a> and <a href="../associate-foundations/mock-exam.md">mock exams</a>.</noscript>
+  <noscript>The interactive engine needs JavaScript. Use the command line runner below, or read the written <a href="../associate-foundations/practice-questions.md">practice questions</a> and <a href="../associate-foundations/mock-exam-1.md">mock exams</a>.</noscript>
 </div>
 
 ## On the command line

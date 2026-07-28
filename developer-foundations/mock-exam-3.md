@@ -1,6 +1,6 @@
 # Mock exam 3: Developer – Foundations
 
-The third and final timed practice exam, with fifteen more questions that appear nowhere else in this repository. Save it for the week you intend to book: taken cold, after the [first](mock-exam.md) and [second](mock-exam-2.md) mocks, it is the closest thing here to a readiness check. Original questions written against the public [blueprint](README.md#skills-measured); not items from the live exam, which is covered by a non-disclosure agreement.
+The third and final timed practice exam, with fifteen more questions that appear nowhere else in this repository. Save it for the week you intend to book: taken cold, after the [first](mock-exam-1.md) and [second](mock-exam-2.md) mocks, it is the closest thing here to a readiness check. Original questions written against the public [blueprint](README.md#skills-measured); not items from the live exam, which is covered by a non-disclosure agreement.
 
 **How to take it.** 15 questions, 30 minutes, closed book: no notes, no documentation, no Claude. Several questions turn on cost and latency trade-offs, which carry real weight on this paper. Score yourself with the [key](#answer-key) and the [readiness table](#interpreting-your-score) afterwards.
 
@@ -153,4 +153,4 @@ Tally your misses by domain using the key above; two or more misses in one domai
 
 ---
 
-Written by the maintainer for self-assessment. [Study guide](README.md) · [Study notes](notes.md) · [Mock 1](mock-exam.md) · [Mock 2](mock-exam-2.md) · [Practice questions](practice-questions.md) · [Repository index](../README.md)
+Written by the maintainer for self-assessment. [Study guide](README.md) · [Study notes](notes.md) · [Mock 1](mock-exam-1.md) · [Mock 2](mock-exam-2.md) · [Practice questions](practice-questions.md) · [Repository index](../README.md)

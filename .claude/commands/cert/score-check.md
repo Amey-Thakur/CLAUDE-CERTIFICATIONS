@@ -11,7 +11,7 @@ Accept any of these: a real Pearson score report with its scaled score and perce
 
 ## Analyse
 
-1. Read the certification's `README.md` for domain weights and `mock-exam.md` for the readiness bands.
+1. Read the certification's `README.md` for domain weights and `mock-exam-1.md` for the readiness bands.
 2. For each domain, compute the gap between the score and a passing standard, then weight that gap by the domain's share of the exam. Rank by the weighted gap: a weak domain worth 33% of the paper matters far more than a weak domain worth 3%.
 3. Note any domain that is strong, so time is not wasted there.
 

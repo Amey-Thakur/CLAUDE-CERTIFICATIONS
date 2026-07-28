@@ -459,4 +459,4 @@ Thirty-five original practice questions written for this repository against the 
 
 ---
 
-These questions are the maintainer's original work for self-assessment. [Study guide](README.md) · [Study notes](notes.md) · [Mock exam](mock-exam.md) · [Repository index](../README.md)
+These questions are the maintainer's original work for self-assessment. [Study guide](README.md) · [Study notes](notes.md) · [Mock exam](mock-exam-1.md) · [Repository index](../README.md)

@@ -2,7 +2,7 @@
 
 The Claude Certified Architect – Professional certification validates that an individual can design, build, and deliver production-grade AI solutions on the Claude platform: selecting models, architectures, and API patterns; applying prompt and context engineering; integrating Claude into enterprise systems; and incorporating evaluation, security, compliance, and governance into designs. Anthropic summarizes the distinction from Foundations this way: Foundations proves an architect can build with Claude, Professional proves they can design and govern Claude solutions at enterprise scale.
 
-This page condenses the official exam guide and program pages. The [exam guide](exam-guide.pdf) (version 1.0, effective July 2026) is the authoritative reference, and the maintainer's study notes for this exam are in [notes.md](notes.md), with original practice questions in [practice-questions.md](practice-questions.md) and a timed [mock exam](mock-exam.md). The [cheat sheet](cheat-sheet.md) condenses this whole page to one printable page for the day before.
+This page condenses the official exam guide and program pages. The [exam guide](exam-guide.pdf) (version 1.0, effective July 2026) is the authoritative reference, and the maintainer's study notes for this exam are in [notes.md](notes.md), with original practice questions in [practice-questions.md](practice-questions.md) and a timed [mock exam](mock-exam-1.md). The [cheat sheet](cheat-sheet.md) condenses this whole page to one printable page for the day before.
 
 ## Exam facts
 

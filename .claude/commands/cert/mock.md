@@ -24,7 +24,7 @@ Present one question at a time. Give no feedback of any kind until the exam is o
 ## Report
 
 1. Raw score and percentage, and elapsed time against the 2-minutes-per-question budget
-2. The readiness band from the certification's `mock-exam.md`
+2. The readiness band from the certification's `mock-exam-1.md`
 3. A per-domain table of correct against asked, with each domain's exam weight
 4. A full review of every missed question: the question, the correct option, the option chosen, and why the chosen one fails
 5. The two domains to study next, chosen by error rate weighted by exam weight
