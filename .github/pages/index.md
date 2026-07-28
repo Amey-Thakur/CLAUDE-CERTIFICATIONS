@@ -6,6 +6,8 @@
 
 **One place to prepare for every Anthropic Claude certification.** Official exam guides, blueprints, policies, courses, and study notes, collected and organized so you can spend your time studying, not searching.
 
+[Booklet (PDF)](assets/claude-certifications-booklet.pdf) · [Certifications](#the-certifications) · [Start here](#start-here) · [Program guide](guide/README.md) · [Practice engine](guide/quiz.md) · [Certificates](certificates/README.md) · [Repository](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS)
+
 This site is the readable version of the [CLAUDE-CERTIFICATIONS repository](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS), built and maintained by [Amey Thakur](https://github.com/Amey-Thakur) after completing the program's curriculum. It is a community resource, not an official Anthropic site: the official program lives on [Anthropic Partner Academy](https://anthropic-partners.skilljar.com/), and exams are delivered by [Pearson VUE](https://www.pearsonvue.com/us/en/anthropic.html).
 
 > [!NOTE]
