@@ -3,7 +3,7 @@
   "@type": "SoftwareSourceCode",
   "name": "Claude Certifications",
   "description": "Study guide for all four Anthropic Claude certifications: Associate, Developer, and Architect Foundations and Professional. Official exam guides, blueprints with domain weights, cheat sheets, 320 practice questions, three mock exams per certification, 110 flashcards, official videos, and a printable booklet.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "dateCreated": "2026-07-27",
   "dateModified": "2026-07-28",
   "license": "https://spdx.org/licenses/MIT",
