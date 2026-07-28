@@ -17,7 +17,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from build_images import (footer_at,   # noqa: E402
+from build_images import (SHADE, footer_at,   # noqa: E402
     ASSETS, BODY, CARD, CORAL, FAINT, FONT, INK, MUTED, OLIVE, PAPER, PLUM, RULE, TEAL,
     claude_symbol, esc, footer, render,
 )
@@ -335,7 +335,7 @@ def study_plan_card():
             iy += 19 * len(lines) + 18
         x += 393
 
-    out.append(f'<rect x="70" y="644" width="{W - 140}" height="72" rx="8" fill="#f0eee6"/>')
+    out.append(f'<rect x="70" y="644" width="{W - 140}" height="72" rx="8" fill="{SHADE}"/>')
     out.append(f'<text x="94" y="672" font-size="12" font-weight="700" fill="{FAINT}" letter-spacing="0.8">THE TWO RULES THAT MATTER MOST</text>')
     out.append(f'<text x="94" y="698" font-size="13.5" fill="{BODY}">Study by domain weight, not by what interests you  ·  build something real, because the exams test judgment and judgment comes from hitting the tradeoffs yourself</text>')
 

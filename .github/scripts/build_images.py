@@ -37,6 +37,7 @@ FAINT = "#8a857c"
 RULE = "#e0ddd4"
 PAPER = "#faf9f5"
 CARD = "#ffffff"
+SHADE = "#f0eee6"      # the callout and code background
 CORAL = "#c15f3c"
 CLAUDE = "#d97757"
 OLIVE = "#7d8c5c"
@@ -274,7 +275,7 @@ def roadmap():
         out.append(f'<text x="{x + 22}" y="{top + 622}" font-size="11.5" fill="{FAINT}">{esc(cert["note"])}</text>')
 
     strip = top + 692
-    out.append(f'<rect x="70" y="{strip}" width="{W - 140}" height="48" rx="8" fill="#f0eee6"/>')
+    out.append(f'<rect x="70" y="{strip}" width="{W - 140}" height="48" rx="8" fill="{SHADE}"/>')
     out.append(f'<text x="94" y="{strip + 30}" font-size="13.5" fill="{BODY}">Every exam: 120 minutes  ·  closed book  ·  Pearson VUE, online or test centre  ·  pass at 720 of 1000  ·  valid 12 months, free renewal  ·  badge via Credly  ·  partner tiers get 50% off</text>')
 
     out.append(footer(W, strip + 76, "Facts drawn from the official Anthropic exam guides"))
@@ -320,7 +321,7 @@ def cheat_sheet(cert):
         out.append(f'<text x="602" y="{y}" font-size="13.5" fill="{BODY}">{esc(rule)}</text>')
         y += 30
 
-    out.append(f'<rect x="70" y="608" width="{W - 140}" height="70" rx="8" fill="#f0eee6"/>')
+    out.append(f'<rect x="70" y="608" width="{W - 140}" height="70" rx="8" fill="{SHADE}"/>')
     out.append(f'<text x="94" y="636" font-size="12" font-weight="700" fill="{FAINT}" letter-spacing="0.8">ON THE DAY</text>')
     out.append(f'<text x="94" y="660" font-size="13.5" fill="{BODY}">Answer everything, unanswered scores zero  ·  flag and return rather than stalling  ·  read how many responses each item wants  ·  find the stated constraint, then eliminate</text>')
 
