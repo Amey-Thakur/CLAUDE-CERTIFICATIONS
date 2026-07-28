@@ -130,7 +130,7 @@ for rel, desc in json.loads(Path('.github/pages/descriptions.json').read_text(en
         head = re.search('^# (.+)$', text, re.M)
         title = head.group(1).strip().replace('"', chr(39)) if head else ''
         fm = ['---', 'description: "' + safe + '"']
-        if title:
+        if title and title != 'Claude Certifications':
             fm.append('title: "' + title + '"')
         fm += ['---', '', text]
         p.write_text(chr(10).join(fm), encoding='utf-8')
