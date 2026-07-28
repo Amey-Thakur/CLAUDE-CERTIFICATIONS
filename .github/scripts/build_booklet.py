@@ -423,7 +423,11 @@ def proof_page(label):
     for m in re.finditer(r"^## (.+)$", text, re.M):
         nxt = text.find(chr(10) + "## ", m.end())
         body = text[m.end():nxt if nxt > 0 else len(text)]
-        names = [n.replace("&amp;", "and") for n in re.findall(r"<b>([^<]+)</b>", body)]
+        # The gallery stores the course titles HTML-encoded. They go straight
+        # back into HTML, so the entity is already correct; rewriting &amp; to
+        # the word "and" changed a course title and disagreed with the
+        # curriculum card on page 19.
+        names = re.findall(r"<b>([^<]+)</b>", body)
         if names:
             groups.append((m.group(1), names))
     total = sum(len(n) for _, n in groups)
