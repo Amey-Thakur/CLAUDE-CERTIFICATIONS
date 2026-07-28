@@ -4,14 +4,37 @@ If this saved you time, the most useful thing you can do is put it in front of t
 
 ## The links
 
-| What | Link |
-| --- | --- |
-| The repository | `https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS` |
-| The website | `https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/` |
-| The printable booklet | `https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/raw/main/claude-certifications-booklet.pdf` |
-| The roadmap image | `https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/raw/main/.github/assets/roadmap.png` |
+Every block here has a copy button on the right. Sharing the website link renders a preview card automatically on LinkedIn, Slack, and X.
 
-Sharing the website link renders a preview card automatically on LinkedIn, Slack, and X.
+**The website**, the best link for most people:
+
+```text
+https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/
+```
+
+**The repository**, for anyone who will clone, fork, or read the source:
+
+```text
+https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS
+```
+
+**The printable booklet**, a direct download:
+
+```text
+https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/raw/main/claude-certifications-booklet.pdf
+```
+
+**The roadmap image**, to attach to a post:
+
+```text
+https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/raw/main/.github/assets/roadmap.png
+```
+
+**The flashcard deck**, for Anki, Quizlet, or RemNote:
+
+```text
+https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/raw/main/flashcards.tsv
+```
 
 ## One click
 
