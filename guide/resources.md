@@ -37,25 +37,7 @@ Anthropic's engineering blog covers the exact judgment the scenario questions te
 
 ## Videos
 
-Sessions from [Anthropic's YouTube channel](https://www.youtube.com/@anthropic-ai) that map directly to exam domains. Each plays here on the website; on GitHub the thumbnails link out to YouTube.
-
-### Prompting 101
-
-Prompt structure, iteration, and the habits behind reliable output, recorded at the Code w/ Claude conference. Relevant to the Associate and Developer exams.
-
-[![Prompting 101, an Anthropic conference session on prompt engineering](https://img.youtube.com/vi/ysPbXH0LpIE/hqdefault.jpg)](https://www.youtube.com/watch?v=ysPbXH0LpIE)
-
-### Claude Code best practices
-
-Configuration, workflows, and working habits for Claude Code, from Anthropic's Cal Rueb at Code w/ Claude. Relevant to the Developer and Architect Foundations exams.
-
-[![Claude Code best practices, an Anthropic conference session](https://img.youtube.com/vi/gv0WHhKelSE/hqdefault.jpg)](https://www.youtube.com/watch?v=gv0WHhKelSE)
-
-### Mastering Claude Code in 30 minutes
-
-A compact end-to-end tour of Claude Code. Relevant to the Developer and Architect Foundations exams.
-
-[![Mastering Claude Code in 30 minutes, an Anthropic video walkthrough](https://img.youtube.com/vi/6eBSHbLKuN0/hqdefault.jpg)](https://www.youtube.com/watch?v=6eBSHbLKuN0)
+Anthropic publishes a great deal on its [YouTube channel](https://www.youtube.com/@anthropic-ai), including the complete **AI Fluency** course. The [official videos](videos.md) page collects the ones that map to exam domains, arranged by exam and playable inline.
 
 The [Academy courses](courses.md) are themselves video curricula; for structured watching, they are the primary official video resource.
 

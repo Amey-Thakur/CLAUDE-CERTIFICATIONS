@@ -31,6 +31,7 @@ flowchart LR
 | [Frequently asked questions](faq.md) | Quick answers, from pricing to badges |
 | [Glossary](glossary.md) | The program's terms, defined once |
 | [Official sources](official-sources.md) | Provenance of every mirrored PDF |
+| [Official videos](videos.md) | Anthropic's own videos, arranged by exam, including the complete AI Fluency course |
 | [Flashcards](flashcards.md) | Every fact, weight, and rule as a deck for Anki, Quizlet, or RemNote |
 | [Share this](share.md) | Links, ready-to-use copy, and images for passing this on |
 | [Maintenance guide](maintenance.md) | Contributing to or maintaining this repository |

@@ -37,5 +37,6 @@
   "architect-professional/cheat-sheet.md": "One-page Claude Certified Architect Professional cheat sheet: exam facts, domain weights, the rules that decide questions, and exam-day traps.",
   "guide/share.md": "Links, ready-to-use copy, and images for sharing the Claude certification study guide with other candidates.",
   "guide/flashcards.md": "Flashcard deck for the Claude certifications: exam facts, domain weights, rules, and glossary, ready for Anki or Quizlet.",
-  "guide/tracker.md": "Track your Claude certification study by blueprint domain, weighted by how much of the exam each domain carries."
+  "guide/tracker.md": "Track your Claude certification study by blueprint domain, weighted by how much of the exam each domain carries.",
+  "guide/videos.md": "Anthropic's official videos for the Claude certifications, arranged by exam: the complete AI Fluency course, prompting, Claude Code, MCP, agents, and cloud deployment."
 }

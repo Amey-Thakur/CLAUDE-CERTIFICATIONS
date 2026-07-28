@@ -25,7 +25,7 @@ Ground rules:
 
 1. **Never post real exam content.** Every candidate accepts a non-disclosure agreement covering questions, answer options, and scenarios, and it explicitly extends to study groups and online forums. Posts that share or solicit live exam content will be removed. Discussing the published blueprints, the official sample questions, and general topic difficulty is fine.
 2. Answer from experience, cite official sources for facts, and say which exam and date your experience refers to, since the program changes.
-3. Be respectful. The [code of conduct](CODE_OF_CONDUCT.md) applies everywhere in this repository.
+3. Be respectful. The [code of conduct](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/blob/main/.github/CODE_OF_CONDUCT.md) applies everywhere in this repository.
 
 Suggested threads if you are unsure where to post: the pinned welcome thread for orientation, one thread per certification for preparation questions, and the exam experience thread for post-exam reflections (within NDA limits).
 
