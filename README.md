@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src=".github/assets/logos/claude-symbol.svg" alt="Claude symbol" width="80">
+<a href="https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/" title="Open the website"><img src=".github/assets/logos/claude-symbol.svg" alt="Claude symbol, links to the website" width="80"></a>
 
 # Claude Certifications
 
