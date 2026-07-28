@@ -216,7 +216,7 @@ def courses_card():
         ]),
         (TEAL, "Deployment platforms", [
             ("Claude with Amazon Bedrock", "Architect"),
-            ("Claude with Google Cloud's Vertex AI", "Architect"),
+            ("Claude on Google Cloud", "Architect"),
         ]),
         (PLUM, "AI Fluency", [
             ("AI Fluency: Framework & Foundations", "Associate"),

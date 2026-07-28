@@ -37,7 +37,7 @@
 <text x="94" y="568" font-size="16.5" font-weight="600" fill="#1f1e1b">Deployment platforms</text>
 <text x="94" y="600" font-size="13.5" fill="#3d3a35">Claude with Amazon Bedrock</text>
 <text x="606" y="600" font-size="12.5" fill="#4f7d8c" text-anchor="end">Architect</text>
-<text x="94" y="632" font-size="13.5" fill="#3d3a35">Claude with Google Cloud's Vertex AI</text>
+<text x="94" y="632" font-size="13.5" fill="#3d3a35">Claude on Google Cloud</text>
 <text x="606" y="632" font-size="12.5" fill="#4f7d8c" text-anchor="end">Architect</text>
 <rect x="650" y="528" width="560" height="222" rx="8" fill="#ffffff" stroke="#e0ddd4"/>
 <rect x="650" y="528" width="560" height="5" rx="2.5" fill="#8a5f8c"/>

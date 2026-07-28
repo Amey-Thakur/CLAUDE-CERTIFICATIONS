@@ -35,7 +35,7 @@ Cloud-platform depth for architecture questions about where and how Claude runs.
 | Course | What it teaches | Take it | Certificate |
 | --- | --- | --- | --- |
 | Claude with Amazon Bedrock | Running Claude on AWS, from the accreditation program Anthropic built with AWS | [Enroll](https://anthropic.skilljar.com/claude-in-amazon-bedrock) | [PDF](../certificates/claude-with-amazon-bedrock.pdf) · [Verify](https://verify.skilljar.com/c/r5bdeunp9gf3) |
-| Claude with Google Cloud's Vertex AI | Working with Anthropic models on Google Cloud and Vertex AI | [Enroll](https://anthropic.skilljar.com/claude-with-google-vertex) | [PDF](../certificates/claude-with-google-clouds-vertex-ai.pdf) · [Verify](https://verify.skilljar.com/c/jho47okswydj) |
+| Claude on Google Cloud | Working with Anthropic models on Google Cloud and Vertex AI | [Enroll](https://anthropic.skilljar.com/claude-with-google-vertex) | [PDF](../certificates/claude-with-google-clouds-vertex-ai.pdf) · [Verify](https://verify.skilljar.com/c/jho47okswydj) |
 
 ## AI Fluency
 

@@ -46,7 +46,7 @@ flowchart LR
 
 **Claude with Amazon Bedrock.** Originally built as an accreditation for AWS, so it is more rigorous than a platform tour. Take it if your customers run on AWS, or for Architect Professional where deployment platform choice is part of solution design.
 
-**Claude with Google Cloud's Vertex AI.** The same ground on Google Cloud. Take whichever matches your work; take both only if you advise across clouds.
+**Claude on Google Cloud.** The same ground on Vertex AI. Take whichever matches your work; take both only if you advise across clouds.
 
 ## AI Fluency
 
