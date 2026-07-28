@@ -91,7 +91,7 @@ CERTS = [
     {
         "role": "ARCHITECT", "level": "Foundations", "accent": TEAL, "slug": "architect-foundations",
         "code": "CCAR-F", "items": "60 items", "fee": "$125", "extra": "4 of 6 scenarios",
-        "audience": "Architects who build production systems with Claude",
+        "audience": "Architects building production systems",
         "domains": [("Agentic architecture", 27), ("Claude Code workflows", 20),
                     ("Prompting, structured output", 20), ("Tool design and MCP", 18),
                     ("Context and reliability", 15)],
@@ -113,7 +113,7 @@ CERTS = [
     {
         "role": "ARCHITECT", "level": "Professional", "accent": PLUM, "slug": "architect-professional",
         "code": "CCAR-P", "items": "63 items", "fee": "$175", "extra": "pass 720/1000",
-        "audience": "Architects governing Claude systems at enterprise scale",
+        "audience": "Architects governing systems at scale",
         "domains": [("Integration", 19), ("Solution design", 17), ("Evaluation and testing", 16),
                     ("Governance and risk", 14), ("Stakeholders, lifecycle", 14),
                     ("Models and prompting", 13), ("Developer enablement", 7)],
@@ -223,7 +223,7 @@ def social_preview():
 
 
 def roadmap():
-    W, H = 1400, 980
+    W, H = 1400, 1046
     out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}"'
            f' font-family="{FONT}" role="img" aria-label="Claude certification roadmap: four certifications with'
            f' exam facts, domain weights, and the courses that prepare for each">',
@@ -239,7 +239,7 @@ def roadmap():
     for i, cert in enumerate(CERTS):
         x = 70 + i * (col_w + gap)
         a = cert["accent"]
-        out.append(f'<rect x="{x}" y="{top}" width="{col_w}" height="622" rx="8" fill="{CARD}" stroke="{RULE}"/>')
+        out.append(f'<rect x="{x}" y="{top}" width="{col_w}" height="656" rx="8" fill="{CARD}" stroke="{RULE}"/>')
         out.append(f'<rect x="{x}" y="{top}" width="{col_w}" height="5" rx="2.5" fill="{a}"/>')
         out.append(f'<text x="{x + 22}" y="{top + 40}" font-size="12" font-weight="700" fill="{a}" letter-spacing="1.2">{cert["role"]}</text>')
         out.append(f'<text x="{x + 22}" y="{top + 68}" font-size="21" font-weight="600" fill="{INK}">{cert["level"]}</text>')
@@ -262,9 +262,9 @@ def roadmap():
         for name in cert["prep"]:
             out.append(f'<text x="{x + 22}" y="{y}" font-size="13" fill="{BODY}">{esc(name)}</text>')
             y += 23
-        out.append(f'<text x="{x + 22}" y="{top + 604}" font-size="11.5" fill="{FAINT}">{esc(cert["note"])}</text>')
+        out.append(f'<text x="{x + 22}" y="{top + 622}" font-size="11.5" fill="{FAINT}">{esc(cert["note"])}</text>')
 
-    strip = top + 646
+    strip = top + 692
     out.append(f'<rect x="70" y="{strip}" width="{W - 140}" height="48" rx="8" fill="#f0eee6"/>')
     out.append(f'<text x="94" y="{strip + 30}" font-size="13.5" fill="{BODY}">Every exam: 120 minutes  ·  closed book  ·  Pearson VUE, online or test centre  ·  pass at 720 of 1000  ·  valid 12 months, free renewal  ·  badge via Credly  ·  partner tiers get 50% off</text>')
 
