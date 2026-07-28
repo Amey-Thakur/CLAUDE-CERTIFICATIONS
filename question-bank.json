@@ -2993,7 +2993,7 @@
    "exam": "architect-foundations",
    "source": "mock",
    "domain": "Tool Design & MCP Integration",
-   "question": "The agent sometimes calls get_customer when it should call lookup_order. What is the highest-leverage change?",
+   "question": "The agent sometimes calls get_customer when it should call lookup_order. What is the most effective change?",
    "options": {
     "B": "Reorder the tools in the configuration",
     "A": "Rewrite both tool descriptions so each states precisely when it applies and how it differs from the other",
@@ -4045,7 +4045,7 @@
    "domain": "Stakeholder Communication & Lifecycle Management",
    "question": "What most reduces the risk that a delivered solution decays after handover?",
    "options": {
-    "A": "Comprehensive documentation at delivery",
+    "A": "Full documentation at delivery",
     "D": "A named owner with a defined routine for evaluation, monitoring, and update",
     "B": "A longer warranty period",
     "C": "Training every user"

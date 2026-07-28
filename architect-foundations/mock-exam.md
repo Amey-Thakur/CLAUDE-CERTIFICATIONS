@@ -31,7 +31,7 @@ An Agent SDK agent handles returns, billing disputes, and account issues through
 - B. The order is more than thirty days old
 - C. The conversation exceeds five turns
 
-**4.** The agent sometimes calls get_customer when it should call lookup_order. What is the highest-leverage change?
+**4.** The agent sometimes calls get_customer when it should call lookup_order. What is the most effective change?
 
 - B. Reorder the tools in the configuration
 - A. Rewrite both tool descriptions so each states precisely when it applies and how it differs from the other

@@ -368,7 +368,7 @@ Thirty-five original practice questions written for this repository against the 
 
 **29. Stakeholder Communication & Lifecycle Management.** What most reduces the risk that a delivered solution decays after handover?
 
-- A. Comprehensive documentation at delivery
+- A. Full documentation at delivery
 - D. A named owner with a defined routine for evaluation, monitoring, and update
 - B. A longer warranty period
 - C. Training every user

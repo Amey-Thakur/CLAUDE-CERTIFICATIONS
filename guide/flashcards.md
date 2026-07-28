@@ -260,39 +260,39 @@ The full deck below, for reading, printing, or checking one fact quickly. It is 
 | Associate – Foundations: Verify anything specific and consequential. Why? | Confidence is not evidence. |
 | Associate – Foundations: Omission fails too. Why? | Read the source, not only the output. |
 | Associate – Foundations: Anonymize, then analyze. Why? | Instructions are not a control. |
-| Associate – Foundations: finish the rule — Match the model to the ... | Match the model to the task in both directions. |
-| Associate – Foundations: finish the rule — Structure beats intensifiers: ... | Structure beats intensifiers: role, sections, constraints, example. |
-| Associate – Foundations: finish the rule — Projects hold what repeats; ... | Projects hold what repeats; prompts hold what changes. |
-| Associate – Foundations: finish the rule — Project knowledge is maintained by you, ... | Project knowledge is maintained by you, not self-updating. |
-| Associate – Foundations: finish the rule — Diagnose what changed ... | Diagnose what changed before rewriting anything. |
-| Associate – Foundations: finish the rule — Escalate system integrations to ... | Escalate system integrations to Developer and Architect scope. |
-| Developer – Foundations: finish the rule — stop_reason drives the loop: ... | stop_reason drives the loop: tool_use executes, end_turn finishes. |
-| Developer – Foundations: finish the rule — Batches for latency-tolerant volume: ... | Batches for latency-tolerant volume: half cost, 24-hour window. |
+| Associate – Foundations: finish the rule: Match the model to the ... | Match the model to the task in both directions. |
+| Associate – Foundations: finish the rule: Structure beats intensifiers: ... | Structure beats intensifiers: role, sections, constraints, example. |
+| Associate – Foundations: finish the rule: Projects hold what repeats; ... | Projects hold what repeats; prompts hold what changes. |
+| Associate – Foundations: finish the rule: Project knowledge is maintained by you, ... | Project knowledge is maintained by you, not self-updating. |
+| Associate – Foundations: finish the rule: Diagnose what changed ... | Diagnose what changed before rewriting anything. |
+| Associate – Foundations: finish the rule: Escalate system integrations to ... | Escalate system integrations to Developer and Architect scope. |
+| Developer – Foundations: finish the rule: stop_reason drives the loop: ... | stop_reason drives the loop: tool_use executes, end_turn finishes. |
+| Developer – Foundations: finish the rule: Batches for latency-tolerant volume: ... | Batches for latency-tolerant volume: half cost, 24-hour window. |
 | Developer – Foundations: Stable prefix first, then cache it. Why? | Cuts latency and cost together. |
-| Developer – Foundations: finish the rule — Enforce a schema, ... | Enforce a schema, validate, retry with the validation error. |
+| Developer – Foundations: finish the rule: Enforce a schema, ... | Enforce a schema, validate, retry with the validation error. |
 | Developer – Foundations: Known path is a workflow. Why? | Unknown path earns an agent. |
-| Developer – Foundations: finish the rule — Subagents exist to isolate context, ... | Subagents exist to isolate context, not to add horsepower. |
-| Developer – Foundations: finish the rule — Pin model versions; ... | Pin model versions; upgrades become evaluated changes. |
-| Developer – Foundations: finish the rule — Injection is defeated structurally, ... | Injection is defeated structurally, never by asking politely. |
-| Developer – Foundations: finish the rule — A tool the agent does not ... | A tool the agent does not hold cannot be misused. |
-| Architect – Foundations: finish the rule — Agent loops need engineered termination, ... | Agent loops need engineered termination, not a token budget. |
-| Architect – Foundations: finish the rule — Escalate on policy gaps ... | Escalate on policy gaps and lack of progress. |
-| Architect – Foundations: finish the rule — Structured errors: ... | Structured errors: a category and a retryable flag. |
+| Developer – Foundations: finish the rule: Subagents exist to isolate context, ... | Subagents exist to isolate context, not to add horsepower. |
+| Developer – Foundations: finish the rule: Pin model versions; ... | Pin model versions; upgrades become evaluated changes. |
+| Developer – Foundations: finish the rule: Injection is defeated structurally, ... | Injection is defeated structurally, never by asking politely. |
+| Developer – Foundations: finish the rule: A tool the agent does not ... | A tool the agent does not hold cannot be misused. |
+| Architect – Foundations: finish the rule: Agent loops need engineered termination, ... | Agent loops need engineered termination, not a token budget. |
+| Architect – Foundations: finish the rule: Escalate on policy gaps ... | Escalate on policy gaps and lack of progress. |
+| Architect – Foundations: finish the rule: Structured errors: ... | Structured errors: a category and a retryable flag. |
 | Architect – Foundations: Tool descriptions are the selection mechanism. Why? | Differentiate them. |
-| Architect – Foundations: finish the rule — Hard limits belong in the tool layer, ... | Hard limits belong in the tool layer, never in a prompt. |
-| Architect – Foundations: finish the rule — CLAUDE.md hierarchy, ... | CLAUDE.md hierarchy, with path-scoped rules for conditional context. |
-| Architect – Foundations: finish the rule — CI means headless: ... | CI means headless: print mode, JSON output, a schema. |
-| Architect – Foundations: finish the rule — Subagents return findings; ... | Subagents return findings; raw documents stay at the edge. |
-| Architect – Foundations: finish the rule — Provenance must survive ... | Provenance must survive every handoff. |
-| Architect – Professional: finish the rule — Climb the pattern ladder only when ... | Climb the pattern ladder only when the rung below cannot hold. |
-| Architect – Professional: finish the rule — Least privilege means removal, ... | Least privilege means removal, not monitoring. |
-| Architect – Professional: finish the rule — Retrieval degradation after a data change ... | Retrieval degradation after a data change is an index problem. |
-| Architect – Professional: finish the rule — Subjective quality is measured with ... | Subjective quality is measured with rubrics and labeled sets. |
-| Architect – Professional: finish the rule — Prompt changes are production changes: ... | Prompt changes are production changes: regression, then A/B. |
-| Architect – Professional: finish the rule — Compliance is enforced before ... | Compliance is enforced before data crosses the boundary. |
-| Architect – Professional: finish the rule — Route human review by ... | Route human review by confidence and consequence. |
-| Architect – Professional: finish the rule — Present segmented, ... | Present segmented, honest numbers, never a flattering average. |
-| Architect – Professional: finish the rule — Observability captures traces, ... | Observability captures traces, not just outputs. |
+| Architect – Foundations: finish the rule: Hard limits belong in the tool layer, ... | Hard limits belong in the tool layer, never in a prompt. |
+| Architect – Foundations: finish the rule: CLAUDE.md hierarchy, ... | CLAUDE.md hierarchy, with path-scoped rules for conditional context. |
+| Architect – Foundations: finish the rule: CI means headless: ... | CI means headless: print mode, JSON output, a schema. |
+| Architect – Foundations: finish the rule: Subagents return findings; ... | Subagents return findings; raw documents stay at the edge. |
+| Architect – Foundations: finish the rule: Provenance must survive ... | Provenance must survive every handoff. |
+| Architect – Professional: finish the rule: Climb the pattern ladder only when ... | Climb the pattern ladder only when the rung below cannot hold. |
+| Architect – Professional: finish the rule: Least privilege means removal, ... | Least privilege means removal, not monitoring. |
+| Architect – Professional: finish the rule: Retrieval degradation after a data change ... | Retrieval degradation after a data change is an index problem. |
+| Architect – Professional: finish the rule: Subjective quality is measured with ... | Subjective quality is measured with rubrics and labeled sets. |
+| Architect – Professional: finish the rule: Prompt changes are production changes: ... | Prompt changes are production changes: regression, then A/B. |
+| Architect – Professional: finish the rule: Compliance is enforced before ... | Compliance is enforced before data crosses the boundary. |
+| Architect – Professional: finish the rule: Route human review by ... | Route human review by confidence and consequence. |
+| Architect – Professional: finish the rule: Present segmented, ... | Present segmented, honest numbers, never a flattering average. |
+| Architect – Professional: finish the rule: Observability captures traces, ... | Observability captures traces, not just outputs. |
 
 ## Policies and scoring
 

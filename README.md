@@ -28,7 +28,7 @@ Built and maintained by [Amey Thakur](https://github.com/Amey-Thakur) after comp
 > [!NOTE]
 > I worked through every course and collected all of this while preparing myself. None of it required anything you do not already have: the official material is free, the blueprints tell you exactly what is tested, and the rest is steady work. I put it in one place so your time goes into learning rather than looking. If it helps you get certified, it did its job.
 >
-> — Amey
+> Amey Thakur
 
 ## The certifications
 

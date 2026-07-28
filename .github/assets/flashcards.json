@@ -249,7 +249,7 @@
    ]
   },
   {
-   "front": "Associate \u2013 Foundations: finish the rule \u2014 Match the model to the ...",
+   "front": "Associate \u2013 Foundations: finish the rule: Match the model to the ...",
    "back": "Match the model to the task in both directions.",
    "tags": [
     "rules",
@@ -257,7 +257,7 @@
    ]
   },
   {
-   "front": "Associate \u2013 Foundations: finish the rule \u2014 Structure beats intensifiers: ...",
+   "front": "Associate \u2013 Foundations: finish the rule: Structure beats intensifiers: ...",
    "back": "Structure beats intensifiers: role, sections, constraints, example.",
    "tags": [
     "rules",
@@ -265,7 +265,7 @@
    ]
   },
   {
-   "front": "Associate \u2013 Foundations: finish the rule \u2014 Projects hold what repeats; ...",
+   "front": "Associate \u2013 Foundations: finish the rule: Projects hold what repeats; ...",
    "back": "Projects hold what repeats; prompts hold what changes.",
    "tags": [
     "rules",
@@ -273,7 +273,7 @@
    ]
   },
   {
-   "front": "Associate \u2013 Foundations: finish the rule \u2014 Project knowledge is maintained by you, ...",
+   "front": "Associate \u2013 Foundations: finish the rule: Project knowledge is maintained by you, ...",
    "back": "Project knowledge is maintained by you, not self-updating.",
    "tags": [
     "rules",
@@ -281,7 +281,7 @@
    ]
   },
   {
-   "front": "Associate \u2013 Foundations: finish the rule \u2014 Diagnose what changed ...",
+   "front": "Associate \u2013 Foundations: finish the rule: Diagnose what changed ...",
    "back": "Diagnose what changed before rewriting anything.",
    "tags": [
     "rules",
@@ -289,7 +289,7 @@
    ]
   },
   {
-   "front": "Associate \u2013 Foundations: finish the rule \u2014 Escalate system integrations to ...",
+   "front": "Associate \u2013 Foundations: finish the rule: Escalate system integrations to ...",
    "back": "Escalate system integrations to Developer and Architect scope.",
    "tags": [
     "rules",
@@ -297,7 +297,7 @@
    ]
   },
   {
-   "front": "Developer \u2013 Foundations: finish the rule \u2014 stop_reason drives the loop: ...",
+   "front": "Developer \u2013 Foundations: finish the rule: stop_reason drives the loop: ...",
    "back": "stop_reason drives the loop: tool_use executes, end_turn finishes.",
    "tags": [
     "rules",
@@ -305,7 +305,7 @@
    ]
   },
   {
-   "front": "Developer \u2013 Foundations: finish the rule \u2014 Batches for latency-tolerant volume: ...",
+   "front": "Developer \u2013 Foundations: finish the rule: Batches for latency-tolerant volume: ...",
    "back": "Batches for latency-tolerant volume: half cost, 24-hour window.",
    "tags": [
     "rules",
@@ -321,7 +321,7 @@
    ]
   },
   {
-   "front": "Developer \u2013 Foundations: finish the rule \u2014 Enforce a schema, ...",
+   "front": "Developer \u2013 Foundations: finish the rule: Enforce a schema, ...",
    "back": "Enforce a schema, validate, retry with the validation error.",
    "tags": [
     "rules",
@@ -337,7 +337,7 @@
    ]
   },
   {
-   "front": "Developer \u2013 Foundations: finish the rule \u2014 Subagents exist to isolate context, ...",
+   "front": "Developer \u2013 Foundations: finish the rule: Subagents exist to isolate context, ...",
    "back": "Subagents exist to isolate context, not to add horsepower.",
    "tags": [
     "rules",
@@ -345,7 +345,7 @@
    ]
   },
   {
-   "front": "Developer \u2013 Foundations: finish the rule \u2014 Pin model versions; ...",
+   "front": "Developer \u2013 Foundations: finish the rule: Pin model versions; ...",
    "back": "Pin model versions; upgrades become evaluated changes.",
    "tags": [
     "rules",
@@ -353,7 +353,7 @@
    ]
   },
   {
-   "front": "Developer \u2013 Foundations: finish the rule \u2014 Injection is defeated structurally, ...",
+   "front": "Developer \u2013 Foundations: finish the rule: Injection is defeated structurally, ...",
    "back": "Injection is defeated structurally, never by asking politely.",
    "tags": [
     "rules",
@@ -361,7 +361,7 @@
    ]
   },
   {
-   "front": "Developer \u2013 Foundations: finish the rule \u2014 A tool the agent does not ...",
+   "front": "Developer \u2013 Foundations: finish the rule: A tool the agent does not ...",
    "back": "A tool the agent does not hold cannot be misused.",
    "tags": [
     "rules",
@@ -369,7 +369,7 @@
    ]
   },
   {
-   "front": "Architect \u2013 Foundations: finish the rule \u2014 Agent loops need engineered termination, ...",
+   "front": "Architect \u2013 Foundations: finish the rule: Agent loops need engineered termination, ...",
    "back": "Agent loops need engineered termination, not a token budget.",
    "tags": [
     "rules",
@@ -377,7 +377,7 @@
    ]
   },
   {
-   "front": "Architect \u2013 Foundations: finish the rule \u2014 Escalate on policy gaps ...",
+   "front": "Architect \u2013 Foundations: finish the rule: Escalate on policy gaps ...",
    "back": "Escalate on policy gaps and lack of progress.",
    "tags": [
     "rules",
@@ -385,7 +385,7 @@
    ]
   },
   {
-   "front": "Architect \u2013 Foundations: finish the rule \u2014 Structured errors: ...",
+   "front": "Architect \u2013 Foundations: finish the rule: Structured errors: ...",
    "back": "Structured errors: a category and a retryable flag.",
    "tags": [
     "rules",
@@ -401,7 +401,7 @@
    ]
   },
   {
-   "front": "Architect \u2013 Foundations: finish the rule \u2014 Hard limits belong in the tool layer, ...",
+   "front": "Architect \u2013 Foundations: finish the rule: Hard limits belong in the tool layer, ...",
    "back": "Hard limits belong in the tool layer, never in a prompt.",
    "tags": [
     "rules",
@@ -409,7 +409,7 @@
    ]
   },
   {
-   "front": "Architect \u2013 Foundations: finish the rule \u2014 CLAUDE.md hierarchy, ...",
+   "front": "Architect \u2013 Foundations: finish the rule: CLAUDE.md hierarchy, ...",
    "back": "CLAUDE.md hierarchy, with path-scoped rules for conditional context.",
    "tags": [
     "rules",
@@ -417,7 +417,7 @@
    ]
   },
   {
-   "front": "Architect \u2013 Foundations: finish the rule \u2014 CI means headless: ...",
+   "front": "Architect \u2013 Foundations: finish the rule: CI means headless: ...",
    "back": "CI means headless: print mode, JSON output, a schema.",
    "tags": [
     "rules",
@@ -425,7 +425,7 @@
    ]
   },
   {
-   "front": "Architect \u2013 Foundations: finish the rule \u2014 Subagents return findings; ...",
+   "front": "Architect \u2013 Foundations: finish the rule: Subagents return findings; ...",
    "back": "Subagents return findings; raw documents stay at the edge.",
    "tags": [
     "rules",
@@ -433,7 +433,7 @@
    ]
   },
   {
-   "front": "Architect \u2013 Foundations: finish the rule \u2014 Provenance must survive ...",
+   "front": "Architect \u2013 Foundations: finish the rule: Provenance must survive ...",
    "back": "Provenance must survive every handoff.",
    "tags": [
     "rules",
@@ -441,7 +441,7 @@
    ]
   },
   {
-   "front": "Architect \u2013 Professional: finish the rule \u2014 Climb the pattern ladder only when ...",
+   "front": "Architect \u2013 Professional: finish the rule: Climb the pattern ladder only when ...",
    "back": "Climb the pattern ladder only when the rung below cannot hold.",
    "tags": [
     "rules",
@@ -449,7 +449,7 @@
    ]
   },
   {
-   "front": "Architect \u2013 Professional: finish the rule \u2014 Least privilege means removal, ...",
+   "front": "Architect \u2013 Professional: finish the rule: Least privilege means removal, ...",
    "back": "Least privilege means removal, not monitoring.",
    "tags": [
     "rules",
@@ -457,7 +457,7 @@
    ]
   },
   {
-   "front": "Architect \u2013 Professional: finish the rule \u2014 Retrieval degradation after a data change ...",
+   "front": "Architect \u2013 Professional: finish the rule: Retrieval degradation after a data change ...",
    "back": "Retrieval degradation after a data change is an index problem.",
    "tags": [
     "rules",
@@ -465,7 +465,7 @@
    ]
   },
   {
-   "front": "Architect \u2013 Professional: finish the rule \u2014 Subjective quality is measured with ...",
+   "front": "Architect \u2013 Professional: finish the rule: Subjective quality is measured with ...",
    "back": "Subjective quality is measured with rubrics and labeled sets.",
    "tags": [
     "rules",
@@ -473,7 +473,7 @@
    ]
   },
   {
-   "front": "Architect \u2013 Professional: finish the rule \u2014 Prompt changes are production changes: ...",
+   "front": "Architect \u2013 Professional: finish the rule: Prompt changes are production changes: ...",
    "back": "Prompt changes are production changes: regression, then A/B.",
    "tags": [
     "rules",
@@ -481,7 +481,7 @@
    ]
   },
   {
-   "front": "Architect \u2013 Professional: finish the rule \u2014 Compliance is enforced before ...",
+   "front": "Architect \u2013 Professional: finish the rule: Compliance is enforced before ...",
    "back": "Compliance is enforced before data crosses the boundary.",
    "tags": [
     "rules",
@@ -489,7 +489,7 @@
    ]
   },
   {
-   "front": "Architect \u2013 Professional: finish the rule \u2014 Route human review by ...",
+   "front": "Architect \u2013 Professional: finish the rule: Route human review by ...",
    "back": "Route human review by confidence and consequence.",
    "tags": [
     "rules",
@@ -497,7 +497,7 @@
    ]
   },
   {
-   "front": "Architect \u2013 Professional: finish the rule \u2014 Present segmented, ...",
+   "front": "Architect \u2013 Professional: finish the rule: Present segmented, ...",
    "back": "Present segmented, honest numbers, never a flattering average.",
    "tags": [
     "rules",
@@ -505,7 +505,7 @@
    ]
   },
   {
-   "front": "Architect \u2013 Professional: finish the rule \u2014 Observability captures traces, ...",
+   "front": "Architect \u2013 Professional: finish the rule: Observability captures traces, ...",
    "back": "Observability captures traces, not just outputs.",
    "tags": [
     "rules",

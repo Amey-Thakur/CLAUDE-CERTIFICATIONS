@@ -185,7 +185,7 @@ def foreword():
           please tell me so I can fix it.</p>
           <div class="callout" style="margin-top:4mm">I put this in one place so your time goes into learning rather
           than looking. If it helps you get certified, it did its job. Good luck.
-          <div style="margin-top:2.5mm;font-weight:600">— {AUTHOR}</div></div>
+          <div style="margin-top:2.5mm;font-weight:600">{AUTHOR}</div></div>
         </div>
       </div>''', "A note from the author")
 
@@ -611,7 +611,7 @@ def closing():
           candidate searching for this finds it instead of a braindump site.</p>
           <div class="callout">Whatever you are preparing for, the path is the same: read the blueprint, close the
           gaps honestly, build something real, and book the date. You do not need permission or a better moment.
-          <div style="margin-top:2.5mm;font-weight:600">— {AUTHOR}</div></div>
+          <div style="margin-top:2.5mm;font-weight:600">{AUTHOR}</div></div>
           <p class="small">Facts drawn from the official Anthropic exam guides and program pages, verified against
           them on publication. A community study resource, not affiliated with or endorsed by Anthropic. Claude and
           Anthropic are trademarks of Anthropic PBC.</p>

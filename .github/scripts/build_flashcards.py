@@ -78,7 +78,7 @@ def rule_cards():
                 yield (f"{name}: {claim}. Why?", explanation, f"rules {tag}")
             else:
                 head, _ = cloze(rule)
-                yield (f"{name}: finish the rule — {head}", rule, f"rules {tag}")
+                yield (f"{name}: finish the rule: {head}", rule, f"rules {tag}")
 
 
 def shared_cards():
