@@ -34,7 +34,7 @@ Use this after the diagnostic, on the domain that carries the most weight among 
 
 ```text
 I am preparing for the {Claude Certified Developer – Foundations} exam and I am
-weak on {Applications and Integration}, which is {33}% of the paper.
+weak on {Applications and integration}, which is {33}% of the paper.
 
 Drill me on it. Ten scenario questions, one at a time, increasing in difficulty.
 Each must have one clearly best answer and three distractors that fail a stated

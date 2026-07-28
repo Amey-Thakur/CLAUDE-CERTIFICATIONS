@@ -10,7 +10,7 @@ Everything is stored in your own browser. Nothing is uploaded, there is no accou
 
 ## How to use it
 
-Tick a domain when you could answer a scenario question about it without notes, not when you have finished reading about it. The weighting does the prioritising for you: on the Developer exam, covering Applications and Integration alone moves the bar by a third, while Claude Code moves it by three points.
+Tick a domain when you could answer a scenario question about it without notes, not when you have finished reading about it. The weighting does the prioritising for you: on the Developer exam, covering Applications and integration alone moves the bar by a third, while Claude Code moves it by three points.
 
 The milestones come from the preparation guidance in the official exam guides. The one people skip is building something real, and it is the one that separates candidates who pass comfortably from candidates who find the scenarios unfamiliar.
 

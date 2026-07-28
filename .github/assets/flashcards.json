@@ -698,7 +698,7 @@
   },
   {
    "front": "Glossary: Domain weight",
-   "back": "The approximate share of scored items drawn from a domain, for example 33.1% for the Developer exam's Applications and Integration domain",
+   "back": "The approximate share of scored items drawn from a domain, for example 33.1% for the Developer exam's Applications and integration domain",
    "tags": [
     "glossary",
     "shared"

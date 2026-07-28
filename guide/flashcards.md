@@ -136,7 +136,7 @@ The full deck below, for reading, printing, or checking one fact quickly. It is 
 | Front | Back |
 | --- | --- |
 | Glossary: Blueprint | The exam content outline in each exam guide: the domains measured, their weights, and the objectives items are written against. The authoritative scope of the exam |
-| Glossary: Domain weight | The approximate share of scored items drawn from a domain, for example 33.1% for the Developer exam's Applications and Integration domain |
+| Glossary: Domain weight | The approximate share of scored items drawn from a domain, for example 33.1% for the Developer exam's Applications and integration domain |
 | Glossary: Task statement | A numbered capability within a domain, used in the Architect Foundations guide, that items are written against |
 | Glossary: MQC | Minimally qualified candidate: the profile of the weakest examinee who should still pass, which the passing standard is calibrated to |
 | Glossary: Criterion-referenced | Scored against a fixed standard rather than against other candidates. There is no curve |

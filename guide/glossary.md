@@ -5,7 +5,7 @@ The program's terms, defined once. Official definitions live in the exam guides 
 | Term | Meaning |
 | --- | --- |
 | Blueprint | The exam content outline in each exam guide: the domains measured, their weights, and the objectives items are written against. The authoritative scope of the exam |
-| Domain weight | The approximate share of scored items drawn from a domain, for example 33.1% for the Developer exam's Applications and Integration domain |
+| Domain weight | The approximate share of scored items drawn from a domain, for example 33.1% for the Developer exam's Applications and integration domain |
 | Task statement | A numbered capability within a domain, used in the Architect Foundations guide, that items are written against |
 | MQC | Minimally qualified candidate: the profile of the weakest examinee who should still pass, which the passing standard is calibrated to |
 | Criterion-referenced | Scored against a fixed standard rather than against other candidates. There is no curve |

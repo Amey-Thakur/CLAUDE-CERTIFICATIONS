@@ -18,7 +18,7 @@ Everything on this page is recommendation, written from having worked through th
 
 **[Associate – Foundations](../associate-foundations/README.md).** The heaviest domain is evaluating outputs (21%), not writing prompts (14%). Practice reviewing Claude's answers for fabricated details, verifying claims against sources, and deciding what needs human review. Build at least one Project with instructions and knowledge sources. The governance domain rewards knowing when not to upload sensitive data and how to anonymize.
 
-**[Developer – Foundations](../developer-foundations/README.md).** A third of the exam is Applications and Integration, so API mechanics deserve the most time: messages, streaming, caching, batch versus realtime, and schema design. Do not over-invest in Claude Code and debugging, which together are under 6%. Build one application end to end that calls the API, uses a tool, and validates structured output.
+**[Developer – Foundations](../developer-foundations/README.md).** A third of the exam is Applications and integration, so API mechanics deserve the most time: messages, streaming, caching, batch versus realtime, and schema design. Do not over-invest in Claude Code and debugging, which together are under 6%. Build one application end to end that calls the API, uses a tool, and validates structured output.
 
 **[Architect – Foundations](../architect-foundations/README.md).** The six exam scenarios are published, and four appear per sitting. Study the scenarios until each one's likely questions are predictable, then do the guide's own preparation exercises. The appendix names specific testable items (stop_reason values, isError, fork_session, --json-schema); go down that list and verify you can explain each one.
 

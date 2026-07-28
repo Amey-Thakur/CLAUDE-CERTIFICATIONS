@@ -482,7 +482,7 @@ def glossary_page(label):
     return page(f'''<h3>Reference</h3>
       <h1 style="font-size:25pt">The words the exams assume you know</h1>
       <p class="lead muted" style="max-width:220mm">The exam guides use these terms without defining them, and
-      questions are written on the assumption that you read them the way the programme does. {len(rows)} terms.</p>
+      questions are written on the assumption that you read them the way the program does. {len(rows)} terms.</p>
       <div class="cols grow" style="margin-top:3mm">
         <div class="col">{column(rows[:half])}</div>
         <div class="col">{column(rows[half:])}</div>
@@ -549,7 +549,7 @@ def preparing():
           </ol>
         </div>
         <div class="col">
-          <h3>Practising without breaking the agreement</h3>
+          <h3>Practicing without breaking the agreement</h3>
           <p>Every candidate accepts a non-disclosure agreement covering exam questions, answer options, and
           scenarios, and it extends explicitly to online forums. Real exam content must never be shared or sought.
           There is also no official practice exam: the previous platform's was retired in the move to Pearson.</p>
@@ -588,7 +588,7 @@ def policies():
           wrong, ambiguous, or out of scope; reporting never counts against you, and a confirmed faulty item that
           affected a result is remedied with a free retake rather than a changed score.</p>
           <div class="callout"><strong>Eligibility.</strong> Certification is currently open to people at Claude
-          Partner Network organizations, registering with a recognised company email. Domain record changes take 7 to
+          Partner Network organizations, registering with a recognized company email. Domain record changes take 7 to
           10 days, so resolve any email problem well before you plan to sit.</div>
         </div>
       </div>''', "Part 4: Sit it", cls="roomy")
@@ -603,9 +603,9 @@ def repository_page():
       are the things paper cannot do.</p>
       <div class="cols grow" style="margin-top:3mm">
         <div class="col">
-          <h3>Practise, not just read</h3>
+          <h3>Practice, not just read</h3>
           <p>A bank of original practice questions with a shuffled, timed engine that runs in your browser or your
-          terminal. It reorders questions and options on every run, so nothing can be memorised by position, and it
+          terminal. It reorders questions and options on every run, so nothing can be memorized by position, and it
           scores you per domain the way the real report does. Three timed mock exams per certification, each
           with questions that appear nowhere else, so a second sitting still measures something.</p>
           <h3 style="margin-top:4mm">Study the way you already study</h3>
@@ -653,14 +653,13 @@ def closing():
           <span class="muted">The official courses, free, without a partner account. Registration and the exams
           run through Anthropic Partner Academy and Pearson VUE.</span></p>
           <p style="font-size:11pt"><strong>{link(REPO + "/discussions", REPO_URL + "/discussions")}</strong><br>
-          <span class="muted">Questions about preparing, answered where the next candidate can find them. The one
-          firm rule is that real exam content is never posted.</span></p>
+          <span class="muted">Questions about preparing, answered in the open, so the next candidate finds the
+          answer instead of asking again.</span></p>
         </div>
         <div class="col">
           <h3>If this helped</h3>
           <p>Share it with whoever is studying next. Corrections are welcome as issues, and questions about
-          preparation belong in the repository's discussions, where the one firm rule is that real exam content is
-          never posted.</p>
+          preparation belong in the repository's discussions.</p>
           <p>If it saved you time, starring the repository is the whole marketing budget: it is how the next
           candidate searching for this finds it instead of a braindump site.</p>
         </div>
@@ -714,7 +713,7 @@ def build_html():
                   exam_pages))
 
     parts.append((3, "Prepare",
-                  "What to study, in what order, and how to practise without touching material you are not allowed "
+                  "What to study, in what order, and how to practice without touching material you are not allowed "
                   "to touch.",
                   [image_page("The official curriculum",
                               "Every Anthropic course, free on the public Academy, and the exam each one serves.",

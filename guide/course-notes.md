@@ -32,7 +32,7 @@ flowchart LR
 
 ## Developer and integration
 
-**Building with the Claude API.** The core Developer course and the highest-value hour on this list, because Applications and Integration is a third of that exam. Pay closest attention to the parts you would otherwise skim: streaming, batch versus realtime, prompt caching, and error handling. Those are exam-heavy and easy to assume you already know.
+**Building with the Claude API.** The core Developer course and the highest-value hour on this list, because Applications and integration is a third of that exam. Pay closest attention to the parts you would otherwise skim: streaming, batch versus realtime, prompt caching, and error handling. Those are exam-heavy and easy to assume you already know.
 
 **Introduction to Model Context Protocol.** Builds a server and a client in Python from nothing, which is the fastest way to make MCP concrete. Both Architect exams test MCP judgment (tool descriptions, error shapes, when a server is the right unit of reuse) and that judgment is difficult to fake without having built one.
 
