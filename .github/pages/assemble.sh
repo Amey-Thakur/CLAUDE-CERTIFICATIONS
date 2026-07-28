@@ -20,6 +20,9 @@ cp claude-certifications-booklet.pdf site-src/assets/
 rm -f site-src/assets/logos/README.md
 cp .github/pages/extra.css site-src/stylesheets/extra.css
 cp .github/pages/index.md site-src/index.md
+# IndexNow ownership key. It must be served from the site root so search
+# engines can confirm the submissions come from someone who controls it.
+cp .github/pages/*.txt site-src/ 2>/dev/null || true
 
 # The certificates page opens with an HTML-centered header that GitHub
 # renders but MkDocs does not; swap it for a site-native markdown header.
