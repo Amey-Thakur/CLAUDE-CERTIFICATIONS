@@ -21,7 +21,8 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from build_images import ASSETS, AUTHOR, CERTS, REPO, SITE, find_chrome  # noqa: E402
+from build_images import (ASSETS, AUTHOR, CERTS, REPO, SITE,  # noqa: E402
+                          find_chrome, record_build)
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 OUT_HTML = ASSETS / "booklet.html"
@@ -37,8 +38,15 @@ def link(text, href):
     return f'<a href="{href}">{text}</a>'
 
 
+EMBEDDED = set()
+
+
 def data_uri(name, mime="image/png"):
-    return f"data:{mime};base64," + base64.b64encode((ASSETS / name).read_bytes()).decode()
+    """Every embedded file is noted, so the build record lists exactly what
+    went into the PDF rather than an approximation of it."""
+    path = ASSETS / name
+    EMBEDDED.add(path)
+    return f"data:{mime};base64," + base64.b64encode(path.read_bytes()).decode()
 
 
 CSS = """
@@ -185,6 +193,12 @@ def part_opener(number, title, blurb, contents, accent):
           <table><tbody>{rows}</tbody></table>
         </div>
       </div>''', f"Part {number}: {title}", accent)
+
+
+def _preview(name):
+    path = ROOT / "certificates" / "previews" / name
+    EMBEDDED.add(path)
+    return path
 
 
 def cover_stats(total_pages):
@@ -471,7 +485,7 @@ def proof_page(label):
              "introduction-to-model-context-protocol.png", "teaching-ai-fluency.png"]
     strip = "".join(
         f'<img src="data:image/png;base64,'
-        f'{base64.b64encode((ROOT / "certificates" / "previews" / s).read_bytes()).decode()}"'
+        f'{base64.b64encode(_preview(s).read_bytes()).decode()}"'
         f' alt="Course completion certificate for {s[:-4].replace(chr(45), chr(32)).title()}"'
         f' style="width:18%;border:1px solid #e0ddd4;border-radius:1mm">' for s in shots)
 
@@ -827,8 +841,14 @@ def main() -> int:
         )
         if OUT_PDF.exists():
             print(f"{OUT_PDF.name}: {OUT_PDF.stat().st_size // 1024} KB")
+            record_build("booklet", [
+                __file__, Path(__file__).with_name("build_images.py"),
+                ROOT / "guide" / "glossary.md", ROOT / "certificates" / "README.md",
+                *sorted(EMBEDDED),
+            ])
         else:
             print("PDF render failed")
+            return 1
     return 0
 
 

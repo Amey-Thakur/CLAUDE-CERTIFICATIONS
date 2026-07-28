@@ -15,6 +15,8 @@ Standard library only.
 """
 
 import base64
+import hashlib
+import json
 import os
 import re
 import shutil
@@ -378,7 +380,62 @@ def render(svg_path):
     print(f"{png.name}: {png.stat().st_size // 1024} KB" if png.exists() else f"{png.name}: FAILED")
 
 
+MANIFEST = ASSETS / "build-manifest.json"
+
+
+def _hash(path):
+    return hashlib.sha256(Path(path).read_bytes()).hexdigest()[:16]
+
+
+def record_build(name, inputs):
+    """Note what an artifact was built from, so staleness is detectable later.
+
+    The images and the booklet cannot be rebuilt in continuous integration:
+    they need a browser, and the booklet is set in a font that exists on the
+    maintainer's machine and not on the runner, so a re-render would differ
+    byte for byte without anything being wrong. Recording the inputs instead
+    lets the check ask the only question that matters, which is whether a
+    source changed after the artifact was last built.
+    """
+    data = json.loads(MANIFEST.read_text(encoding="utf-8")) if MANIFEST.exists() else {}
+    data[name] = {Path(p).resolve().relative_to(ROOT).as_posix(): _hash(p)
+                  for p in sorted(set(map(str, inputs)))}
+    MANIFEST.write_text(json.dumps(data, indent=2, sort_keys=True) + "\n", encoding="utf-8")
+    print(f"recorded {len(data[name])} inputs for '{name}'")
+
+
+def verify_builds():
+    """Report artifacts whose inputs changed after they were last built."""
+    if not MANIFEST.exists():
+        print(f"no {MANIFEST.name}; run the render commands in guide/maintenance.md")
+        return 1
+    data = json.loads(MANIFEST.read_text(encoding="utf-8"))
+    stale = {}
+    for name, inputs in sorted(data.items()):
+        changed = [rel for rel, digest in sorted(inputs.items())
+                   if not (ROOT / rel).exists() or _hash(ROOT / rel) != digest]
+        if changed:
+            stale[name] = changed
+    for name, changed in stale.items():
+        print(f"STALE  '{name}' was built before these changed:")
+        for rel in changed[:8]:
+            print(f"         {rel}")
+        if len(changed) > 8:
+            print(f"         and {len(changed) - 8} more")
+    if stale:
+        print("\nRebuild them, then commit the artifacts and build-manifest.json:")
+        print("  python .github/scripts/build_images.py --render")
+        print("  python .github/scripts/build_extra_images.py --render")
+        print("  python .github/scripts/build_booklet.py --render")
+        return 1
+    print(f"all {len(data)} generated artifacts are current with their sources")
+    return 0
+
+
 def main() -> int:
+    if "--verify" in sys.argv:
+        return verify_builds()
+
     images = {"social-preview.svg": social_preview(), "roadmap.svg": roadmap()}
     for cert in CERTS:
         images[f"cheat-sheet-{cert['slug']}.svg"] = cheat_sheet(cert)
@@ -389,6 +446,10 @@ def main() -> int:
         print(f"wrote {name}")
         if "--render" in sys.argv:
             render(path)
+
+    if "--render" in sys.argv:
+        record_build("images", [__file__, ASSETS / "avatar.jpg",
+                                *(ASSETS / "logos").glob("*.svg")])
     return 0
 
 

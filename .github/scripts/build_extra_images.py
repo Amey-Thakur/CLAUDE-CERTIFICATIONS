@@ -17,7 +17,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from build_images import (SHADE, footer_at,   # noqa: E402
+from build_images import (SHADE, footer_at, record_build,   # noqa: E402
     ASSETS, BODY, CARD, CORAL, FAINT, FONT, INK, MUTED, OLIVE, PAPER, PLUM, RULE, TEAL,
     claude_symbol, esc, footer, render,
 )
@@ -406,6 +406,10 @@ def main() -> int:
         print(f"wrote {name}")
         if "--render" in sys.argv:
             render(path)
+
+    if "--render" in sys.argv:
+        record_build("cards", [__file__, Path(__file__).with_name("build_images.py"),
+                               ASSETS / "avatar.jpg", *(ASSETS / "logos").glob("*.svg")])
     return 0
 
 

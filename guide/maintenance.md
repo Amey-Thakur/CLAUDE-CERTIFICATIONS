@@ -52,7 +52,15 @@ Rendering needs headless Chrome. Set `CHROME_PATH` if it is not on the path.
 
 Order matters when several things change at once: question bank, then tracker and flashcards, then images, then the booklet, because the booklet embeds the images and reads the flashcard count.
 
-Continuous integration regenerates the question bank, the tracker, and the flashcards on every push and fails if the committed files differ, so those three can never drift. The images and the booklet are not rebuilt in CI because they need a browser; rebuild them yourself whenever `CERTS`, the glossary, or the certificates gallery changes.
+Continuous integration regenerates the question bank, the tracker, and the flashcards on every push and fails if the committed files differ, so those three can never drift.
+
+The images and the booklet cannot be checked that way. They need a browser, and the booklet is set in a font the runner does not have, so a re-render would differ byte for byte with nothing actually wrong. Instead, each render records what it was built from in `.github/assets/build-manifest.json`, and CI checks whether any of those inputs changed afterwards:
+
+```bash
+python .github/scripts/build_images.py --verify
+```
+
+If it reports something stale, run the three render commands above and commit the artifacts together with the updated manifest. The manifest is written automatically by `--render`, so there is nothing to maintain by hand.
 
 ## Editorial rules
 

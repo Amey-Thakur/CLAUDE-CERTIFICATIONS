@@ -75,3 +75,9 @@ jobs:
           python .github/scripts/build_flashcards.py
           git diff --exit-code -- question-bank.json flashcards.tsv \
             guide/flashcards.md .github/assets/tracker.json .github/assets/flashcards.json
+      # The images and the booklet need a browser, and the booklet is set in a
+      # font the runner does not have, so re-rendering here would differ byte
+      # for byte with nothing wrong. This asks the question that matters
+      # instead: did a source change after the artifact was last built?
+      - name: Images and booklet are current with their sources
+        run: python .github/scripts/build_images.py --verify
