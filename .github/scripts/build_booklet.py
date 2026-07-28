@@ -421,6 +421,31 @@ def proof_page(label):
       the public Academy.</p>''', label)
 
 
+def glossary_page(label):
+    """The vocabulary the exam guides assume you already have, read from the
+    repository's glossary so the two cannot disagree."""
+    text = (ROOT / "guide" / "glossary.md").read_text(encoding="utf-8")
+    rows = [(a.strip(), b.strip()) for a, b in re.findall(r"^\| ([^|]+) \| ([^|]+) \|$", text, re.M)]
+    rows = [(a, re.sub(r"\[([^\]]+)\]\([^)]+\)", r"", b))
+            for a, b in rows if a not in ("Term", "---") and not a.startswith("---")]
+    half = (len(rows) + 1) // 2
+
+    def column(items):
+        return "".join(
+            f'<p style="margin-bottom:2mm;font-size:8.5pt;line-height:1.45">'
+            f'<strong style="color:#1f1e1b">{a}.</strong> <span class="muted">{b}</span></p>'
+            for a, b in items)
+
+    return page(f'''<h3>Reference</h3>
+      <h1 style="font-size:25pt">The words the exams assume you know</h1>
+      <p class="lead muted" style="max-width:220mm">The exam guides use these terms without defining them, and
+      questions are written on the assumption that you read them the way the programme does. {len(rows)} terms.</p>
+      <div class="cols" style="margin-top:3mm">
+        <div class="col">{column(rows[:half])}</div>
+        <div class="col">{column(rows[half:])}</div>
+      </div>''', label)
+
+
 def cert_page(cert, label=None):
     accent = ACCENTS[cert["slug"]]
     domains = "".join(
@@ -484,7 +509,7 @@ def preparing():
           against the blueprint. They are not exam items, and treating any question set as "the real ones" is both a
           policy violation and a poor strategy, because the item bank is confidential and rotates.</div>
         </div>
-      </div>''', "Preparing")
+      </div>''', "Part 3: Prepare")
 
 
 def policies():
@@ -506,7 +531,7 @@ def policies():
           <h3>Validity and renewal</h3>
           <p>A credential lasts 12 months from the day it is earned. Renewing before it expires is free: an open-book,
           non-proctored assessment on Anthropic Partner Academy, retakable as often as needed, extending the
-          credential another 12 months. Let it lapse and the full exam must be passed again at full fee.</p>
+          credential another 12 months. The credential itself arrives as a digital badge from Credly, by email, shortly after a pass. Let it lapse and the full exam must be passed again at full fee.</p>
           <h3 style="margin-top:5mm">Appeals and faulty questions</h3>
           <p>Decisions can be appealed to Pearson within 14 days. Separately, anyone may report a question that looks
           wrong, ambiguous, or out of scope; reporting never counts against you, and a confirmed faulty item that
@@ -515,7 +540,7 @@ def policies():
           Partner Network organizations, registering with a recognised company email. Domain record changes take 7 to
           10 days, so resolve any email problem well before you plan to sit.</div>
         </div>
-      </div>''', "Policies")
+      </div>''', "Part 4: Sit it")
 
 
 def repository_page():
@@ -559,7 +584,7 @@ def repository_page():
           no paywall, no email capture. Take it, use it, fork it, and send it to whoever is studying next.
           <div style="margin-top:2mm;font-weight:600">{link(REPO, REPO_URL)}</div></div>
         </div>
-      </div>''', "The repository")
+      </div>''', "Part 5: Keep going")
 
 
 def closing():
@@ -668,9 +693,10 @@ def build_html():
 
     parts.append((5, "Keep going",
                   "You now have everything the exam asks of you. What follows is where to find the parts that keep moving.",
-                  ["The twenty-one course certificates behind it",
+                  ["The vocabulary the exams assume", "The twenty-one course certificates behind it",
                    "What the living version does that paper cannot", "Where to go next"],
-                  [proof_page("Part 5: Keep going"), repository_page(), closing()]))
+                  [glossary_page("Part 5: Keep going"), proof_page("Part 5: Keep going"),
+                   repository_page(), closing()]))
 
     # First pass: lay out pages so the contents can carry real numbers.
     pages, entries, number = [], [], 2
