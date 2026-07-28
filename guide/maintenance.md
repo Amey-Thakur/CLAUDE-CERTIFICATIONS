@@ -86,7 +86,12 @@ Tag releases as `vX.Y.Z`. A release is warranted whenever the mirrored PDFs chan
 - Issues use the three templates (broken link or error, outdated content, resource suggestion); blank issues are disabled to keep reports actionable.
 - Discussions are enabled and seeded; the participation rules live in [CONTRIBUTING.md](../.github/CONTRIBUTING.md#discussions). The non-negotiable rule is that real exam content is never shared, per the exam NDA.
 - Workflows: lint (markdownlint and codespell) and link checking (lychee) run on pull requests, so contributions are self-checking.
-- Dependabot updates the pinned workflow actions.
+- Dependabot watches both the pinned workflow actions and the pinned pip packages, and vulnerability alerts with automated security fixes are on.
+- Secret scanning and push protection are on.
+- `main` is protected, enforced on administrators: no force pushes, no deletion, and linear history only. Rewriting or losing the history is the one mistake that cannot be undone, and this repository's history has been rewritten once already.
+- Status checks are deliberately **not** required to update `main`, because a required check blocks the push that would produce it and the maintainer commits directly. Checks still run on every push and pull request. If the work ever moves to a pull request flow, make them required then.
+
+Every third-party action is pinned to a commit rather than a tag, because a tag can be moved to point at different code and these actions run with access to the repository. The version stays in a comment beside the pin so updates are still readable.
 
 ## The website
 
