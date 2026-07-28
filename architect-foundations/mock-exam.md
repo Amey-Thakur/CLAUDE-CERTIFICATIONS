@@ -20,21 +20,21 @@ An Agent SDK agent handles returns, billing disputes, and account issues through
 **2.** process_refund fails intermittently because the billing backend times out. What should the tool return so the agent can behave sensibly?
 
 - A. An empty string
-- B. A structured error with a category and a retryable flag, so the agent can retry or escalate deliberately
-- C. A message asking the user to try later
+- C. A structured error with a category and a retryable flag, so the agent can retry or escalate deliberately
+- B. A message asking the user to try later
 - D. The exception stack trace
 
 **3.** Which condition should route a ticket to escalate_to_human rather than continue autonomous resolution?
 
 - A. The customer writes in a language the agent supports
-- B. The request falls outside documented policy, or the agent cannot make progress after a bounded number of attempts
-- C. The order is more than thirty days old
-- D. The conversation exceeds five turns
+- D. The request falls outside documented policy, or the agent cannot make progress after a bounded number of attempts
+- B. The order is more than thirty days old
+- C. The conversation exceeds five turns
 
 **4.** The agent sometimes calls get_customer when it should call lookup_order. What is the highest-leverage change?
 
-- A. Reorder the tools in the configuration
-- B. Rewrite both tool descriptions so each states precisely when it applies and how it differs from the other
+- B. Reorder the tools in the configuration
+- A. Rewrite both tool descriptions so each states precisely when it applies and how it differs from the other
 - C. Merge them into one tool with a mode flag
 - D. Increase the model's temperature
 
@@ -52,16 +52,16 @@ A team uses Claude Code across a monorepo for generation, refactoring, and revie
 **6.** When is plan mode the appropriate choice over direct execution?
 
 - A. For every change, since planning is always safer
-- B. When the change is large or risky enough that a human should review the approach before edits are made
-- C. Only when the model is unfamiliar with the language
+- C. When the change is large or risky enough that a human should review the approach before edits are made
+- B. Only when the model is unfamiliar with the language
 - D. When the context window is nearly full
 
 **7.** A repeated multi-step review procedure should be available to the whole team as a single invocation. What is the right mechanism?
 
 - A. A shared document describing the steps
-- B. A custom slash command or skill committed to the repository
-- C. A longer CLAUDE.md
-- D. A saved chat transcript
+- D. A custom slash command or skill committed to the repository
+- B. A longer CLAUDE.md
+- C. A saved chat transcript
 
 ## Scenario C: multi-agent research system
 
@@ -69,8 +69,8 @@ A coordinator delegates to search, analysis, synthesis, and report subagents tha
 
 **8.** Subagents return full source documents to the coordinator, which then exceeds its context limit. What is the correct design change?
 
-- A. Give the coordinator a larger model
-- B. Have subagents return structured findings with citations while raw sources stay at the edge or in a scratchpad
+- B. Give the coordinator a larger model
+- A. Have subagents return structured findings with citations while raw sources stay at the edge or in a scratchpad
 - C. Reduce the number of subagents to one
 - D. Truncate each document to its first page
 
@@ -84,8 +84,8 @@ A coordinator delegates to search, analysis, synthesis, and report subagents tha
 **10.** A subagent fails permanently on one source. What should the coordinator receive?
 
 - A. Nothing, so the report proceeds
-- B. A propagated error with enough context to decide between retry, exclusion with a noted gap, or abort
-- C. A silent retry loop until it succeeds
+- C. A propagated error with enough context to decide between retry, exclusion with a noted gap, or abort
+- B. A silent retry loop until it succeeds
 - D. A generic failure flag with no detail
 
 ## Scenario D: Claude Code in CI/CD
@@ -95,14 +95,14 @@ Claude Code runs automated review on pull requests and posts feedback.
 **11.** The reviewer must emit results a pipeline can parse. Which invocation is correct?
 
 - A. Interactive session with output redirected to a log
-- B. Non-interactive print mode with JSON output and a schema
-- C. Plan mode with an approval step
-- D. A cron job that emails the transcript
+- D. Non-interactive print mode with JSON output and a schema
+- B. Plan mode with an approval step
+- C. A cron job that emails the transcript
 
 **12.** Reviews flag many low-value style nits and engineers now ignore them. Which change addresses this?
 
-- A. Post findings to a separate channel
-- B. Define explicit review criteria and a severity bar in the prompt, with examples of in-scope and out-of-scope findings
+- B. Post findings to a separate channel
+- A. Define explicit review criteria and a severity bar in the prompt, with examples of in-scope and out-of-scope findings
 - C. Run the review only on large pull requests
 - D. Cap output at five findings
 
@@ -120,16 +120,16 @@ Documents are parsed into validated records for downstream systems.
 **14.** Which loop gives the most reliable extraction output?
 
 - A. Generate, then manually review every record
-- B. Enforce a JSON schema through tool use, validate, and on failure retry with the validation error provided to the model
-- C. Generate three times and take the majority
+- C. Enforce a JSON schema through tool use, validate, and on failure retry with the validation error provided to the model
+- B. Generate three times and take the majority
 - D. Generate with temperature zero and accept the result
 
 **15.** Your team reports 97% accuracy measured only on records that passed validation. Why is that number misleading?
 
 - A. Accuracy should be measured per field, not per record
-- B. It excludes the failures, so it measures where the system already succeeded rather than the true rate across all documents
-- C. 97% is too low to report
-- D. Validation and accuracy are unrelated
+- D. It excludes the failures, so it measures where the system already succeeded rather than the true rate across all documents
+- B. 97% is too low to report
+- C. Validation and accuracy are unrelated
 
 ---
 
@@ -138,20 +138,20 @@ Documents are parsed into validated records for downstream systems.
 | # | Answer | Domain | Why |
 | --- | --- | --- | --- |
 | 1 | B | Context Management & Reliability | Cross-customer contamination is a context-scoping defect, not a window-size problem |
-| 2 | B | Tool Design & MCP Integration | Structured errors with categories and retryable flags are what let an agent recover deliberately |
-| 3 | B | Context Management & Reliability | Policy gaps and lack of progress are the documented escalation triggers; turn counts and order age are not |
-| 4 | B | Tool Design & MCP Integration | Tool selection runs on descriptions, so differentiation is the fix for confusion between similar tools |
+| 2 | C | Tool Design & MCP Integration | Structured errors with categories and retryable flags are what let an agent recover deliberately |
+| 3 | D | Context Management & Reliability | Policy gaps and lack of progress are the documented escalation triggers; turn counts and order age are not |
+| 4 | A | Tool Design & MCP Integration | Tool selection runs on descriptions, so differentiation is the fix for confusion between similar tools |
 | 5 | B | Claude Code Configuration & Workflows | Path-scoped rules load conditionally, which is exactly the stated requirement |
-| 6 | B | Claude Code Configuration & Workflows | Plan mode is a human review gate for approach, warranted by risk rather than universally |
-| 7 | B | Claude Code Configuration & Workflows | Repeatable team procedures belong in committed commands or skills, not prose |
-| 8 | B | Context Management & Reliability | Delegation exists to keep bulk at the edge and move distilled results |
+| 6 | C | Claude Code Configuration & Workflows | Plan mode is a human review gate for approach, warranted by risk rather than universally |
+| 7 | D | Claude Code Configuration & Workflows | Repeatable team procedures belong in committed commands or skills, not prose |
+| 8 | A | Context Management & Reliability | Delegation exists to keep bulk at the edge and move distilled results |
 | 9 | B | Context Management & Reliability | Provenance survives handoffs only when the format carries claim and source together |
-| 10 | B | Context Management & Reliability | Errors must propagate with enough context for the coordinator to choose a recovery path |
-| 11 | B | Claude Code Configuration & Workflows | CI requires non-interactive invocation with structured, schema-validated output |
-| 12 | B | Prompt Engineering & Structured Output | Precision comes from explicit criteria and examples that draw the signal boundary |
+| 10 | C | Context Management & Reliability | Errors must propagate with enough context for the coordinator to choose a recovery path |
+| 11 | D | Claude Code Configuration & Workflows | CI requires non-interactive invocation with structured, schema-validated output |
+| 12 | A | Prompt Engineering & Structured Output | Precision comes from explicit criteria and examples that draw the signal boundary |
 | 13 | B | Prompt Engineering & Structured Output | Nullable fields record legitimate absence; required fields force fabrication or failure |
-| 14 | B | Prompt Engineering & Structured Output | Schema enforcement plus a validation-retry loop is the reliability pattern the guide describes |
-| 15 | B | Context Management & Reliability | Measuring only validated records is a biased sample; calibration needs coverage of all documents |
+| 14 | C | Prompt Engineering & Structured Output | Schema enforcement plus a validation-retry loop is the reliability pattern the guide describes |
+| 15 | D | Context Management & Reliability | Measuring only validated records is a biased sample; calibration needs coverage of all documents |
 
 ## Interpreting your score
 

@@ -11,21 +11,21 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 **1.** A retailer wants Claude to answer product questions from a 40,000-document catalogue that changes daily. Which architecture fits?
 
 - A. Fine-tune a model on the catalogue nightly
-- B. Retrieval over an index refreshed as the catalogue changes, with the model answering from retrieved context
-- C. Load the catalogue into the system prompt
+- C. Retrieval over an index refreshed as the catalogue changes, with the model answering from retrieved context
+- B. Load the catalogue into the system prompt
 - D. An autonomous agent that browses the public website
 
 **2.** After a re-index, your retrieval system returns semantically similar but commercially wrong products. Which investigation comes first?
 
 - A. The generation prompt
-- B. Chunking and embedding configuration, and whether the index was rebuilt consistently
-- C. The model version
-- D. The user interface
+- D. Chunking and embedding configuration, and whether the index was rebuilt consistently
+- B. The model version
+- C. The user interface
 
 **3.** An agent used by 300 employees exposes 45 tools across eight systems. Selection quality is degrading. What is the architectural response?
 
-- A. Shorten all tool descriptions
-- B. Scope toolsets per task or role, with progressive discovery for the rest
+- B. Shorten all tool descriptions
+- A. Scope toolsets per task or role, with progressive discovery for the rest
 - C. Merge tools into a few multi-mode tools
 - D. Replace the agent with a larger model
 
@@ -39,21 +39,21 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 **5.** Before a prompt change reaches all users, what is the disciplined sequence?
 
 - A. Ship it and monitor complaints
-- B. Regression evaluation, then a controlled A/B against the current prompt on predefined metrics, then rollout
-- C. Team vote followed by rollout
+- C. Regression evaluation, then a controlled A/B against the current prompt on predefined metrics, then rollout
+- B. Team vote followed by rollout
 - D. Rollout with a feedback form
 
 **6.** A hospital system requires that protected health information never reach the model provider, while clinicians need free-text search. Which design satisfies both?
 
 - A. A policy instructing clinicians not to type identifiers
-- B. A de-identification layer that removes or tokenizes PHI before the call, with local re-association and auditing
-- C. A system prompt instructing the model to disregard PHI
-- D. Restricting the feature to structured queries only
+- D. A de-identification layer that removes or tokenizes PHI before the call, with local re-association and auditing
+- B. A system prompt instructing the model to disregard PHI
+- C. Restricting the feature to structured queries only
 
 **7.** Which is the correct application of human-in-the-loop review at scale?
 
-- A. Review every output regardless of risk
-- B. Route by confidence and consequence, so low-confidence and high-impact cases reach humans while routine cases flow through
+- B. Review every output regardless of risk
+- A. Route by confidence and consequence, so low-confidence and high-impact cases reach humans while routine cases flow through
 - C. Review a fixed 10% sample chosen at random
 - D. Review only what users complain about
 
@@ -67,21 +67,21 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 **9.** Your design must satisfy GDPR for EU customer data. Which requirement most directly shapes the architecture?
 
 - A. Response latency targets
-- B. Data minimization, purpose limitation, and the ability to delete personal data on request
-- C. The choice of programming language
+- C. Data minimization, purpose limitation, and the ability to delete personal data on request
+- B. The choice of programming language
 - D. The number of model providers
 
 **10.** Which is the correct reason to prefer a workflow over an agent for a document intake process?
 
 - A. Workflows are always more accurate
-- B. The processing path is known in advance, so deterministic orchestration is cheaper, testable, and auditable
-- C. Agents cannot process documents
-- D. Workflows use less context
+- D. The processing path is known in advance, so deterministic orchestration is cheaper, testable, and auditable
+- B. Agents cannot process documents
+- C. Workflows use less context
 
 **11.** An application sends an identical 12,000-token policy preamble on every request. Which optimization addresses both latency and cost?
 
-- A. Splitting the preamble across two requests
-- B. Ordering the static preamble first and enabling prompt caching
+- B. Splitting the preamble across two requests
+- A. Ordering the static preamble first and enabling prompt caching
 - C. Summarizing the preamble with the model at request time
 - D. Moving the preamble into a few-shot block
 
@@ -95,21 +95,21 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 **13.** Observability for a production agent should capture which of the following to make incidents diagnosable?
 
 - A. Final outputs only
-- B. Traces of tool calls, retrieved context, and decision points alongside outputs
-- C. Aggregate latency metrics only
+- C. Traces of tool calls, retrieved context, and decision points alongside outputs
+- B. Aggregate latency metrics only
 - D. User feedback only
 
 **14.** A partner team wants to adopt your Claude Code setup. What makes adoption durable rather than a one-time handoff?
 
 - A. A recorded walkthrough
-- B. Version-controlled shared configuration, common skills and commands, and an onboarding path that new engineers follow
-- C. A shared chat channel
-- D. Individual coaching sessions
+- D. Version-controlled shared configuration, common skills and commands, and an onboarding path that new engineers follow
+- B. A shared chat channel
+- C. Individual coaching sessions
 
 **15.** Which change best reduces risk in an agent that can both read and modify production records?
 
-- A. Logging modifications for later review
-- B. Separating read and write capabilities, granting write access only where the role requires it, and gating writes behind explicit approval
+- B. Logging modifications for later review
+- A. Separating read and write capabilities, granting write access only where the role requires it, and gating writes behind explicit approval
 - C. Requiring a longer system prompt about caution
 - D. Running the agent during business hours only
 
@@ -119,21 +119,21 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 
 | # | Answer | Domain | Why |
 | --- | --- | --- | --- |
-| 1 | B | Solution Design & Architecture | Frequently changing knowledge belongs in retrieval, not in weights or a context window |
-| 2 | B | Integration | Degradation following a re-index points at chunking, embeddings, and index consistency |
-| 3 | B | Integration | At large tool counts, scoping and progressive discovery preserve selection quality |
+| 1 | C | Solution Design & Architecture | Frequently changing knowledge belongs in retrieval, not in weights or a context window |
+| 2 | D | Integration | Degradation following a re-index points at chunking, embeddings, and index consistency |
+| 3 | A | Integration | At large tool counts, scoping and progressive discovery preserve selection quality |
 | 4 | B | Evaluation, Testing & Optimization | Subjective quality becomes measurable through rubrics, labeled sets, and mixed methodology |
-| 5 | B | Evaluation, Testing & Optimization | Prompt changes are production changes: regression first, then a controlled comparison |
-| 6 | B | Governance, Safety & Risk Management | Compliance boundaries are enforced architecturally before data crosses, and audited |
-| 7 | B | Governance, Safety & Risk Management | Confidence and consequence routing makes human review affordable and effective |
+| 5 | C | Evaluation, Testing & Optimization | Prompt changes are production changes: regression first, then a controlled comparison |
+| 6 | D | Governance, Safety & Risk Management | Compliance boundaries are enforced architecturally before data crosses, and audited |
+| 7 | A | Governance, Safety & Risk Management | Confidence and consequence routing makes human review affordable and effective |
 | 8 | B | Stakeholder Communication & Lifecycle Management | Honest segmentation plus method and end-to-end outcome is what earns and keeps trust |
-| 9 | B | Governance, Safety & Risk Management | GDPR drives minimization, purpose limitation, and erasure, all of which shape design |
-| 10 | B | Solution Design & Architecture | Known path, deterministic orchestration; autonomy earns its complexity only when the path is not known |
-| 11 | B | Claude Models, Prompting & Context Engineering | A stable cached prefix cuts time-to-first-token and per-request cost together |
+| 9 | C | Governance, Safety & Risk Management | GDPR drives minimization, purpose limitation, and erasure, all of which shape design |
+| 10 | D | Solution Design & Architecture | Known path, deterministic orchestration; autonomy earns its complexity only when the path is not known |
+| 11 | A | Claude Models, Prompting & Context Engineering | A stable cached prefix cuts time-to-first-token and per-request cost together |
 | 12 | B | Stakeholder Communication & Lifecycle Management | A decision record captures alternatives and tradeoffs, not just the outcome |
-| 13 | B | Evaluation, Testing & Optimization | Without traces of tool calls and retrieved context, failures cannot be localized to a layer |
-| 14 | B | Developer Productivity & Operational Enablement | Shared, versioned configuration with an onboarding path is what makes adoption stick |
-| 15 | B | Integration | Least privilege plus approval gates on writes reduces the surface rather than monitoring it |
+| 13 | C | Evaluation, Testing & Optimization | Without traces of tool calls and retrieved context, failures cannot be localized to a layer |
+| 14 | D | Developer Productivity & Operational Enablement | Shared, versioned configuration with an onboarding path is what makes adoption stick |
+| 15 | A | Integration | Least privilege plus approval gates on writes reduces the surface rather than monitoring it |
 
 ## Interpreting your score
 

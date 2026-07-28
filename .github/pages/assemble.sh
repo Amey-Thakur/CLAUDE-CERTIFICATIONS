@@ -11,6 +11,7 @@ cp -r associate-foundations developer-foundations architect-foundations architec
 cp -r .github/assets/logos site-src/assets/logos
 cp question-bank.json site-src/assets/question-bank.json
 cp .github/pages/dropdown.js site-src/javascripts/dropdown.js
+cp .github/pages/js/*.js site-src/javascripts/
 cp .github/assets/tracker.json site-src/assets/tracker.json
 cp .github/assets/flashcards.json site-src/assets/flashcards.json
 cp flashcards.tsv site-src/assets/flashcards.tsv
@@ -89,6 +90,18 @@ for md in Path('site-src').rglob('*.md'):
     if new != t:
         md.write_text(new, encoding='utf-8')
 PY
+
+# Re-attach the widget scripts, which are kept out of the markdown so that
+# GitHub does not render their source as page text.
+attach() {
+  printf '
+<script src="%s"></script>
+' "$2" >> "site-src/$1"
+}
+attach guide/tracker.md    ../javascripts/tracker.js
+attach guide/quiz.md       ../javascripts/quiz.js
+attach guide/flashcards.md ../javascripts/flashcards.js
+attach index.md            javascripts/home.js
 
 # Search engines get a per-page meta description, injected here so the
 # repository markdown stays clean, and a robots.txt pointing at the sitemap.

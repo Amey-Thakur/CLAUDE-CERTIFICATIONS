@@ -31,58 +31,6 @@ This site is the readable version of the [CLAUDE-CERTIFICATIONS repository](http
 
 <div id="taster" class="quiz"></div>
 
-<script>
-(function () {
-  var mount = document.getElementById("taster");
-  if (!mount) return;
-  var LETTERS = ["A", "B", "C", "D"];
-  function el(t, c, x) { var n = document.createElement(t); if (c) n.className = c; if (x !== undefined) n.textContent = x; return n; }
-  function shuffle(a) { for (var i = a.length - 1; i > 0; i--) { var j = Math.floor(Math.random() * (i + 1)), t = a[i]; a[i] = a[j]; a[j] = t; } return a; }
-
-  fetch("assets/question-bank.json").then(function (r) { return r.json(); }).then(function (bank) {
-    var q = bank.questions[Math.floor(Math.random() * bank.questions.length)];
-    var pairs = shuffle(Object.keys(q.options).sort().map(function (k) {
-      return { text: q.options[k], correct: k === q.answer };
-    }));
-    var card = el("div", "quiz__card");
-    card.appendChild(el("p", "quiz__meta", bank.exams[q.exam].title + "  ·  " + q.domain));
-    card.appendChild(el("p", "quiz__question", q.question));
-    var list = el("div", "quiz__options");
-    var done = false;
-    pairs.forEach(function (pair, i) {
-      var b = el("button", "quiz__option", LETTERS[i] + ". " + pair.text);
-      b.type = "button";
-      b.addEventListener("click", function () {
-        if (done) return;
-        done = true;
-        pairs.forEach(function (p2, j) {
-          var node = list.children[j];
-          if (p2.correct) node.classList.add("is-correct");
-          else if (j === i) node.classList.add("is-incorrect");
-        });
-        var verdict = el("p", "quiz__review-r", (pair.correct ? "Correct. " : "Not quite. ") + q.rationale);
-        card.insertBefore(verdict, foot);
-      });
-      list.appendChild(b);
-    });
-    card.appendChild(list);
-    var foot = el("p", "quiz__meta");
-    var more = el("a", null, "Take a full practice exam");
-    more.href = "guide/quiz.html";
-    foot.appendChild(more);
-    foot.appendChild(document.createTextNode("  ·  100 questions across the four certifications"));
-    card.appendChild(foot);
-    mount.appendChild(card);
-  }).catch(function () {
-    var p = el("p");
-    var a = el("a", null, "Open the practice engine");
-    a.href = "guide/quiz.html";
-    p.appendChild(a);
-    mount.appendChild(p);
-  });
-})();
-</script>
-
 ## The whole program on one page
 
 [![Claude certification roadmap: all four certifications with exam codes, fees, item counts, domain weights, and the courses that prepare for each](assets/roadmap.png)](assets/roadmap.png "View the certification roadmap at full size")
@@ -121,7 +69,7 @@ flowchart TD
 ```
 
 1. **Pick your exam** with the table above, or read [how the certifications connect](guide/learning-paths.md).
-2. **Study** with your exam's study guide and notes, the [study strategy](guide/study-strategy.md), the [21 official courses](guide/courses.md) with [per-course notes](guide/course-notes.md) and [official resources](guide/resources.md), [official videos](guide/videos.md) that teach the material, and the [practice engine](guide/quiz.md) to test yourself: a shuffled, timed, scored exam drawn from 100 original questions.
+2. **Study** with your exam's study guide and notes, the [study strategy](guide/study-strategy.md), the [21 official courses](guide/courses.md) with [per-course notes](guide/course-notes.md) and [official resources](guide/resources.md), [official videos](guide/videos.md) that teach the material, and the [practice engine](guide/quiz.md) to test yourself: a shuffled, timed, scored exam drawn from 200 original questions.
 3. **Book and sit** with the [registration guide](guide/registration.md); [policies](guide/policies.md) and the [FAQ](guide/faq.md) cover the rest.
 
 ## The maintainer's certificates
