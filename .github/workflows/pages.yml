@@ -32,7 +32,7 @@ jobs:
         run: python .github/pages/finalize.py
       - name: Write llms.txt
         run: python .github/pages/build_llms_txt.py
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@v5
         with:
           path: _site
 
