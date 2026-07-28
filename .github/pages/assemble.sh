@@ -111,6 +111,7 @@ for candidate in python3 python py; do
 done
 "$PYBIN" - <<'PY'
 import json
+import re
 from pathlib import Path
 for rel, desc in json.loads(Path('.github/pages/descriptions.json').read_text(encoding='utf-8')).items():
     p = Path('site-src') / rel
@@ -118,7 +119,16 @@ for rel, desc in json.loads(Path('.github/pages/descriptions.json').read_text(en
     if not text.startswith('---'):
         # Quoted: descriptions contain colons, which are YAML mapping syntax unquoted.
         safe = desc.replace('"', "'")
-        p.write_text(f'---\ndescription: "{safe}"\n---\n\n{text}', encoding='utf-8')
+        # The nav label is short and repeats across the four exams, so the
+        # page title comes from the page's own heading instead. Material
+        # prefers a frontmatter title for <title>; the nav keeps its label.
+        head = re.search('^# (.+)$', text, re.M)
+        title = head.group(1).strip().replace('"', chr(39)) if head else ''
+        fm = ['---', 'description: "' + safe + '"']
+        if title:
+            fm.append('title: "' + title + '"')
+        fm += ['---', '', text]
+        p.write_text(chr(10).join(fm), encoding='utf-8')
 PY
 printf 'User-agent: *\nAllow: /\nSitemap: https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/sitemap.xml\n' > site-src/robots.txt
 

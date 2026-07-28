@@ -706,15 +706,18 @@ def build_html():
     for num, title, blurb, bullets, body_pages in parts:
         layout.append((num, title, blurb, bullets, body_pages))
 
-    running = 4  # cover 1, foreword 2, contents 3, first part opener 4
+    # The front matter is assembled first so the contents can count it rather
+    # than assume it. Adding a front page now corrects the page numbers itself.
+    front = [cover(), foreword(), None, hard_won_page("Before you start")]
+    contents_at = front.index(None)
+
+    running = len(front) + 1
     for num, title, blurb, bullets, body_pages in layout:
         entries.append((num, title, blurb, running))
         running += 1 + len(body_pages)
 
-    pages.append(cover())
-    pages.append(foreword())
-    pages.append(contents(entries))
-    pages.append(hard_won_page("Before you start"))
+    front[contents_at] = contents(entries)
+    pages.extend(front)
     for i, (num, title, blurb, bullets, body_pages) in enumerate(layout):
         pages.append(part_opener(num, title, blurb, bullets, accents[i]))
         pages.extend(body_pages)
