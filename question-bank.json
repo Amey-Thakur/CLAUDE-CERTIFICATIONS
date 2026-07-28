@@ -961,7 +961,7 @@
     "D": "Add documents as questions come up, without review"
    },
    "answer": "A",
-   "rationale": "A deliberate, minimal base keeps retrieval sharp and is maintainable. Uploading everything (B) and accreting without review (D) both dilute, and instruction length (C) is not the question"
+   "rationale": "A deliberate, minimal base keeps retrieval sharp and is maintainable. Uploading everything (B) and accumulating without review (D) both dilute, and instruction length (C) is not the question"
   },
   {
    "id": "associate-foundations-mock-14",
