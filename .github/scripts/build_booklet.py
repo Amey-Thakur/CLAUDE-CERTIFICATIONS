@@ -255,7 +255,7 @@ def foreword():
           <p>Read the roadmap, pick the exam that matches the work you already do, and work its page. Keep the cheat
           sheet for the day before. If a fact here disagrees with the official exam guide, believe the guide, and
           please tell me so I can fix it.</p>
-          <div class="callout push" style="margin-bottom:0">I put this in one place so your time goes
+          <div class="callout" style="margin:4mm 0 0">I put this in one place so your time goes
           into learning rather than looking. If it helps you get certified, it did its job. Good luck.
           <div style="margin-top:3mm;font-weight:600">– {AUTHOR}</div></div>
         </div>
@@ -695,14 +695,14 @@ def closing():
           preparation belong in the repository's discussions.</p>
           <p>If it saved you time, starring the repository is the whole marketing budget: it is how the next
           candidate searching for this finds it instead of a braindump site.</p>
+          <!-- The parting note sits in this column rather than spanning the
+               page, which is what evens the two columns out. -->
+          <div class="callout" style="margin:2mm 0 0">Whatever you are preparing for, the path is the same: read
+          the blueprint, close the gaps honestly, build something real, and book the date. You do not need
+          permission or a better moment.
+          <div style="margin-top:3mm;font-weight:600">– {AUTHOR}</div></div>
         </div>
       </div>
-      <!-- The parting note runs the width of the page rather than sitting in
-           one column, which is what left the last page looking half used. -->
-      <div class="callout" style="margin:0 0 2.5mm">Whatever you are preparing for, the path is the same: read the
-      blueprint, close the gaps honestly, build something real, and book the date. You do not need permission or a
-      better moment.
-      <div style="margin-top:3mm;font-weight:600">– {AUTHOR}</div></div>
       <p class="small" style="margin-bottom:0">Facts drawn from the official Anthropic exam guides and program
       pages, verified against them on publication. A community study resource, not affiliated with or endorsed by
       Anthropic. Claude and Anthropic are trademarks of Anthropic PBC.</p>''', "Thank you", cls="roomy")
