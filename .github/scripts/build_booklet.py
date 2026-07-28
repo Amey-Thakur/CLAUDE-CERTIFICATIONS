@@ -167,9 +167,10 @@ def contents():
         ("The roadmap", "All four certifications, their domain weights, and the courses that prepare for each"),
         ("One page per certification", "Exam facts, where the marks are, and the rules that decide questions"),
         ("The official curriculum", "Every Anthropic course and the exam it serves"),
-        ("Preparing", "A method that works, and how to practise without breaking the exam agreement"),
+        ("Preparing", "A study plan that fits a job, and how to practise without breaking the exam agreement"),
         ("Registration and exam day", "Booking, proctoring setup, and the checklist worth keeping"),
         ("Policies and scoring", "Retakes, validity, renewal, appeals, and how the score is built"),
+        ("The repository behind it", "What the living version does that paper cannot"),
     ]
     body = "".join(f'<tr><td style="width:62mm"><strong>{t}</strong></td><td class="muted">{d}</td></tr>'
                    for t, d in rows)
@@ -284,18 +285,62 @@ def policies():
       </div>''', "Policies")
 
 
+def repository_page():
+    """What the living version does that paper cannot, and why it is worth the trip."""
+    return page(f'''<h3>Beyond this booklet</h3>
+      <h1 style="font-size:25pt">The repository behind it</h1>
+      <p class="lead muted" style="max-width:215mm">This booklet is a snapshot, printed on a date. The repository is
+      the living version: maintained, link-checked every week, and updated when Anthropic changes the program. These
+      are the things paper cannot do.</p>
+      <div class="cols" style="margin-top:3mm">
+        <div class="col">
+          <h3>Practise, not just read</h3>
+          <p>A bank of original practice questions with a shuffled, timed engine that runs in your browser or your
+          terminal. It reorders questions and options on every run, so nothing can be memorised by position, and it
+          scores you per domain the way the real report does.</p>
+          <h3 style="margin-top:4mm">Study the way you already study</h3>
+          <p>A flashcard deck covering every fact, domain weight, rule, and term, in a format Anki, Quizlet, and
+          RemNote all import directly. A progress tracker that weights each domain by its share of the exam, so the
+          number tells you how much of the paper you can actually answer.</p>
+          <h3 style="margin-top:4mm">A coach that knows the blueprint</h3>
+          <p>Open the repository in Claude Code and six commands are waiting: run a diagnostic to find weak domains,
+          drill one of them, sit a timed mock, build a study plan or a week of sessions, and interpret a real score
+          report into a decision.</p>
+        </div>
+        <div class="col">
+          <h3>The official documents, kept current</h3>
+          <p>Every official exam guide and policy PDF, mirrored with its source URL and the date it was last checked,
+          so you can verify anything here against the original in one click. A weekly job re-checks every link, and a
+          script re-downloads the documents and reports what changed.</p>
+          <h3 style="margin-top:4mm">The parts that go stale fastest</h3>
+          <p>Fees, discounts, question counts, and the migration-era rules change. The repository carries dated facts
+          and a maintenance routine designed to catch them. When something here disagrees with the official exam
+          guide, the guide is right, and the repository is where the correction lands first.</p>
+          <h3 style="margin-top:4mm">Other candidates</h3>
+          <p>A discussion space for preparation questions and exam experiences, under one firm rule: real exam content
+          is never posted. If this booklet helped, the most useful thing you can do is answer someone else's question
+          there.</p>
+          <div class="callout" style="margin-top:3mm"><strong>Everything is free and open source.</strong> No account,
+          no paywall, no email capture. Take it, use it, fork it, and send it to whoever is studying next.
+          <div style="margin-top:2mm;font-weight:600">{REPO}</div></div>
+        </div>
+      </div>''', "The repository")
+
+
 def closing():
     return page(f'''<h1>Where to go next</h1>
       <div class="cols">
         <div class="col">
-          <h3>The living version</h3>
-          <p>This booklet is a snapshot. The repository is maintained, link-checked, and updated when Anthropic
-          changes the program, and it holds what a PDF cannot: the mirrored official exam guides and policy
-          documents, a practice engine, per-course notes, and a discussion space for candidates.</p>
-          <p style="font-size:11pt"><strong>{REPO}</strong><br><span class="muted">{SITE}</span></p>
-          <h3 style="margin-top:5mm">Official sources</h3>
-          <p class="muted">Anthropic Partner Academy for registration and courses, the public Anthropic Academy for
-          the same courses without a partner account, and Pearson VUE for scheduling, proctoring, and appeals.</p>
+          <h3>Three places to go</h3>
+          <p style="font-size:11pt"><strong>{REPO}</strong><br>
+          <span class="muted">The repository: practice engine, flashcards, progress tracker, and the mirrored
+          official documents.</span></p>
+          <p style="font-size:11pt"><strong>{SITE}</strong><br>
+          <span class="muted">The same material as a searchable website, with the practice engine in the
+          browser.</span></p>
+          <p style="font-size:11pt"><strong>anthropic.skilljar.com</strong><br>
+          <span class="muted">The official courses, free, without a partner account. Registration and the exams
+          run through Anthropic Partner Academy and Pearson VUE.</span></p>
         </div>
         <div class="col">
           <h3>If this helped</h3>
@@ -331,10 +376,17 @@ def build_html():
     pages.append(image_page("The official curriculum",
                             "Every Anthropic course, free on the public Academy, and the exam each one serves.",
                             "card-courses.png", "Curriculum"))
+    pages.append(image_page("A working study plan",
+                            "Three weeks alongside a job. The shape matters more than the calendar: scope, then depth, then close.",
+                            "card-study-plan.png", "Study plan"))
     pages.append(preparing())
     pages.append(image_page("Exam day", "Most failed sittings are logistics, not knowledge.",
                             "card-exam-day.png", "Exam day"))
+    pages.append(image_page("Scoring and second chances",
+                            "How the score is built, what a failed attempt actually costs, and how the credential stays alive.",
+                            "card-scoring.png", "Scoring"))
     pages.append(policies())
+    pages.append(repository_page())
     pages.append(closing())
 
     return ("<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\">"
