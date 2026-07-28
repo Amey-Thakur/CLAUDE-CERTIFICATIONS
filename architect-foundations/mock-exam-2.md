@@ -122,10 +122,10 @@ A second timed practice exam in the official style, with fifteen questions that 
 
 | # | Answer | Domain | Why |
 | --- | --- | --- | --- |
-| 1 | C | Agentic Architecture | A known fixed order is encoded rather than rediscovered, which is cheaper and testable per step. Runtime planning (A, B) adds nondeterminism, and one prompt (D) removes the checkpoints |
-| 2 | A | Agentic Architecture | Delegation buys isolation and pays in context, which is why handoffs must be explicit. A subagent does not require a larger model (B), can use tools (C), and cost varies with the work (D) |
-| 3 | D | Agentic Architecture | Irreversible external effects need an authorisation boundary or reversibility, enforced outside the model. Capability (A), instruction (B), and retries (C) do not bound the consequence |
-| 4 | B | Agentic Architecture | A per-step trace reconstructs a nondeterministic run, which is what diagnosis needs. The final output (A), token totals (C), and version (D) do not show where it diverged |
+| 1 | C | Agentic Architecture & Orchestration | A known fixed order is encoded rather than rediscovered, which is cheaper and testable per step. Runtime planning (A, B) adds nondeterminism, and one prompt (D) removes the checkpoints |
+| 2 | A | Agentic Architecture & Orchestration | Delegation buys isolation and pays in context, which is why handoffs must be explicit. A subagent does not require a larger model (B), can use tools (C), and cost varies with the work (D) |
+| 3 | D | Agentic Architecture & Orchestration | Irreversible external effects need an authorisation boundary or reversibility, enforced outside the model. Capability (A), instruction (B), and retries (C) do not bound the consequence |
+| 4 | B | Agentic Architecture & Orchestration | A per-step trace reconstructs a nondeterministic run, which is what diagnosis needs. The final output (A), token totals (C), and version (D) do not show where it diverged |
 | 5 | B | Claude Code Configuration & Workflows | Committed project memory is shared, versioned, and reviewed with the code. Local configuration (A) does not propagate, chat (C) is not read as context, and CI (D) covers automation rather than interactive work |
 | 6 | D | Claude Code Configuration & Workflows | Headless execution suits bounded, repeatable work that runs unattended. Exploration (A), design (B), and pairing (C) all depend on a person in the loop |
 | 7 | A | Claude Code Configuration & Workflows | Hooks execute as code at fixed points, which is how a guarantee is enforced. Instructions (B) and context (C) belong in project memory, and model choice (D) is configuration |

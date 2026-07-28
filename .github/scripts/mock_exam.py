@@ -64,6 +64,10 @@ def run():
     parser.add_argument("--exam", help="exam slug or fragment, for example 'developer'")
     parser.add_argument("--count", type=int, default=15, help="number of questions (default 15)")
     parser.add_argument("--domain", help="restrict to domains containing this text")
+    parser.add_argument("--mock", type=int, choices=(1, 2, 3),
+                        help="sit one specific mock paper rather than the pooled set")
+    parser.add_argument("--practice", action="store_true",
+                        help="draw only from the topic practice questions")
     parser.add_argument("--review", action="store_true", help="show the answer after each question")
     parser.add_argument("--seed", type=int, help="fix the shuffle for a reproducible run")
     args = parser.parse_args()
@@ -73,6 +77,12 @@ def run():
     slug = choose_exam(bank, args.exam)
 
     pool = [q for q in bank["questions"] if q["exam"] == slug]
+    if args.mock:
+        pool = [q for q in pool if q["source"] == f"mock-{args.mock}"]
+        if not pool:
+            raise SystemExit(f"No questions found for mock {args.mock} of {slug}")
+    if args.practice:
+        pool = [q for q in pool if q["source"] == "practice"]
     if args.domain:
         pool = [q for q in pool if args.domain.lower() in q["domain"].lower()]
         if not pool:

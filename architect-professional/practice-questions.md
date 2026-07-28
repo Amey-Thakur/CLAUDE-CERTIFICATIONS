@@ -41,7 +41,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**4. Solution Design.** A bank wants a system that answers loan officers' policy questions with citations, and separately drafts decline letters from structured decision data. A vendor proposes one autonomous multi-agent system for both. What is the sounder architecture?
+**4. Solution Design & Architecture.** A bank wants a system that answers loan officers' policy questions with citations, and separately drafts decline letters from structured decision data. A vendor proposes one autonomous multi-agent system for both. What is the sounder architecture?
 
 - A. The proposed multi-agent system, since both tasks involve documents
 - C. Two simple components: a retrieval-augmented answer service for policy questions, and a templated generation workflow for letters, each evaluated on its own metrics
@@ -54,7 +54,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**5. Solution Design.** Your architecture review board asks why you chose a deterministic workflow over an autonomous agent for claims intake. Which justification reflects the tested decision framework?
+**5. Solution Design & Architecture.** Your architecture review board asks why you chose a deterministic workflow over an autonomous agent for claims intake. Which justification reflects the tested decision framework?
 
 - A. Agents are a newer pattern and less proven in general
 - D. The intake path is fully known in advance, so deterministic orchestration is cheaper, auditable, and reliable; autonomy earns its complexity only where the model must choose the path
@@ -197,7 +197,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**16. Solution Design.** A stakeholder asks for an autonomous agent to handle an end-to-end financial approval process. What should the architect establish first?
+**16. Solution Design & Architecture.** A stakeholder asks for an autonomous agent to handle an end-to-end financial approval process. What should the architect establish first?
 
 - A. Which model to use
 - C. Which decisions carry accountability and must remain with a person
@@ -210,7 +210,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**17. Solution Design.** Two designs meet the functional requirement. One is simpler and slightly less capable. What should decide?
+**17. Solution Design & Architecture.** Two designs meet the functional requirement. One is simpler and slightly less capable. What should decide?
 
 - A. The more capable design, since capability is the point
 - D. Whether the extra capability is needed by a stated requirement, weighed against the cost of complexity
@@ -223,7 +223,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**18. Solution Design.** A proposed architecture depends on the model behaving correctly for a control that regulation requires. What is the correct judgment?
+**18. Solution Design & Architecture.** A proposed architecture depends on the model behaving correctly for a control that regulation requires. What is the correct judgment?
 
 - B. Acceptable if evaluation shows high accuracy
 - A. Unacceptable: a required control must be enforced deterministically outside the model
@@ -236,7 +236,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**19. Solution Design.** What is the clearest sign that a solution has been over-engineered?
+**19. Solution Design & Architecture.** What is the clearest sign that a solution has been over-engineered?
 
 - A. It uses more than one model
 - B. Components exist that no stated requirement depends on

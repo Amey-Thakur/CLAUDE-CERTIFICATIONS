@@ -2,7 +2,7 @@
 
 Thirty-five original practice questions written for this repository against the public [exam blueprint](README.md#skills-measured), framed inside the [six published scenarios](README.md#the-six-exam-scenarios) the way the real exam frames its items. They are unofficial practice aids, not items from the live exam, which is covered by a non-disclosure agreement. For unlimited practice, use [Practice with Claude](../guide/practice.md) or the repository's built-in exam coach skill.
 
-**1. Support resolution agent, Agentic Architecture.** Your support agent resolves most tickets but sometimes loops indefinitely, re-calling lookup_order on the same order. What is the correct structural fix?
+**1. Support resolution agent: Agentic Architecture & Orchestration.** Your support agent resolves most tickets but sometimes loops indefinitely, re-calling lookup_order on the same order. What is the correct structural fix?
 
 - A. Raise max_tokens so the loop has room to finish
 - C. Add explicit loop-termination conditions: cap tool iterations, detect repeated identical calls, and route to escalate_to_human when progress stalls
@@ -15,7 +15,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**2. Support resolution agent, Tool Design.** process_refund currently accepts any amount. Support policy caps agent-initiated refunds at $200; larger refunds need a human. Where does that rule belong?
+**2. Support resolution agent: Tool Design & MCP Integration.** process_refund currently accepts any amount. Support policy caps agent-initiated refunds at $200; larger refunds need a human. Where does that rule belong?
 
 - A. In the system prompt, phrased firmly
 - D. Enforced in the tool layer: the tool rejects amounts over the cap with a structured error, and a hook or the tool itself routes larger cases to escalation
@@ -28,7 +28,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**3. Multi-agent research, Agentic Architecture.** Your coordinator delegates to search, analysis, and report subagents. Final reports cite sources that do not support their claims, though each subagent behaves sensibly alone. What is the most likely architectural cause?
+**3. Multi-agent research: Agentic Architecture & Orchestration.** Your coordinator delegates to search, analysis, and report subagents. Final reports cite sources that do not support their claims, though each subagent behaves sensibly alone. What is the most likely architectural cause?
 
 - B. The report subagent's model is too small
 - A. Provenance is lost at handoffs: findings and their sources are not passed together in a structured form, so the report writer pairs claims with citations by guesswork
@@ -41,7 +41,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**4. Multi-agent research, Context Management.** The analysis subagent returns 30,000-token document dumps to the coordinator, which then fails on context limits. What is the right fix?
+**4. Multi-agent research: Context Management & Reliability.** The analysis subagent returns 30,000-token document dumps to the coordinator, which then fails on context limits. What is the right fix?
 
 - A. Give the coordinator a bigger context window
 - B. Have subagents return structured extracts, findings with citations and confidence, while full documents stay in the subagent's context or a scratchpad file
@@ -54,7 +54,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**5. Claude Code for development, Configuration.** Your monorepo has frontend and backend directories with different conventions, and one team-wide rule about commit style. Where does each piece of configuration belong?
+**5. Claude Code for development: Claude Code Configuration & Workflows.** Your monorepo has frontend and backend directories with different conventions, and one team-wide rule about commit style. Where does each piece of configuration belong?
 
 - A. Everything in one root CLAUDE.md
 - C. The commit rule in the project-level CLAUDE.md; the per-area conventions in path-scoped rules under .claude/rules/ that load only when matching files are touched
@@ -67,7 +67,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**6. Claude Code in CI, Workflows.** Your CI job runs Claude Code to review pull requests, and the pipeline must parse the results mechanically. Which invocation is correct?
+**6. Claude Code in CI: Claude Code Configuration & Workflows.** Your CI job runs Claude Code to review pull requests, and the pipeline must parse the results mechanically. Which invocation is correct?
 
 - A. Interactive mode with a human copying the output into CI
 - D. Non-interactive mode with -p, with --output-format json and a schema so the review arrives as machine-readable, validated output
@@ -80,7 +80,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**7. Claude Code in CI, Prompt Engineering.** The automated reviewer flags dozens of trivial style nits per pull request, and engineers have started ignoring it. Which change addresses the false-positive problem the way the blueprint suggests?
+**7. Claude Code in CI: Prompt Engineering & Structured Output.** The automated reviewer flags dozens of trivial style nits per pull request, and engineers have started ignoring it. Which change addresses the false-positive problem the way the blueprint suggests?
 
 - B. Run the review twice and post only findings that appear both times
 - A. Define explicit review criteria in the prompt: what to flag, what to ignore, and a severity bar, with a few worked examples of in-scope and out-of-scope findings
@@ -93,7 +93,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**8. Structured data extraction, Structured Output.** Invoices sometimes lack a purchase-order number, and your extraction schema must handle that honestly while catching real misses. What is the right schema design?
+**8. Structured data extraction: Prompt Engineering & Structured Output.** Invoices sometimes lack a purchase-order number, and your extraction schema must handle that honestly while catching real misses. What is the right schema design?
 
 - A. Make every field required so nothing is missed
 - B. Make purchase_order nullable, so absence is recorded as null, and validate that it is present whenever the document type requires it
@@ -106,7 +106,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**9. Structured data extraction, Reliability.** Your pipeline reports 98% field accuracy, measured on the documents the schema validated cleanly. An auditor calls the number misleading. Why?
+**9. Structured data extraction: Context Management & Reliability.** Your pipeline reports 98% field accuracy, measured on the documents the schema validated cleanly. An auditor calls the number misleading. Why?
 
 - A. Accuracy should be measured only on the hardest documents
 - C. Validation-clean documents are a biased sample: the honest measure comes from a labeled sample drawn across all documents, including ones that failed or barely passed validation
@@ -119,7 +119,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**10. Developer productivity agent, Tool Design.** Your codebase-exploration agent has get_file_contents, read_source, and fetch_file tools that all read files, and it frequently picks poorly among them. What is the correct fix?
+**10. Developer productivity agent: Tool Design & MCP Integration.** Your codebase-exploration agent has get_file_contents, read_source, and fetch_file tools that all read files, and it frequently picks poorly among them. What is the correct fix?
 
 - A. Add a fourth, better file-reading tool
 - D. Consolidate to one file-reading tool, or give the survivors sharply differentiated descriptions that state exactly when each applies
@@ -132,7 +132,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**11. Agentic Architecture.** A support workflow resolves tickets by looking up an account, checking entitlement, and drafting a reply, always in that order. Which architecture is correct?
+**11. Agentic Architecture & Orchestration.** A support workflow resolves tickets by looking up an account, checking entitlement, and drafting a reply, always in that order. Which architecture is correct?
 
 - B. A single agent that decides each step at runtime
 - A. A deterministic pipeline that calls the model at each defined step
@@ -145,7 +145,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**12. Agentic Architecture.** What is the strongest justification for splitting work across subagents?
+**12. Agentic Architecture & Orchestration.** What is the strongest justification for splitting work across subagents?
 
 - A. The task has many steps
 - B. Separate lines of work each need their own context, and mixing them degrades both
@@ -158,7 +158,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**13. Agentic Architecture.** An agent loops between two tools without converging. What is the most appropriate first control?
+**13. Agentic Architecture & Orchestration.** An agent loops between two tools without converging. What is the most appropriate first control?
 
 - A. Increase the context window so it can see more history
 - C. Impose a step ceiling and define the terminating condition explicitly
@@ -171,7 +171,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**14. Agentic Architecture.** Which property most increases the operational risk of an agentic design?
+**14. Agentic Architecture & Orchestration.** Which property most increases the operational risk of an agentic design?
 
 - A. It calls more than one model
 - D. It takes irreversible actions without a checkpoint
@@ -184,7 +184,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**15. Agentic Architecture.** How should an agentic system handle a step whose result it cannot verify?
+**15. Agentic Architecture & Orchestration.** How should an agentic system handle a step whose result it cannot verify?
 
 - B. Proceed, since the model is usually right
 - A. Surface the unverifiable step for human confirmation before acting on it
@@ -197,7 +197,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**16. Agentic Architecture.** A team proposes an agent for a task where every input is well formed and every rule is known. What should the architect recommend?
+**16. Agentic Architecture & Orchestration.** A team proposes an agent for a task where every input is well formed and every rule is known. What should the architect recommend?
 
 - A. An agent, for future flexibility
 - B. A deterministic implementation, reserving model calls for the genuinely ambiguous parts
@@ -210,7 +210,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**17. Agentic Architecture.** What most improves the debuggability of an agentic system in production?
+**17. Agentic Architecture & Orchestration.** What most improves the debuggability of an agentic system in production?
 
 - A. Reducing the number of tools
 - C. Recording the inputs, tool calls, and outputs of each step as a trace

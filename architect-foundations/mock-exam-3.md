@@ -122,9 +122,9 @@ The third and final timed practice exam, with fifteen more questions that appear
 
 | # | Answer | Domain | Why |
 | --- | --- | --- | --- |
-| 1 | C | Agentic Architecture | Repeating an identical call means the prior result is not available to the agent, which is a state problem. It is not retry behavior (A), and neither tool speed (B) nor capability (D) explains it |
-| 2 | A | Agentic Architecture | Context isolation is the reason subagents exist. Length (B), tool difference (C), and parallelism (D) can all be handled within one context |
-| 3 | D | Agentic Architecture | Reversibility and gating bound the consequence, which is what the risk is. Capability (A), prompt length (B), and tools (C) affect the chance of error rather than its cost |
+| 1 | C | Agentic Architecture & Orchestration | Repeating an identical call means the prior result is not available to the agent, which is a state problem. It is not retry behavior (A), and neither tool speed (B) nor capability (D) explains it |
+| 2 | A | Agentic Architecture & Orchestration | Context isolation is the reason subagents exist. Length (B), tool difference (C), and parallelism (D) can all be handled within one context |
+| 3 | D | Agentic Architecture & Orchestration | Reversibility and gating bound the consequence, which is what the risk is. Capability (A), prompt length (B), and tools (C) affect the chance of error rather than its cost |
 | 4 | B | Claude Code Configuration & Workflows | Project memory is context and dilutes like any other. More is not automatically better (A), it is not free (C), and it does not speed anything up (D) |
 | 5 | B | Claude Code Configuration & Workflows | A shared skill is justified by genuine repetition and must be reviewable like code. Length (A), authorship (C), and exhaustiveness (D) do not establish that |
 | 6 | D | Claude Code Configuration & Workflows | Shared, reviewed, versioned context is what makes a convention hold across people and CI. Speed (A) and context size (B) are not the reason, and it can still be overridden locally (C) |

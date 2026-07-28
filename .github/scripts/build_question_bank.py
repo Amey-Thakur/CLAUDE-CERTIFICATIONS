@@ -46,6 +46,19 @@ def parse_options(lines, start):
     return options, i
 
 
+def _label(text):
+    """Split a heading label into its scenario, where one is given, and its domain.
+
+    Architect Foundations frames its practice questions inside the six published
+    scenarios and labels them "Scenario: Domain". The separator has to be a colon:
+    several real domain names contain a comma, among them "Eval, testing, and
+    debugging" and "Prompting, structured output"."""
+    scenario, sep, domain = text.partition(":")
+    if not sep:
+        return {"domain": text.strip()}
+    return {"domain": domain.strip(), "scenario": scenario.strip()}
+
+
 def parse_practice(path, exam):
     """Practice pages label the domain inline and answer in a details block."""
     text = path.read_text(encoding="utf-8")
@@ -64,7 +77,7 @@ def parse_practice(path, exam):
             "id": f"{exam}-practice-{head.group(1)}",
             "exam": exam,
             "source": "practice",
-            "domain": head.group(2).strip(),
+            **_label(head.group(2)),
             "question": head.group(3).strip(),
             "options": options,
             "answer": ans.group(1),
@@ -73,8 +86,12 @@ def parse_practice(path, exam):
     return questions
 
 
-def parse_mock(path, exam):
-    """Mock pages hide the domain; answers live in a key table at the end."""
+def parse_mock(path, exam, index):
+    """Mock pages hide the domain; answers live in a key table at the end.
+
+    `index` is which of the three mocks this is. It belongs in the id because
+    every mock file numbers its own questions from 1, and in the source so a
+    reader can sit one specific mock rather than the pooled set."""
     text = path.read_text(encoding="utf-8")
     key = {}
     for row in re.finditer(r"^\| (\d+) \| ([A-D]) \| ([^|]+) \| ([^|]+) \|$", text, re.M):
@@ -95,9 +112,9 @@ def parse_mock(path, exam):
             continue
         answer, domain, why = key[num]
         questions.append({
-            "id": f"{exam}-mock-{num}",
+            "id": f"{exam}-mock{index}-{num}",
             "exam": exam,
-            "source": "mock",
+            "source": f"mock-{index}",
             "domain": domain,
             "question": head.group(2).strip(),
             "options": options,
@@ -107,15 +124,30 @@ def parse_mock(path, exam):
     return questions
 
 
+def blueprint_domains(slug):
+    """The domain names each exam publishes, read from its own study page.
+
+    The page's chart is the published list a reader sees, so it is the name a
+    question should be labeled with. Checking against it catches a question
+    filed under a name that exists nowhere in the blueprint, which would split
+    the per-domain score into buckets the real report does not have."""
+    page = REPO_ROOT / slug / "README.md"
+    if not page.exists():
+        return set()
+    return set(re.findall(r'^\s*"([^"]+)"\s*:\s*[\d.]+\s*$',
+                          page.read_text(encoding="utf-8"), re.M))
+
+
 def build():
     bank = {"exams": {}, "questions": []}
     for slug, title in EXAMS.items():
         folder = REPO_ROOT / slug
         found = []
         found += parse_practice(folder / "practice-questions.md", slug)
-        for mock in ("mock-exam-1.md", "mock-exam-2.md", "mock-exam-3.md"):
-            if (folder / mock).exists():
-                found += parse_mock(folder / mock, slug)
+        for index in (1, 2, 3):
+            mock = folder / f"mock-exam-{index}.md"
+            if mock.exists():
+                found += parse_mock(mock, slug, index)
         bank["exams"][slug] = {"title": title, "count": len(found)}
         bank["questions"] += found
     return bank
@@ -131,6 +163,20 @@ def main() -> int:
             problems.append(f'{q["id"]}: answer {q["answer"]} not among options')
         if not q["rationale"]:
             problems.append(f'{q["id"]}: empty rationale')
+    seen = {}
+    for q in bank["questions"]:
+        seen.setdefault(q["id"], []).append(q["question"][:40])
+    for qid, hits in seen.items():
+        if len(hits) > 1:
+            problems.append(f"{qid}: id used by {len(hits)} questions")
+    for slug in bank["exams"]:
+        published = blueprint_domains(slug)
+        if not published:
+            problems.append(f"{slug}: no domain chart found on its study page")
+            continue
+        used = {q["domain"] for q in bank["questions"] if q["exam"] == slug}
+        for unknown in sorted(used - published):
+            problems.append(f"{slug}: domain {unknown!r} is not on the published blueprint")
     for slug, meta in bank["exams"].items():
         if meta["count"] < 25:
             problems.append(f'{slug}: only {meta["count"]} questions parsed')
