@@ -1,6 +1,14 @@
 # Link checker configuration. Run locally with: lychee --config .github/lychee.toml .
 timeout = 30
-max_retries = 2
+max_retries = 3
+
+# Some official hosts sit behind a CDN that resets the connection for the
+# default agent, which shows up as an intermittent "connection reset by peer"
+# on links that load normally in a browser. A conventional agent string gets
+# the same answer a reader would, so the link is really checked rather than
+# excluded.
+user_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/140.0.0.0 Safari/537.36"
+
 
 # 403 and 429 are accepted because some official hosts answer bot traffic
 # with them while serving browsers normally.
