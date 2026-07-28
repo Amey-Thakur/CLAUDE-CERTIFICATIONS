@@ -230,7 +230,7 @@ def flashcard_page(label):
           style="max-height:74mm;object-fit:contain"></div>
       </div>
       <p class="small" style="margin-top:4mm">Turn them in the browser, filtered by exam or by topic, at
-      {link(SITE + "guide/flashcards", SITE_URL + "guide/flashcards.html")}, or download the deck as a single
+      {link(SITE + "/guide/flashcards", SITE_URL + "/guide/flashcards.html")}, or download the deck as a single
       tab-separated file that Anki, Quizlet, and RemNote all import directly. Use it for the facts that have to be
       automatic on the day: weights, codes, retake windows, and the terms the questions assume you know.</p>''', label)
 

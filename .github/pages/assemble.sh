@@ -10,7 +10,6 @@ mkdir -p site-src/assets site-src/stylesheets site-src/javascripts
 cp -r associate-foundations developer-foundations architect-foundations architect-professional guide certificates site-src/
 cp -r .github/assets/logos site-src/assets/logos
 cp question-bank.json site-src/assets/question-bank.json
-cp -r .github/pages/overrides site-src/overrides
 cp .github/pages/dropdown.js site-src/javascripts/dropdown.js
 cp .github/assets/tracker.json site-src/assets/tracker.json
 cp .github/assets/flashcards.json site-src/assets/flashcards.json
@@ -118,4 +117,5 @@ find site-src -name '*.md' -exec sed -i \
   -e "s|(../README.md)|(../index.md)|g" \
   -e "s|(../.github/assets/|(../assets/|g" \
   -e "s|(../flashcards.tsv)|(../assets/flashcards.tsv)|g" \
+  -e 's|href="\([^"]*\)\.md"|href="\1.html"|g' \
   {} +

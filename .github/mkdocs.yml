@@ -10,7 +10,7 @@ use_directory_urls: false
 
 theme:
   name: material
-  custom_dir: ../site-src/overrides
+  custom_dir: pages/overrides
   logo: assets/logos/claude-symbol-ivory.svg
   favicon: assets/logos/claude-symbol.svg
   palette:
@@ -34,6 +34,7 @@ theme:
     - navigation.footer
     - search.suggest
     - content.code.copy
+    - content.tooltips
     - toc.follow
 
 copyright: 'Maintained by <a href="https://github.com/Amey-Thakur">Amey Thakur</a>. Not affiliated with or endorsed by Anthropic. Claude and Anthropic are trademarks of Anthropic PBC.'

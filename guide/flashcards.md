@@ -54,14 +54,14 @@ Every fact, weight, rule, and term in this repository as a deck of 110 cards. Tu
 
     var head = el("div", "flip__head");
     head.appendChild(el("span", "flip__kicker", kicker));
+    // The Claude symbol keeps its own coral in both color schemes; it is a
+    // brand mark, not ink, so it is never inverted. The ivory copy exists only
+    // for the coral header bar, where contrast demands it.
     var mark = el("span", "flip__mark");
-    [["", "only-light"], ["-ivory", "only-dark"]].forEach(function (v) {
-      var img = document.createElement("img");
-      img.src = "../assets/logos/claude-symbol" + v[0] + ".svg";
-      img.alt = v[1] === "only-light" ? "Claude" : "";
-      img.className = v[1];
-      mark.appendChild(img);
-    });
+    var symbol = document.createElement("img");
+    symbol.src = "../assets/logos/claude-symbol.svg";
+    symbol.alt = "Claude";
+    mark.appendChild(symbol);
     head.appendChild(mark);
     f.appendChild(head);
 
@@ -107,6 +107,7 @@ Every fact, weight, rule, and term in this repository as a deck of 110 cards. Tu
 
     var pick = el("select", "quiz__select");
     pick.setAttribute("aria-label", "Which cards to study");
+    pick.title = "Narrow the deck to one certification or one topic";
     var all = el("option", null, "Every card (" + CARDS.length + ")");
     all.value = "all";
     pick.appendChild(all);
@@ -145,6 +146,7 @@ Every fact, weight, rule, and term in this repository as a deck of 110 cards. Tu
     scene.setAttribute("role", "button");
     scene.setAttribute("tabindex", "0");
     scene.setAttribute("aria-label", "Flashcard. Activate to turn it over.");
+    scene.title = "Click the card, or press space, to turn it over";
     scene.addEventListener("click", function () { inner.classList.toggle("is-turned"); });
     scene.addEventListener("keydown", function (e) {
       if (e.key === " " || e.key === "Enter") { e.preventDefault(); scene.click(); }
@@ -152,15 +154,19 @@ Every fact, weight, rule, and term in this repository as a deck of 110 cards. Tu
     wrap.appendChild(scene);
 
     var nav = el("div", "quiz__nav");
-    function button(label, primary, go) {
+    function button(label, hint, primary, go) {
       var b = el("button", "quiz__button" + (primary ? " quiz__button--primary" : ""), label);
       b.type = "button";
+      b.title = hint;
       b.addEventListener("click", go);
       nav.appendChild(b);
     }
-    button("Previous", false, function () { at = (at - 1 + view.length) % view.length; draw(); });
-    button("Next card", true, function () { at = (at + 1) % view.length; draw(); });
-    button("Shuffle", false, function () { shuffle(view); at = 0; draw(); });
+    button("Previous", "Go back one card, or press the left arrow key", false,
+      function () { at = (at - 1 + view.length) % view.length; draw(); });
+    button("Next card", "Go to the next card, or press the right arrow key", true,
+      function () { at = (at + 1) % view.length; draw(); });
+    button("Shuffle", "Reorder the whole deck and start again from the first card", false,
+      function () { shuffle(view); at = 0; draw(); });
     wrap.appendChild(nav);
 
     mount.appendChild(wrap);

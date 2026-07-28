@@ -44,7 +44,7 @@ Online exams run through Pearson's OnVUE application on your own computer with a
 
 ### 1. Run the system test
 
-Run the [OnVUE system test](https://system-test.onvue.com) on the same computer and network you will use for the exam, and review [Pearson's full technology requirements](https://www.pearsonvue.com/us/en/anthropic.html). Two cautions from the official setup page: a passing test does not guarantee a problem-free exam, and a reported network error is often actually a blocked domain or a running application, so work through the next two steps before troubleshooting your connection.
+Run the [OnVUE system test](https://system-test.onvue.com/system_test?customer=pearson_vue&clientcode=ANTHROPIC&locale=en_US) on the same computer and network you will use for the exam, and review [Pearson's OnVUE requirements for Anthropic](https://www.pearsonvue.com/us/en/anthropic/onvue.html). Two cautions from the official setup page: a passing test does not guarantee a problem-free exam, and a reported network error is often actually a blocked domain or a running application, so work through the next two steps before troubleshooting your connection.
 
 ### 2. Confirm required domains are reachable
 

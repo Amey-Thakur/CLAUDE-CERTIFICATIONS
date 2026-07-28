@@ -22,7 +22,7 @@ Condensed from the [official certification FAQ](https://anthropic-partners.skill
 
 **Is it open book?** No. Closed book, no notes or documentation, no AI assistants, and no browser translation tools.
 
-**Technical requirements?** Run [Pearson's system test](https://system-test.onvue.com) before exam day and clear the corporate-network requirements in [Registration and scheduling](registration.md#preparing-your-computer-for-an-online-proctored-exam).
+**Technical requirements?** Run [Pearson's system test](https://system-test.onvue.com/system_test?customer=pearson_vue&clientcode=ANTHROPIC&locale=en_US) before exam day and clear the corporate-network requirements in [Registration and scheduling](registration.md#preparing-your-computer-for-an-online-proctored-exam).
 
 **Can I reschedule or cancel?** Free until 24 hours before the appointment, with a full refund for cancellation. Later than that, or a no-show, forfeits the fee.
 

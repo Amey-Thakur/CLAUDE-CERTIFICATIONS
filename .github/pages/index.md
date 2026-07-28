@@ -136,7 +136,8 @@ All twenty-one Anthropic Academy course completion certificates behind this prog
 | Certifications overview and registration | [Certifications page](https://anthropic-partners.skilljar.com/page/partner-certifications) |
 | Prep courses | [Exam prep courses](https://anthropic-partners.skilljar.com/page/claude-certification-exam-prep-courses) |
 | Pearson VUE for Anthropic | [pearsonvue.com/us/en/anthropic](https://www.pearsonvue.com/us/en/anthropic.html) |
-| OnVUE system test | [system-test.onvue.com](https://system-test.onvue.com) |
+| OnVUE requirements and rules | [pearsonvue.com/us/en/anthropic/onvue](https://www.pearsonvue.com/us/en/anthropic/onvue.html) |
+| OnVUE system test | [system-test.onvue.com](https://system-test.onvue.com/system_test?customer=pearson_vue&clientcode=ANTHROPIC&locale=en_US) |
 | Become a partner | [claude.com/partners](https://claude.com/partners) |
 
 ## Questions and community

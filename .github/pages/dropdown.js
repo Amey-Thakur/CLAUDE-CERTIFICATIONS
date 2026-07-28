@@ -27,6 +27,7 @@
     button.setAttribute("aria-expanded", "false");
     var label = select.getAttribute("aria-label");
     if (label) button.setAttribute("aria-label", label);
+    if (select.title) button.title = select.title;
 
     var text = document.createElement("span");
     text.className = "pick__value";

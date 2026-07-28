@@ -11,6 +11,9 @@ exclude = [
   # Requires an authenticated session; anonymous requests are rejected.
   "^https://github\\.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/security/",
   "^https://github\\.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/issues/new",
-  # Answers 500 to non-browser clients; works in a real browser.
+  # The OnVUE system test is a browser application. It answers 404 to scripted
+  # requests and loads normally in a browser, where it issues an access code.
+  # The URL is the one Pearson's own Anthropic OnVUE page links to; the bare
+  # system-test.onvue.com domain is dead and must not be used.
   "^https://system-test\\.onvue\\.com",
 ]
