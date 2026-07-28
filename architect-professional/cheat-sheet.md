@@ -2,7 +2,7 @@
 
 Everything worth holding in your head the hour before the exam, on one page. Facts come from the [official exam guide](exam-guide.pdf); the rules of thumb are the maintainer's, distilled from the official rationales.
 
-![Claude Certified Architect – Professional cheat sheet: exam facts, domain weights, and the rules that decide questions](../.github/assets/cheat-sheet-architect-professional.png)
+[![Claude Certified Architect – Professional cheat sheet: exam facts, domain weights, and the rules that decide questions](../.github/assets/cheat-sheet-architect-professional.png)](../.github/assets/cheat-sheet-architect-professional.png "View this cheat sheet at full size")
 
 Save or share the card above; the full sheet follows.
 

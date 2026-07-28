@@ -81,7 +81,7 @@ The official recommendation when the corporate machine cannot be fixed is one of
 
 ## Exam day
 
-![Exam day checklist: a week before, the night before, on the morning, and during the exam](../.github/assets/card-exam-day.png)
+[![Exam day checklist: a week before, the night before, on the morning, and during the exam](../.github/assets/card-exam-day.png)](../.github/assets/card-exam-day.png "View the exam-day checklist at full size")
 
 - Have a valid, unexpired government-issued photo ID whose name exactly matches your registration.
 - For online exams: a private room, a clear desk, and a stable connection. You must stay in webcam view for the whole session.

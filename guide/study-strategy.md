@@ -26,7 +26,7 @@ Everything on this page is recommendation, written from having worked through th
 
 ## A sensible three-week shape
 
-![A three-week study plan: scope, depth, and close](../.github/assets/card-study-plan.png)
+[![A three-week study plan: scope, depth, and close](../.github/assets/card-study-plan.png)](../.github/assets/card-study-plan.png "View the study plan at full size")
 
 For one Foundations exam alongside a full-time job. Compress or stretch to fit; this is structure, not prescription.
 

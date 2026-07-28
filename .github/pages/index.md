@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/logos/claude-symbol.svg" alt="Claude symbol" width="88">
+  <a href="https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS" title="Open the repository on GitHub"><img src="assets/logos/claude-symbol.svg" alt="Claude symbol, links to the repository" width="88"></a>
 </p>
 
 # Claude Certifications
@@ -85,7 +85,7 @@ This site is the readable version of the [CLAUDE-CERTIFICATIONS repository](http
 
 ## The whole program on one page
 
-![Claude certification roadmap: all four certifications with exam codes, fees, item counts, domain weights, and the courses that prepare for each](assets/roadmap.png)
+[![Claude certification roadmap: all four certifications with exam codes, fees, item counts, domain weights, and the courses that prepare for each](assets/roadmap.png)](assets/roadmap.png "View the certification roadmap at full size")
 
 ## The whole guide as one file
 
@@ -152,8 +152,8 @@ Ask questions and compare preparation notes in [GitHub Discussions](https://gith
 ---
 
 <p align="center">
-  <img class="only-light" src="assets/logos/anthropic-wordmark.svg" alt="Anthropic" width="150">
-  <img class="only-dark" src="assets/logos/anthropic-wordmark-dark.svg" alt="Anthropic" width="150">
+  <a href="https://www.anthropic.com" title="Anthropic"><img class="only-light" src="assets/logos/anthropic-wordmark.svg" alt="Anthropic" width="150"></a>
+  <a href="https://www.anthropic.com" title="Anthropic"><img class="only-dark" src="assets/logos/anthropic-wordmark-dark.svg" alt="Anthropic" width="150"></a>
 </p>
 
 <p align="center">

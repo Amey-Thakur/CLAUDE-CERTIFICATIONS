@@ -16,7 +16,7 @@ Your certification belongs to you, not your employer. It stays with you if you c
 > [!WARNING]
 > Reschedule or cancel at least 24 hours before your appointment. Inside that window, and on a no-show, the full fee is forfeited.
 
-![How Claude certification scoring, retakes, and renewal work](../.github/assets/card-scoring.png)
+[![How Claude certification scoring, retakes, and renewal work](../.github/assets/card-scoring.png)](../.github/assets/card-scoring.png "View the scoring summary at full size")
 
 ## Retakes
 

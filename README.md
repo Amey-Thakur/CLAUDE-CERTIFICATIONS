@@ -17,7 +17,7 @@ collected and organized so you can spend your time studying, not searching.
 [![Release](https://img.shields.io/github/v/release/Amey-Thakur/CLAUDE-CERTIFICATIONS?label=release&color=c15f3c)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/releases/latest)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
 
-<img src=".github/assets/roadmap.png" alt="Claude certification roadmap: all four certifications with exam codes, fees, item counts, domain weights, and the courses that prepare for each" width="100%">
+<a href=".github/assets/roadmap.png" title="View the certification roadmap at full size"><img src=".github/assets/roadmap.png" alt="Claude certification roadmap: all four certifications with exam codes, fees, item counts, domain weights, and the courses that prepare for each" width="100%"></a>
 
 </div>
 
@@ -67,7 +67,7 @@ flowchart TD
 
 Every fact, domain weight, rule, and glossary term in this repository, as a deck of 110 cards. Turn them in the browser on the [flashcards page](https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/guide/flashcards.html), filtered by exam or by topic, or take [flashcards.tsv](flashcards.tsv) and import the whole deck into Anki, Quizlet, or RemNote.
 
-<img src=".github/assets/flashcard-front.png" alt="A flashcard asking which domain carries the most weight on the Developer Foundations exam" width="49%"> <img src=".github/assets/flashcard-back.png" alt="The same flashcard turned over, showing applications and integration at 33 percent of the paper" width="49%">
+<a href=".github/assets/flashcard-front.png" title="View this flashcard at full size"><img src=".github/assets/flashcard-front.png" alt="A flashcard asking which domain carries the most weight on the Developer Foundations exam" width="49%"></a> <a href=".github/assets/flashcard-back.png" title="View this flashcard at full size"><img src=".github/assets/flashcard-back.png" alt="The same flashcard turned over, showing applications and integration at 33 percent of the paper" width="49%"></a>
 
 ## What is where
 
@@ -93,10 +93,12 @@ Contributions that keep facts current are welcome; see [CONTRIBUTING.md](.github
 
 <div align="center">
 
+<a href="https://www.anthropic.com" title="Anthropic">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset=".github/assets/logos/anthropic-wordmark-dark.svg">
   <img src=".github/assets/logos/anthropic-wordmark.svg" alt="Anthropic" width="160">
 </picture>
+</a>
 
 <sub>Not affiliated with or endorsed by Anthropic. Claude and Anthropic are trademarks of Anthropic PBC.<br>
 Repository text is <a href="LICENSE">MIT licensed</a>; mirrored documents and logo artwork keep their own provenance

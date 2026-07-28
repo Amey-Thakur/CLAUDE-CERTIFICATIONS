@@ -1,9 +1,11 @@
 <div align="center">
 
+<a href="https://www.anthropic.com" title="Anthropic">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="../.github/assets/logos/anthropic-wordmark-dark.svg">
   <img src="../.github/assets/logos/anthropic-wordmark.svg" alt="Anthropic" width="180">
 </picture>
+</a>
 
 # Course completion certificates
 
