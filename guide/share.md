@@ -18,10 +18,10 @@ https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/
 https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS
 ```
 
-**The printable booklet**, a direct download:
+**The printable companion**, a direct download:
 
 ```text
-https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/raw/main/claude-certifications-booklet.pdf
+https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/raw/main/claude-certifications-companion.pdf
 ```
 
 **The roadmap image**, to attach to a post:
@@ -78,7 +78,7 @@ https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/
 ```text
 If anyone is preparing for a Claude certification, this covers all four exams end to end:
 blueprints, cheat sheets, practice questions, and the registration and proctoring details.
-There is a printable booklet too if you prefer one file.
+There is a printable companion too if you prefer one file.
 https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS
 ```
 

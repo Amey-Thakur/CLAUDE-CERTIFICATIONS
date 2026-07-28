@@ -16,7 +16,7 @@ cp .github/assets/tracker.json site-src/assets/tracker.json
 cp .github/assets/flashcards.json site-src/assets/flashcards.json
 cp flashcards.tsv site-src/assets/flashcards.tsv
 cp .github/assets/*.png .github/assets/*.svg .github/assets/*.jpg site-src/assets/
-cp claude-certifications-booklet.pdf site-src/assets/
+cp claude-certifications-companion.pdf site-src/assets/
 rm -f site-src/assets/logos/README.md
 cp .github/pages/extra.css site-src/stylesheets/extra.css
 cp .github/pages/index.md site-src/index.md

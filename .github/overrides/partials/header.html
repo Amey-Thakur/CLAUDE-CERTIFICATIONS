@@ -1,6 +1,6 @@
 {#-
   Material's own header partial, copied from mkdocs-material 9.7.7, with one
-  addition: a download button for the booklet, marked below. The booklet is the
+  addition: a download button for the companion, marked below. The companion is the
   thing most readers want to take away, and it was previously reachable only
   from the home page and the flashcards page. In the header it is one click
   from anywhere on the site, and the header is sticky, so it stays reachable
@@ -42,15 +42,15 @@
       </div>
     </div>
 
-    {#- Addition: the booklet, one click from every page. It uses Material's own
+    {#- Addition: the companion, one click from every page. It uses Material's own
         header button classes and its own icon set, so it sits at exactly the
         same size and weight as the palette and search controls beside it. -#}
     <a
       class="md-header__button md-icon"
-      href="{{ 'assets/claude-certifications-booklet.pdf' | url }}"
+      href="{{ 'assets/claude-certifications-companion.pdf' | url }}"
       download
-      title="Download the booklet, the whole guide as a printable PDF"
-      aria-label="Download the booklet, the whole guide as a printable PDF"
+      title="Download the companion, the whole guide as a printable PDF"
+      aria-label="Download the companion, the whole guide as a printable PDF"
     >
       {% include ".icons/material/book-arrow-down.svg" %}
     </a>

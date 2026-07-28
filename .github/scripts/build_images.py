@@ -336,7 +336,7 @@ def cheat_sheet(cert):
 def find_chrome():
     """Locate a headless-capable Chrome on any platform.
 
-    The artwork and the booklet are rendered with Chrome. Hardcoding one path
+    The artwork and the companion are rendered with Chrome. Hardcoding one path
     meant only the maintainer's machine could rebuild them; this checks the
     usual install locations and anything named on PATH or in CHROME_PATH.
     """
@@ -402,8 +402,8 @@ def _hash(path):
 def record_build(name, inputs):
     """Note what an artifact was built from, so staleness is detectable later.
 
-    The images and the booklet cannot be rebuilt in continuous integration:
-    they need a browser, and the booklet is set in a font that exists on the
+    The images and the companion cannot be rebuilt in continuous integration:
+    they need a browser, and the companion is set in a font that exists on the
     maintainer's machine and not on the runner, so a re-render would differ
     byte for byte without anything being wrong. Recording the inputs instead
     lets the check ask the only question that matters, which is whether a
@@ -438,7 +438,7 @@ def verify_builds():
         print("\nRebuild them, then commit the artifacts and build-manifest.json:")
         print("  python .github/scripts/build_images.py --render")
         print("  python .github/scripts/build_extra_images.py --render")
-        print("  python .github/scripts/build_booklet.py --render")
+        print("  python .github/scripts/build_companion.py --render")
         return 1
     print(f"all {len(data)} generated artifacts are current with their sources")
     return 0

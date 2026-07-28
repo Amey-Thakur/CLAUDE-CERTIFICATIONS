@@ -8,7 +8,7 @@
 
 [Certifications](#the-certifications) · [Start here](#start-here) · [Program guide](guide/README.md) · [Practice engine](guide/quiz.md) · [Certificates](certificates/README.md) · [Repository](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS)
 
-**[Download the booklet (PDF)](assets/claude-certifications-booklet.pdf)** · the whole guide in one printable file
+**[Download the companion (PDF)](assets/claude-certifications-companion.pdf)** · the whole guide in one printable file
 
 This site is the readable version of the [CLAUDE-CERTIFICATIONS repository](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS), built and maintained by [Amey Thakur](https://github.com/Amey-Thakur) after completing the program's curriculum. It is a community resource, not an official Anthropic site: the official program lives on [Anthropic Partner Academy](https://anthropic-partners.skilljar.com/), and exams are delivered by [Pearson VUE](https://www.pearsonvue.com/us/en/anthropic.html).
 
@@ -34,7 +34,7 @@ This site is the readable version of the [CLAUDE-CERTIFICATIONS repository](http
 
 ## The whole guide as one file
 
-[:material-download: Download the booklet (PDF)](assets/claude-certifications-booklet.pdf){ .md-button .md-button--primary }
+[:material-download: Download the companion (PDF)](assets/claude-certifications-companion.pdf){ .md-button .md-button--primary }
 
 Thirty-three pages in five parts: choose your exam, know what it measures, prepare for it, sit it, and keep going. Every card, cheat sheet, and the full method, in one file that works offline. Everything embedded, so it works offline and can be passed on as a single file.
 
@@ -52,7 +52,7 @@ Every exam: 120 minutes, closed book, proctored by Pearson VUE online or at a te
 > [!TIP]
 > Every course in the program is free on the public [Anthropic Academy](https://anthropic.skilljar.com/), no partner account needed. Only the proctored exams require Claude Partner Network membership, so you can learn the whole syllabus before deciding whether to certify.
 >
-> Prefer one file? The whole guide is a printable booklet: [claude-certifications-booklet.pdf](assets/claude-certifications-booklet.pdf), thirty-three pages in five parts: choose your exam, know it, prepare, sit it, and keep going.
+> Prefer one file? The whole guide is a printable companion: [claude-certifications-companion.pdf](assets/claude-certifications-companion.pdf), thirty-three pages in five parts: choose your exam, know it, prepare, sit it, and keep going.
 
 ## Start here
 

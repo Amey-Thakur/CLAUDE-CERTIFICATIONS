@@ -43,18 +43,18 @@ Most of what this repository ships is generated from a source somewhere else in 
 | `python .github/scripts/build_flashcards.py` | `CERTS` and [glossary.md](glossary.md) | `flashcards.tsv`, `guide/flashcards.md`, `.github/assets/flashcards.json` |
 | `python .github/scripts/build_images.py --render` | `CERTS`, which it defines | the roadmap, the four cheat sheets, the social preview, both flashcard faces |
 | `python .github/scripts/build_extra_images.py --render` | shared helpers from `build_images.py` | the six supporting cards |
-| `python .github/scripts/build_booklet.py --render` | every image above, plus the glossary and the certificates gallery | `claude-certifications-booklet.pdf` |
+| `python .github/scripts/build_companion.py --render` | every image above, plus the glossary and the certificates gallery | `claude-certifications-companion.pdf` |
 | `python .github/scripts/update_resources.py` | the official source URLs | the mirrored PDFs |
 
 Each image script writes an SVG next to its PNG. The SVG is an intermediate the renderer consumes; nothing else reads it, and it is committed only so the vector artwork is available without running the script.
 
 Rendering needs headless Chrome. Set `CHROME_PATH` if it is not on the path.
 
-Order matters when several things change at once: question bank, then tracker and flashcards, then images, then the booklet, because the booklet embeds the images and reads the flashcard count.
+Order matters when several things change at once: question bank, then tracker and flashcards, then images, then the companion, because the companion embeds the images and reads the flashcard count.
 
 Continuous integration regenerates the question bank, the tracker, and the flashcards on every push and fails if the committed files differ, so those three can never drift.
 
-The images and the booklet cannot be checked that way. They need a browser, and the booklet is set in a font the runner does not have, so a re-render would differ byte for byte with nothing actually wrong. Instead, each render records what it was built from in `.github/assets/build-manifest.json`, and CI checks whether any of those inputs changed afterwards:
+The images and the companion cannot be checked that way. They need a browser, and the companion is set in a font the runner does not have, so a re-render would differ byte for byte with nothing actually wrong. Instead, each render records what it was built from in `.github/assets/build-manifest.json`, and CI checks whether any of those inputs changed afterwards:
 
 ```bash
 python .github/scripts/build_images.py --verify

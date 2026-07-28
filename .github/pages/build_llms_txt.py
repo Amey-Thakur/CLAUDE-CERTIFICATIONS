@@ -59,7 +59,7 @@ def main() -> int:
         "",
         "> A study guide for all four Anthropic Claude certification exams: the official exam guides, "
         "the blueprint and domain weights for each paper, one-page cheat sheets, "
-        f"{n_questions} original practice questions, {n_cards} flashcards, and a printable booklet. "
+        f"{n_questions} original practice questions, {n_cards} flashcards, and a printable companion. "
         "Free, open source, and built only from published material.",
         "",
         "Maintained by Amey Thakur, who completed the full curriculum and all 21 Academy courses. "
@@ -89,7 +89,7 @@ def main() -> int:
         "25 per exam, with answers, rationales, and domain tags.",
         f"- [Flashcards]({REPO}/raw/main/flashcards.tsv): {n_cards} cards, tab separated, "
         "importable into Anki, Quizlet, or RemNote.",
-        f"- [Printable booklet]({REPO}/raw/main/claude-certifications-booklet.pdf): "
+        f"- [Printable companion]({REPO}/raw/main/claude-certifications-companion.pdf): "
         "the whole guide as a 28-page A4 PDF.",
         f"- [Certificates]({BASE}/certificates/index.html): the maintainer's 21 course certificates "
         "with verification links and completion dates.",

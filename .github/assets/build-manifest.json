@@ -1,5 +1,14 @@
 {
-  "booklet": {
+  "cards": {
+    ".github/assets/avatar.jpg": "23071e456e9f2d1c",
+    ".github/assets/logos/anthropic-wordmark-dark.svg": "b89b5fb43d5bcfc6",
+    ".github/assets/logos/anthropic-wordmark.svg": "c89653a9edd5cb71",
+    ".github/assets/logos/claude-symbol-ivory.svg": "2c0a531e555fc89d",
+    ".github/assets/logos/claude-symbol.svg": "5de1221c77cc91e7",
+    ".github/scripts/build_extra_images.py": "da748e8ecdbc8bb8",
+    ".github/scripts/build_images.py": "799aaa0ad2247047"
+  },
+  "companion": {
     ".github/assets/avatar.jpg": "23071e456e9f2d1c",
     ".github/assets/card-architect-scenarios.png": "0c5c00a74c91abc3",
     ".github/assets/card-choose-certification.png": "64225914c5c1e48d",
@@ -14,8 +23,8 @@
     ".github/assets/flashcard-back.png": "b212f5fdb4f58018",
     ".github/assets/flashcard-front.png": "6a8cfcf951d7d75d",
     ".github/assets/roadmap.png": "f1b64a5d6626c695",
-    ".github/scripts/build_booklet.py": "2b6009208f4b5a7f",
-    ".github/scripts/build_images.py": "e58caf3ed5725d08",
+    ".github/scripts/build_companion.py": "7d09c9fa748dfb2f",
+    ".github/scripts/build_images.py": "799aaa0ad2247047",
     "certificates/README.md": "8931f466fc08aba9",
     "certificates/previews/building-with-the-claude-api.png": "939f822d71207399",
     "certificates/previews/claude-101.png": "b31cfb0819d0b77f",
@@ -23,21 +32,12 @@
     "certificates/previews/teaching-ai-fluency.png": "7b19f08484fe353f",
     "guide/glossary.md": "41868821f96d7094"
   },
-  "cards": {
-    ".github/assets/avatar.jpg": "23071e456e9f2d1c",
-    ".github/assets/logos/anthropic-wordmark-dark.svg": "b89b5fb43d5bcfc6",
-    ".github/assets/logos/anthropic-wordmark.svg": "c89653a9edd5cb71",
-    ".github/assets/logos/claude-symbol-ivory.svg": "2c0a531e555fc89d",
-    ".github/assets/logos/claude-symbol.svg": "5de1221c77cc91e7",
-    ".github/scripts/build_extra_images.py": "da748e8ecdbc8bb8",
-    ".github/scripts/build_images.py": "e58caf3ed5725d08"
-  },
   "images": {
     ".github/assets/avatar.jpg": "23071e456e9f2d1c",
     ".github/assets/logos/anthropic-wordmark-dark.svg": "b89b5fb43d5bcfc6",
     ".github/assets/logos/anthropic-wordmark.svg": "c89653a9edd5cb71",
     ".github/assets/logos/claude-symbol-ivory.svg": "2c0a531e555fc89d",
     ".github/assets/logos/claude-symbol.svg": "5de1221c77cc91e7",
-    ".github/scripts/build_images.py": "e58caf3ed5725d08"
+    ".github/scripts/build_images.py": "799aaa0ad2247047"
   }
 }

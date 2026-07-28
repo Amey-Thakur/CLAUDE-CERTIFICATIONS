@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Build the shareable PDF booklet.
+"""Build the shareable PDF companion.
 
 Assembles the roadmap, the cheat sheets, the supporting cards, and the written
 guidance into one printable document, then renders it with headless Chrome.
-The booklet is meant to travel on its own: someone who receives only the PDF
+The companion is meant to travel on its own: someone who receives only the PDF
 should be able to choose an exam, study for it, book it, and sit it.
 
-    python .github/scripts/build_booklet.py            # HTML only
-    python .github/scripts/build_booklet.py --render   # HTML and PDF
+    python .github/scripts/build_companion.py            # HTML only
+    python .github/scripts/build_companion.py --render   # HTML and PDF
 
 Standard library only.
 """
@@ -25,8 +25,8 @@ from build_images import (ASSETS, AUTHOR, CERTS, REPO, SITE,  # noqa: E402
                           find_chrome, record_build)
 
 ROOT = Path(__file__).resolve().parent.parent.parent
-OUT_HTML = ASSETS / "booklet.html"
-OUT_PDF = ROOT / "claude-certifications-booklet.pdf"
+OUT_HTML = ASSETS / "companion.html"
+OUT_PDF = ROOT / "claude-certifications-companion.pdf"
 
 
 REPO_URL = f"https://{REPO}"
@@ -247,7 +247,7 @@ def cover(total_pages):
 
 def foreword():
     return page(f'''<h3>A note from {AUTHOR}</h3>
-      <h1 style="font-size:25pt;max-width:200mm">Why this booklet exists</h1>
+      <h1 style="font-size:25pt;max-width:200mm">Why this companion exists</h1>
       <div class="cols grow" style="margin-top:2mm">
         <div class="col">
           <p>I sat down to prepare for these certifications and found the material scattered: the blueprint in one
@@ -277,14 +277,14 @@ def foreword():
 
 
 def contents(entries):
-    """Built from the assembled page list, so it can never disagree with the booklet."""
+    """Built from the assembled page list, so it can never disagree with the companion."""
     rows = []
     for part, title, blurb, number in entries:
         rows.append(f'<tr><td style="width:14mm;color:#8a857c;font-size:9pt">PART {part}</td>'
                     f'<td style="width:66mm"><strong>{title}</strong></td>'
                     f'<td class="muted">{blurb}</td>'
                     f'<td style="width:12mm;text-align:right;font-weight:600">{number}</td></tr>')
-    return page(f'''<h1>What is in this booklet</h1>
+    return page(f'''<h1>What is in this companion</h1>
       <p class="lead muted" style="max-width:205mm">Five parts, in the order a candidate needs them: choose the exam,
       learn what it measures, prepare for it, sit it, and know where to go afterwards.</p>
       <table class="contents" style="margin-top:3mm"><tbody>{"".join(rows)}</tbody></table>
@@ -304,7 +304,7 @@ def image_page(title, blurb, image, label, note=None):
 def flashcard_page(label):
     """Both faces of one card, so the deck is shown rather than described."""
     return page(f'''<h2>The deck, one card at a time</h2>
-      <p class="muted" style="max-width:210mm">Every fact, domain weight, rule, and glossary term in this booklet is
+      <p class="muted" style="max-width:210mm">Every fact, domain weight, rule, and glossary term in this companion is
       also a flashcard. One hundred and ten of them, generated from the same source as everything you have read, so
       they cannot drift out of date.</p>
       <div class="cols grow" style="margin-top:4mm">
@@ -320,7 +320,7 @@ def flashcard_page(label):
 
 
 def worked_question_page(label):
-    """One real question, worked through. The booklet describes the practice
+    """One real question, worked through. The companion describes the practice
     material everywhere else; this is the page that shows it."""
     return page(f'''<h3>What the questions actually look like</h3>
       <h1 style="font-size:24pt">One question, worked through</h1>
@@ -439,7 +439,7 @@ def hard_won_page(label):
          "It gives percent-correct by domain. Weight each by its share of the paper and you will usually find "
          "the gap sits in one or two places, not everywhere."),
         ("Closed book means closed book",
-         "No notes, no documentation, no translation tools, no Claude. Everything in this booklet is for "
+         "No notes, no documentation, no translation tools, no Claude. Everything in this companion is for "
          "before the exam, not during it."),
     ]
     left = "".join(f'<p style="margin-bottom:3.5mm"><strong style="color:#1f1e1b">{h}.</strong> '
@@ -449,7 +449,7 @@ def hard_won_page(label):
     return page(f'''<h3>The part nobody writes down</h3>
       <h1 style="font-size:25pt">What I would tell myself before the first exam</h1>
       <p class="lead muted" style="max-width:220mm">Ten things that are all published somewhere, and that
-      almost nobody reads until it is too late to act on them. If you take one page from this booklet, take
+      almost nobody reads until it is too late to act on them. If you take one page from this companion, take
       this one.</p>
       <div class="cols grow" style="margin-top:3mm;font-size:9.5pt">
         <div class="col">{left}</div>
@@ -458,7 +458,7 @@ def hard_won_page(label):
 
 
 def proof_page(label):
-    """The certificates behind the booklet, grouped as the gallery groups them.
+    """The certificates behind the companion, grouped as the gallery groups them.
     Names and groupings are read from the gallery so the page cannot drift.
     No dates and no duration: the certificates record completion, not a schedule."""
     text = (ROOT / "certificates" / "README.md").read_text(encoding="utf-8")
@@ -494,9 +494,9 @@ def proof_page(label):
     right = "".join(block(g) for g in groups[half:])
 
     return page(f'''<h3>Receipts, not claims</h3>
-      <h1 style="font-size:25pt">The {total} certificates behind this booklet</h1>
+      <h1 style="font-size:25pt">The {total} certificates behind this companion</h1>
       <p class="lead muted" style="max-width:220mm">Every course in the official Anthropic Academy curriculum,
-      completed before this booklet was written. Each certificate is issued by Anthropic Education, carries its
+      completed before this companion was written. Each certificate is issued by Anthropic Education, carries its
       own Skilljar verification record, and can be checked by anyone.</p>
 
       <div style="display:flex;justify-content:space-between;margin:2mm 0 1.5mm">{strip}</div>
@@ -643,9 +643,9 @@ def policies():
 
 def repository_page():
     """What the living version does that paper cannot, and why it is worth the trip."""
-    return page(f'''<h3>Beyond this booklet</h3>
+    return page(f'''<h3>Beyond this companion</h3>
       <h1 style="font-size:25pt">The repository behind it</h1>
-      <p class="lead muted" style="max-width:215mm">This booklet is a snapshot, printed on a date. The repository is
+      <p class="lead muted" style="max-width:215mm">This companion is a snapshot, printed on a date. The repository is
       the living version: maintained, link-checked every week, and updated when Anthropic changes the program. These
       are the things paper cannot do.</p>
       <div class="cols grow" style="margin-top:3mm">
@@ -676,7 +676,7 @@ def repository_page():
           guide, the guide is right, and the repository is where the correction lands first.</p>
           <h3 style="margin-top:4mm">Other candidates</h3>
           <p>A discussion space for preparation questions and exam experiences, under one firm rule: real exam content
-          is never posted. If this booklet helped, the most useful thing you can do is answer someone else's question
+          is never posted. If this companion helped, the most useful thing you can do is answer someone else's question
           there.</p>
           <div class="callout" style="margin-top:3mm"><strong>Everything is free and open source.</strong> No account,
           no paywall, no email capture. Take it, use it, fork it, and send it to whoever is studying next.
@@ -723,7 +723,7 @@ def closing():
 
 
 def build_html():
-    """Assemble the booklet as five signposted parts, then number every page."""
+    """Assemble the companion as five signposted parts, then number every page."""
     accents = [ACCENTS["associate-foundations"], ACCENTS["developer-foundations"],
                ACCENTS["architect-foundations"], ACCENTS["architect-professional"], "#c15f3c"]
 
@@ -841,7 +841,7 @@ def main() -> int:
         )
         if OUT_PDF.exists():
             print(f"{OUT_PDF.name}: {OUT_PDF.stat().st_size // 1024} KB")
-            record_build("booklet", [
+            record_build("companion", [
                 __file__, Path(__file__).with_name("build_images.py"),
                 ROOT / "guide" / "glossary.md", ROOT / "certificates" / "README.md",
                 *sorted(EMBEDDED),
