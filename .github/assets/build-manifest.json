@@ -14,14 +14,14 @@
     ".github/assets/flashcard-back.png": "b212f5fdb4f58018",
     ".github/assets/flashcard-front.png": "6a8cfcf951d7d75d",
     ".github/assets/roadmap.png": "f1b64a5d6626c695",
-    ".github/scripts/build_booklet.py": "318c2545e8b57e83",
-    ".github/scripts/build_images.py": "8760dbf8589f958f",
-    "certificates/README.md": "2534a150a93481e4",
+    ".github/scripts/build_booklet.py": "2b6009208f4b5a7f",
+    ".github/scripts/build_images.py": "e58caf3ed5725d08",
+    "certificates/README.md": "8931f466fc08aba9",
     "certificates/previews/building-with-the-claude-api.png": "939f822d71207399",
     "certificates/previews/claude-101.png": "b31cfb0819d0b77f",
     "certificates/previews/introduction-to-model-context-protocol.png": "808ed2c61434e111",
     "certificates/previews/teaching-ai-fluency.png": "7b19f08484fe353f",
-    "guide/glossary.md": "10b304aad7a2d879"
+    "guide/glossary.md": "41868821f96d7094"
   },
   "cards": {
     ".github/assets/avatar.jpg": "23071e456e9f2d1c",
@@ -29,8 +29,8 @@
     ".github/assets/logos/anthropic-wordmark.svg": "c89653a9edd5cb71",
     ".github/assets/logos/claude-symbol-ivory.svg": "2c0a531e555fc89d",
     ".github/assets/logos/claude-symbol.svg": "5de1221c77cc91e7",
-    ".github/scripts/build_extra_images.py": "c5094d6dde831df5",
-    ".github/scripts/build_images.py": "8760dbf8589f958f"
+    ".github/scripts/build_extra_images.py": "da748e8ecdbc8bb8",
+    ".github/scripts/build_images.py": "e58caf3ed5725d08"
   },
   "images": {
     ".github/assets/avatar.jpg": "23071e456e9f2d1c",
@@ -38,6 +38,6 @@
     ".github/assets/logos/anthropic-wordmark.svg": "c89653a9edd5cb71",
     ".github/assets/logos/claude-symbol-ivory.svg": "2c0a531e555fc89d",
     ".github/assets/logos/claude-symbol.svg": "5de1221c77cc91e7",
-    ".github/scripts/build_images.py": "8760dbf8589f958f"
+    ".github/scripts/build_images.py": "e58caf3ed5725d08"
   }
 }

@@ -383,8 +383,20 @@ def render(svg_path):
 MANIFEST = ASSETS / "build-manifest.json"
 
 
+TEXT_SUFFIXES = {".py", ".md", ".svg", ".json", ".yml", ".yaml", ".css", ".js", ".txt", ".tsv"}
+
+
 def _hash(path):
-    return hashlib.sha256(Path(path).read_bytes()).hexdigest()[:16]
+    """Line endings are normalized before hashing text.
+
+    git stores text with LF and checks it out with the platform's endings, so
+    a hash of the raw bytes says a file changed simply because it was built on
+    Windows and checked on Linux.
+    """
+    data = Path(path).read_bytes()
+    if Path(path).suffix.lower() in TEXT_SUFFIXES:
+        data = data.replace(b"\r\n", b"\n")
+    return hashlib.sha256(data).hexdigest()[:16]
 
 
 def record_build(name, inputs):
