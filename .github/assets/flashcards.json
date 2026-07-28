@@ -82,7 +82,7 @@
   },
   {
    "front": "Developer \u2013 Foundations: heaviest domain and its weight",
-   "back": "Applications and integration at 33%",
+   "back": "Applications and integration at 33.1%",
    "tags": [
     "blueprint",
     "developer-foundations"
@@ -90,7 +90,7 @@
   },
   {
    "front": "Developer \u2013 Foundations: lightest domain and its weight",
-   "back": "Claude Code, eval at 6%",
+   "back": "Eval, testing, and debugging at 2.6%",
    "tags": [
     "blueprint",
     "developer-foundations"
@@ -98,7 +98,7 @@
   },
   {
    "front": "Developer \u2013 Foundations: domains in weight order",
-   "back": "Applications and integration 33% \u2192 Model selection and cost 17% \u2192 Agents and workflows 15% \u2192 Prompt and context 11% \u2192 Tools and MCP 11% \u2192 Security and safety 8% \u2192 Claude Code, eval 6%",
+   "back": "Applications and integration 33.1% \u2192 Model selection and optimization 16.8% \u2192 Agents and workflows 14.7% \u2192 Prompt and context engineering 11.0% \u2192 Tools and MCPs 10.6% \u2192 Security and safety 8.1% \u2192 Claude Code 3.1% \u2192 Eval, testing, and debugging 2.6%",
    "tags": [
     "blueprint",
     "developer-foundations"

@@ -61,9 +61,9 @@ The full deck below, for reading, printing, or checking one fact quickly. It is 
 | Associate – Foundations: heaviest domain and its weight | Output evaluation at 21% |
 | Associate – Foundations: lightest domain and its weight | Troubleshooting at 10% |
 | Associate – Foundations: domains in weight order | Output evaluation 21% → Workflow integration 16% → Governance and risk 15% → Prompting 14% → Product and model choice 12% → Configuration 12% → Troubleshooting 10% |
-| Developer – Foundations: heaviest domain and its weight | Applications and integration at 33% |
-| Developer – Foundations: lightest domain and its weight | Claude Code, eval at 6% |
-| Developer – Foundations: domains in weight order | Applications and integration 33% → Model selection and cost 17% → Agents and workflows 15% → Prompt and context 11% → Tools and MCP 11% → Security and safety 8% → Claude Code, eval 6% |
+| Developer – Foundations: heaviest domain and its weight | Applications and integration at 33.1% |
+| Developer – Foundations: lightest domain and its weight | Eval, testing, and debugging at 2.6% |
+| Developer – Foundations: domains in weight order | Applications and integration 33.1% → Model selection and optimization 16.8% → Agents and workflows 14.7% → Prompt and context engineering 11.0% → Tools and MCPs 10.6% → Security and safety 8.1% → Claude Code 3.1% → Eval, testing, and debugging 2.6% |
 | Architect – Foundations: heaviest domain and its weight | Agentic architecture at 27% |
 | Architect – Foundations: lightest domain and its weight | Context and reliability at 15% |
 | Architect – Foundations: domains in weight order | Agentic architecture 27% → Claude Code workflows 20% → Prompting, structured output 20% → Tool design and MCP 18% → Context and reliability 15% |

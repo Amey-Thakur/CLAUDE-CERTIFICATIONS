@@ -364,10 +364,10 @@ def flashcard_face(back):
            claude_symbol(x1 - 46, Y + 56, 0.38)]
     if back:
         out += [f'<text x="{x0}" y="{Y + 152}" font-size="34" font-weight="600" fill="{INK}">Applications and integration,</text>',
-                f'<text x="{x0}" y="{Y + 196}" font-size="34" font-weight="600" fill="{OLIVE}">33% of the paper</text>',
+                f'<text x="{x0}" y="{Y + 196}" font-size="34" font-weight="600" fill="{OLIVE}">33.1% of the paper</text>',
                 f'<text x="{x0}" y="{Y + 256}" font-size="16" fill="{MUTED}">A third of the exam sits in one domain. Study it first.</text>',
-                f'<rect x="{x0}" y="{Y + 282}" width="{int((x1 - x0) * 0.33)}" height="8" rx="4" fill="{OLIVE}"/>',
-                f'<rect x="{x0 + int((x1 - x0) * 0.33)}" y="{Y + 282}" width="{(x1 - x0) - int((x1 - x0) * 0.33)}" height="8" rx="4" fill="{RULE}"/>',
+                f'<rect x="{x0}" y="{Y + 282}" width="{int((x1 - x0) * 0.331)}" height="8" rx="4" fill="{OLIVE}"/>',
+                f'<rect x="{x0 + int((x1 - x0) * 0.331)}" y="{Y + 282}" width="{(x1 - x0) - int((x1 - x0) * 0.331)}" height="8" rx="4" fill="{RULE}"/>',
                 f'<text x="{x0}" y="{Y + 336}" font-size="13" fill="{FAINT}">blueprint  ·  developer-foundations</text>',
                 f'<text x="{x0}" y="{Y + 386}" font-size="14" fill="{MUTED}">Every fact, weight, rule, and term in the deck</text>']
     else:

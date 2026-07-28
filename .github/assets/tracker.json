@@ -52,31 +52,35 @@
    "domains": [
     {
      "name": "Applications and integration",
-     "weight": 33
+     "weight": 33.1
     },
     {
-     "name": "Model selection and cost",
-     "weight": 17
+     "name": "Model selection and optimization",
+     "weight": 16.8
     },
     {
      "name": "Agents and workflows",
-     "weight": 15
+     "weight": 14.7
     },
     {
-     "name": "Prompt and context",
-     "weight": 11
+     "name": "Prompt and context engineering",
+     "weight": 11.0
     },
     {
-     "name": "Tools and MCP",
-     "weight": 11
+     "name": "Tools and MCPs",
+     "weight": 10.6
     },
     {
      "name": "Security and safety",
-     "weight": 8
+     "weight": 8.1
     },
     {
-     "name": "Claude Code, eval",
-     "weight": 6
+     "name": "Claude Code",
+     "weight": 3.1
+    },
+    {
+     "name": "Eval, testing, and debugging",
+     "weight": 2.6
     }
    ],
    "milestones": [

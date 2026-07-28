@@ -332,7 +332,7 @@ def hard_won_page(label):
          "reading around the subject. Print the blueprint, mark each objective red, amber, or green, and study "
          "red first."),
         ("Study by weight, not by interest",
-         "Applications and integration is 33% of the Developer paper. Claude Code is 6%. Two evenings on the "
+         "Applications and integration is 33.1% of the Developer paper. Claude Code is 3.1%. Two evenings on the "
          "wrong one is a real cost. The weights are published; use them as your timetable."),
         ("A failed attempt costs weeks, not just money",
          "Fourteen days before a second attempt, thirty before a third, ninety before a fourth, and four "

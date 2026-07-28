@@ -20,26 +20,29 @@
 <line x1="70" y1="232" x2="1210" y2="232" stroke="#e0ddd4"/>
 <text x="70" y="272" font-size="12" font-weight="700" fill="#8a857c" letter-spacing="0.8">WHERE THE MARKS ARE</text>
 <text x="70" y="306" font-size="14" fill="#3d3a35">Applications and integration</text>
-<text x="500" y="306" font-size="14" fill="#6b6862" text-anchor="end">33%</text>
-<rect x="70" y="315" width="430" height="5" rx="2.5" fill="#7d8c5c" opacity="1.0"/>
-<text x="70" y="346" font-size="14" fill="#3d3a35">Model selection and cost</text>
-<text x="500" y="346" font-size="14" fill="#6b6862" text-anchor="end">17%</text>
-<rect x="70" y="355" width="222" height="5" rx="2.5" fill="#7d8c5c" opacity="0.94"/>
+<text x="500" y="306" font-size="14" fill="#6b6862" text-anchor="end">33.1%</text>
+<rect x="70" y="315" width="431" height="5" rx="2.5" fill="#7d8c5c" opacity="1.0"/>
+<text x="70" y="346" font-size="14" fill="#3d3a35">Model selection and optimization</text>
+<text x="500" y="346" font-size="14" fill="#6b6862" text-anchor="end">16.8%</text>
+<rect x="70" y="355" width="219" height="5" rx="2.5" fill="#7d8c5c" opacity="0.94"/>
 <text x="70" y="386" font-size="14" fill="#3d3a35">Agents and workflows</text>
-<text x="500" y="386" font-size="14" fill="#6b6862" text-anchor="end">15%</text>
-<rect x="70" y="395" width="195" height="5" rx="2.5" fill="#7d8c5c" opacity="0.88"/>
-<text x="70" y="426" font-size="14" fill="#3d3a35">Prompt and context</text>
-<text x="500" y="426" font-size="14" fill="#6b6862" text-anchor="end">11%</text>
+<text x="500" y="386" font-size="14" fill="#6b6862" text-anchor="end">14.7%</text>
+<rect x="70" y="395" width="192" height="5" rx="2.5" fill="#7d8c5c" opacity="0.88"/>
+<text x="70" y="426" font-size="14" fill="#3d3a35">Prompt and context engineering</text>
+<text x="500" y="426" font-size="14" fill="#6b6862" text-anchor="end">11.0%</text>
 <rect x="70" y="435" width="143" height="5" rx="2.5" fill="#7d8c5c" opacity="0.8200000000000001"/>
-<text x="70" y="466" font-size="14" fill="#3d3a35">Tools and MCP</text>
-<text x="500" y="466" font-size="14" fill="#6b6862" text-anchor="end">11%</text>
-<rect x="70" y="475" width="143" height="5" rx="2.5" fill="#7d8c5c" opacity="0.76"/>
+<text x="70" y="466" font-size="14" fill="#3d3a35">Tools and MCPs</text>
+<text x="500" y="466" font-size="14" fill="#6b6862" text-anchor="end">10.6%</text>
+<rect x="70" y="475" width="138" height="5" rx="2.5" fill="#7d8c5c" opacity="0.76"/>
 <text x="70" y="506" font-size="14" fill="#3d3a35">Security and safety</text>
-<text x="500" y="506" font-size="14" fill="#6b6862" text-anchor="end">8%</text>
-<rect x="70" y="515" width="104" height="5" rx="2.5" fill="#7d8c5c" opacity="0.7"/>
-<text x="70" y="546" font-size="14" fill="#3d3a35">Claude Code, eval</text>
-<text x="500" y="546" font-size="14" fill="#6b6862" text-anchor="end">6%</text>
-<rect x="70" y="555" width="78" height="5" rx="2.5" fill="#7d8c5c" opacity="0.64"/>
+<text x="500" y="506" font-size="14" fill="#6b6862" text-anchor="end">8.1%</text>
+<rect x="70" y="515" width="106" height="5" rx="2.5" fill="#7d8c5c" opacity="0.7"/>
+<text x="70" y="546" font-size="14" fill="#3d3a35">Claude Code</text>
+<text x="500" y="546" font-size="14" fill="#6b6862" text-anchor="end">3.1%</text>
+<rect x="70" y="555" width="40" height="5" rx="2.5" fill="#7d8c5c" opacity="0.64"/>
+<text x="70" y="586" font-size="14" fill="#3d3a35">Eval, testing, and debugging</text>
+<text x="500" y="586" font-size="14" fill="#6b6862" text-anchor="end">2.6%</text>
+<rect x="70" y="595" width="34" height="5" rx="2.5" fill="#7d8c5c" opacity="0.5800000000000001"/>
 <text x="580" y="272" font-size="12" font-weight="700" fill="#8a857c" letter-spacing="0.8">IF YOU REMEMBER NOTHING ELSE</text>
 <text x="580" y="304" font-size="13" font-weight="700" fill="#7d8c5c">1</text>
 <text x="602" y="304" font-size="13.5" fill="#3d3a35">stop_reason drives the loop: tool_use executes, end_turn finishes.</text>

@@ -8,9 +8,9 @@ Associate – Foundations: who is it for	Consultants, sellers, and delivery lead
 Developer – Foundations: exam code	CCDV-F	facts developer-foundations
 Developer – Foundations: how many items	53 items	facts developer-foundations
 Developer – Foundations: list fee before partner discount	$125	facts developer-foundations
-Developer – Foundations: heaviest domain and its weight	Applications and integration at 33%	blueprint developer-foundations
-Developer – Foundations: lightest domain and its weight	Claude Code, eval at 6%	blueprint developer-foundations
-Developer – Foundations: domains in weight order	Applications and integration 33% → Model selection and cost 17% → Agents and workflows 15% → Prompt and context 11% → Tools and MCP 11% → Security and safety 8% → Claude Code, eval 6%	blueprint developer-foundations
+Developer – Foundations: heaviest domain and its weight	Applications and integration at 33.1%	blueprint developer-foundations
+Developer – Foundations: lightest domain and its weight	Eval, testing, and debugging at 2.6%	blueprint developer-foundations
+Developer – Foundations: domains in weight order	Applications and integration 33.1% → Model selection and optimization 16.8% → Agents and workflows 14.7% → Prompt and context engineering 11.0% → Tools and MCPs 10.6% → Security and safety 8.1% → Claude Code 3.1% → Eval, testing, and debugging 2.6%	blueprint developer-foundations
 Developer – Foundations: who is it for	Engineers building on the Claude platform	facts developer-foundations
 Architect – Foundations: exam code	CCAR-F	facts architect-foundations
 Architect – Foundations: how many items	60 items	facts architect-foundations
