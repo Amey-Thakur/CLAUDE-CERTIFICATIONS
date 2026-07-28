@@ -20,12 +20,11 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from build_images import ASSETS, AUTHOR, CERTS, REPO, SITE  # noqa: E402
+from build_images import ASSETS, AUTHOR, CERTS, REPO, SITE, find_chrome  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 OUT_HTML = ASSETS / "booklet.html"
 OUT_PDF = ROOT / "claude-certifications-booklet.pdf"
-CHROME = Path("C:/Program Files/Google/Chrome/Application/chrome.exe")
 
 
 REPO_URL = f"https://{REPO}"
@@ -701,7 +700,7 @@ def build_html():
                    repository_page(), closing()]))
 
     # First pass: lay out pages so the contents can carry real numbers.
-    pages, entries, number = [], [], 2
+    pages, entries = [], []
     layout = []
     for num, title, blurb, bullets, body_pages in parts:
         layout.append((num, title, blurb, bullets, body_pages))
@@ -738,11 +737,12 @@ def main() -> int:
     print(f"wrote {OUT_HTML.name}")
 
     if "--render" in sys.argv:
-        if not CHROME.exists():
-            print("Chrome not found; skipping PDF")
+        chrome = find_chrome()
+        if chrome is None:
+            print("No Chrome found; skipping PDF. Set CHROME_PATH to override.")
             return 0
         subprocess.run(
-            [str(CHROME), "--headless", "--disable-gpu", "--no-pdf-header-footer",
+            [str(chrome), "--headless", "--disable-gpu", "--no-pdf-header-footer",
              f"--print-to-pdf={OUT_PDF}", OUT_HTML.as_uri()],
             capture_output=True, check=False,
         )

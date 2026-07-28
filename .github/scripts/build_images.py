@@ -15,7 +15,9 @@ Standard library only.
 """
 
 import base64
+import os
 import re
+import shutil
 import subprocess
 import sys
 from pathlib import Path
@@ -328,10 +330,40 @@ def cheat_sheet(cert):
     return "\n".join(out)
 
 
+def find_chrome():
+    """Locate a headless-capable Chrome on any platform.
+
+    The artwork and the booklet are rendered with Chrome. Hardcoding one path
+    meant only the maintainer's machine could rebuild them; this checks the
+    usual install locations and anything named on PATH or in CHROME_PATH.
+    """
+    env = os.environ.get("CHROME_PATH")
+    if env and Path(env).exists():
+        return Path(env)
+    for name in ("chrome", "google-chrome", "google-chrome-stable",
+                 "chromium", "chromium-browser", "msedge"):
+        found = shutil.which(name)
+        if found:
+            return Path(found)
+    candidates = [
+        "C:/Program Files/Google/Chrome/Application/chrome.exe",
+        "C:/Program Files (x86)/Google/Chrome/Application/chrome.exe",
+        "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+        "/Applications/Chromium.app/Contents/MacOS/Chromium",
+        "/usr/bin/google-chrome", "/usr/bin/chromium", "/usr/bin/chromium-browser",
+        "/snap/bin/chromium",
+    ]
+    for c in candidates:
+        if Path(c).exists():
+            return Path(c)
+    return None
+
+
 def render(svg_path):
-    chrome = Path("C:/Program Files/Google/Chrome/Application/chrome.exe")
-    if not chrome.exists():
-        print(f"skip render, Chrome not found: {svg_path.name}")
+    chrome = find_chrome()
+    if chrome is None:
+        print(f"skip render, no Chrome found: {svg_path.name}. "
+              f"Set CHROME_PATH to override.")
         return
     svg = svg_path.read_text(encoding="utf-8")
     width = int(re.search(r'width="(\d+)"', svg).group(1))

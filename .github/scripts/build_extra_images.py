@@ -19,7 +19,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 
 from build_images import (footer_at,   # noqa: E402
     ASSETS, BODY, CARD, CORAL, FAINT, FONT, INK, MUTED, OLIVE, PAPER, PLUM, RULE, TEAL,
-    avatar, claude_symbol, esc, footer, render,
+    claude_symbol, esc, footer, render,
 )
 
 HEAD_NOTE = "A community study resource. Not affiliated with or endorsed by Anthropic."

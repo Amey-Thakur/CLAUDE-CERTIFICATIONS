@@ -24,3 +24,26 @@ jobs:
         uses: codespell-project/actions-codespell@v2
         with:
           skip: "*.pdf,*.png,./.git"
+
+  scripts:
+    name: Scripts compile and generated files are current
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Compile every script
+        run: python -m compileall -q .github/scripts .github/pages
+      - name: Lint for unused names and undefined references
+        run: |
+          pip install --quiet pyflakes
+          python -m pyflakes .github/scripts/*.py .github/pages/*.py
+      - name: Shell syntax
+        run: bash -n .github/pages/assemble.sh
+      - name: Regenerate the derived files and fail if they drift
+        run: |
+          python .github/scripts/build_question_bank.py
+          python .github/scripts/build_tracker.py
+          python .github/scripts/build_flashcards.py
+          git diff --exit-code -- question-bank.json flashcards.tsv             guide/flashcards.md .github/assets/tracker.json .github/assets/flashcards.json
