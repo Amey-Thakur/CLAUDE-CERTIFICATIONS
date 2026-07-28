@@ -10,8 +10,7 @@ mkdir -p site-src/assets site-src/stylesheets
 cp -r associate-foundations developer-foundations architect-foundations architect-professional guide certificates site-src/
 cp -r .github/assets/logos site-src/assets/logos
 cp question-bank.json site-src/assets/question-bank.json
-cp .github/assets/roadmap.png .github/assets/roadmap.svg site-src/assets/
-cp .github/assets/social-preview.png site-src/assets/
+cp .github/assets/*.png .github/assets/*.svg site-src/assets/
 rm -f site-src/assets/logos/README.md
 cp .github/pages/extra.css site-src/stylesheets/extra.css
 cp .github/pages/index.md site-src/index.md
@@ -111,4 +110,5 @@ BLOB="https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/blob/main"
 find site-src -name '*.md' -exec sed -i \
   -e "s|(../.github/CONTRIBUTING.md#discussions)|(${BLOB}/.github/CONTRIBUTING.md#discussions)|g" \
   -e "s|(../README.md)|(../index.md)|g" \
+  -e "s|(../.github/assets/|(../assets/|g" \
   {} +
