@@ -13,6 +13,8 @@ Setup that makes every prompt below better: create a Claude Project, upload the 
 > [!IMPORTANT]
 > Generated questions are study aids, never real exam items. The item bank is confidential and rotates, so treating any question set as "the real ones" is both a policy violation and a poor strategy.
 
+For memorisation rather than judgment, the [flashcard deck](flashcards.md) covers every fact, domain weight, rule, and glossary term, and imports straight into Anki, Quizlet, or RemNote.
+
 ## Slash commands in Claude Code
 
 Cloning the repository and opening Claude Code inside it gives six commands that read the blueprints and the question bank directly:

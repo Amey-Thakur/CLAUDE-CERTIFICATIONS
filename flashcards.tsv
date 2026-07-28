@@ -1,0 +1,110 @@
+Associate – Foundations: exam code	CCAO-F	facts associate-foundations
+Associate – Foundations: how many items	60 items	facts associate-foundations
+Associate – Foundations: list fee before partner discount	$99	facts associate-foundations
+Associate – Foundations: heaviest domain and its weight	Output evaluation at 21%	blueprint associate-foundations
+Associate – Foundations: lightest domain and its weight	Troubleshooting at 10%	blueprint associate-foundations
+Associate – Foundations: domains in weight order	Output evaluation 21% → Workflow integration 16% → Governance and risk 15% → Prompting 14% → Product and model choice 12% → Configuration 12% → Troubleshooting 10%	blueprint associate-foundations
+Associate – Foundations: who is it for	Consultants, sellers, and delivery leads	facts associate-foundations
+Developer – Foundations: exam code	CCDV-F	facts developer-foundations
+Developer – Foundations: how many items	53 items	facts developer-foundations
+Developer – Foundations: list fee before partner discount	$125	facts developer-foundations
+Developer – Foundations: heaviest domain and its weight	Applications and integration at 33%	blueprint developer-foundations
+Developer – Foundations: lightest domain and its weight	Claude Code, eval at 6%	blueprint developer-foundations
+Developer – Foundations: domains in weight order	Applications and integration 33% → Model selection and cost 17% → Agents and workflows 15% → Prompt and context 11% → Tools and MCP 11% → Security and safety 8% → Claude Code, eval 6%	blueprint developer-foundations
+Developer – Foundations: who is it for	Engineers building on the Claude platform	facts developer-foundations
+Architect – Foundations: exam code	CCAR-F	facts architect-foundations
+Architect – Foundations: how many items	60 items	facts architect-foundations
+Architect – Foundations: list fee before partner discount	$125	facts architect-foundations
+Architect – Foundations: heaviest domain and its weight	Agentic architecture at 27%	blueprint architect-foundations
+Architect – Foundations: lightest domain and its weight	Context and reliability at 15%	blueprint architect-foundations
+Architect – Foundations: domains in weight order	Agentic architecture 27% → Claude Code workflows 20% → Prompting, structured output 20% → Tool design and MCP 18% → Context and reliability 15%	blueprint architect-foundations
+Architect – Foundations: who is it for	Architects building production systems	facts architect-foundations
+Architect – Professional: exam code	CCAR-P	facts architect-professional
+Architect – Professional: how many items	63 items	facts architect-professional
+Architect – Professional: list fee before partner discount	$175	facts architect-professional
+Architect – Professional: heaviest domain and its weight	Integration at 19%	blueprint architect-professional
+Architect – Professional: lightest domain and its weight	Developer enablement at 7%	blueprint architect-professional
+Architect – Professional: domains in weight order	Integration 19% → Solution design 17% → Evaluation and testing 16% → Governance and risk 14% → Stakeholders, lifecycle 14% → Models and prompting 13% → Developer enablement 7%	blueprint architect-professional
+Architect – Professional: who is it for	Architects governing systems at scale	facts architect-professional
+Associate – Foundations: Verify anything specific and consequential. Why?	Confidence is not evidence.	rules associate-foundations
+Associate – Foundations: Omission fails too. Why?	Read the source, not only the output.	rules associate-foundations
+Associate – Foundations: Anonymize, then analyze. Why?	Instructions are not a control.	rules associate-foundations
+Associate – Foundations: complete the rule — Match the model to the task in both directions	Match the model to the task in both directions.	rules associate-foundations
+Associate – Foundations: complete the rule — Structure beats intensifiers: role, sections, constraints, example	Structure beats intensifiers: role, sections, constraints, example.	rules associate-foundations
+Associate – Foundations: complete the rule — Projects hold what repeats; prompts hold what changes	Projects hold what repeats; prompts hold what changes.	rules associate-foundations
+Associate – Foundations: complete the rule — Project knowledge is maintained by you, not self-updating	Project knowledge is maintained by you, not self-updating.	rules associate-foundations
+Associate – Foundations: complete the rule — Diagnose what changed before rewriting anything	Diagnose what changed before rewriting anything.	rules associate-foundations
+Associate – Foundations: complete the rule — Escalate system integrations to Developer and Architect scope	Escalate system integrations to Developer and Architect scope.	rules associate-foundations
+Developer – Foundations: complete the rule — stop_reason drives the loop: tool_use executes, end_turn finishes	stop_reason drives the loop: tool_use executes, end_turn finishes.	rules developer-foundations
+Developer – Foundations: complete the rule — Batches for latency-tolerant volume: half cost, 24-hour window	Batches for latency-tolerant volume: half cost, 24-hour window.	rules developer-foundations
+Developer – Foundations: Stable prefix first, then cache it. Why?	Cuts latency and cost together.	rules developer-foundations
+Developer – Foundations: complete the rule — Enforce a schema, validate, retry with the validation error	Enforce a schema, validate, retry with the validation error.	rules developer-foundations
+Developer – Foundations: Known path is a workflow. Why?	Unknown path earns an agent.	rules developer-foundations
+Developer – Foundations: complete the rule — Subagents exist to isolate context, not to add horsepower	Subagents exist to isolate context, not to add horsepower.	rules developer-foundations
+Developer – Foundations: complete the rule — Pin model versions; upgrades become evaluated changes	Pin model versions; upgrades become evaluated changes.	rules developer-foundations
+Developer – Foundations: complete the rule — Injection is defeated structurally, never by asking politely	Injection is defeated structurally, never by asking politely.	rules developer-foundations
+Developer – Foundations: complete the rule — A tool the agent does not hold cannot be misused	A tool the agent does not hold cannot be misused.	rules developer-foundations
+Architect – Foundations: complete the rule — Agent loops need engineered termination, not a token budget	Agent loops need engineered termination, not a token budget.	rules architect-foundations
+Architect – Foundations: complete the rule — Escalate on policy gaps and lack of progress	Escalate on policy gaps and lack of progress.	rules architect-foundations
+Architect – Foundations: complete the rule — Structured errors: a category and a retryable flag	Structured errors: a category and a retryable flag.	rules architect-foundations
+Architect – Foundations: Tool descriptions are the selection mechanism. Why?	Differentiate them.	rules architect-foundations
+Architect – Foundations: complete the rule — Hard limits belong in the tool layer, never in a prompt	Hard limits belong in the tool layer, never in a prompt.	rules architect-foundations
+Architect – Foundations: complete the rule — CLAUDE.md hierarchy, with path-scoped rules for conditional context	CLAUDE.md hierarchy, with path-scoped rules for conditional context.	rules architect-foundations
+Architect – Foundations: complete the rule — CI means headless: print mode, JSON output, a schema	CI means headless: print mode, JSON output, a schema.	rules architect-foundations
+Architect – Foundations: complete the rule — Subagents return findings; raw documents stay at the edge	Subagents return findings; raw documents stay at the edge.	rules architect-foundations
+Architect – Foundations: complete the rule — Provenance must survive every handoff	Provenance must survive every handoff.	rules architect-foundations
+Architect – Professional: complete the rule — Climb the pattern ladder only when the rung below cannot hold	Climb the pattern ladder only when the rung below cannot hold.	rules architect-professional
+Architect – Professional: complete the rule — Least privilege means removal, not monitoring	Least privilege means removal, not monitoring.	rules architect-professional
+Architect – Professional: complete the rule — Retrieval degradation after a data change is an index problem	Retrieval degradation after a data change is an index problem.	rules architect-professional
+Architect – Professional: complete the rule — Subjective quality is measured with rubrics and labeled sets	Subjective quality is measured with rubrics and labeled sets.	rules architect-professional
+Architect – Professional: complete the rule — Prompt changes are production changes: regression, then A/B	Prompt changes are production changes: regression, then A/B.	rules architect-professional
+Architect – Professional: complete the rule — Compliance is enforced before data crosses the boundary	Compliance is enforced before data crosses the boundary.	rules architect-professional
+Architect – Professional: complete the rule — Route human review by confidence and consequence	Route human review by confidence and consequence.	rules architect-professional
+Architect – Professional: complete the rule — Present segmented, honest numbers, never a flattering average	Present segmented, honest numbers, never a flattering average.	rules architect-professional
+Architect – Professional: complete the rule — Observability captures traces, not just outputs	Observability captures traces, not just outputs.	rules architect-professional
+Passing score on every Claude certification exam	720 on a scaled range of 100 to 1,000	facts shared
+Time limit on every Claude certification exam	120 minutes, with about 135 minutes of total seat time	facts shared
+How long is a Claude credential valid	12 months from the date it is earned	policy shared
+What does on-time renewal involve	A free, open-book, non-proctored assessment on Anthropic Partner Academy, retakable as often as needed	policy shared
+What happens if a credential lapses	You must pass the full exam again at full fee	policy shared
+Retake waiting periods after failed attempts	14 days after the first, 30 after the second, 90 after the third	policy shared
+Maximum attempts per exam per rolling 12 months	Four	policy shared
+Free cancellation or reschedule window	At least 24 hours before the appointment; inside that, the fee is forfeited	policy shared
+Who delivers the exams	Pearson VUE, online proctored through OnVUE or at a test centre	facts shared
+Where does the digital badge come from	Credly, by email after a pass	facts shared
+Which exam does not count toward partner tier eligibility	Claude Certified Associate	facts shared
+Partner tier discounts on exam fees	Select, Preferred, and Global Premier partners receive 50% off, applied at checkout	facts shared
+How is the exam scored, in one phrase	Criterion-referenced: against a fixed standard, not against other candidates	policy shared
+What does the score report show beyond pass or fail	The scaled score and percent-correct per domain	policy shared
+Is there an official practice exam	No. The previous platform's was retired in the Pearson migration; the exam guides' sample questions are the only official items	policy shared
+What is the authoritative scope of an exam	The blueprint in its official exam guide; anything outside it is not tested	policy shared
+How many scenarios does Architect Foundations present, and from how many	Four, drawn from a published bank of six	facts architect-foundations
+Are the exams open book	No. No notes, documentation, translation tools, or AI assistants	policy shared
+Who may currently sit these exams	People at Claude Partner Network organizations, registering with a recognised company email	policy shared
+How long do partner email domain record changes take	7 to 10 days, so resolve them before you plan to sit	policy shared
+What does the exam NDA cover	Questions, answer options, and scenarios, explicitly including study groups and online forums	policy shared
+Where can you take the official courses without a partner account	The public Anthropic Academy; every course is free there	facts shared
+Glossary: Blueprint	The exam content outline in each exam guide: the domains measured, their weights, and the objectives items are written against. The authoritative scope of the exam	glossary shared
+Glossary: Domain weight	The approximate share of scored items drawn from a domain, for example 33.1% for the Developer exam's Applications and Integration domain	glossary shared
+Glossary: Task statement	A numbered capability within a domain, used in the Architect Foundations guide, that items are written against	glossary shared
+Glossary: MQC	Minimally qualified candidate: the profile of the weakest examinee who should still pass, which the passing standard is calibrated to	glossary shared
+Glossary: Criterion-referenced	Scored against a fixed standard rather than against other candidates. There is no curve	glossary shared
+Glossary: Scaled score	The reported score on a 100 to 1,000 range, equated so results are comparable across exam forms of slightly different difficulty	glossary shared
+Glossary: Cut score	The passing threshold: 720 scaled, for all four exams	glossary shared
+Glossary: Item	An exam question. Multiple-choice items have one best answer; multiple-response items state how many responses to select	glossary shared
+Glossary: Scenario-based exam	The Architect Foundations format: 4 scenarios drawn from a published bank of 6, each framing a set of items	glossary shared
+Glossary: Exam form	A specific assembled version of an exam; forms vary slightly, which scaled scoring corrects for	glossary shared
+Glossary: NDA	The non-disclosure agreement accepted before the exam starts: exam content may not be shared, reproduced, or discussed, including in study groups and forums	glossary shared
+Glossary: Pearson VUE	The company that delivers the exams, online and at test centers, since June 30, 2026	glossary shared
+Glossary: OnVUE	Pearson's online proctoring application, run on your own computer under remote supervision	glossary shared
+Glossary: Test center	A physical Pearson location with provided equipment, the alternative to online proctoring	glossary shared
+Glossary: Credly	The digital badging platform that issues the shareable credential after a pass	glossary shared
+Glossary: CPN	The Claude Partner Network, whose member organizations are eligible for certification	glossary shared
+Glossary: Partner tier	An organization's CPN level: Registered pays list price; Select, Preferred, and Global Premier receive 50% off exams	glossary shared
+Glossary: Prep path	The curated course sequence on Partner Academy for a specific certification	glossary shared
+Glossary: Exam guide	The official PDF for each certification: blueprint, sample questions, policies, and scoring. The single most important study document	glossary shared
+Glossary: Renewal assessment	The free, open-book, non-proctored assessment on Partner Academy that extends a credential 12 months when passed before expiry	glossary shared
+Glossary: Lapse	Letting a credential expire without renewing; regaining it requires the full exam at full fee	glossary shared
+Glossary: Appeal	A formal challenge to a certification decision or result, filed with Pearson within 14 days	glossary shared
+Glossary: Question report	Flagging a possibly faulty item to Pearson; separate from an appeal and never counted against you	glossary shared
+Glossary: Accommodations	Testing adjustments for documented needs, requested through Pearson and approved before scheduling	glossary shared

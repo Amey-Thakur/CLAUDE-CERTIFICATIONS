@@ -248,12 +248,111 @@ def courses_card():
     return "\n".join(out)
 
 
+def scoring_card():
+    """Scoring, retakes, and renewal: the mechanics candidates most often get wrong."""
+    W, H = 1280, 946
+    out = frame(W, H, "SCORING AND SECOND CHANCES", "What happens after you click submit",
+                "How the score is built, what a failure actually costs, and how the credential stays alive.", PLUM)
+
+    out.append(f'<rect x="70" y="212" width="{W - 140}" height="146" rx="8" fill="{CARD}" stroke="{RULE}"/>')
+    out.append(f'<text x="98" y="246" font-size="12" font-weight="700" fill="{FAINT}" letter-spacing="0.8">HOW THE SCORE IS BUILT</text>')
+    facts = [("100 – 1000", "scaled range"), ("720", "to pass"), ("criterion", "referenced, not a curve"),
+             ("per domain", "percent correct reported")]
+    fx = 98
+    for value, label in facts:
+        out.append(f'<text x="{fx}" y="292" font-size="24" font-weight="600" fill="{INK}">{value}</text>')
+        out.append(f'<text x="{fx}" y="314" font-size="12.5" fill="{FAINT}">{label}</text>')
+        fx += 290
+    out.append(f'<text x="98" y="342" font-size="13" fill="{MUTED}">Scaling equates forms of different difficulty. The domain breakdown does not decide the result, but it is the best study signal you will get.</text>')
+
+    out.append(f'<text x="70" y="404" font-size="12" font-weight="700" fill="{FAINT}" letter-spacing="0.8">IF YOU DO NOT PASS</text>')
+    steps = [("1st attempt", "wait 14 days"), ("2nd attempt", "wait 30 days"),
+             ("3rd attempt", "wait 90 days"), ("4th attempt", "cap for 12 months")]
+    x = 70
+    for i, (label, wait) in enumerate(steps):
+        out.append(f'<rect x="{x}" y="426" width="264" height="76" rx="8" fill="{CARD}" stroke="{RULE}"/>')
+        out.append(f'<rect x="{x}" y="426" width="264" height="4" rx="2" fill="{CORAL}" opacity="{1 - i * 0.18}"/>')
+        out.append(f'<text x="{x + 20}" y="460" font-size="15.5" font-weight="600" fill="{INK}">{label}</text>')
+        out.append(f'<text x="{x + 20}" y="484" font-size="13" fill="{MUTED}">{wait}</text>')
+        if i < 3:
+            out.append(f'<text x="{x + 278}" y="470" font-size="18" fill="{RULE}">&#8250;</text>')
+        x += 296
+    out.append(f'<text x="70" y="530" font-size="13" fill="{MUTED}">Every attempt costs the full fee, and your partner discount applies to retakes exactly as to a first sitting. Limits are per exam, so one failure never blocks a different track.</text>')
+
+    out.append(f'<text x="70" y="586" font-size="12" font-weight="700" fill="{FAINT}" letter-spacing="0.8">KEEPING IT ALIVE</text>')
+    lanes = [(OLIVE, "Renew on time", "A free, open-book, non-proctored assessment on Partner Academy, retakable as often as you need. Extends the credential another 12 months."),
+             (CORAL, "Let it lapse", "The full proctored exam again, at the full fee. There is no partial credit for a credential that expired.")]
+    y = 608
+    for accent, title, body in lanes:
+        out.append(f'<rect x="70" y="{y}" width="{W - 140}" height="88" rx="8" fill="{CARD}" stroke="{RULE}"/>')
+        out.append(f'<rect x="70" y="{y}" width="5" height="88" rx="2.5" fill="{accent}"/>')
+        out.append(f'<text x="98" y="{y + 34}" font-size="16" font-weight="600" fill="{INK}">{title}</text>')
+        out.append(f'<text x="98" y="{y + 62}" font-size="13.5" fill="{MUTED}">{esc(body)}</text>')
+        y += 100
+
+    out.append(f'<text x="70" y="{y + 18}" font-size="13.5" fill="{BODY}">A disputed question never changes a pass or fail on its own; a confirmed faulty item that affected a result is remedied with a free retake.</text>')
+    out.append(footer(W, y + 46, "Facts drawn from the official Anthropic exam guides and policies"))
+    out.append("</svg>")
+    return chr(10).join(out)
+
+
+def study_plan_card():
+    """Three weeks from blueprint to booking, for someone with a job."""
+    W, H = 1280, 862
+    out = frame(W, H, "A WORKING PLAN", "Three weeks, alongside a full-time job",
+                "Compress or stretch it to fit. The shape matters more than the calendar: scope, then depth, then close.", OLIVE)
+
+    weeks = [
+        (CORAL, "Week one", "Scope",
+         ["Read the exam guide end to end", "Turn the blueprint into a red, amber, green checklist",
+          "Work the prep courses for your exam", "Mark items green only when you could explain them"]),
+        (OLIVE, "Week two", "Depth",
+         ["Attack red items first, weighted by domain percentage", "Build the thing the guide asks you to build",
+          "Read the official documentation for weak areas", "Drill one weak domain a day"]),
+        (TEAL, "Week three", "Close",
+         ["Reread the exam guide", "Work the official sample questions and rationales",
+          "Sit a timed mock and study the domain breakdown", "Run the system test on the exam machine"]),
+    ]
+    x = 70
+    for accent, week, phase, items in weeks:
+        out.append(f'<rect x="{x}" y="212" width="373" height="404" rx="8" fill="{CARD}" stroke="{RULE}"/>')
+        out.append(f'<rect x="{x}" y="212" width="373" height="5" rx="2.5" fill="{accent}"/>')
+        out.append(f'<text x="{x + 24}" y="252" font-size="12" font-weight="700" fill="{accent}" letter-spacing="1">{week.upper()}</text>')
+        out.append(f'<text x="{x + 24}" y="288" font-size="24" font-weight="600" fill="{INK}">{phase}</text>')
+        iy = 330
+        for item in items:
+            out.append(f'<circle cx="{x + 30}" cy="{iy - 5}" r="3.5" fill="{accent}"/>')
+            words, line, lines = item.split(), "", []
+            for w in words:
+                trial = (line + " " + w).strip()
+                if len(trial) > 38:
+                    lines.append(line); line = w
+                else:
+                    line = trial
+            lines.append(line)
+            for j, ln in enumerate(lines):
+                out.append(f'<text x="{x + 46}" y="{iy + j * 19}" font-size="13.5" fill="{BODY}">{esc(ln)}</text>')
+            iy += 19 * len(lines) + 18
+        x += 393
+
+    out.append(f'<rect x="70" y="644" width="{W - 140}" height="72" rx="8" fill="#f0eee6"/>')
+    out.append(f'<text x="94" y="672" font-size="12" font-weight="700" fill="{FAINT}" letter-spacing="0.8">THE TWO RULES THAT MATTER MOST</text>')
+    out.append(f'<text x="94" y="698" font-size="13.5" fill="{BODY}">Study by domain weight, not by what interests you  ·  build something real, because the exams test judgment and judgment comes from hitting the tradeoffs yourself</text>')
+
+    out.append(f'<text x="70" y="754" font-size="13.5" fill="{MUTED}">Book the exam once the checklist is mostly green. Rescheduling is free until 24 hours out, so an early booking costs nothing and sets a deadline.</text>')
+    out.append(footer(W, 782, "Method from the official preparation guidance"))
+    out.append("</svg>")
+    return chr(10).join(out)
+
+
 def main() -> int:
     images = {
         "card-choose-certification.svg": choose_card(),
         "card-architect-scenarios.svg": scenarios_card(),
         "card-exam-day.svg": exam_day_card(),
         "card-courses.svg": courses_card(),
+        "card-scoring.svg": scoring_card(),
+        "card-study-plan.svg": study_plan_card(),
     }
     for name, svg in images.items():
         path = ASSETS / name

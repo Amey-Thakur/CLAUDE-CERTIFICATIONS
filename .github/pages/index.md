@@ -87,6 +87,12 @@ This site is the readable version of the [CLAUDE-CERTIFICATIONS repository](http
 
 ![Claude certification roadmap: all four certifications with exam codes, fees, item counts, domain weights, and the courses that prepare for each](assets/roadmap.png)
 
+## The whole guide as one file
+
+[:material-download: Download the booklet (PDF)](assets/claude-certifications-booklet.pdf){ .md-button .md-button--primary }
+
+Nineteen pages: the roadmap, a page and a cheat sheet for every certification, the curriculum, a study method, the exam-day checklist, and the policies. Everything embedded, so it works offline and can be passed on as a single file.
+
 ## The certifications
 
 | Certification | Questions | Fee | Study guide | Notes | Exam guide | Practice | Mock | Cheat sheet |
