@@ -91,7 +91,7 @@ This site is the readable version of the [CLAUDE-CERTIFICATIONS repository](http
 
 [:material-download: Download the booklet (PDF)](assets/claude-certifications-booklet.pdf){ .md-button .md-button--primary }
 
-Twenty-two pages: the roadmap, a page and a cheat sheet for every certification, the curriculum, a study plan, a study method, the exam-day checklist, scoring and retakes, and the policies. Everything embedded, so it works offline and can be passed on as a single file.
+Twenty-seven pages in five parts: choose your exam, know what it measures, prepare for it, sit it, and keep going. Every card, cheat sheet, and the full method, in one file that works offline. Everything embedded, so it works offline and can be passed on as a single file.
 
 ## The certifications
 
@@ -107,7 +107,7 @@ Every exam: 120 minutes, closed book, proctored by Pearson VUE online or at a te
 > [!TIP]
 > Every course in the program is free on the public [Anthropic Academy](https://anthropic.skilljar.com/), no partner account needed. Only the proctored exams require Claude Partner Network membership, so you can learn the whole syllabus before deciding whether to certify.
 >
-> Prefer one file? The whole guide is a printable booklet: [claude-certifications-booklet.pdf](assets/claude-certifications-booklet.pdf), with the roadmap, a page and a cheat sheet for every exam, the curriculum, a study plan, the exam-day checklist, scoring and retakes, and the policies.
+> Prefer one file? The whole guide is a printable booklet: [claude-certifications-booklet.pdf](assets/claude-certifications-booklet.pdf), twenty-seven pages in five parts: choose your exam, know it, prepare, sit it, and keep going.
 
 ## Start here
 

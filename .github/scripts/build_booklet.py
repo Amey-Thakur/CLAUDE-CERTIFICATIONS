@@ -13,6 +13,7 @@ Standard library only.
 """
 
 import base64
+import re
 import subprocess
 import sys
 from pathlib import Path
@@ -75,6 +76,8 @@ li { margin-bottom: 1.2mm; }
 .foot img { width: 8mm; height: 8mm; border: 1px solid #e0ddd4; }
 .foot .who { font-weight: 600; color: #3d3a35; }
 .foot .spacer { margin-left: auto; }
+.foot .pageno { margin-left: 6mm; font-weight: 600; color: #3d3a35;
+                min-width: 8mm; text-align: right; }
 .cover { display: flex; flex-direction: column; height: 100%; justify-content: center; }
 .cover .symbol { width: 22mm; margin-bottom: 8mm; }
 .cover h1 { font-size: 42pt; }
@@ -93,14 +96,28 @@ ACCENTS = {"associate-foundations": "#c15f3c", "developer-foundations": "#7d8c5c
            "architect-foundations": "#4f7d8c", "architect-professional": "#8a5f8c"}
 
 
-def foot(label):
+def foot(label, number=None):
+    """Credit strip, the part you are in, and the page number."""
+    page_no = f'<span class="pageno">{number}</span>' if number else ""
     return (f'<div class="foot"><img src="{data_uri("avatar.jpg", "image/jpeg")}" alt="">'
             f'<span><span class="who">{AUTHOR}</span> · {REPO}</span>'
-            f'<span class="spacer">{label}</span></div>')
+            f'<span class="spacer">{label}</span>{page_no}</div>')
 
 
-def page(body, label="Claude Certifications"):
-    return f'<section class="page"><div class="rule-top"></div>{body}{foot(label)}</section>'
+def page(body, label="Claude Certifications", accent=None):
+    """A page is stamped with its part label; numbering is applied at assembly."""
+    band = f'<div class="rule-top" style="background:{accent}"></div>' if accent else '<div class="rule-top"></div>'
+    return f'<section class="page" data-label="{label}">{band}{body}__FOOT__</section>'
+
+
+def part_opener(number, title, blurb, contents, accent):
+    items = "".join(f'<li>{c}</li>' for c in contents)
+    return page(f'''<div style="display:flex;flex-direction:column;height:100%;justify-content:center;max-width:200mm">
+        <div style="font-size:12pt;font-weight:700;letter-spacing:1.4pt;color:{accent}">PART {number}</div>
+        <h1 style="font-size:38pt;margin-top:3mm">{title}</h1>
+        <p class="lead" style="font-size:13pt;max-width:170mm">{blurb}</p>
+        <ul style="margin-top:4mm;font-size:11pt;color:#6b6862">{items}</ul>
+      </div>''', f"Part {number}: {title}", accent)
 
 
 def cover():
@@ -126,7 +143,7 @@ def cover():
         </div>
         <p class="small" style="margin-top:10mm;max-width:170mm">Facts drawn from the official Anthropic exam guides
         and program pages. A community study resource, not affiliated with or endorsed by Anthropic. Free to share.</p>
-      </div>
+      </div>__FOOT__
     </section>'''
 
 
@@ -161,34 +178,32 @@ def foreword():
       </div>''', "A note from the author")
 
 
-def contents():
-    rows = [
-        ("Choosing your exam", "Which certification matches the work you do, and what each measures"),
-        ("The roadmap", "All four certifications, their domain weights, and the courses that prepare for each"),
-        ("One page per certification", "Exam facts, where the marks are, and the rules that decide questions"),
-        ("The official curriculum", "Every Anthropic course and the exam it serves"),
-        ("Preparing", "A study plan that fits a job, and how to practise without breaking the exam agreement"),
-        ("Registration and exam day", "Booking, proctoring setup, and the checklist worth keeping"),
-        ("Policies and scoring", "Retakes, validity, renewal, appeals, and how the score is built"),
-        ("The repository behind it", "What the living version does that paper cannot"),
-    ]
-    body = "".join(f'<tr><td style="width:62mm"><strong>{t}</strong></td><td class="muted">{d}</td></tr>'
-                   for t, d in rows)
+def contents(entries):
+    """Built from the assembled page list, so it can never disagree with the booklet."""
+    rows = []
+    for part, title, blurb, number in entries:
+        rows.append(f'<tr><td style="width:14mm;color:#8a857c;font-size:9pt">PART {part}</td>'
+                    f'<td style="width:66mm"><strong>{title}</strong></td>'
+                    f'<td class="muted">{blurb}</td>'
+                    f'<td style="width:12mm;text-align:right;font-weight:600">{number}</td></tr>')
     return page(f'''<h1>What is in this booklet</h1>
-      <p class="lead muted" style="max-width:200mm">Everything a candidate needs, in the order they need it.
-      The repository holds the living version, including a practice engine and the mirrored official documents.</p>
-      <table style="margin-top:6mm"><tbody>{body}</tbody></table>
-      <div class="callout" style="margin-top:6mm"><strong>How to use it.</strong> Read the roadmap, pick your exam,
-      then work its page. Keep the cheat sheet for the day before. Everything here is derived from the official exam
-      guides, which remain the authoritative source and are mirrored in the repository.</div>''', "Contents")
+      <p class="lead muted" style="max-width:205mm">Five parts, in the order a candidate needs them: choose the exam,
+      learn what it measures, prepare for it, sit it, and know where to go afterwards.</p>
+      <table style="margin-top:5mm"><tbody>{"".join(rows)}</tbody></table>
+      <div class="callout" style="margin-top:5mm"><strong>How to use it.</strong> If you already know which exam you
+      are taking, go straight to its pages in Part 2 and keep the cheat sheet for the day before. Everything here is
+      derived from the official exam guides, which remain the authoritative source and are mirrored in the
+      repository.</div>''', "Contents")
 
 
-def image_page(title, blurb, image, label):
+
+def image_page(title, blurb, image, label, note=None):
+    tail = (f'<p class="small" style="margin-top:3mm">{note}</p>') if note else ""
     return page(f'''<h2>{title}</h2><p class="muted" style="max-width:210mm">{blurb}</p>
-      <img class="full" src="{data_uri(image)}" alt="{title}" style="margin-top:3mm;max-height:135mm;object-fit:contain">''', label)
+      <img class="full" src="{data_uri(image)}" alt="{title}" style="margin-top:3mm;max-height:128mm;object-fit:contain">{tail}''', label)
 
 
-def cert_page(cert):
+def cert_page(cert, label=None):
     accent = ACCENTS[cert["slug"]]
     domains = "".join(
         f'<tr><td>{n}</td><td style="text-align:right;color:{accent};font-weight:600;width:16mm">{w}%</td></tr>'
@@ -218,7 +233,7 @@ def cert_page(cert):
           <h3 style="margin-top:4mm">Prepare with</h3>
           <p style="font-size:9.5pt" class="muted">{prep}</p>
         </div>
-      </div>''', f'{cert["role"].title()} {cert["level"]}')
+      </div>''', label or f'{cert["role"].title()} {cert["level"]}')
 
 
 def preparing():
@@ -347,6 +362,8 @@ def closing():
           <p>Share it with whoever is studying next. Corrections are welcome as issues, and questions about
           preparation belong in the repository's discussions, where the one firm rule is that real exam content is
           never posted.</p>
+          <p>If it saved you time, starring the repository is the whole marketing budget: it is how the next
+          candidate searching for this finds it instead of a braindump site.</p>
           <div class="callout">Whatever you are preparing for, the path is the same: read the blueprint, close the
           gaps honestly, build something real, and book the date. You do not need permission or a better moment.
           <div style="margin-top:2.5mm;font-weight:600">— {AUTHOR}</div></div>
@@ -358,40 +375,104 @@ def closing():
 
 
 def build_html():
-    pages = [cover(), foreword(), contents(),
-             image_page("Which certification is yours?",
-                        "Pick the exam that matches the work you already do. There are no prerequisites in either direction.",
-                        "card-choose-certification.png", "Choosing your exam"),
-             image_page("The roadmap",
-                        "All four certifications side by side: what each measures, what it costs, and what prepares you for it.",
-                        "roadmap.png", "The roadmap")]
+    """Assemble the booklet as five signposted parts, then number every page."""
+    accents = [ACCENTS["associate-foundations"], ACCENTS["developer-foundations"],
+               ACCENTS["architect-foundations"], ACCENTS["architect-professional"], "#c15f3c"]
+
+    parts = []
+
+    parts.append((1, "Choose your exam",
+                  "Four certifications across three roles, with no prerequisites in either direction. Pick the one "
+                  "that matches the work you already do.",
+                  ["Which certification is yours", "The roadmap: every exam side by side"],
+                  [image_page("Which certification is yours?",
+                              "Pick the exam that matches the work you already do.",
+                              "card-choose-certification.png", "Part 1: Choose your exam"),
+                   image_page("The roadmap",
+                              "All four certifications: what each measures, what it costs, and what prepares you for it.",
+                              "roadmap.png", "Part 1: Choose your exam")]))
+
+    exam_pages = []
     for cert in CERTS:
-        pages.append(cert_page(cert))
-        pages.append(image_page(f'Cheat sheet: {cert["role"].title()} {cert["level"]}',
-                                "The page worth keeping for the hour before the exam.",
-                                f'cheat-sheet-{cert["slug"]}.png', f'{cert["role"].title()} {cert["level"]}'))
-    pages.append(image_page("The six published scenarios",
-                            "Unique to Architect Foundations: four of these six frame every question on the paper.",
-                            "card-architect-scenarios.png", "Architect scenarios"))
-    pages.append(image_page("The official curriculum",
-                            "Every Anthropic course, free on the public Academy, and the exam each one serves.",
-                            "card-courses.png", "Curriculum"))
-    pages.append(image_page("A working study plan",
-                            "Three weeks alongside a job. The shape matters more than the calendar: scope, then depth, then close.",
-                            "card-study-plan.png", "Study plan"))
-    pages.append(preparing())
-    pages.append(image_page("Exam day", "Most failed sittings are logistics, not knowledge.",
-                            "card-exam-day.png", "Exam day"))
-    pages.append(image_page("Scoring and second chances",
-                            "How the score is built, what a failed attempt actually costs, and how the credential stays alive.",
-                            "card-scoring.png", "Scoring"))
-    pages.append(policies())
-    pages.append(repository_page())
-    pages.append(closing())
+        label = f'Part 2: {cert["role"].title()} {cert["level"]}'
+        exam_pages.append(cert_page(cert, label))
+        exam_pages.append(image_page(f'Cheat sheet: {cert["role"].title()} {cert["level"]}',
+                                     "The page worth keeping for the hour before the exam.",
+                                     f'cheat-sheet-{cert["slug"]}.png', label,
+                                     f'The full sheet, with the reasoning behind every rule and a timed mock exam '
+                                     f'for this certification, is at {SITE}'))
+        if cert["slug"] == "architect-foundations":
+            exam_pages.append(image_page("The six published scenarios",
+                                         "Four of these six frame every question on this paper. Rehearse them.",
+                                         "card-architect-scenarios.png", label,
+                                         f'Practice questions framed inside these scenarios are in the practice '
+                                         f'engine at {SITE}'))
+    parts.append((2, "Know your exam",
+                  "A page of facts and a cheat sheet for each certification: the blueprint with real domain weights, "
+                  "and the rules that decide questions.",
+                  ["Associate, Developer, and both Architect exams",
+                   "The six published Architect Foundations scenarios"],
+                  exam_pages))
+
+    parts.append((3, "Prepare",
+                  "What to study, in what order, and how to practise without touching material you are not allowed "
+                  "to touch.",
+                  ["The official curriculum and the exam each course serves",
+                   "A three-week plan that fits alongside a job", "A method, and practising within the agreement"],
+                  [image_page("The official curriculum",
+                              "Every Anthropic course, free on the public Academy, and the exam each one serves.",
+                              "card-courses.png", "Part 3: Prepare",
+                              f'Notes on what each course is worth and the order worth taking them in are at {SITE}'),
+                   image_page("A working study plan",
+                              "Three weeks alongside a job: scope, then depth, then close.",
+                              "card-study-plan.png", "Part 3: Prepare",
+                              f'A progress tracker keeps this checklist for you, weighted by exam share, at {SITE}'),
+                   preparing()]))
+
+    parts.append((4, "Sit it",
+                  "Booking, proctoring, and the day itself, then what the result means and what happens if it is not "
+                  "the one you wanted.",
+                  ["The exam-day checklist", "Scoring, retakes, validity, and renewal"],
+                  [image_page("Exam day", "Most failed sittings are logistics, not knowledge.",
+                              "card-exam-day.png", "Part 4: Sit it",
+                              f'The complete network allowlist and application shutdown list are at {SITE}'),
+                   image_page("Scoring and second chances",
+                              "How the score is built, what a failed attempt costs, and how the credential stays alive.",
+                              "card-scoring.png", "Part 4: Sit it"),
+                   policies()]))
+
+    parts.append((5, "Keep going",
+                  "You now have everything the exam asks of you. What follows is where to find the parts that keep moving.",
+                  ["What the living version does that paper cannot", "Where to go next"],
+                  [repository_page(), closing()]))
+
+    # First pass: lay out pages so the contents can carry real numbers.
+    pages, entries, number = [], [], 2
+    layout = []
+    for num, title, blurb, bullets, body_pages in parts:
+        layout.append((num, title, blurb, bullets, body_pages))
+
+    running = 4  # cover 1, foreword 2, contents 3, first part opener 4
+    for num, title, blurb, bullets, body_pages in layout:
+        entries.append((num, title, blurb, running))
+        running += 1 + len(body_pages)
+
+    pages.append(cover())
+    pages.append(foreword())
+    pages.append(contents(entries))
+    for i, (num, title, blurb, bullets, body_pages) in enumerate(layout):
+        pages.append(part_opener(num, title, blurb, bullets, accents[i]))
+        pages.extend(body_pages)
+
+    numbered = []
+    for i, html in enumerate(pages, 1):
+        label = re.search(r'data-label="([^"]*)"', html)
+        label = label.group(1) if label else "Claude Certifications"
+        numbered.append(html.replace("__FOOT__", "" if i == 1 else foot(label, i)))
 
     return ("<!doctype html><html lang=\"en\"><head><meta charset=\"utf-8\">"
             "<title>Claude Certifications: the complete field guide</title>"
-            f"<style>{CSS}</style></head><body>{''.join(pages)}</body></html>")
+            f"<style>{CSS}</style></head><body>{''.join(numbered)}</body></html>")
 
 
 def main() -> int:
