@@ -17,7 +17,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from build_images import (  # noqa: E402
+from build_images import (footer_at,   # noqa: E402
     ASSETS, BODY, CARD, CORAL, FAINT, FONT, INK, MUTED, OLIVE, PAPER, PLUM, RULE, TEAL,
     avatar, claude_symbol, esc, footer, render,
 )
@@ -345,6 +345,50 @@ def study_plan_card():
     return chr(10).join(out)
 
 
+def flashcard_face(back):
+    """One card, drawn as a card: the credit line sits inside the border, so a
+    crop that removes it visibly cuts the card in half."""
+    W, H = 1000, 640
+    X, Y = 40, 36
+    CW, CH = W - 2 * X, H - 2 * Y
+    x0, x1 = X + 40, X + CW - 40
+    kicker, tag = ("ANSWER", "Back"), ("QUESTION", "Front  ·  tap to flip")
+    k, note = (kicker if back else tag)[0], (kicker if back else tag)[1]
+    out = [f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}"'
+           f' font-family="{FONT}" role="img" aria-label="Flashcard {"back: applications and integration at 33 percent" if back else "front: the heaviest domain on the Developer exam"}">',
+           f'<rect width="{W}" height="{H}" fill="{PAPER}"/>',
+           f'<rect x="{X}" y="{Y}" width="{CW}" height="{CH}" rx="16" fill="{CARD}" stroke="{OLIVE if back else RULE}"/>',
+           f'<clipPath id="card"><rect x="{X}" y="{Y}" width="{CW}" height="{CH}" rx="16"/></clipPath>',
+           f'<rect x="{X}" y="{Y}" width="{CW}" height="7" fill="{OLIVE}" clip-path="url(#card)"/>',
+           f'<text x="{x0}" y="{Y + 74}" font-size="13" font-weight="700" fill="{OLIVE}" letter-spacing="1.2">{k}</text>',
+           claude_symbol(x1 - 46, Y + 56, 0.38)]
+    if back:
+        out += [f'<text x="{x0}" y="{Y + 152}" font-size="34" font-weight="600" fill="{INK}">Applications and integration,</text>',
+                f'<text x="{x0}" y="{Y + 196}" font-size="34" font-weight="600" fill="{OLIVE}">33% of the paper</text>',
+                f'<text x="{x0}" y="{Y + 256}" font-size="16" fill="{MUTED}">A third of the exam sits in one domain. Study it first.</text>',
+                f'<rect x="{x0}" y="{Y + 282}" width="{int((x1 - x0) * 0.33)}" height="8" rx="4" fill="{OLIVE}"/>',
+                f'<rect x="{x0 + int((x1 - x0) * 0.33)}" y="{Y + 282}" width="{(x1 - x0) - int((x1 - x0) * 0.33)}" height="8" rx="4" fill="{RULE}"/>',
+                f'<text x="{x0}" y="{Y + 336}" font-size="13" fill="{FAINT}">blueprint  ·  developer-foundations</text>',
+                f'<text x="{x0}" y="{Y + 386}" font-size="14" fill="{MUTED}">Every fact, weight, rule, and term in the deck</text>']
+    else:
+        out += [f'<text x="{x0}" y="{Y + 146}" font-size="30" font-weight="600" fill="{INK}">Developer Foundations:</text>',
+                f'<text x="{x0}" y="{Y + 188}" font-size="30" font-weight="600" fill="{INK}">heaviest domain and its weight?</text>',
+                f'<text x="{x0}" y="{Y + 252}" font-size="16" fill="{MUTED}">Tap the card to reveal the answer.</text>',
+                f'<text x="{x0}" y="{Y + 320}" font-size="13" fill="{FAINT}">blueprint  ·  developer-foundations</text>',
+                f'<text x="{x0}" y="{Y + 386}" font-size="14" fill="{MUTED}">One of 110 cards, free for Anki, Quizlet, or RemNote</text>']
+    out.append(footer_at(x0, x1, Y + CH - 116, note))
+    out.append("</svg>")
+    return chr(10).join(out)
+
+
+def flashcard_front():
+    return flashcard_face(False)
+
+
+def flashcard_back():
+    return flashcard_face(True)
+
+
 def main() -> int:
     images = {
         "card-choose-certification.svg": choose_card(),
@@ -353,6 +397,8 @@ def main() -> int:
         "card-courses.svg": courses_card(),
         "card-scoring.svg": scoring_card(),
         "card-study-plan.svg": study_plan_card(),
+        "flashcard-front.svg": flashcard_front(),
+        "flashcard-back.svg": flashcard_back(),
     }
     for name, svg in images.items():
         path = ASSETS / name

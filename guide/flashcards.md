@@ -1,11 +1,205 @@
 # Flashcards
 
-Every fact, weight, rule, and term in this repository as a flashcard deck. The file [flashcards.tsv](../flashcards.tsv) imports directly into Anki, Quizlet, or RemNote: three tab-separated columns, front, back, and tags, so you can study one certification or one topic at a time.
+Every fact, weight, rule, and term in this repository as a deck of 110 cards. Turn them here, or take the file and study them anywhere.
+
+<div id="deck" class="quiz">
+  <noscript>The interactive deck needs JavaScript. Every card is written out further down this page.</noscript>
+</div>
+
+<script>
+(function () {
+  var mount = document.getElementById("deck");
+  if (!mount) return;
+
+  var CARDS = [], view = [], at = 0, tag = "all";
+
+  function el(t, c, x) { var n = document.createElement(t); if (c) n.className = c; if (x !== undefined) n.textContent = x; return n; }
+
+  // The same credit line the printed cards carry, inside the card border, so a
+  // screenshot of one face still says who made it and where it came from.
+  function credit(note) {
+    var row = el("div", "flip__credit");
+
+    var face = document.createElement("img");
+    face.src = "../assets/avatar.jpg";
+    face.alt = "";
+    face.className = "flip__avatar";
+    face.width = 28;
+    face.height = 28;
+    row.appendChild(face);
+
+    var who = el("span", "flip__who");
+    who.appendChild(el("strong", null, "Amey Thakur"));
+    who.appendChild(el("span", null, "github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS"));
+    row.appendChild(who);
+
+    var right = el("span", "flip__brand");
+    ["", "-dark"].forEach(function (v) {
+      var mark = document.createElement("img");
+      mark.src = "../assets/logos/anthropic-wordmark" + v + ".svg";
+      mark.alt = v ? "" : "Anthropic";
+      mark.className = "flip__wordmark " + (v ? "only-dark" : "only-light");
+      right.appendChild(mark);
+    });
+    right.appendChild(el("span", "flip__note", note));
+    row.appendChild(right);
+
+    return row;
+  }
+
+  // One face, laid out exactly as the printed cards are: olive rule across the
+  // top, kicker left and the Claude mark right, the text, then the credit.
+  function face(side, kicker, text, hint, tags, tagline, note) {
+    var f = el("div", "flip__face" + (side === "back" ? " flip__face--back" : ""));
+
+    var head = el("div", "flip__head");
+    head.appendChild(el("span", "flip__kicker", kicker));
+    var mark = el("span", "flip__mark");
+    [["", "only-light"], ["-ivory", "only-dark"]].forEach(function (v) {
+      var img = document.createElement("img");
+      img.src = "../assets/logos/claude-symbol" + v[0] + ".svg";
+      img.alt = v[1] === "only-light" ? "Claude" : "";
+      img.className = v[1];
+      mark.appendChild(img);
+    });
+    head.appendChild(mark);
+    f.appendChild(head);
+
+    f.appendChild(el("p", "flip__text", text));
+    f.appendChild(el("span", "flip__hint", hint));
+    f.appendChild(el("span", "flip__tags", tags.join("  ·  ")));
+    f.appendChild(el("span", "flip__tagline", tagline));
+    f.appendChild(credit(note));
+    return f;
+  }
+
+  function shuffle(a) {
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1)), t = a[i];
+      a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+
+  function tags() {
+    var seen = {};
+    CARDS.forEach(function (c) { c.tags.forEach(function (t) { seen[t] = (seen[t] || 0) + 1; }); });
+    return Object.keys(seen).sort();
+  }
+
+  function count(t) {
+    return CARDS.filter(function (c) { return c.tags.indexOf(t) >= 0; }).length;
+  }
+
+  function load(next) {
+    tag = next;
+    view = shuffle(tag === "all" ? CARDS.slice() : CARDS.filter(function (c) { return c.tags.indexOf(tag) >= 0; }));
+    at = 0;
+    draw();
+  }
+
+  function draw() {
+    mount.innerHTML = "";
+    var card = view[at];
+    var wrap = el("div", "quiz__card");
+
+    wrap.appendChild(el("span", "quiz__label", "Study"));
+
+    var pick = el("select", "quiz__select");
+    pick.setAttribute("aria-label", "Which cards to study");
+    var all = el("option", null, "Every card (" + CARDS.length + ")");
+    all.value = "all";
+    pick.appendChild(all);
+    tags().forEach(function (t) {
+      var o = el("option", null, t + " (" + count(t) + ")");
+      o.value = t;
+      pick.appendChild(o);
+    });
+    pick.value = tag;
+    pick.addEventListener("change", function () { load(pick.value); });
+    wrap.appendChild(pick);
+
+    var meta = el("div", "quiz__meta");
+    meta.appendChild(el("span", null, "Card " + (at + 1) + " of " + view.length));
+    meta.appendChild(el("span", null, tag === "all" ? "Whole deck" : tag));
+    wrap.appendChild(meta);
+
+    var bar = el("div", "quiz__bar");
+    var fill = el("div", "quiz__bar-fill");
+    fill.style.width = Math.round(100 * (at + 1) / view.length) + "%";
+    bar.appendChild(fill);
+    wrap.appendChild(bar);
+
+    var scene = el("div", "flip");
+    var inner = el("div", "flip__inner");
+
+    var front = face("front", "Question", card.front, "Tap the card, or press space, to turn it over",
+                     card.tags, "One of " + CARDS.length + " cards, free for Anki, Quizlet, or RemNote",
+                     "Front  ·  tap to flip");
+    var back = face("back", "Answer", card.back, "Tap again to go back to the question",
+                    card.tags, "Every fact, weight, rule, and term in the deck", "Back");
+
+    inner.appendChild(front);
+    inner.appendChild(back);
+    scene.appendChild(inner);
+    scene.setAttribute("role", "button");
+    scene.setAttribute("tabindex", "0");
+    scene.setAttribute("aria-label", "Flashcard. Activate to turn it over.");
+    scene.addEventListener("click", function () { inner.classList.toggle("is-turned"); });
+    scene.addEventListener("keydown", function (e) {
+      if (e.key === " " || e.key === "Enter") { e.preventDefault(); scene.click(); }
+    });
+    wrap.appendChild(scene);
+
+    var nav = el("div", "quiz__nav");
+    function button(label, primary, go) {
+      var b = el("button", "quiz__button" + (primary ? " quiz__button--primary" : ""), label);
+      b.type = "button";
+      b.addEventListener("click", go);
+      nav.appendChild(b);
+    }
+    button("Previous", false, function () { at = (at - 1 + view.length) % view.length; draw(); });
+    button("Next card", true, function () { at = (at + 1) % view.length; draw(); });
+    button("Shuffle", false, function () { shuffle(view); at = 0; draw(); });
+    wrap.appendChild(nav);
+
+    mount.appendChild(wrap);
+  }
+
+  document.addEventListener("keydown", function (e) {
+    if (!view.length || !mount.querySelector(".flip")) return;
+    if (e.target.tagName === "SELECT" || e.target.tagName === "INPUT") return;
+    if (e.key === "ArrowRight") { at = (at + 1) % view.length; draw(); }
+    if (e.key === "ArrowLeft") { at = (at - 1 + view.length) % view.length; draw(); }
+  });
+
+  fetch("../assets/flashcards.json")
+    .then(function (r) { return r.json(); })
+    .then(function (d) { CARDS = d.cards; load("all"); })
+    .catch(function () {
+      mount.appendChild(el("p", null, "The deck could not be loaded. Every card is written out further down this page."));
+    });
+})();
+</script>
+
+## Take the deck with you
+
+[flashcards.tsv](../flashcards.tsv) imports directly into Anki, Quizlet, or RemNote: three tab-separated columns, front, back, and tags, so you can study one certification or one topic at a time.
+
+```text
+https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/raw/main/flashcards.tsv
+```
 
 > [!TIP]
 > In Anki, choose File, then Import, select the file, set the field separator to Tab, and map the third column to Tags. Filter by a tag such as `developer-foundations` or `policy` to drill one area.
 
-The deck is generated from the same source as the documentation, so it cannot drift: 110 cards at last build.
+![A card, front face](../.github/assets/flashcard-front.png)
+
+![The same card turned over](../.github/assets/flashcard-back.png)
+
+## Every card in writing
+
+The full deck below, for reading, printing, or checking one fact quickly. It is generated from the same source as the rest of the documentation, so it cannot drift out of date.
 
 ## Exam facts
 
@@ -60,39 +254,39 @@ The deck is generated from the same source as the documentation, so it cannot dr
 | Associate – Foundations: Verify anything specific and consequential. Why? | Confidence is not evidence. |
 | Associate – Foundations: Omission fails too. Why? | Read the source, not only the output. |
 | Associate – Foundations: Anonymize, then analyze. Why? | Instructions are not a control. |
-| Associate – Foundations: complete the rule — Match the model to the task in both directions | Match the model to the task in both directions. |
-| Associate – Foundations: complete the rule — Structure beats intensifiers: role, sections, constraints, example | Structure beats intensifiers: role, sections, constraints, example. |
-| Associate – Foundations: complete the rule — Projects hold what repeats; prompts hold what changes | Projects hold what repeats; prompts hold what changes. |
-| Associate – Foundations: complete the rule — Project knowledge is maintained by you, not self-updating | Project knowledge is maintained by you, not self-updating. |
-| Associate – Foundations: complete the rule — Diagnose what changed before rewriting anything | Diagnose what changed before rewriting anything. |
-| Associate – Foundations: complete the rule — Escalate system integrations to Developer and Architect scope | Escalate system integrations to Developer and Architect scope. |
-| Developer – Foundations: complete the rule — stop_reason drives the loop: tool_use executes, end_turn finishes | stop_reason drives the loop: tool_use executes, end_turn finishes. |
-| Developer – Foundations: complete the rule — Batches for latency-tolerant volume: half cost, 24-hour window | Batches for latency-tolerant volume: half cost, 24-hour window. |
+| Associate – Foundations: finish the rule — Match the model to the ... | Match the model to the task in both directions. |
+| Associate – Foundations: finish the rule — Structure beats intensifiers: ... | Structure beats intensifiers: role, sections, constraints, example. |
+| Associate – Foundations: finish the rule — Projects hold what repeats; ... | Projects hold what repeats; prompts hold what changes. |
+| Associate – Foundations: finish the rule — Project knowledge is maintained by you, ... | Project knowledge is maintained by you, not self-updating. |
+| Associate – Foundations: finish the rule — Diagnose what changed ... | Diagnose what changed before rewriting anything. |
+| Associate – Foundations: finish the rule — Escalate system integrations to ... | Escalate system integrations to Developer and Architect scope. |
+| Developer – Foundations: finish the rule — stop_reason drives the loop: ... | stop_reason drives the loop: tool_use executes, end_turn finishes. |
+| Developer – Foundations: finish the rule — Batches for latency-tolerant volume: ... | Batches for latency-tolerant volume: half cost, 24-hour window. |
 | Developer – Foundations: Stable prefix first, then cache it. Why? | Cuts latency and cost together. |
-| Developer – Foundations: complete the rule — Enforce a schema, validate, retry with the validation error | Enforce a schema, validate, retry with the validation error. |
+| Developer – Foundations: finish the rule — Enforce a schema, ... | Enforce a schema, validate, retry with the validation error. |
 | Developer – Foundations: Known path is a workflow. Why? | Unknown path earns an agent. |
-| Developer – Foundations: complete the rule — Subagents exist to isolate context, not to add horsepower | Subagents exist to isolate context, not to add horsepower. |
-| Developer – Foundations: complete the rule — Pin model versions; upgrades become evaluated changes | Pin model versions; upgrades become evaluated changes. |
-| Developer – Foundations: complete the rule — Injection is defeated structurally, never by asking politely | Injection is defeated structurally, never by asking politely. |
-| Developer – Foundations: complete the rule — A tool the agent does not hold cannot be misused | A tool the agent does not hold cannot be misused. |
-| Architect – Foundations: complete the rule — Agent loops need engineered termination, not a token budget | Agent loops need engineered termination, not a token budget. |
-| Architect – Foundations: complete the rule — Escalate on policy gaps and lack of progress | Escalate on policy gaps and lack of progress. |
-| Architect – Foundations: complete the rule — Structured errors: a category and a retryable flag | Structured errors: a category and a retryable flag. |
+| Developer – Foundations: finish the rule — Subagents exist to isolate context, ... | Subagents exist to isolate context, not to add horsepower. |
+| Developer – Foundations: finish the rule — Pin model versions; ... | Pin model versions; upgrades become evaluated changes. |
+| Developer – Foundations: finish the rule — Injection is defeated structurally, ... | Injection is defeated structurally, never by asking politely. |
+| Developer – Foundations: finish the rule — A tool the agent does not ... | A tool the agent does not hold cannot be misused. |
+| Architect – Foundations: finish the rule — Agent loops need engineered termination, ... | Agent loops need engineered termination, not a token budget. |
+| Architect – Foundations: finish the rule — Escalate on policy gaps ... | Escalate on policy gaps and lack of progress. |
+| Architect – Foundations: finish the rule — Structured errors: ... | Structured errors: a category and a retryable flag. |
 | Architect – Foundations: Tool descriptions are the selection mechanism. Why? | Differentiate them. |
-| Architect – Foundations: complete the rule — Hard limits belong in the tool layer, never in a prompt | Hard limits belong in the tool layer, never in a prompt. |
-| Architect – Foundations: complete the rule — CLAUDE.md hierarchy, with path-scoped rules for conditional context | CLAUDE.md hierarchy, with path-scoped rules for conditional context. |
-| Architect – Foundations: complete the rule — CI means headless: print mode, JSON output, a schema | CI means headless: print mode, JSON output, a schema. |
-| Architect – Foundations: complete the rule — Subagents return findings; raw documents stay at the edge | Subagents return findings; raw documents stay at the edge. |
-| Architect – Foundations: complete the rule — Provenance must survive every handoff | Provenance must survive every handoff. |
-| Architect – Professional: complete the rule — Climb the pattern ladder only when the rung below cannot hold | Climb the pattern ladder only when the rung below cannot hold. |
-| Architect – Professional: complete the rule — Least privilege means removal, not monitoring | Least privilege means removal, not monitoring. |
-| Architect – Professional: complete the rule — Retrieval degradation after a data change is an index problem | Retrieval degradation after a data change is an index problem. |
-| Architect – Professional: complete the rule — Subjective quality is measured with rubrics and labeled sets | Subjective quality is measured with rubrics and labeled sets. |
-| Architect – Professional: complete the rule — Prompt changes are production changes: regression, then A/B | Prompt changes are production changes: regression, then A/B. |
-| Architect – Professional: complete the rule — Compliance is enforced before data crosses the boundary | Compliance is enforced before data crosses the boundary. |
-| Architect – Professional: complete the rule — Route human review by confidence and consequence | Route human review by confidence and consequence. |
-| Architect – Professional: complete the rule — Present segmented, honest numbers, never a flattering average | Present segmented, honest numbers, never a flattering average. |
-| Architect – Professional: complete the rule — Observability captures traces, not just outputs | Observability captures traces, not just outputs. |
+| Architect – Foundations: finish the rule — Hard limits belong in the tool layer, ... | Hard limits belong in the tool layer, never in a prompt. |
+| Architect – Foundations: finish the rule — CLAUDE.md hierarchy, ... | CLAUDE.md hierarchy, with path-scoped rules for conditional context. |
+| Architect – Foundations: finish the rule — CI means headless: ... | CI means headless: print mode, JSON output, a schema. |
+| Architect – Foundations: finish the rule — Subagents return findings; ... | Subagents return findings; raw documents stay at the edge. |
+| Architect – Foundations: finish the rule — Provenance must survive ... | Provenance must survive every handoff. |
+| Architect – Professional: finish the rule — Climb the pattern ladder only when ... | Climb the pattern ladder only when the rung below cannot hold. |
+| Architect – Professional: finish the rule — Least privilege means removal, ... | Least privilege means removal, not monitoring. |
+| Architect – Professional: finish the rule — Retrieval degradation after a data change ... | Retrieval degradation after a data change is an index problem. |
+| Architect – Professional: finish the rule — Subjective quality is measured with ... | Subjective quality is measured with rubrics and labeled sets. |
+| Architect – Professional: finish the rule — Prompt changes are production changes: ... | Prompt changes are production changes: regression, then A/B. |
+| Architect – Professional: finish the rule — Compliance is enforced before ... | Compliance is enforced before data crosses the boundary. |
+| Architect – Professional: finish the rule — Route human review by ... | Route human review by confidence and consequence. |
+| Architect – Professional: finish the rule — Present segmented, ... | Present segmented, honest numbers, never a flattering average. |
+| Architect – Professional: finish the rule — Observability captures traces, ... | Observability captures traces, not just outputs. |
 
 ## Policies and scoring
 

@@ -215,6 +215,26 @@ def image_page(title, blurb, image, label, note=None):
       <img class="full" src="{data_uri(image)}" alt="{title}" style="margin-top:3mm;max-height:128mm;object-fit:contain">{tail}''', label)
 
 
+def flashcard_page(label):
+    """Both faces of one card, so the deck is shown rather than described."""
+    return page(f'''<h2>The deck, one card at a time</h2>
+      <p class="muted" style="max-width:210mm">Every fact, domain weight, rule, and glossary term in this booklet is
+      also a flashcard. One hundred and ten of them, generated from the same source as everything you have read, so
+      they cannot drift out of date.</p>
+      <div class="cols" style="margin-top:4mm">
+        <div class="col"><img class="full" src="{data_uri("flashcard-front.png")}"
+          alt="A flashcard asking which domain carries the most weight on the Developer Foundations exam"
+          style="max-height:74mm;object-fit:contain"></div>
+        <div class="col"><img class="full" src="{data_uri("flashcard-back.png")}"
+          alt="The same card turned over, showing applications and integration at 33 percent"
+          style="max-height:74mm;object-fit:contain"></div>
+      </div>
+      <p class="small" style="margin-top:4mm">Turn them in the browser, filtered by exam or by topic, at
+      {link(SITE + "guide/flashcards/", SITE_URL + "guide/flashcards/")}, or download the deck as a single
+      tab-separated file that Anki, Quizlet, and RemNote all import directly. Use it for the facts that have to be
+      automatic on the day: weights, codes, retake windows, and the terms the questions assume you know.</p>''', label)
+
+
 def cert_page(cert, label=None):
     accent = ACCENTS[cert["slug"]]
     domains = "".join(
@@ -430,7 +450,8 @@ def build_html():
                   "What to study, in what order, and how to practise without touching material you are not allowed "
                   "to touch.",
                   ["The official curriculum and the exam each course serves",
-                   "A three-week plan that fits alongside a job", "A method, and practising within the agreement"],
+                   "A three-week plan that fits alongside a job", "The flashcard deck",
+                   "A method, and practising within the agreement"],
                   [image_page("The official curriculum",
                               "Every Anthropic course, free on the public Academy, and the exam each one serves.",
                               "card-courses.png", "Part 3: Prepare",
@@ -439,6 +460,7 @@ def build_html():
                               "Three weeks alongside a job: scope, then depth, then close.",
                               "card-study-plan.png", "Part 3: Prepare",
                               f'A progress tracker keeps this checklist for you, weighted by exam share, at {link(SITE, SITE_URL)}'),
+                   flashcard_page("Part 3: Prepare"),
                    preparing()]))
 
     parts.append((4, "Sit it",

@@ -11,16 +11,18 @@ consistent with the documentation instead of being maintained separately.
 Standard library only.
 """
 
+import json
 import re
 import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
 
-from build_images import CERTS  # noqa: E402
+from build_images import ASSETS, CERTS  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent.parent.parent
 TSV = ROOT / "flashcards.tsv"
+JSON_OUT = ASSETS / "flashcards.json"
 MD = ROOT / "guide" / "flashcards.md"
 
 NAMES = {
@@ -47,22 +49,36 @@ def exam_cards():
         yield (f"{name}: who is it for", cert["audience"], f"facts {tag}")
 
 
+def cloze(rule):
+    """Hide the half of a rule that carries its point, so the prompt cannot
+    answer itself. Cuts at the rule's own punctuation where it has any."""
+    body = rule.rstrip(".")
+    for mark in (": ", "; ", ", "):
+        if mark in body:
+            head, tail = body.split(mark, 1)
+            return f"{head}{mark.strip()} ...", tail.strip()
+    words = body.split()
+    cut = max(2, round(len(words) * 0.55))
+    return " ".join(words[:cut]) + " ...", " ".join(words[cut:])
+
+
 def rule_cards():
-    """Each cheat sheet rule becomes a prompt about the judgment it encodes."""
+    """Each cheat sheet rule becomes a prompt about the judgment it encodes.
+
+    A rule that explains itself is asked as a why question, since the reasoning
+    is the part worth holding. A rule that only states itself is asked as a
+    cloze, so recalling it takes recall rather than reading.
+    """
     for cert in CERTS:
         tag = cert["slug"]
         name = NAMES[cert["slug"]]
         for rule in cert["rules"]:
             if ". " in rule:
                 claim, explanation = rule.split(". ", 1)
+                yield (f"{name}: {claim}. Why?", explanation, f"rules {tag}")
             else:
-                claim, explanation = rule.rstrip("."), ""
-            front = f"{name}: complete the rule — {claim}"
-            back = rule
-            if explanation:
-                front = f"{name}: {claim}. Why?"
-                back = explanation
-            yield (front, back, f"rules {tag}")
+                head, _ = cloze(rule)
+                yield (f"{name}: finish the rule — {head}", rule, f"rules {tag}")
 
 
 def shared_cards():
@@ -121,6 +137,12 @@ def main() -> int:
     TSV.write_text("\n".join("\t".join(c) for c in unique) + "\n", encoding="utf-8")
     print(f"{TSV.name}: {len(unique)} cards")
 
+    # The website's flip cards read this; the TSV stays the portable export.
+    JSON_OUT.write_text(json.dumps(
+        {"cards": [{"front": f, "back": b, "tags": tg.split()} for f, b, tg in unique]},
+        indent=1) + chr(10), encoding="utf-8")
+    print(f"{JSON_OUT.name}: written")
+
     groups = {}
     for front, back, tags in unique:
         groups.setdefault(tags.split()[0], []).append((front, back))
@@ -128,18 +150,35 @@ def main() -> int:
     titles = {"facts": "Exam facts", "blueprint": "Blueprints and weights",
               "rules": "The rules that decide questions", "policy": "Policies and scoring",
               "glossary": "Glossary"}
+    widget = (Path(__file__).resolve().parent.parent / "pages" / "flashcards-widget.html").read_text(encoding="utf-8")
     body = [
         "# Flashcards",
         "",
-        "Every fact, weight, rule, and term in this repository as a flashcard deck. The file "
+        f"Every fact, weight, rule, and term in this repository as a deck of {len(unique)} cards. Turn them here, "
+        "or take the file and study them anywhere.",
+        "",
+        widget.rstrip(),
+        "",
+        "## Take the deck with you",
+        "",
         "[flashcards.tsv](../flashcards.tsv) imports directly into Anki, Quizlet, or RemNote: three tab-separated "
         "columns, front, back, and tags, so you can study one certification or one topic at a time.",
+        "",
+        "```text",
+        "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/raw/main/flashcards.tsv",
+        "```",
         "",
         "> [!TIP]\n> In Anki, choose File, then Import, select the file, set the field separator to Tab, and map the "
         "third column to Tags. Filter by a tag such as `developer-foundations` or `policy` to drill one area.",
         "",
-        f"The deck is generated from the same source as the documentation, so it cannot drift: "
-        f"{len(unique)} cards at last build.",
+        "![A card, front face](../.github/assets/flashcard-front.png)",
+        "",
+        "![The same card turned over](../.github/assets/flashcard-back.png)",
+        "",
+        "## Every card in writing",
+        "",
+        "The full deck below, for reading, printing, or checking one fact quickly. It is generated from the same "
+        "source as the rest of the documentation, so it cannot drift out of date.",
         "",
     ]
     for key in ("facts", "blueprint", "rules", "policy", "glossary"):

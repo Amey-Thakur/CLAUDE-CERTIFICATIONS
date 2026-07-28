@@ -1,0 +1,884 @@
+{
+ "cards": [
+  {
+   "front": "Associate \u2013 Foundations: exam code",
+   "back": "CCAO-F",
+   "tags": [
+    "facts",
+    "associate-foundations"
+   ]
+  },
+  {
+   "front": "Associate \u2013 Foundations: how many items",
+   "back": "60 items",
+   "tags": [
+    "facts",
+    "associate-foundations"
+   ]
+  },
+  {
+   "front": "Associate \u2013 Foundations: list fee before partner discount",
+   "back": "$99",
+   "tags": [
+    "facts",
+    "associate-foundations"
+   ]
+  },
+  {
+   "front": "Associate \u2013 Foundations: heaviest domain and its weight",
+   "back": "Output evaluation at 21%",
+   "tags": [
+    "blueprint",
+    "associate-foundations"
+   ]
+  },
+  {
+   "front": "Associate \u2013 Foundations: lightest domain and its weight",
+   "back": "Troubleshooting at 10%",
+   "tags": [
+    "blueprint",
+    "associate-foundations"
+   ]
+  },
+  {
+   "front": "Associate \u2013 Foundations: domains in weight order",
+   "back": "Output evaluation 21% \u2192 Workflow integration 16% \u2192 Governance and risk 15% \u2192 Prompting 14% \u2192 Product and model choice 12% \u2192 Configuration 12% \u2192 Troubleshooting 10%",
+   "tags": [
+    "blueprint",
+    "associate-foundations"
+   ]
+  },
+  {
+   "front": "Associate \u2013 Foundations: who is it for",
+   "back": "Consultants, sellers, and delivery leads",
+   "tags": [
+    "facts",
+    "associate-foundations"
+   ]
+  },
+  {
+   "front": "Developer \u2013 Foundations: exam code",
+   "back": "CCDV-F",
+   "tags": [
+    "facts",
+    "developer-foundations"
+   ]
+  },
+  {
+   "front": "Developer \u2013 Foundations: how many items",
+   "back": "53 items",
+   "tags": [
+    "facts",
+    "developer-foundations"
+   ]
+  },
+  {
+   "front": "Developer \u2013 Foundations: list fee before partner discount",
+   "back": "$125",
+   "tags": [
+    "facts",
+    "developer-foundations"
+   ]
+  },
+  {
+   "front": "Developer \u2013 Foundations: heaviest domain and its weight",
+   "back": "Applications and integration at 33%",
+   "tags": [
+    "blueprint",
+    "developer-foundations"
+   ]
+  },
+  {
+   "front": "Developer \u2013 Foundations: lightest domain and its weight",
+   "back": "Claude Code, eval at 6%",
+   "tags": [
+    "blueprint",
+    "developer-foundations"
+   ]
+  },
+  {
+   "front": "Developer \u2013 Foundations: domains in weight order",
+   "back": "Applications and integration 33% \u2192 Model selection and cost 17% \u2192 Agents and workflows 15% \u2192 Prompt and context 11% \u2192 Tools and MCP 11% \u2192 Security and safety 8% \u2192 Claude Code, eval 6%",
+   "tags": [
+    "blueprint",
+    "developer-foundations"
+   ]
+  },
+  {
+   "front": "Developer \u2013 Foundations: who is it for",
+   "back": "Engineers building on the Claude platform",
+   "tags": [
+    "facts",
+    "developer-foundations"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Foundations: exam code",
+   "back": "CCAR-F",
+   "tags": [
+    "facts",
+    "architect-foundations"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Foundations: how many items",
+   "back": "60 items",
+   "tags": [
+    "facts",
+    "architect-foundations"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Foundations: list fee before partner discount",
+   "back": "$125",
+   "tags": [
+    "facts",
+    "architect-foundations"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Foundations: heaviest domain and its weight",
+   "back": "Agentic architecture at 27%",
+   "tags": [
+    "blueprint",
+    "architect-foundations"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Foundations: lightest domain and its weight",
+   "back": "Context and reliability at 15%",
+   "tags": [
+    "blueprint",
+    "architect-foundations"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Foundations: domains in weight order",
+   "back": "Agentic architecture 27% \u2192 Claude Code workflows 20% \u2192 Prompting, structured output 20% \u2192 Tool design and MCP 18% \u2192 Context and reliability 15%",
+   "tags": [
+    "blueprint",
+    "architect-foundations"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Foundations: who is it for",
+   "back": "Architects building production systems",
+   "tags": [
+    "facts",
+    "architect-foundations"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Professional: exam code",
+   "back": "CCAR-P",
+   "tags": [
+    "facts",
+    "architect-professional"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Professional: how many items",
+   "back": "63 items",
+   "tags": [
+    "facts",
+    "architect-professional"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Professional: list fee before partner discount",
+   "back": "$175",
+   "tags": [
+    "facts",
+    "architect-professional"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Professional: heaviest domain and its weight",
+   "back": "Integration at 19%",
+   "tags": [
+    "blueprint",
+    "architect-professional"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Professional: lightest domain and its weight",
+   "back": "Developer enablement at 7%",
+   "tags": [
+    "blueprint",
+    "architect-professional"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Professional: domains in weight order",
+   "back": "Integration 19% \u2192 Solution design 17% \u2192 Evaluation and testing 16% \u2192 Governance and risk 14% \u2192 Stakeholders, lifecycle 14% \u2192 Models and prompting 13% \u2192 Developer enablement 7%",
+   "tags": [
+    "blueprint",
+    "architect-professional"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Professional: who is it for",
+   "back": "Architects governing systems at scale",
+   "tags": [
+    "facts",
+    "architect-professional"
+   ]
+  },
+  {
+   "front": "Associate \u2013 Foundations: Verify anything specific and consequential. Why?",
+   "back": "Confidence is not evidence.",
+   "tags": [
+    "rules",
+    "associate-foundations"
+   ]
+  },
+  {
+   "front": "Associate \u2013 Foundations: Omission fails too. Why?",
+   "back": "Read the source, not only the output.",
+   "tags": [
+    "rules",
+    "associate-foundations"
+   ]
+  },
+  {
+   "front": "Associate \u2013 Foundations: Anonymize, then analyze. Why?",
+   "back": "Instructions are not a control.",
+   "tags": [
+    "rules",
+    "associate-foundations"
+   ]
+  },
+  {
+   "front": "Associate \u2013 Foundations: finish the rule \u2014 Match the model to the ...",
+   "back": "Match the model to the task in both directions.",
+   "tags": [
+    "rules",
+    "associate-foundations"
+   ]
+  },
+  {
+   "front": "Associate \u2013 Foundations: finish the rule \u2014 Structure beats intensifiers: ...",
+   "back": "Structure beats intensifiers: role, sections, constraints, example.",
+   "tags": [
+    "rules",
+    "associate-foundations"
+   ]
+  },
+  {
+   "front": "Associate \u2013 Foundations: finish the rule \u2014 Projects hold what repeats; ...",
+   "back": "Projects hold what repeats; prompts hold what changes.",
+   "tags": [
+    "rules",
+    "associate-foundations"
+   ]
+  },
+  {
+   "front": "Associate \u2013 Foundations: finish the rule \u2014 Project knowledge is maintained by you, ...",
+   "back": "Project knowledge is maintained by you, not self-updating.",
+   "tags": [
+    "rules",
+    "associate-foundations"
+   ]
+  },
+  {
+   "front": "Associate \u2013 Foundations: finish the rule \u2014 Diagnose what changed ...",
+   "back": "Diagnose what changed before rewriting anything.",
+   "tags": [
+    "rules",
+    "associate-foundations"
+   ]
+  },
+  {
+   "front": "Associate \u2013 Foundations: finish the rule \u2014 Escalate system integrations to ...",
+   "back": "Escalate system integrations to Developer and Architect scope.",
+   "tags": [
+    "rules",
+    "associate-foundations"
+   ]
+  },
+  {
+   "front": "Developer \u2013 Foundations: finish the rule \u2014 stop_reason drives the loop: ...",
+   "back": "stop_reason drives the loop: tool_use executes, end_turn finishes.",
+   "tags": [
+    "rules",
+    "developer-foundations"
+   ]
+  },
+  {
+   "front": "Developer \u2013 Foundations: finish the rule \u2014 Batches for latency-tolerant volume: ...",
+   "back": "Batches for latency-tolerant volume: half cost, 24-hour window.",
+   "tags": [
+    "rules",
+    "developer-foundations"
+   ]
+  },
+  {
+   "front": "Developer \u2013 Foundations: Stable prefix first, then cache it. Why?",
+   "back": "Cuts latency and cost together.",
+   "tags": [
+    "rules",
+    "developer-foundations"
+   ]
+  },
+  {
+   "front": "Developer \u2013 Foundations: finish the rule \u2014 Enforce a schema, ...",
+   "back": "Enforce a schema, validate, retry with the validation error.",
+   "tags": [
+    "rules",
+    "developer-foundations"
+   ]
+  },
+  {
+   "front": "Developer \u2013 Foundations: Known path is a workflow. Why?",
+   "back": "Unknown path earns an agent.",
+   "tags": [
+    "rules",
+    "developer-foundations"
+   ]
+  },
+  {
+   "front": "Developer \u2013 Foundations: finish the rule \u2014 Subagents exist to isolate context, ...",
+   "back": "Subagents exist to isolate context, not to add horsepower.",
+   "tags": [
+    "rules",
+    "developer-foundations"
+   ]
+  },
+  {
+   "front": "Developer \u2013 Foundations: finish the rule \u2014 Pin model versions; ...",
+   "back": "Pin model versions; upgrades become evaluated changes.",
+   "tags": [
+    "rules",
+    "developer-foundations"
+   ]
+  },
+  {
+   "front": "Developer \u2013 Foundations: finish the rule \u2014 Injection is defeated structurally, ...",
+   "back": "Injection is defeated structurally, never by asking politely.",
+   "tags": [
+    "rules",
+    "developer-foundations"
+   ]
+  },
+  {
+   "front": "Developer \u2013 Foundations: finish the rule \u2014 A tool the agent does not ...",
+   "back": "A tool the agent does not hold cannot be misused.",
+   "tags": [
+    "rules",
+    "developer-foundations"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Foundations: finish the rule \u2014 Agent loops need engineered termination, ...",
+   "back": "Agent loops need engineered termination, not a token budget.",
+   "tags": [
+    "rules",
+    "architect-foundations"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Foundations: finish the rule \u2014 Escalate on policy gaps ...",
+   "back": "Escalate on policy gaps and lack of progress.",
+   "tags": [
+    "rules",
+    "architect-foundations"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Foundations: finish the rule \u2014 Structured errors: ...",
+   "back": "Structured errors: a category and a retryable flag.",
+   "tags": [
+    "rules",
+    "architect-foundations"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Foundations: Tool descriptions are the selection mechanism. Why?",
+   "back": "Differentiate them.",
+   "tags": [
+    "rules",
+    "architect-foundations"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Foundations: finish the rule \u2014 Hard limits belong in the tool layer, ...",
+   "back": "Hard limits belong in the tool layer, never in a prompt.",
+   "tags": [
+    "rules",
+    "architect-foundations"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Foundations: finish the rule \u2014 CLAUDE.md hierarchy, ...",
+   "back": "CLAUDE.md hierarchy, with path-scoped rules for conditional context.",
+   "tags": [
+    "rules",
+    "architect-foundations"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Foundations: finish the rule \u2014 CI means headless: ...",
+   "back": "CI means headless: print mode, JSON output, a schema.",
+   "tags": [
+    "rules",
+    "architect-foundations"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Foundations: finish the rule \u2014 Subagents return findings; ...",
+   "back": "Subagents return findings; raw documents stay at the edge.",
+   "tags": [
+    "rules",
+    "architect-foundations"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Foundations: finish the rule \u2014 Provenance must survive ...",
+   "back": "Provenance must survive every handoff.",
+   "tags": [
+    "rules",
+    "architect-foundations"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Professional: finish the rule \u2014 Climb the pattern ladder only when ...",
+   "back": "Climb the pattern ladder only when the rung below cannot hold.",
+   "tags": [
+    "rules",
+    "architect-professional"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Professional: finish the rule \u2014 Least privilege means removal, ...",
+   "back": "Least privilege means removal, not monitoring.",
+   "tags": [
+    "rules",
+    "architect-professional"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Professional: finish the rule \u2014 Retrieval degradation after a data change ...",
+   "back": "Retrieval degradation after a data change is an index problem.",
+   "tags": [
+    "rules",
+    "architect-professional"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Professional: finish the rule \u2014 Subjective quality is measured with ...",
+   "back": "Subjective quality is measured with rubrics and labeled sets.",
+   "tags": [
+    "rules",
+    "architect-professional"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Professional: finish the rule \u2014 Prompt changes are production changes: ...",
+   "back": "Prompt changes are production changes: regression, then A/B.",
+   "tags": [
+    "rules",
+    "architect-professional"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Professional: finish the rule \u2014 Compliance is enforced before ...",
+   "back": "Compliance is enforced before data crosses the boundary.",
+   "tags": [
+    "rules",
+    "architect-professional"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Professional: finish the rule \u2014 Route human review by ...",
+   "back": "Route human review by confidence and consequence.",
+   "tags": [
+    "rules",
+    "architect-professional"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Professional: finish the rule \u2014 Present segmented, ...",
+   "back": "Present segmented, honest numbers, never a flattering average.",
+   "tags": [
+    "rules",
+    "architect-professional"
+   ]
+  },
+  {
+   "front": "Architect \u2013 Professional: finish the rule \u2014 Observability captures traces, ...",
+   "back": "Observability captures traces, not just outputs.",
+   "tags": [
+    "rules",
+    "architect-professional"
+   ]
+  },
+  {
+   "front": "Passing score on every Claude certification exam",
+   "back": "720 on a scaled range of 100 to 1,000",
+   "tags": [
+    "facts",
+    "shared"
+   ]
+  },
+  {
+   "front": "Time limit on every Claude certification exam",
+   "back": "120 minutes, with about 135 minutes of total seat time",
+   "tags": [
+    "facts",
+    "shared"
+   ]
+  },
+  {
+   "front": "How long is a Claude credential valid",
+   "back": "12 months from the date it is earned",
+   "tags": [
+    "policy",
+    "shared"
+   ]
+  },
+  {
+   "front": "What does on-time renewal involve",
+   "back": "A free, open-book, non-proctored assessment on Anthropic Partner Academy, retakable as often as needed",
+   "tags": [
+    "policy",
+    "shared"
+   ]
+  },
+  {
+   "front": "What happens if a credential lapses",
+   "back": "You must pass the full exam again at full fee",
+   "tags": [
+    "policy",
+    "shared"
+   ]
+  },
+  {
+   "front": "Retake waiting periods after failed attempts",
+   "back": "14 days after the first, 30 after the second, 90 after the third",
+   "tags": [
+    "policy",
+    "shared"
+   ]
+  },
+  {
+   "front": "Maximum attempts per exam per rolling 12 months",
+   "back": "Four",
+   "tags": [
+    "policy",
+    "shared"
+   ]
+  },
+  {
+   "front": "Free cancellation or reschedule window",
+   "back": "At least 24 hours before the appointment; inside that, the fee is forfeited",
+   "tags": [
+    "policy",
+    "shared"
+   ]
+  },
+  {
+   "front": "Who delivers the exams",
+   "back": "Pearson VUE, online proctored through OnVUE or at a test centre",
+   "tags": [
+    "facts",
+    "shared"
+   ]
+  },
+  {
+   "front": "Where does the digital badge come from",
+   "back": "Credly, by email after a pass",
+   "tags": [
+    "facts",
+    "shared"
+   ]
+  },
+  {
+   "front": "Which exam does not count toward partner tier eligibility",
+   "back": "Claude Certified Associate",
+   "tags": [
+    "facts",
+    "shared"
+   ]
+  },
+  {
+   "front": "Partner tier discounts on exam fees",
+   "back": "Select, Preferred, and Global Premier partners receive 50% off, applied at checkout",
+   "tags": [
+    "facts",
+    "shared"
+   ]
+  },
+  {
+   "front": "How is the exam scored, in one phrase",
+   "back": "Criterion-referenced: against a fixed standard, not against other candidates",
+   "tags": [
+    "policy",
+    "shared"
+   ]
+  },
+  {
+   "front": "What does the score report show beyond pass or fail",
+   "back": "The scaled score and percent-correct per domain",
+   "tags": [
+    "policy",
+    "shared"
+   ]
+  },
+  {
+   "front": "Is there an official practice exam",
+   "back": "No. The previous platform's was retired in the Pearson migration; the exam guides' sample questions are the only official items",
+   "tags": [
+    "policy",
+    "shared"
+   ]
+  },
+  {
+   "front": "What is the authoritative scope of an exam",
+   "back": "The blueprint in its official exam guide; anything outside it is not tested",
+   "tags": [
+    "policy",
+    "shared"
+   ]
+  },
+  {
+   "front": "How many scenarios does Architect Foundations present, and from how many",
+   "back": "Four, drawn from a published bank of six",
+   "tags": [
+    "facts",
+    "architect-foundations"
+   ]
+  },
+  {
+   "front": "Are the exams open book",
+   "back": "No. No notes, documentation, translation tools, or AI assistants",
+   "tags": [
+    "policy",
+    "shared"
+   ]
+  },
+  {
+   "front": "Who may currently sit these exams",
+   "back": "People at Claude Partner Network organizations, registering with a recognised company email",
+   "tags": [
+    "policy",
+    "shared"
+   ]
+  },
+  {
+   "front": "How long do partner email domain record changes take",
+   "back": "7 to 10 days, so resolve them before you plan to sit",
+   "tags": [
+    "policy",
+    "shared"
+   ]
+  },
+  {
+   "front": "What does the exam NDA cover",
+   "back": "Questions, answer options, and scenarios, explicitly including study groups and online forums",
+   "tags": [
+    "policy",
+    "shared"
+   ]
+  },
+  {
+   "front": "Where can you take the official courses without a partner account",
+   "back": "The public Anthropic Academy; every course is free there",
+   "tags": [
+    "facts",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Blueprint",
+   "back": "The exam content outline in each exam guide: the domains measured, their weights, and the objectives items are written against. The authoritative scope of the exam",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Domain weight",
+   "back": "The approximate share of scored items drawn from a domain, for example 33.1% for the Developer exam's Applications and Integration domain",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Task statement",
+   "back": "A numbered capability within a domain, used in the Architect Foundations guide, that items are written against",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: MQC",
+   "back": "Minimally qualified candidate: the profile of the weakest examinee who should still pass, which the passing standard is calibrated to",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Criterion-referenced",
+   "back": "Scored against a fixed standard rather than against other candidates. There is no curve",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Scaled score",
+   "back": "The reported score on a 100 to 1,000 range, equated so results are comparable across exam forms of slightly different difficulty",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Cut score",
+   "back": "The passing threshold: 720 scaled, for all four exams",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Item",
+   "back": "An exam question. Multiple-choice items have one best answer; multiple-response items state how many responses to select",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Scenario-based exam",
+   "back": "The Architect Foundations format: 4 scenarios drawn from a published bank of 6, each framing a set of items",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Exam form",
+   "back": "A specific assembled version of an exam; forms vary slightly, which scaled scoring corrects for",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: NDA",
+   "back": "The non-disclosure agreement accepted before the exam starts: exam content may not be shared, reproduced, or discussed, including in study groups and forums",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Pearson VUE",
+   "back": "The company that delivers the exams, online and at test centers, since June 30, 2026",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: OnVUE",
+   "back": "Pearson's online proctoring application, run on your own computer under remote supervision",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Test center",
+   "back": "A physical Pearson location with provided equipment, the alternative to online proctoring",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Credly",
+   "back": "The digital badging platform that issues the shareable credential after a pass",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: CPN",
+   "back": "The Claude Partner Network, whose member organizations are eligible for certification",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Partner tier",
+   "back": "An organization's CPN level: Registered pays list price; Select, Preferred, and Global Premier receive 50% off exams",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Prep path",
+   "back": "The curated course sequence on Partner Academy for a specific certification",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Exam guide",
+   "back": "The official PDF for each certification: blueprint, sample questions, policies, and scoring. The single most important study document",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Renewal assessment",
+   "back": "The free, open-book, non-proctored assessment on Partner Academy that extends a credential 12 months when passed before expiry",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Lapse",
+   "back": "Letting a credential expire without renewing; regaining it requires the full exam at full fee",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Appeal",
+   "back": "A formal challenge to a certification decision or result, filed with Pearson within 14 days",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Question report",
+   "back": "Flagging a possibly faulty item to Pearson; separate from an appeal and never counted against you",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  },
+  {
+   "front": "Glossary: Accommodations",
+   "back": "Testing adjustments for documented needs, requested through Pearson and approved before scheduling",
+   "tags": [
+    "glossary",
+    "shared"
+   ]
+  }
+ ]
+}

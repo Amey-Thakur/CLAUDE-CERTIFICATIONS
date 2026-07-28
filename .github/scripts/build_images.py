@@ -162,16 +162,20 @@ def avatar(x, y, size):
     )
 
 
-def footer(width, y, note=None):
-    """Shared credit strip: who made it, where it lives, and whose program it documents."""
-    parts = [f'<line x1="70" y1="{y}" x2="{width - 70}" y2="{y}" stroke="{RULE}"/>']
-    parts.append(avatar(70, y + 20, 40))
-    parts.append(f'<text x="124" y="{y + 40}" font-size="15" font-weight="600" fill="{BODY}">{AUTHOR}</text>')
-    parts.append(f'<text x="124" y="{y + 58}" font-size="13.5" fill="{MUTED}">{REPO}</text>')
-    parts.append(anthropic_wordmark(width - 200, y + 26, 130))
+def footer_at(x0, x1, y, note=None):
+    """The standing credit line: who made this, where it lives, whose exams it covers."""
+    parts = [f'<line x1="{x0}" y1="{y}" x2="{x1}" y2="{y}" stroke="{RULE}"/>']
+    parts.append(avatar(x0, y + 20, 40))
+    parts.append(f'<text x="{x0 + 54}" y="{y + 40}" font-size="15" font-weight="600" fill="{BODY}">{AUTHOR}</text>')
+    parts.append(f'<text x="{x0 + 54}" y="{y + 58}" font-size="13.5" fill="{MUTED}">{REPO}</text>')
+    parts.append(anthropic_wordmark(x1 - 130, y + 26, 130))
     if note:
-        parts.append(f'<text x="{width - 70}" y="{y + 62}" font-size="12" fill="{FAINT}" text-anchor="end">{esc(note)}</text>')
+        parts.append(f'<text x="{x1}" y="{y + 62}" font-size="12" fill="{FAINT}" text-anchor="end">{esc(note)}</text>')
     return "".join(parts)
+
+
+def footer(width, y, note=None):
+    return footer_at(70, width - 70, y, note)
 
 
 def bar(x, y, width, value, maximum, colour, opacity=1.0):

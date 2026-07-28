@@ -1,0 +1,179 @@
+<div id="deck" class="quiz">
+  <noscript>The interactive deck needs JavaScript. Every card is written out further down this page.</noscript>
+</div>
+
+<script>
+(function () {
+  var mount = document.getElementById("deck");
+  if (!mount) return;
+
+  var CARDS = [], view = [], at = 0, tag = "all";
+
+  function el(t, c, x) { var n = document.createElement(t); if (c) n.className = c; if (x !== undefined) n.textContent = x; return n; }
+
+  // The same credit line the printed cards carry, inside the card border, so a
+  // screenshot of one face still says who made it and where it came from.
+  function credit(note) {
+    var row = el("div", "flip__credit");
+
+    var face = document.createElement("img");
+    face.src = "../assets/avatar.jpg";
+    face.alt = "";
+    face.className = "flip__avatar";
+    face.width = 28;
+    face.height = 28;
+    row.appendChild(face);
+
+    var who = el("span", "flip__who");
+    who.appendChild(el("strong", null, "Amey Thakur"));
+    who.appendChild(el("span", null, "github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS"));
+    row.appendChild(who);
+
+    var right = el("span", "flip__brand");
+    ["", "-dark"].forEach(function (v) {
+      var mark = document.createElement("img");
+      mark.src = "../assets/logos/anthropic-wordmark" + v + ".svg";
+      mark.alt = v ? "" : "Anthropic";
+      mark.className = "flip__wordmark " + (v ? "only-dark" : "only-light");
+      right.appendChild(mark);
+    });
+    right.appendChild(el("span", "flip__note", note));
+    row.appendChild(right);
+
+    return row;
+  }
+
+  // One face, laid out exactly as the printed cards are: olive rule across the
+  // top, kicker left and the Claude mark right, the text, then the credit.
+  function face(side, kicker, text, hint, tags, tagline, note) {
+    var f = el("div", "flip__face" + (side === "back" ? " flip__face--back" : ""));
+
+    var head = el("div", "flip__head");
+    head.appendChild(el("span", "flip__kicker", kicker));
+    var mark = el("span", "flip__mark");
+    [["", "only-light"], ["-ivory", "only-dark"]].forEach(function (v) {
+      var img = document.createElement("img");
+      img.src = "../assets/logos/claude-symbol" + v[0] + ".svg";
+      img.alt = v[1] === "only-light" ? "Claude" : "";
+      img.className = v[1];
+      mark.appendChild(img);
+    });
+    head.appendChild(mark);
+    f.appendChild(head);
+
+    f.appendChild(el("p", "flip__text", text));
+    f.appendChild(el("span", "flip__hint", hint));
+    f.appendChild(el("span", "flip__tags", tags.join("  ·  ")));
+    f.appendChild(el("span", "flip__tagline", tagline));
+    f.appendChild(credit(note));
+    return f;
+  }
+
+  function shuffle(a) {
+    for (var i = a.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1)), t = a[i];
+      a[i] = a[j]; a[j] = t;
+    }
+    return a;
+  }
+
+  function tags() {
+    var seen = {};
+    CARDS.forEach(function (c) { c.tags.forEach(function (t) { seen[t] = (seen[t] || 0) + 1; }); });
+    return Object.keys(seen).sort();
+  }
+
+  function count(t) {
+    return CARDS.filter(function (c) { return c.tags.indexOf(t) >= 0; }).length;
+  }
+
+  function load(next) {
+    tag = next;
+    view = shuffle(tag === "all" ? CARDS.slice() : CARDS.filter(function (c) { return c.tags.indexOf(tag) >= 0; }));
+    at = 0;
+    draw();
+  }
+
+  function draw() {
+    mount.innerHTML = "";
+    var card = view[at];
+    var wrap = el("div", "quiz__card");
+
+    wrap.appendChild(el("span", "quiz__label", "Study"));
+
+    var pick = el("select", "quiz__select");
+    pick.setAttribute("aria-label", "Which cards to study");
+    var all = el("option", null, "Every card (" + CARDS.length + ")");
+    all.value = "all";
+    pick.appendChild(all);
+    tags().forEach(function (t) {
+      var o = el("option", null, t + " (" + count(t) + ")");
+      o.value = t;
+      pick.appendChild(o);
+    });
+    pick.value = tag;
+    pick.addEventListener("change", function () { load(pick.value); });
+    wrap.appendChild(pick);
+
+    var meta = el("div", "quiz__meta");
+    meta.appendChild(el("span", null, "Card " + (at + 1) + " of " + view.length));
+    meta.appendChild(el("span", null, tag === "all" ? "Whole deck" : tag));
+    wrap.appendChild(meta);
+
+    var bar = el("div", "quiz__bar");
+    var fill = el("div", "quiz__bar-fill");
+    fill.style.width = Math.round(100 * (at + 1) / view.length) + "%";
+    bar.appendChild(fill);
+    wrap.appendChild(bar);
+
+    var scene = el("div", "flip");
+    var inner = el("div", "flip__inner");
+
+    var front = face("front", "Question", card.front, "Tap the card, or press space, to turn it over",
+                     card.tags, "One of " + CARDS.length + " cards, free for Anki, Quizlet, or RemNote",
+                     "Front  ·  tap to flip");
+    var back = face("back", "Answer", card.back, "Tap again to go back to the question",
+                    card.tags, "Every fact, weight, rule, and term in the deck", "Back");
+
+    inner.appendChild(front);
+    inner.appendChild(back);
+    scene.appendChild(inner);
+    scene.setAttribute("role", "button");
+    scene.setAttribute("tabindex", "0");
+    scene.setAttribute("aria-label", "Flashcard. Activate to turn it over.");
+    scene.addEventListener("click", function () { inner.classList.toggle("is-turned"); });
+    scene.addEventListener("keydown", function (e) {
+      if (e.key === " " || e.key === "Enter") { e.preventDefault(); scene.click(); }
+    });
+    wrap.appendChild(scene);
+
+    var nav = el("div", "quiz__nav");
+    function button(label, primary, go) {
+      var b = el("button", "quiz__button" + (primary ? " quiz__button--primary" : ""), label);
+      b.type = "button";
+      b.addEventListener("click", go);
+      nav.appendChild(b);
+    }
+    button("Previous", false, function () { at = (at - 1 + view.length) % view.length; draw(); });
+    button("Next card", true, function () { at = (at + 1) % view.length; draw(); });
+    button("Shuffle", false, function () { shuffle(view); at = 0; draw(); });
+    wrap.appendChild(nav);
+
+    mount.appendChild(wrap);
+  }
+
+  document.addEventListener("keydown", function (e) {
+    if (!view.length || !mount.querySelector(".flip")) return;
+    if (e.target.tagName === "SELECT" || e.target.tagName === "INPUT") return;
+    if (e.key === "ArrowRight") { at = (at + 1) % view.length; draw(); }
+    if (e.key === "ArrowLeft") { at = (at - 1 + view.length) % view.length; draw(); }
+  });
+
+  fetch("../assets/flashcards.json")
+    .then(function (r) { return r.json(); })
+    .then(function (d) { CARDS = d.cards; load("all"); })
+    .catch(function () {
+      mount.appendChild(el("p", null, "The deck could not be loaded. Every card is written out further down this page."));
+    });
+})();
+</script>

@@ -68,6 +68,103 @@
   font-size: 0.78rem;
 }
 
+/* Themed dropdown. The native select paints its open list in the operating
+   system's colors; dropdown.js swaps it for this, which takes the palette. */
+.pick {
+  position: relative;
+  width: 100%;
+  max-width: 30rem;
+}
+
+.pick__native {
+  display: none;
+}
+
+.pick__button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 4px;
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  font-family: inherit;
+  font-size: 0.8rem;
+  text-align: left;
+  cursor: pointer;
+}
+
+.pick__button:hover,
+.pick__button[aria-expanded="true"] {
+  border-color: var(--md-primary-fg-color);
+}
+
+.pick__button:focus-visible {
+  outline: 2px solid var(--md-accent-fg-color);
+  outline-offset: 1px;
+}
+
+.pick__value {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.pick__caret {
+  width: 12px;
+  height: 8px;
+  flex: none;
+  color: var(--md-default-fg-color--light);
+  transition: transform 0.15s ease;
+}
+
+.pick__button[aria-expanded="true"] .pick__caret {
+  transform: rotate(180deg);
+}
+
+.pick__list {
+  position: absolute;
+  z-index: 5;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  max-height: 17rem;
+  overflow-y: auto;
+  padding: 0.25rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 4px;
+  background: var(--md-default-bg-color);
+  box-shadow: 0 6px 20px rgb(31 30 27 / 12%);
+}
+
+.pick__option {
+  padding: 0.5rem 0.6rem;
+  border-radius: 3px;
+  font-size: 0.78rem;
+  line-height: 1.4;
+  color: var(--md-default-fg-color);
+  cursor: pointer;
+}
+
+.pick__option:hover,
+.pick__option:focus {
+  outline: none;
+  background: var(--md-code-bg-color);
+}
+
+.pick__option.is-selected {
+  color: var(--md-primary-fg-color);
+  font-weight: 600;
+}
+
+.pick__option.is-selected::after {
+  content: "\2713";
+  float: right;
+}
+
 .quiz__button {
   margin: 1.2rem 0.5rem 0 0;
   padding: 0.55rem 1.2rem;
@@ -255,6 +352,240 @@
 [data-md-color-scheme="slate"] .mermaid .sectionTitle,
 [data-md-color-scheme="slate"] .mermaid .titleText {
   fill: #e3e1dc !important;
+}
+
+/* Flashcards. The card turns on its vertical axis, slowly enough to read as
+   paper rather than as an effect, and not at all for readers who ask for that. */
+
+/* The deck's own chrome runs the full width of its panel, so the controls, the
+   counter, and the card all share one left and right edge. */
+#deck .quiz__card {
+  padding: 1.8rem 1.8rem 1.6rem;
+}
+
+#deck .quiz__label {
+  margin: 0 0 0.5rem;
+}
+
+#deck .quiz__select,
+#deck .pick {
+  max-width: none;
+  width: 100%;
+}
+
+#deck .quiz__meta {
+  align-items: baseline;
+  gap: 1rem;
+  margin-top: 1.1rem;
+}
+
+#deck .quiz__bar {
+  margin: 0.6rem 0 0;
+}
+
+#deck .quiz__nav {
+  margin-top: 0.4rem;
+}
+
+.flip {
+  perspective: 1400px;
+  margin: 1.4rem 0 0.6rem;
+  cursor: pointer;
+  outline: none;
+}
+
+.flip__inner {
+  position: relative;
+  min-height: 14rem;
+  transform-style: preserve-3d;
+  transition: transform 0.55s cubic-bezier(0.4, 0.1, 0.2, 1);
+}
+
+.flip__inner.is-turned {
+  transform: rotateY(180deg);
+}
+
+.flip__face {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 17rem;
+  padding: 1.9rem 2rem 1.6rem;
+  border: 1px solid var(--md-default-fg-color--lighter);
+  border-radius: 10px;
+  background: #ffffff;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  overflow: hidden;
+}
+
+[data-md-color-scheme="slate"] .flip__face {
+  background: var(--md-code-bg-color);
+}
+
+/* The olive rule the printed cards carry across the top. */
+.flip__face::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 5px;
+  background: #7d8c5c;
+}
+
+.flip__face--back {
+  position: absolute;
+  inset: 0;
+  transform: rotateY(180deg);
+  border-color: #7d8c5c;
+}
+
+.flip__head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.flip__kicker {
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #6d7b4e;
+}
+
+.flip__mark img {
+  width: 30px;
+  height: 30px;
+  display: block;
+}
+
+.flip__text {
+  margin: 1.1rem 0 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--md-default-fg-color);
+}
+
+.flip__face--back .flip__text {
+  font-weight: 500;
+}
+
+.flip__hint,
+.flip__tags,
+.flip__tagline {
+  font-size: 0.7rem;
+  line-height: 1.6;
+  color: var(--md-default-fg-color--light);
+}
+
+.flip__tags {
+  margin-top: 0.7rem;
+  font-size: 0.66rem;
+  color: var(--md-default-fg-color--lighter);
+}
+
+.flip__tagline {
+  margin-top: 0.5rem;
+}
+
+/* The credit sits inside the card, as it does on the printed cards. */
+.flip__credit {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
+}
+
+.flip__avatar {
+  width: 28px;
+  height: 28px;
+  flex: none;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 2px;
+  object-fit: cover;
+}
+
+.flip__who {
+  display: flex;
+  flex: 1;
+  min-width: 0;
+  flex-direction: column;
+  font-size: 0.64rem;
+  line-height: 1.35;
+  color: var(--md-default-fg-color--light);
+}
+
+.flip__who strong {
+  font-size: 0.7rem;
+  color: var(--md-default-fg-color);
+  white-space: nowrap;
+}
+
+.flip__who span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.flip__brand {
+  display: flex;
+  flex: none;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.15rem;
+}
+
+.flip__wordmark {
+  width: 84px;
+  height: auto;
+}
+
+.flip__note {
+  font-size: 0.6rem;
+  color: var(--md-default-fg-color--lighter);
+}
+
+.flip:focus-visible .flip__face,
+.flip:hover .flip__face {
+  border-color: var(--md-primary-fg-color);
+  border-top-color: #7d8c5c;
+}
+
+[data-md-color-scheme="slate"] .flip__kicker {
+  color: #9aad74;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flip__inner {
+    transition: none;
+  }
+}
+
+/* The card keeps its layout and type at every width. The only concession to a
+   narrow screen is that the padding tightens and the buttons share the row. */
+@media screen and (max-width: 44.9375em) {
+  #deck .quiz__card {
+    padding: 1.2rem 1.1rem 1.1rem;
+  }
+
+  .flip__face {
+    padding: 1.6rem 1.3rem 1.3rem;
+  }
+
+  .quiz__nav {
+    flex-wrap: wrap;
+  }
+
+  #deck .quiz__button {
+    flex: 1 1 auto;
+    margin-right: 0;
+  }
 }
 
 /* Progress tracker rows. */

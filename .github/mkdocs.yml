@@ -40,6 +40,9 @@ copyright: 'Maintained by <a href="https://github.com/Amey-Thakur">Amey Thakur</
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/dropdown.js
+
 markdown_extensions:
   - admonition
   - pymdownx.details

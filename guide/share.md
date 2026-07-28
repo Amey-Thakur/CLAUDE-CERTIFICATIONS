@@ -90,6 +90,7 @@ Posts with an image travel further than posts without one. Any of these work, an
 - The [cheat sheet](../associate-foundations/cheat-sheet.md) for the exam you are discussing
 - The [exam-day checklist](../.github/assets/card-exam-day.png), which candidates tend to save
 - The [six published scenarios](../.github/assets/card-architect-scenarios.png), for an Architect Foundations audience
+- A [flashcard](../.github/assets/flashcard-front.png) and [its answer](../.github/assets/flashcard-back.png), posted as a pair, which invites a reply before the answer lands
 
 ## One thing to leave out
 
