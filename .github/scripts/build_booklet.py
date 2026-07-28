@@ -320,6 +320,58 @@ def prompts_page(label):
       </div>''', label)
 
 
+def hard_won_page(label):
+    """The payoff for the promise the foreword makes. Every item here is a fact
+    from the official guides and policies, stated as the thing that actually
+    costs people a sitting rather than as a policy line."""
+    items = [
+        ("The blueprint is the scope, and it is enforced",
+         "Every exam guide says it plainly: anything outside the blueprint is not tested. People lose weeks "
+         "reading around the subject. Print the blueprint, mark each objective red, amber, or green, and study "
+         "red first."),
+        ("Study by weight, not by interest",
+         "Applications and integration is 33% of the Developer paper. Claude Code is 6%. Two evenings on the "
+         "wrong one is a real cost. The weights are published; use them as your timetable."),
+        ("A failed attempt costs weeks, not just money",
+         "Fourteen days before a second attempt, thirty before a third, ninety before a fourth, and four "
+         "attempts maximum in a rolling twelve months. That waiting period, not the fee, is what hurts."),
+        ("Book earlier than you feel ready",
+         "Rescheduling is free until twenty-four hours before. An early booking costs nothing and supplies the "
+         "deadline that makes the studying happen. Inside twenty-four hours the fee is gone."),
+        ("Most failed sittings are logistics",
+         "Run the OnVUE system test on the machine and the network you will actually use, not a different one. "
+         "A corporate network that blocks a single domain will end the exam after you have paid for it."),
+        ("Fix your partner email before you plan anything",
+         "Domain record changes take seven to ten days. Discovering this the week you meant to sit is the most "
+         "avoidable delay in the whole process."),
+        ("For Architect Foundations, rehearse all six scenarios",
+         "The exam presents four, drawn from a published set of six. They are not a surprise. Working through "
+         "all six beforehand converts the hardest paper into a familiar one."),
+        ("The credential expires in twelve months",
+         "Renewal is free, open book, and not proctored, so it is easy. Letting it lapse is not: you sit the "
+         "full exam again at full price. Put the date in a calendar the day you pass."),
+        ("Read the score report properly if you fail",
+         "It gives percent-correct by domain. Weight each by its share of the paper and you will usually find "
+         "the gap sits in one or two places, not everywhere."),
+        ("Closed book means closed book",
+         "No notes, no documentation, no translation tools, no Claude. Everything in this booklet is for "
+         "before the exam, not during it."),
+    ]
+    left = "".join(f'<p style="margin-bottom:3.5mm"><strong style="color:#1f1e1b">{h}.</strong> '
+                   f'<span class="muted">{b}</span></p>' for h, b in items[:5])
+    right = "".join(f'<p style="margin-bottom:3.5mm"><strong style="color:#1f1e1b">{h}.</strong> '
+                    f'<span class="muted">{b}</span></p>' for h, b in items[5:])
+    return page(f'''<h3>The part nobody writes down</h3>
+      <h1 style="font-size:25pt">What I would tell myself before the first exam</h1>
+      <p class="lead muted" style="max-width:220mm">Ten things that are all published somewhere, and that
+      almost nobody reads until it is too late to act on them. If you take one page from this booklet, take
+      this one.</p>
+      <div class="cols" style="margin-top:3mm;font-size:9.5pt">
+        <div class="col">{left}</div>
+        <div class="col">{right}</div>
+      </div>''', label)
+
+
 def cert_page(cert, label=None):
     accent = ACCENTS[cert["slug"]]
     domains = "".join(
@@ -584,6 +636,7 @@ def build_html():
     pages.append(cover())
     pages.append(foreword())
     pages.append(contents(entries))
+    pages.append(hard_won_page("Before you start"))
     for i, (num, title, blurb, bullets, body_pages) in enumerate(layout):
         pages.append(part_opener(num, title, blurb, bullets, accents[i]))
         pages.extend(body_pages)
