@@ -2,16 +2,23 @@
   "@context": "https://w3id.org/codemeta/3.0",
   "@type": "SoftwareSourceCode",
   "name": "Claude Certifications",
-  "description": "Study guides, official exam documents, and preparation resources for the Anthropic Claude certifications: Associate, Developer, and Architect.",
-  "version": "1.0.0",
+  "description": "Study guide for all four Anthropic Claude certifications: Associate, Developer, and Architect Foundations and Professional. Official exam guides, blueprints with domain weights, cheat sheets, 320 practice questions, three mock exams per certification, 110 flashcards, official videos, and a printable booklet.",
+  "version": "1.1.0",
   "dateCreated": "2026-07-27",
-  "dateModified": "2026-07-27",
+  "dateModified": "2026-07-28",
   "license": "https://spdx.org/licenses/MIT",
   "codeRepository": "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS",
   "issueTracker": "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/issues",
-  "url": "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS",
-  "programmingLanguage": ["Python"],
-  "operatingSystem": ["Windows", "macOS", "Linux"],
+  "url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/",
+  "programmingLanguage": [
+    "Python",
+    "JavaScript"
+  ],
+  "operatingSystem": [
+    "Windows",
+    "macOS",
+    "Linux"
+  ],
   "applicationCategory": "Education",
   "keywords": [
     "anthropic",
@@ -34,5 +41,6 @@
       "email": "ameythakur20@gmail.com",
       "url": "https://github.com/Amey-Thakur"
     }
-  ]
+  ],
+  "readme": "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/blob/main/README.md"
 }

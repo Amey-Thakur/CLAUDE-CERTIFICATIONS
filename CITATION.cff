@@ -5,10 +5,11 @@
 #   papers, posts, and other work.
 # License: MIT
 # Author: Amey Thakur (https://github.com/Amey-Thakur)
-# Date: 2026-07-27
+# Date: 2026-07-28
 cff-version: 1.2.0
 title: "Claude Certifications: study guides and official resources for the Anthropic Claude certification program"
 message: "If you use this resource, please cite it using the metadata below."
+abstract: "Study guide for all four Anthropic Claude certifications: Associate, Developer, and Architect Foundations and Professional. Official exam guides, blueprints with domain weights, cheat sheets, 320 practice questions, three mock exams per certification, 110 flashcards, official videos, and a printable booklet."
 type: software
 authors:
   - given-names: Amey
@@ -18,7 +19,7 @@ authors:
 repository-code: "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS"
 url: "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS"
 license: MIT
-version: "1.0.0"
+version: "1.1.0"
 date-released: "2026-07-27"
 keywords:
   - anthropic
