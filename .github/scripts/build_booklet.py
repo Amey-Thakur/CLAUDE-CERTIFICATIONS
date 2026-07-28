@@ -235,6 +235,91 @@ def flashcard_page(label):
       automatic on the day: weights, codes, retake windows, and the terms the questions assume you know.</p>''', label)
 
 
+def worked_question_page(label):
+    """One real question, worked through. The booklet describes the practice
+    material everywhere else; this is the page that shows it."""
+    return page(f'''<h3>What the questions actually look like</h3>
+      <h1 style="font-size:24pt">One question, worked through</h1>
+      <p class="lead muted" style="max-width:215mm">Every practice question in this repository is written
+      the way the real items are: a scenario, one best answer, and three distractors that each fail a stated
+      constraint. This one is from Architect Foundations. Read the scenario, commit to an answer, then read
+      the reasoning.</p>
+      <div class="callout" style="margin-top:4mm">
+        <strong>Agentic architecture.</strong> Your support agent resolves most tickets but sometimes loops
+        indefinitely, re-calling <code>lookup_order</code> on the same order. What is the correct structural fix?
+        <div style="margin-top:3mm;line-height:1.7">
+          A. Raise <code>max_tokens</code> so the loop has room to finish<br>
+          B. Remove the <code>lookup_order</code> tool<br>
+          C. Add explicit loop-termination conditions: cap tool iterations, detect repeated identical calls,
+             and route to escalation<br>
+          D. Lower the temperature
+        </div>
+      </div>
+      <div class="cols" style="margin-top:4mm">
+        <div class="col">
+          <h3>The answer is C</h3>
+          <p>Agent loops need engineered termination: an iteration budget, detection of repeated identical
+          calls, and an escalation path for when the agent cannot make progress. The fix is structural, not a
+          setting.</p>
+          <h3 style="margin-top:4mm">Why the others are wrong</h3>
+          <p>Raising the token budget (A) delays the symptom without bounding the loop. Removing the tool (B)
+          breaks the resolution the agent exists to perform. Lowering the temperature (D) changes how the model
+          words things and does nothing to iteration.</p>
+        </div>
+        <div class="col">
+          <h3>What the question is really testing</h3>
+          <p>Not whether you know what an agent is. Whether you reach for a control when you see unbounded
+          autonomy. Every distractor here is something a working engineer might genuinely try first, which is
+          exactly how the real exam builds its options: plausible, and wrong for a reason you can name.</p>
+          <div class="callout" style="margin-top:3mm">
+            <strong>There are 319 more.</strong> Three hundred and twenty original questions, eighty per
+            certification, split between topic practice and three timed mock exams each. Every one carries this
+            kind of reasoning, not just a letter.
+            <div style="margin-top:2mm;font-weight:600">{link(SITE, SITE_URL)}</div>
+          </div>
+        </div>
+      </div>''', label)
+
+
+def prompts_page(label):
+    """Two prompts that work immediately, and a pointer to the rest."""
+    return page(f'''<h3>Study with Claude</h3>
+      <h1 style="font-size:24pt">Two prompts worth keeping</h1>
+      <p class="lead muted" style="max-width:215mm">Claude is the most patient tutor you will get, but only if
+      you ask properly. These two do more than any others. Type them as written and fill in the braces.</p>
+      <div class="cols" style="margin-top:3mm">
+        <div class="col">
+          <h3>Find out where you actually stand</h3>
+          <p class="small">Run this before you study anything. It produces a ranked list, which beats working
+          through the syllabus in order.</p>
+          <div class="callout small" style="line-height:1.6">
+            You are helping me prepare for the {{exam}} exam. Here is the published blueprint with the weight
+            of each domain: {{paste the domain table}}.<br><br>
+            Ask me one question at a time, twelve in total, spread across the domains in proportion to their
+            weight. Scenario-based, one best answer, four options. Do not tell me the answer until I have
+            committed to one.<br><br>
+            After all twelve, give me a score per domain, the two domains where I am weakest in weight order,
+            what specifically I misunderstood rather than which questions I missed, and what to study first.
+          </div>
+        </div>
+        <div class="col">
+          <h3>Understand a question you got wrong</h3>
+          <p class="small">The highest-value minute in your preparation. A wrong answer you understand is worth
+          more than ten right ones you guessed.</p>
+          <div class="callout small" style="line-height:1.6">
+            I got this practice question wrong. Question: {{paste it with all four options}}. I chose:
+            {{your answer}}. The correct answer is: {{the answer}}.<br><br>
+            Do not just restate the rationale. Tell me what rule the question is actually testing, why the
+            option I chose is attractive and what constraint it fails, what would have to change in the
+            scenario for my answer to become correct, and two other situations where the same rule decides it.
+          </div>
+          <p class="small" style="margin-top:3mm">Seven more, including a study planner, an Architect scenario
+          rehearsal, and one that reads a real score report and tells you the smallest gap to close, are at
+          {link(SITE + "/guide/prompts", SITE_URL + "/guide/prompts.html")}</p>
+        </div>
+      </div>''', label)
+
+
 def cert_page(cert, label=None):
     accent = ACCENTS[cert["slug"]]
     domains = "".join(
@@ -344,11 +429,13 @@ def repository_page():
           <h3>Practise, not just read</h3>
           <p>A bank of original practice questions with a shuffled, timed engine that runs in your browser or your
           terminal. It reorders questions and options on every run, so nothing can be memorised by position, and it
-          scores you per domain the way the real report does.</p>
+          scores you per domain the way the real report does. Three timed mock exams per certification, each
+          with questions that appear nowhere else, so a second sitting still measures something.</p>
           <h3 style="margin-top:4mm">Study the way you already study</h3>
           <p>A flashcard deck covering every fact, domain weight, rule, and term, in a format Anki, Quizlet, and
           RemNote all import directly. A progress tracker that weights each domain by its share of the exam, so the
-          number tells you how much of the paper you can actually answer.</p>
+          number tells you how much of the paper you can actually answer. Anthropic's own videos, including the
+          complete AI Fluency course, arranged by the exam each one serves and playable in the page.</p>
           <h3 style="margin-top:4mm">A coach that knows the blueprint</h3>
           <p>Open the repository in Claude Code and six commands are waiting: run a diagnostic to find weak domains,
           drill one of them, sit a timed mock, build a study plan or a week of sessions, and interpret a real score
@@ -451,6 +538,7 @@ def build_html():
                   "to touch.",
                   ["The official curriculum and the exam each course serves",
                    "A three-week plan that fits alongside a job", "The flashcard deck",
+                   "One question worked through, and two prompts worth keeping",
                    "A method, and practising within the agreement"],
                   [image_page("The official curriculum",
                               "Every Anthropic course, free on the public Academy, and the exam each one serves.",
@@ -461,6 +549,8 @@ def build_html():
                               "card-study-plan.png", "Part 3: Prepare",
                               f'A progress tracker keeps this checklist for you, weighted by exam share, at {link(SITE, SITE_URL)}'),
                    flashcard_page("Part 3: Prepare"),
+                   worked_question_page("Part 3: Prepare"),
+                   prompts_page("Part 3: Prepare"),
                    preparing()]))
 
     parts.append((4, "Sit it",
