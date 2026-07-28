@@ -46,7 +46,7 @@ Every exam: 120 minutes, closed book, proctored by Pearson VUE online or at a te
 > [!TIP]
 > Every course in the program is free on the public [Anthropic Academy](https://anthropic.skilljar.com/), no partner account needed. Only the proctored exams require Claude Partner Network membership, so you can learn the whole syllabus before deciding whether to certify.
 >
-> Prefer one file? The whole guide is a printable booklet: [claude-certifications-booklet.pdf](claude-certifications-booklet.pdf), thirty-one pages in five parts: choose your exam, know it, prepare, sit it, and keep going.
+> Prefer one file? The whole guide is a printable booklet: [claude-certifications-booklet.pdf](claude-certifications-booklet.pdf), thirty-two pages in five parts: choose your exam, know it, prepare, sit it, and keep going.
 
 ## Start here
 

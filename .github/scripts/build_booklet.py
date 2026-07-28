@@ -372,6 +372,53 @@ def hard_won_page(label):
       </div>''', label)
 
 
+def proof_page(label):
+    """Twenty-one certificates with real dates, read from the gallery so the
+    page cannot fall out of step with the record."""
+    import datetime
+    text = (ROOT / "certificates" / "README.md").read_text(encoding="utf-8")
+    rows = re.findall(r"<b>([^<]+)</b>.*?<a href=\"([^\"]+\.pdf)\".*?Completed ([A-Z][a-z]+ \d{1,2}, \d{4})",
+                      text, re.S)
+    parsed = [(n.replace("&amp;", "and"), f, datetime.datetime.strptime(d, "%B %d, %Y")) for n, f, d in rows]
+    parsed.sort(key=lambda r: r[2])
+    first, last = parsed[0][2], parsed[-1][2]
+    span = (last - first).days
+    busiest = max(set(d.strftime("%B") for _, _, d in parsed),
+                  key=lambda m: sum(1 for _, _, d in parsed if d.strftime("%B") == m))
+    in_busiest = sum(1 for _, _, d in parsed if d.strftime("%B") == busiest)
+
+    half = (len(parsed) + 1) // 2
+    def column(rows_):
+        return "".join(
+            f'<tr><td style="padding:1mm 0;font-size:8.5pt">{n}</td>'
+            f'<td style="padding:1mm 0;font-size:8.5pt;color:#8a857c;text-align:right;white-space:nowrap">'
+            f'{d.strftime("%d %b")}</td></tr>' for n, _, d in rows_)
+
+    shots = ["claude-101.png", "building-with-the-claude-api.png",
+             "introduction-to-model-context-protocol.png", "teaching-ai-fluency.png"]
+    strip = "".join(
+        f'<img src="data:image/png;base64,{base64.b64encode((ROOT / "certificates" / "previews" / s).read_bytes()).decode()}"'
+        f' style="width:23%;border:1px solid #e0ddd4;border-radius:1mm">' for s in shots)
+
+    return page(f'''<h3>Receipts, not claims</h3>
+      <h1 style="font-size:25pt">Twenty-one courses, {span} days</h1>
+      <p class="lead muted" style="max-width:220mm">Every course in the official curriculum, completed before
+      this booklet was written. Dates are the completion dates on the certificates themselves, and every one is
+      publicly verifiable. The shape is honest: {in_busiest} of them in {busiest} alone, then a long tail as the
+      harder material and the newer courses landed.</p>
+
+      <div style="display:flex;gap:2%;margin:4mm 0 4mm">{strip}</div>
+
+      <div class="cols">
+        <div class="col"><table>{column(parsed[:half])}</table></div>
+        <div class="col"><table>{column(parsed[half:])}</table></div>
+      </div>
+
+      <p class="small" style="margin-top:2mm">First {first.strftime("%d %B %Y")}, last
+      {last.strftime("%d %B %Y")}. Every certificate, its PDF, and its Skilljar verification link is at
+      {link(SITE + "/certificates", SITE_URL + "/certificates/index.html")}. Check any of them.</p>''', label)
+
+
 def cert_page(cert, label=None):
     accent = ACCENTS[cert["slug"]]
     domains = "".join(
@@ -619,8 +666,9 @@ def build_html():
 
     parts.append((5, "Keep going",
                   "You now have everything the exam asks of you. What follows is where to find the parts that keep moving.",
-                  ["What the living version does that paper cannot", "Where to go next"],
-                  [repository_page(), closing()]))
+                  ["The twenty-one courses behind it, with dates",
+                   "What the living version does that paper cannot", "Where to go next"],
+                  [proof_page("Part 5: Keep going"), repository_page(), closing()]))
 
     # First pass: lay out pages so the contents can carry real numbers.
     pages, entries, number = [], [], 2
