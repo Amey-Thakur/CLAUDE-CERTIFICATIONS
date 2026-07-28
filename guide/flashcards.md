@@ -47,7 +47,7 @@ The full deck below, for reading, printing, or checking one fact quickly. It is 
 | Architect – Professional: who is it for | Architects governing systems at scale |
 | Passing score on every Claude certification exam | 720 on a scaled range of 100 to 1,000 |
 | Time limit on every Claude certification exam | 120 minutes, with about 135 minutes of total seat time |
-| Who delivers the exams | Pearson VUE, online proctored through OnVUE or at a test centre |
+| Who delivers the exams | Pearson VUE, online proctored through OnVUE or at a test center |
 | Where does the digital badge come from | Credly, by email after a pass |
 | Which exam does not count toward partner tier eligibility | Claude Certified Associate |
 | Partner tier discounts on exam fees | Select, Preferred, and Global Premier partners receive 50% off, applied at checkout |
@@ -127,7 +127,7 @@ The full deck below, for reading, printing, or checking one fact quickly. It is 
 | Is there an official practice exam | No. The previous platform's was retired in the Pearson migration; the exam guides' sample questions are the only official items |
 | What is the authoritative scope of an exam | The blueprint in its official exam guide; anything outside it is not tested |
 | Are the exams open book | No. No notes, documentation, translation tools, or AI assistants |
-| Who may currently sit these exams | People at Claude Partner Network organizations, registering with a recognised company email |
+| Who may currently sit these exams | People at Claude Partner Network organizations, registering with a recognized company email |
 | How long do partner email domain record changes take | 7 to 10 days, so resolve them before you plan to sit |
 | What does the exam NDA cover | Questions, answer options, and scenarios, explicitly including study groups and online forums |
 

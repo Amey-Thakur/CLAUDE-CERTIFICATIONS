@@ -34,7 +34,7 @@ GUIDE = [
     ("resources", "Official documentation, engineering articles, and code"),
     ("videos", "Anthropic's official videos, arranged by exam"),
     ("quiz", "A shuffled, timed practice engine drawn from 320 original questions"),
-    ("practice", "How to practise, and what practice material exists"),
+    ("practice", "How to practice, and what practice material exists"),
     ("flashcards", "110 flashcards, free for Anki, Quizlet, or RemNote"),
     ("tracker", "A progress tracker weighted by each domain's share of the exam"),
     ("registration", "Registering, scheduling, and preparing your machine for OnVUE"),

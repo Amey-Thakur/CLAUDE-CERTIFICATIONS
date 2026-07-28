@@ -1,6 +1,6 @@
 # Practice engine
 
-A shuffled, timed, scored practice exam drawn from the repository's bank of 100 questions across the four certifications. Every run samples different questions and reorders the options, so nothing can be memorised by position. Answers and rationales appear after you finish, with a per-domain breakdown in the style of the real score report.
+A shuffled, timed, scored practice exam drawn from the repository's bank of 100 questions across the four certifications. Every run samples different questions and reorders the options, so nothing can be memorized by position. Answers and rationales appear after you finish, with a per-domain breakdown in the style of the real score report.
 
 The questions are original, written against the public blueprints. They are not items from the live exam, which is covered by a [non-disclosure agreement](policies.md#confidentiality).
 

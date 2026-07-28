@@ -13,6 +13,7 @@ Standard library only.
 """
 
 import base64
+import json
 import re
 import subprocess
 import sys
@@ -99,8 +100,19 @@ li { margin-bottom: 1.2mm; }
 .foot .spacer { margin-left: auto; }
 .foot .pageno { margin-left: 6mm; font-weight: 600; color: #3d3a35;
                 min-width: 8mm; text-align: right; }
-.cover { display: flex; flex-direction: column; height: 100%; justify-content: center; }
-.cover .symbol { width: 22mm; margin-bottom: 8mm; }
+/* The cover is two blocks, not three: the mark and the title read as one
+   lockup so the page carries a single measured gap rather than two voids,
+   and the foot states what is inside before anyone turns a page. */
+.cover-page { padding-bottom: 16mm; }
+.cover { display: flex; flex-direction: column; height: 100%; }
+.cover-main { flex: 1; display: flex; flex-direction: column; justify-content: center; }
+.cover .symbol { width: 22mm; margin-bottom: 9mm; }
+.cover-foot { margin-top: auto; }
+.cover-stats { gap: 16mm; margin: 0 0 9mm; padding-top: 6mm; border-top: 1px solid #e0ddd4; }
+.cover-stats div { min-width: 30mm; }
+.cover-stats .v { font-size: 20pt; }
+.cover-stats .k { font-size: 9.5pt; }
+.cover-foot .byline { margin-top: 0; }
 .cover h1 { font-size: 42pt; }
 .chips { display: flex; gap: 3mm; margin: 6mm 0 0; flex-wrap: wrap; }
 .chip { font-size: 9.5pt; font-weight: 600; padding: 1.6mm 4mm; border-radius: 10mm; }
@@ -175,19 +187,34 @@ def part_opener(number, title, blurb, contents, accent):
       </div>''', f"Part {number}: {title}", accent)
 
 
-def cover():
+def cover_stats(total_pages):
+    """Counted from the artifacts themselves, so the cover cannot overstate."""
+    questions = len(json.loads((ROOT / "question-bank.json").read_text(encoding="utf-8"))["questions"])
+    cards = len([x for x in (ROOT / "flashcards.tsv").read_text(encoding="utf-8").splitlines() if x.strip()])
+    courses = len(list((ROOT / "certificates").glob("*.pdf")))
+    return [(f"{questions}", "practice questions"), (f"{cards}", "flashcards"),
+            (f"{courses}", "courses covered"), (f"{total_pages}", "pages")]
+
+
+def cover(total_pages):
     symbol = (ASSETS / "logos" / "claude-symbol.svg").read_text(encoding="utf-8")
     symbol_uri = "data:image/svg+xml;base64," + base64.b64encode(symbol.encode()).decode()
     chips = "".join(
         f'<span class="chip" style="background:{ACCENTS[c["slug"]]}1f;color:{ACCENTS[c["slug"]]}">'
         f'{c["role"].title()} {c["level"]}</span>' for c in CERTS)
-    return f'''<section class="page"><div class="rule-top"></div>
+    stats = "".join(f'<div><div class="v">{v}</div><div class="k">{k}</div></div>'
+                    for v, k in cover_stats(total_pages))
+    return f'''<section class="page cover-page"><div class="rule-top"></div>
       <div class="cover">
+        <div class="cover-main">
         <img class="symbol" src="{symbol_uri}" alt="">
         <h1>Claude Certifications</h1>
         <p class="lead" style="font-size:14pt;max-width:180mm">The complete field guide to the four Anthropic
         Claude certifications: what each exam measures, what it costs, how to prepare for it, and how to sit it.</p>
         <div class="chips">{chips}</div>
+        </div>
+        <div class="cover-foot">
+        <div class="kv cover-stats">{stats}</div>
         <div class="byline">
           <img src="{data_uri("avatar.jpg", "image/jpeg")}" alt="">
           <div>
@@ -196,8 +223,10 @@ def cover():
             through every course in the official curriculum.<br>{link(REPO, REPO_URL)}  ·  {link(SITE, SITE_URL)}</div>
           </div>
         </div>
-        <p class="small" style="margin-top:10mm;max-width:170mm">Facts drawn from the official Anthropic exam guides
-        and program pages. A community study resource, not affiliated with or endorsed by Anthropic. Free to share.</p>
+        <p class="small" style="margin-top:8mm;max-width:170mm;margin-bottom:0">Facts drawn from the official
+        Anthropic exam guides and program pages. A community study resource, not affiliated with or endorsed by
+        Anthropic. Free to share.</p>
+        </div>
       </div>__FOOT__
     </section>'''
 
@@ -228,7 +257,7 @@ def foreword():
           please tell me so I can fix it.</p>
           <div class="callout push" style="margin-bottom:0">I put this in one place so your time goes
           into learning rather than looking. If it helps you get certified, it did its job. Good luck.
-          <div style="margin-top:2.5mm;font-weight:600">{AUTHOR}</div></div>
+          <div style="margin-top:3mm;font-weight:600">– {AUTHOR}</div></div>
         </div>
       </div>''', "A note from the author", cls="roomy")
 
@@ -673,7 +702,7 @@ def closing():
       <div class="callout" style="margin:0 0 2.5mm">Whatever you are preparing for, the path is the same: read the
       blueprint, close the gaps honestly, build something real, and book the date. You do not need permission or a
       better moment.
-      <span style="font-weight:600;margin-left:1mm">{AUTHOR}</span></div>
+      <div style="margin-top:3mm;font-weight:600">– {AUTHOR}</div></div>
       <p class="small" style="margin-bottom:0">Facts drawn from the official Anthropic exam guides and program
       pages, verified against them on publication. A community study resource, not affiliated with or endorsed by
       Anthropic. Claude and Anthropic are trademarks of Anthropic PBC.</p>''', "Thank you", cls="roomy")
@@ -754,8 +783,8 @@ def build_html():
 
     # The front matter is assembled first so the contents can count it rather
     # than assume it. Adding a front page now corrects the page numbers itself.
-    front = [cover(), foreword(), None, hard_won_page("Before you start")]
-    contents_at = front.index(None)
+    front = [None, foreword(), None, hard_won_page("Before you start")]
+    cover_at, contents_at = 0, front.index(None, 1)
 
     running = len(front) + 1
     part_contents = []
@@ -764,6 +793,7 @@ def build_html():
         part_contents.append([(page_title(b), running + 1 + i) for i, b in enumerate(body_pages)])
         running += 1 + len(body_pages)
 
+    front[cover_at] = cover(running - 1)
     front[contents_at] = contents(entries)
     pages.extend(front)
     for i, (num, title, blurb, body_pages) in enumerate(layout):

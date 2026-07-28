@@ -13,7 +13,7 @@ The third and final timed practice exam, with fifteen more questions that appear
 
 **1.** An agentic design calls the same expensive tool repeatedly with identical arguments. What does this indicate?
 
-- A. Healthy retry behaviour
+- A. Healthy retry behavior
 - B. The tool is too fast
 - C. The agent is not retaining or reusing the result, which points at the state design
 - D. The model is too capable
@@ -122,7 +122,7 @@ The third and final timed practice exam, with fifteen more questions that appear
 
 | # | Answer | Domain | Why |
 | --- | --- | --- | --- |
-| 1 | C | Agentic Architecture | Repeating an identical call means the prior result is not available to the agent, which is a state problem. It is not retry behaviour (A), and neither tool speed (B) nor capability (D) explains it |
+| 1 | C | Agentic Architecture | Repeating an identical call means the prior result is not available to the agent, which is a state problem. It is not retry behavior (A), and neither tool speed (B) nor capability (D) explains it |
 | 2 | A | Agentic Architecture | Context isolation is the reason subagents exist. Length (B), tool difference (C), and parallelism (D) can all be handled within one context |
 | 3 | D | Agentic Architecture | Reversibility and gating bound the consequence, which is what the risk is. Capability (A), prompt length (B), and tools (C) affect the chance of error rather than its cost |
 | 4 | B | Claude Code Configuration & Workflows | Project memory is context and dilutes like any other. More is not automatically better (A), it is not free (C), and it does not speed anything up (D) |
@@ -134,7 +134,7 @@ The third and final timed practice exam, with fifteen more questions that appear
 | 10 | C | Tool Design & MCP Integration | Ambiguity at the point of selection is the fault, because the model chooses from descriptions. Code duplication (A), latency (B), and cost (D) are secondary consequences |
 | 11 | B | Tool Design & MCP Integration | An informative error keeps the model able to adapt. A closest-guess (A) and an empty result (C) are silently wrong, and terminating (D) discards a recoverable run |
 | 12 | A | Tool Design & MCP Integration | Authority that is not needed should not be granted. Retaining it for possible future use (B), documenting (C), or renaming (D) all leave the capability reachable |
-| 13 | A | Context Management & Reliability | Repetition and self-contradiction are the behavioural signature of lost state. Duration (B) and cost (C) rise for many reasons, and a tool error (D) is unrelated |
+| 13 | A | Context Management & Reliability | Repetition and self-contradiction are the behavioral signature of lost state. Duration (B) and cost (C) rise for many reasons, and a tool error (D) is unrelated |
 | 14 | B | Context Management & Reliability | Termination and measurement both depend on a definition of done. Cost (A), prompt length (C), and platform requirements (D) are not the reason |
 | 15 | C | Context Management & Reliability | Preventing silent error requires detection plus a response. Capability (A), examples (B), and context (D) improve the average case without catching the bad one |
 

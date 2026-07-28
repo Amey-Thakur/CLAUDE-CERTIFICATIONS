@@ -326,12 +326,12 @@
    "question": "Which statement about instructing a model not to do something is accurate?",
    "options": {
     "A": "An instruction in the prompt is an enforceable control",
-    "D": "An instruction shapes behaviour but does not guarantee it, so controls belong outside the prompt",
+    "D": "An instruction shapes behavior but does not guarantee it, so controls belong outside the prompt",
     "B": "Instructions are enforceable if placed in a system prompt",
     "C": "Instructions are enforceable if repeated several times"
    },
    "answer": "D",
-   "rationale": "Prompt instructions influence behaviour and are not guarantees, so anything that must hold is enforced in the surrounding system. Placement (B) and repetition (C) change the strength of the steer, not its nature, and treating it as enforcement (A) is the error the question tests."
+   "rationale": "Prompt instructions influence behavior and are not guarantees, so anything that must hold is enforced in the surrounding system. Placement (B) and repetition (C) change the strength of the steer, not its nature, and treating it as enforcement (A) is the error the question tests."
   },
   {
    "id": "associate-foundations-practice-22",
@@ -387,7 +387,7 @@
    "options": {
     "A": "Describing the structure in prose at the end of the prompt",
     "D": "Providing a filled example of the exact structure you want",
-    "B": "Asking for the output to be well organised",
+    "B": "Asking for the output to be well organized",
     "C": "Requesting the output twice and taking the better one"
    },
    "answer": "D",
@@ -811,7 +811,7 @@
     "D": "Remove the figure and note that it could not be verified"
    },
    "answer": "D",
-   "rationale": "An unverifiable claim should not be presented as fact, and a labelled gap is honest. A blanket disclaimer (A) does not address the specific figure, an unfounded estimate (B) misrepresents it, and a citation produced on demand (C) needs the same verification"
+   "rationale": "An unverifiable claim should not be presented as fact, and a labeled gap is honest. A blanket disclaimer (A) does not address the specific figure, an unfounded estimate (B) misrepresents it, and a citation produced on demand (C) needs the same verification"
   },
   {
    "id": "associate-foundations-mock-4",
@@ -991,7 +991,7 @@
     "D": "The input must be shortened"
    },
    "answer": "C",
-   "rationale": "Generation is not deterministic, so the design must tolerate variation within acceptable bounds. Treating it as breakage (A) misreads normal behaviour, a universal temperature rule (B) is too blunt, and input length (D) is unrelated"
+   "rationale": "Generation is not deterministic, so the design must tolerate variation within acceptable bounds. Treating it as breakage (A) misreads normal behavior, a universal temperature rule (B) is too blunt, and input length (D) is unrelated"
   },
   {
    "id": "associate-foundations-mock-1",
@@ -1201,7 +1201,7 @@
     "D": "Whether the account has hit a limit"
    },
    "answer": "B",
-   "rationale": "A behavioural change points to a change in inputs or configuration. Deprecation (A), network (C), and limits (D) produce errors rather than shorter answers"
+   "rationale": "A behavioral change points to a change in inputs or configuration. Deprecation (A), network (C), and limits (D) produce errors rather than shorter answers"
   },
   {
    "id": "associate-foundations-mock-15",
@@ -1381,7 +1381,7 @@
     "C": "Batch requests together and process them hourly"
    },
    "answer": "D",
-   "rationale": "A large, unchanging prefix is exactly what prompt caching exists for, and it cuts both cost and time to first token without changing behaviour. Trimming instructions (A) sacrifices capability, a smaller model (B) trades quality for price, and batching (C) breaks a per-request service."
+   "rationale": "A large, unchanging prefix is exactly what prompt caching exists for, and it cuts both cost and time to first token without changing behavior. Trimming instructions (A) sacrifices capability, a smaller model (B) trades quality for price, and batching (C) breaks a per-request service."
   },
   {
    "id": "developer-foundations-practice-12",
@@ -1628,7 +1628,7 @@
    "exam": "developer-foundations",
    "source": "practice",
    "domain": "Prompt and Context Engineering",
-   "question": "Where should stable, reusable instructions about role and behaviour be placed?",
+   "question": "Where should stable, reusable instructions about role and behavior be placed?",
    "options": {
     "B": "In the first user message of every conversation",
     "A": "In the system prompt, so they apply consistently across the exchange",
@@ -1711,7 +1711,7 @@
     "D": "Use a larger model, which is less susceptible"
    },
    "answer": "B",
-   "rationale": "Retrieved content is untrusted input, and the durable defence is that the model's authority is limited by the surrounding system rather than by its own compliance. Prompt instructions (A), phrase filters (C), and model size (D) are all bypassable."
+   "rationale": "Retrieved content is untrusted input, and the durable defense is that the model's authority is limited by the surrounding system rather than by its own compliance. Prompt instructions (A), phrase filters (C), and model size (D) are all bypassable."
   },
   {
    "id": "developer-foundations-practice-34",
@@ -1726,7 +1726,7 @@
     "D": "Provide access through a tool with no schema so it stays flexible"
    },
    "answer": "C",
-   "rationale": "Least privilege bounds the consequences of any mistake or manipulation, and it is enforced outside the prompt. Full credentials (A) and instruction-based restraint (B) rely on behaviour rather than control, and an unscoped tool (D) removes the boundary."
+   "rationale": "Least privilege bounds the consequences of any mistake or manipulation, and it is enforced outside the prompt. Full credentials (A) and instruction-based restraint (B) rely on behavior rather than control, and an unscoped tool (D) removes the boundary."
   },
   {
    "id": "developer-foundations-practice-35",
@@ -2116,7 +2116,7 @@
     "D": "Running out of context"
    },
    "answer": "C",
-   "rationale": "A defined success condition ends the loop correctly, and the ceiling bounds the failure case. A timeout alone (A) does not recognise success, the model's own judgment (B) is not a guarantee, and exhausting context (D) is a failure rather than a termination"
+   "rationale": "A defined success condition ends the loop correctly, and the ceiling bounds the failure case. A timeout alone (A) does not recognize success, the model's own judgment (B) is not a guarantee, and exhausting context (D) is a failure rather than a termination"
   },
   {
    "id": "developer-foundations-mock-11",
@@ -2168,7 +2168,7 @@
    "exam": "developer-foundations",
    "source": "mock",
    "domain": "Security and Safety",
-   "question": "Content retrieved from an external site contains instructions aimed at the model. What is the correct defence?",
+   "question": "Content retrieved from an external site contains instructions aimed at the model. What is the correct defense?",
    "options": {
     "A": "Instruct the model in the system prompt to ignore such content",
     "B": "Treat retrieved content as untrusted data and bound the model's permissions outside the prompt",
@@ -2337,11 +2337,11 @@
    "options": {
     "A": "The instruction always wins",
     "B": "The example always wins",
-    "C": "Behaviour becomes unpredictable between the two",
+    "C": "Behavior becomes unpredictable between the two",
     "D": "The request is rejected"
    },
    "answer": "C",
-   "rationale": "Contradictory signals produce inconsistent behaviour rather than a defined precedence. Neither the instruction (A) nor the example (B) reliably wins, and the request is not rejected (D)"
+   "rationale": "Contradictory signals produce inconsistent behavior rather than a defined precedence. Neither the instruction (A) nor the example (B) reliably wins, and the request is not rejected (D)"
   },
   {
    "id": "developer-foundations-mock-11",
@@ -2412,7 +2412,7 @@
    "options": {
     "A": "Slow responses",
     "B": "Rate limits",
-    "C": "A change that improves the target behaviour while quietly breaking another",
+    "C": "A change that improves the target behavior while quietly breaking another",
     "D": "Cost increases"
    },
    "answer": "C",
@@ -2941,7 +2941,7 @@
     "D": "The number of tool calls per run"
    },
    "answer": "A",
-   "rationale": "Health is defined by whether the system accomplishes the task and how it fails when it does not. Tokens (B), latency (C), and call counts (D) are cost and behaviour signals that say nothing about correctness."
+   "rationale": "Health is defined by whether the system accomplishes the task and how it fails when it does not. Tokens (B), latency (C), and call counts (D) are cost and behavior signals that say nothing about correctness."
   },
   {
    "id": "architect-foundations-mock-1",
@@ -3400,13 +3400,13 @@
    "domain": "Agentic Architecture",
    "question": "An agentic design calls the same expensive tool repeatedly with identical arguments. What does this indicate?",
    "options": {
-    "A": "Healthy retry behaviour",
+    "A": "Healthy retry behavior",
     "B": "The tool is too fast",
     "C": "The agent is not retaining or reusing the result, which points at the state design",
     "D": "The model is too capable"
    },
    "answer": "C",
-   "rationale": "Repeating an identical call means the prior result is not available to the agent, which is a state problem. It is not retry behaviour (A), and neither tool speed (B) nor capability (D) explains it"
+   "rationale": "Repeating an identical call means the prior result is not available to the agent, which is a state problem. It is not retry behavior (A), and neither tool speed (B) nor capability (D) explains it"
   },
   {
    "id": "architect-foundations-mock-2",
@@ -3586,7 +3586,7 @@
     "D": "A tool returns an error"
    },
    "answer": "A",
-   "rationale": "Repetition and self-contradiction are the behavioural signature of lost state. Duration (B) and cost (C) rise for many reasons, and a tool error (D) is unrelated"
+   "rationale": "Repetition and self-contradiction are the behavioral signature of lost state. Duration (B) and cost (C) rise for many reasons, and a tool error (D) is unrelated"
   },
   {
    "id": "architect-foundations-mock-14",
@@ -3836,12 +3836,12 @@
    "question": "What is the most important consideration when a solution must run across two clouds?",
    "options": {
     "A": "Using identical prompts in both",
-    "B": "Establishing which behaviours must be identical and evaluating for those on each platform",
+    "B": "Establishing which behaviors must be identical and evaluating for those on each platform",
     "C": "Choosing the cheaper platform for both",
     "D": "Deploying to whichever region is nearest"
    },
    "answer": "B",
-   "rationale": "Cross-platform equivalence is a requirement to be defined and then verified, not assumed. Identical prompts (A) do not guarantee identical behaviour, and cost (C) and proximity (D) do not address consistency."
+   "rationale": "Cross-platform equivalence is a requirement to be defined and then verified, not assumed. Identical prompts (A) do not guarantee identical behavior, and cost (C) and proximity (D) do not address consistency."
   },
   {
    "id": "architect-professional-practice-16",
@@ -3886,7 +3886,7 @@
     "D": "Acceptable if a larger model is used"
    },
    "answer": "A",
-   "rationale": "A regulatory control needs a guarantee, and probabilistic behaviour cannot supply one however high the measured accuracy. Accuracy (B), disclosure (C), and model size (D) do not convert a tendency into a guarantee."
+   "rationale": "A regulatory control needs a guarantee, and probabilistic behavior cannot supply one however high the measured accuracy. Accuracy (B), disclosure (C), and model size (D) do not convert a tendency into a guarantee."
   },
   {
    "id": "architect-professional-practice-19",
@@ -3938,10 +3938,10 @@
    "exam": "architect-professional",
    "source": "practice",
    "domain": "Evaluation, Testing & Optimization",
-   "question": "A prompt change improves the target metric but degrades an unmeasured behaviour. How is this best prevented?",
+   "question": "A prompt change improves the target metric but degrades an unmeasured behavior. How is this best prevented?",
    "options": {
     "B": "Changing one thing at a time",
-    "A": "Maintaining a regression suite that covers behaviours the system must not lose",
+    "A": "Maintaining a regression suite that covers behaviors the system must not lose",
     "C": "Reviewing changes more carefully",
     "D": "Limiting how often prompts change"
    },
@@ -3961,7 +3961,7 @@
     "D": "A change in cost"
    },
    "answer": "B",
-   "rationale": "Any change to the things that determine behaviour invalidates prior measurement. Waiting for incidents (A) detects late, a fixed schedule (C) is unrelated to actual change, and cost (D) does not affect correctness."
+   "rationale": "Any change to the things that determine behavior invalidates prior measurement. Waiting for incidents (A) detects late, a fixed schedule (C) is unrelated to actual change, and cost (D) does not affect correctness."
   },
   {
    "id": "architect-professional-practice-24",
@@ -4001,12 +4001,12 @@
    "question": "Who is accountable for a wrong decision produced by an automated Claude workflow?",
    "options": {
     "B": "The model provider",
-    "A": "The organisation that deployed the workflow",
+    "A": "The organization that deployed the workflow",
     "C": "The engineer who wrote the prompt",
     "D": "Nobody, since the output was automated"
    },
    "answer": "A",
-   "rationale": "Deploying an automated decision means owning its outcomes, which is why the boundaries of automation are an architectural decision. The provider (B) supplies a capability, individual authorship (C) does not transfer organisational responsibility, and automation does not remove accountability (D)."
+   "rationale": "Deploying an automated decision means owning its outcomes, which is why the boundaries of automation are an architectural decision. The provider (B) supplies a capability, individual authorship (C) does not transfer organizational responsibility, and automation does not remove accountability (D)."
   },
   {
    "id": "architect-professional-practice-27",
@@ -4030,13 +4030,13 @@
    "domain": "Stakeholder Communication & Lifecycle Management",
    "question": "A pilot succeeded with ten users and the business wants to roll out to two thousand. What should the architect raise first?",
    "options": {
-    "A": "The cost of additional licences",
+    "A": "The cost of additional licenses",
     "C": "Which assumptions held at ten users and may not hold at two thousand",
     "B": "The need for a larger model",
     "D": "The training schedule"
    },
    "answer": "C",
-   "rationale": "Scale invalidates assumptions about inputs, support, and edge cases, and naming those is the architect's contribution. Licences (A), model size (B), and training (D) are downstream of knowing what breaks."
+   "rationale": "Scale invalidates assumptions about inputs, support, and edge cases, and naming those is the architect's contribution. Licenses (A), model size (B), and training (D) are downstream of knowing what breaks."
   },
   {
    "id": "architect-professional-practice-29",
@@ -4096,14 +4096,14 @@
     "D": "Move all prompts into the system prompt"
    },
    "answer": "C",
-   "rationale": "Prompts that determine production behaviour deserve the same lifecycle as code. Centralising ownership (A) may not fit the organisation, freezing (B) blocks improvement, and relocation (D) does not address governance."
+   "rationale": "Prompts that determine production behavior deserve the same lifecycle as code. Centralising ownership (A) may not fit the organization, freezing (B) blocks improvement, and relocation (D) does not address governance."
   },
   {
    "id": "architect-professional-practice-33",
    "exam": "architect-professional",
    "source": "practice",
    "domain": "Developer Productivity & Operational Enablement",
-   "question": "An organisation wants consistent Claude Code practice across many repositories. What is the most durable approach?",
+   "question": "An organization wants consistent Claude Code practice across many repositories. What is the most durable approach?",
    "options": {
     "A": "A written policy circulated by email",
     "D": "Committed project memory and shared skills in each repository, reviewed like code",
@@ -4118,15 +4118,15 @@
    "exam": "architect-professional",
    "source": "practice",
    "domain": "Developer Productivity & Operational Enablement",
-   "question": "What is the most useful measure of whether a developer enablement programme is working?",
+   "question": "What is the most useful measure of whether a developer enablement program is working?",
    "options": {
     "B": "The number of people trained",
     "A": "Change in the outcomes the tooling was adopted to improve",
-    "C": "Licence utilisation",
+    "C": "License utilization",
     "D": "The volume of tool calls"
    },
    "answer": "A",
-   "rationale": "Enablement is justified by the outcome it moves, which is what should be measured. Attendance (B), utilisation (C), and activity (D) measure uptake rather than benefit."
+   "rationale": "Enablement is justified by the outcome it moves, which is what should be measured. Attendance (B), utilization (C), and activity (D) measure uptake rather than benefit."
   },
   {
    "id": "architect-professional-practice-35",
@@ -4148,11 +4148,11 @@
    "exam": "architect-professional",
    "source": "mock",
    "domain": "Solution Design & Architecture",
-   "question": "A retailer wants Claude to answer product questions from a 40,000-document catalogue that changes daily. Which architecture fits?",
+   "question": "A retailer wants Claude to answer product questions from a 40,000-document catalog that changes daily. Which architecture fits?",
    "options": {
-    "A": "Fine-tune a model on the catalogue nightly",
-    "C": "Retrieval over an index refreshed as the catalogue changes, with the model answering from retrieved context",
-    "B": "Load the catalogue into the system prompt",
+    "A": "Fine-tune a model on the catalog nightly",
+    "C": "Retrieval over an index refreshed as the catalog changes, with the model answering from retrieved context",
+    "B": "Load the catalog into the system prompt",
     "D": "An autonomous agent that browses the public website"
    },
    "answer": "C",
@@ -4441,7 +4441,7 @@
     "D": "Acceptable if a larger model is used"
    },
    "answer": "B",
-   "rationale": "A control that must hold needs a guarantee, which probabilistic behaviour cannot supply. High accuracy (A), documentation (C), and model size (D) do not convert a tendency into a guarantee"
+   "rationale": "A control that must hold needs a guarantee, which probabilistic behavior cannot supply. High accuracy (A), documentation (C), and model size (D) do not convert a tendency into a guarantee"
   },
   {
    "id": "architect-professional-mock-6",
@@ -4512,11 +4512,11 @@
    "options": {
     "A": "The model provider",
     "B": "The engineer who wrote the prompt",
-    "C": "The organisation that deployed it",
+    "C": "The organization that deployed it",
     "D": "No one, because the decision was automated"
    },
    "answer": "C",
-   "rationale": "Deploying an automated decision means owning its outcomes. The provider (A) supplies a capability, individual authorship (B) does not transfer organisational responsibility, and automation does not remove accountability (D)"
+   "rationale": "Deploying an automated decision means owning its outcomes. The provider (A) supplies a capability, individual authorship (B) does not transfer organizational responsibility, and automation does not remove accountability (D)"
   },
   {
    "id": "architect-professional-mock-11",
@@ -4541,7 +4541,7 @@
    "question": "A ten-user pilot is about to expand to two thousand users. What should the architect raise first?",
    "options": {
     "A": "Which assumptions held at ten users and may not hold at two thousand",
-    "B": "Licence cost",
+    "B": "License cost",
     "C": "Whether a larger model is needed",
     "D": "The training rollout plan"
    },
@@ -4583,7 +4583,7 @@
    "exam": "architect-professional",
    "source": "mock",
    "domain": "Developer Productivity & Operational Enablement",
-   "question": "An organisation wants consistent Claude Code practice across dozens of repositories. What is most durable?",
+   "question": "An organization wants consistent Claude Code practice across dozens of repositories. What is most durable?",
    "options": {
     "A": "A policy document circulated once",
     "B": "A single training session",
@@ -4598,7 +4598,7 @@
    "exam": "architect-professional",
    "source": "mock",
    "domain": "Integration",
-   "question": "A client will not accept a solution whose behaviour cannot be explained to their auditor. What does this constrain?",
+   "question": "A client will not accept a solution whose behavior cannot be explained to their auditor. What does this constrain?",
    "options": {
     "A": "The model family only",
     "B": "The cost model",
@@ -4606,7 +4606,7 @@
     "D": "The deployment region"
    },
    "answer": "C",
-   "rationale": "Auditability is an architectural property covering tracing and inspectable controls. Model family (A), cost (B), and region (D) do not by themselves make behaviour explicable"
+   "rationale": "Auditability is an architectural property covering tracing and inspectable controls. Model family (A), cost (B), and region (D) do not by themselves make behavior explicable"
   },
   {
    "id": "architect-professional-mock-2",
@@ -4726,7 +4726,7 @@
     "D": "Re-run the evaluation suite before the change reaches production traffic"
    },
    "answer": "D",
-   "rationale": "A change to the thing that determines behaviour invalidates prior measurement. Assuming compatibility (A) is unsafe, and monitoring (B) or reacting to complaints (C) detects after users are affected"
+   "rationale": "A change to the thing that determines behavior invalidates prior measurement. Assuming compatibility (A) is unsafe, and monitoring (B) or reacting to complaints (C) detects after users are affected"
   },
   {
    "id": "architect-professional-mock-10",
@@ -4771,14 +4771,14 @@
     "D": "The evaluation was wrong originally"
    },
    "answer": "A",
-   "rationale": "Behaviour changes with what is fed to it, and distribution drift is the usual cause. Models do not degrade unprompted (B), prompts do not wear out (C), and the original evaluation is not the first suspect (D)"
+   "rationale": "Behavior changes with what is fed to it, and distribution drift is the usual cause. Models do not degrade unprompted (B), prompts do not wear out (C), and the original evaluation is not the first suspect (D)"
   },
   {
    "id": "architect-professional-mock-13",
    "exam": "architect-professional",
    "source": "mock",
    "domain": "Claude Models, Prompting & Context Engineering",
-   "question": "How should prompts that determine production behaviour be managed?",
+   "question": "How should prompts that determine production behavior be managed?",
    "options": {
     "A": "Versioned, owned, reviewed, and evaluated on change, like code",
     "B": "Edited in place when someone notices a problem",
@@ -4786,14 +4786,14 @@
     "D": "Frozen after launch"
    },
    "answer": "A",
-   "rationale": "Anything that determines production behaviour needs the lifecycle of code. Ad hoc edits (B) and open documents (C) invite unreviewed change, and freezing (D) blocks improvement"
+   "rationale": "Anything that determines production behavior needs the lifecycle of code. Ad hoc edits (B) and open documents (C) invite unreviewed change, and freezing (D) blocks improvement"
   },
   {
    "id": "architect-professional-mock-14",
    "exam": "architect-professional",
    "source": "mock",
    "domain": "Developer Productivity & Operational Enablement",
-   "question": "An organisation asks how to measure whether Claude Code is worth the licence cost. What should be measured?",
+   "question": "An organization asks how to measure whether Claude Code is worth the license cost. What should be measured?",
    "options": {
     "A": "Number of tool invocations",
     "B": "Change in the delivery outcomes the tooling was adopted to improve",

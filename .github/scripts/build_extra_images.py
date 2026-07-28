@@ -243,7 +243,7 @@ def courses_card():
         bottom = max(bottom, top + height)
 
     out.append(f'<text x="70" y="{bottom + 44}" font-size="14" fill="{BODY}">Per-course notes on what each is worth, what to watch for, and the order worth taking them in are in the repository.</text>')
-    out.append(footer(W, bottom + 72, "Course catalogue published on Anthropic Academy"))
+    out.append(footer(W, bottom + 72, "Course catalog published on Anthropic Academy"))
     out.append("</svg>")
     return "\n".join(out)
 

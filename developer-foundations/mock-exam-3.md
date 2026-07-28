@@ -78,7 +78,7 @@ The third and final timed practice exam, with fifteen more questions that appear
 
 - A. The instruction always wins
 - B. The example always wins
-- C. Behaviour becomes unpredictable between the two
+- C. Behavior becomes unpredictable between the two
 - D. The request is rejected
 
 **11.** What is the effect of placing the most important instruction in the middle of a very long prompt?
@@ -113,7 +113,7 @@ The third and final timed practice exam, with fifteen more questions that appear
 
 - A. Slow responses
 - B. Rate limits
-- C. A change that improves the target behaviour while quietly breaking another
+- C. A change that improves the target behavior while quietly breaking another
 - D. Cost increases
 
 ---
@@ -131,7 +131,7 @@ The third and final timed practice exam, with fifteen more questions that appear
 | 7 | A | Model Selection and Optimization | The decision is evidence-led against a defined bar. Budget (B), volume (C), and latency (D) create pressure to look, but they do not establish that quality holds |
 | 8 | C | Agents and Workflows | Durable state must be explicit, because context is finite and compaction is lossy. Relying on the window (A) fails at length, temperature (B) is unrelated, and restarting (D) loses the decision |
 | 9 | D | Agents and Workflows | Who decides the next step is the distinction that matters. Length (A) is incidental, agents do use tools (B), and workflows do call the model (C) |
-| 10 | C | Prompt and Context Engineering | Contradictory signals produce inconsistent behaviour rather than a defined precedence. Neither the instruction (A) nor the example (B) reliably wins, and the request is not rejected (D) |
+| 10 | C | Prompt and Context Engineering | Contradictory signals produce inconsistent behavior rather than a defined precedence. Neither the instruction (A) nor the example (B) reliably wins, and the request is not rejected (D) |
 | 11 | B | Prompt and Context Engineering | Material at the edges of a long input is attended to more reliably than material buried in the middle. Position is not neutral (A) or advantageous here (C), and it does not error (D) |
 | 12 | A | Tools and MCPs | Returning a handle keeps context free when the payload is only needed for a later call. Always returning everything (B) or nothing (C) ignores the task, and the rule is not about writes (D) |
 | 13 | A | Tools and MCPs | A new tool surface most often degrades selection through overlap and unclear descriptions. Uptime (B) and latency (D) present as errors or slowness, and the model did not change (C) |

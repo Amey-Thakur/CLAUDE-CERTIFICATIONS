@@ -2,7 +2,7 @@
 """Run a shuffled, timed mock exam from question-bank.json.
 
 Every run draws a different sample and shuffles the option order, so nothing
-can be memorised by position. Scores are reported with a per-domain breakdown
+can be memorized by position. Scores are reported with a per-domain breakdown
 in the style of the real score report. Standard library only.
 
 Usage:

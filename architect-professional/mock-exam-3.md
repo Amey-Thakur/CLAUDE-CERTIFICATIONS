@@ -11,7 +11,7 @@ The third and final timed practice exam, with fifteen more questions that appear
 
 ## Questions
 
-**1.** A client will not accept a solution whose behaviour cannot be explained to their auditor. What does this constrain?
+**1.** A client will not accept a solution whose behavior cannot be explained to their auditor. What does this constrain?
 
 - A. The model family only
 - B. The cost model
@@ -95,14 +95,14 @@ The third and final timed practice exam, with fifteen more questions that appear
 - C. The prompts wore out
 - D. The evaluation was wrong originally
 
-**13.** How should prompts that determine production behaviour be managed?
+**13.** How should prompts that determine production behavior be managed?
 
 - A. Versioned, owned, reviewed, and evaluated on change, like code
 - B. Edited in place when someone notices a problem
 - C. Kept in a shared document for easy editing
 - D. Frozen after launch
 
-**14.** An organisation asks how to measure whether Claude Code is worth the licence cost. What should be measured?
+**14.** An organization asks how to measure whether Claude Code is worth the license cost. What should be measured?
 
 - A. Number of tool invocations
 - B. Change in the delivery outcomes the tooling was adopted to improve
@@ -122,7 +122,7 @@ The third and final timed practice exam, with fifteen more questions that appear
 
 | # | Answer | Domain | Why |
 | --- | --- | --- | --- |
-| 1 | C | Integration | Auditability is an architectural property covering tracing and inspectable controls. Model family (A), cost (B), and region (D) do not by themselves make behaviour explicable |
+| 1 | C | Integration | Auditability is an architectural property covering tracing and inspectable controls. Model family (A), cost (B), and region (D) do not by themselves make behavior explicable |
 | 2 | A | Integration | Coupling determines the cost of change, which is the architectural concern. Cost (B), accuracy (C), and latency (D) are not consequences of the coupling itself |
 | 3 | D | Integration | Residency is satisfied by keeping the data within each boundary. A single deployment (A, B) moves data across it, and latency (C) does not address the rule |
 | 4 | B | Solution Design | An unbounded requirement cannot be designed against or verified, so it must be made concrete. Defaulting to maximum capability (A, C) spends without a target, and deferring (D) leaves the design unanchored |
@@ -130,11 +130,11 @@ The third and final timed practice exam, with fifteen more questions that appear
 | 6 | D | Governance, Safety & Risk Management | Retention creates obligations and risk, so purpose and duration must justify it. Treating retention as free of risk (A) is the error, and cost (B) and speed (C) are minor by comparison |
 | 7 | A | Governance, Safety & Risk Management | Independence is what catches confident error. Confidence (B) is not evidence, self-checking (C) is not independent, and two models can agree and both be wrong (D) |
 | 8 | C | Evaluation, Testing & Optimization | A headline rate is only meaningful alongside the shape and cost of the failures. Version (A), cost (B), and duration (D) do not describe the risk |
-| 9 | D | Evaluation, Testing & Optimization | A change to the thing that determines behaviour invalidates prior measurement. Assuming compatibility (A) is unsafe, and monitoring (B) or reacting to complaints (C) detects after users are affected |
+| 9 | D | Evaluation, Testing & Optimization | A change to the thing that determines behavior invalidates prior measurement. Assuming compatibility (A) is unsafe, and monitoring (B) or reacting to complaints (C) detects after users are affected |
 | 10 | C | Stakeholder Communication & Lifecycle Management | A specific, reasoned boundary is actionable and can be revisited. Generic claims about readiness (A) or risk (B) are not, and budget (D) is not the reason |
 | 11 | B | Stakeholder Communication & Lifecycle Management | Continuity depends on being able to measure and maintain, with someone responsible. Code (A), a demonstration (C), and prompts (D) are artefacts without the means to verify them |
-| 12 | A | Claude Models, Prompting & Context Engineering | Behaviour changes with what is fed to it, and distribution drift is the usual cause. Models do not degrade unprompted (B), prompts do not wear out (C), and the original evaluation is not the first suspect (D) |
-| 13 | A | Claude Models, Prompting & Context Engineering | Anything that determines production behaviour needs the lifecycle of code. Ad hoc edits (B) and open documents (C) invite unreviewed change, and freezing (D) blocks improvement |
+| 12 | A | Claude Models, Prompting & Context Engineering | Behavior changes with what is fed to it, and distribution drift is the usual cause. Models do not degrade unprompted (B), prompts do not wear out (C), and the original evaluation is not the first suspect (D) |
+| 13 | A | Claude Models, Prompting & Context Engineering | Anything that determines production behavior needs the lifecycle of code. Ad hoc edits (B) and open documents (C) invite unreviewed change, and freezing (D) blocks improvement |
 | 14 | B | Developer Productivity & Operational Enablement | Value is the outcome moved, not the activity generated. Invocations (A), onboarding (C), and time in tool (D) measure usage rather than benefit |
 | 15 | C | Developer Productivity & Operational Enablement | Missing project context is the usual cause, and it is the one the team can fix. Size (A), language (B), and contributor count (D) do not by themselves prevent good results |
 

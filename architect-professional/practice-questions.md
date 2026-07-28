@@ -187,13 +187,13 @@ Thirty-five original practice questions written for this repository against the 
 **15. Integration.** What is the most important consideration when a solution must run across two clouds?
 
 - A. Using identical prompts in both
-- B. Establishing which behaviours must be identical and evaluating for those on each platform
+- B. Establishing which behaviors must be identical and evaluating for those on each platform
 - C. Choosing the cheaper platform for both
 - D. Deploying to whichever region is nearest
 
 <details><summary>Answer and rationale</summary>
 
-**B.** Cross-platform equivalence is a requirement to be defined and then verified, not assumed. Identical prompts (A) do not guarantee identical behaviour, and cost (C) and proximity (D) do not address consistency.
+**B.** Cross-platform equivalence is a requirement to be defined and then verified, not assumed. Identical prompts (A) do not guarantee identical behavior, and cost (C) and proximity (D) do not address consistency.
 
 </details>
 
@@ -232,7 +232,7 @@ Thirty-five original practice questions written for this repository against the 
 
 <details><summary>Answer and rationale</summary>
 
-**A.** A regulatory control needs a guarantee, and probabilistic behaviour cannot supply one however high the measured accuracy. Accuracy (B), disclosure (C), and model size (D) do not convert a tendency into a guarantee.
+**A.** A regulatory control needs a guarantee, and probabilistic behavior cannot supply one however high the measured accuracy. Accuracy (B), disclosure (C), and model size (D) do not convert a tendency into a guarantee.
 
 </details>
 
@@ -275,10 +275,10 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**22. Evaluation, Testing & Optimization.** A prompt change improves the target metric but degrades an unmeasured behaviour. How is this best prevented?
+**22. Evaluation, Testing & Optimization.** A prompt change improves the target metric but degrades an unmeasured behavior. How is this best prevented?
 
 - B. Changing one thing at a time
-- A. Maintaining a regression suite that covers behaviours the system must not lose
+- A. Maintaining a regression suite that covers behaviors the system must not lose
 - C. Reviewing changes more carefully
 - D. Limiting how often prompts change
 
@@ -297,7 +297,7 @@ Thirty-five original practice questions written for this repository against the 
 
 <details><summary>Answer and rationale</summary>
 
-**B.** Any change to the things that determine behaviour invalidates prior measurement. Waiting for incidents (A) detects late, a fixed schedule (C) is unrelated to actual change, and cost (D) does not affect correctness.
+**B.** Any change to the things that determine behavior invalidates prior measurement. Waiting for incidents (A) detects late, a fixed schedule (C) is unrelated to actual change, and cost (D) does not affect correctness.
 
 </details>
 
@@ -330,13 +330,13 @@ Thirty-five original practice questions written for this repository against the 
 **26. Governance, Safety & Risk Management.** Who is accountable for a wrong decision produced by an automated Claude workflow?
 
 - B. The model provider
-- A. The organisation that deployed the workflow
+- A. The organization that deployed the workflow
 - C. The engineer who wrote the prompt
 - D. Nobody, since the output was automated
 
 <details><summary>Answer and rationale</summary>
 
-**A.** Deploying an automated decision means owning its outcomes, which is why the boundaries of automation are an architectural decision. The provider (B) supplies a capability, individual authorship (C) does not transfer organisational responsibility, and automation does not remove accountability (D).
+**A.** Deploying an automated decision means owning its outcomes, which is why the boundaries of automation are an architectural decision. The provider (B) supplies a capability, individual authorship (C) does not transfer organizational responsibility, and automation does not remove accountability (D).
 
 </details>
 
@@ -355,14 +355,14 @@ Thirty-five original practice questions written for this repository against the 
 
 **28. Stakeholder Communication & Lifecycle Management.** A pilot succeeded with ten users and the business wants to roll out to two thousand. What should the architect raise first?
 
-- A. The cost of additional licences
+- A. The cost of additional licenses
 - C. Which assumptions held at ten users and may not hold at two thousand
 - B. The need for a larger model
 - D. The training schedule
 
 <details><summary>Answer and rationale</summary>
 
-**C.** Scale invalidates assumptions about inputs, support, and edge cases, and naming those is the architect's contribution. Licences (A), model size (B), and training (D) are downstream of knowing what breaks.
+**C.** Scale invalidates assumptions about inputs, support, and edge cases, and naming those is the architect's contribution. Licenses (A), model size (B), and training (D) are downstream of knowing what breaks.
 
 </details>
 
@@ -414,11 +414,11 @@ Thirty-five original practice questions written for this repository against the 
 
 <details><summary>Answer and rationale</summary>
 
-**C.** Prompts that determine production behaviour deserve the same lifecycle as code. Centralising ownership (A) may not fit the organisation, freezing (B) blocks improvement, and relocation (D) does not address governance.
+**C.** Prompts that determine production behavior deserve the same lifecycle as code. Centralising ownership (A) may not fit the organization, freezing (B) blocks improvement, and relocation (D) does not address governance.
 
 </details>
 
-**33. Developer Productivity & Operational Enablement.** An organisation wants consistent Claude Code practice across many repositories. What is the most durable approach?
+**33. Developer Productivity & Operational Enablement.** An organization wants consistent Claude Code practice across many repositories. What is the most durable approach?
 
 - A. A written policy circulated by email
 - D. Committed project memory and shared skills in each repository, reviewed like code
@@ -431,16 +431,16 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**34. Developer Productivity & Operational Enablement.** What is the most useful measure of whether a developer enablement programme is working?
+**34. Developer Productivity & Operational Enablement.** What is the most useful measure of whether a developer enablement program is working?
 
 - B. The number of people trained
 - A. Change in the outcomes the tooling was adopted to improve
-- C. Licence utilisation
+- C. License utilization
 - D. The volume of tool calls
 
 <details><summary>Answer and rationale</summary>
 
-**A.** Enablement is justified by the outcome it moves, which is what should be measured. Attendance (B), utilisation (C), and activity (D) measure uptake rather than benefit.
+**A.** Enablement is justified by the outcome it moves, which is what should be measured. Attendance (B), utilization (C), and activity (D) measure uptake rather than benefit.
 
 </details>
 

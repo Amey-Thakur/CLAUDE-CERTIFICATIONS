@@ -2,7 +2,7 @@
 
 There is no official practice exam, and the [exam NDA](policies.md#confidentiality) forbids sharing real questions. What remains, and works well, is generating your own practice from the published blueprints using Claude itself. The questions Claude produces are practice aids in the official style, not leaked items, which keeps this method both effective and clean.
 
-The fastest way to test yourself is the [practice engine](quiz.md): a shuffled, timed, scored exam drawn from all 100 questions, in the browser or from a terminal. It reorders questions and options on every run, so nothing can be memorised by position.
+The fastest way to test yourself is the [practice engine](quiz.md): a shuffled, timed, scored exam drawn from all 100 questions, in the browser or from a terminal. It reorders questions and options on every run, so nothing can be memorized by position.
 
 Start with the written sets. Each certification folder contains ten practice questions with answers and rationales shown inline ([Associate](../associate-foundations/practice-questions.md), [Developer](../developer-foundations/practice-questions.md), [Architect Foundations](../architect-foundations/practice-questions.md), [Architect Professional](../architect-professional/practice-questions.md)), plus a timed mock exam with domains hidden, an answer key at the end, and a score-interpretation table ([Associate](../associate-foundations/mock-exam-1.md), [Developer](../developer-foundations/mock-exam-1.md), [Architect Foundations](../architect-foundations/mock-exam-1.md), [Architect Professional](../architect-professional/mock-exam-1.md)). Take the practice set to learn, then the mock exam under timed conditions to measure.
 
@@ -13,7 +13,7 @@ Setup that makes every prompt below better: create a Claude Project, upload the 
 > [!IMPORTANT]
 > Generated questions are study aids, never real exam items. The item bank is confidential and rotates, so treating any question set as "the real ones" is both a policy violation and a poor strategy.
 
-For memorisation rather than judgment, the [flashcard deck](flashcards.md) covers every fact, domain weight, rule, and glossary term, and imports straight into Anki, Quizlet, or RemNote.
+For memorization rather than judgment, the [flashcard deck](flashcards.md) covers every fact, domain weight, rule, and glossary term, and imports straight into Anki, Quizlet, or RemNote.
 
 ## Slash commands in Claude Code
 

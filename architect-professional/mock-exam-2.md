@@ -78,7 +78,7 @@ A second timed practice exam in the official style, with fifteen questions that 
 
 - A. The model provider
 - B. The engineer who wrote the prompt
-- C. The organisation that deployed it
+- C. The organization that deployed it
 - D. No one, because the decision was automated
 
 **11.** A sponsor asks for one number that shows whether the solution is working. What is the right response?
@@ -91,7 +91,7 @@ A second timed practice exam in the official style, with fifteen questions that 
 **12.** A ten-user pilot is about to expand to two thousand users. What should the architect raise first?
 
 - A. Which assumptions held at ten users and may not hold at two thousand
-- B. Licence cost
+- B. License cost
 - C. Whether a larger model is needed
 - D. The training rollout plan
 
@@ -109,7 +109,7 @@ A second timed practice exam in the official style, with fifteen questions that 
 - C. As a concern only for long documents
 - D. As a setting to increase whenever quality drops
 
-**15.** An organisation wants consistent Claude Code practice across dozens of repositories. What is most durable?
+**15.** An organization wants consistent Claude Code practice across dozens of repositories. What is most durable?
 
 - A. A policy document circulated once
 - B. A single training session
@@ -126,12 +126,12 @@ A second timed practice exam in the official style, with fifteen questions that 
 | 2 | A | Integration | Aligning with the governed platform makes existing controls apply without duplication. Rebuilding (B) drifts, a different cloud (C) creates a second control plane, and per-team choice (D) removes governance |
 | 3 | D | Integration | A single integration point is where cross-cutting concerns are enforced and changed once. It does not change unit price (A), remove evaluation (B), or reduce latency (C) |
 | 4 | B | Solution Design | Complexity is paid for continuously, so it must be bought by a real requirement. Headroom (A), preference (C), and speculative flexibility (D) pay that cost without justification |
-| 5 | B | Solution Design | A control that must hold needs a guarantee, which probabilistic behaviour cannot supply. High accuracy (A), documentation (C), and model size (D) do not convert a tendency into a guarantee |
+| 5 | B | Solution Design | A control that must hold needs a guarantee, which probabilistic behavior cannot supply. High accuracy (A), documentation (C), and model size (D) do not convert a tendency into a guarantee |
 | 6 | D | Solution Design | Accountability determines what may be automated at all, and that boundary is an architectural decision. Test performance (A), budget (B), and unexamined requests (C) do not address responsibility |
 | 7 | A | Evaluation, Testing & Optimization | Readiness is a measured claim against a stated bar. A demonstration (B), consensus (C), and cost (D) do not establish whether it works |
 | 8 | C | Evaluation, Testing & Optimization | An unrepresentative sample measures the wrong distribution, and size does not correct bias. It is not reliable (A), scale does not fix it (B), and the problem is general (D) |
 | 9 | D | Governance, Safety & Risk Management | Audit and data protection are both real, and the design must serve the audit purpose without retaining more than warranted. Blanket action (A) or refusal (B) ignores one side, and an arbitrary split (C) is unjustified |
-| 10 | C | Governance, Safety & Risk Management | Deploying an automated decision means owning its outcomes. The provider (A) supplies a capability, individual authorship (B) does not transfer organisational responsibility, and automation does not remove accountability (D) |
+| 10 | C | Governance, Safety & Risk Management | Deploying an automated decision means owning its outcomes. The provider (A) supplies a capability, individual authorship (B) does not transfer organizational responsibility, and automation does not remove accountability (D) |
 | 11 | B | Stakeholder Communication & Lifecycle Management | A useful metric matches the decision and is honest about its limits. A bare accuracy figure (A) and a benchmark (D) can mislead, and refusing (C) fails the sponsor |
 | 12 | A | Stakeholder Communication & Lifecycle Management | Scale invalidates assumptions about inputs, support, and edge cases, and surfacing those is the architect's contribution. Cost (B), model size (C), and training (D) follow from knowing what breaks |
 | 13 | A | Claude Models, Prompting & Context Engineering | Different tasks have different requirements, and matching each keeps cost proportionate on evidence. Uniform choices (B, C, D) optimise for convenience rather than fit |

@@ -102,7 +102,7 @@ A second timed practice exam in the official style, with fifteen questions that 
 - C. It lists the implementation language
 - D. It matches the function name exactly
 
-**14.** Content retrieved from an external site contains instructions aimed at the model. What is the correct defence?
+**14.** Content retrieved from an external site contains instructions aimed at the model. What is the correct defense?
 
 - A. Instruct the model in the system prompt to ignore such content
 - B. Treat retrieved content as untrusted data and bound the model's permissions outside the prompt
@@ -131,7 +131,7 @@ A second timed practice exam in the official style, with fifteen questions that 
 | 7 | A | Model Selection and Optimization | Where the requirement is met, the cheaper option is correct, and changing inputs are handled by re-evaluating. Insurance against hypothetical change (B), alternation (C), and recency (D) all spend without benefit |
 | 8 | C | Model Selection and Optimization | Multi-step reasoning under interacting constraints is where capability differences show. A small model (A) and splitting (B) both fragment the reasoning, and prompt length (D) does not add capability |
 | 9 | D | Agents and Workflows | Overlapping tools make selection ambiguous, which is where agents go wrong. Overlap does not improve speed (A), reduce cost (B), or help error handling (C) |
-| 10 | C | Agents and Workflows | A defined success condition ends the loop correctly, and the ceiling bounds the failure case. A timeout alone (A) does not recognise success, the model's own judgment (B) is not a guarantee, and exhausting context (D) is a failure rather than a termination |
+| 10 | C | Agents and Workflows | A defined success condition ends the loop correctly, and the ceiling bounds the failure case. A timeout alone (A) does not recognize success, the model's own judgment (B) is not a guarantee, and exhausting context (D) is a failure rather than a termination |
 | 11 | B | Prompt and Context Engineering | The system prompt is designed for persistent framing across the exchange. Placing it in user turns (A, C) mixes configuration with input, and tool descriptions (D) govern tool selection |
 | 12 | A | Prompt and Context Engineering | An example defines the target unambiguously, which is what formatting consistency needs. Higher temperature (B) increases variance, a vague adjective (C) does not specify, and a larger model (D) does not know your format |
 | 13 | A | Tools and MCPs | The description is the model's only basis for choosing and calling the tool correctly. Brevity (B) is secondary to clarity, and implementation detail (C) and naming (D) do not guide selection |

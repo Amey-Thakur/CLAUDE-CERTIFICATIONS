@@ -72,4 +72,4 @@ The [prep paths on Partner Academy](learning-paths.md#certification-prep-courses
 
 ---
 
-These notes are the maintainer's own. Course facts come from the [official catalogue](courses.md). [Repository index](../README.md)
+These notes are the maintainer's own. Course facts come from the [official catalog](courses.md). [Repository index](../README.md)

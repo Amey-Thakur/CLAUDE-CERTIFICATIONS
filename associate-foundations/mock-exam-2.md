@@ -124,7 +124,7 @@ A second timed practice exam in the official style, with fifteen questions that 
 | --- | --- | --- | --- |
 | 1 | C | Output Evaluation and Validation | Agreement with what you already believed is the easiest error to miss, since nothing prompts a check. Neither confirmation (A), rewording (B), nor an assumption about retrieval (D) establishes that the claim is true |
 | 2 | A | Output Evaluation and Validation | Self-review is not an independent source and cannot establish correctness. Detail (C) and model choice (D) do not make a self-check independent |
-| 3 | D | Output Evaluation and Validation | An unverifiable claim should not be presented as fact, and a labelled gap is honest. A blanket disclaimer (A) does not address the specific figure, an unfounded estimate (B) misrepresents it, and a citation produced on demand (C) needs the same verification |
+| 3 | D | Output Evaluation and Validation | An unverifiable claim should not be presented as fact, and a labeled gap is honest. A blanket disclaimer (A) does not address the specific figure, an unfounded estimate (B) misrepresents it, and a citation produced on demand (C) needs the same verification |
 | 4 | B | Workflow Integration and Solution Design | Drafting from agreed inputs is bounded and checkable. Approval (A), sign-off (D), and the decision about what to investigate (C) all carry accountability |
 | 5 | B | Workflow Integration and Solution Design | Adoption usually fails on fit with the existing process rather than on output quality. Model (A) and prompt length (C) address quality that is already acceptable, and training (D) treats a symptom |
 | 6 | D | Governance, Risk, and Responsible Use | Removing names does not remove identifying detail from free text, which is why a review step remains. Treating anonymisation as complete (A) is the error tested, and neither storage assumptions (B) nor reliability (C) is the governance issue here |
@@ -136,7 +136,7 @@ A second timed practice exam in the official style, with fifteen questions that 
 | 12 | A | Configuration and Knowledge Management | Duplicated knowledge diverges as each copy is maintained separately, producing inconsistent answers. Storage (B) and speed (C) are minor, and projects do not leak into one another (D) |
 | 13 | A | Configuration and Knowledge Management | A deliberate, minimal base keeps retrieval sharp and is maintainable. Uploading everything (B) and accumulating without review (D) both dilute, and instruction length (C) is not the question |
 | 14 | B | Troubleshooting and Optimization | Reproduction depends on the exact conditions, and gathering them is the only way to diagnose. Dismissing the report (A) discards the signal, and a model change (C) or a warning (D) acts before the cause is known |
-| 15 | C | Troubleshooting and Optimization | Generation is not deterministic, so the design must tolerate variation within acceptable bounds. Treating it as breakage (A) misreads normal behaviour, a universal temperature rule (B) is too blunt, and input length (D) is unrelated |
+| 15 | C | Troubleshooting and Optimization | Generation is not deterministic, so the design must tolerate variation within acceptable bounds. Treating it as breakage (A) misreads normal behavior, a universal temperature rule (B) is too blunt, and input length (D) is unrelated |
 
 ## Interpreting your score
 

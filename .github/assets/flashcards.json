@@ -578,7 +578,7 @@
   },
   {
    "front": "Who delivers the exams",
-   "back": "Pearson VUE, online proctored through OnVUE or at a test centre",
+   "back": "Pearson VUE, online proctored through OnVUE or at a test center",
    "tags": [
     "facts",
     "shared"
@@ -658,7 +658,7 @@
   },
   {
    "front": "Who may currently sit these exams",
-   "back": "People at Claude Partner Network organizations, registering with a recognised company email",
+   "back": "People at Claude Partner Network organizations, registering with a recognized company email",
    "tags": [
     "policy",
     "shared"

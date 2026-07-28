@@ -8,11 +8,11 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 
 ## Questions
 
-**1.** A retailer wants Claude to answer product questions from a 40,000-document catalogue that changes daily. Which architecture fits?
+**1.** A retailer wants Claude to answer product questions from a 40,000-document catalog that changes daily. Which architecture fits?
 
-- A. Fine-tune a model on the catalogue nightly
-- C. Retrieval over an index refreshed as the catalogue changes, with the model answering from retrieved context
-- B. Load the catalogue into the system prompt
+- A. Fine-tune a model on the catalog nightly
+- C. Retrieval over an index refreshed as the catalog changes, with the model answering from retrieved context
+- B. Load the catalog into the system prompt
 - D. An autonomous agent that browses the public website
 
 **2.** After a re-index, your retrieval system returns semantically similar but commercially wrong products. Which investigation comes first?

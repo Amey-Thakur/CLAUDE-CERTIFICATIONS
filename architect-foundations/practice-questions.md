@@ -453,7 +453,7 @@ Thirty-five original practice questions written for this repository against the 
 
 <details><summary>Answer and rationale</summary>
 
-**A.** Health is defined by whether the system accomplishes the task and how it fails when it does not. Tokens (B), latency (C), and call counts (D) are cost and behaviour signals that say nothing about correctness.
+**A.** Health is defined by whether the system accomplishes the task and how it fails when it does not. Tokens (B), latency (C), and call counts (D) are cost and behavior signals that say nothing about correctness.
 
 </details>
 

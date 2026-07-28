@@ -182,9 +182,9 @@ def footer(width, y, note=None):
     return footer_at(70, width - 70, y, note)
 
 
-def bar(x, y, width, value, maximum, colour, opacity=1.0):
+def bar(x, y, width, value, maximum, color, opacity=1.0):
     w = max(6, round(width * value / maximum))
-    return f'<rect x="{x}" y="{y}" width="{w}" height="5" rx="2.5" fill="{colour}" opacity="{opacity}"/>'
+    return f'<rect x="{x}" y="{y}" width="{w}" height="5" rx="2.5" fill="{color}" opacity="{opacity}"/>'
 
 
 def social_preview():
@@ -203,11 +203,11 @@ def social_preview():
     chips = [("Associate", CORAL), ("Developer", OLIVE), ("Architect Foundations", TEAL),
              ("Architect Professional", PLUM)]
     x = 70
-    for label, colour in chips:
+    for label, color in chips:
         w = 22 + len(label) * 8.7
-        out.append(f'<rect x="{x}" y="{chip_y}" width="{w:.0f}" height="32" rx="16" fill="{colour}" opacity="0.12"/>')
+        out.append(f'<rect x="{x}" y="{chip_y}" width="{w:.0f}" height="32" rx="16" fill="{color}" opacity="0.12"/>')
         out.append(f'<text x="{x + w / 2:.0f}" y="{chip_y + 21}" font-size="14" font-weight="600"'
-                   f' fill="{colour}" text-anchor="middle">{label}</text>')
+                   f' fill="{color}" text-anchor="middle">{label}</text>')
         x += w + 12
 
     rows = [
@@ -215,14 +215,14 @@ def social_preview():
         (OLIVE, "A study guide and working notes per exam", "domain by domain, weighted as the exam is"),
         (TEAL, "A practice engine that shuffles and scores", "in the browser or your terminal"),
         (PLUM, "A one-page cheat sheet for each exam", "the page you read the hour before"),
-        (CORAL, "Every official course, catalogued and reviewed", "with the order worth taking them in"),
+        (CORAL, "Every official course, cataloged and reviewed", "with the order worth taking them in"),
         (OLIVE, "Registration, proctoring, policies, and costs", "the logistics nobody writes down"),
     ]
     top = 226
-    for i, (colour, title, sub) in enumerate(rows):
+    for i, (color, title, sub) in enumerate(rows):
         cx = 70 + (i % 2) * 600
         cy = top + (i // 2) * 74
-        out.append(f'<circle cx="{cx + 5}" cy="{cy - 5}" r="4.5" fill="{colour}"/>')
+        out.append(f'<circle cx="{cx + 5}" cy="{cy - 5}" r="4.5" fill="{color}"/>')
         out.append(f'<text x="{cx + 26}" y="{cy}" font-size="17.5" font-weight="600" fill="{INK}">{esc(title)}</text>')
         out.append(f'<text x="{cx + 26}" y="{cy + 23}" font-size="15" fill="{MUTED}">{esc(sub)}</text>')
 
@@ -276,7 +276,7 @@ def roadmap():
 
     strip = top + 692
     out.append(f'<rect x="70" y="{strip}" width="{W - 140}" height="48" rx="8" fill="{SHADE}"/>')
-    out.append(f'<text x="94" y="{strip + 30}" font-size="13.5" fill="{BODY}">Every exam: 120 minutes  ·  closed book  ·  Pearson VUE, online or test centre  ·  pass at 720 of 1000  ·  valid 12 months, free renewal  ·  badge via Credly  ·  partner tiers get 50% off</text>')
+    out.append(f'<text x="94" y="{strip + 30}" font-size="13.5" fill="{BODY}">Every exam: 120 minutes  ·  closed book  ·  Pearson VUE, online or test center  ·  pass at 720 of 1000  ·  valid 12 months, free renewal  ·  badge via Credly  ·  partner tiers get 50% off</text>')
 
     out.append(footer(W, strip + 76, "Facts drawn from the official Anthropic exam guides"))
     out.append("</svg>")

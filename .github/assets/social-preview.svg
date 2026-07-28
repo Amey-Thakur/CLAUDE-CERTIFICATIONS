@@ -25,7 +25,7 @@
 <text x="696" y="300" font-size="17.5" font-weight="600" fill="#1f1e1b">A one-page cheat sheet for each exam</text>
 <text x="696" y="323" font-size="15" fill="#6b6862">the page you read the hour before</text>
 <circle cx="75" cy="369" r="4.5" fill="#c15f3c"/>
-<text x="96" y="374" font-size="17.5" font-weight="600" fill="#1f1e1b">Every official course, catalogued and reviewed</text>
+<text x="96" y="374" font-size="17.5" font-weight="600" fill="#1f1e1b">Every official course, cataloged and reviewed</text>
 <text x="96" y="397" font-size="15" fill="#6b6862">with the order worth taking them in</text>
 <circle cx="675" cy="369" r="4.5" fill="#7d8c5c"/>
 <text x="696" y="374" font-size="17.5" font-weight="600" fill="#1f1e1b">Registration, proctoring, policies, and costs</text>

@@ -75,7 +75,7 @@ Here is my diagnostic result:
 {paste the per-domain scores from the diagnostic prompt above}
 
 Build me a week-by-week plan that allocates time by weight and by weakness, not
-evenly. For each week, state what I will study, what I will build or practise,
+evenly. For each week, state what I will study, what I will build or practice,
 and the check that tells me the week worked. Keep it realistic for the hours I
 have, and say what to drop if I fall behind.
 ```

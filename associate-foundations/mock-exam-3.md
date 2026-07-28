@@ -135,7 +135,7 @@ The third and final timed practice exam, with fifteen more questions that appear
 | 11 | B | Product and Model Selection | Where adoption or context-supply is the bottleneck, interface dominates. Treating the model as decisive (A) misses that, and neither team size (C) nor cost (D) defines the case |
 | 12 | A | Configuration and Knowledge Management | Superseded material remains retrievable and contradicts the current version. Storage (B) and speed (C) are minor, and the project does not refuse (D) |
 | 13 | A | Configuration and Knowledge Management | Recurrence across conversations is what distinguishes shared knowledge from prompt content. Length (B), recency (C), and sensitivity (D) are unrelated to that test |
-| 14 | B | Troubleshooting and Optimization | A behavioural change points to a change in inputs or configuration. Deprecation (A), network (C), and limits (D) produce errors rather than shorter answers |
+| 14 | B | Troubleshooting and Optimization | A behavioral change points to a change in inputs or configuration. Deprecation (A), network (C), and limits (D) produce errors rather than shorter answers |
 | 15 | C | Troubleshooting and Optimization | The exact exchange is what makes the claim examinable. Model (A), length (B), and retrying (D) may matter later but none of them establishes what happened |
 
 ## Interpreting your score

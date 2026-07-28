@@ -41,9 +41,37 @@ jobs:
           python -m pyflakes .github/scripts/*.py .github/pages/*.py
       - name: Shell syntax
         run: bash -n .github/pages/assemble.sh
+      - name: House spelling stays American
+        run: |
+          python - <<'PY'
+          import re
+          import sys
+          from pathlib import Path
+          WORDS = ("behaviour organis catalogue licence utilis recognis memoris programme "
+                   "labelled centre practise prioritis colour whilst amongst modelling "
+                   "customis defence offence").split()
+          PATTERN = re.compile(r"\b\w*(" + "|".join(WORDS) + r")\w*\b", re.I)
+          KEEP = (".md", ".py", ".tsv", ".yml", ".css", ".js")
+          # This file names the forms it forbids, so it excludes itself.
+          SKIP = ("/.git/", "site-src/", "_site/", "__pycache__", ".github/workflows/")
+          found = []
+          for path in sorted(Path(".").rglob("*")):
+              if not path.is_file() or path.suffix not in KEEP:
+                  continue
+              if any(s in path.as_posix() for s in SKIP):
+                  continue
+              text = path.read_text(encoding="utf-8", errors="replace")
+              found += [f"{path}: {m.group(0)}" for m in PATTERN.finditer(text)]
+          if found:
+              print("This repository is written in American English. Found:")
+              print("\n".join(found[:40]))
+              sys.exit(1)
+          print(f"spelling is uniform across {len(WORDS)} watched forms")
+          PY
       - name: Regenerate the derived files and fail if they drift
         run: |
           python .github/scripts/build_question_bank.py
           python .github/scripts/build_tracker.py
           python .github/scripts/build_flashcards.py
-          git diff --exit-code -- question-bank.json flashcards.tsv             guide/flashcards.md .github/assets/tracker.json .github/assets/flashcards.json
+          git diff --exit-code -- question-bank.json flashcards.tsv \
+            guide/flashcards.md .github/assets/tracker.json .github/assets/flashcards.json

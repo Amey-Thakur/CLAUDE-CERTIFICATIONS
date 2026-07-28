@@ -154,7 +154,7 @@ Relevant to both **Architect** exams, and the video counterpart to the **Claude 
 
 ## Every official playlist
 
-Anthropic's channel is organised into playlists. These are the ones with study value, most relevant first.
+Anthropic's channel is organized into playlists. These are the ones with study value, most relevant first.
 
 | Playlist | Videos | Most relevant to |
 | --- | --- | --- |

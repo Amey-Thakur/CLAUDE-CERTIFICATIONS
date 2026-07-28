@@ -141,7 +141,7 @@ Thirty-five original practice questions written for this repository against the 
 
 <details><summary>Answer and rationale</summary>
 
-**D.** A large, unchanging prefix is exactly what prompt caching exists for, and it cuts both cost and time to first token without changing behaviour. Trimming instructions (A) sacrifices capability, a smaller model (B) trades quality for price, and batching (C) breaks a per-request service.
+**D.** A large, unchanging prefix is exactly what prompt caching exists for, and it cuts both cost and time to first token without changing behavior. Trimming instructions (A) sacrifices capability, a smaller model (B) trades quality for price, and batching (C) breaks a per-request service.
 
 </details>
 
@@ -353,7 +353,7 @@ Thirty-five original practice questions written for this repository against the 
 
 </details>
 
-**28. Prompt and Context Engineering.** Where should stable, reusable instructions about role and behaviour be placed?
+**28. Prompt and Context Engineering.** Where should stable, reusable instructions about role and behavior be placed?
 
 - B. In the first user message of every conversation
 - A. In the system prompt, so they apply consistently across the exchange
@@ -427,7 +427,7 @@ Thirty-five original practice questions written for this repository against the 
 
 <details><summary>Answer and rationale</summary>
 
-**B.** Retrieved content is untrusted input, and the durable defence is that the model's authority is limited by the surrounding system rather than by its own compliance. Prompt instructions (A), phrase filters (C), and model size (D) are all bypassable.
+**B.** Retrieved content is untrusted input, and the durable defense is that the model's authority is limited by the surrounding system rather than by its own compliance. Prompt instructions (A), phrase filters (C), and model size (D) are all bypassable.
 
 </details>
 
@@ -440,7 +440,7 @@ Thirty-five original practice questions written for this repository against the 
 
 <details><summary>Answer and rationale</summary>
 
-**C.** Least privilege bounds the consequences of any mistake or manipulation, and it is enforced outside the prompt. Full credentials (A) and instruction-based restraint (B) rely on behaviour rather than control, and an unscoped tool (D) removes the boundary.
+**C.** Least privilege bounds the consequences of any mistake or manipulation, and it is enforced outside the prompt. Full credentials (A) and instruction-based restraint (B) rely on behavior rather than control, and an unscoped tool (D) removes the boundary.
 
 </details>
 

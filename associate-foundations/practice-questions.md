@@ -265,13 +265,13 @@ Thirty-five original practice questions written for this repository against the 
 **21. Governance, Risk, and Responsible Use.** Which statement about instructing a model not to do something is accurate?
 
 - A. An instruction in the prompt is an enforceable control
-- D. An instruction shapes behaviour but does not guarantee it, so controls belong outside the prompt
+- D. An instruction shapes behavior but does not guarantee it, so controls belong outside the prompt
 - B. Instructions are enforceable if placed in a system prompt
 - C. Instructions are enforceable if repeated several times
 
 <details><summary>Answer and rationale</summary>
 
-**D.** Prompt instructions influence behaviour and are not guarantees, so anything that must hold is enforced in the surrounding system. Placement (B) and repetition (C) change the strength of the steer, not its nature, and treating it as enforcement (A) is the error the question tests.
+**D.** Prompt instructions influence behavior and are not guarantees, so anything that must hold is enforced in the surrounding system. Placement (B) and repetition (C) change the strength of the steer, not its nature, and treating it as enforcement (A) is the error the question tests.
 
 </details>
 
@@ -318,7 +318,7 @@ Thirty-five original practice questions written for this repository against the 
 
 - A. Describing the structure in prose at the end of the prompt
 - D. Providing a filled example of the exact structure you want
-- B. Asking for the output to be well organised
+- B. Asking for the output to be well organized
 - C. Requesting the output twice and taking the better one
 
 <details><summary>Answer and rationale</summary>

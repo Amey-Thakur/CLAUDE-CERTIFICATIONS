@@ -51,7 +51,7 @@ Prep coverage varies by certification and Anthropic adds prep content over time,
 
 ## Course catalog
 
-Every course with its description, enrollment link, exam relevance, and a verified completion certificate is catalogued in [Anthropic courses](courses.md). The summary by theme:
+Every course with its description, enrollment link, exam relevance, and a verified completion certificate is cataloged in [Anthropic courses](courses.md). The summary by theme:
 
 Courses visible in the [public catalog](https://anthropic-partners.skilljar.com/page/all-courses), grouped by theme. Completion of a course earns a certificate; the maintainer's certificates for these courses are in the [certificates directory](../certificates/README.md).
 
