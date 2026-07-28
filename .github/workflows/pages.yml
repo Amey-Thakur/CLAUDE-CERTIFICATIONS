@@ -28,8 +28,10 @@ jobs:
         run: bash .github/pages/assemble.sh
       - name: Build site
         run: mkdocs build -f .github/mkdocs.yml
-      - name: Add social card tags
+      - name: Add social card tags and structured data
         run: python .github/pages/finalize.py
+      - name: Write llms.txt
+        run: python .github/pages/build_llms_txt.py
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site
