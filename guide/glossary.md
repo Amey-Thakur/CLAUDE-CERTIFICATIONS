@@ -31,4 +31,4 @@ The program's terms, defined once. Official definitions live in the exam guides 
 
 ---
 
-Facts last verified against the official sources on 2026-07-27. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-08-01. [Repository index](../README.md)

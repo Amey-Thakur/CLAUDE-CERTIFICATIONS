@@ -106,4 +106,4 @@ This is the repository's recommendation, not an official rule:
 
 ---
 
-Facts last verified against the official sources on 2026-07-27. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-08-01. [Repository index](../README.md)
