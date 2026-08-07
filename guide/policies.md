@@ -9,7 +9,7 @@ Your certification belongs to you, not your employer. It stays with you if you c
 ## Scheduling, rescheduling, and cancellation
 
 - Register and pay on the certification's page; Pearson VUE emails scheduling instructions afterward.
-- There is no deadline for sitting a purchased exam.
+- A registration stays valid for 5 years. There is no pressure to schedule quickly, but it does expire.
 - Reschedule or cancel free of charge until 24 hours before the appointment; cancellation in that window is fully refunded.
 - Inside 24 hours, or on a no-show, the fee is forfeited.
 
@@ -91,4 +91,4 @@ Exam delivery moved to Pearson VUE and badging moved to Credly on June 30, 2026.
 
 ---
 
-Facts last verified against the official sources on 2026-08-01. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-08-07. [Repository index](../README.md)

@@ -30,7 +30,7 @@ If you see "You aren't signed in with a partner company employee email", check t
 2. Download and read the exam guide, the [terms and conditions](certification-terms-and-conditions.pdf), and the [exam policy](anthropic-certification-exam-policy.pdf). Registering constitutes acceptance of all three.
 3. Register and pay by credit card. Any partner-tier discount is applied automatically at checkout. If a discount you expect is missing, see the [FAQ on pricing](faq.md#pricing-and-discounts) before paying.
 4. Follow the confirmation email to create your Pearson VUE account and sign in.
-5. Schedule your session: pick a date, and choose online proctoring or a test center. There is no deadline for sitting the exam after purchase.
+5. Schedule your session: pick a date, and choose online proctoring or a test center. A registration stays valid for 5 years, so you can sit it whenever you are ready.
 
 The name on your Pearson registration must exactly match the name on the government-issued photo ID you will present. To correct a name, email [certifications-support@anthropic.com](mailto:certifications-support@anthropic.com) before scheduling.
 
@@ -79,6 +79,21 @@ flowchart TD
 
 The official recommendation when the corporate machine cannot be fixed is one of two alternatives: use a personal computer on a personal network, or book a Pearson test center instead.
 
+## Identity and your Pearson profile
+
+The check that stops people at the door is not technical. It is the name on the account.
+
+- **The name on your Pearson VUE profile must match your government-issued ID exactly.** You are asked to confirm this during registration, before you schedule.
+- **A mismatch at check-in means you do not test.** Pearson will refuse entry, and under their policy the fee is forfeited.
+- **Request a name correction more than 24 hours before the exam.** Inside that window there may not be time to apply it.
+- **A correction requested after a refused entry does not undo the forfeit.** You pay again to reschedule, so fix the name the day you register rather than the day you sit.
+- **Bring a valid, unexpired government-issued ID**, whether you test online or at a test center. Pearson publishes the accepted forms.
+
+Two fields on that profile are not part of the check and cause avoidable alarm:
+
+- **The address and phone number do not need to be yours.** They are not used to verify identity.
+- **The phone number will be an Anthropic corporate number you do not recognize.** It is added to every candidate profile deliberately, it is never used to contact you, and Anthropic cannot change it. Leave it alone.
+
 ## Exam day
 
 [![Exam day checklist: a week before, the night before, on the morning, and during the exam](../.github/assets/card-exam-day.png)](../.github/assets/card-exam-day.png "View the exam-day checklist at full size")
@@ -119,4 +134,4 @@ flowchart TD
 
 ---
 
-Facts last verified against the official sources on 2026-08-01. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-08-07. [Repository index](../README.md)
