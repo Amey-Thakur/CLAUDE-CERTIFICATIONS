@@ -134,4 +134,4 @@ flowchart TD
 
 ---
 
-Facts last verified against the official sources on 2026-08-07. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-08-12. [Repository index](../README.md)
