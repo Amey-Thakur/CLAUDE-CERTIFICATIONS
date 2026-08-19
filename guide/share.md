@@ -103,7 +103,7 @@ Posts with an image travel further than posts without one. Every card below is f
 | Architect Professional cheat sheet | Architect Professional, domain weights on one page | [Open](../.github/assets/cheat-sheet-architect-professional.png) |
 | A flashcard, and its answer | Post as a pair. The question invites a reply before the answer lands | [Open](../.github/assets/flashcard-front.png) |
 
-The answer side of the flashcard is [here](../.github/assets/flashcard-back.png).
+The pair is completed by the [flashcard answer side](../.github/assets/flashcard-back.png).
 
 The whole guide as one printable file is the [companion PDF](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/releases/latest/download/claude-certifications-companion.pdf), and the 110-card deck is [flashcards.tsv](../flashcards.tsv) for Anki, Quizlet, or RemNote.
 
