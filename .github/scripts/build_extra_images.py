@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 """Generate the supporting shareable cards.
 
-Four cards that answer questions candidates actually ask, in the same visual
-language as the roadmap and cheat sheets: which certification to take, the six
-published Architect scenarios, the exam-day checklist, and how the official
-courses map onto the exams. Shares the palette, logos, and footer with
-build_images.py so the whole set stays consistent.
+Cards that answer questions candidates actually ask, in the same visual language
+as the roadmap and cheat sheets: which certification to take, the six published
+Architect scenarios, the exam-day checklist, how the official courses map onto
+the exams, how scoring and retakes work, a three-week study plan, what the
+non-disclosure agreement lets you share, and the registration admin that costs
+people their fee. Shares the palette, logos, and footer with build_images.py so
+the whole set stays consistent.
 
     python .github/scripts/build_extra_images.py --render
 
@@ -389,9 +391,109 @@ def flashcard_back():
     return flashcard_face(True)
 
 
+def share_card():
+    """The confidentiality line, which almost nobody states plainly."""
+    W, H = 1280, 684
+    out = frame(W, H, "CONFIDENTIALITY", "What you may and may not share",
+                "Every candidate signs a non-disclosure agreement, and it extends explicitly to online forums.",
+                PLUM)
+
+    lanes = [
+        (CORAL, "Never post or request", [
+            "Exam questions, in any wording",
+            "Answer options",
+            "Scenarios from the live exam",
+            "Screenshots of any item",
+            "Recalled questions, even in a private study group",
+        ]),
+        (OLIVE, "Fair game, and useful to others", [
+            "The published blueprints and domain weights",
+            "The official exam guides and sample questions",
+            "Your own notes and original practice material",
+            "How you prepared, and what you would change",
+            "How the exam felt, and how you scored",
+        ]),
+    ]
+
+    top = 212
+    for i, (accent, heading, items) in enumerate(lanes):
+        x = 70 + i * 580
+        out.append(f'<rect x="{x}" y="{top}" width="560" height="264" rx="8" fill="{CARD}" stroke="{RULE}"/>')
+        out.append(f'<rect x="{x}" y="{top}" width="560" height="5" rx="2.5" fill="{accent}"/>')
+        out.append(f'<text x="{x + 24}" y="{top + 42}" font-size="17" font-weight="600" fill="{INK}">{esc(heading)}</text>')
+        iy = top + 82
+        for item in items:
+            out.append(f'<circle cx="{x + 30}" cy="{iy - 5}" r="3.2" fill="{accent}"/>')
+            out.append(f'<text x="{x + 48}" y="{iy}" font-size="13.5" fill="{BODY}">{esc(item)}</text>')
+            iy += 38
+
+    y = top + 264
+    out.append(f'<text x="70" y="{y + 46}" font-size="15.5" font-weight="600" fill="{INK}">The line is content versus experience.</text>')
+    out.append(f'<text x="70" y="{y + 76}" font-size="14" fill="{BODY}">Posting what was on the paper puts your own credential at risk. Posting how you prepared helps the next person and costs you nothing.</text>')
+    out.append(footer(W, y + 104, "Confidentiality terms published by Anthropic"))
+    out.append("</svg>")
+    return "\n".join(out)
+
+
+def registration_card():
+    """The logistics that end an attempt before the first question."""
+    W, H = 1280, 856
+    out = frame(W, H, "REGISTRATION", "The admin that costs people their fee",
+                "None of this is on the exam. All of it can end your attempt before the first question.",
+                TEAL)
+
+    columns = [
+        (CORAL, "Before you can register", [
+            "A company email on a domain in your partner record",
+            "Personal email addresses do not work",
+            "Domain record changes take 7 to 10 days",
+            "Check the partner discount appears at checkout",
+        ]),
+        (OLIVE, "Your Pearson profile", [
+            "The name must match your government photo ID exactly",
+            "You confirm this at registration, before scheduling",
+            "Request any correction more than 24 hours ahead",
+            "The corporate phone number is deliberate; leave it alone",
+        ]),
+        (TEAL, "Scheduling", [
+            "Choose online proctoring or a test center",
+            "A registration stays valid for 5 years",
+            "Reschedule or cancel free until 24 hours out",
+            "Cancelling in that window refunds the fee in full",
+        ]),
+        (PLUM, "What a mismatch costs", [
+            "Pearson refuses entry, and you do not test",
+            "The fee is forfeited under their policy",
+            "A correction after refusal does not undo it",
+            "You pay again to reschedule",
+        ]),
+    ]
+
+    y = 212
+    for i, (accent, heading, items) in enumerate(columns):
+        x = 70 + (i % 2) * 580
+        top = y + (i // 2) * 264
+        out.append(f'<rect x="{x}" y="{top}" width="560" height="236" rx="8" fill="{CARD}" stroke="{RULE}"/>')
+        out.append(f'<rect x="{x}" y="{top}" width="560" height="5" rx="2.5" fill="{accent}"/>')
+        out.append(f'<text x="{x + 24}" y="{top + 42}" font-size="17" font-weight="600" fill="{INK}">{esc(heading)}</text>')
+        iy = top + 84
+        for item in items:
+            out.append(f'<circle cx="{x + 30}" cy="{iy - 5}" r="3.2" fill="{accent}"/>')
+            out.append(f'<text x="{x + 48}" y="{iy}" font-size="13.5" fill="{BODY}">{esc(item)}</text>')
+            iy += 40
+        y_last = top + 236
+
+    out.append(f'<text x="70" y="{y_last + 40}" font-size="14" fill="{BODY}">Fix the name on the day you register rather than the day you sit. Inside 24 hours there may not be time to apply the correction.</text>')
+    out.append(footer(W, y_last + 68, "Requirements published by Anthropic and Pearson VUE"))
+    out.append("</svg>")
+    return "\n".join(out)
+
+
 def main() -> int:
     images = {
         "card-choose-certification.svg": choose_card(),
+        "card-what-you-can-share.svg": share_card(),
+        "card-registration.svg": registration_card(),
         "card-architect-scenarios.svg": scenarios_card(),
         "card-exam-day.svg": exam_day_card(),
         "card-courses.svg": courses_card(),

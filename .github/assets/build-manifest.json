@@ -5,7 +5,7 @@
     ".github/assets/logos/anthropic-wordmark.svg": "c89653a9edd5cb71",
     ".github/assets/logos/claude-symbol-ivory.svg": "2c0a531e555fc89d",
     ".github/assets/logos/claude-symbol.svg": "5de1221c77cc91e7",
-    ".github/scripts/build_extra_images.py": "da748e8ecdbc8bb8",
+    ".github/scripts/build_extra_images.py": "4c71a96f6998263e",
     ".github/scripts/build_images.py": "799aaa0ad2247047"
   },
   "companion": {
