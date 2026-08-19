@@ -36,7 +36,7 @@
     var more = el("a", null, "Take a full practice exam");
     more.href = "guide/quiz.html";
     foot.appendChild(more);
-    foot.appendChild(document.createTextNode("  ·  100 questions across the four certifications"));
+    foot.appendChild(document.createTextNode("  ·  320 questions across the four certifications"));
     card.appendChild(foot);
     mount.appendChild(card);
   }).catch(function () {

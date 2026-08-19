@@ -2,7 +2,7 @@
 
 There is no official practice exam, and the [exam NDA](policies.md#confidentiality) forbids sharing real questions. What remains, and works well, is generating your own practice from the published blueprints using Claude itself. The questions Claude produces are practice aids in the official style, not leaked items, which keeps this method both effective and clean.
 
-The fastest way to test yourself is the [practice engine](quiz.md): a shuffled, timed, scored exam drawn from all 100 questions, in the browser or from a terminal. It reorders questions and options on every run, so nothing can be memorized by position.
+The fastest way to test yourself is the [practice engine](quiz.md): a shuffled, timed, scored exam drawn from all 320 questions, in the browser or from a terminal. It reorders questions and options on every run, so nothing can be memorized by position.
 
 Start with the written sets. Each certification folder contains ten practice questions with answers and rationales shown inline ([Associate](../associate-foundations/practice-questions.md), [Developer](../developer-foundations/practice-questions.md), [Architect Foundations](../architect-foundations/practice-questions.md), [Architect Professional](../architect-professional/practice-questions.md)), plus a timed mock exam with domains hidden, an answer key at the end, and a score-interpretation table ([Associate](../associate-foundations/mock-exam-1.md), [Developer](../developer-foundations/mock-exam-1.md), [Architect Foundations](../architect-foundations/mock-exam-1.md), [Architect Professional](../architect-professional/mock-exam-1.md)). Take the practice set to learn, then the mock exam under timed conditions to measure.
 
