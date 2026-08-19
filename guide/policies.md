@@ -60,6 +60,8 @@ flowchart LR
 
 Exam content is confidential. Taking an exam commits you not to share, reproduce, or discuss its questions in any form, including in study groups and online forums. This obligation is part of the terms accepted at registration, and it is why this repository's [discussion rules](../.github/CONTRIBUTING.md#discussions) prohibit posting real exam questions.
 
+[![What you may and may not share: exam questions, answer options and live scenarios are never permitted, while blueprints, official sample questions and how you prepared are fair game](../.github/assets/card-what-you-can-share.png)](../.github/assets/card-what-you-can-share.png "View the confidentiality summary at full size")
+
 ## Appeals
 
 - You can appeal a certification decision within 14 days of being notified, or within 14 days of your exam date for a result concern. Appeals go to Pearson VUE support.

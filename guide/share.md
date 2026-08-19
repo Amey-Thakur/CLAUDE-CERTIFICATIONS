@@ -84,13 +84,28 @@ https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS
 
 ## What to attach
 
-Posts with an image travel further than posts without one. Any of these work, and each carries the repository link so it leads back:
+Posts with an image travel further than posts without one. Every card below is free to use, carries the repository link, and is generated from the same data as the guide, so none of them can drift out of date. Click any one to open it at full size, then save it.
 
-- The [roadmap](../.github/assets/roadmap.png), for a general audience
-- The [cheat sheet](../associate-foundations/cheat-sheet.md) for the exam you are discussing
-- The [exam-day checklist](../.github/assets/card-exam-day.png), which candidates tend to save
-- The [six published scenarios](../.github/assets/card-architect-scenarios.png), for an Architect Foundations audience
-- A [flashcard](../.github/assets/flashcard-front.png) and [its answer](../.github/assets/flashcard-back.png), posted as a pair, which invites a reply before the answer lands
+| Image | Best for | File |
+| --- | --- | --- |
+| Certification roadmap | A general audience, or someone who has never heard of these exams | [Open](../.github/assets/roadmap.png) |
+| Which certification is yours | Someone deciding between the four | [Open](../.github/assets/card-choose-certification.png) |
+| The six published scenarios | An Architect Foundations candidate | [Open](../.github/assets/card-architect-scenarios.png) |
+| Scoring and second chances | Anyone asking what 720 means, or what a retake costs | [Open](../.github/assets/card-scoring.png) |
+| A three-week study plan | Someone with a date booked and no plan | [Open](../.github/assets/card-study-plan.png) |
+| Exam-day checklist | The week before a sitting. Candidates tend to save this one | [Open](../.github/assets/card-exam-day.png) |
+| Registration admin | Before anyone registers, because it is where fees get lost | [Open](../.github/assets/card-registration.png) |
+| What you may and may not share | A study group, or a forum thread heading the wrong way | [Open](../.github/assets/card-what-you-can-share.png) |
+| Every official course | Anyone who does not know the preparation courses are free | [Open](../.github/assets/card-courses.png) |
+| Associate cheat sheet | Associate Foundations, domain weights on one page | [Open](../.github/assets/cheat-sheet-associate-foundations.png) |
+| Developer cheat sheet | Developer Foundations, domain weights on one page | [Open](../.github/assets/cheat-sheet-developer-foundations.png) |
+| Architect Foundations cheat sheet | Architect Foundations, domain weights on one page | [Open](../.github/assets/cheat-sheet-architect-foundations.png) |
+| Architect Professional cheat sheet | Architect Professional, domain weights on one page | [Open](../.github/assets/cheat-sheet-architect-professional.png) |
+| A flashcard, and its answer | Post as a pair. The question invites a reply before the answer lands | [Open](../.github/assets/flashcard-front.png) |
+
+The answer side of the flashcard is [here](../.github/assets/flashcard-back.png).
+
+The whole guide as one printable file is the [companion PDF](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/releases/latest/download/claude-certifications-companion.pdf), and the 110-card deck is [flashcards.tsv](../flashcards.tsv) for Anki, Quizlet, or RemNote.
 
 ## One thing to leave out
 

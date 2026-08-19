@@ -34,6 +34,8 @@ If you see "You aren't signed in with a partner company employee email", check t
 
 The name on your Pearson registration must exactly match the name on the government-issued photo ID you will present. To correct a name, email [certifications-support@anthropic.com](mailto:certifications-support@anthropic.com) before scheduling.
 
+[![What to get right before you register: partner email domain, the name on your Pearson profile matching your photo ID, scheduling, and what a mismatch at check-in costs](../.github/assets/card-registration.png)](../.github/assets/card-registration.png "View the registration summary at full size")
+
 ## Rescheduling and cancelling
 
 You can reschedule or cancel free of charge until 24 hours before the appointment; cancelling in that window refunds the fee in full. Inside 24 hours, or if you do not show up, the fee is forfeited.
