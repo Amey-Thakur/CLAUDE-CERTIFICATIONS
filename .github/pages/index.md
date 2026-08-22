@@ -71,7 +71,7 @@ flowchart TD
 
 ## The maintainer's certificates
 
-All twenty-one Anthropic Academy course completion certificates behind this program, each with its issued PDF and Skilljar verification record: [browse the gallery](certificates/README.md).
+All twenty-two Anthropic Academy course completion certificates behind this program, each with its issued PDF and Skilljar verification record: [browse the gallery](certificates/README.md).
 
 ## Official links
 

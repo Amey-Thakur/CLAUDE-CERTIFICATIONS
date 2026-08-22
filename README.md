@@ -75,7 +75,7 @@ Every fact, domain weight, rule, and glossary term in this repository, as a deck
 | --- | --- |
 | [associate-foundations](associate-foundations/) · [developer-foundations](developer-foundations/) · [architect-foundations](architect-foundations/) · [architect-professional](architect-professional/) | One folder per certification: study guide, official exam guide PDF, study notes, practice questions |
 | [guide](guide/) | Program-wide pages: learning paths, study strategy, official resources, practice, registration, policies, FAQ, and glossary, plus the official policy PDFs and their [provenance](guide/official-sources.md) |
-| [certificates](certificates/) | The maintainer's 21 Anthropic Academy course certificates, with previews and verification links |
+| [certificates](certificates/) | The maintainer's 22 Anthropic Academy course certificates, with previews and verification links |
 | [.github](.github/) | Repository housekeeping: CI, templates, logo assets, and the [script](.github/scripts/update_resources.py) that keeps mirrored PDFs current |
 
 ## Questions and community

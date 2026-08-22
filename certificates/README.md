@@ -9,7 +9,7 @@
 
 # Course completion certificates
 
-**All twenty-one Anthropic Academy courses behind the certification program, completed by [Amey Thakur](https://github.com/Amey-Thakur).**
+**All twenty-two Anthropic Academy courses behind the certification program, completed by [Amey Thakur](https://github.com/Amey-Thakur).**
 
 Every certificate links to its issued PDF and its Skilljar verification record, which carries the completion date shown.
 
@@ -150,6 +150,13 @@ Course completion certificates are distinct from the certification credentials t
 <b>AI Fluency for Small Businesses</b><br>
 <sub><a href="ai-fluency-for-small-businesses.pdf">PDF</a> · <a href="https://verify.skilljar.com/c/ufedafc4f4ai">Verify</a> · Completed June 6, 2026</sub>
 </td>
+<td align="center" width="33%">
+<a href="ai-fluency-for-creative-work.pdf"><img src="previews/ai-fluency-for-creative-work.png" alt="AI Fluency for Creative Work certificate of completion issued to Amey Thakur" width="270"></a><br>
+<b>AI Fluency for Creative Work</b><br>
+<sub><a href="ai-fluency-for-creative-work.pdf">PDF</a> · <a href="https://verify.skilljar.com/c/pgq495ktrqqs">Verify</a> · Completed August 22, 2026</sub>
+</td>
+</tr>
+<tr>
 <td align="center" width="33%">
 <a href="teaching-ai-fluency.pdf"><img src="previews/teaching-ai-fluency.png" alt="Teaching AI Fluency certificate of completion issued to Amey Thakur" width="270"></a><br>
 <b>Teaching AI Fluency</b><br>
