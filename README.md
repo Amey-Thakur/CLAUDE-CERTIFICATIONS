@@ -83,7 +83,7 @@ Every fact, domain weight, rule, and glossary term in this repository, as a deck
 Ask questions, share how your exam went, and compare preparation notes in [Discussions](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/discussions). Found a broken link or an outdated fact? [Open an issue](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/issues/new/choose).
 
 > [!IMPORTANT]
-> Every candidate accepts a non-disclosure agreement covering exam questions, answer options, and scenarios, and it extends explicitly to online forums. Never post or request real exam content here. Blueprints, official sample questions, and the practice material in this repository are all fair game.
+> Every candidate accepts a non-disclosure agreement covering exam questions, answer options, and scenarios. It forbids publishing or posting that content anywhere, which includes forums like this one. Never post or request real exam content here. Blueprints, official sample questions, and the practice material in this repository are all fair game.
 
 Preparing someone else? The [share kit](guide/share.md) has the links, ready-to-use copy, and images.
 
