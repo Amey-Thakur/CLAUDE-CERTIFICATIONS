@@ -224,7 +224,7 @@ def courses_card():
             ("AI Fluency: Framework & Foundations", "Associate"),
             ("AI Capabilities and Limitations", "Associate"),
             ("AI Fluency for Builders", "Associate"),
-            ("Role editions: educators, pK-12, students, nonprofits, small business", "Context"),
+            ("Roles: educators, pK-12, students, nonprofits, business, creative", "Context"),
             ("Teaching AI Fluency", "Instructors"),
         ]),
     ]

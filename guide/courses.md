@@ -51,6 +51,7 @@ The collaboration framework: working with AI effectively, efficiently, ethically
 | AI Fluency for students | AI Fluency for learning, career planning, and academic success | [Enroll](https://anthropic.skilljar.com/ai-fluency-for-students) | [PDF](../certificates/ai-fluency-for-students.pdf) · [Verify](https://verify.skilljar.com/c/2t46zznf8d6c) |
 | AI Fluency for nonprofits | Increasing organizational impact while staying true to mission and values | [Enroll](https://anthropic.skilljar.com/ai-fluency-for-nonprofits) | [PDF](../certificates/ai-fluency-for-nonprofits.pdf) · [Verify](https://verify.skilljar.com/c/i5pueehh68uv) |
 | AI Fluency for Small Businesses | The framework applied to small-business operations | [Enroll](https://anthropic.skilljar.com/ai-fluency-for-small-businesses) | [PDF](../certificates/ai-fluency-for-small-businesses.pdf) · [Verify](https://verify.skilljar.com/c/ufedafc4f4ai) |
+| AI Fluency for Creative Work | The framework applied to creative practice, keeping authorship deliberate | [Enroll](https://anthropic.skilljar.com/ai-fluency-for-creative-work) | Not taken yet |
 | Teaching AI Fluency | Teaching and assessing AI Fluency in instructor-led settings | [Enroll](https://anthropic.skilljar.com/teaching-ai-fluency) | [PDF](../certificates/teaching-ai-fluency.pdf) · [Verify](https://verify.skilljar.com/c/qsd5j744a2pc) |
 
 ## Suggested order
@@ -61,4 +62,4 @@ This is the repository's recommendation: start with Claude 101 and Claude Platfo
 
 ---
 
-Facts last verified against the official sources on 2026-08-12. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-08-19. [Repository index](../README.md)

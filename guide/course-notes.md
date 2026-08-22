@@ -1,6 +1,6 @@
 # Course notes
 
-What I took away from each of the 21 courses, and which exam domains it serves. These are working notes, not summaries of the course material: enough to decide what to take, in what order, and what to watch for while taking it. Enrollment links and certificates are in [Anthropic courses](courses.md).
+What I took away from each of the 22 courses, and which exam domains it serves. These are working notes, not summaries of the course material: enough to decide what to take, in what order, and what to watch for while taking it. Enrollment links and certificates are in [Anthropic courses](courses.md).
 
 ## How the courses map to the exams
 
@@ -56,7 +56,7 @@ flowchart LR
 
 **AI Fluency for Builders.** The framework for people shipping AI features. Useful bridge material if you are moving from the Associate track toward Developer.
 
-**AI Fluency for educators**, **for pK-12 Educators**, **for students**, **for nonprofits**, and **for Small Businesses.** Five role-specific editions of the same framework. Take the one matching your context; they do not stack, and taking several adds repetition rather than depth.
+**AI Fluency for educators**, **for pK-12 Educators**, **for students**, **for nonprofits**, **for Small Businesses**, and **for Creative Work.** Six role-specific editions of the same framework. Take the one matching your context; they do not stack, and taking several adds repetition rather than depth.
 
 **Teaching AI Fluency.** For teaching and assessing the framework in instructor-led settings. Outside exam scope, valuable if you train others, and the clearest sign that you have genuinely absorbed the framework is being able to teach it.
 

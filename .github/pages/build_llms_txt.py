@@ -29,7 +29,7 @@ EXAMS = [
 GUIDE = [
     ("learning-paths", "Which certification to take, and how they connect"),
     ("study-strategy", "A three-week study plan that fits alongside a job"),
-    ("courses", "All 21 official Anthropic Academy courses and the exam each serves"),
+    ("courses", "All 22 official Anthropic Academy courses and the exam each serves"),
     ("course-notes", "Per-course notes: what each is worth and the order to take them in"),
     ("resources", "Official documentation, engineering articles, and code"),
     ("videos", "Anthropic's official videos, arranged by exam"),
@@ -62,7 +62,7 @@ def main() -> int:
         f"{n_questions} original practice questions, {n_cards} flashcards, and a printable companion. "
         "Free, open source, and built only from published material.",
         "",
-        "Maintained by Amey Thakur, who completed the full curriculum and all 21 Academy courses. "
+        "Maintained by Amey Thakur, who has completed 21 of the 22 Academy courses. "
         "This is a community resource and is not affiliated with or endorsed by Anthropic. "
         "The official program lives on Anthropic Partner Academy and exams are delivered by Pearson VUE.",
         "",

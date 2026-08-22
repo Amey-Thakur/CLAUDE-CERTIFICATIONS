@@ -4,7 +4,7 @@ Everything here is published by Anthropic or its official partners. Third-party 
 
 ## Courses
 
-All 21 official courses, with descriptions, enrollment links, and exam relevance, are cataloged in [Anthropic courses](courses.md). The platforms that host them:
+All 22 official courses, with descriptions, enrollment links, and exam relevance, are cataloged in [Anthropic courses](courses.md). The platforms that host them:
 
 | Resource | What it is |
 | --- | --- |
@@ -59,4 +59,4 @@ The [Academy courses](courses.md) are themselves video curricula; for structured
 
 ---
 
-Facts last verified against the official sources on 2026-08-12. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-08-19. [Repository index](../README.md)

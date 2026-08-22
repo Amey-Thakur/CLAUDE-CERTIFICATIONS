@@ -5,11 +5,11 @@ Every video on this page is published by Anthropic on its own [YouTube channel](
 On the website each video plays inline. On GitHub the thumbnails link out to YouTube.
 
 > [!TIP]
-> Video is a supplement, not a substitute. The [21 official courses](courses.md) are the curriculum and the [exam guides](official-sources.md) define what is tested. Use these when a topic has not landed from reading, and when you want to hear how Anthropic's own engineers describe a decision.
+> Video is a supplement, not a substitute. The [22 official courses](courses.md) are the curriculum and the [exam guides](official-sources.md) define what is tested. Use these when a topic has not landed from reading, and when you want to hear how Anthropic's own engineers describe a decision.
 
 ## AI Fluency, the complete course
 
-Anthropic publishes **AI Fluency: Framework & Foundations** as a full video course, and it is also [one of the 21 Academy courses](courses.md) with its own certificate. It underpins the Associate exam: the 4D framework, capabilities and limitations, and the prompting and judgment habits the scenarios assume.
+Anthropic publishes **AI Fluency: Framework & Foundations** as a full video course, and it is also [one of the 22 Academy courses](courses.md) with its own certificate. It underpins the Associate exam: the 4D framework, capabilities and limitations, and the prompting and judgment habits the scenarios assume.
 
 The [complete playlist](https://www.youtube.com/playlist?list=PLf2m23nhTg1NjL3-jL3s0qZCYzO07ZQPv) runs about 70 minutes. The lessons that carry the most exam weight:
 
