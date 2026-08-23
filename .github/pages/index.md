@@ -71,7 +71,23 @@ flowchart TD
 
 ## The maintainer's certificates
 
-All twenty-two Anthropic Academy course completion certificates behind this program, each with its issued PDF and Skilljar verification record: [browse the gallery](certificates/README.md).
+All twenty-two Anthropic Academy course completion certificates behind this program, each with its issued PDF and Skilljar verification record. Nineteen were also issued as a digital completion badge on [Claude Academy](https://academy.claude.com), verifiable on Anthropic's own domain.
+
+<div align="center">
+<table>
+<tr>
+<td align="center" width="25%"><a href="https://academy.claude.com/verify/13103f134da7befe9615ec2adfc8c50e" title="Verify Claude 101 on Claude Academy"><img src="certificates/badges/claude-101.png" width="100%" alt="Claude Academy completion badge for Claude 101, issued to Amey Thakur"></a><br><sub><b>Claude 101</b></sub></td>
+<td align="center" width="25%"><a href="https://academy.claude.com/verify/7f0839f0576b57f38658e8784e4c9a83" title="Verify Claude Code in Action on Claude Academy"><img src="certificates/badges/claude-code-in-action.png" width="100%" alt="Claude Academy completion badge for Claude Code in Action, issued to Amey Thakur"></a><br><sub><b>Claude Code in Action</b></sub></td>
+<td align="center" width="25%"><a href="https://academy.claude.com/verify/f6a1826e7f9054f5e41bf340a402fe58" title="Verify Building with the Claude API on Claude Academy"><img src="certificates/badges/building-with-the-claude-api.png" width="100%" alt="Claude Academy completion badge for Building with the Claude API, issued to Amey Thakur"></a><br><sub><b>Building with the Claude API</b></sub></td>
+<td align="center" width="25%"><a href="https://academy.claude.com/verify/0377c528acb2ecff93695ef9a9b56369" title="Verify Introduction to Model Context Protocol on Claude Academy"><img src="certificates/badges/introduction-to-model-context-protocol.png" width="100%" alt="Claude Academy completion badge for Introduction to Model Context Protocol, issued to Amey Thakur"></a><br><sub><b>Introduction to Model Context Protocol</b></sub></td>
+</tr>
+</table>
+
+**[Browse all twenty-two certificates and nineteen badges](certificates/README.md)**
+
+</div>
+
+A course completion certificate is not a certification credential. The courses are free and self-paced; the four certifications require a proctored Pearson VUE exam and are issued separately as Credly badges.
 
 ## Official links
 

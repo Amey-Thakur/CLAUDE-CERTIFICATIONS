@@ -9,7 +9,7 @@
 Official exam guides, blueprints, policies, courses, and study notes,
 collected and organized so you can spend your time studying, not searching.
 
-[Website](https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/) · [Certifications](#the-certifications) · [Start here](#start-here) · [Program guide](guide/README.md) · [Certificates](certificates/README.md) · [Discussions](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/discussions)
+[Website](https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/) · [Certifications](#the-certifications) · [Start here](#start-here) · [Program guide](guide/README.md) · [Credentials](#credentials-behind-this-guide) · [Discussions](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/discussions)
 
 **[Download the companion (PDF)](claude-certifications-companion.pdf)** · the whole guide in one printable file
 
@@ -68,6 +68,75 @@ flowchart TD
 Every fact, domain weight, rule, and glossary term in this repository, as a deck of 110 cards. Turn them in the browser on the [flashcards page](https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/guide/flashcards.html), filtered by exam or by topic, or take [flashcards.tsv](flashcards.tsv) and import the whole deck into Anki, Quizlet, or RemNote.
 
 <a href=".github/assets/flashcard-front.png" title="View this flashcard at full size"><img src=".github/assets/flashcard-front.png" alt="A flashcard asking which domain carries the most weight on the Developer Foundations exam" width="49%"></a> <a href=".github/assets/flashcard-back.png" title="View this flashcard at full size"><img src=".github/assets/flashcard-back.png" alt="The same flashcard turned over, showing applications and integration at 33 percent of the paper" width="49%"></a>
+
+## Credentials behind this guide
+
+All **22 Anthropic Academy courses** in the certification program, completed and independently verifiable. **19** were also issued as a digital completion badge on [Claude Academy](https://academy.claude.com), Anthropic's own domain, and every one of the 22 carries a Skilljar verification record with its completion date.
+
+This is here so you can check the material rather than trust it. Every claim in this repository traces to an official source; these show the curriculum behind it was worked through rather than summarized from the outside.
+
+<div align="center">
+
+<table>
+<tr>
+<td align="center" width="25%">
+<a href="https://academy.claude.com/verify/13103f134da7befe9615ec2adfc8c50e" title="Verify Claude 101 on Claude Academy"><img src="certificates/badges/claude-101.png" width="100%" alt="Claude Academy completion badge for Claude 101, issued to Amey Thakur"></a>
+<br><b>Claude 101</b>
+<br><sub><a href="https://academy.claude.com/verify/13103f134da7befe9615ec2adfc8c50e">Verify</a></sub>
+</td>
+<td align="center" width="25%">
+<a href="https://academy.claude.com/verify/c916ad7d1190ea2447bb2fcf3809ef16" title="Verify Claude Platform 101 on Claude Academy"><img src="certificates/badges/claude-platform-101.png" width="100%" alt="Claude Academy completion badge for Claude Platform 101, issued to Amey Thakur"></a>
+<br><b>Claude Platform 101</b>
+<br><sub><a href="https://academy.claude.com/verify/c916ad7d1190ea2447bb2fcf3809ef16">Verify</a></sub>
+</td>
+<td align="center" width="25%">
+<a href="https://academy.claude.com/verify/47482157d8dbc48e39d22aaa49d6d9b1" title="Verify Claude Code 101 on Claude Academy"><img src="certificates/badges/claude-code-101.png" width="100%" alt="Claude Academy completion badge for Claude Code 101, issued to Amey Thakur"></a>
+<br><b>Claude Code 101</b>
+<br><sub><a href="https://academy.claude.com/verify/47482157d8dbc48e39d22aaa49d6d9b1">Verify</a></sub>
+</td>
+<td align="center" width="25%">
+<a href="https://academy.claude.com/verify/7f0839f0576b57f38658e8784e4c9a83" title="Verify Claude Code in Action on Claude Academy"><img src="certificates/badges/claude-code-in-action.png" width="100%" alt="Claude Academy completion badge for Claude Code in Action, issued to Amey Thakur"></a>
+<br><b>Claude Code in Action</b>
+<br><sub><a href="https://academy.claude.com/verify/7f0839f0576b57f38658e8784e4c9a83">Verify</a></sub>
+</td>
+</tr>
+<tr>
+<td align="center" width="25%">
+<a href="https://academy.claude.com/verify/f6a1826e7f9054f5e41bf340a402fe58" title="Verify Building with the Claude API on Claude Academy"><img src="certificates/badges/building-with-the-claude-api.png" width="100%" alt="Claude Academy completion badge for Building with the Claude API, issued to Amey Thakur"></a>
+<br><b>Building with the Claude API</b>
+<br><sub><a href="https://academy.claude.com/verify/f6a1826e7f9054f5e41bf340a402fe58">Verify</a></sub>
+</td>
+<td align="center" width="25%">
+<a href="https://academy.claude.com/verify/0377c528acb2ecff93695ef9a9b56369" title="Verify Introduction to Model Context Protocol on Claude Academy"><img src="certificates/badges/introduction-to-model-context-protocol.png" width="100%" alt="Claude Academy completion badge for Introduction to Model Context Protocol, issued to Amey Thakur"></a>
+<br><b>Introduction to Model Context Protocol</b>
+<br><sub><a href="https://academy.claude.com/verify/0377c528acb2ecff93695ef9a9b56369">Verify</a></sub>
+</td>
+<td align="center" width="25%">
+<a href="https://academy.claude.com/verify/f7904c762c678c6e136bc866545a47e4" title="Verify Model Context Protocol: Advanced Topics on Claude Academy"><img src="certificates/badges/model-context-protocol-advanced-topics.png" width="100%" alt="Claude Academy completion badge for Model Context Protocol: Advanced Topics, issued to Amey Thakur"></a>
+<br><b>Model Context Protocol: Advanced Topics</b>
+<br><sub><a href="https://academy.claude.com/verify/f7904c762c678c6e136bc866545a47e4">Verify</a></sub>
+</td>
+<td align="center" width="25%">
+<a href="https://academy.claude.com/verify/707d8089647cf8c2a99e833811ef8411" title="Verify AI Fluency: Framework &amp;amp; Foundations on Claude Academy"><img src="certificates/badges/ai-fluency-framework-and-foundations.png" width="100%" alt="Claude Academy completion badge for AI Fluency: Framework &amp;amp; Foundations, issued to Amey Thakur"></a>
+<br><b>AI Fluency: Framework &amp;amp; Foundations</b>
+<br><sub><a href="https://academy.claude.com/verify/707d8089647cf8c2a99e833811ef8411">Verify</a></sub>
+</td>
+</tr>
+</table>
+
+**[See all 22 certificates and 19 badges](certificates/README.md)**
+
+</div>
+
+| Track | Courses | Academy badges | What it covers |
+| --- | ---: | ---: | --- |
+| [Claude platform](certificates/README.md#claude-platform) | 5 | 5 | Claude 101, the platform, Claude Code, and Cowork |
+| [Developer and integration](certificates/README.md#developer-and-integration) | 5 | 3 | The API, Model Context Protocol, and building agents |
+| [Deployment platforms](certificates/README.md#deployment-platforms) | 2 | 2 | Claude on Amazon Bedrock and Google Cloud Vertex AI |
+| [AI Fluency](certificates/README.md#ai-fluency) | 10 | 9 | The framework, and its versions for builders, educators, students, nonprofits and small businesses |
+
+> [!NOTE]
+> **A course certificate is not a certification credential, and this section claims only the first.** The 22 courses above are free, self-paced, and open to anyone on the public [Anthropic Academy](https://anthropic.skilljar.com/). The four certifications are separate: each requires a proctored Pearson VUE exam, a passing score of 720 of 1,000, and Claude Partner Network membership to register, and each is issued as a Credly badge that is valid for 12 months. The two are verified on different systems and should never be presented as the same thing.
 
 ## What is where
 
