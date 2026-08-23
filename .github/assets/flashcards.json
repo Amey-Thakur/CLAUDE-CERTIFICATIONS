@@ -530,7 +530,7 @@
   },
   {
    "front": "How long is a Claude credential valid",
-   "back": "12 months from the date it is earned",
+   "back": "12 months from the date the credential is awarded",
    "tags": [
     "policy",
     "shared"

@@ -48,7 +48,7 @@ Condensed from the [official certification FAQ](https://anthropic-partners.skill
 
 **If I fail?** Retake after a waiting period that grows per attempt: 14, then 30, then 90 days, with at most four attempts per exam per rolling 12 months. Each retake costs the full fee, with partner discounts applying. Failing one exam never blocks registering for a different one.
 
-**How long is certification valid?** 12 months from the earn date. Renewal before expiry is free: an open-book, non-proctored assessment on Partner Academy, retakable as needed. A lapsed credential means retaking the full exam at full fee. Credentials earned before June 30, 2026 were automatically extended from 6 to 12 months of validity.
+**How long is certification valid?** 12 months from the date the credential is awarded. Renewal before expiry is free: an open-book, non-proctored assessment on Partner Academy, retakable as needed. A lapsed credential means retaking the full exam at full fee. Credentials earned before June 30, 2026 were automatically extended from 6 to 12 months of validity.
 
 ## Badges and credential portability
 

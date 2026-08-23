@@ -116,7 +116,7 @@ The full deck below, for reading, printing, or checking one fact quickly. It is 
 
 | Front | Back |
 | --- | --- |
-| How long is a Claude credential valid | 12 months from the date it is earned |
+| How long is a Claude credential valid | 12 months from the date the credential is awarded |
 | What does on-time renewal involve | A free, open-book, non-proctored assessment on Anthropic Partner Academy, retakable as often as needed |
 | What happens if a credential lapses | You must pass the full exam again at full fee |
 | Retake waiting periods after failed attempts | 14 days after the first, 30 after the second, 90 after the third |
