@@ -103,4 +103,4 @@ Skip and return. Long scenarios reward a second reading with fresh eyes far more
 
 ---
 
-[Study guide](README.md) · [Notes](notes.md) · [Practice questions](practice-questions.md) · [Mock exam](mock-exam-1.md) · [Repository index](../README.md)
+Facts last verified against the official sources on 2026-08-22. [Study guide](README.md) · [Notes](notes.md) · [Practice questions](practice-questions.md) · [Mock exam](mock-exam-1.md) · [Repository index](../README.md)

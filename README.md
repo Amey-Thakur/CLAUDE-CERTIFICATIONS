@@ -104,4 +104,6 @@ Contributions that keep facts current are welcome; see [CONTRIBUTING.md](.github
 Repository text is <a href="LICENSE">MIT licensed</a>; mirrored documents and logo artwork keep their own provenance
 (<a href="guide/official-sources.md">sources</a>, <a href=".github/assets/logos/README.md">logos</a>).</sub>
 
+<sub>Facts last verified against the official sources on 2026-08-22.</sub>
+
 </div>
