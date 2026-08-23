@@ -457,9 +457,9 @@ def registration_card():
         ]),
         (TEAL, "Scheduling", [
             "Choose online proctoring or a test center",
-            "A registration stays valid for 5 years",
+            "Choose online proctoring or a Pearson test center",
             "Reschedule or cancel free until 24 hours out",
-            "Cancelling in that window refunds the fee in full",
+            "Inside 24 hours, or a no-show, the fee is forfeited",
         ]),
         (PLUM, "What a mismatch costs", [
             "Pearson refuses entry, and you do not test",

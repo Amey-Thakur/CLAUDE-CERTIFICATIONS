@@ -9,7 +9,6 @@ Your certification belongs to you, not your employer. It stays with you if you c
 ## Scheduling, rescheduling, and cancellation
 
 - Register and pay on the certification's page; Pearson VUE emails scheduling instructions afterward.
-- A registration stays valid for 5 years. There is no pressure to schedule quickly, but it does expire.
 - Reschedule or cancel free of charge until 24 hours before the appointment; cancellation in that window is fully refunded.
 - Inside 24 hours, or on a no-show, the fee is forfeited.
 

@@ -34,11 +34,11 @@
 <circle cx="100" cy="555" r="3.2" fill="#4f7d8c"/>
 <text x="118" y="560" font-size="13.5" fill="#3d3a35">Choose online proctoring or a test center</text>
 <circle cx="100" cy="595" r="3.2" fill="#4f7d8c"/>
-<text x="118" y="600" font-size="13.5" fill="#3d3a35">A registration stays valid for 5 years</text>
+<text x="118" y="600" font-size="13.5" fill="#3d3a35">Choose online proctoring or a Pearson test center</text>
 <circle cx="100" cy="635" r="3.2" fill="#4f7d8c"/>
 <text x="118" y="640" font-size="13.5" fill="#3d3a35">Reschedule or cancel free until 24 hours out</text>
 <circle cx="100" cy="675" r="3.2" fill="#4f7d8c"/>
-<text x="118" y="680" font-size="13.5" fill="#3d3a35">Cancelling in that window refunds the fee in full</text>
+<text x="118" y="680" font-size="13.5" fill="#3d3a35">Inside 24 hours, or a no-show, the fee is forfeited</text>
 <rect x="650" y="476" width="560" height="236" rx="8" fill="#ffffff" stroke="#e0ddd4"/>
 <rect x="650" y="476" width="560" height="5" rx="2.5" fill="#8a5f8c"/>
 <text x="674" y="518" font-size="17" font-weight="600" fill="#1f1e1b">What a mismatch costs</text>

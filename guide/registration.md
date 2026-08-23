@@ -30,7 +30,7 @@ If you see "You aren't signed in with a partner company employee email", check t
 2. Download and read the exam guide, the [terms and conditions](certification-terms-and-conditions.pdf), and the [exam policy](anthropic-certification-exam-policy.pdf). Registering constitutes acceptance of all three.
 3. Register and pay by credit card. Any partner-tier discount is applied automatically at checkout. If a discount you expect is missing, see the [FAQ on pricing](faq.md#pricing-and-discounts) before paying.
 4. Follow the confirmation email to create your Pearson VUE account and sign in.
-5. Schedule your session: pick a date, and choose online proctoring or a test center. A registration stays valid for 5 years, so you can sit it whenever you are ready.
+5. Schedule your session: pick a date, and choose online proctoring or a test center.
 
 The name on your Pearson registration must exactly match the name on the government-issued photo ID you will present. To correct a name, email [certifications-support@anthropic.com](mailto:certifications-support@anthropic.com) before scheduling.
 
@@ -38,7 +38,7 @@ The name on your Pearson registration must exactly match the name on the governm
 
 ## Rescheduling and cancelling
 
-You can reschedule or cancel free of charge until 24 hours before the appointment; cancelling in that window refunds the fee in full. Inside 24 hours, or if you do not show up, the fee is forfeited.
+You can reschedule or cancel up to 24 hours before the appointment. Inside 24 hours, or if you do not show up, the exam fee is forfeited.
 
 ## Preparing your computer for an online proctored exam
 
