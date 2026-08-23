@@ -31,6 +31,8 @@ Built and maintained by [Amey Thakur](https://github.com/Amey-Thakur) after comp
 >
 > Amey Thakur
 
+---
+
 ## The certifications
 
 Each certification has its own folder containing the study guide, the official exam guide PDF, the maintainer's study notes, and original practice questions.
@@ -49,6 +51,8 @@ Every exam: 120 minutes, closed book, proctored by Pearson VUE online or at a te
 >
 > Prefer one file? The whole guide is a printable companion: [claude-certifications-companion.pdf](claude-certifications-companion.pdf), thirty-three pages in five parts: choose your exam, know it, prepare, sit it, and keep going.
 
+---
+
 ## Start here
 
 ```mermaid
@@ -64,11 +68,15 @@ flowchart TD
 2. **Study.** Read your exam's study guide and notes, then the [study strategy](guide/study-strategy.md) for a working plan, the [22 official courses](guide/courses.md) with [per-course notes](guide/course-notes.md) and [official resources](guide/resources.md) that teach the material, and the [practice engine](guide/quiz.md) to test yourself: a shuffled, timed, scored exam drawn from 320 original questions. Clone the repository and open Claude Code inside it, and the built-in [exam coach skill](.claude/skills/exam-coach/SKILL.md) quizzes you directly from the blueprints.
 3. **Book and sit.** The [registration guide](guide/registration.md) covers everything from partner email issues to the proctoring network allowlist. Policies on retakes, validity, and appeals are in [policies](guide/policies.md), and quick answers in the [FAQ](guide/faq.md).
 
+---
+
 ## Flashcards
 
 Every fact, domain weight, rule, and glossary term in this repository, as a deck of 110 cards. Turn them in the browser on the [flashcards page](https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/guide/flashcards.html), filtered by exam or by topic, or take [flashcards.tsv](flashcards.tsv) and import the whole deck into Anki, Quizlet, or RemNote.
 
 <a href=".github/assets/flashcard-front.png" title="View this flashcard at full size"><img src=".github/assets/flashcard-front.png" alt="A flashcard asking which domain carries the most weight on the Developer Foundations exam" width="49%"></a> <a href=".github/assets/flashcard-back.png" title="View this flashcard at full size"><img src=".github/assets/flashcard-back.png" alt="The same flashcard turned over, showing applications and integration at 33 percent of the paper" width="49%"></a>
+
+---
 
 ## Credentials behind this guide
 
@@ -182,6 +190,8 @@ This is here so you can check the material rather than trust it. Every claim in 
 > [!NOTE]
 > **A course certificate is not a certification credential, and this section claims only the first.** The 22 courses above are free, self-paced, and open to anyone on the public [Anthropic Academy](https://anthropic.skilljar.com/). The four certifications are separate: each requires a proctored Pearson VUE exam, a passing score of 720 of 1,000, and Claude Partner Network membership to register, and each is issued as a Credly badge that is valid for 12 months. The two are verified on different systems and should never be presented as the same thing.
 
+---
+
 ## What is where
 
 | Folder | Contents |
@@ -190,6 +200,8 @@ This is here so you can check the material rather than trust it. Every claim in 
 | [guide](guide/) | Program-wide pages: learning paths, study strategy, official resources, practice, registration, policies, FAQ, and glossary, plus the official policy PDFs and their [provenance](guide/official-sources.md) |
 | [certificates](certificates/) | The maintainer's 22 Anthropic Academy course certificates, with previews and verification links |
 | [.github](.github/) | Repository housekeeping: CI, templates, logo assets, and the [script](.github/scripts/update_resources.py) that keeps mirrored PDFs current |
+
+---
 
 ## Questions and community
 
