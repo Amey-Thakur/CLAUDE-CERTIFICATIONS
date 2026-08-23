@@ -165,7 +165,6 @@ Course completion certificates are distinct from the certification credentials t
 </tr>
 </table>
 
-
 ## Claude Academy completion badges
 
 Nineteen of the twenty-two courses were also issued as a digital completion
