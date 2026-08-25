@@ -93,7 +93,7 @@ Not sure which fits? Read [how the certifications connect](guide/learning-paths.
 
 All twenty-two Anthropic Academy course completion certificates behind this program, each with its issued PDF and Skilljar verification record. Nineteen were also issued as a digital completion badge on [Claude Academy](https://academy.claude.com), verifiable on Anthropic's own domain. Every badge below links to its own verification page.
 
-<div align="center" markdown="1">
+<div align="center">
 
 <table>
 <tr>
@@ -185,9 +185,10 @@ All twenty-two Anthropic Academy course completion certificates behind this prog
 </tr>
 </table>
 
-**[All twenty-two certificates, with their PDFs and Skilljar records](certificates/README.md)**
 
 </div>
+
+**[All twenty-two certificates, with their PDFs and Skilljar records](certificates/README.md)**
 
 A course completion certificate is not a certification credential. The courses are free and self-paced; the four certifications require a proctored Pearson VUE exam and are issued separately as Credly badges.
 
