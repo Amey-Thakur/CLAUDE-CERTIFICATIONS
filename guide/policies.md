@@ -42,7 +42,7 @@ flowchart LR
     V -->|lapses| R[Full exam at full fee]
 ```
 
-- Credentials are valid for 12 months from the date the credential is awarded.
+- A credential is valid for 12 months from the date you earn it.
 - On-time renewal is free: an open-book, non-proctored assessment on Partner Academy covering what changed since you certified, retakable as often as needed. Renewal extends the credential 12 months from the current expiration date.
 - A lapsed credential requires passing the full exam again at full fee.
 - If an exam is substantially updated, Anthropic may require holders to pass the current version to stay certified.

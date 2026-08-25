@@ -15,7 +15,7 @@ This exam differs from the other three: every question is framed by one of six p
 | Delivery | Pearson VUE, online proctored or at a test center |
 | Passing score | 720 on a scaled range of 100 to 1,000 |
 | Fee | 125 USD, before any [partner-tier discount](../guide/faq.md#pricing-and-discounts). Increased from 99 USD on June 30, 2026 |
-| Validity | 12 months from the award date |
+| Validity | 12 months from the date you earn it |
 | Prerequisites | None. No course is required |
 | Language | English |
 

@@ -24,6 +24,13 @@ If you see "You aren't signed in with a partner company employee email", check t
 > [!WARNING]
 > Partner domain record changes take 7 to 10 days. If your company email is not recognized, or a partner discount does not appear at checkout, resolve it well before you plan to sit the exam rather than on the day.
 
+You must be at least 18 years old to sit a Claude certification exam.
+
+> [!NOTE]
+> **A registration stays valid for five years.** Once you buy an exam there is no
+> deadline to schedule it, so an unused registration does not lapse at the end of
+> the year. Source: the official [certifications FAQ](https://anthropic-partners.skilljar.com/page/faq-certifications).
+
 ## Registering
 
 1. Open the page for your certification from the [certifications overview](https://anthropic-partners.skilljar.com/page/partner-certifications).
