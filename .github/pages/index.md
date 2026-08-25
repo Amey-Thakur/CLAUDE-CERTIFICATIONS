@@ -185,7 +185,6 @@ All twenty-two Anthropic Academy course completion certificates behind this prog
 </tr>
 </table>
 
-
 </div>
 
 **[All twenty-two certificates, with their PDFs and Skilljar records](certificates/README.md)**
