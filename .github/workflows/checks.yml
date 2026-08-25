@@ -25,6 +25,20 @@ jobs:
         with:
           skip: "*.pdf,*.png,./.git"
 
+  metadata:
+    name: Citation metadata matches the newest release
+    runs-on: ubuntu-latest
+    steps:
+      # Tags are what the version is checked against, and the default shallow
+      # checkout does not fetch them.
+      - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      - run: python .github/scripts/check_metadata.py
+
   scripts:
     name: Scripts compile and generated files are current
     runs-on: ubuntu-latest
