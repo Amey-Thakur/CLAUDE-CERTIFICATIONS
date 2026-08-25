@@ -66,9 +66,28 @@ flowchart TD
     RF -. then .-> RP[Architect - Professional<br/>CCAR-P]
 ```
 
-1. **Pick your exam** with the table above, or read [how the certifications connect](guide/learning-paths.md).
-2. **Study** with your exam's study guide and notes, the [study strategy](guide/study-strategy.md), the [22 official courses](guide/courses.md) with [per-course notes](guide/course-notes.md) and [official resources](guide/resources.md), [official videos](guide/videos.md) that teach the material, and the [practice engine](guide/quiz.md) to test yourself: a shuffled, timed, scored exam drawn from 320 original questions.
-3. **Book and sit** with the [registration guide](guide/registration.md); [policies](guide/policies.md) and the [FAQ](guide/faq.md) cover the rest.
+### 1. Pick your exam
+
+| What you do | Start with |
+| --- | --- |
+| Advise customers and run engagements | [Associate, CCAO-F](associate-foundations/README.md) |
+| Build with the API, Claude Code, or MCP | [Developer, CCDV-F](developer-foundations/README.md) |
+| Design solutions end to end | [Architect Foundations, CCAR-F](architect-foundations/README.md), then [Architect Professional, CCAR-P](architect-professional/README.md) |
+
+Not sure which fits? Read [how the certifications connect](guide/learning-paths.md).
+
+### 2. Study
+
+- Your exam's own **study guide** and **notes**, linked in the table above
+- [Study strategy](guide/study-strategy.md), for a working plan rather than a reading list
+- [The 22 official courses](guide/courses.md), with [per-course notes](guide/course-notes.md) and [official resources](guide/resources.md)
+- [The practice engine](guide/quiz.md): shuffled, timed and scored, drawn from 320 original questions
+
+### 3. Book and sit
+
+- [Registration guide](guide/registration.md), covering partner email problems and the proctoring network allowlist
+- [Policies](guide/policies.md), for retakes, validity and appeals
+- [FAQ](guide/faq.md), for the short answers
 
 ## The maintainer's certificates
 
