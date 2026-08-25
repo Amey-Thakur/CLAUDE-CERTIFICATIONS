@@ -21,7 +21,7 @@ https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS
 **The printable companion**, a direct download:
 
 ```text
-https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/raw/main/claude-certifications-companion.pdf
+https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/releases/latest/download/claude-certifications-companion.pdf
 ```
 
 **The roadmap image**, to attach to a post:

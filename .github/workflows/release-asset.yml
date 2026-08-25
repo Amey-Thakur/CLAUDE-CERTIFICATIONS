@@ -1,0 +1,36 @@
+# The guide links the companion at releases/latest/download, which only
+# resolves if the newest release actually carries the file. It did not, and the
+# link check failed for it. Attaching the PDF on every tag keeps that URL true
+# without anyone remembering to upload it.
+name: release asset
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  attach:
+    name: Attach the companion PDF to the release
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Upload the companion
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TAG: ${{ github.event.release.tag_name }}
+        run: |
+          tag="${TAG:-$(gh release view --json tagName --jq .tagName)}"
+          gh release upload "$tag" claude-certifications-companion.pdf --clobber
+          gh release view "$tag" --json assets --jq '.assets[].name'
+
+      - name: Fail if the download URL does not resolve
+        run: |
+          url=https://github.com/${{ github.repository }}/releases/latest/download/claude-certifications-companion.pdf
+          code=$(curl -sIL -o /dev/null -w '%{http_code}' "$url")
+          echo "$url -> $code"
+          test "$code" = "200"
