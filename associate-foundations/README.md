@@ -38,7 +38,7 @@ The exam guide recommends, but does not require:
 ## Skills measured
 
 | # | Domain | Weight |
-| --- | --- | --- |
+| :---: | --- | :---: |
 | 1 | Prompting and Task Execution | 14% |
 | 2 | Output Evaluation and Validation | 21% |
 | 3 | Product and Model Selection | 12% |

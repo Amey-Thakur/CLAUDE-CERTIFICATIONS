@@ -119,7 +119,7 @@ Your score appears on screen at the end of the exam; test centers also print a s
 
 ## Accommodations
 
-Testing accommodations are requested through [Pearson's accommodation process](https://www.pearsonvue.com/us/en/test-takers/accommodations.html) and must be approved before you schedule. Plan to request them at least 10 days before your intended exam date. Accommodations have no effect on scoring.
+Testing accommodations are requested through [Pearson's accommodation process for Anthropic](https://www.pearsonvue.com/us/en/test-takers/accommodations/pearson_approve.anthropic.html) and must be approved before you schedule. Plan to request them at least 10 days before your intended exam date. Accommodations have no effect on scoring.
 
 ## Where to get help
 

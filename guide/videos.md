@@ -157,7 +157,7 @@ Relevant to both **Architect** exams, and the video counterpart to the **Claude 
 Anthropic's channel is organized into playlists. These are the ones with study value, most relevant first.
 
 | Playlist | Videos | Most relevant to |
-| --- | --- | --- |
+| --- | :---: | --- |
 | [AI Fluency Course](https://www.youtube.com/playlist?list=PLf2m23nhTg1NjL3-jL3s0qZCYzO07ZQPv) | 12 | Associate |
 | [Developers](https://www.youtube.com/playlist?list=PLf2m23nhTg1PBzCb-nOGFH6NFYSkkVuZ5) | 14 | Developer, Architect |
 | [Code w/ Claude Developer Conference](https://www.youtube.com/playlist?list=PLf2m23nhTg1P5BsOHUOXyQz5RhfUSSVUi) | 20 | Developer, Architect |

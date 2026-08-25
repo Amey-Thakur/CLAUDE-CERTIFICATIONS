@@ -121,7 +121,7 @@ The third and final timed practice exam, with fifteen more questions that appear
 ## Answer key
 
 | # | Answer | Domain | Why |
-| --- | --- | --- | --- |
+| :---: | --- | --- | --- |
 | 1 | C | Integration | Auditability is an architectural property covering tracing and inspectable controls. Model family (A), cost (B), and region (D) do not by themselves make behavior explicable |
 | 2 | A | Integration | Coupling determines the cost of change, which is the architectural concern. Cost (B), accuracy (C), and latency (D) are not consequences of the coupling itself |
 | 3 | D | Integration | Residency is satisfied by keeping the data within each boundary. A single deployment (A, B) moves data across it, and latency (C) does not address the rule |

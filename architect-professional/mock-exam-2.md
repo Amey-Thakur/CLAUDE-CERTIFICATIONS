@@ -121,7 +121,7 @@ A second timed practice exam in the official style, with fifteen questions that 
 ## Answer key
 
 | # | Answer | Domain | Why |
-| --- | --- | --- | --- |
+| :---: | --- | --- | --- |
 | 1 | C | Integration | Running inside the client's own cloud boundary is what the requirement describes. A contract (B) and logging settings (D) do not keep the data in the account, and the model family (A) is a separate choice |
 | 2 | A | Integration | Aligning with the governed platform makes existing controls apply without duplication. Rebuilding (B) drifts, a different cloud (C) creates a second control plane, and per-team choice (D) removes governance |
 | 3 | D | Integration | A single integration point is where cross-cutting concerns are enforced and changed once. It does not change unit price (A), remove evaluation (B), or reduce latency (C) |

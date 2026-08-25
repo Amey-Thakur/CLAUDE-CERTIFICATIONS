@@ -74,7 +74,7 @@ Anyone, passing or failing, can report a question that looks factually wrong, un
 
 ## Accommodations
 
-Requested through [Pearson's accommodation process](https://www.pearsonvue.com/us/en/test-takers/accommodations.html), approved before scheduling, ideally 10 or more days ahead. Accommodations never affect scoring.
+Requested through [Pearson's accommodation process](https://www.pearsonvue.com/us/en/test-takers/accommodations/pearson_approve.anthropic.html), approved before scheduling, ideally 10 or more days ahead. Accommodations never affect scoring.
 
 ## Availability
 

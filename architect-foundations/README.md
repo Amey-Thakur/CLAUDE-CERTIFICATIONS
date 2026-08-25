@@ -28,7 +28,7 @@ The ideal candidate is a solution architect who designs and implements productio
 ## Skills measured
 
 | # | Domain | Weight |
-| --- | --- | --- |
+| :---: | --- | :---: |
 | 1 | Agentic Architecture & Orchestration | 27% |
 | 2 | Tool Design & MCP Integration | 18% |
 | 3 | Claude Code Configuration & Workflows | 20% |
@@ -77,7 +77,7 @@ Task statements per domain, condensed from section 6 of the guide:
 Four of these six published scenarios appear on each exam sitting, selected at random. Knowing them in advance is an unusual and significant preparation advantage.
 
 | # | Scenario | Primary domains |
-| --- | --- | --- |
+| :---: | --- | --- |
 | 1 | Customer support resolution agent built on the Agent SDK, with MCP tools such as get_customer, lookup_order, process_refund, and escalate_to_human, targeting 80%+ first-contact resolution | 1, 2, 5 |
 | 2 | Code generation with Claude Code: slash commands, CLAUDE.md configuration, plan mode versus direct execution | 3, 5 |
 | 3 | Multi-agent research system: a coordinator delegating to search, analysis, synthesis, and report subagents producing cited reports | 1, 2, 5 |

@@ -38,7 +38,7 @@ The exam guide recommends, but does not require:
 ## Skills measured
 
 | # | Domain | Weight |
-| --- | --- | --- |
+| :---: | --- | :---: |
 | 1 | Solution Design & Architecture | 17% |
 | 2 | Claude Models, Prompting & Context Engineering | 13% |
 | 3 | Integration | 19% |

@@ -38,7 +38,7 @@ Built and maintained by [Amey Thakur](https://github.com/Amey-Thakur) after comp
 Each certification has its own folder containing the study guide, the official exam guide PDF, the maintainer's study notes, and original practice questions.
 
 | Certification | Exam code | Questions | Fee | Study guide | Exam guide | Notes | Practice | Mocks | Cheat sheet |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | :---: | :---: | :---: | --- | --- | --- | --- | --- | --- |
 | Associate – Foundations | CCAO-F | 60 | $99 | [Guide](associate-foundations/README.md) | [PDF](associate-foundations/exam-guide.pdf) | [Notes](associate-foundations/notes.md) | [Questions](associate-foundations/practice-questions.md) | [1](associate-foundations/mock-exam-1.md) · [2](associate-foundations/mock-exam-2.md) · [3](associate-foundations/mock-exam-3.md) | [Sheet](associate-foundations/cheat-sheet.md) |
 | Developer – Foundations | CCDV-F | 53 | $125 | [Guide](developer-foundations/README.md) | [PDF](developer-foundations/exam-guide.pdf) | [Notes](developer-foundations/notes.md) | [Questions](developer-foundations/practice-questions.md) | [1](developer-foundations/mock-exam-1.md) · [2](developer-foundations/mock-exam-2.md) · [3](developer-foundations/mock-exam-3.md) | [Sheet](developer-foundations/cheat-sheet.md) |
 | Architect – Foundations | CCAR-F | 60 | $125 | [Guide](architect-foundations/README.md) | [PDF](architect-foundations/exam-guide.pdf) | [Notes](architect-foundations/notes.md) | [Questions](architect-foundations/practice-questions.md) | [1](architect-foundations/mock-exam-1.md) · [2](architect-foundations/mock-exam-2.md) · [3](architect-foundations/mock-exam-3.md) | [Sheet](architect-foundations/cheat-sheet.md) |
@@ -58,13 +58,13 @@ Every exam: 120 minutes, closed book, proctored by Pearson VUE online or at a te
 ```mermaid
 flowchart TD
     Q{What do you do?}
-    Q -->|Advise customers and run engagements| A[Associate - Foundations]
-    Q -->|Build with the API, Claude Code, or MCP| D[Developer - Foundations]
-    Q -->|Design solutions end to end| RF[Architect - Foundations]
-    RF -. then .-> RP[Architect - Professional]
+    Q -->|Advise customers and run engagements| A[Associate - Foundations<br/>CCAO-F]
+    Q -->|Build with the API, Claude Code, or MCP| D[Developer - Foundations<br/>CCDV-F]
+    Q -->|Design solutions end to end| RF[Architect - Foundations<br/>CCAR-F]
+    RF -. then .-> RP[Architect - Professional<br/>CCAR-P]
 ```
 
-1. **Pick your exam.** Advising customers: [Associate](associate-foundations/README.md). Building with the API, Claude Code, or MCP: [Developer](developer-foundations/README.md). Designing solutions end to end: [Architect Foundations](architect-foundations/README.md), then [Architect Professional](architect-professional/README.md). Unsure: [how the certifications connect](guide/learning-paths.md).
+1. **Pick your exam.** Advising customers: [Associate, CCAO-F](associate-foundations/README.md). Building with the API, Claude Code, or MCP: [Developer, CCDV-F](developer-foundations/README.md). Designing solutions end to end: [Architect Foundations, CCAR-F](architect-foundations/README.md), then [Architect Professional, CCAR-P](architect-professional/README.md). Unsure: [how the certifications connect](guide/learning-paths.md).
 2. **Study.** Read your exam's study guide and notes, then the [study strategy](guide/study-strategy.md) for a working plan, the [22 official courses](guide/courses.md) with [per-course notes](guide/course-notes.md) and [official resources](guide/resources.md) that teach the material, and the [practice engine](guide/quiz.md) to test yourself: a shuffled, timed, scored exam drawn from 320 original questions. Clone the repository and open Claude Code inside it, and the built-in [exam coach skill](.claude/skills/exam-coach/SKILL.md) quizzes you directly from the blueprints.
 3. **Book and sit.** The [registration guide](guide/registration.md) covers everything from partner email issues to the proctoring network allowlist. Policies on retakes, validity, and appeals are in [policies](guide/policies.md), and quick answers in the [FAQ](guide/faq.md).
 
@@ -181,7 +181,7 @@ This is here so you can check the material rather than trust it. Every claim in 
 </div>
 
 | Track | Courses | Academy badges | What it covers |
-| --- | ---: | ---: | --- |
+| --- | :---: | :---: | --- |
 | [Claude platform](certificates/README.md#claude-platform) | 5 | 5 | Claude 101, the platform, Claude Code, and Cowork |
 | [Developer and integration](certificates/README.md#developer-and-integration) | 5 | 3 | The API, Model Context Protocol, and building agents |
 | [Deployment platforms](certificates/README.md#deployment-platforms) | 2 | 2 | Claude on Amazon Bedrock and Google Cloud Vertex AI |

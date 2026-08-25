@@ -136,7 +136,7 @@ Documents are parsed into validated records for downstream systems.
 ## Answer key
 
 | # | Answer | Domain | Why |
-| --- | --- | --- | --- |
+| :---: | --- | --- | --- |
 | 1 | B | Context Management & Reliability | Cross-customer contamination is a context-scoping defect, not a window-size problem |
 | 2 | C | Tool Design & MCP Integration | Structured errors with categories and retryable flags are what let an agent recover deliberately |
 | 3 | D | Context Management & Reliability | Policy gaps and lack of progress are the documented escalation triggers; turn counts and order age are not |

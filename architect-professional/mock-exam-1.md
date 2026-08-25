@@ -118,7 +118,7 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 ## Answer key
 
 | # | Answer | Domain | Why |
-| --- | --- | --- | --- |
+| :---: | --- | --- | --- |
 | 1 | C | Solution Design & Architecture | Frequently changing knowledge belongs in retrieval, not in weights or a context window |
 | 2 | D | Integration | Degradation following a re-index points at chunking, embeddings, and index consistency |
 | 3 | A | Integration | At large tool counts, scoping and progressive discovery preserve selection quality |

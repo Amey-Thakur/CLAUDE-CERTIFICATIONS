@@ -118,7 +118,7 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 ## Answer key
 
 | # | Answer | Domain | Why |
-| --- | --- | --- | --- |
+| :---: | --- | --- | --- |
 | 1 | C | Output Evaluation and Validation | Named sources can be fabricated; verification against the actual documents is the diligence step. Self-checking (B) is not independent evidence, and a disclaimer (D) does not make content correct |
 | 2 | D | Prompting and Task Execution | Role, audience, explicit structure, and length constraints are what turn a vague request into a usable draft. Intensifiers like "detailed and thorough" (C) add no structure |
 | 3 | A | Product and Model Selection | Match the model tier to the work: fast and cheap for formulaic volume, capable for exceptions |

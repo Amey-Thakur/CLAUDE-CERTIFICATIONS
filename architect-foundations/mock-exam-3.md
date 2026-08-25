@@ -121,7 +121,7 @@ The third and final timed practice exam, with fifteen more questions that appear
 ## Answer key
 
 | # | Answer | Domain | Why |
-| --- | --- | --- | --- |
+| :---: | --- | --- | --- |
 | 1 | C | Agentic Architecture & Orchestration | Repeating an identical call means the prior result is not available to the agent, which is a state problem. It is not retry behavior (A), and neither tool speed (B) nor capability (D) explains it |
 | 2 | A | Agentic Architecture & Orchestration | Context isolation is the reason subagents exist. Length (B), tool difference (C), and parallelism (D) can all be handled within one context |
 | 3 | D | Agentic Architecture & Orchestration | Reversibility and gating bound the consequence, which is what the risk is. Capability (A), prompt length (B), and tools (C) affect the chance of error rather than its cost |

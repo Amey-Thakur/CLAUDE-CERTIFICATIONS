@@ -121,7 +121,7 @@ A second timed practice exam in the official style, with fifteen questions that 
 ## Answer key
 
 | # | Answer | Domain | Why |
-| --- | --- | --- | --- |
+| :---: | --- | --- | --- |
 | 1 | C | Agentic Architecture & Orchestration | A known fixed order is encoded rather than rediscovered, which is cheaper and testable per step. Runtime planning (A, B) adds nondeterminism, and one prompt (D) removes the checkpoints |
 | 2 | A | Agentic Architecture & Orchestration | Delegation buys isolation and pays in context, which is why handoffs must be explicit. A subagent does not require a larger model (B), can use tools (C), and cost varies with the work (D) |
 | 3 | D | Agentic Architecture & Orchestration | Irreversible external effects need an authorisation boundary or reversibility, enforced outside the model. Capability (A), instruction (B), and retries (C) do not bound the consequence |

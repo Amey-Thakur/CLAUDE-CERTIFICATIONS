@@ -121,7 +121,7 @@ The third and final timed practice exam, with fifteen more questions that appear
 ## Answer key
 
 | # | Answer | Domain | Why |
-| --- | --- | --- | --- |
+| :---: | --- | --- | --- |
 | 1 | C | Applications and Integration | Authentication failures point at the credential rather than the payload. A transient fault (A) presents differently, and neither prompt length (B) nor deprecation (D) produces an auth error |
 | 2 | A | Applications and Integration | Correlation exists for traceability, which is what debugging asynchronous or batched work depends on. It does not affect cost (B) or accuracy (C), and it is a design practice rather than a requirement (D) |
 | 3 | D | Applications and Integration | A tool-use stop is a handoff, and the loop continues once the result is returned. Retrying (A) repeats the request, returning partial text (B) discards the work, and the token limit (C) is unrelated |

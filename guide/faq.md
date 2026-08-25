@@ -75,7 +75,7 @@ Delivery moved to Pearson VUE and badging to Credly on June 30, 2026. If you reg
 
 ## Accommodations, appeals, and support
 
-**Accommodations:** requested through [Pearson](https://www.pearsonvue.com/us/en/test-takers/accommodations.html), 10 or more days ahead, approved before scheduling.
+**Accommodations:** requested through [Pearson](https://www.pearsonvue.com/us/en/test-takers/accommodations/pearson_approve.anthropic.html), 10 or more days ahead, approved before scheduling.
 
 **Appeals:** within 14 days of a decision or of the exam date for result concerns, submitted to Pearson. Reporting a faulty question is separate, open to everyone, and never counts against you.
 

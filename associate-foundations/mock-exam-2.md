@@ -121,7 +121,7 @@ A second timed practice exam in the official style, with fifteen questions that 
 ## Answer key
 
 | # | Answer | Domain | Why |
-| --- | --- | --- | --- |
+| :---: | --- | --- | --- |
 | 1 | C | Output Evaluation and Validation | Agreement with what you already believed is the easiest error to miss, since nothing prompts a check. Neither confirmation (A), rewording (B), nor an assumption about retrieval (D) establishes that the claim is true |
 | 2 | A | Output Evaluation and Validation | Self-review is not an independent source and cannot establish correctness. Detail (C) and model choice (D) do not make a self-check independent |
 | 3 | D | Output Evaluation and Validation | An unverifiable claim should not be presented as fact, and a labeled gap is honest. A blanket disclaimer (A) does not address the specific figure, an unfounded estimate (B) misrepresents it, and a citation produced on demand (C) needs the same verification |

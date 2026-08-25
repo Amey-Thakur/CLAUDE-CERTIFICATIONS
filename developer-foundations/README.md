@@ -37,7 +37,7 @@ The exam guide recommends, but does not require:
 ## Skills measured
 
 | # | Domain | Weight |
-| --- | --- | --- |
+| :---: | --- | :---: |
 | 1 | Agents and Workflows | 14.7% |
 | 2 | Applications and Integration | 33.1% |
 | 3 | Claude Code | 3.1% |

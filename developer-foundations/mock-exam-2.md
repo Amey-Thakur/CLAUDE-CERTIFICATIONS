@@ -121,7 +121,7 @@ A second timed practice exam in the official style, with fifteen questions that 
 ## Answer key
 
 | # | Answer | Domain | Why |
-| --- | --- | --- | --- |
+| :---: | --- | --- | --- |
 | 1 | C | Applications and Integration | A large unchanging prefix repeated per call is what caching addresses, without losing any instruction. Shortening (A) sacrifices capability, a cheaper model (B) trades quality, and fewer requests (D) changes the product |
 | 2 | A | Applications and Integration | Decoupling acceptance from completion satisfies the latency contract without degrading the answer. Truncation (B) and a minimal model (C) sacrifice the result, and the timeout (D) is the stated constraint |
 | 3 | D | Applications and Integration | That stop reason reports that generation hit the output ceiling. An oversized input (A) fails before generation, and neither a malformed request (B) nor a refusal (C) produces this reason |

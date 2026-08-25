@@ -118,7 +118,7 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 ## Answer key
 
 | # | Answer | Domain | Why |
-| --- | --- | --- | --- |
+| :---: | --- | --- | --- |
 | 1 | A | Agents and Workflows | "end_turn" means the model has finished; "tool_use" is the signal to execute a tool and continue the loop |
 | 2 | B | Applications and Integration | Latency-tolerant bulk work is the Batches API's purpose: roughly half the cost within a 24-hour window |
 | 3 | C | Applications and Integration | Caching reuses a stable prefix, cutting time-to-first-token and per-request cost. Position matters: stable content first |

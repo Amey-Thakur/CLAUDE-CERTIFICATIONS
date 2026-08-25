@@ -121,7 +121,7 @@ The third and final timed practice exam, with fifteen more questions that appear
 ## Answer key
 
 | # | Answer | Domain | Why |
-| --- | --- | --- | --- |
+| :---: | --- | --- | --- |
 | 1 | C | Output Evaluation and Validation | Verification does not generalise from one claim to the others. Treating it as a proxy for the whole (A, B) is the error tested, and naming a source (D) does not verify the remaining claims |
 | 2 | A | Output Evaluation and Validation | A refusal with a reason is a signal about the task, not an obstacle to route around. Working around it (B) ignores the reason, and neither prompt length (C) nor model choice (D) is indicated |
 | 3 | D | Output Evaluation and Validation | Retrieving the evidence and reading it keeps the judgment with you. A summary (A) and a direct verdict (B) hand the judgment to the model, and a confidence score (C) is not evidence |

@@ -42,7 +42,7 @@ Thirty-three pages in five parts: choose your exam, know what it measures, prepa
 ## The certifications
 
 | Certification | Exam code | Questions | Fee | Study guide | Notes | Exam guide | Practice | Mock | Cheat sheet |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| --- | :---: | :---: | :---: | --- | --- | --- | --- | --- | --- |
 | Associate – Foundations | CCAO-F | 60 | $99 | [Guide](associate-foundations/README.md) | [Notes](associate-foundations/notes.md) | [PDF](associate-foundations/exam-guide.pdf) | [Questions](associate-foundations/practice-questions.md) | [1](associate-foundations/mock-exam-1.md) · [2](associate-foundations/mock-exam-2.md) · [3](associate-foundations/mock-exam-3.md) | [Sheet](associate-foundations/cheat-sheet.md) |
 | Developer – Foundations | CCDV-F | 53 | $125 | [Guide](developer-foundations/README.md) | [Notes](developer-foundations/notes.md) | [PDF](developer-foundations/exam-guide.pdf) | [Questions](developer-foundations/practice-questions.md) | [1](developer-foundations/mock-exam-1.md) · [2](developer-foundations/mock-exam-2.md) · [3](developer-foundations/mock-exam-3.md) | [Sheet](developer-foundations/cheat-sheet.md) |
 | Architect – Foundations | CCAR-F | 60 | $125 | [Guide](architect-foundations/README.md) | [Notes](architect-foundations/notes.md) | [PDF](architect-foundations/exam-guide.pdf) | [Questions](architect-foundations/practice-questions.md) | [1](architect-foundations/mock-exam-1.md) · [2](architect-foundations/mock-exam-2.md) · [3](architect-foundations/mock-exam-3.md) | [Sheet](architect-foundations/cheat-sheet.md) |
@@ -60,10 +60,10 @@ Every exam: 120 minutes, closed book, proctored by Pearson VUE online or at a te
 ```mermaid
 flowchart TD
     Q{What do you do?}
-    Q -->|Advise customers and run engagements| A[Associate - Foundations]
-    Q -->|Build with the API, Claude Code, or MCP| D[Developer - Foundations]
-    Q -->|Design solutions end to end| RF[Architect - Foundations]
-    RF -. then .-> RP[Architect - Professional]
+    Q -->|Advise customers and run engagements| A[Associate - Foundations<br/>CCAO-F]
+    Q -->|Build with the API, Claude Code, or MCP| D[Developer - Foundations<br/>CCDV-F]
+    Q -->|Design solutions end to end| RF[Architect - Foundations<br/>CCAR-F]
+    RF -. then .-> RP[Architect - Professional<br/>CCAR-P]
 ```
 
 1. **Pick your exam** with the table above, or read [how the certifications connect](guide/learning-paths.md).
