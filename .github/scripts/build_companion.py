@@ -487,8 +487,6 @@ def proof_page(label):
         if names and "badge" not in m.group(1).lower():
             groups.append((m.group(1), names, slugs))
     total = sum(len(n) for _, n, _s in groups)
-    # Each badge is linked more than once in the gallery, so count the codes.
-    badged = len(set(re.findall(r"academy\.claude\.com/verify/(\w+)", text)))
 
     def block(g):
         """One line per track. Every course is named, which is what makes the
