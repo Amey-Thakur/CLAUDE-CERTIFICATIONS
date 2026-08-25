@@ -37,12 +37,12 @@ Built and maintained by [Amey Thakur](https://github.com/Amey-Thakur) after comp
 
 Each certification has its own folder containing the study guide, the official exam guide PDF, the maintainer's study notes, and original practice questions.
 
-| Certification | Questions | Fee | Study guide | Exam guide | Notes | Practice | Mocks | Cheat sheet |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| Associate – Foundations | 60 | $99 | [Guide](associate-foundations/README.md) | [PDF](associate-foundations/exam-guide.pdf) | [Notes](associate-foundations/notes.md) | [Questions](associate-foundations/practice-questions.md) | [1](associate-foundations/mock-exam-1.md) · [2](associate-foundations/mock-exam-2.md) · [3](associate-foundations/mock-exam-3.md) | [Sheet](associate-foundations/cheat-sheet.md) |
-| Developer – Foundations | 53 | $125 | [Guide](developer-foundations/README.md) | [PDF](developer-foundations/exam-guide.pdf) | [Notes](developer-foundations/notes.md) | [Questions](developer-foundations/practice-questions.md) | [1](developer-foundations/mock-exam-1.md) · [2](developer-foundations/mock-exam-2.md) · [3](developer-foundations/mock-exam-3.md) | [Sheet](developer-foundations/cheat-sheet.md) |
-| Architect – Foundations | 60 | $125 | [Guide](architect-foundations/README.md) | [PDF](architect-foundations/exam-guide.pdf) | [Notes](architect-foundations/notes.md) | [Questions](architect-foundations/practice-questions.md) | [1](architect-foundations/mock-exam-1.md) · [2](architect-foundations/mock-exam-2.md) · [3](architect-foundations/mock-exam-3.md) | [Sheet](architect-foundations/cheat-sheet.md) |
-| Architect – Professional | 63 | $175 | [Guide](architect-professional/README.md) | [PDF](architect-professional/exam-guide.pdf) | [Notes](architect-professional/notes.md) | [Questions](architect-professional/practice-questions.md) | [1](architect-professional/mock-exam-1.md) · [2](architect-professional/mock-exam-2.md) · [3](architect-professional/mock-exam-3.md) | [Sheet](architect-professional/cheat-sheet.md) |
+| Certification | Exam code | Questions | Fee | Study guide | Exam guide | Notes | Practice | Mocks | Cheat sheet |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Associate – Foundations | CCAO-F | 60 | $99 | [Guide](associate-foundations/README.md) | [PDF](associate-foundations/exam-guide.pdf) | [Notes](associate-foundations/notes.md) | [Questions](associate-foundations/practice-questions.md) | [1](associate-foundations/mock-exam-1.md) · [2](associate-foundations/mock-exam-2.md) · [3](associate-foundations/mock-exam-3.md) | [Sheet](associate-foundations/cheat-sheet.md) |
+| Developer – Foundations | CCDV-F | 53 | $125 | [Guide](developer-foundations/README.md) | [PDF](developer-foundations/exam-guide.pdf) | [Notes](developer-foundations/notes.md) | [Questions](developer-foundations/practice-questions.md) | [1](developer-foundations/mock-exam-1.md) · [2](developer-foundations/mock-exam-2.md) · [3](developer-foundations/mock-exam-3.md) | [Sheet](developer-foundations/cheat-sheet.md) |
+| Architect – Foundations | CCAR-F | 60 | $125 | [Guide](architect-foundations/README.md) | [PDF](architect-foundations/exam-guide.pdf) | [Notes](architect-foundations/notes.md) | [Questions](architect-foundations/practice-questions.md) | [1](architect-foundations/mock-exam-1.md) · [2](architect-foundations/mock-exam-2.md) · [3](architect-foundations/mock-exam-3.md) | [Sheet](architect-foundations/cheat-sheet.md) |
+| Architect – Professional | CCAR-P | 63 | $175 | [Guide](architect-professional/README.md) | [PDF](architect-professional/exam-guide.pdf) | [Notes](architect-professional/notes.md) | [Questions](architect-professional/practice-questions.md) | [1](architect-professional/mock-exam-1.md) · [2](architect-professional/mock-exam-2.md) · [3](architect-professional/mock-exam-3.md) | [Sheet](architect-professional/cheat-sheet.md) |
 
 Every exam: 120 minutes, closed book, proctored by Pearson VUE online or at a test center, passing score 720 of 1,000, credential valid 12 months with free renewal, badge via Credly. Fees are list prices in USD; partner tiers receive automatic discounts. Registration requires a Claude Partner Network company email.
 
@@ -181,7 +181,7 @@ This is here so you can check the material rather than trust it. Every claim in 
 </div>
 
 | Track | Courses | Academy badges | What it covers |
-| --- | ---: | ---: | --- |
+| --- | --- | ---: | ---: | --- |
 | [Claude platform](certificates/README.md#claude-platform) | 5 | 5 | Claude 101, the platform, Claude Code, and Cowork |
 | [Developer and integration](certificates/README.md#developer-and-integration) | 5 | 3 | The API, Model Context Protocol, and building agents |
 | [Deployment platforms](certificates/README.md#deployment-platforms) | 2 | 2 | Claude on Amazon Bedrock and Google Cloud Vertex AI |
