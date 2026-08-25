@@ -201,6 +201,13 @@ def _preview(name):
     return path
 
 
+def _badge(name):
+    """The Claude Academy completion badge, which is the official artifact."""
+    path = ROOT / "certificates" / "badges" / name
+    EMBEDDED.add(path)
+    return path
+
+
 def cover_stats(total_pages):
     """Counted from the artifacts themselves, so the cover cannot overstate."""
     questions = len(json.loads((ROOT / "question-bank.json").read_text(encoding="utf-8"))["questions"])
@@ -471,51 +478,57 @@ def proof_page(label):
         # the word "and" changed a course title and disagreed with the
         # curriculum card on page 19.
         names = re.findall(r"<b>([^<]+)</b>", body)
+        # Each certificate is linked twice per cell, so keep first occurrences.
+        slugs = list(dict.fromkeys(re.findall(r'href="([\w-]+)\.pdf"', body)))
         # The gallery also carries a badge section. Those badges are a second
         # issuance of courses already listed above, so counting them here would
         # report 41 certificates where there are 22, and the extra column ran
         # the page past its footer.
         if names and "badge" not in m.group(1).lower():
-            groups.append((m.group(1), names))
-    total = sum(len(n) for _, n in groups)
+            groups.append((m.group(1), names, slugs))
+    total = sum(len(n) for _, n, _s in groups)
     # Each badge is linked more than once in the gallery, so count the codes.
     badged = len(set(re.findall(r"academy\.claude\.com/verify/(\w+)", text)))
 
     def block(g):
-        title, names = g
-        rows = "".join(f'<li style="margin-bottom:0.8mm">{n}</li>' for n in names)
-        return (f'<h3 style="margin-top:2.5mm">{title}</h3>'
-                f'<ul style="font-size:8.5pt;line-height:1.5;margin:0;padding-left:4mm">{rows}</ul>')
+        """One line per track. Every course is named, which is what makes the
+        page searchable, and it costs a fraction of the height a bulleted list
+        of twenty-two items did."""
+        title, names = g[0], g[1]
+        return (f'<p style="margin:0 0 2.2mm;font-size:9.3pt;line-height:1.5">'
+                f'<strong style="color:#1f1e1b">{title}.</strong> '
+                f'<span class="muted">{", ".join(names)}</span></p>')
 
-    shots = ["claude-101.png", "building-with-the-claude-api.png",
-             "introduction-to-model-context-protocol.png", "teaching-ai-fluency.png"]
-    strip = "".join(
-        f'<img src="data:image/png;base64,'
-        f'{base64.b64encode(_preview(s).read_bytes()).decode()}"'
-        f' alt="Course completion certificate for {s[:-4].replace(chr(45), chr(32)).title()}"'
-        f' style="width:18%;border:1px solid #e0ddd4;border-radius:1mm">' for s in shots)
+    # Every badge, in the gallery's own order, so the page and the gallery
+    # cannot disagree. Seven to a row keeps three rows and leaves the course
+    # list its space.
+    order = [(n, s) for _t, names, slugs in groups for n, s in zip(names, slugs)]
+    strip = ""
+    for name, slug_ in order:
+        match = ROOT / "certificates" / "badges" / f"{slug_}.png"
+        if match.exists():
+            strip += (f'<img src="data:image/png;base64,'
+                      f'{base64.b64encode(_badge(match.name).read_bytes()).decode()}"'
+                      f' alt="Claude Academy completion badge for {name}, issued to Amey Thakur"'
+                      f' style="width:12.6%;border:1px solid #e0ddd4;border-radius:1mm">')
+    shown = strip.count("<img")
 
-    half = (len(groups) + 1) // 2
-    left = "".join(block(g) for g in groups[:half])
-    right = "".join(block(g) for g in groups[half:])
+    listing = "".join(block(g) for g in groups)
 
     return page(f'''<h3>Receipts, not claims</h3>
       <h1 style="font-size:25pt">The {total} certificates behind this companion</h1>
-      <p class="lead muted" style="max-width:220mm">Every course in the official Anthropic Academy curriculum,
-      completed before this companion was written. Each certificate is issued by Anthropic Education, carries its
-      own Skilljar verification record, and can be checked by anyone. {badged} of them were also issued as a
-      digital completion badge on Claude Academy, verifiable on Anthropic's own domain.</p>
+      <p class="lead muted" style="max-width:230mm">Every course in the official Anthropic Academy curriculum,
+      completed before this companion was written. Each certificate carries its own Skilljar verification record,
+      and {shown} of them were also issued as a digital completion badge on Claude Academy, verifiable on
+      Anthropic's own domain. All {shown} badges are below, and all {total} courses are listed beneath them.</p>
 
-      <div style="display:flex;justify-content:space-between;margin:2mm 0 1.5mm">{strip}</div>
+      <div style="display:flex;flex-wrap:wrap;gap:1.6mm;justify-content:flex-start;margin:2.5mm 0 3mm">{strip}</div>
 
-      <div class="cols grow">
-        <div class="col">{left}</div>
-        <div class="col">{right}</div>
-      </div>
+      <div style="margin-top:1mm">{listing}</div>
 
-      <p class="small" style="margin-top:2mm">Every certificate, its PDF, and its verification link is at
-      {link(SITE + "/certificates", SITE_URL + "/certificates/index.html")}. The courses are free to anyone on
-      the public Academy.</p>''', label, cls="tight")
+      <p class="small" style="margin-top:auto;padding-top:2mm">Every certificate, its PDF, and its verification
+      link is at {link(SITE + "/certificates", SITE_URL + "/certificates/index.html")}. The courses are free to
+      anyone on the public Academy.</p>''', label, cls="tight")
 
 
 def glossary_page(label):
