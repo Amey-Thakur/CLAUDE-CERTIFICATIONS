@@ -11,7 +11,7 @@ collected and organized so you can spend your time studying, not searching.
 
 [Website](https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/) · [Certifications](#the-certifications) · [Start here](#start-here) · [Program guide](guide/README.md) · [Credentials](#credentials-behind-this-guide) · [Discussions](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/discussions)
 
-**[Download the companion (PDF)](claude-certifications-companion.pdf)** · the whole guide in one printable file
+**[Download the companion (PDF)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/raw/main/claude-certifications-companion.pdf)** · the whole guide in one printable file
 
 [![Checks](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/actions/workflows/checks.yml/badge.svg)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/actions/workflows/checks.yml)
 [![Release](https://img.shields.io/github/v/release/Amey-Thakur/CLAUDE-CERTIFICATIONS?label=release&color=c15f3c)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/releases/latest)
@@ -49,7 +49,7 @@ Every exam: 120 minutes, closed book, proctored by Pearson VUE online or at a te
 > [!TIP]
 > Every course in the program is free on the public [Anthropic Academy](https://anthropic.skilljar.com/), no partner account needed. Only the proctored exams require Claude Partner Network membership, so you can learn the whole syllabus before deciding whether to certify.
 >
-> Prefer one file? The whole guide is a printable companion: [claude-certifications-companion.pdf](claude-certifications-companion.pdf), thirty-three pages in five parts: choose your exam, know it, prepare, sit it, and keep going.
+> Prefer one file? The whole guide is a printable companion: [claude-certifications-companion.pdf](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/raw/main/claude-certifications-companion.pdf), thirty-three pages in five parts: choose your exam, know it, prepare, sit it, and keep going.
 
 ---
 

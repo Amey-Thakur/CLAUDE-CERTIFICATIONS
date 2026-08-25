@@ -23,14 +23,14 @@
     ".github/assets/flashcard-back.png": "b212f5fdb4f58018",
     ".github/assets/flashcard-front.png": "6a8cfcf951d7d75d",
     ".github/assets/roadmap.png": "f1b64a5d6626c695",
-    ".github/scripts/build_companion.py": "7d09c9fa748dfb2f",
+    ".github/scripts/build_companion.py": "17e6036e3262455b",
     ".github/scripts/build_images.py": "799aaa0ad2247047",
-    "certificates/README.md": "aceb1e3c8912151b",
+    "certificates/README.md": "d612a377ba97d138",
     "certificates/previews/building-with-the-claude-api.png": "939f822d71207399",
     "certificates/previews/claude-101.png": "b31cfb0819d0b77f",
     "certificates/previews/introduction-to-model-context-protocol.png": "808ed2c61434e111",
     "certificates/previews/teaching-ai-fluency.png": "7b19f08484fe353f",
-    "guide/glossary.md": "941772c14301845b"
+    "guide/glossary.md": "ee260189855a66e2"
   },
   "images": {
     ".github/assets/avatar.jpg": "23071e456e9f2d1c",

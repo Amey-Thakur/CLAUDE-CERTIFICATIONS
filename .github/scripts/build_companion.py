@@ -471,9 +471,15 @@ def proof_page(label):
         # the word "and" changed a course title and disagreed with the
         # curriculum card on page 19.
         names = re.findall(r"<b>([^<]+)</b>", body)
-        if names:
+        # The gallery also carries a badge section. Those badges are a second
+        # issuance of courses already listed above, so counting them here would
+        # report 41 certificates where there are 22, and the extra column ran
+        # the page past its footer.
+        if names and "badge" not in m.group(1).lower():
             groups.append((m.group(1), names))
     total = sum(len(n) for _, n in groups)
+    # Each badge is linked more than once in the gallery, so count the codes.
+    badged = len(set(re.findall(r"academy\.claude\.com/verify/(\w+)", text)))
 
     def block(g):
         title, names = g
@@ -497,7 +503,8 @@ def proof_page(label):
       <h1 style="font-size:25pt">The {total} certificates behind this companion</h1>
       <p class="lead muted" style="max-width:220mm">Every course in the official Anthropic Academy curriculum,
       completed before this companion was written. Each certificate is issued by Anthropic Education, carries its
-      own Skilljar verification record, and can be checked by anyone.</p>
+      own Skilljar verification record, and can be checked by anyone. {badged} of them were also issued as a
+      digital completion badge on Claude Academy, verifiable on Anthropic's own domain.</p>
 
       <div style="display:flex;justify-content:space-between;margin:2mm 0 1.5mm">{strip}</div>
 
