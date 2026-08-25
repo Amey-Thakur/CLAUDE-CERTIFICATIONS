@@ -2,7 +2,7 @@
   "@context": "https://w3id.org/codemeta/3.0",
   "@type": "SoftwareSourceCode",
   "name": "Claude Certifications",
-  "description": "Study guide for all four Anthropic Claude certifications: Associate, Developer, and Architect Foundations and Professional. Official exam guides, blueprints with domain weights, cheat sheets, 320 practice questions, three mock exams per certification, 110 flashcards, official videos, and a printable companion.",
+  "description": "Study guide for all four Anthropic Claude certifications: Associate Foundations (CCAO-F), Developer Foundations (CCDV-F), Architect Foundations (CCAR-F) and Architect Professional (CCAR-P). Official exam guides, blueprints with domain weights, cheat sheets, 320 practice questions, three mock exams per exam, 110 flashcards, and a printable companion.",
   "version": "1.2.0",
   "dateCreated": "2026-07-27",
   "dateModified": "2026-07-28",
@@ -31,7 +31,11 @@
     "exam-preparation",
     "claude-code",
     "claude-api",
-    "model-context-protocol"
+    "model-context-protocol",
+    "ccao-f",
+    "ccdv-f",
+    "ccar-f",
+    "ccar-p"
   ],
   "author": [
     {
