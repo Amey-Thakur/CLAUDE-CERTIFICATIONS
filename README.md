@@ -181,7 +181,7 @@ This is here so you can check the material rather than trust it. Every claim in 
 </div>
 
 | Track | Courses | Academy badges | What it covers |
-| --- | --- | ---: | ---: | --- |
+| --- | ---: | ---: | --- |
 | [Claude platform](certificates/README.md#claude-platform) | 5 | 5 | Claude 101, the platform, Claude Code, and Cowork |
 | [Developer and integration](certificates/README.md#developer-and-integration) | 5 | 3 | The API, Model Context Protocol, and building agents |
 | [Deployment platforms](certificates/README.md#deployment-platforms) | 2 | 2 | Claude on Amazon Bedrock and Google Cloud Vertex AI |

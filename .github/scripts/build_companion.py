@@ -489,28 +489,29 @@ def proof_page(label):
     total = sum(len(n) for _, n, _s in groups)
 
     def block(g):
-        """One line per track. Every course is named, which is what makes the
-        page searchable, and it costs a fraction of the height a bulleted list
-        of twenty-two items did."""
+        """One track: its name, then its courses, one per line. Every course is
+        named in text, which is what makes the page searchable."""
         title, names = g[0], g[1]
-        return (f'<p style="margin:0 0 2.2mm;font-size:9.3pt;line-height:1.5">'
-                f'<strong style="color:#1f1e1b">{title}.</strong> '
-                f'<span class="muted">{", ".join(names)}</span></p>')
+        items = "".join(
+            f'<li style="margin-bottom:0.55mm">{n}</li>' for n in names)
+        return (f'<div style="break-inside:avoid;-webkit-column-break-inside:avoid">'
+                f'<p style="margin:0 0 1.2mm;font-size:8.2pt;letter-spacing:0.06em;'
+                f'text-transform:uppercase;color:#8a857c;font-weight:600">{title}</p>'
+                f'<ul style="margin:0 0 2.6mm;padding-left:4.2mm;font-size:9.4pt;'
+                f'line-height:1.45;color:#4a463f">{items}</ul></div>')
 
-    # Every badge, in the gallery's own order, so the page and the gallery
-    # cannot disagree. Seven to a row keeps three rows and leaves the course
-    # list its space.
+    # Every badge, in the gallery's own order, so the page and the gallery cannot
+    # disagree. Four to a row fills the left column in five even rows.
     order = [(n, s) for _t, names, slugs in groups for n, s in zip(names, slugs)]
-    strip = ""
+    tiles = ""
     for name, slug_ in order:
         match = ROOT / "certificates" / "badges" / f"{slug_}.png"
         if match.exists():
-            strip += (f'<img src="data:image/png;base64,'
+            tiles += (f'<img src="data:image/png;base64,'
                       f'{base64.b64encode(_badge(match.name).read_bytes()).decode()}"'
                       f' alt="Claude Academy completion badge for {name}, issued to Amey Thakur"'
-                      f' style="width:12.6%;border:1px solid #e0ddd4;border-radius:1mm">')
-    shown = strip.count("<img")
-
+                      f' style="width:22.6%;border:1px solid #e0ddd4;border-radius:1mm">')
+    shown = tiles.count("<img")
     listing = "".join(block(g) for g in groups)
 
     return page(f'''<h3>Receipts, not claims</h3>
@@ -518,13 +519,25 @@ def proof_page(label):
       <p class="lead muted" style="max-width:230mm">Every course in the official Anthropic Academy curriculum,
       completed before this companion was written. Each certificate carries its own Skilljar verification record,
       and {shown} of them were also issued as a digital completion badge on Claude Academy, verifiable on
-      Anthropic's own domain. All {shown} badges are below, and all {total} courses are listed beneath them.</p>
+      Anthropic\'s own domain.</p>
 
-      <div style="display:flex;flex-wrap:wrap;gap:1.6mm;justify-content:flex-start;margin:2.5mm 0 3mm">{strip}</div>
+      <div style="display:flex;gap:10mm;margin-top:2mm">
 
-      <div style="margin-top:1mm">{listing}</div>
+        <div style="flex:0 0 46%">
+          <p style="margin:0 0 2mm;font-size:8.2pt;letter-spacing:0.06em;
+          text-transform:uppercase;color:#8a857c;font-weight:600">The {shown} Claude Academy badges</p>
+          <div style="display:flex;flex-wrap:wrap;gap:2.1mm">{tiles}</div>
+        </div>
 
-      <p class="small" style="margin-top:auto;padding-top:2mm">Every certificate, its PDF, and its verification
+        <div style="flex:1">
+          <p style="margin:0 0 2mm;font-size:8.2pt;letter-spacing:0.06em;
+          text-transform:uppercase;color:#8a857c;font-weight:600">All {total} courses</p>
+          <div style="column-count:2;column-gap:7mm">{listing}</div>
+        </div>
+
+      </div>
+
+      <p class="small" style="margin-top:auto;padding-top:1.5mm">Every certificate, its PDF, and its verification
       link is at {link(SITE + "/certificates", SITE_URL + "/certificates/index.html")}. The courses are free to
       anyone on the public Academy.</p>''', label, cls="tight")
 
