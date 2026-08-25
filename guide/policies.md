@@ -76,6 +76,37 @@ Anyone, passing or failing, can report a question that looks factually wrong, un
 
 Requested through [Pearson's accommodation process](https://www.pearsonvue.com/us/en/test-takers/accommodations/pearson_approve.anthropic.html), approved before scheduling, ideally 10 or more days ahead. Accommodations never affect scoring.
 
+## What the Terms and Conditions commit you to
+
+The certification [terms and conditions](certification-terms-and-conditions.pdf)
+carry obligations that the exam policy does not, and they bind you from the
+moment you register.
+
+**You indemnify Anthropic.** You agree to hold Anthropic harmless for damages,
+losses and causes of action arising from a breach of the agreement, or from
+fraudulent, abusive or predatory practices connected with the program. Anthropic
+keeps the exclusive right to control the defense of any third-party claim.
+
+**What you submit is not confidential.** Anything you submit through the program
+is covered by the Anthropic Privacy Policy rather than treated as your
+confidential information, and you warrant that your submissions are complete,
+accurate, and infringe nobody's rights.
+
+**No refunds once access is granted.** Course and program material is
+non-refundable from the point access opens, which is separate from the exam
+cancellation window above.
+
+**Anthropic may suspend or revoke.** Access can be suspended or terminated
+without notice, and a certification revoked, where Anthropic believes the terms
+have been breached.
+
+**Governing law follows your agreement.** For partners, governing law and venue
+are whatever the Partner Agreement sets. The relationship is that of independent
+contractors, not a joint undertaking.
+
+This is a summary written for orientation. The PDF is the binding text, and
+where the two differ the PDF governs.
+
 ## Availability
 
 Exams are not available everywhere; Anthropic may exclude specific countries or regions.
