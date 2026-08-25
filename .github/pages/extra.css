@@ -60,7 +60,8 @@
 .quiz__select {
   width: 100%;
   max-width: 30rem;
-  padding: 0.55rem 0.6rem;
+  margin-bottom: 1.15rem;
+  padding: 0.6rem 0.7rem;
   border: 1px solid var(--md-default-fg-color--lighter);
   border-radius: 4px;
   background: var(--md-default-bg-color);
@@ -191,13 +192,15 @@
 .quiz__meta {
   display: flex;
   justify-content: space-between;
-  font-size: 0.72rem;
+  gap: 1rem;
+  font-size: 0.74rem;
+  line-height: 1.5;
   color: var(--md-default-fg-color--light);
 }
 
 .quiz__bar {
   height: 3px;
-  margin: 0.5rem 0 1.2rem;
+  margin: 0.6rem 0 1.5rem;
   background: var(--md-default-fg-color--lightest);
   border-radius: 2px;
 }
@@ -300,7 +303,7 @@
 }
 
 .quiz__review-r {
-  margin-top: 0.6rem;
+  margin-top: 0.9rem;
   font-style: italic;
 }
 
