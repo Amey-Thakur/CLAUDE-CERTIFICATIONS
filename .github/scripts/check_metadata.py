@@ -80,13 +80,20 @@ def main():
     if cff_v != meta_v:
         problems.append(
             f"version disagrees: CITATION.cff says {cff_v}, codemeta.json says {meta_v}")
-    if cff_d != meta_d:
+
+    # These two fields are not the same thing, and an earlier version of this
+    # script wrongly demanded they match. `date-released` is when this version
+    # was released and must not move afterwards; `dateModified` is when the
+    # repository last changed and moves whenever anything is edited. The real
+    # constraint is ordering.
+    if meta_d < cff_d:
         problems.append(
-            f"date disagrees: CITATION.cff says {cff_d}, codemeta.json says {meta_d}")
-    if header_date and header_date.group(1) != cff_d:
+            f"codemeta.json dateModified {meta_d} is before the release date "
+            f"{cff_d}; the repository cannot have been modified before it shipped")
+    if header_date and header_date.group(1) < cff_d:
         problems.append(
             f"CITATION.cff header comment says {header_date.group(1)}, "
-            f"date-released says {cff_d}")
+            f"which is before date-released {cff_d}")
     if meta.get("dateCreated") and meta_d and meta["dateCreated"] > meta_d:
         problems.append(
             f"codemeta.json dateModified {meta_d} is before "

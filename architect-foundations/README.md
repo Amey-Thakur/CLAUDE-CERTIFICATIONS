@@ -131,4 +131,4 @@ Points worth noting before you schedule:
 
 ---
 
-Facts last verified against the official sources on 2026-08-25. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-08-26. [Repository index](../README.md)

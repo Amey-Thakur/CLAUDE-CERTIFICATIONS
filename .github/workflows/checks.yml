@@ -95,3 +95,10 @@ jobs:
       # instead: did a source change after the artifact was last built?
       - name: Images and companion are current with their sources
         run: python .github/scripts/build_images.py --verify
+      # Reads the figures straight out of the mirrored exam guides and compares
+      # them to the documentation, so a "facts last verified" date is a checked
+      # claim rather than an asserted one.
+      - name: Documented figures match the official exam guides
+        run: |
+          pip install --quiet pymupdf
+          python .github/scripts/verify_facts.py

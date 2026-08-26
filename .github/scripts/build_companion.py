@@ -33,6 +33,12 @@ REPO_URL = f"https://{REPO}"
 SITE_URL = f"https://{SITE}"
 
 
+# The companion carries no date and no version, deliberately. It is printed,
+# shared and kept, and a sheet that dates itself looks wrong the moment the next
+# release lands, even when every fact on it is still correct. The dated record
+# lives in the repository and on the site, where it can actually be updated.
+
+
 def link(text, href):
     """Anchors survive Chrome's print-to-pdf as clickable annotations."""
     return f'<a href="{href}">{text}</a>'

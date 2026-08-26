@@ -62,4 +62,4 @@ This is the repository's recommendation: start with Claude 101 and Claude Platfo
 
 ---
 
-Facts last verified against the official sources on 2026-08-25. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-08-26. [Repository index](../README.md)
