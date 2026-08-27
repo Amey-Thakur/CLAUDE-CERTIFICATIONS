@@ -91,7 +91,7 @@ Not sure which fits? Read [how the certifications connect](guide/learning-paths.
 
 ## The maintainer's certificates
 
-All twenty-two Anthropic Academy course completion certificates behind this program, each with its issued PDF and Skilljar verification record. Nineteen were also issued as a digital completion badge on [Claude Academy](https://academy.claude.com), verifiable on Anthropic's own domain. Every badge below links to its own verification page.
+All twenty-two Anthropic Academy course completion certificates behind this program, each with its issued PDF and Skilljar verification record. Twenty were also issued as a digital completion badge on [Claude Academy](https://academy.claude.com), verifiable on Anthropic's own domain. Every badge below links to its own verification page.
 
 <div align="center">
 

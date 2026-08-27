@@ -153,7 +153,7 @@ Course completion certificates are distinct from the certification credentials t
 <td align="center" width="33%">
 <a href="ai-fluency-for-creative-work.pdf"><img src="previews/ai-fluency-for-creative-work.png" alt="AI Fluency for Creative Work certificate of completion issued to Amey Thakur" width="270"></a><br>
 <b>AI Fluency for Creative Work</b><br>
-<sub><a href="ai-fluency-for-creative-work.pdf">PDF</a> · <a href="https://verify.skilljar.com/c/pgq495ktrqqs">Verify</a> · Completed August 22, 2026</sub>
+<sub><a href="ai-fluency-for-creative-work.pdf">PDF</a> · <a href="https://verify.skilljar.com/c/pgq495ktrqqs">Verify</a> · <a href="https://academy.claude.com/verify/15dd1b6eef52c127e4e4111f1d15e72e">Badge</a> · Completed August 22, 2026</sub>
 </td>
 </tr>
 <tr>
@@ -167,11 +167,11 @@ Course completion certificates are distinct from the certification credentials t
 
 ## Claude Academy completion badges
 
-Nineteen of the twenty-two courses were also issued as a digital completion
+Twenty of the twenty-two courses were also issued as a digital completion
 badge on [Claude Academy](https://academy.claude.com), Anthropic's learning
-platform, on 22 August 2026. These verify separately from the certificate PDFs
-above, on Anthropic's own domain rather than through Skilljar. Every badge below
-links to its verification page.
+platform: nineteen on 22 August 2026 and the twentieth on 27 August 2026. These
+verify separately from the certificate PDFs above, on Anthropic's own domain
+rather than through Skilljar. Every badge below links to its verification page.
 
 <div align="center">
 
@@ -284,6 +284,11 @@ links to its verification page.
 <b>Teaching AI Fluency</b><br>
 <sub><a href="https://academy.claude.com/verify/59092b63e1969a2cb07ac14a57bd13ed">Verify</a> · <code>59092b63e196…</code></sub>
 </td>
+<td align="center" width="33%">
+<a href="https://academy.claude.com/verify/15dd1b6eef52c127e4e4111f1d15e72e" title="Verify this badge on Claude Academy"><img src="badges/ai-fluency-for-creative-work.png" alt="Claude Academy completion badge for AI Fluency for Creative Work, presented to Amey Thakur" width="270"></a><br>
+<b>AI Fluency for Creative Work</b><br>
+<sub><a href="https://academy.claude.com/verify/15dd1b6eef52c127e4e4111f1d15e72e">Verify</a> · <code>15dd1b6eef52…</code></sub>
+</td>
 </tr>
 </table>
 
@@ -291,4 +296,4 @@ links to its verification page.
 
 ---
 
-Facts last verified against the official sources on 2026-08-26. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-08-27. [Repository index](../README.md)

@@ -97,4 +97,4 @@ Move on within the block and come back. Scenario questions are mutually reinforc
 
 ---
 
-Facts last verified against the official sources on 2026-08-26. [Study guide](README.md) · [Notes](notes.md) · [Practice questions](practice-questions.md) · [Mock exam](mock-exam-1.md) · [Repository index](../README.md)
+Facts last verified against the official sources on 2026-08-27. [Study guide](README.md) · [Notes](notes.md) · [Practice questions](practice-questions.md) · [Mock exam](mock-exam-1.md) · [Repository index](../README.md)
