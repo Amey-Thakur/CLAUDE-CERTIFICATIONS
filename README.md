@@ -102,7 +102,7 @@ Every fact, domain weight, rule, and glossary term in this repository, as a deck
 
 ## Credentials behind this guide
 
-All **22 Anthropic Academy courses** in the certification program, completed and independently verifiable. **19** were also issued as a digital completion badge on [Claude Academy](https://academy.claude.com), Anthropic's own domain, and every one of the 22 carries a Skilljar verification record with its completion date.
+All **22 Anthropic Academy courses** in the certification program, completed and independently verifiable. **20** were also issued as a digital completion badge on [Claude Academy](https://academy.claude.com), Anthropic's own domain, and every one of the 22 carries a Skilljar verification record with its completion date.
 
 This is here so you can check the material rather than trust it. Every claim in this repository traces to an official source; these show the curriculum behind it was worked through rather than summarized from the outside. Every badge below links to its own verification page.
 
@@ -194,7 +194,10 @@ This is here so you can check the material rather than trust it. Every claim in 
 <a href="https://academy.claude.com/verify/59092b63e1969a2cb07ac14a57bd13ed" title="Verify Teaching AI Fluency on Claude Academy"><img src="certificates/badges/teaching-ai-fluency.png" width="100%" alt="Claude Academy completion badge for Teaching AI Fluency, issued to Amey Thakur"></a>
 <br><sub><b>Teaching AI Fluency</b><br><a href="https://academy.claude.com/verify/59092b63e1969a2cb07ac14a57bd13ed">Verify</a></sub>
 </td>
-<td width="25%"></td>
+<td align="center" width="25%">
+<a href="https://academy.claude.com/verify/15dd1b6eef52c127e4e4111f1d15e72e" title="Verify AI Fluency for Creative Work on Claude Academy"><img src="certificates/badges/ai-fluency-for-creative-work.png" width="100%" alt="Claude Academy completion badge for AI Fluency for Creative Work, issued to Amey Thakur"></a>
+<br><sub><b>AI Fluency for Creative Work</b><br><a href="https://academy.claude.com/verify/15dd1b6eef52c127e4e4111f1d15e72e">Verify</a></sub>
+</td>
 </tr>
 </table>
 

@@ -102,3 +102,7 @@ jobs:
         run: |
           pip install --quiet pymupdf
           python .github/scripts/verify_facts.py
+      # The badge count lives in five places and has drifted twice when one was
+      # added by hand. This derives it from the files and makes the rest agree.
+      - name: Badge counts agree with the badges that exist
+        run: python .github/scripts/check_badges.py
