@@ -94,8 +94,8 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 
 **13.** Which statement about the Message Batches API is correct?
 
-- B. It supports multi-turn tool calling within a batch
 - A. It processes large asynchronous workloads at reduced cost within a processing window, correlating requests by custom_id
+- B. It supports multi-turn tool calling within a batch
 - C. It guarantees sub-second latency
 - D. It requires a dedicated endpoint per request
 
