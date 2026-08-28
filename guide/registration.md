@@ -19,6 +19,10 @@ flowchart LR
 
 Certification is currently available only to people at Claude Partner Network organizations. Registration requires signing in with a company email on a domain recognized in your organization's partner record. Personal email addresses do not work.
 
+### No partner organization?
+
+Access is organizational, so an engineer with no qualifying company has three routes: an employer that joins the [Claude Partner Network](https://claude.com/partners), a company of their own that qualifies for it, or membership in an existing partner firm, registering under that firm's domain. The partner-firm route is covered in [this registration guide](https://youraidept.com/network/claude-certification) (disclosure: maintained by YAID, a partner firm; the credential is issued to the individual either way).
+
 If you see "You aren't signed in with a partner company employee email", check that you used your company address. If the error persists, email [partner-support@anthropic.com](mailto:partner-support@anthropic.com). Domain changes take 7 to 10 days, so resolve this well before you plan to sit the exam. The same applies if your company uses several domains: certify under the recognized one, or ask for the others to be rolled up to your parent domain, otherwise the certification will not credit to your partner account.
 
 > [!WARNING]
