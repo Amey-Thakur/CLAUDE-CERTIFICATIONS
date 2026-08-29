@@ -93,6 +93,8 @@ nav:
       - Mock exam 3: architect-professional/mock-exam-3.md
   - Program guide:
       - Overview: guide/README.md
+      - Is it worth it: guide/is-it-worth-it.md
+      - How it compares: guide/compared.md
       - Learning paths and courses: guide/learning-paths.md
       - Anthropic courses: guide/courses.md
       - Course notes: guide/course-notes.md
@@ -107,6 +109,7 @@ nav:
       - Certification policies: guide/policies.md
       - Frequently asked questions: guide/faq.md
       - Glossary: guide/glossary.md
+      - Program changes: guide/program-changes.md
       - Official sources: guide/official-sources.md
       - Flashcards: guide/flashcards.md
       - Share this: guide/share.md

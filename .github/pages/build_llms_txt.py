@@ -13,6 +13,7 @@ Standard library only.
 
 import collections
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent.parent
@@ -28,6 +29,8 @@ EXAMS = [
 ]
 
 GUIDE = [
+    ("is-it-worth-it", "An honest answer on whether to certify, including when not to"),
+    ("compared", "The Claude program against other AI and cloud certifications"),
     ("learning-paths", "Which certification to take, and how they connect"),
     ("study-strategy", "A three-week study plan that fits alongside a job"),
     ("courses", "All 24 official Claude Academy courses and the exam each serves"),
@@ -42,6 +45,7 @@ GUIDE = [
     ("policies", "Scoring, retakes, validity, renewal, and appeals"),
     ("faq", "Frequently asked questions"),
     ("glossary", "Every term the exams assume you know"),
+    ("program-changes", "A dated record of every change Anthropic has made to the program"),
     ("official-sources", "Every mirrored document with its source URL and check date"),
     ("share", "Links and copy for sharing this with someone preparing"),
 ]
@@ -128,6 +132,8 @@ def main() -> int:
         "",
         "## Optional",
         "",
+        f"- [Full text]({BASE}/llms-full.txt): every guide page in one plain-text file, "
+        "for assistants that would rather ingest than crawl.",
         f"- [Repository]({REPO}): the source, issues, and discussions.",
         f"- [Maintenance]({BASE}/guide/maintenance.html): how the mirrored documents are kept current.",
         "",
@@ -146,7 +152,70 @@ def main() -> int:
     out = SITE / "llms.txt"
     out.write_text("\n".join(lines), encoding="utf-8")
     print(f"llms.txt: {len(lines)} lines, {len(out.read_text(encoding='utf-8'))} bytes")
+
+    full = SITE / "llms-full.txt"
+    full.write_text(full_text(lines), encoding="utf-8")
+    print(f"llms-full.txt: {len(full.read_text(encoding='utf-8')):,} bytes")
     return 0
+
+
+# Pages worth carrying in full, in reading order. The practice questions and
+# mock exams are deliberately excluded: an assistant that ingests them will
+# recite them, and a candidate who has already seen every answer has lost the
+# only honest signal a practice set gives.
+FULL_PAGES = [
+    ("Program overview", "guide/README.md"),
+    ("Is it worth it", "guide/is-it-worth-it.md"),
+    ("How it compares", "guide/compared.md"),
+    ("Program changes", "guide/program-changes.md"),
+    ("Choosing your exam", "guide/learning-paths.md"),
+    ("Study strategy", "guide/study-strategy.md"),
+    ("Registration", "guide/registration.md"),
+    ("Policies", "guide/policies.md"),
+    ("FAQ", "guide/faq.md"),
+    ("Glossary", "guide/glossary.md"),
+    ("Courses", "guide/courses.md"),
+    ("Course notes", "guide/course-notes.md"),
+    ("Official sources", "guide/official-sources.md"),
+    ("Associate Foundations, CCAO-F", "associate-foundations/README.md"),
+    ("Associate Foundations study notes", "associate-foundations/notes.md"),
+    ("Associate Foundations cheat sheet", "associate-foundations/cheat-sheet.md"),
+    ("Developer Foundations, CCDV-F", "developer-foundations/README.md"),
+    ("Developer Foundations study notes", "developer-foundations/notes.md"),
+    ("Developer Foundations cheat sheet", "developer-foundations/cheat-sheet.md"),
+    ("Architect Foundations, CCAR-F", "architect-foundations/README.md"),
+    ("Architect Foundations study notes", "architect-foundations/notes.md"),
+    ("Architect Foundations cheat sheet", "architect-foundations/cheat-sheet.md"),
+    ("Architect Professional, CCAR-P", "architect-professional/README.md"),
+    ("Architect Professional study notes", "architect-professional/notes.md"),
+    ("Architect Professional cheat sheet", "architect-professional/cheat-sheet.md"),
+]
+
+
+def full_text(index_lines):
+    """The whole guide as one plain-text file, for assistants that ingest it.
+
+    llms.txt is an index; llms-full.txt is the content. An assistant asked about
+    a Claude exam can answer from this without following twenty links, which is
+    the difference between being cited and being crawled.
+    """
+    parts = ["\n".join(index_lines).rstrip(), "", "=" * 78, ""]
+    for title, rel in FULL_PAGES:
+        path = ROOT / rel
+        if not path.exists():
+            continue
+        body = path.read_text(encoding="utf-8")
+        # Strip the footer, which repeats on every page and says nothing here.
+        body = re.sub(r"\n---\n\nFacts last verified[^\n]*\n?", "\n", body)
+        # Relative links mean nothing out of context; make them absolute.
+        base_dir = "/".join(rel.split("/")[:-1])
+        prefix = f"{BASE}/{base_dir}/" if base_dir else f"{BASE}/"
+        body = re.sub(r"\]\((?!https?://|#|mailto:)([^)]+)\)",
+                      lambda m: "](" + prefix + m.group(1).replace(".md", ".html") + ")",
+                      body)
+        parts += [f"## {title}", f"Source: {BASE}/{rel.replace('.md', '.html')}", "",
+                  body.strip(), "", "-" * 78, ""]
+    return "\n".join(parts)
 
 
 if __name__ == "__main__":

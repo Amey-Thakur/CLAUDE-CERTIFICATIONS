@@ -17,6 +17,8 @@ flowchart LR
 
 | Page | Read it when |
 | --- | --- |
+| [Is it worth it](is-it-worth-it.md) | An honest answer, including when the answer is no |
+| [How it compares](compared.md) | The Claude program against other AI and cloud certifications |
 | [Learning paths and courses](learning-paths.md) | Choosing a certification, or picking courses to prepare with |
 | [Anthropic courses](courses.md) | All 24 official courses: what each teaches, where to enroll, and which exam it serves |
 | Cheat sheets ([Associate](../associate-foundations/cheat-sheet.md), [Developer](../developer-foundations/cheat-sheet.md), [Architect F](../architect-foundations/cheat-sheet.md), [Architect P](../architect-professional/cheat-sheet.md)) | One printable page per exam: facts, weights, the rules that decide questions, timing, and traps |
@@ -30,6 +32,7 @@ flowchart LR
 | [Certification policies](policies.md) | Retakes, validity, renewal, appeals, proctoring rules |
 | [Frequently asked questions](faq.md) | Quick answers, from pricing to badges |
 | [Glossary](glossary.md) | The program's terms, defined once |
+| [Program changes](program-changes.md) | A dated record of what Anthropic has changed, and who it affects |
 | [Official sources](official-sources.md) | Provenance of every mirrored PDF |
 | [Prompts for Claude](prompts.md) | Copyable prompts that turn Claude into a tutor: diagnostics, drills, plans, and score analysis |
 | [Official videos](videos.md) | Anthropic's own videos, arranged by exam, including the complete AI Fluency course |

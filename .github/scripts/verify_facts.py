@@ -153,6 +153,34 @@ def main():
                   f"{f['minutes']} min, cut {f['cut']}, ${f['fee']}, "
                   f"scenario-based, no published weights")
 
+    # The structured data on the website publishes each exam's domains as
+    # competencyRequired. Those names are read by search engines, so a typo
+    # there is a wrong fact served to everybody, and nothing else checks them.
+    try:
+        sys.path.insert(0, str(ROOT / ".github" / "pages"))
+        from finalize import COMPETENCIES  # noqa: PLC0415
+    except Exception as e:  # noqa: BLE001
+        problems.append(f"could not read COMPETENCIES from finalize.py: {e}")
+    else:
+        for track, code in TRACKS.items():
+            published = [n.strip() for n in re.findall(
+                r"Domain \d+:\s*([^(\n]{3,70}?)\s*[\(\n]",
+                text_of(ROOT / track / "exam-guide.pdf"))]
+            claimed = COMPETENCIES.get(code, [])
+            if not published:
+                continue
+            checked += len(claimed)
+            for name in claimed:
+                if not any(name.lower() == p.lower() for p in published):
+                    problems.append(
+                        f"{track}: structured data claims domain '{name}', "
+                        f"which the guide does not list")
+            for p in published:
+                if not any(p.lower() == c.lower() for c in claimed):
+                    problems.append(
+                        f"{track}: guide lists domain '{p}', missing from the "
+                        f"structured data")
+
     print()
     for p in problems:
         print(f"  FAIL  {p}")
