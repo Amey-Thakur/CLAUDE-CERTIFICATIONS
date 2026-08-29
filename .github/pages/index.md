@@ -17,8 +17,8 @@ This site is the readable version of the [CLAUDE-CERTIFICATIONS repository](http
 >
 > Amey Thakur
 
-[![Star the repository on GitHub](https://img.shields.io/github/stars/Amey-Thakur/CLAUDE-CERTIFICATIONS?label=Stars&color=9a6700&logo=github&logoColor=white)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS)
-[![Fork the repository on GitHub](https://img.shields.io/github/forks/Amey-Thakur/CLAUDE-CERTIFICATIONS?label=Forks&color=181717&logo=github&logoColor=white)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/fork)
+[![Star the repository on GitHub](https://img.shields.io/github/stars/Amey-Thakur/CLAUDE-CERTIFICATIONS?style=social)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS)
+[![Fork the repository on GitHub](https://img.shields.io/github/forks/Amey-Thakur/CLAUDE-CERTIFICATIONS?style=social)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/fork)
 
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/blob/main/LICENSE)
 [![Checks](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/actions/workflows/checks.yml/badge.svg)](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/actions/workflows/checks.yml)
