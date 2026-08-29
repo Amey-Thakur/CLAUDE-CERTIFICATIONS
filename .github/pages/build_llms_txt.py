@@ -29,7 +29,7 @@ EXAMS = [
 GUIDE = [
     ("learning-paths", "Which certification to take, and how they connect"),
     ("study-strategy", "A three-week study plan that fits alongside a job"),
-    ("courses", "All 22 official Anthropic Academy courses and the exam each serves"),
+    ("courses", "All 24 official Claude Academy courses and the exam each serves"),
     ("course-notes", "Per-course notes: what each is worth and the order to take them in"),
     ("resources", "Official documentation, engineering articles, and code"),
     ("videos", "Anthropic's official videos, arranged by exam"),

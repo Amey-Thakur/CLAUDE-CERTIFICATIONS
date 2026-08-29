@@ -4,11 +4,11 @@ Everything here is published by Anthropic or its official partners. Third-party 
 
 ## Courses
 
-All 22 official courses, with descriptions, enrollment links, and exam relevance, are cataloged in [Anthropic courses](courses.md). The platforms that host them:
+All 24 official courses, with descriptions, enrollment links, and exam relevance, are cataloged in [Anthropic courses](courses.md). The platforms that host them:
 
 | Resource | What it is |
 | --- | --- |
-| [Anthropic Academy](https://anthropic.skilljar.com/) | The public academy: every course free, no partner account needed |
+| [Claude Academy](https://academy.claude.com/) | The public academy: every course free, no partner account needed |
 | [Anthropic Partner Academy](https://anthropic-partners.skilljar.com/) | The certification program's home: prep paths, registration, and partner-exclusive content. Requires a partner sign-in |
 | [Anthropic on Coursera](https://www.coursera.org/partners/anthropic) | Core courses (Building with the Claude API, Claude Code in Action, MCP) delivered through Coursera |
 | [Build with Claude](https://www.anthropic.com/learn/build-with-claude) | Anthropic's index of learning paths for API development |
@@ -59,4 +59,4 @@ The [Academy courses](courses.md) are themselves video curricula; for structured
 
 ---
 
-Facts last verified against the official sources on 2026-08-27. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-08-29. [Repository index](../README.md)

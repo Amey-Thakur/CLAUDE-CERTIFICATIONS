@@ -106,3 +106,7 @@ jobs:
       # added by hand. This derives it from the files and makes the rest agree.
       - name: Badge counts agree with the badges that exist
         run: python .github/scripts/check_badges.py
+      # Options in the markdown must read A, B, C, D. The shuffling belongs to
+      # mock_exam.py and the site quiz at run time, not to the source file.
+      - name: Questions are ordered, lettered, and correctly keyed
+        run: python .github/scripts/check_questions.py

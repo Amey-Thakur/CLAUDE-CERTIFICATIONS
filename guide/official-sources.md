@@ -2,7 +2,7 @@
 
 Mirrored copies of every public PDF published by the Claude certification program, kept here so candidates have a stable, single place to find them. All documents are the property of Anthropic PBC; the canonical versions live on [Anthropic Partner Academy](https://anthropic-partners.skilljar.com/page/partner-certifications) and supersede these copies. See the [takedown stance](maintenance.md#takedown-stance).
 
-All files below were last checked against their sources on 2026-08-27. Refresh with `python .github/scripts/update_resources.py`. The exam policy document carries its own revision date of 25 June 2026.
+All files below were last checked against their sources on 2026-08-29. Refresh with `python .github/scripts/update_resources.py`. The exam policy document carries its own revision date of 25 June 2026.
 
 ## Exam guides
 

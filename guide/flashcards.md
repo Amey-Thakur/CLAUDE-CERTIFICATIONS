@@ -52,7 +52,7 @@ The full deck below, for reading, printing, or checking one fact quickly. It is 
 | Which exam does not count toward partner tier eligibility | Claude Certified Associate |
 | Partner tier discounts on exam fees | Select, Preferred, and Global Premier partners receive 50% off, applied at checkout |
 | How many scenarios does Architect Foundations present, and from how many | Four, drawn from a published bank of six |
-| Where can you take the official courses without a partner account | The public Anthropic Academy; every course is free there |
+| Where can you take the official courses without a partner account | The public Claude Academy; every course is free there |
 
 ## Blueprints and weights
 

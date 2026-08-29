@@ -4,8 +4,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **1. Output Evaluation and Validation.** Claude summarizes a vendor contract for you and states that the termination clause requires 60 days' notice, citing section 14.2. You are about to send the summary to your legal team. What should you do first?
 
-- B. Send it, since Claude cited a specific section
 - A. Check section 14.2 of the contract and confirm the notice period before sending
+- B. Send it, since Claude cited a specific section
 - C. Ask Claude how confident it is and send if the confidence is high
 - D. Rephrase the summary in more formal language, then send
 
@@ -18,8 +18,8 @@ Thirty-five original practice questions written for this repository against the 
 **2. Output Evaluation and Validation.** You ask Claude to draft a competitive analysis, and the output presents market share figures for three competitors without sources. The figures look plausible. What is the appropriate handling?
 
 - A. Include the figures, since plausibility is sufficient for internal documents
-- C. Delete the figures and note that no market data was available
 - B. Verify each figure against a market research source and keep only what checks out, with citations
+- C. Delete the figures and note that no market data was available
 - D. Ask Claude to regenerate until the numbers stabilize across runs
 
 <details><summary>Answer and rationale</summary>
@@ -31,8 +31,8 @@ Thirty-five original practice questions written for this repository against the 
 **3. Prompting and Task Execution.** You need Claude to produce a quarterly report from meeting notes, a spreadsheet summary, and last quarter's report. The first attempt misses the required structure and tone. What is the most effective next step?
 
 - A. Retry the identical prompt, since outputs vary between runs
-- C. Rewrite the prompt to state the role, the required sections in order, the tone, and attach last quarter's report as a format example
 - B. Switch to the most capable model and resend the same prompt
+- C. Rewrite the prompt to state the role, the required sections in order, the tone, and attach last quarter's report as a format example
 - D. Break the work into forty single-sentence prompts
 
 <details><summary>Answer and rationale</summary>
@@ -44,9 +44,9 @@ Thirty-five original practice questions written for this repository against the 
 **4. Prompting and Task Execution.** A colleague's prompt asks Claude to "analyze our customer feedback and fix the problems." The output is generic. Which revision best applies task decomposition?
 
 - A. Add "be specific and detailed" to the prompt
-- D. Ask first for a categorized list of complaint themes with counts, then for the top three by frequency, then for a proposed action per theme
 - B. Ask the same question three times and merge the answers
 - C. Paste more feedback into the same prompt
+- D. Ask first for a categorized list of complaint themes with counts, then for the top three by frequency, then for a proposed action per theme
 
 <details><summary>Answer and rationale</summary>
 
@@ -69,8 +69,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **6. Workflow Integration and Solution Design.** Your monthly close process involves collecting figures, drafting a variance commentary, and formatting a board pack. You want Claude to help durably, not just once. What is the strongest approach?
 
-- B. Paste everything into a fresh chat each month and ask for the pack
 - A. Create a Project with the commentary conventions and prior packs as knowledge, plus instructions for the structure, and run each close inside it
+- B. Paste everything into a fresh chat each month and ask for the pack
 - C. Ask Claude to do the whole close autonomously, including pulling the figures
 - D. Use Claude only for spellchecking the final pack
 
@@ -96,8 +96,8 @@ Thirty-five original practice questions written for this repository against the 
 **8. Configuration and Knowledge Management.** Your team's Project answers policy questions from an uploaded handbook. HR publishes a new handbook version. What must happen for the Project to stay trustworthy?
 
 - A. Nothing; Claude will find the new version on its own
-- C. Replace the outdated handbook in the Project knowledge and spot-check answers against the new version
 - B. Add the new handbook alongside the old one so both are available
+- C. Replace the outdated handbook in the Project knowledge and spot-check answers against the new version
 - D. Tell users to mention the new version in every prompt
 
 <details><summary>Answer and rationale</summary>
@@ -110,8 +110,8 @@ Thirty-five original practice questions written for this repository against the 
 
 - A. Upload the file, since churn analysis is an internal purpose
 - B. Upload it but instruct Claude to ignore the personal columns
-- D. Remove or pseudonymize the identifying columns first, then upload and analyze
 - C. Abandon the analysis
+- D. Remove or pseudonymize the identifying columns first, then upload and analyze
 
 <details><summary>Answer and rationale</summary>
 
@@ -121,8 +121,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **10. Troubleshooting and Optimization.** A prompt that worked well for weeks now produces off-target answers after your team added many new documents to the Project. What is the best first diagnostic?
 
-- B. Rewrite the prompt from scratch
 - A. Check whether the newly added knowledge is diluting or contradicting the sources the answers should draw from
+- B. Rewrite the prompt from scratch
 - C. Switch to a larger model
 - D. Delete the Project and start over
 
@@ -148,8 +148,8 @@ Thirty-five original practice questions written for this repository against the 
 **12. Output Evaluation and Validation.** Two runs of the same prompt give different figures for the same metric. Which conclusion is supported?
 
 - A. The higher figure is more likely correct because the model found more evidence
-- C. Neither figure is established, and the metric must be checked against the source
 - B. The figures should be averaged to reduce variance
+- C. Neither figure is established, and the metric must be checked against the source
 - D. The prompt is fine and the model needs a longer context window
 
 <details><summary>Answer and rationale</summary>
@@ -161,9 +161,9 @@ Thirty-five original practice questions written for this repository against the 
 **13. Output Evaluation and Validation.** You ask Claude to extract every payment term from a 40-page contract. The output lists four terms, cleanly formatted. What is the first check?
 
 - A. Confirm the formatting is consistent across the four entries
-- D. Read the contract's payment sections to confirm no term was omitted
 - B. Ask Claude whether it found all of them
 - C. Run it again at a higher temperature to surface more terms
+- D. Read the contract's payment sections to confirm no term was omitted
 
 <details><summary>Answer and rationale</summary>
 
@@ -173,9 +173,9 @@ Thirty-five original practice questions written for this repository against the 
 
 **14. Output Evaluation and Validation.** A summary you commissioned states a conclusion that contradicts your own reading of the source. What should you do?
 
+- A. Locate the passage the conclusion rests on and compare it against both readings
 - B. Defer to the summary, since the model read the whole document
 - C. Defer to your reading and treat the summary as wrong
-- A. Locate the passage the conclusion rests on and compare it against both readings
 - D. Ask a colleague which of the two sounds more plausible
 
 <details><summary>Answer and rationale</summary>
@@ -200,8 +200,8 @@ Thirty-five original practice questions written for this repository against the 
 **16. Workflow Integration and Solution Design.** A team wants Claude to draft weekly customer health summaries from support tickets, CRM notes, and usage data. Which design detail matters most for the output to stay useful over months?
 
 - A. Choosing the largest available model
-- C. Defining what a health summary must contain and keeping that definition in one place the team maintains
 - B. Running the summary daily instead of weekly
+- C. Defining what a health summary must contain and keeping that definition in one place the team maintains
 - D. Letting each team member write their own prompt
 
 <details><summary>Answer and rationale</summary>
@@ -214,8 +214,8 @@ Thirty-five original practice questions written for this repository against the 
 
 - A. Drafting the narrative summary from agreed figures
 - B. Reformatting last month's report into the new template
-- D. Deciding which underperforming account to escalate to the executive team
 - C. Extracting the top five variances from a spreadsheet export
+- D. Deciding which underperforming account to escalate to the executive team
 
 <details><summary>Answer and rationale</summary>
 
@@ -225,8 +225,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **18. Workflow Integration and Solution Design.** A process works well for one analyst and poorly for three others using the same prompt. What is the most likely cause?
 
-- B. The other three need a more capable model
 - A. The prompt relies on context the first analyst supplies without noticing
+- B. The other three need a more capable model
 - C. The task is unsuitable for Claude
 - D. The other three are using shorter inputs
 
@@ -252,8 +252,8 @@ Thirty-five original practice questions written for this repository against the 
 **20. Governance, Risk, and Responsible Use.** A colleague proposes pasting a customer list into a prompt to draft personalised outreach. What is the correct handling?
 
 - A. Proceed, since the prompt is not stored anywhere permanent
-- C. Remove or replace identifying details before drafting, and reattach them afterwards
 - B. Ask Claude to keep the names confidential
+- C. Remove or replace identifying details before drafting, and reattach them afterwards
 - D. Proceed but delete the conversation afterwards
 
 <details><summary>Answer and rationale</summary>
@@ -265,9 +265,9 @@ Thirty-five original practice questions written for this repository against the 
 **21. Governance, Risk, and Responsible Use.** Which statement about instructing a model not to do something is accurate?
 
 - A. An instruction in the prompt is an enforceable control
-- D. An instruction shapes behavior but does not guarantee it, so controls belong outside the prompt
 - B. Instructions are enforceable if placed in a system prompt
 - C. Instructions are enforceable if repeated several times
+- D. An instruction shapes behavior but does not guarantee it, so controls belong outside the prompt
 
 <details><summary>Answer and rationale</summary>
 
@@ -277,8 +277,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **22. Governance, Risk, and Responsible Use.** A regulated report drafted with Claude is about to be filed. What is the reviewer accountable for?
 
-- B. Confirming that Claude was used according to policy
 - A. The accuracy and compliance of the filed document, regardless of how it was drafted
+- B. Confirming that Claude was used according to policy
 - C. Confirming the prompt included the relevant regulations
 - D. Recording which model version produced the draft
 
@@ -304,8 +304,8 @@ Thirty-five original practice questions written for this repository against the 
 **24. Prompting and Task Execution.** A prompt produces output that is accurate but consistently too long. What is the most reliable fix?
 
 - A. Add “be concise” to the prompt
-- C. State the limit in concrete terms, such as a word count or a number of bullet points
 - B. Ask for a summary of the output afterwards
+- C. State the limit in concrete terms, such as a word count or a number of bullet points
 - D. Use a smaller model
 
 <details><summary>Answer and rationale</summary>
@@ -317,9 +317,9 @@ Thirty-five original practice questions written for this repository against the 
 **25. Prompting and Task Execution.** You need output in a specific structure every time so it can be pasted into a template. What is the most effective technique?
 
 - A. Describing the structure in prose at the end of the prompt
-- D. Providing a filled example of the exact structure you want
 - B. Asking for the output to be well organized
 - C. Requesting the output twice and taking the better one
+- D. Providing a filled example of the exact structure you want
 
 <details><summary>Answer and rationale</summary>
 
@@ -329,8 +329,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **26. Prompting and Task Execution.** A long prompt with many rules produces output that follows some rules and ignores others. What should you try first?
 
-- B. Repeating the ignored rules in capitals
 - A. Separating the task into stages so each output is checked before the next
+- B. Repeating the ignored rules in capitals
 - C. Moving all the rules to the top of the prompt
 - D. Adding a rule that says all rules must be followed
 
@@ -356,8 +356,8 @@ Thirty-five original practice questions written for this repository against the 
 **28. Product and Model Selection.** A task involves reading a 200-page report once and answering a single question. Which consideration should lead the choice?
 
 - A. The cheapest model available, since the task runs once
-- C. Whether the model can hold and reason over the whole document reliably
 - B. Whether the model supports the fastest response time
+- C. Whether the model can hold and reason over the whole document reliably
 - D. Whether the task can be split across several small models
 
 <details><summary>Answer and rationale</summary>
@@ -368,10 +368,10 @@ Thirty-five original practice questions written for this repository against the 
 
 **29. Product and Model Selection.** When does working in a Claude project make more sense than an API integration?
 
-- D. When the work is exploratory and done by people rather than systems
 - A. When the volume is high and predictable
 - B. When the output must be inserted into another system automatically
 - C. When the task must run on a schedule
+- D. When the work is exploratory and done by people rather than systems
 
 <details><summary>Answer and rationale</summary>
 
@@ -381,8 +381,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **30. Product and Model Selection.** A team asks whether to move to a larger model because outputs are inconsistent. What should be established first?
 
-- B. The cost difference between the two models
 - A. Whether the inconsistency comes from the prompt and the inputs rather than the model
+- B. The cost difference between the two models
 - C. Whether the larger model is available in their region
 - D. How much faster the current model is
 
@@ -408,8 +408,8 @@ Thirty-five original practice questions written for this repository against the 
 **32. Configuration and Knowledge Management.** A project's answers have grown vaguer as more documents were added. What is the likely cause?
 
 - A. The model version changed
-- C. The knowledge now holds overlapping or outdated material competing with the right sources
 - B. The project has too few documents to ground answers
+- C. The knowledge now holds overlapping or outdated material competing with the right sources
 - D. The prompts have become too specific
 
 <details><summary>Answer and rationale</summary>
@@ -421,9 +421,9 @@ Thirty-five original practice questions written for this repository against the 
 **33. Configuration and Knowledge Management.** How should project knowledge be treated as the underlying material changes?
 
 - A. It updates automatically from the source systems
-- D. It must be maintained deliberately, because it does not update itself
 - B. It only needs review when answers are visibly wrong
 - C. It should be rebuilt from scratch each quarter
+- D. It must be maintained deliberately, because it does not update itself
 
 <details><summary>Answer and rationale</summary>
 
@@ -433,8 +433,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **34. Troubleshooting and Optimization.** A workflow that has run reliably for months begins returning off-target output. What is the first diagnostic step?
 
-- B. Rewrite the prompt from scratch
 - A. Establish what changed: the inputs, the configuration, or the knowledge
+- B. Rewrite the prompt from scratch
 - C. Switch to a different model
 - D. Increase the amount of context supplied
 

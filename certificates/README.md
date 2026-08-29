@@ -9,7 +9,7 @@
 
 # Course completion certificates
 
-**All twenty-two Anthropic Academy courses behind the certification program, completed by [Amey Thakur](https://github.com/Amey-Thakur).**
+**All twenty-two Claude Academy courses behind the certification program, completed by [Amey Thakur](https://github.com/Amey-Thakur).**
 
 Every certificate links to its issued PDF and its Skilljar verification record, which carries the completion date shown.
 
@@ -296,4 +296,4 @@ rather than through Skilljar. Every badge below links to its verification page.
 
 ---
 
-Facts last verified against the official sources on 2026-08-27. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-08-29. [Repository index](../README.md)

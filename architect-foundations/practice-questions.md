@@ -5,8 +5,8 @@ Thirty-five original practice questions written for this repository against the 
 **1. Support resolution agent: Agentic Architecture & Orchestration.** Your support agent resolves most tickets but sometimes loops indefinitely, re-calling lookup_order on the same order. What is the correct structural fix?
 
 - A. Raise max_tokens so the loop has room to finish
-- C. Add explicit loop-termination conditions: cap tool iterations, detect repeated identical calls, and route to escalate_to_human when progress stalls
 - B. Remove the lookup_order tool
+- C. Add explicit loop-termination conditions: cap tool iterations, detect repeated identical calls, and route to escalate_to_human when progress stalls
 - D. Lower the temperature
 
 <details><summary>Answer and rationale</summary>
@@ -18,9 +18,9 @@ Thirty-five original practice questions written for this repository against the 
 **2. Support resolution agent: Tool Design & MCP Integration.** process_refund currently accepts any amount. Support policy caps agent-initiated refunds at $200; larger refunds need a human. Where does that rule belong?
 
 - A. In the system prompt, phrased firmly
-- D. Enforced in the tool layer: the tool rejects amounts over the cap with a structured error, and a hook or the tool itself routes larger cases to escalation
 - B. In the model's reasoning, since it reads the policy
 - C. In quarterly staff training
+- D. Enforced in the tool layer: the tool rejects amounts over the cap with a structured error, and a hook or the tool itself routes larger cases to escalation
 
 <details><summary>Answer and rationale</summary>
 
@@ -30,8 +30,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **3. Multi-agent research: Agentic Architecture & Orchestration.** Your coordinator delegates to search, analysis, and report subagents. Final reports cite sources that do not support their claims, though each subagent behaves sensibly alone. What is the most likely architectural cause?
 
-- B. The report subagent's model is too small
 - A. Provenance is lost at handoffs: findings and their sources are not passed together in a structured form, so the report writer pairs claims with citations by guesswork
+- B. The report subagent's model is too small
 - C. The web is unreliable
 - D. Too many subagents are running in parallel
 
@@ -57,8 +57,8 @@ Thirty-five original practice questions written for this repository against the 
 **5. Claude Code for development: Claude Code Configuration & Workflows.** Your monorepo has frontend and backend directories with different conventions, and one team-wide rule about commit style. Where does each piece of configuration belong?
 
 - A. Everything in one root CLAUDE.md
-- C. The commit rule in the project-level CLAUDE.md; the per-area conventions in path-scoped rules under .claude/rules/ that load only when matching files are touched
 - B. Each engineer's personal user-level CLAUDE.md
+- C. The commit rule in the project-level CLAUDE.md; the per-area conventions in path-scoped rules under .claude/rules/ that load only when matching files are touched
 - D. A wiki page linked from the README
 
 <details><summary>Answer and rationale</summary>
@@ -70,9 +70,9 @@ Thirty-five original practice questions written for this repository against the 
 **6. Claude Code in CI: Claude Code Configuration & Workflows.** Your CI job runs Claude Code to review pull requests, and the pipeline must parse the results mechanically. Which invocation is correct?
 
 - A. Interactive mode with a human copying the output into CI
-- D. Non-interactive mode with -p, with --output-format json and a schema so the review arrives as machine-readable, validated output
 - B. Plan mode, which is safer for automation
 - C. A shell script that greps the human-readable transcript
+- D. Non-interactive mode with -p, with --output-format json and a schema so the review arrives as machine-readable, validated output
 
 <details><summary>Answer and rationale</summary>
 
@@ -82,8 +82,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **7. Claude Code in CI: Prompt Engineering & Structured Output.** The automated reviewer flags dozens of trivial style nits per pull request, and engineers have started ignoring it. Which change addresses the false-positive problem the way the blueprint suggests?
 
-- B. Run the review twice and post only findings that appear both times
 - A. Define explicit review criteria in the prompt: what to flag, what to ignore, and a severity bar, with a few worked examples of in-scope and out-of-scope findings
+- B. Run the review twice and post only findings that appear both times
 - C. Cap the reviewer at three findings per pull request
 - D. Route all findings to a channel nobody reads
 
@@ -109,8 +109,8 @@ Thirty-five original practice questions written for this repository against the 
 **9. Structured data extraction: Context Management & Reliability.** Your pipeline reports 98% field accuracy, measured on the documents the schema validated cleanly. An auditor calls the number misleading. Why?
 
 - A. Accuracy should be measured only on the hardest documents
-- C. Validation-clean documents are a biased sample: the honest measure comes from a labeled sample drawn across all documents, including ones that failed or barely passed validation
 - B. 98% is below industry standard
+- C. Validation-clean documents are a biased sample: the honest measure comes from a labeled sample drawn across all documents, including ones that failed or barely passed validation
 - D. Field accuracy is not a real metric
 
 <details><summary>Answer and rationale</summary>
@@ -122,9 +122,9 @@ Thirty-five original practice questions written for this repository against the 
 **10. Developer productivity agent: Tool Design & MCP Integration.** Your codebase-exploration agent has get_file_contents, read_source, and fetch_file tools that all read files, and it frequently picks poorly among them. What is the correct fix?
 
 - A. Add a fourth, better file-reading tool
-- D. Consolidate to one file-reading tool, or give the survivors sharply differentiated descriptions that state exactly when each applies
 - B. Fine-tune the model on the tool list
 - C. Randomize which tool the harness dispatches
+- D. Consolidate to one file-reading tool, or give the survivors sharply differentiated descriptions that state exactly when each applies
 
 <details><summary>Answer and rationale</summary>
 
@@ -134,8 +134,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **11. Agentic Architecture & Orchestration.** A support workflow resolves tickets by looking up an account, checking entitlement, and drafting a reply, always in that order. Which architecture is correct?
 
-- B. A single agent that decides each step at runtime
 - A. A deterministic pipeline that calls the model at each defined step
+- B. A single agent that decides each step at runtime
 - C. Three agents that negotiate the order between them
 - D. One prompt containing all three steps
 
@@ -161,8 +161,8 @@ Thirty-five original practice questions written for this repository against the 
 **13. Agentic Architecture & Orchestration.** An agent loops between two tools without converging. What is the most appropriate first control?
 
 - A. Increase the context window so it can see more history
-- C. Impose a step ceiling and define the terminating condition explicitly
 - B. Switch to a larger model
+- C. Impose a step ceiling and define the terminating condition explicitly
 - D. Remove one of the two tools
 
 <details><summary>Answer and rationale</summary>
@@ -174,9 +174,9 @@ Thirty-five original practice questions written for this repository against the 
 **14. Agentic Architecture & Orchestration.** Which property most increases the operational risk of an agentic design?
 
 - A. It calls more than one model
-- D. It takes irreversible actions without a checkpoint
 - B. It produces structured output
 - C. It runs longer than a minute
+- D. It takes irreversible actions without a checkpoint
 
 <details><summary>Answer and rationale</summary>
 
@@ -186,8 +186,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **15. Agentic Architecture & Orchestration.** How should an agentic system handle a step whose result it cannot verify?
 
-- B. Proceed, since the model is usually right
 - A. Surface the unverifiable step for human confirmation before acting on it
+- B. Proceed, since the model is usually right
 - C. Retry the step until two runs agree
 - D. Log the step and continue
 
@@ -213,8 +213,8 @@ Thirty-five original practice questions written for this repository against the 
 **17. Agentic Architecture & Orchestration.** What most improves the debuggability of an agentic system in production?
 
 - A. Reducing the number of tools
-- C. Recording the inputs, tool calls, and outputs of each step as a trace
 - B. Using a single model for every step
+- C. Recording the inputs, tool calls, and outputs of each step as a trace
 - D. Increasing the step limit
 
 <details><summary>Answer and rationale</summary>
@@ -226,9 +226,9 @@ Thirty-five original practice questions written for this repository against the 
 **18. Claude Code Configuration & Workflows.** Where should conventions that apply to everyone working in a repository be recorded?
 
 - A. In each developer's personal settings
-- D. In a CLAUDE.md committed to the repository
 - B. In the pull request template
 - C. In a pinned chat message
+- D. In a CLAUDE.md committed to the repository
 
 <details><summary>Answer and rationale</summary>
 
@@ -238,8 +238,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **19. Claude Code Configuration & Workflows.** What distinguishes work suited to headless mode?
 
-- B. It is complex and needs close supervision
 - A. It is well defined and repeatable, so it can run unattended in automation
+- B. It is complex and needs close supervision
 - C. It requires many tools
 - D. It produces a long output
 
@@ -265,8 +265,8 @@ Thirty-five original practice questions written for this repository against the 
 **21. Claude Code Configuration & Workflows.** What is the correct use of a hook in a Claude Code workflow?
 
 - A. To hold instructions the model should follow
-- C. To enforce a deterministic action at a defined point, independently of the model
 - B. To store project context
+- C. To enforce a deterministic action at a defined point, independently of the model
 - D. To define which model is used
 
 <details><summary>Answer and rationale</summary>
@@ -278,9 +278,9 @@ Thirty-five original practice questions written for this repository against the 
 **22. Claude Code Configuration & Workflows.** Claude Code performs well for one engineer and inconsistently across the team. What is the most likely cause?
 
 - A. The others need more capable machines
-- D. The working conventions live in one person's local setup rather than in the repository
 - B. The repository is too large
 - C. The others are using different terminals
+- D. The working conventions live in one person's local setup rather than in the repository
 
 <details><summary>Answer and rationale</summary>
 
@@ -290,8 +290,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **23. Prompt Engineering & Structured Output.** A pipeline requires output that always validates against a schema. What is the correct approach?
 
-- B. Ask for the schema in the prompt and validate afterwards
 - A. Declare the schema as a tool the model must call, and validate on receipt
+- B. Ask for the schema in the prompt and validate afterwards
 - C. Ask for JSON and repair malformed output in code
 - D. Use a lower temperature
 
@@ -317,8 +317,8 @@ Thirty-five original practice questions written for this repository against the 
 **25. Prompt Engineering & Structured Output.** What should a schema define for a field the source document may not contain?
 
 - A. Nothing, since the model will omit it
-- C. An explicit representation for absence, so a missing value is distinguishable from an unfilled one
 - B. A default value that looks plausible
+- C. An explicit representation for absence, so a missing value is distinguishable from an unfilled one
 - D. A free-text field for notes
 
 <details><summary>Answer and rationale</summary>
@@ -330,9 +330,9 @@ Thirty-five original practice questions written for this repository against the 
 **26. Prompt Engineering & Structured Output.** Which practice most improves consistency across a long-running structured extraction job?
 
 - A. Randomising the order of documents
-- D. Fixing the prompt, the schema, and the model version, and recording them with the output
 - B. Increasing the output token limit
 - C. Running each document twice
+- D. Fixing the prompt, the schema, and the model version, and recording them with the output
 
 <details><summary>Answer and rationale</summary>
 
@@ -342,8 +342,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **27. Prompt Engineering & Structured Output.** A prompt mixes the instruction, the data, and the output format in continuous prose. What is the first improvement?
 
-- B. Shorten it
 - A. Separate the sections so the instruction, the input, and the required format are distinguishable
+- B. Shorten it
 - C. Move it into the system prompt
 - D. Add emphasis to the format requirement
 
@@ -369,8 +369,8 @@ Thirty-five original practice questions written for this repository against the 
 **29. Tool Design & MCP Integration.** How should a tool that performs an irreversible action be designed?
 
 - A. With a description warning the model to be careful
-- C. So that authorisation and confirmation are enforced outside the model
 - B. So that it requires more parameters
+- C. So that authorisation and confirmation are enforced outside the model
 - D. So that it is declared last
 
 <details><summary>Answer and rationale</summary>
@@ -382,9 +382,9 @@ Thirty-five original practice questions written for this repository against the 
 **30. Tool Design & MCP Integration.** A tool returns a large payload that consumes most of the context window. What is the right change?
 
 - A. Increase the context window
-- D. Return only what the task needs, with a way to request more detail
 - B. Summarise the payload with a second model call
 - C. Call the tool less often
+- D. Return only what the task needs, with a way to request more detail
 
 <details><summary>Answer and rationale</summary>
 
@@ -394,8 +394,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **31. Tool Design & MCP Integration.** What belongs in a tool's description?
 
-- B. The implementation language and framework
 - A. What the tool does, when to use it, and what its parameters mean
+- B. The implementation language and framework
 - C. The service level agreement
 - D. The name of the team that owns it
 
@@ -421,8 +421,8 @@ Thirty-five original practice questions written for this repository against the 
 **33. Context Management & Reliability.** What is the right way to carry state across a compaction boundary?
 
 - A. Rely on the model to remember what mattered
-- C. Write the decisions and constraints that must persist into an explicit summary that is carried forward
 - B. Increase the context window so compaction is never needed
+- C. Write the decisions and constraints that must persist into an explicit summary that is carried forward
 - D. Restart the task after compaction
 
 <details><summary>Answer and rationale</summary>
@@ -434,9 +434,9 @@ Thirty-five original practice questions written for this repository against the 
 **34. Context Management & Reliability.** Which measure most improves reliability for a workflow that must not silently produce wrong output?
 
 - A. A larger model
-- D. A validation step that can reject output and trigger a defined fallback
 - B. A longer prompt
 - C. More examples in the prompt
+- D. A validation step that can reject output and trigger a defined fallback
 
 <details><summary>Answer and rationale</summary>
 
@@ -446,8 +446,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **35. Context Management & Reliability.** What should be measured to know whether a production agentic system is healthy?
 
-- B. Total tokens consumed
 - A. Task success against a defined criterion, plus the rate and shape of failures
+- B. Total tokens consumed
 - C. Average response time
 - D. The number of tool calls per run
 

@@ -11,21 +11,21 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 **1.** A retailer wants Claude to answer product questions from a 40,000-document catalog that changes daily. Which architecture fits?
 
 - A. Fine-tune a model on the catalog nightly
-- C. Retrieval over an index refreshed as the catalog changes, with the model answering from retrieved context
 - B. Load the catalog into the system prompt
+- C. Retrieval over an index refreshed as the catalog changes, with the model answering from retrieved context
 - D. An autonomous agent that browses the public website
 
 **2.** After a re-index, your retrieval system returns semantically similar but commercially wrong products. Which investigation comes first?
 
 - A. The generation prompt
-- D. Chunking and embedding configuration, and whether the index was rebuilt consistently
 - B. The model version
 - C. The user interface
+- D. Chunking and embedding configuration, and whether the index was rebuilt consistently
 
 **3.** An agent used by 300 employees exposes 45 tools across eight systems. Selection quality is degrading. What is the architectural response?
 
-- B. Shorten all tool descriptions
 - A. Scope toolsets per task or role, with progressive discovery for the rest
+- B. Shorten all tool descriptions
 - C. Merge tools into a few multi-mode tools
 - D. Replace the agent with a larger model
 
@@ -39,21 +39,21 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 **5.** Before a prompt change reaches all users, what is the disciplined sequence?
 
 - A. Ship it and monitor complaints
-- C. Regression evaluation, then a controlled A/B against the current prompt on predefined metrics, then rollout
 - B. Team vote followed by rollout
+- C. Regression evaluation, then a controlled A/B against the current prompt on predefined metrics, then rollout
 - D. Rollout with a feedback form
 
 **6.** A hospital system requires that protected health information never reach the model provider, while clinicians need free-text search. Which design satisfies both?
 
 - A. A policy instructing clinicians not to type identifiers
-- D. A de-identification layer that removes or tokenizes PHI before the call, with local re-association and auditing
 - B. A system prompt instructing the model to disregard PHI
 - C. Restricting the feature to structured queries only
+- D. A de-identification layer that removes or tokenizes PHI before the call, with local re-association and auditing
 
 **7.** Which is the correct application of human-in-the-loop review at scale?
 
-- B. Review every output regardless of risk
 - A. Route by confidence and consequence, so low-confidence and high-impact cases reach humans while routine cases flow through
+- B. Review every output regardless of risk
 - C. Review a fixed 10% sample chosen at random
 - D. Review only what users complain about
 
@@ -67,21 +67,21 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 **9.** Your design must satisfy GDPR for EU customer data. Which requirement most directly shapes the architecture?
 
 - A. Response latency targets
-- C. Data minimization, purpose limitation, and the ability to delete personal data on request
 - B. The choice of programming language
+- C. Data minimization, purpose limitation, and the ability to delete personal data on request
 - D. The number of model providers
 
 **10.** Which is the correct reason to prefer a workflow over an agent for a document intake process?
 
 - A. Workflows are always more accurate
-- D. The processing path is known in advance, so deterministic orchestration is cheaper, testable, and auditable
 - B. Agents cannot process documents
 - C. Workflows use less context
+- D. The processing path is known in advance, so deterministic orchestration is cheaper, testable, and auditable
 
 **11.** An application sends an identical 12,000-token policy preamble on every request. Which optimization addresses both latency and cost?
 
-- B. Splitting the preamble across two requests
 - A. Ordering the static preamble first and enabling prompt caching
+- B. Splitting the preamble across two requests
 - C. Summarizing the preamble with the model at request time
 - D. Moving the preamble into a few-shot block
 
@@ -95,21 +95,21 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 **13.** Observability for a production agent should capture which of the following to make incidents diagnosable?
 
 - A. Final outputs only
-- C. Traces of tool calls, retrieved context, and decision points alongside outputs
 - B. Aggregate latency metrics only
+- C. Traces of tool calls, retrieved context, and decision points alongside outputs
 - D. User feedback only
 
 **14.** A partner team wants to adopt your Claude Code setup. What makes adoption durable rather than a one-time handoff?
 
 - A. A recorded walkthrough
-- D. Version-controlled shared configuration, common skills and commands, and an onboarding path that new engineers follow
 - B. A shared chat channel
 - C. Individual coaching sessions
+- D. Version-controlled shared configuration, common skills and commands, and an onboarding path that new engineers follow
 
 **15.** Which change best reduces risk in an agent that can both read and modify production records?
 
-- B. Logging modifications for later review
 - A. Separating read and write capabilities, granting write access only where the role requires it, and gating writes behind explicit approval
+- B. Logging modifications for later review
 - C. Requiring a longer system prompt about caution
 - D. Running the agent during business hours only
 

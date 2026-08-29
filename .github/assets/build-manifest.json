@@ -5,14 +5,14 @@
     ".github/assets/logos/anthropic-wordmark.svg": "c89653a9edd5cb71",
     ".github/assets/logos/claude-symbol-ivory.svg": "2c0a531e555fc89d",
     ".github/assets/logos/claude-symbol.svg": "5de1221c77cc91e7",
-    ".github/scripts/build_extra_images.py": "aa117a2d8d3c728f",
+    ".github/scripts/build_extra_images.py": "f7b8772d7506b08b",
     ".github/scripts/build_images.py": "799aaa0ad2247047"
   },
   "companion": {
     ".github/assets/avatar.jpg": "23071e456e9f2d1c",
     ".github/assets/card-architect-scenarios.png": "0c5c00a74c91abc3",
     ".github/assets/card-choose-certification.png": "64225914c5c1e48d",
-    ".github/assets/card-courses.png": "3e3e318c1b2e0539",
+    ".github/assets/card-courses.png": "20c2fe06a96d8328",
     ".github/assets/card-exam-day.png": "7a9e3f11dd9b28c3",
     ".github/assets/card-scoring.png": "09c0ae6b0e90d301",
     ".github/assets/card-study-plan.png": "52232e97703f5927",
@@ -23,9 +23,9 @@
     ".github/assets/flashcard-back.png": "b212f5fdb4f58018",
     ".github/assets/flashcard-front.png": "6a8cfcf951d7d75d",
     ".github/assets/roadmap.png": "f1b64a5d6626c695",
-    ".github/scripts/build_companion.py": "996908de3aa1db7a",
+    ".github/scripts/build_companion.py": "af18d852d863de94",
     ".github/scripts/build_images.py": "799aaa0ad2247047",
-    "certificates/README.md": "24dbf6664572cc14",
+    "certificates/README.md": "4d003e2b816e90ff",
     "certificates/badges/ai-capabilities-and-limitations.png": "216a7278a9980590",
     "certificates/badges/ai-fluency-for-builders.png": "d462adba500d4692",
     "certificates/badges/ai-fluency-for-creative-work.png": "b91d82079c37a991",
@@ -46,7 +46,7 @@
     "certificates/badges/introduction-to-model-context-protocol.png": "30d753a87d163d95",
     "certificates/badges/model-context-protocol-advanced-topics.png": "7ff1346dd557786a",
     "certificates/badges/teaching-ai-fluency.png": "818e654a245c88c5",
-    "guide/glossary.md": "704398b109a6533e"
+    "guide/glossary.md": "c936bddbf203ecf0"
   },
   "images": {
     ".github/assets/avatar.jpg": "23071e456e9f2d1c",

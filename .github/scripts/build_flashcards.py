@@ -104,7 +104,7 @@ def shared_cards():
         ("Who may currently sit these exams", "People at Claude Partner Network organizations, registering with a recognized company email", "policy shared"),
         ("How long do partner email domain record changes take", "7 to 10 days, so resolve them before you plan to sit", "policy shared"),
         ("What does the exam NDA cover", "Questions, answer options, and scenarios, explicitly including study groups and online forums", "policy shared"),
-        ("Where can you take the official courses without a partner account", "The public Anthropic Academy; every course is free there", "facts shared"),
+        ("Where can you take the official courses without a partner account", "The public Claude Academy; every course is free there", "facts shared"),
     ]
 
 

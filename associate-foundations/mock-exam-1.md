@@ -11,21 +11,21 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 **1.** A colleague shares a Claude-drafted policy summary that reads well and cites three internal documents by name. What is the appropriate review step before it circulates to the whole department?
 
 - A. Circulate it, since the named sources demonstrate grounding
-- C. Confirm each named document exists and says what the summary claims
 - B. Ask Claude to double-check its own work and circulate if it agrees
+- C. Confirm each named document exists and says what the summary claims
 - D. Add a disclaimer that the summary was AI-generated and circulate
 
 **2.** You need a first draft of a stakeholder update from a long project log. Which prompt is most likely to produce a usable draft on the first attempt?
 
 - A. "Summarize this project log."
-- D. "You are writing a weekly update for non-technical executives. From the log, produce: status in one line, three progress items, two risks with owners, and next week's focus. Keep it under 200 words."
 - B. "Write something good about this project log for my boss."
 - C. "Summarize this project log. Be detailed and thorough and professional."
+- D. "You are writing a weekly update for non-technical executives. From the log, produce: status in one line, three progress items, two risks with owners, and next week's focus. Keep it under 200 words."
 
 **3.** A workflow drafts hundreds of routine appointment confirmations each day. Latency and cost dominate; the language is formulaic. Which choice fits?
 
-- B. The most capable model, for consistency
 - A. A fast, low-cost model, reserving a more capable one for exceptions
+- B. The most capable model, for consistency
 - C. Whichever model is newest
 - D. Alternate between models to spread cost
 
@@ -39,21 +39,21 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 **5.** Legal asks you to analyze a spreadsheet of support tickets containing customer names and email addresses. Your organization prohibits sending personal data to external tools. What do you do?
 
 - A. Upload it, since legal requested the analysis
-- C. Strip or pseudonymize the personal columns, then analyze what remains
 - B. Upload it and ask Claude to disregard the personal columns
+- C. Strip or pseudonymize the personal columns, then analyze what remains
 - D. Tell legal the analysis is not possible
 
 **6.** Claude produces a five-paragraph answer when you needed three bullet points, twice in a row. What is the most effective adjustment?
 
 - A. Ask again and hope for variation
-- D. State the format explicitly, including the number of bullets and their maximum length
 - B. Switch to a more capable model
 - C. Manually reformat each response
+- D. State the format explicitly, including the number of bullets and their maximum length
 
 **7.** Which of these is the strongest signal that a Claude-generated claim needs verification before use?
 
-- B. The answer is long
 - A. The claim is a specific number, date, or citation that would matter if wrong
+- B. The answer is long
 - C. The answer was produced quickly
 - D. The answer uses technical vocabulary
 
@@ -67,21 +67,21 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 **9.** You are configuring a Project that several colleagues will use for consistent client communications. What belongs in the Project instructions rather than in each individual prompt?
 
 - A. The specific client's name for today's message
-- C. The house tone, required disclaimers, and the standard structure of a client message
 - B. Today's date
+- C. The house tone, required disclaimers, and the standard structure of a client message
 - D. The colleague's personal writing preferences
 
 **10.** A summary Claude produced omits a material caveat that appears in the source document. What does this failure mode illustrate?
 
 - A. Hallucination through fabricated detail
-- D. Omission, which requires reading the source rather than only reviewing the output
 - B. A context window limit
 - C. A prompt injection attack
+- D. Omission, which requires reading the source rather than only reviewing the output
 
 **11.** Your prompt worked well last month and now returns weaker results after your team added twelve documents to the Project's knowledge. What is the first thing to investigate?
 
-- B. Whether the model changed
 - A. Whether the new documents are diluting or contradicting the sources the answers should use
+- B. Whether the model changed
 - C. Whether colleagues are using different browsers
 - D. Whether the prompt should be longer
 
@@ -95,21 +95,21 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 **13.** Which practice best reduces the risk of sharing an inaccurate Claude output with a customer?
 
 - A. Reading the output for tone before sending
-- C. Verifying the claims that would cause harm if wrong, then having a second person review customer-facing material
 - B. Sending it with a note that AI assisted
+- C. Verifying the claims that would cause harm if wrong, then having a second person review customer-facing material
 - D. Using the largest available model
 
 **14.** You want Claude to help redesign a slow approval process rather than just speed up its current steps. Which prompt direction fits that goal?
 
 - A. "Make our approval process faster."
-- D. "Here are the current approval steps and where delays occur. Propose two redesigns: one that keeps the current structure and one that reorders or removes steps, with the tradeoffs of each."
 - B. "Automate our approvals."
 - C. "What do other companies do for approvals?"
+- D. "Here are the current approval steps and where delays occur. Propose two redesigns: one that keeps the current structure and one that reorders or removes steps, with the tradeoffs of each."
 
 **15.** Which situation most clearly calls for escalating to a technical colleague rather than solving it yourself?
 
-- B. A prompt that needs better structure
 - A. A request to connect Claude directly to the company's internal order database through an integration
+- B. A prompt that needs better structure
 - C. An output with the wrong tone
 - D. A Project that needs its knowledge updated
 

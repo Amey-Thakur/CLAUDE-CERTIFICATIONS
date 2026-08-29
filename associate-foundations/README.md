@@ -106,4 +106,4 @@ Points that commonly surprise candidates, all drawn from the official documents:
 
 ---
 
-Facts last verified against the official sources on 2026-08-27. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-08-29. [Repository index](../README.md)

@@ -51,7 +51,7 @@ Thirty-three pages in five parts: choose your exam, know what it measures, prepa
 Every exam: 120 minutes, closed book, proctored by Pearson VUE online or at a test center, passing score 720 on a scaled range of 100 to 1,000, credential valid 12 months with free renewal, badge via Credly. Fees are list prices in USD; partner tiers receive automatic discounts. Registration requires a Claude Partner Network company email.
 
 > [!TIP]
-> Every course in the program is free on the public [Anthropic Academy](https://anthropic.skilljar.com/), no partner account needed. Only the proctored exams require Claude Partner Network membership, so you can learn the whole syllabus before deciding whether to certify.
+> Every course in the program is free on the public [Claude Academy](https://academy.claude.com/), no partner account needed. Only the proctored exams require Claude Partner Network membership, so you can learn the whole syllabus before deciding whether to certify.
 >
 > Prefer one file? The whole guide is a printable companion: [claude-certifications-companion.pdf](assets/claude-certifications-companion.pdf), thirty-three pages in five parts: choose your exam, know it, prepare, sit it, and keep going.
 
@@ -80,7 +80,7 @@ Not sure which fits? Read [how the certifications connect](guide/learning-paths.
 
 - Your exam's own **study guide** and **notes**, linked in the table above
 - [Study strategy](guide/study-strategy.md), for a working plan rather than a reading list
-- [The 22 official courses](guide/courses.md), with [per-course notes](guide/course-notes.md) and [official resources](guide/resources.md)
+- [The 24 official courses](guide/courses.md), with [per-course notes](guide/course-notes.md) and [official resources](guide/resources.md)
 - [The practice engine](guide/quiz.md): shuffled, timed and scored, drawn from 320 original questions
 
 ### 3. Book and sit
@@ -91,7 +91,7 @@ Not sure which fits? Read [how the certifications connect](guide/learning-paths.
 
 ## The maintainer's certificates
 
-All twenty-two Anthropic Academy course completion certificates behind this program, each with its issued PDF and Skilljar verification record. Twenty were also issued as a digital completion badge on [Claude Academy](https://academy.claude.com), verifiable on Anthropic's own domain. Every badge below links to its own verification page.
+All twenty-two Claude Academy course completion certificates behind this program, each with its issued PDF and Skilljar verification record. Twenty were also issued as a digital completion badge on [Claude Academy](https://academy.claude.com), verifiable on Anthropic's own domain. Every badge below links to its own verification page.
 
 <div align="center">
 

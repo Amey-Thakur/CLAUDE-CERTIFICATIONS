@@ -10,8 +10,8 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 
 **1.** Your service makes a Messages API call and the response carries stop_reason "end_turn" with a tool_use block absent. What does your loop do?
 
-- B. Execute the last requested tool again
 - A. Treat the turn as complete and return the content to the caller
+- B. Execute the last requested tool again
 - C. Re-send the request with higher max_tokens
 - D. Append an empty tool result and continue the loop
 
@@ -25,21 +25,21 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 **3.** Which change makes a repeated 10,000-token system prompt cheaper and faster without losing content?
 
 - A. Moving the prompt to the end of the request
-- C. Placing the stable prompt first and enabling prompt caching so the prefix is reused
 - B. Compressing the prompt text with abbreviations
+- C. Placing the stable prompt first and enabling prompt caching so the prefix is reused
 - D. Sending the prompt only on the first request of a session
 
 **4.** Your extraction endpoint occasionally receives JSON with a missing required field, and downstream code throws. What is the sturdiest production pattern?
 
 - A. Wrap the parse in a try block and return an empty object on failure
-- D. Enforce a schema through tool use, validate the parsed result, and retry once with the validation error appended
 - B. Instruct the model more firmly in the system prompt
 - C. Post-process with a regular expression that inserts missing fields
+- D. Enforce a schema through tool use, validate the parsed result, and retry once with the validation error appended
 
 **5.** A teammate proposes an autonomous agent for a pipeline whose five steps are identical for every input. What is the strongest technical objection?
 
-- B. Agents are unsupported in production
 - A. A known, fixed path does not need model-chosen control flow; deterministic orchestration is cheaper, testable, and auditable
+- B. Agents are unsupported in production
 - C. Agents cannot call tools reliably
 - D. The pipeline would need a larger context window
 
@@ -53,21 +53,21 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 **7.** An agent that summarizes user-submitted URLs must never be able to trigger a refund. Where is that guaranteed?
 
 - A. In the system prompt, stated clearly
-- C. By not granting the agent the refund tool, and enforcing that with tool configuration or hooks
 - B. By instructing the model to confirm before refunds
+- C. By not granting the agent the refund tool, and enforcing that with tool configuration or hooks
 - D. By using a model known for instruction following
 
 **8.** Your team pins model versions in production. What is the primary reason?
 
 - A. Pinned models are cheaper
-- D. Model updates can change behavior, so upgrades become deliberate, evaluated changes rather than surprises
 - B. Pinning increases the context window
 - C. Pinning is required by the API
+- D. Model updates can change behavior, so upgrades become deliberate, evaluated changes rather than surprises
 
 **9.** Which describes the correct relationship between an MCP server and the applications that use it?
 
-- B. Each application embeds its own copy of the server code
 - A. The server exposes tools and resources that multiple clients connect to, maintained independently of any one application
+- B. Each application embeds its own copy of the server code
 - C. The server replaces the Messages API
 - D. The server must run in the same process as the model
 
@@ -81,21 +81,21 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 **11.** When is few-shot prompting the right tool?
 
 - A. When the model needs more factual knowledge
-- C. When output format or edge-case handling is inconsistent and examples can demonstrate the target behavior
 - B. When latency must be reduced
+- C. When output format or edge-case handling is inconsistent and examples can demonstrate the target behavior
 - D. When the context window is too small
 
 **12.** A page retrieved by your agent contains hidden text instructing it to reveal its system prompt. Which mitigation actually works?
 
 - A. Asking the model in the system prompt to ignore such instructions
-- D. Treating retrieved content as untrusted data, separating it from instructions, and gating sensitive capabilities behind guardrails
 - B. Raising temperature so behavior is less predictable
 - C. Filtering pages that contain the word "ignore"
+- D. Treating retrieved content as untrusted data, separating it from instructions, and gating sensitive capabilities behind guardrails
 
 **13.** Which statement about the Message Batches API is correct?
 
-- B. It supports multi-turn tool calling within a batch
 - A. It processes large asynchronous workloads at reduced cost within a processing window, correlating requests by custom_id
+- B. It supports multi-turn tool calling within a batch
 - C. It guarantees sub-second latency
 - D. It requires a dedicated endpoint per request
 
@@ -109,8 +109,8 @@ A timed practice exam in the official style. Unlike the [practice questions](pra
 **15.** Traces show your assistant reasons correctly over the documents it receives, but frequently receives documents unrelated to the question. Where is the defect?
 
 - A. The model, which should be upgraded
-- C. The retrieval layer that selects the documents
 - B. The system prompt, which needs stronger accuracy language
+- C. The retrieval layer that selects the documents
 - D. The output parser
 
 ---

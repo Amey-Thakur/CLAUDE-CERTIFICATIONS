@@ -522,7 +522,7 @@ def proof_page(label):
 
     return page(f'''<h3>Receipts, not claims</h3>
       <h1 style="font-size:25pt">The {total} certificates behind this companion</h1>
-      <p class="lead muted" style="max-width:230mm">Every course in the official Anthropic Academy curriculum,
+      <p class="lead muted" style="max-width:230mm">Every course in the official Claude Academy curriculum,
       completed before this companion was written. Each certificate carries its own Skilljar verification record,
       and {shown} of them were also issued as a digital completion badge on Claude Academy, verifiable on
       Anthropic\'s own domain.</p>
@@ -733,7 +733,7 @@ def closing():
           <p style="font-size:11pt"><strong>{link(SITE, SITE_URL)}</strong><br>
           <span class="muted">The same material as a searchable website, with the practice engine in the
           browser.</span></p>
-          <p style="font-size:11pt"><strong>{link("anthropic.skilljar.com", "https://anthropic.skilljar.com/")}</strong><br>
+          <p style="font-size:11pt"><strong>{link("academy.claude.com", "https://academy.claude.com/")}</strong><br>
           <span class="muted">The official courses, free, without a partner account. Registration and the exams
           run through Anthropic Partner Academy and Pearson VUE.</span></p>
           <p style="font-size:11pt"><strong>{link(REPO + "/discussions", REPO_URL + "/discussions")}</strong><br>

@@ -20,21 +20,21 @@ An Agent SDK agent handles returns, billing disputes, and account issues through
 **2.** process_refund fails intermittently because the billing backend times out. What should the tool return so the agent can behave sensibly?
 
 - A. An empty string
-- C. A structured error with a category and a retryable flag, so the agent can retry or escalate deliberately
 - B. A message asking the user to try later
+- C. A structured error with a category and a retryable flag, so the agent can retry or escalate deliberately
 - D. The exception stack trace
 
 **3.** Which condition should route a ticket to escalate_to_human rather than continue autonomous resolution?
 
 - A. The customer writes in a language the agent supports
-- D. The request falls outside documented policy, or the agent cannot make progress after a bounded number of attempts
 - B. The order is more than thirty days old
 - C. The conversation exceeds five turns
+- D. The request falls outside documented policy, or the agent cannot make progress after a bounded number of attempts
 
 **4.** The agent sometimes calls get_customer when it should call lookup_order. What is the most effective change?
 
-- B. Reorder the tools in the configuration
 - A. Rewrite both tool descriptions so each states precisely when it applies and how it differs from the other
+- B. Reorder the tools in the configuration
 - C. Merge them into one tool with a mode flag
 - D. Increase the model's temperature
 
@@ -52,16 +52,16 @@ A team uses Claude Code across a monorepo for generation, refactoring, and revie
 **6.** When is plan mode the appropriate choice over direct execution?
 
 - A. For every change, since planning is always safer
-- C. When the change is large or risky enough that a human should review the approach before edits are made
 - B. Only when the model is unfamiliar with the language
+- C. When the change is large or risky enough that a human should review the approach before edits are made
 - D. When the context window is nearly full
 
 **7.** A repeated multi-step review procedure should be available to the whole team as a single invocation. What is the right mechanism?
 
 - A. A shared document describing the steps
-- D. A custom slash command or skill committed to the repository
 - B. A longer CLAUDE.md
 - C. A saved chat transcript
+- D. A custom slash command or skill committed to the repository
 
 ## Scenario C: multi-agent research system
 
@@ -69,8 +69,8 @@ A coordinator delegates to search, analysis, synthesis, and report subagents tha
 
 **8.** Subagents return full source documents to the coordinator, which then exceeds its context limit. What is the correct design change?
 
-- B. Give the coordinator a larger model
 - A. Have subagents return structured findings with citations while raw sources stay at the edge or in a scratchpad
+- B. Give the coordinator a larger model
 - C. Reduce the number of subagents to one
 - D. Truncate each document to its first page
 
@@ -84,8 +84,8 @@ A coordinator delegates to search, analysis, synthesis, and report subagents tha
 **10.** A subagent fails permanently on one source. What should the coordinator receive?
 
 - A. Nothing, so the report proceeds
-- C. A propagated error with enough context to decide between retry, exclusion with a noted gap, or abort
 - B. A silent retry loop until it succeeds
+- C. A propagated error with enough context to decide between retry, exclusion with a noted gap, or abort
 - D. A generic failure flag with no detail
 
 ## Scenario D: Claude Code in CI/CD
@@ -95,14 +95,14 @@ Claude Code runs automated review on pull requests and posts feedback.
 **11.** The reviewer must emit results a pipeline can parse. Which invocation is correct?
 
 - A. Interactive session with output redirected to a log
-- D. Non-interactive print mode with JSON output and a schema
 - B. Plan mode with an approval step
 - C. A cron job that emails the transcript
+- D. Non-interactive print mode with JSON output and a schema
 
 **12.** Reviews flag many low-value style nits and engineers now ignore them. Which change addresses this?
 
-- B. Post findings to a separate channel
 - A. Define explicit review criteria and a severity bar in the prompt, with examples of in-scope and out-of-scope findings
+- B. Post findings to a separate channel
 - C. Run the review only on large pull requests
 - D. Cap output at five findings
 
@@ -120,16 +120,16 @@ Documents are parsed into validated records for downstream systems.
 **14.** Which loop gives the most reliable extraction output?
 
 - A. Generate, then manually review every record
-- C. Enforce a JSON schema through tool use, validate, and on failure retry with the validation error provided to the model
 - B. Generate three times and take the majority
+- C. Enforce a JSON schema through tool use, validate, and on failure retry with the validation error provided to the model
 - D. Generate with temperature zero and accept the result
 
 **15.** Your team reports 97% accuracy measured only on records that passed validation. Why is that number misleading?
 
 - A. Accuracy should be measured per field, not per record
-- D. It excludes the failures, so it measures where the system already succeeded rather than the true rate across all documents
 - B. 97% is too low to report
 - C. Validation and accuracy are unrelated
+- D. It excludes the failures, so it measures where the system already succeeded rather than the true rate across all documents
 
 ---
 

@@ -47,7 +47,7 @@ Each certification has its own folder containing the study guide, the official e
 Every exam: 120 minutes, closed book, proctored by Pearson VUE online or at a test center, passing score 720 of 1,000, credential valid 12 months with free renewal, badge via Credly. Fees are list prices in USD; partner tiers receive automatic discounts. Registration requires a Claude Partner Network company email.
 
 > [!TIP]
-> Every course in the program is free on the public [Anthropic Academy](https://anthropic.skilljar.com/), no partner account needed. Only the proctored exams require Claude Partner Network membership, so you can learn the whole syllabus before deciding whether to certify.
+> Every course in the program is free on the public [Claude Academy](https://academy.claude.com/), no partner account needed. Only the proctored exams require Claude Partner Network membership, so you can learn the whole syllabus before deciding whether to certify.
 >
 > Prefer one file? The whole guide is a printable companion: [claude-certifications-companion.pdf](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/releases/latest/download/claude-certifications-companion.pdf), thirty-three pages in five parts: choose your exam, know it, prepare, sit it, and keep going.
 
@@ -78,7 +78,7 @@ Not sure which fits? Read [how the certifications connect](guide/learning-paths.
 
 - Your exam's own **study guide** and **notes**, linked in the table above
 - [Study strategy](guide/study-strategy.md), for a working plan rather than a reading list
-- [The 22 official courses](guide/courses.md), with [per-course notes](guide/course-notes.md) and [official resources](guide/resources.md)
+- [The 24 official courses](guide/courses.md), with [per-course notes](guide/course-notes.md) and [official resources](guide/resources.md)
 - [The practice engine](guide/quiz.md): shuffled, timed and scored, drawn from 320 original questions
 
 Clone the repository and open Claude Code inside it, and the built-in
@@ -102,7 +102,7 @@ Every fact, domain weight, rule, and glossary term in this repository, as a deck
 
 ## Credentials behind this guide
 
-All **22 Anthropic Academy courses** in the certification program, completed and independently verifiable. **20** were also issued as a digital completion badge on [Claude Academy](https://academy.claude.com), Anthropic's own domain, and every one of the 22 carries a Skilljar verification record with its completion date.
+All **22 Claude Academy courses** in the certification program, completed and independently verifiable. **20** were also issued as a digital completion badge on [Claude Academy](https://academy.claude.com), Anthropic's own domain, and every one of the 22 carries a Skilljar verification record with its completion date.
 
 This is here so you can check the material rather than trust it. Every claim in this repository traces to an official source; these show the curriculum behind it was worked through rather than summarized from the outside. Every badge below links to its own verification page.
 
@@ -213,7 +213,7 @@ This is here so you can check the material rather than trust it. Every claim in 
 | [AI Fluency](certificates/README.md#ai-fluency) | 10 | 9 | The framework, and its versions for builders, educators, students, nonprofits and small businesses |
 
 > [!NOTE]
-> **A course certificate is not a certification credential, and this section claims only the first.** The 22 courses above are free, self-paced, and open to anyone on the public [Anthropic Academy](https://anthropic.skilljar.com/). The four certifications are separate: each requires a proctored Pearson VUE exam, a passing score of 720 of 1,000, and Claude Partner Network membership to register, and each is issued as a Credly badge that is valid for 12 months. The two are verified on different systems and should never be presented as the same thing.
+> **A course certificate is not a certification credential, and this section claims only the first.** The 22 courses above are free, self-paced, and open to anyone on the public [Claude Academy](https://academy.claude.com/). The four certifications are separate: each requires a proctored Pearson VUE exam, a passing score of 720 of 1,000, and Claude Partner Network membership to register, and each is issued as a Credly badge that is valid for 12 months. The two are verified on different systems and should never be presented as the same thing.
 
 ---
 
@@ -223,7 +223,7 @@ This is here so you can check the material rather than trust it. Every claim in 
 | --- | --- |
 | [associate-foundations](associate-foundations/) · [developer-foundations](developer-foundations/) · [architect-foundations](architect-foundations/) · [architect-professional](architect-professional/) | One folder per certification: study guide, official exam guide PDF, study notes, practice questions |
 | [guide](guide/) | Program-wide pages: learning paths, study strategy, official resources, practice, registration, policies, FAQ, and glossary, plus the official policy PDFs and their [provenance](guide/official-sources.md) |
-| [certificates](certificates/) | The maintainer's 22 Anthropic Academy course certificates, with previews and verification links |
+| [certificates](certificates/) | The maintainer's 22 Claude Academy course certificates, with previews and verification links |
 | [.github](.github/) | Repository housekeeping: CI, templates, logo assets, and the [script](.github/scripts/update_resources.py) that keeps mirrored PDFs current |
 
 ---
@@ -254,6 +254,6 @@ Contributions that keep facts current are welcome; see [CONTRIBUTING.md](.github
 Repository text is <a href="LICENSE">MIT licensed</a>; mirrored documents and logo artwork keep their own provenance
 (<a href="guide/official-sources.md">sources</a>, <a href=".github/assets/logos/README.md">logos</a>).</sub>
 
-<sub>Facts last verified against the official sources on 2026-08-27.</sub>
+<sub>Facts last verified against the official sources on 2026-08-29.</sub>
 
 </div>

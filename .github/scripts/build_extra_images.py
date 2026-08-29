@@ -199,7 +199,7 @@ def courses_card():
     """Which of the official courses serve which exam."""
     W, H = 1280, 912
     out = frame(W, H, "OFFICIAL CURRICULUM", "Every course, and the exam it serves",
-                "All of these are free on the public Anthropic Academy. No partner account is needed to learn the material; only the proctored exams require partner membership.", OLIVE)
+                "All of these are free on the public Claude Academy. No partner account is needed to learn the material; only the proctored exams require partner membership.", OLIVE)
 
     groups = [
         (CORAL, "Claude platform", [
@@ -245,7 +245,7 @@ def courses_card():
         bottom = max(bottom, top + height)
 
     out.append(f'<text x="70" y="{bottom + 44}" font-size="14" fill="{BODY}">Per-course notes on what each is worth, what to watch for, and the order worth taking them in are in the repository.</text>')
-    out.append(footer(W, bottom + 72, "Course catalog published on Anthropic Academy"))
+    out.append(footer(W, bottom + 72, "Course catalog published on Claude Academy"))
     out.append("</svg>")
     return "\n".join(out)
 

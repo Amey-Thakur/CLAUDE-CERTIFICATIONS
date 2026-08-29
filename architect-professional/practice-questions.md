@@ -5,9 +5,9 @@ Thirty-five original practice questions written for this repository against the 
 **1. Integration.** An internal agent for account managers can read CRM records, draft emails, update opportunities, and delete contacts. Account managers only ever read records and draft emails through it. Under least privilege, what is the right change?
 
 - A. Log every update and deletion for later audit
-- D. Remove the update and delete capabilities from the agent's configuration entirely
 - B. Add a confirmation dialog before updates and deletions
 - C. Restrict deletions to business hours
+- D. Remove the update and delete capabilities from the agent's configuration entirely
 
 <details><summary>Answer and rationale</summary>
 
@@ -17,8 +17,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **2. Integration.** After a nightly document refresh, your RAG assistant's answers turned confident but wrong. Model version, prompts, and latency are unchanged. Where do you look first?
 
-- B. The model, which may have degraded overnight
 - A. The retrieval and indexing layer: whether the refresh broke the index, changed chunking, or introduced mismatched embeddings
+- B. The model, which may have degraded overnight
 - C. The system prompt wording
 - D. The temperature setting
 
@@ -44,8 +44,8 @@ Thirty-five original practice questions written for this repository against the 
 **4. Solution Design & Architecture.** A bank wants a system that answers loan officers' policy questions with citations, and separately drafts decline letters from structured decision data. A vendor proposes one autonomous multi-agent system for both. What is the sounder architecture?
 
 - A. The proposed multi-agent system, since both tasks involve documents
-- C. Two simple components: a retrieval-augmented answer service for policy questions, and a templated generation workflow for letters, each evaluated on its own metrics
 - B. One agent with all tools and a routing prompt
+- C. Two simple components: a retrieval-augmented answer service for policy questions, and a templated generation workflow for letters, each evaluated on its own metrics
 - D. A single fine-tuned model for both
 
 <details><summary>Answer and rationale</summary>
@@ -57,9 +57,9 @@ Thirty-five original practice questions written for this repository against the 
 **5. Solution Design & Architecture.** Your architecture review board asks why you chose a deterministic workflow over an autonomous agent for claims intake. Which justification reflects the tested decision framework?
 
 - A. Agents are a newer pattern and less proven in general
-- D. The intake path is fully known in advance, so deterministic orchestration is cheaper, auditable, and reliable; autonomy earns its complexity only where the model must choose the path
 - B. Workflows always outperform agents
 - C. The team lacked time to build an agent
+- D. The intake path is fully known in advance, so deterministic orchestration is cheaper, auditable, and reliable; autonomy earns its complexity only where the model must choose the path
 
 <details><summary>Answer and rationale</summary>
 
@@ -69,8 +69,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **6. Evaluation, Testing & Optimization.** Legal review quality is subjective, and your team disagrees about whether the assistant's clause summaries are "good." What makes evaluation tractable?
 
-- B. Ship and count complaints
 - A. Define a rubric with the failure modes that matter, build a labeled evaluation set with counsel, and combine rubric-based model grading with periodic human review
+- B. Ship and count complaints
 - C. Exact string match against one reference summary per clause
 - D. Grade outputs by length
 
@@ -96,8 +96,8 @@ Thirty-five original practice questions written for this repository against the 
 **8. Governance, Safety & Risk Management.** A healthcare client requires that no protected health information reach the model provider, while clinicians want free-text queries about patients. Which design meets both?
 
 - A. Trust clinicians to avoid typing identifiers
-- C. A de-identification layer that strips or tokenizes PHI before the API call, re-associating results locally, with logging and periodic audits of the boundary
 - B. A system prompt instructing the model to forget PHI
+- C. A de-identification layer that strips or tokenizes PHI before the API call, re-associating results locally, with logging and periodic audits of the boundary
 - D. Blocking free-text queries entirely
 
 <details><summary>Answer and rationale</summary>
@@ -109,9 +109,9 @@ Thirty-five original practice questions written for this repository against the 
 **9. Stakeholder Communication & Lifecycle Management.** Your Claude solution's executive sponsor asks for "99.9% accuracy or we cancel." Accuracy on the task plateaus near 92% with human review catching the rest. What is the architect's correct move?
 
 - A. Promise 99.9% and hope model upgrades close the gap
-- D. Reframe the target around the end-to-end process: the system plus confidence-routed human review achieves the business outcome, with measured rates, costs, and the tradeoff curve made explicit
 - B. Decline to discuss numbers with non-engineers
 - C. Quietly redefine accuracy so the number reads higher
+- D. Reframe the target around the end-to-end process: the system plus confidence-routed human review achieves the business outcome, with measured rates, costs, and the tradeoff curve made explicit
 
 <details><summary>Answer and rationale</summary>
 
@@ -121,8 +121,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **10. Developer Productivity & Operational Enablement.** Three teams configure Claude Code independently: conventions drift, and new engineers take days to become productive. What is the enablement fix?
 
-- B. Mandate that engineers memorize the conventions
 - A. Ship a shared baseline: version-controlled team configuration, common skills and commands, and an onboarding path, with team-specific rules layered on top
+- B. Mandate that engineers memorize the conventions
 - C. Prohibit Claude Code until conventions settle
 - D. Let each engineer keep personal settings only
 
@@ -148,8 +148,8 @@ Thirty-five original practice questions written for this repository against the 
 **12. Integration.** An enterprise standardised on Google Cloud and requires identity, billing, and audit to run through existing controls. What follows?
 
 - A. Deploy on Bedrock for feature parity
-- C. Deploy through Vertex AI so the platform's identity, billing, and audit apply
 - B. Use the Claude API and replicate the controls
+- C. Deploy through Vertex AI so the platform's identity, billing, and audit apply
 - D. Let each team choose its own path
 
 <details><summary>Answer and rationale</summary>
@@ -161,9 +161,9 @@ Thirty-five original practice questions written for this repository against the 
 **13. Integration.** A design places Claude behind an internal service that every application calls. What is the principal benefit?
 
 - A. It reduces token cost
-- D. Authentication, rate limiting, logging, and model routing are enforced in one place
 - B. It removes the need for evaluation
 - C. It guarantees lower latency
+- D. Authentication, rate limiting, logging, and model routing are enforced in one place
 
 <details><summary>Answer and rationale</summary>
 
@@ -173,8 +173,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **14. Integration.** A legacy system can only call synchronous endpoints with a two-second timeout, but the task needs long reasoning. What is the appropriate design?
 
-- B. Force the model to answer within two seconds
 - A. Accept the request, return an identifier immediately, and deliver the result asynchronously
+- B. Force the model to answer within two seconds
 - C. Increase the legacy timeout
 - D. Use the smallest model available
 
@@ -200,8 +200,8 @@ Thirty-five original practice questions written for this repository against the 
 **16. Solution Design & Architecture.** A stakeholder asks for an autonomous agent to handle an end-to-end financial approval process. What should the architect establish first?
 
 - A. Which model to use
-- C. Which decisions carry accountability and must remain with a person
 - B. The expected token cost
+- C. Which decisions carry accountability and must remain with a person
 - D. Whether the agent can be built in the available time
 
 <details><summary>Answer and rationale</summary>
@@ -213,9 +213,9 @@ Thirty-five original practice questions written for this repository against the 
 **17. Solution Design & Architecture.** Two designs meet the functional requirement. One is simpler and slightly less capable. What should decide?
 
 - A. The more capable design, since capability is the point
-- D. Whether the extra capability is needed by a stated requirement, weighed against the cost of complexity
 - B. The design the team finds more interesting
 - C. The design with more components, for future flexibility
+- D. Whether the extra capability is needed by a stated requirement, weighed against the cost of complexity
 
 <details><summary>Answer and rationale</summary>
 
@@ -225,8 +225,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **18. Solution Design & Architecture.** A proposed architecture depends on the model behaving correctly for a control that regulation requires. What is the correct judgment?
 
-- B. Acceptable if evaluation shows high accuracy
 - A. Unacceptable: a required control must be enforced deterministically outside the model
+- B. Acceptable if evaluation shows high accuracy
 - C. Acceptable with a disclaimer to the regulator
 - D. Acceptable if a larger model is used
 
@@ -252,8 +252,8 @@ Thirty-five original practice questions written for this repository against the 
 **20. Evaluation, Testing & Optimization.** What must exist before a solution can be said to be ready for production?
 
 - A. A demonstration that impressed stakeholders
-- C. A defined success criterion and measured performance against representative data
 - B. Agreement from the engineering team
+- C. A defined success criterion and measured performance against representative data
 - D. A completed cost estimate
 
 <details><summary>Answer and rationale</summary>
@@ -265,9 +265,9 @@ Thirty-five original practice questions written for this repository against the 
 **21. Evaluation, Testing & Optimization.** An evaluation set is drawn entirely from cases the system already handles well. What is the consequence?
 
 - A. It gives a reliable measure of quality
-- D. It overstates performance and hides the failure modes that matter
 - B. It is acceptable if it is large enough
 - C. It only matters for regulated systems
+- D. It overstates performance and hides the failure modes that matter
 
 <details><summary>Answer and rationale</summary>
 
@@ -277,8 +277,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **22. Evaluation, Testing & Optimization.** A prompt change improves the target metric but degrades an unmeasured behavior. How is this best prevented?
 
-- B. Changing one thing at a time
 - A. Maintaining a regression suite that covers behaviors the system must not lose
+- B. Changing one thing at a time
 - C. Reviewing changes more carefully
 - D. Limiting how often prompts change
 
@@ -304,8 +304,8 @@ Thirty-five original practice questions written for this repository against the 
 **24. Governance, Safety & Risk Management.** How should an architect treat a request to log full prompts and responses for audit?
 
 - A. Implement it, since audit requirements take precedence
-- C. Establish what the audit actually requires, since prompts and responses may contain personal or confidential data
 - B. Refuse, since logging creates risk
+- C. Establish what the audit actually requires, since prompts and responses may contain personal or confidential data
 - D. Log responses only
 
 <details><summary>Answer and rationale</summary>
@@ -317,9 +317,9 @@ Thirty-five original practice questions written for this repository against the 
 **25. Governance, Safety & Risk Management.** What is the correct treatment of content retrieved from an untrusted source before it reaches the model?
 
 - A. It is safe once scanned for known attack strings
-- D. It is untrusted data throughout, and the model's authority must be bounded regardless of its content
 - B. It is safe if the model is instructed to disregard instructions within it
 - C. It is safe if it comes over an encrypted channel
+- D. It is untrusted data throughout, and the model's authority must be bounded regardless of its content
 
 <details><summary>Answer and rationale</summary>
 
@@ -329,8 +329,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **26. Governance, Safety & Risk Management.** Who is accountable for a wrong decision produced by an automated Claude workflow?
 
-- B. The model provider
 - A. The organization that deployed the workflow
+- B. The model provider
 - C. The engineer who wrote the prompt
 - D. Nobody, since the output was automated
 
@@ -356,8 +356,8 @@ Thirty-five original practice questions written for this repository against the 
 **28. Stakeholder Communication & Lifecycle Management.** A pilot succeeded with ten users and the business wants to roll out to two thousand. What should the architect raise first?
 
 - A. The cost of additional licenses
-- C. Which assumptions held at ten users and may not hold at two thousand
 - B. The need for a larger model
+- C. Which assumptions held at ten users and may not hold at two thousand
 - D. The training schedule
 
 <details><summary>Answer and rationale</summary>
@@ -369,9 +369,9 @@ Thirty-five original practice questions written for this repository against the 
 **29. Stakeholder Communication & Lifecycle Management.** What most reduces the risk that a delivered solution decays after handover?
 
 - A. Full documentation at delivery
-- D. A named owner with a defined routine for evaluation, monitoring, and update
 - B. A longer warranty period
 - C. Training every user
+- D. A named owner with a defined routine for evaluation, monitoring, and update
 
 <details><summary>Answer and rationale</summary>
 
@@ -381,8 +381,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **30. Claude Models, Prompting & Context Engineering.** How should an architect choose a model for a solution with several different tasks?
 
-- B. One model for everything, for simplicity
 - A. Match each task to the smallest model that meets its requirement, and evaluate the choices
+- B. One model for everything, for simplicity
 - C. The largest model for everything, for safety
 - D. The newest model for everything
 
@@ -408,8 +408,8 @@ Thirty-five original practice questions written for this repository against the 
 **32. Claude Models, Prompting & Context Engineering.** A solution's prompts are maintained by three teams and have diverged. What is the appropriate remedy?
 
 - A. Appoint one team to own all prompting
-- C. Version the prompts as artefacts with defined ownership, review, and evaluation on change
 - B. Freeze the prompts
+- C. Version the prompts as artefacts with defined ownership, review, and evaluation on change
 - D. Move all prompts into the system prompt
 
 <details><summary>Answer and rationale</summary>
@@ -421,9 +421,9 @@ Thirty-five original practice questions written for this repository against the 
 **33. Developer Productivity & Operational Enablement.** An organization wants consistent Claude Code practice across many repositories. What is the most durable approach?
 
 - A. A written policy circulated by email
-- D. Committed project memory and shared skills in each repository, reviewed like code
 - B. A one-off training session
 - C. Requiring approval for each use
+- D. Committed project memory and shared skills in each repository, reviewed like code
 
 <details><summary>Answer and rationale</summary>
 
@@ -433,8 +433,8 @@ Thirty-five original practice questions written for this repository against the 
 
 **34. Developer Productivity & Operational Enablement.** What is the most useful measure of whether a developer enablement program is working?
 
-- B. The number of people trained
 - A. Change in the outcomes the tooling was adopted to improve
+- B. The number of people trained
 - C. License utilization
 - D. The volume of tool calls
 
