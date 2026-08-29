@@ -188,6 +188,11 @@ def main() -> int:
         body += [f"## {titles[key]}", "", "| Front | Back |", "| --- | --- |"]
         body += [f"| {f.replace('|', '·')} | {b.replace('|', '·')} |" for f, b in rows]
         body += [""]
+    # The deck carries no date, deliberately, for the same reason the companion
+    # PDF does not. Cards are exported to Anki, Quizlet and RemNote and live for
+    # months outside this repository, where a stamped date only ever makes a
+    # correct card look stale. The dated record belongs on the pages that can
+    # actually be updated.
     body += ["---", "", "Facts drawn from the official Anthropic exam guides. "
              "[Repository index](../README.md)", ""]
     MD.write_text("\n".join(body), encoding="utf-8")

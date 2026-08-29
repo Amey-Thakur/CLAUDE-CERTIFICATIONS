@@ -44,4 +44,4 @@ Official PDFs in this folder: the [Anthropic Certification Exam Policy](anthropi
 
 ---
 
-[Repository index](../README.md)
+Facts last verified against the official sources on 2026-08-29. [Repository index](../README.md)
