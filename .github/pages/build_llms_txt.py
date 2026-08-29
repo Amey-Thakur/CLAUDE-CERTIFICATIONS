@@ -11,6 +11,7 @@ site so it is served from the site root.
 Standard library only.
 """
 
+import collections
 import json
 from pathlib import Path
 
@@ -46,6 +47,24 @@ GUIDE = [
 ]
 
 
+
+def companion_pages():
+    """Page count read from the PDF itself, so the figure cannot go stale.
+
+    Falls back to counting page objects if pypdf and pymupdf are both absent,
+    because this runs in CI where extra dependencies are not guaranteed.
+    """
+    pdf = ROOT / "claude-certifications-companion.pdf"
+    if not pdf.exists():
+        return "33"
+    try:
+        import pymupdf
+        return str(pymupdf.open(pdf).page_count)
+    except Exception:  # noqa: BLE001
+        return str(pdf.read_bytes().count(b"/Type /Page") -
+                   pdf.read_bytes().count(b"/Type /Pages")) or "33"
+
+
 def main() -> int:
     if not SITE.exists():
         raise SystemExit("_site not found. Run mkdocs build first.")
@@ -53,6 +72,11 @@ def main() -> int:
     n_cards = len((ROOT / "flashcards.tsv").read_text(encoding="utf-8").strip().splitlines())
     bank = json.loads((ROOT / "question-bank.json").read_text(encoding="utf-8"))
     n_questions = len(bank["questions"] if isinstance(bank, dict) else bank)
+
+    # Per-exam breakdown, so the summary cannot drift from the bank.
+    per_exam = collections.defaultdict(collections.Counter)
+    for q in (bank["questions"] if isinstance(bank, dict) else bank):
+        per_exam[q.get("exam")][q.get("source", "practice")] += 1
 
     lines = [
         "# Claude Certifications",
@@ -73,9 +97,17 @@ def main() -> int:
         "",
     ]
     for slug, name, code, facts in EXAMS:
+        # Counted from the bank, never typed. These read "25 practice questions,
+        # a mock exam" for several releases while the real figures were 35 and
+        # three, which understated the resource in the one file written for
+        # machines to read.
+        practice = per_exam[slug]["practice"]
+        mocks = sum(1 for k in per_exam[slug] if k.startswith("mock"))
+        total = sum(per_exam[slug].values())
         lines.append(f"- [{name}]({BASE}/{slug}/index.html): {code}, {facts}. "
                      f"Study guide, blueprint with domain weights, study notes, "
-                     f"25 practice questions, a mock exam, and a one-page cheat sheet.")
+                     f"{practice} practice questions, {mocks} full mock exams, "
+                     f"{total} questions in total, and a one-page cheat sheet.")
 
     lines += ["", "## Program guide", ""]
     for slug, desc in GUIDE:
@@ -86,11 +118,11 @@ def main() -> int:
         "## Data and downloads",
         "",
         f"- [Question bank]({REPO}/raw/main/question-bank.json): {n_questions} practice questions as JSON, "
-        "25 per exam, with answers, rationales, and domain tags.",
+        f"{n_questions // len(EXAMS)} per exam, with answers, rationales, and domain tags.",
         f"- [Flashcards]({REPO}/raw/main/flashcards.tsv): {n_cards} cards, tab separated, "
         "importable into Anki, Quizlet, or RemNote.",
         f"- [Printable companion]({REPO}/raw/main/claude-certifications-companion.pdf): "
-        "the whole guide as a 28-page A4 PDF.",
+        f"the whole guide as a {companion_pages()}-page A4 PDF.",
         f"- [Certificates]({BASE}/certificates/index.html): the maintainer's 22 course certificates "
         "with verification links and completion dates.",
         "",
