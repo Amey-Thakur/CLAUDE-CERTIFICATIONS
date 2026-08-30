@@ -24,7 +24,7 @@ Thirty-five original practice questions written for this repository against the 
 
 <details><summary>Answer and rationale</summary>
 
-**C.** Latency-tolerant bulk work is exactly what the Batches API is for: roughly half the cost, results within a 24-hour window, correlated by custom_id. Parallel synchronous calls (A) pay full price for speed nobody needs, max_tokens (B) does not change per-token pricing, and a single request (D) exceeds any context window.
+**C.** Latency-tolerant bulk work is exactly what the Batches API is for: 50% of the cost, results within a 24-hour window, correlated by custom_id. Parallel synchronous calls (A) pay full price for speed nobody needs, max_tokens (B) does not change per-token pricing, and a single request (D) exceeds any context window.
 
 </details>
 

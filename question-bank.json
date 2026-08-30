@@ -1246,7 +1246,7 @@
     "D": "One giant request containing all 40,000 tickets"
    },
    "answer": "C",
-   "rationale": "Latency-tolerant bulk work is exactly what the Batches API is for: roughly half the cost, results within a 24-hour window, correlated by custom_id. Parallel synchronous calls (A) pay full price for speed nobody needs, max_tokens (B) does not change per-token pricing, and a single request (D) exceeds any context window."
+   "rationale": "Latency-tolerant bulk work is exactly what the Batches API is for: 50% of the cost, results within a 24-hour window, correlated by custom_id. Parallel synchronous calls (A) pay full price for speed nobody needs, max_tokens (B) does not change per-token pricing, and a single request (D) exceeds any context window."
   },
   {
    "id": "developer-foundations-practice-3",
@@ -1771,7 +1771,7 @@
     "D": "One request containing all descriptions"
    },
    "answer": "B",
-   "rationale": "Latency-tolerant bulk work is the Batches API's purpose: roughly half the cost within a 24-hour window"
+   "rationale": "Latency-tolerant bulk work is the Batches API's purpose: 50% of the cost within a 24-hour window"
   },
   {
    "id": "developer-foundations-mock1-3",

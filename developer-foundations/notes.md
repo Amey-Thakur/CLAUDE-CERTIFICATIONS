@@ -45,7 +45,7 @@ tool, not Claude. And the result goes back as a **user** turn, which is why the
 history grows on every pass.
 
 - **Streaming** cuts perceived latency, not cost. **Vision** and multi-format input arrive as content blocks.
-- **Message Batches API**: for latency-tolerant bulk work. Roughly half the cost, results within a 24-hour window, correlate with custom_id, no multi-turn tool calling. The batch-versus-realtime tradeoff is a favorite scenario shape: overnight and cost-sensitive means batch.
+- **Message Batches API**: for latency-tolerant bulk work. 50% of the cost, results within a 24-hour window, correlate with custom_id, no multi-turn tool calling. The batch-versus-realtime tradeoff is a favorite scenario shape: overnight and cost-sensitive means batch.
 
 **Batch or real time.** This is a scenario shape that recurs, and it turns on
 one question rather than on cost.

@@ -35,7 +35,7 @@ One domain is a third of the paper. Claude Code and Eval together are under 6%, 
 ## If you remember nothing else
 
 1. **stop_reason drives the loop.** `tool_use` means execute the tool, append the result, call again. `end_turn` means done.
-2. **Batches for latency-tolerant volume.** Roughly half the cost, 24-hour window, `custom_id` correlation, no multi-turn tool calling inside a batch.
+2. **Batches for latency-tolerant volume.** 50% of the cost, 24-hour window, `custom_id` correlation, no multi-turn tool calling inside a batch.
 3. **Cache the stable prefix.** Static system prompt and policy first, variable content last, caching on. Cuts latency and cost together.
 4. **Enforce structure, then validate, then retry with the error.** Tool use plus JSON schema. Never trust the model to emit valid JSON because you asked firmly.
 5. **Known path, workflow. Unknown path, agent.** Autonomy earns its complexity only when the model must choose the route.
