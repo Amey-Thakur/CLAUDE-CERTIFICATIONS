@@ -18,6 +18,23 @@ Move right only when the left rung demonstrably cannot meet the requirement. An 
 
 ## Integration (19%), the heaviest domain
 
+**Choosing what to build with.** The heaviest domain on the paper, and the
+decision it keeps testing is which mechanism fits, not how to wire one up.
+
+```mermaid
+flowchart TD
+    N{What does the model need?} -->|A capability Anthropic ships| BI[Built-in tool]
+    N -->|Something only your system can do| CT[Custom tool]
+    N -->|A reusable procedure, no new data| SK[Skill]
+    N -->|The same integration across several clients| MCP[MCP server]
+    CT --> B{Used by more than one application?}
+    B -->|Yes| MCP
+    B -->|No| KEEP[Keep it a custom tool]
+```
+
+Capability bloat is the failure mode on the other side: every tool you add makes
+every other tool slightly harder to choose correctly.
+
 - **Least privilege is the reflex**: strip tools and permissions a role does not need, entirely. Logging and confirmation prompts are compensating controls, not substitutes for removal.
 - **RAG design**: chunking should follow document structure, indexing and retrieval should match the data shape and query pattern, and hybrid retrieval exists for a reason. The classic failure: confident wrong answers after a document refresh point at retrieval and indexing, not the model.
 - **Protocol selection**: MCP for reusable model-facing capabilities, direct API or CLI integration for fixed pipelines, agent-to-agent when autonomous systems must interoperate. Progressive discovery of tools beats loading a monolithic context when the tool surface is large.

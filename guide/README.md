@@ -31,6 +31,7 @@ flowchart LR
 | [Registration and scheduling](registration.md) | Booking the exam, fixing partner email issues, preparing your machine |
 | [Certification policies](policies.md) | Retakes, validity, renewal, appeals, proctoring rules |
 | [Frequently asked questions](faq.md) | Quick answers, from pricing to badges |
+| [Things that get mixed up](confusions.md) | The pairs these exams actually test, and the question that separates each |
 | [Glossary](glossary.md) | The program's terms, defined once |
 | [Program changes](program-changes.md) | A dated record of what Anthropic has changed, and who it affects |
 | [Official sources](official-sources.md) | Provenance of every mirrored PDF |
@@ -44,4 +45,4 @@ Official PDFs in this folder: the [Anthropic Certification Exam Policy](anthropi
 
 ---
 
-Facts last verified against the official sources on 2026-08-29. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-08-30. [Repository index](../README.md)

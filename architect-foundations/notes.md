@@ -21,7 +21,7 @@ Four of the six published scenarios appear per sitting. For each one I wrote dow
 flowchart LR
     S[Send request] --> R{stop_reason}
     R -->|tool_use| T[Execute the requested tool]
-    T --> A[Append tool result to history]
+    T --> A[Append the result as a user turn]
     A --> S
     R -->|end_turn| D[Done]
 ```
@@ -50,6 +50,24 @@ The details that distinguish right answers: tool results go back as part of the 
 - Bulk work goes through the Message Batches API: half cost, 24-hour window, custom_id correlation, and no multi-turn tool calling inside a batch.
 
 ## Context and reliability
+
+**What a failing tool should return.** The shape of an error decides whether
+the agent can do anything useful with it.
+
+```mermaid
+flowchart LR
+    F[Tool fails] --> S[Structured error]
+    S --> C1[category: timeout, not_found, forbidden]
+    S --> C2[retryable: true or false]
+    S --> C3[message for the model to reason over]
+    C2 --> D{retryable}
+    D -->|true| RETRY[Agent retries, perhaps differently]
+    D -->|false| ESC[Agent escalates rather than looping]
+```
+
+A stack trace tells the agent nothing it can act on. A category and a retryable
+flag let it decide, which is the difference between a loop that recovers and a
+loop that spins.
 
 - Long tasks: extract structured facts from verbose tool output as you go, keep a scratchpad file for durable state, and delegate subtasks to subagents so the main context stays clean. Beware lost-in-the-middle: critical facts belong at the edges of the window.
 - Escalation is a design decision made in advance: policy gaps, explicit customer requests, and inability to progress are escalation triggers; everything else resolves autonomously with logging.

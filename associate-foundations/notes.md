@@ -6,21 +6,33 @@ How to use these notes: read the [study guide](README.md) first for the facts an
 
 ## Domain 2 first: output evaluation (21%)
 
+**The largest domain on this paper is checking, not producing.** The exam tests
+whether you can tell a wrong answer from a right one, which is a different
+skill from getting an answer at all.
+
+```mermaid
+flowchart TD
+    O[Claude produces an output] --> A{Does it answer the question asked?}
+    A -->|No| RE[Reframe the request, do not regenerate]
+    A -->|Yes| B{Any claim that matters if wrong?}
+    B -->|Yes| V{Does it hold against the source of record?}
+    B -->|No| S{Regulated, legal, or high stakes?}
+    V -->|No| RE
+    V -->|Yes| S
+    S -->|Yes| HUM[Route to human review]
+    S -->|No| F[Adapt for audience, tone, and format]
+    F --> ACC[Accept]
+```
+
+Regenerating is the reflex and rarely the fix. If the output was wrong because
+the request was ambiguous, a second attempt is a second guess.
+
 The largest domain, so it earns the first slot. The mindset the exam rewards is professional skepticism applied cheaply:
 
 - Treat every specific-looking detail in an output (citation numbers, statistics, names, dates) as unverified until checked against an authoritative source. Confident tone and self-reported confidence are not accuracy signals.
 - Know the common failure shapes: fabricated specifics, plausible-but-wrong summaries, silent omissions, and bias inherited from framing.
 - The verification workflow worth internalizing: identify claims that would matter if wrong, check those against the source of record, and route anything regulated, legal, or high-stakes to human review.
 - Adapting output for an audience (tone, format, length, artifact versus inline) is scored material, not an afterthought.
-
-```mermaid
-flowchart LR
-    O[Claude output] --> C{Claims that matter if wrong?}
-    C -->|yes| V[Verify against the source of record]
-    C -->|no| A[Adapt for audience and format]
-    V -->|holds up| A
-    V -->|does not| R[Rework the prompt or escalate]
-```
 
 ## Prompting and task execution (14%)
 

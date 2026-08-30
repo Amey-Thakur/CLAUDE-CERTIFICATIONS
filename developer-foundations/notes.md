@@ -7,10 +7,79 @@ The weight math that should drive your time: Applications and Integration (33.1%
 ## API mechanics (the core 6.8% plus everything it touches)
 
 - **Messages API**: conversation state lives client side; you send the full message history each call. System prompts set persistent behavior; user and assistant turns carry the dialogue.
+
+**Where the conversation lives.** There is no session on the server. You hold
+the history and resend it, which is why a long conversation costs more per turn
+than a short one.
+
+```mermaid
+flowchart LR
+    subgraph You[Your application]
+        H[(Message history)]
+    end
+    subgraph API[Anthropic API]
+        M[Stateless request]
+    end
+    H -->|system + every turn so far| M
+    M -->|one assistant turn| H
+```
+
 - **stop_reason** is the control signal: `end_turn` means done, `tool_use` means execute the requested tool and return the result in a new user turn. An agent loop is exactly this cycle.
+
+**The tool loop.** This cycle is the whole of agentic behavior on the API.
+`stop_reason` drives it, and an agent is this loop repeated until `end_turn`.
+
+```mermaid
+flowchart TD
+    S[Send messages + tools] --> R[Claude responds]
+    R --> C{stop_reason}
+    C -->|end_turn| D[Done: return content to the caller]
+    C -->|tool_use| E[Execute the requested tool yourself]
+    E --> F[Append the result as a new user turn]
+    F --> S
+    C -->|max_tokens| T[Truncated: raise the limit or split the task]
+```
+
+Two things the diagram makes obvious that the prose does not. You execute the
+tool, not Claude. And the result goes back as a **user** turn, which is why the
+history grows on every pass.
+
 - **Streaming** cuts perceived latency, not cost. **Vision** and multi-format input arrive as content blocks.
 - **Message Batches API**: for latency-tolerant bulk work. Roughly half the cost, results within a 24-hour window, correlate with custom_id, no multi-turn tool calling. The batch-versus-realtime tradeoff is a favorite scenario shape: overnight and cost-sensitive means batch.
+
+**Batch or real time.** This is a scenario shape that recurs, and it turns on
+one question rather than on cost.
+
+```mermaid
+flowchart TD
+    Q{Is anyone waiting for the result?} -->|Yes| RT[Messages API, real time]
+    Q -->|No| B{Does it need multi-turn tool calling?}
+    B -->|Yes| RT
+    B -->|No| BATCH[Message Batches API: 50% cost, 24 hour window]
+```
+
+Cost is the consequence, not the criterion. Ask who is waiting first.
+
 - **Prompt caching**: put stable content (system prompt, policies, examples) first, variable content last, so the prefix is reusable. Caching cuts both latency and cost; reordering the prompt is often the whole fix.
+
+**Why the order decides the saving.** The cache matches a prefix. Anything
+variable placed early breaks the match for everything after it, so the same
+content in the wrong order caches nothing.
+
+```mermaid
+flowchart LR
+    subgraph Good[Cacheable]
+        direction LR
+        A1[System prompt] --> A2[Policies] --> A3[Examples] --> A4[User message]
+    end
+    subgraph Bad[Not cacheable]
+        direction LR
+        B1[User message] --> B2[System prompt] --> B3[Policies] --> B4[Examples]
+    end
+```
+
+In the second arrangement the prefix changes on every request, so nothing after
+it can be reused. Reordering is often the entire optimization.
 
 ## Model selection and cost (16.8%)
 
