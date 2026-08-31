@@ -2,107 +2,128 @@
   {
     "slug": "claude-101",
     "title": "Claude 101",
-    "code": "13103f134da7befe9615ec2adfc8c50e"
+    "code": "13103f134da7befe9615ec2adfc8c50e",
+    "issued": "22 August 2026"
   },
   {
     "slug": "claude-platform-101",
     "title": "Claude Platform 101",
-    "code": "c916ad7d1190ea2447bb2fcf3809ef16"
+    "code": "c916ad7d1190ea2447bb2fcf3809ef16",
+    "issued": "22 August 2026"
   },
   {
     "slug": "claude-code-101",
     "title": "Claude Code 101",
-    "code": "47482157d8dbc48e39d22aaa49d6d9b1"
+    "code": "47482157d8dbc48e39d22aaa49d6d9b1",
+    "issued": "22 August 2026"
   },
   {
     "slug": "claude-code-in-action",
     "title": "Claude Code in Action",
-    "code": "7f0839f0576b57f38658e8784e4c9a83"
+    "code": "7f0839f0576b57f38658e8784e4c9a83",
+    "issued": "22 August 2026"
   },
   {
     "slug": "introduction-to-claude-cowork",
     "title": "Introduction to Claude Cowork",
-    "code": "7e0320325938630d9536a61078cc69a9"
+    "code": "7e0320325938630d9536a61078cc69a9",
+    "issued": "22 August 2026"
   },
   {
     "slug": "building-with-the-claude-api",
     "title": "Building with the Claude API",
-    "code": "f6a1826e7f9054f5e41bf340a402fe58"
+    "code": "f6a1826e7f9054f5e41bf340a402fe58",
+    "issued": "22 August 2026"
   },
   {
     "slug": "introduction-to-model-context-protocol",
     "title": "Introduction to Model Context Protocol",
-    "code": "0377c528acb2ecff93695ef9a9b56369"
+    "code": "0377c528acb2ecff93695ef9a9b56369",
+    "issued": "22 August 2026"
   },
   {
     "slug": "model-context-protocol-advanced-topics",
     "title": "Model Context Protocol: Advanced Topics",
-    "code": "f7904c762c678c6e136bc866545a47e4"
+    "code": "f7904c762c678c6e136bc866545a47e4",
+    "issued": "22 August 2026"
   },
   {
     "slug": "claude-with-amazon-bedrock",
     "title": "Claude with Amazon Bedrock",
-    "code": "8fb5e32058c121d343c34e341f56f375"
+    "code": "8fb5e32058c121d343c34e341f56f375",
+    "issued": "22 August 2026"
   },
   {
     "slug": "claude-with-google-clouds-vertex-ai",
     "title": "Claude with Google Cloud's Vertex AI",
-    "code": "7ba0a150a9136308e1efa4b708fd9815"
+    "code": "7ba0a150a9136308e1efa4b708fd9815",
+    "issued": "22 August 2026"
   },
   {
     "slug": "ai-fluency-framework-and-foundations",
     "title": "AI Fluency: Framework &amp; Foundations",
-    "code": "707d8089647cf8c2a99e833811ef8411"
+    "code": "707d8089647cf8c2a99e833811ef8411",
+    "issued": "22 August 2026"
   },
   {
     "slug": "ai-capabilities-and-limitations",
     "title": "AI Capabilities and Limitations",
-    "code": "09810945e075b401092e66d40dca790b"
+    "code": "09810945e075b401092e66d40dca790b",
+    "issued": "22 August 2026"
   },
   {
     "slug": "ai-fluency-for-builders",
     "title": "AI Fluency for Builders",
-    "code": "6b67e458243ba97237de011382e2bedf"
+    "code": "6b67e458243ba97237de011382e2bedf",
+    "issued": "22 August 2026"
   },
   {
     "slug": "ai-fluency-for-educators",
     "title": "AI Fluency for educators",
-    "code": "3b7797440c1c56ed02ce4311c95313f1"
+    "code": "3b7797440c1c56ed02ce4311c95313f1",
+    "issued": "22 August 2026"
   },
   {
     "slug": "ai-fluency-for-pk-12-educators",
     "title": "AI Fluency for pK-12 Educators",
-    "code": "e8df6427179f879404b68f93cdbbb1b6"
+    "code": "e8df6427179f879404b68f93cdbbb1b6",
+    "issued": "22 August 2026"
   },
   {
     "slug": "ai-fluency-for-students",
     "title": "AI Fluency for students",
-    "code": "84c728c31bdfe38efa149672b5477163"
+    "code": "84c728c31bdfe38efa149672b5477163",
+    "issued": "22 August 2026"
   },
   {
     "slug": "ai-fluency-for-nonprofits",
     "title": "AI Fluency for nonprofits",
-    "code": "06b8ffc13e282f6c78d810d8a6575579"
+    "code": "06b8ffc13e282f6c78d810d8a6575579",
+    "issued": "22 August 2026"
   },
   {
     "slug": "ai-fluency-for-small-businesses",
     "title": "AI Fluency for Small Businesses",
-    "code": "bf4fc4c30c02eb1d4aca988a212a44c8"
+    "code": "bf4fc4c30c02eb1d4aca988a212a44c8",
+    "issued": "22 August 2026"
   },
   {
     "slug": "teaching-ai-fluency",
     "title": "Teaching AI Fluency",
-    "code": "59092b63e1969a2cb07ac14a57bd13ed"
+    "code": "59092b63e1969a2cb07ac14a57bd13ed",
+    "issued": "22 August 2026"
   },
   {
     "slug": "ai-fluency-for-creative-work",
     "title": "AI Fluency for Creative Work",
-    "code": "15dd1b6eef52c127e4e4111f1d15e72e"
+    "code": "15dd1b6eef52c127e4e4111f1d15e72e",
+    "issued": "27 August 2026"
   },
   {
     "slug": "deploying-claude-enterprise-with-confidence",
     "title": "Deploying Claude Enterprise with Confidence",
     "code": "296e047c54c8ed404a99a7151c65ddf6",
-    "track": "Deployment platforms"
+    "track": "Deployment platforms",
+    "issued": "30 August 2026"
   }
 ]
