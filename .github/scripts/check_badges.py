@@ -60,14 +60,17 @@ def main():
     word = spelled(n)
     checks = [
         ("README.md",
-         re.compile(r"independently verifiable\. \*\*(\d+)\*\* were also issued"),
+         re.compile(r"and \*\*(\d+)\*\* were issued as a digital completion badge"),
          str(n)),
         ("certificates/README.md",
-         re.compile(r"^(\w+) of the twenty-two courses were also issued", re.M),
-         word),
-        (".github/pages/index.md",
-         re.compile(r"(\w+) were also issued as a digital completion badge"),
+         re.compile(r"^(\S+) courses were also issued as a digital completion badge", re.M),
          word.capitalize() if word else None),
+        (".github/pages/index.md",
+         re.compile(r"(\S+) courses were also issued as a digital completion badge"),
+         word.capitalize() if word else None),
+        (".github/pages/certificates-header.md",
+         re.compile(r"(\S+) issued a completion badge"),
+         word),
     ]
     for rel, pattern, expected in checks:
         text = (ROOT / rel).read_text(encoding="utf-8")

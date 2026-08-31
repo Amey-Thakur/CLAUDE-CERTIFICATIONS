@@ -170,7 +170,7 @@ Anthropic's channel is organized into playlists. These are the ones with study v
 Industry playlists ([Financial Services](https://www.youtube.com/playlist?list=PLf2m23nhTg1PTXjULcWHgzJn1oBvC6NuV), [Life Sciences](https://www.youtube.com/playlist?list=PLf2m23nhTg1MtnZze0DPJA6RQv3zrNzL-)) are useful context for customer conversations but are not on any blueprint.
 
 > [!NOTE]
-> Video titles and playlist contents change as Anthropic publishes. Links were last checked on 30 August 2026, and the [weekly link check](maintenance.md) catches any that break.
+> Video titles and playlist contents change as Anthropic publishes. Links were last checked on 31 August 2026, and the [weekly link check](maintenance.md) catches any that break.
 
 ---
 

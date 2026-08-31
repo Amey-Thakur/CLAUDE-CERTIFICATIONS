@@ -28,6 +28,12 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 OUT_HTML = ASSETS / "companion.html"
 OUT_PDF = ROOT / "claude-certifications-companion.pdf"
 
+# The badge grid's width on the proof page, chosen against the measurement in
+# check_companion_layout.py rather than by eye. Seven badges across at 214mm is
+# the largest they go while the course listing under them still clears the
+# footer, with a few millimetres spare for font differences between machines.
+GRID_MM = 214
+
 
 REPO_URL = f"https://{REPO}"
 SITE_URL = f"https://{SITE}"
@@ -307,7 +313,6 @@ def contents(entries):
       repository.</div>''', "Contents")
 
 
-
 def image_page(title, blurb, image, label, note=None):
     tail = (f'<p class="small" style="margin-top:3mm">{note}</p>') if note else ""
     return page(f'''<h2>{title}</h2><p class="muted" style="max-width:210mm">{blurb}</p>
@@ -492,58 +497,86 @@ def proof_page(label):
         # the page past its footer.
         if names and "badge" not in m.group(1).lower():
             groups.append((m.group(1), names, slugs))
-    total = sum(len(n) for _, n, _s in groups)
 
-    def block(g):
+    # The badges come from their own list rather than from the certificate
+    # gallery. Reading them off the certificates missed the one course that
+    # issued a badge and no certificate, so the page showed twenty where the
+    # repository held twenty-one.
+    badges = json.loads(
+        (ROOT / "certificates" / "badges" / "badges.json").read_text(encoding="utf-8"))
+    # Seven to a row. The count divides by seven exactly, so the grid closes as
+    # a full rectangle; a grid that ends on a short row reads as unfinished.
+    per_row = 7
+    if len(badges) % per_row:
+        raise SystemExit(f"{len(badges)} badges do not fill rows of {per_row}; "
+                         f"choose a divisor of the count for the badge grid")
+    tiles = ""
+    for badge in badges:
+        image = ROOT / "certificates" / "badges" / f"{badge['slug']}.png"
+        if not image.exists():
+            raise SystemExit(f"no badge image for {badge['slug']}")
+        tiles += (f'<img src="data:image/png;base64,'
+                  f'{base64.b64encode(_badge(image.name).read_bytes()).decode()}"'
+                  f' alt="Claude Academy completion badge for {badge["title"]},'
+                  f' issued to Amey Thakur"'
+                  f' style="width:100%;border:1px solid #e0ddd4;'
+                  f'border-radius:1mm;display:block">')
+    shown = len(badges)
+
+    # A course that issued a badge and no certificate is still a course that was
+    # completed, so it joins the track it belongs to. Without this the page
+    # showed a badge for something its own course list did not mention.
+    certs = sum(len(s) for _t, _n, s in groups)
+    named = {n for _t, names, _s in groups for n in names}
+    for badge in badges:
+        if badge["title"] in named or "track" not in badge:
+            continue
+        for i, (title, names, slugs) in enumerate(groups):
+            if title == badge["track"]:
+                groups[i] = (title, names + [badge["title"]], slugs)
+                break
+    total = sum(len(n) for _t, n, _s in groups)
+
+    def block(title, names, span=1):
         """One track: its name, then its courses, one per line. Every course is
-        named in text, which is what makes the page searchable."""
-        title, names = g[0], g[1]
-        items = "".join(
-            f'<li style="margin-bottom:0.55mm">{n}</li>' for n in names)
-        return (f'<div style="break-inside:avoid;-webkit-column-break-inside:avoid">'
+        named in text, which is what makes the page searchable. A long track
+        takes two columns and splits its own list, so no heading is ever left
+        in one column with its entries continuing unlabeled in the next."""
+        items = "".join(f'<li style="margin-bottom:0.55mm">{n}</li>' for n in names)
+        inner = "column-count:2;column-gap:7mm;" if span > 1 else ""
+        return (f'<div style="grid-column:span {span}">'
                 f'<p style="margin:0 0 1.2mm;font-size:8.2pt;letter-spacing:0.06em;'
                 f'text-transform:uppercase;color:#8a857c;font-weight:600">{title}</p>'
-                f'<ul style="margin:0 0 2.6mm;padding-left:4.2mm;font-size:9.4pt;'
+                f'<ul style="{inner}margin:0;padding-left:4.2mm;font-size:9.4pt;'
                 f'line-height:1.45;color:#4a463f">{items}</ul></div>')
 
-    # Every badge, in the gallery's own order, so the page and the gallery cannot
-    # disagree. Four to a row fills the left column in five even rows.
-    order = [(n, s) for _t, names, slugs in groups for n, s in zip(names, slugs)]
-    tiles = ""
-    for name, slug_ in order:
-        match = ROOT / "certificates" / "badges" / f"{slug_}.png"
-        if match.exists():
-            tiles += (f'<img src="data:image/png;base64,'
-                      f'{base64.b64encode(_badge(match.name).read_bytes()).decode()}"'
-                      f' alt="Claude Academy completion badge for {name}, issued to Amey Thakur"'
-                      f' style="width:22.6%;border:1px solid #e0ddd4;border-radius:1mm">')
-    shown = tiles.count("<img")
-    listing = "".join(block(g) for g in groups)
+    # Each track gets one column, except one long enough to need two. That keeps
+    # every column about the same height, which is what makes the block read as
+    # a single table rather than four ragged lists.
+    widest = max(len(n) for _t, n, _s in groups)
+    columns = sum(2 if len(n) > widest / 2 and len(n) >= 8 else 1
+                  for _t, n, _s in groups)
+    listing = "".join(
+        block(t, n, 2 if len(n) > widest / 2 and len(n) >= 8 else 1)
+        for t, n, _s in groups)
 
     return page(f'''<h3>Receipts, not claims</h3>
-      <h1 style="font-size:25pt">The {total} certificates behind this companion</h1>
+      <h1 style="font-size:25pt">The {total} courses behind this companion</h1>
       <p class="lead muted" style="max-width:230mm">Every course in the official Claude Academy curriculum,
-      completed before this companion was written. Each certificate carries its own Skilljar verification record,
-      and {shown} of them were also issued as a digital completion badge on Claude Academy, verifiable on
-      Anthropic\'s own domain.</p>
+      completed before this companion was written. {certs} carry a Skilljar verification record, and
+      {shown} carry a Claude Academy badge that verifies on Anthropic\'s own domain.</p>
 
-      <div style="display:flex;gap:10mm;margin-top:2mm">
+      <p style="margin:0 0 1.5mm;font-size:8.2pt;letter-spacing:0.06em;
+      text-transform:uppercase;color:#8a857c;font-weight:600">The {shown} Claude Academy badges</p>
+      <div style="display:grid;grid-template-columns:repeat({per_row},1fr);
+      gap:2mm;width:{GRID_MM}mm">{tiles}</div>
 
-        <div style="flex:0 0 46%">
-          <p style="margin:0 0 2mm;font-size:8.2pt;letter-spacing:0.06em;
-          text-transform:uppercase;color:#8a857c;font-weight:600">The {shown} Claude Academy badges</p>
-          <div style="display:flex;flex-wrap:wrap;gap:2.1mm">{tiles}</div>
-        </div>
+      <p style="margin:2.5mm 0 1.5mm;font-size:8.2pt;letter-spacing:0.06em;
+      text-transform:uppercase;color:#8a857c;font-weight:600">All {total} courses</p>
+      <div style="display:grid;grid-template-columns:repeat({columns},1fr);
+      column-gap:7mm">{listing}</div>
 
-        <div style="flex:1">
-          <p style="margin:0 0 2mm;font-size:8.2pt;letter-spacing:0.06em;
-          text-transform:uppercase;color:#8a857c;font-weight:600">All {total} courses</p>
-          <div style="column-count:2;column-gap:7mm">{listing}</div>
-        </div>
-
-      </div>
-
-      <p class="small" style="margin-top:auto;padding-top:1.5mm">Every certificate, its PDF, and its verification
+      <p class="small" style="margin-top:auto;padding-top:1mm">Every certificate, its PDF, and its verification
       link is at {link(SITE + "/certificates", SITE_URL + "/certificates/index.html")}. The courses are free to
       anyone on the public Academy.</p>''', label, cls="tight")
 

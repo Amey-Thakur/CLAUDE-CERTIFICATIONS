@@ -9,7 +9,7 @@
 
 # Course completion certificates
 
-**All twenty-two Claude Academy courses behind the certification program, completed by [Amey Thakur](https://github.com/Amey-Thakur).**
+**Twenty-three of the twenty-four Claude Academy courses behind the certification program, completed by [Amey Thakur](https://github.com/Amey-Thakur).** Twenty-two issued a certificate; twenty-one issued a completion badge.
 
 Every certificate links to its issued PDF and its Skilljar verification record, which carries the completion date shown.
 
@@ -167,133 +167,125 @@ Course completion certificates are distinct from the certification credentials t
 
 ## Claude Academy completion badges
 
-Twenty of the twenty-two courses were also issued as a digital completion
-badge on [Claude Academy](https://academy.claude.com), Anthropic's learning
-platform: nineteen on 22 August 2026 and the twentieth on 27 August 2026. These
-verify separately from the certificate PDFs above, on Anthropic's own domain
-rather than through Skilljar. Every badge below links to its verification page.
+Twenty-one courses were also issued as a digital completion badge on
+[Claude Academy](https://academy.claude.com), Anthropic's learning platform:
+nineteen on 22 August 2026, one on 27 August 2026, and one on 30 August 2026.
+These verify separately from the certificate PDFs above, on Anthropic's own
+domain rather than through Skilljar.
+
+Twenty of them also appear as a certificate above. The twenty-first, Deploying
+Claude Enterprise with Confidence, issued a badge and no certificate, which is
+why the two counts differ. Every badge below links to its verification page.
 
 <div align="center">
+
+<!-- badges:start -->
 
 <table>
 <tr>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/13103f134da7befe9615ec2adfc8c50e" title="Verify this badge on Claude Academy"><img src="badges/claude-101.png" alt="Claude Academy completion badge for Claude 101, presented to Amey Thakur" width="270"></a><br>
-<b>Claude 101</b><br>
-<sub><a href="https://academy.claude.com/verify/13103f134da7befe9615ec2adfc8c50e">Verify</a> · <code>13103f134da7…</code></sub>
+<a href="https://academy.claude.com/verify/13103f134da7befe9615ec2adfc8c50e" title="Verify Claude 101 on Claude Academy"><img src="badges/claude-101.png" width="100%" alt="Claude Academy completion badge for Claude 101, issued to Amey Thakur"></a>
+<br><sub><b>Claude 101</b><br><a href="https://academy.claude.com/verify/13103f134da7befe9615ec2adfc8c50e">Verify</a> · <code>13103f134da7…</code></sub>
 </td>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/c916ad7d1190ea2447bb2fcf3809ef16" title="Verify this badge on Claude Academy"><img src="badges/claude-platform-101.png" alt="Claude Academy completion badge for Claude Platform 101, presented to Amey Thakur" width="270"></a><br>
-<b>Claude Platform 101</b><br>
-<sub><a href="https://academy.claude.com/verify/c916ad7d1190ea2447bb2fcf3809ef16">Verify</a> · <code>c916ad7d1190…</code></sub>
+<a href="https://academy.claude.com/verify/c916ad7d1190ea2447bb2fcf3809ef16" title="Verify Claude Platform 101 on Claude Academy"><img src="badges/claude-platform-101.png" width="100%" alt="Claude Academy completion badge for Claude Platform 101, issued to Amey Thakur"></a>
+<br><sub><b>Claude Platform 101</b><br><a href="https://academy.claude.com/verify/c916ad7d1190ea2447bb2fcf3809ef16">Verify</a> · <code>c916ad7d1190…</code></sub>
 </td>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/47482157d8dbc48e39d22aaa49d6d9b1" title="Verify this badge on Claude Academy"><img src="badges/claude-code-101.png" alt="Claude Academy completion badge for Claude Code 101, presented to Amey Thakur" width="270"></a><br>
-<b>Claude Code 101</b><br>
-<sub><a href="https://academy.claude.com/verify/47482157d8dbc48e39d22aaa49d6d9b1">Verify</a> · <code>47482157d8db…</code></sub>
+<a href="https://academy.claude.com/verify/47482157d8dbc48e39d22aaa49d6d9b1" title="Verify Claude Code 101 on Claude Academy"><img src="badges/claude-code-101.png" width="100%" alt="Claude Academy completion badge for Claude Code 101, issued to Amey Thakur"></a>
+<br><sub><b>Claude Code 101</b><br><a href="https://academy.claude.com/verify/47482157d8dbc48e39d22aaa49d6d9b1">Verify</a> · <code>47482157d8db…</code></sub>
 </td>
 </tr>
 <tr>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/7f0839f0576b57f38658e8784e4c9a83" title="Verify this badge on Claude Academy"><img src="badges/claude-code-in-action.png" alt="Claude Academy completion badge for Claude Code in Action, presented to Amey Thakur" width="270"></a><br>
-<b>Claude Code in Action</b><br>
-<sub><a href="https://academy.claude.com/verify/7f0839f0576b57f38658e8784e4c9a83">Verify</a> · <code>7f0839f0576b…</code></sub>
+<a href="https://academy.claude.com/verify/7f0839f0576b57f38658e8784e4c9a83" title="Verify Claude Code in Action on Claude Academy"><img src="badges/claude-code-in-action.png" width="100%" alt="Claude Academy completion badge for Claude Code in Action, issued to Amey Thakur"></a>
+<br><sub><b>Claude Code in Action</b><br><a href="https://academy.claude.com/verify/7f0839f0576b57f38658e8784e4c9a83">Verify</a> · <code>7f0839f0576b…</code></sub>
 </td>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/7e0320325938630d9536a61078cc69a9" title="Verify this badge on Claude Academy"><img src="badges/introduction-to-claude-cowork.png" alt="Claude Academy completion badge for Introduction to Claude Cowork, presented to Amey Thakur" width="270"></a><br>
-<b>Introduction to Claude Cowork</b><br>
-<sub><a href="https://academy.claude.com/verify/7e0320325938630d9536a61078cc69a9">Verify</a> · <code>7e0320325938…</code></sub>
+<a href="https://academy.claude.com/verify/7e0320325938630d9536a61078cc69a9" title="Verify Introduction to Claude Cowork on Claude Academy"><img src="badges/introduction-to-claude-cowork.png" width="100%" alt="Claude Academy completion badge for Introduction to Claude Cowork, issued to Amey Thakur"></a>
+<br><sub><b>Introduction to Claude Cowork</b><br><a href="https://academy.claude.com/verify/7e0320325938630d9536a61078cc69a9">Verify</a> · <code>7e0320325938…</code></sub>
 </td>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/f6a1826e7f9054f5e41bf340a402fe58" title="Verify this badge on Claude Academy"><img src="badges/building-with-the-claude-api.png" alt="Claude Academy completion badge for Building with the Claude API, presented to Amey Thakur" width="270"></a><br>
-<b>Building with the Claude API</b><br>
-<sub><a href="https://academy.claude.com/verify/f6a1826e7f9054f5e41bf340a402fe58">Verify</a> · <code>f6a1826e7f90…</code></sub>
+<a href="https://academy.claude.com/verify/f6a1826e7f9054f5e41bf340a402fe58" title="Verify Building with the Claude API on Claude Academy"><img src="badges/building-with-the-claude-api.png" width="100%" alt="Claude Academy completion badge for Building with the Claude API, issued to Amey Thakur"></a>
+<br><sub><b>Building with the Claude API</b><br><a href="https://academy.claude.com/verify/f6a1826e7f9054f5e41bf340a402fe58">Verify</a> · <code>f6a1826e7f90…</code></sub>
 </td>
 </tr>
 <tr>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/0377c528acb2ecff93695ef9a9b56369" title="Verify this badge on Claude Academy"><img src="badges/introduction-to-model-context-protocol.png" alt="Claude Academy completion badge for Introduction to Model Context Protocol, presented to Amey Thakur" width="270"></a><br>
-<b>Introduction to Model Context Protocol</b><br>
-<sub><a href="https://academy.claude.com/verify/0377c528acb2ecff93695ef9a9b56369">Verify</a> · <code>0377c528acb2…</code></sub>
+<a href="https://academy.claude.com/verify/0377c528acb2ecff93695ef9a9b56369" title="Verify Introduction to Model Context Protocol on Claude Academy"><img src="badges/introduction-to-model-context-protocol.png" width="100%" alt="Claude Academy completion badge for Introduction to Model Context Protocol, issued to Amey Thakur"></a>
+<br><sub><b>Introduction to Model Context Protocol</b><br><a href="https://academy.claude.com/verify/0377c528acb2ecff93695ef9a9b56369">Verify</a> · <code>0377c528acb2…</code></sub>
 </td>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/f7904c762c678c6e136bc866545a47e4" title="Verify this badge on Claude Academy"><img src="badges/model-context-protocol-advanced-topics.png" alt="Claude Academy completion badge for Model Context Protocol: Advanced Topics, presented to Amey Thakur" width="270"></a><br>
-<b>Model Context Protocol: Advanced Topics</b><br>
-<sub><a href="https://academy.claude.com/verify/f7904c762c678c6e136bc866545a47e4">Verify</a> · <code>f7904c762c67…</code></sub>
+<a href="https://academy.claude.com/verify/f7904c762c678c6e136bc866545a47e4" title="Verify Model Context Protocol: Advanced Topics on Claude Academy"><img src="badges/model-context-protocol-advanced-topics.png" width="100%" alt="Claude Academy completion badge for Model Context Protocol: Advanced Topics, issued to Amey Thakur"></a>
+<br><sub><b>Model Context Protocol: Advanced Topics</b><br><a href="https://academy.claude.com/verify/f7904c762c678c6e136bc866545a47e4">Verify</a> · <code>f7904c762c67…</code></sub>
 </td>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/8fb5e32058c121d343c34e341f56f375" title="Verify this badge on Claude Academy"><img src="badges/claude-with-amazon-bedrock.png" alt="Claude Academy completion badge for Claude with Amazon Bedrock, presented to Amey Thakur" width="270"></a><br>
-<b>Claude with Amazon Bedrock</b><br>
-<sub><a href="https://academy.claude.com/verify/8fb5e32058c121d343c34e341f56f375">Verify</a> · <code>8fb5e32058c1…</code></sub>
+<a href="https://academy.claude.com/verify/8fb5e32058c121d343c34e341f56f375" title="Verify Claude with Amazon Bedrock on Claude Academy"><img src="badges/claude-with-amazon-bedrock.png" width="100%" alt="Claude Academy completion badge for Claude with Amazon Bedrock, issued to Amey Thakur"></a>
+<br><sub><b>Claude with Amazon Bedrock</b><br><a href="https://academy.claude.com/verify/8fb5e32058c121d343c34e341f56f375">Verify</a> · <code>8fb5e32058c1…</code></sub>
 </td>
 </tr>
 <tr>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/7ba0a150a9136308e1efa4b708fd9815" title="Verify this badge on Claude Academy"><img src="badges/claude-with-google-clouds-vertex-ai.png" alt="Claude Academy completion badge for Claude with Google Cloud's Vertex AI, presented to Amey Thakur" width="270"></a><br>
-<b>Claude with Google Cloud's Vertex AI</b><br>
-<sub><a href="https://academy.claude.com/verify/7ba0a150a9136308e1efa4b708fd9815">Verify</a> · <code>7ba0a150a913…</code></sub>
+<a href="https://academy.claude.com/verify/7ba0a150a9136308e1efa4b708fd9815" title="Verify Claude with Google Cloud's Vertex AI on Claude Academy"><img src="badges/claude-with-google-clouds-vertex-ai.png" width="100%" alt="Claude Academy completion badge for Claude with Google Cloud's Vertex AI, issued to Amey Thakur"></a>
+<br><sub><b>Claude with Google Cloud's Vertex AI</b><br><a href="https://academy.claude.com/verify/7ba0a150a9136308e1efa4b708fd9815">Verify</a> · <code>7ba0a150a913…</code></sub>
 </td>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/707d8089647cf8c2a99e833811ef8411" title="Verify this badge on Claude Academy"><img src="badges/ai-fluency-framework-and-foundations.png" alt="Claude Academy completion badge for AI Fluency: Framework &amp; Foundations, presented to Amey Thakur" width="270"></a><br>
-<b>AI Fluency: Framework &amp; Foundations</b><br>
-<sub><a href="https://academy.claude.com/verify/707d8089647cf8c2a99e833811ef8411">Verify</a> · <code>707d8089647c…</code></sub>
+<a href="https://academy.claude.com/verify/707d8089647cf8c2a99e833811ef8411" title="Verify AI Fluency: Framework &amp; Foundations on Claude Academy"><img src="badges/ai-fluency-framework-and-foundations.png" width="100%" alt="Claude Academy completion badge for AI Fluency: Framework &amp; Foundations, issued to Amey Thakur"></a>
+<br><sub><b>AI Fluency: Framework &amp; Foundations</b><br><a href="https://academy.claude.com/verify/707d8089647cf8c2a99e833811ef8411">Verify</a> · <code>707d8089647c…</code></sub>
 </td>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/09810945e075b401092e66d40dca790b" title="Verify this badge on Claude Academy"><img src="badges/ai-capabilities-and-limitations.png" alt="Claude Academy completion badge for AI Capabilities and Limitations, presented to Amey Thakur" width="270"></a><br>
-<b>AI Capabilities and Limitations</b><br>
-<sub><a href="https://academy.claude.com/verify/09810945e075b401092e66d40dca790b">Verify</a> · <code>09810945e075…</code></sub>
+<a href="https://academy.claude.com/verify/09810945e075b401092e66d40dca790b" title="Verify AI Capabilities and Limitations on Claude Academy"><img src="badges/ai-capabilities-and-limitations.png" width="100%" alt="Claude Academy completion badge for AI Capabilities and Limitations, issued to Amey Thakur"></a>
+<br><sub><b>AI Capabilities and Limitations</b><br><a href="https://academy.claude.com/verify/09810945e075b401092e66d40dca790b">Verify</a> · <code>09810945e075…</code></sub>
 </td>
 </tr>
 <tr>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/6b67e458243ba97237de011382e2bedf" title="Verify this badge on Claude Academy"><img src="badges/ai-fluency-for-builders.png" alt="Claude Academy completion badge for AI Fluency for Builders, presented to Amey Thakur" width="270"></a><br>
-<b>AI Fluency for Builders</b><br>
-<sub><a href="https://academy.claude.com/verify/6b67e458243ba97237de011382e2bedf">Verify</a> · <code>6b67e458243b…</code></sub>
+<a href="https://academy.claude.com/verify/6b67e458243ba97237de011382e2bedf" title="Verify AI Fluency for Builders on Claude Academy"><img src="badges/ai-fluency-for-builders.png" width="100%" alt="Claude Academy completion badge for AI Fluency for Builders, issued to Amey Thakur"></a>
+<br><sub><b>AI Fluency for Builders</b><br><a href="https://academy.claude.com/verify/6b67e458243ba97237de011382e2bedf">Verify</a> · <code>6b67e458243b…</code></sub>
 </td>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/3b7797440c1c56ed02ce4311c95313f1" title="Verify this badge on Claude Academy"><img src="badges/ai-fluency-for-educators.png" alt="Claude Academy completion badge for AI Fluency for educators, presented to Amey Thakur" width="270"></a><br>
-<b>AI Fluency for educators</b><br>
-<sub><a href="https://academy.claude.com/verify/3b7797440c1c56ed02ce4311c95313f1">Verify</a> · <code>3b7797440c1c…</code></sub>
+<a href="https://academy.claude.com/verify/3b7797440c1c56ed02ce4311c95313f1" title="Verify AI Fluency for educators on Claude Academy"><img src="badges/ai-fluency-for-educators.png" width="100%" alt="Claude Academy completion badge for AI Fluency for educators, issued to Amey Thakur"></a>
+<br><sub><b>AI Fluency for educators</b><br><a href="https://academy.claude.com/verify/3b7797440c1c56ed02ce4311c95313f1">Verify</a> · <code>3b7797440c1c…</code></sub>
 </td>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/e8df6427179f879404b68f93cdbbb1b6" title="Verify this badge on Claude Academy"><img src="badges/ai-fluency-for-pk-12-educators.png" alt="Claude Academy completion badge for AI Fluency for pK-12 Educators, presented to Amey Thakur" width="270"></a><br>
-<b>AI Fluency for pK-12 Educators</b><br>
-<sub><a href="https://academy.claude.com/verify/e8df6427179f879404b68f93cdbbb1b6">Verify</a> · <code>e8df6427179f…</code></sub>
+<a href="https://academy.claude.com/verify/e8df6427179f879404b68f93cdbbb1b6" title="Verify AI Fluency for pK-12 Educators on Claude Academy"><img src="badges/ai-fluency-for-pk-12-educators.png" width="100%" alt="Claude Academy completion badge for AI Fluency for pK-12 Educators, issued to Amey Thakur"></a>
+<br><sub><b>AI Fluency for pK-12 Educators</b><br><a href="https://academy.claude.com/verify/e8df6427179f879404b68f93cdbbb1b6">Verify</a> · <code>e8df6427179f…</code></sub>
 </td>
 </tr>
 <tr>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/84c728c31bdfe38efa149672b5477163" title="Verify this badge on Claude Academy"><img src="badges/ai-fluency-for-students.png" alt="Claude Academy completion badge for AI Fluency for students, presented to Amey Thakur" width="270"></a><br>
-<b>AI Fluency for students</b><br>
-<sub><a href="https://academy.claude.com/verify/84c728c31bdfe38efa149672b5477163">Verify</a> · <code>84c728c31bdf…</code></sub>
+<a href="https://academy.claude.com/verify/84c728c31bdfe38efa149672b5477163" title="Verify AI Fluency for students on Claude Academy"><img src="badges/ai-fluency-for-students.png" width="100%" alt="Claude Academy completion badge for AI Fluency for students, issued to Amey Thakur"></a>
+<br><sub><b>AI Fluency for students</b><br><a href="https://academy.claude.com/verify/84c728c31bdfe38efa149672b5477163">Verify</a> · <code>84c728c31bdf…</code></sub>
 </td>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/06b8ffc13e282f6c78d810d8a6575579" title="Verify this badge on Claude Academy"><img src="badges/ai-fluency-for-nonprofits.png" alt="Claude Academy completion badge for AI Fluency for nonprofits, presented to Amey Thakur" width="270"></a><br>
-<b>AI Fluency for nonprofits</b><br>
-<sub><a href="https://academy.claude.com/verify/06b8ffc13e282f6c78d810d8a6575579">Verify</a> · <code>06b8ffc13e28…</code></sub>
+<a href="https://academy.claude.com/verify/06b8ffc13e282f6c78d810d8a6575579" title="Verify AI Fluency for nonprofits on Claude Academy"><img src="badges/ai-fluency-for-nonprofits.png" width="100%" alt="Claude Academy completion badge for AI Fluency for nonprofits, issued to Amey Thakur"></a>
+<br><sub><b>AI Fluency for nonprofits</b><br><a href="https://academy.claude.com/verify/06b8ffc13e282f6c78d810d8a6575579">Verify</a> · <code>06b8ffc13e28…</code></sub>
 </td>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/bf4fc4c30c02eb1d4aca988a212a44c8" title="Verify this badge on Claude Academy"><img src="badges/ai-fluency-for-small-businesses.png" alt="Claude Academy completion badge for AI Fluency for Small Businesses, presented to Amey Thakur" width="270"></a><br>
-<b>AI Fluency for Small Businesses</b><br>
-<sub><a href="https://academy.claude.com/verify/bf4fc4c30c02eb1d4aca988a212a44c8">Verify</a> · <code>bf4fc4c30c02…</code></sub>
+<a href="https://academy.claude.com/verify/bf4fc4c30c02eb1d4aca988a212a44c8" title="Verify AI Fluency for Small Businesses on Claude Academy"><img src="badges/ai-fluency-for-small-businesses.png" width="100%" alt="Claude Academy completion badge for AI Fluency for Small Businesses, issued to Amey Thakur"></a>
+<br><sub><b>AI Fluency for Small Businesses</b><br><a href="https://academy.claude.com/verify/bf4fc4c30c02eb1d4aca988a212a44c8">Verify</a> · <code>bf4fc4c30c02…</code></sub>
 </td>
 </tr>
 <tr>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/59092b63e1969a2cb07ac14a57bd13ed" title="Verify this badge on Claude Academy"><img src="badges/teaching-ai-fluency.png" alt="Claude Academy completion badge for Teaching AI Fluency, presented to Amey Thakur" width="270"></a><br>
-<b>Teaching AI Fluency</b><br>
-<sub><a href="https://academy.claude.com/verify/59092b63e1969a2cb07ac14a57bd13ed">Verify</a> · <code>59092b63e196…</code></sub>
+<a href="https://academy.claude.com/verify/59092b63e1969a2cb07ac14a57bd13ed" title="Verify Teaching AI Fluency on Claude Academy"><img src="badges/teaching-ai-fluency.png" width="100%" alt="Claude Academy completion badge for Teaching AI Fluency, issued to Amey Thakur"></a>
+<br><sub><b>Teaching AI Fluency</b><br><a href="https://academy.claude.com/verify/59092b63e1969a2cb07ac14a57bd13ed">Verify</a> · <code>59092b63e196…</code></sub>
 </td>
 <td align="center" width="33%">
-<a href="https://academy.claude.com/verify/15dd1b6eef52c127e4e4111f1d15e72e" title="Verify this badge on Claude Academy"><img src="badges/ai-fluency-for-creative-work.png" alt="Claude Academy completion badge for AI Fluency for Creative Work, presented to Amey Thakur" width="270"></a><br>
-<b>AI Fluency for Creative Work</b><br>
-<sub><a href="https://academy.claude.com/verify/15dd1b6eef52c127e4e4111f1d15e72e">Verify</a> · <code>15dd1b6eef52…</code></sub>
+<a href="https://academy.claude.com/verify/15dd1b6eef52c127e4e4111f1d15e72e" title="Verify AI Fluency for Creative Work on Claude Academy"><img src="badges/ai-fluency-for-creative-work.png" width="100%" alt="Claude Academy completion badge for AI Fluency for Creative Work, issued to Amey Thakur"></a>
+<br><sub><b>AI Fluency for Creative Work</b><br><a href="https://academy.claude.com/verify/15dd1b6eef52c127e4e4111f1d15e72e">Verify</a> · <code>15dd1b6eef52…</code></sub>
+</td>
+<td align="center" width="33%">
+<a href="https://academy.claude.com/verify/296e047c54c8ed404a99a7151c65ddf6" title="Verify Deploying Claude Enterprise with Confidence on Claude Academy"><img src="badges/deploying-claude-enterprise-with-confidence.png" width="100%" alt="Claude Academy completion badge for Deploying Claude Enterprise with Confidence, issued to Amey Thakur"></a>
+<br><sub><b>Deploying Claude Enterprise with Confidence</b><br><a href="https://academy.claude.com/verify/296e047c54c8ed404a99a7151c65ddf6">Verify</a> · <code>296e047c54c8…</code></sub>
 </td>
 </tr>
 </table>
+
+<!-- badges:end -->
 
 </div>
 
 ---
 
-Facts last verified against the official sources on 2026-08-30. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-08-31. [Repository index](../README.md)

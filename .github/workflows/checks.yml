@@ -89,6 +89,11 @@ jobs:
           python .github/scripts/build_flashcards.py
           git diff --exit-code -- question-bank.json flashcards.tsv \
             guide/flashcards.md .github/assets/tracker.json .github/assets/flashcards.json
+      # The same badges are shown in three galleries. They are written from one
+      # list rather than kept in step by hand, which is what let a badge be
+      # added to two of the three and missed in the other.
+      - name: Badge galleries match the badge list
+        run: python .github/scripts/build_badges.py --check
       # The images and the companion need a browser, and the companion is set in a
       # font the runner does not have, so re-rendering here would differ byte
       # for byte with nothing wrong. This asks the question that matters
@@ -110,3 +115,12 @@ jobs:
       # mock_exam.py and the site quiz at run time, not to the source file.
       - name: Questions are ordered, lettered, and correctly keyed
         run: python .github/scripts/check_questions.py
+      # The companion's pages are a fixed size and clip what does not fit, so a
+      # page that has outgrown itself looks finished with its last lines gone.
+      # This measures every page in a browser instead of trusting the render.
+      - name: Companion pages neither overflow nor overlap
+        run: |
+          python -m pip install --quiet playwright
+          python -m playwright install --with-deps chromium
+          python .github/scripts/build_companion.py
+          python .github/scripts/check_companion_layout.py

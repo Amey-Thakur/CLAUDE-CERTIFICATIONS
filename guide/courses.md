@@ -36,7 +36,7 @@ Cloud-platform depth for architecture questions about where and how Claude runs.
 | --- | --- | --- | --- |
 | Claude with Amazon Bedrock | Running Claude on AWS, from the accreditation program Anthropic built with AWS | [Enroll](https://academy.claude.com/courses/claude-with-amazon-bedrock) | [PDF](../certificates/claude-with-amazon-bedrock.pdf) · [Verify](https://verify.skilljar.com/c/r5bdeunp9gf3) · [Badge](https://academy.claude.com/verify/8fb5e32058c121d343c34e341f56f375) |
 | Claude on Google Cloud | Working with Anthropic models on Google Cloud and Vertex AI | [Enroll](https://academy.claude.com/courses/claude-with-google-cloud-s-vertex-ai) | [PDF](../certificates/claude-with-google-clouds-vertex-ai.pdf) · [Verify](https://verify.skilljar.com/c/jho47okswydj) · [Badge](https://academy.claude.com/verify/7ba0a150a9136308e1efa4b708fd9815) |
-| Deploying Claude Enterprise with Confidence | The five organization-wide decisions behind a Claude Enterprise rollout: structure and identity, access, governance, spend, and visibility | [Enroll](https://academy.claude.com/courses/deploying-claude-enterprise-with-confidence) | Not yet taken |
+| Deploying Claude Enterprise with Confidence | The five organization-wide decisions behind a Claude Enterprise rollout: structure and identity, access, governance, spend, and visibility | [Enroll](https://academy.claude.com/courses/deploying-claude-enterprise-with-confidence) | [Badge](https://academy.claude.com/verify/296e047c54c8ed404a99a7151c65ddf6) |
 
 ## AI Fluency
 
@@ -64,4 +64,4 @@ This is the repository's recommendation: start with Claude 101 and Claude Platfo
 
 ---
 
-Facts last verified against the official sources on 2026-08-30. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-08-31. [Repository index](../README.md)
