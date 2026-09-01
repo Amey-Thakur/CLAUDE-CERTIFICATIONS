@@ -16,6 +16,12 @@ Usage:
 The tag comparison is skipped when no tags are present, so a shallow checkout or
 a fresh fork does not fail for a reason the author cannot fix. In CI, fetch tags
 so the check actually runs.
+
+Metadata ahead of the newest tag is reported but not failed. The commit that
+bumps the version is pushed before the release is cut from it, so the tag does
+not exist yet when CI reads that commit; failing there marked every release
+commit red for a state that resolved itself minutes later. Metadata behind the
+newest tag is the drift this exists to catch, and still fails.
 """
 
 import json
@@ -27,6 +33,11 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent.parent
 SEMVER = re.compile(r"^\d+\.\d+\.\d+$")
 DATE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
+
+
+def as_version(text):
+    """A version as numbers, so 1.10.1 sorts above 1.9.0 rather than below it."""
+    return tuple(int(p) for p in text.split("."))
 
 
 def newest_tag():
@@ -102,12 +113,21 @@ def main():
     tag = newest_tag()
     if tag is None:
         print("  no tags in this checkout, so the release comparison is skipped")
-    elif tag != cff_v:
-        problems.append(
-            f"newest tag is v{tag} but the metadata says {cff_v}. "
-            f"Bump both files, or tag the release you meant to describe")
-    else:
+    elif tag == cff_v:
         print(f"  metadata matches the newest tag, v{tag}")
+    elif as_version(cff_v) > as_version(tag):
+        # The commit that bumps the version is always pushed before the tag
+        # exists, because the release is cut from that commit. Failing here
+        # would put a red mark on every release commit ever made, for a state
+        # that resolves itself minutes later. It is still reported, so a bump
+        # that never becomes a release stays visible.
+        print(f"  metadata says {cff_v} and the newest tag is v{tag}: "
+              f"a release is pending, which is the expected state between "
+              f"bumping the version and tagging it")
+    else:
+        problems.append(
+            f"newest tag is v{tag} but the metadata says {cff_v}, which is "
+            f"older. Bump both files to the release they should describe")
 
     for p in problems:
         print(f"  FAIL  {p}")
