@@ -220,13 +220,41 @@ def _badge(name):
     return path
 
 
+WORDS = {20: "twenty", 21: "twenty-one", 22: "twenty-two", 23: "twenty-three",
+         24: "twenty-four", 25: "twenty-five", 26: "twenty-six"}
+
+
+def completed_courses():
+    """How many Academy courses were finished, written out.
+
+    The cover used to say "every course in the official curriculum". The
+    catalog holds twenty-four and twenty-three of them are done, so that was a
+    claim the repository's own certificate gallery contradicts.
+    """
+    certificates = {p.stem for p in (ROOT / "certificates").glob("*.pdf")}
+    badges = {b["slug"] for b in json.loads(
+        (ROOT / "certificates" / "badges" / "badges.json").read_text(encoding="utf-8"))}
+    n = len(certificates | badges)
+    return WORDS.get(n, str(n))
+
+
 def cover_stats(total_pages):
-    """Counted from the artifacts themselves, so the cover cannot overstate."""
+    """Counted from the artifacts themselves, so the cover cannot overstate.
+
+    A course is counted once whether it issued a certificate, a badge, or both.
+    Counting the certificate PDFs alone reported twenty-two courses when
+    twenty-three were completed: Deploying Claude Enterprise with Confidence
+    issued a badge and no certificate, so it was invisible to a glob of *.pdf.
+    """
     questions = len(json.loads((ROOT / "question-bank.json").read_text(encoding="utf-8"))["questions"])
     cards = len([x for x in (ROOT / "flashcards.tsv").read_text(encoding="utf-8").splitlines() if x.strip()])
-    courses = len(list((ROOT / "certificates").glob("*.pdf")))
+    certificates = {p.stem for p in (ROOT / "certificates").glob("*.pdf")}
+    badges = {b["slug"] for b in json.loads(
+        (ROOT / "certificates" / "badges" / "badges.json").read_text(encoding="utf-8"))}
     return [(f"{questions}", "practice questions"), (f"{cards}", "flashcards"),
-            (f"{courses}", "courses covered"), (f"{total_pages}", "pages")]
+            (f"{len(certificates | badges)}", "courses completed"),
+            (f"{len(badges)}", "Academy badges"),
+            (f"{total_pages}", "pages")]
 
 
 def cover(total_pages):
@@ -253,7 +281,8 @@ def cover(total_pages):
           <div>
             <div style="font-size:12pt;font-weight:600;color:#1f1e1b">Compiled by {AUTHOR}</div>
             <div class="small" style="margin-top:1mm">Written while preparing for these exams, after working
-            through every course in the official curriculum.<br>{link(REPO, REPO_URL)}  ·  {link(SITE, SITE_URL)}</div>
+            through {completed_courses()} of the twenty-four courses in the official curriculum.<br>\
+{link(REPO, REPO_URL)}  ·  {link(SITE, SITE_URL)}</div>
           </div>
         </div>
         <p class="small" style="margin-top:8mm;max-width:170mm;margin-bottom:0">Facts drawn from the official
