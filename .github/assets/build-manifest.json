@@ -23,9 +23,9 @@
     ".github/assets/flashcard-back.png": "b212f5fdb4f58018",
     ".github/assets/flashcard-front.png": "6a8cfcf951d7d75d",
     ".github/assets/roadmap.png": "f1b64a5d6626c695",
-    ".github/scripts/build_companion.py": "22b905870bf052b0",
+    ".github/scripts/build_companion.py": "ba05f22a4f399564",
     ".github/scripts/build_images.py": "799aaa0ad2247047",
-    "certificates/README.md": "0b50551b0a16b50f",
+    "certificates/README.md": "c27c890d9d266b97",
     "certificates/badges/ai-capabilities-and-limitations.png": "216a7278a9980590",
     "certificates/badges/ai-fluency-for-builders.png": "d462adba500d4692",
     "certificates/badges/ai-fluency-for-creative-work.png": "b91d82079c37a991",
@@ -47,7 +47,7 @@
     "certificates/badges/introduction-to-model-context-protocol.png": "30d753a87d163d95",
     "certificates/badges/model-context-protocol-advanced-topics.png": "7ff1346dd557786a",
     "certificates/badges/teaching-ai-fluency.png": "818e654a245c88c5",
-    "guide/glossary.md": "904c93ded4a244df"
+    "guide/glossary.md": "180900bde7fd556c"
   },
   "images": {
     ".github/assets/avatar.jpg": "23071e456e9f2d1c",

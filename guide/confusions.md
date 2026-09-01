@@ -139,8 +139,8 @@ the half that tells you what to do next.
 
 Two different clocks, and people confuse them at the worst moment.
 
-**Retake waits** grow per attempt: 14 days, then 30, then 90. At most four
-attempts per exam in a rolling twelve months, full fee each time.
+**Retake waits** grow per attempt: 14 days, then 30, then 90. Full fee each
+time, and both the wait and the attempt count reset on a new exam version.
 
 **The appeal window** is 14 calendar days from an invalidated result. The
 content of individual items is never appealable; the process around them is.
@@ -158,4 +158,4 @@ They share a number, which is exactly why they get muddled.
 
 ---
 
-Facts last verified against the official sources on 2026-08-31. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-09-01. [Repository index](../README.md)

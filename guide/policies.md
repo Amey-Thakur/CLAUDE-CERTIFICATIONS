@@ -28,7 +28,7 @@ flowchart LR
 ```
 
 - Waiting periods after a failed attempt: 14 days after the first, 30 days after the second, 90 days after the third.
-- Maximum four attempts per exam in any rolling 12-month period. Both the waiting period and the attempt count reset when an exam moves to a new version.
+- Both the waiting period and the attempt count reset when an exam moves to a new version. Anthropic publishes no maximum number of attempts.
 - Limits apply per exam, so failing one certification does not block registering for a different one.
 - Every attempt costs the full fee, with partner discounts applying as on a first attempt.
 - After a pass, retaking to improve the score is not permitted.
@@ -123,4 +123,4 @@ Exam delivery moved to Pearson VUE and badging moved to Credly on June 30, 2026.
 
 ---
 
-Facts last verified against the official sources on 2026-08-31. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-09-01. [Repository index](../README.md)

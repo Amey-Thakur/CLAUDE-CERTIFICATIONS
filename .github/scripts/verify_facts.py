@@ -39,13 +39,33 @@ TRACKS = {
     "architect-professional": "CCAR-P",
 }
 
-# Published on Partner Academy, not in any mirrored PDF.
-UNVERIFIABLE_HERE = [
-    "retake intervals of 14, 30 and 90 days",
-    "four attempts per rolling 12 months",
-    "credential validity of 12 months",
-    "free renewal assessment",
-    "Credly badging and Pearson VUE delivery",
+# Published on Partner Academy rather than in any mirrored PDF, so this script
+# cannot reach them. They are not unverified: each was read off Anthropic's own
+# certification policy page on 1 September 2026, and the sentence that carries
+# it is quoted here so the next check knows what it is looking for.
+#
+#   https://anthropic-partners.skilljar.com/page/policies-certifications
+#   https://anthropic-partners.skilljar.com/page/faq-certifications
+#
+# The claim that used to sit in this list, "four attempts per rolling 12
+# months", was removed from the documentation on the same day: no official
+# source publishes any maximum. The policy page gives the growing waiting
+# periods and says the attempt count resets on a new exam version, and stops
+# there. See guide/policies.md.
+CONFIRMED_ON_THE_SITE = [
+    ("retake intervals of 14, 30 and 90 days",
+     "14 days after your first failed attempt, 30 days after your second, "
+     "and 90 days after your third"),
+    ("credential validity of 12 months",
+     "Certifications are valid for 12 months from the date you earn them"),
+    ("free renewal assessment",
+     "you can renew it for free by passing an open-book online assessment on "
+     "Anthropic Partner Academy"),
+    ("Pearson VUE delivery",
+     "Exams are delivered through Pearson VUE"),
+    ("Credly badging",
+     "On June 30, 2026, certification moved to Pearson for exam delivery and "
+     "to Credly for digital badging"),
 ]
 
 
@@ -189,9 +209,11 @@ def main():
         return 1
 
     print(f"  {checked} published figures checked, all present and matching.")
-    print("\n  Not checkable from the mirrored PDFs, confirm on Partner Academy:")
-    for item in UNVERIFIABLE_HERE:
+    print("\n  Not in the mirrored PDFs. Read off Anthropic's certification "
+          "policy and FAQ pages on 1 September 2026, and quoted in this file:")
+    for item, quote in CONFIRMED_ON_THE_SITE:
         print(f"    - {item}")
+        print(f"        \"{quote}\"")
     return 0
 
 

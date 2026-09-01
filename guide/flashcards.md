@@ -120,7 +120,7 @@ The full deck below, for reading, printing, or checking one fact quickly. It is 
 | What does on-time renewal involve | A free, open-book, non-proctored assessment on Anthropic Partner Academy, retakable as often as needed |
 | What happens if a credential lapses | You must pass the full exam again at full fee |
 | Retake waiting periods after failed attempts | 14 days after the first, 30 after the second, 90 after the third |
-| Maximum attempts per exam per rolling 12 months | Four |
+| What resets the retake wait and the attempt count | The exam moving to a new version |
 | Free cancellation or reschedule window | At least 24 hours before the appointment; inside that, the fee is forfeited |
 | How is the exam scored, in one phrase | Criterion-referenced: against a fixed standard, not against other candidates |
 | What does the score report show beyond pass or fail | The scaled score and percent-correct per domain |

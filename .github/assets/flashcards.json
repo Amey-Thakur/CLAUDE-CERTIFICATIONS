@@ -561,8 +561,8 @@
    ]
   },
   {
-   "front": "Maximum attempts per exam per rolling 12 months",
-   "back": "Four",
+   "front": "What resets the retake wait and the attempt count",
+   "back": "The exam moving to a new version",
    "tags": [
     "policy",
     "shared"
