@@ -102,7 +102,7 @@ Every fact, domain weight, rule, and glossary term in this repository, as a deck
 
 ## Credentials behind this guide
 
-**23 of the 24 Claude Academy courses** in the certification program, completed and independently verifiable. **22** carry a Skilljar verification record with a completion date, and **21** were issued as a digital completion badge on [Claude Academy](https://academy.claude.com), Anthropic's own domain.
+**All 25 of the Claude Academy courses and tutorials** behind the certification program, completed and independently verifiable. Not every one issues something to show: **22** carry a Skilljar verification record with a completion date, and **21** were issued as a digital completion badge on [Claude Academy](https://academy.claude.com), Anthropic's own domain.
 
 This is here so you can check the material rather than trust it. Every claim in this repository traces to an official source; these show the curriculum behind it was worked through rather than summarized from the outside. Every badge below links to its own verification page.
 
