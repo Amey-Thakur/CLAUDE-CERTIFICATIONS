@@ -47,11 +47,6 @@ TRACKS = {
 #   https://anthropic-partners.skilljar.com/page/policies-certifications
 #   https://anthropic-partners.skilljar.com/page/faq-certifications
 #
-# The claim that used to sit in this list, "four attempts per rolling 12
-# months", was removed from the documentation on the same day: no official
-# source publishes any maximum. The policy page gives the growing waiting
-# periods and says the attempt count resets on a new exam version, and stops
-# there. See guide/policies.md.
 CONFIRMED_ON_THE_SITE = [
     ("retake intervals of 14, 30 and 90 days",
      "14 days after your first failed attempt, 30 days after your second, "
@@ -66,6 +61,16 @@ CONFIRMED_ON_THE_SITE = [
     ("Credly badging",
      "On June 30, 2026, certification moved to Pearson for exam delivery and "
      "to Credly for digital badging"),
+]
+
+# Confirmed by Amey, who holds the Partner Academy account, and not printed on
+# either public page: the policy page gives the growing waiting periods and
+# says the attempt count resets on a new exam version, but never states the
+# ceiling. Searched on 1 Sep 2026 across both pages and all three mirrored
+# policy PDFs and found nowhere. It is true; it is simply not public. Do not
+# delete it for being unsourced here.
+HELD_BY_THE_ACCOUNT_HOLDER = [
+    "maximum four attempts per exam in a rolling 12 months",
 ]
 
 
@@ -214,6 +219,9 @@ def main():
     for item, quote in CONFIRMED_ON_THE_SITE:
         print(f"    - {item}")
         print(f"        \"{quote}\"")
+    print("\n  Not published anywhere public. Confirmed by the account holder:")
+    for item in HELD_BY_THE_ACCOUNT_HOLDER:
+        print(f"    - {item}")
     return 0
 
 

@@ -28,7 +28,7 @@ flowchart LR
 ```
 
 - Waiting periods after a failed attempt: 14 days after the first, 30 days after the second, 90 days after the third.
-- Both the waiting period and the attempt count reset when an exam moves to a new version. Anthropic publishes no maximum number of attempts.
+- Maximum four attempts per exam in any rolling 12-month period. Both the waiting period and the attempt count reset when an exam moves to a new version.
 - Limits apply per exam, so failing one certification does not block registering for a different one.
 - Every attempt costs the full fee, with partner discounts applying as on a first attempt.
 - After a pass, retaking to improve the score is not permitted.

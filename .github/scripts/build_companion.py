@@ -465,8 +465,8 @@ def hard_won_page(label):
          "Applications and integration is 33.1% of the Developer paper. Claude Code is 3.1%. Two evenings on the "
          "wrong one is a real cost. The weights are published; use them as your timetable."),
         ("A failed attempt costs weeks, not just money",
-         "Fourteen days before a second attempt, thirty before a third, ninety before a fourth. That "
-         "waiting period, not the fee, is what hurts."),
+         "Fourteen days before a second attempt, thirty before a third, ninety before a fourth, and four "
+         "attempts maximum in a rolling twelve months. That waiting period, not the fee, is what hurts."),
         ("Book earlier than you feel ready",
          "Rescheduling is free until twenty-four hours before. An early booking costs nothing and supplies the "
          "deadline that makes the studying happen. Inside twenty-four hours the fee is gone."),
@@ -721,7 +721,7 @@ def policies():
           they are the most reliable study signal you will get, and they should drive the next plan.</p>
           <h3 style="margin-top:5mm">Retakes</h3>
           <p>Waiting periods grow with each failed attempt: 14 days after the first, 30 after the second, 90 after the
-          third. Each attempt costs the full fee, and
+          third, with at most four attempts per exam in a rolling 12 months. Each attempt costs the full fee, and
           partner discounts apply to retakes as to first sittings.</p>
         </div>
         <div class="col">
