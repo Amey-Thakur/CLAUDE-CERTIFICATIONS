@@ -106,6 +106,9 @@ Every fact, domain weight, rule, and glossary term in this repository, as a deck
 
 This is here so you can check the material rather than trust it. Every claim in this repository traces to an official source; these show the curriculum behind it was worked through rather than summarized from the outside. Every badge below links to its own verification page.
 
+> [!NOTE]
+> **Two badges, one course.** AI Fluency for Creative Work was issued a completion badge on 22 August 2026 and again on 27 August 2026. Both verify on Anthropic's own domain, so both are shown: twenty-four badges across twenty-three courses.
+
 <div align="center">
 
 <!-- badges:start -->

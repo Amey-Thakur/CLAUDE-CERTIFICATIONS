@@ -93,6 +93,9 @@ Not sure which fits? Read [how the certifications connect](guide/learning-paths.
 
 Twenty-two Claude Academy course completion certificates behind this program, each with its issued PDF and Skilljar verification record. Twenty-three courses were also issued a digital completion badge on [Claude Academy](https://academy.claude.com), verifiable on Anthropic's own domain, and there are twenty-four badges because one course issued twice. Every badge below links to its own verification page.
 
+> [!NOTE]
+> **Two badges, one course.** AI Fluency for Creative Work was issued a completion badge on 22 August 2026 and again on 27 August 2026. Both verify on Anthropic's own domain, so both are shown: twenty-four badges across twenty-three courses.
+
 <div align="center">
 
 <!-- badges:start -->

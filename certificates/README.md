@@ -15,6 +15,9 @@ Every certificate links to its issued PDF and its Skilljar verification record, 
 
 </div>
 
+> [!NOTE]
+> **Two badges, one course.** AI Fluency for Creative Work was issued a completion badge on 22 August 2026 and again on 27 August 2026. Both verify on Anthropic's own domain, so both are shown: twenty-four badges across twenty-three courses.
+
 Course completion certificates are distinct from the certification credentials themselves, which are issued as Credly badges after a proctored exam. Source copies live in the maintainer's [ACHIEVEMENTS repository](https://github.com/Amey-Thakur/ACHIEVEMENTS#anthropic-courses); course descriptions and enrollment links are in [Anthropic courses](../guide/courses.md).
 
 ## Claude platform
