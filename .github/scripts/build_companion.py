@@ -29,9 +29,10 @@ OUT_HTML = ASSETS / "companion.html"
 OUT_PDF = ROOT / "claude-certifications-companion.pdf"
 
 # The badge grid's width on the proof page, chosen against the measurement in
-# check_companion_layout.py rather than by eye. Seven badges across at 214mm is
-# the largest they go while the course listing under them still clears the
-# footer, with a few millimetres spare for font differences between machines.
+# check_companion_layout.py rather than by eye. 214mm is the widest the grid
+# goes while the course listing under it still clears the footer, with a few
+# millimetres spare for font differences between machines. The badges per row
+# divide the count; the width stays put.
 GRID_MM = 214
 
 
@@ -231,10 +232,13 @@ def cover_stats(total_pages):
     questions = len(json.loads((ROOT / "question-bank.json").read_text(encoding="utf-8"))["questions"])
     cards = len([x for x in (ROOT / "flashcards.tsv").read_text(encoding="utf-8").splitlines() if x.strip()])
     certificates = {p.stem for p in (ROOT / "certificates").glob("*.pdf")}
-    badges = {b["slug"] for b in json.loads(
-        (ROOT / "certificates" / "badges" / "badges.json").read_text(encoding="utf-8"))}
+    badges = json.loads(
+        (ROOT / "certificates" / "badges" / "badges.json").read_text(encoding="utf-8"))
+    # A badge names the course it belongs to when that is not its own slug.
+    # One course issued two badges, and counting slugs made it two courses.
+    courses = {b.get("course", b["slug"]) for b in badges}
     return [(f"{questions}", "practice questions"), (f"{cards}", "flashcards"),
-            (f"{len(certificates | badges)}", "courses"),
+            (f"{len(certificates | courses)}", "courses"),
             (f"{len(badges)}", "Academy badges"),
             (f"{total_pages}", "pages")]
 
@@ -515,9 +519,12 @@ def proof_page(label):
     # repository held twenty-one.
     badges = json.loads(
         (ROOT / "certificates" / "badges" / "badges.json").read_text(encoding="utf-8"))
-    # Seven to a row. The count divides by seven exactly, so the grid closes as
-    # a full rectangle; a grid that ends on a short row reads as unfinished.
-    per_row = 7
+    # Eight to a row, and the count has to divide by it exactly: a grid that
+    # ends on a short row reads as unfinished. It was seven when there were
+    # twenty-one badges. Twenty-four leaves a short row at seven, and eight
+    # keeps the same three rows while making each badge slightly smaller, so
+    # the grid grows no taller than the measurement this page was tuned to.
+    per_row = 8
     if len(badges) % per_row:
         raise SystemExit(f"{len(badges)} badges do not fill rows of {per_row}; "
                          f"choose a divisor of the count for the badge grid")
@@ -533,6 +540,9 @@ def proof_page(label):
                   f' style="width:100%;border:1px solid #e0ddd4;'
                   f'border-radius:1mm;display:block">')
     shown = len(badges)
+    # Badges and courses that have one are different numbers: AI Fluency for
+    # Creative Work issued twice, on 22 and 27 August 2026.
+    badged = len({b.get("course", b["slug"]) for b in badges})
 
     # A course that issued a badge and no certificate is still a course that was
     # completed, so it joins the track it belongs to. Without this the page
@@ -575,8 +585,9 @@ def proof_page(label):
       <h1 style="font-size:25pt">The courses behind this companion</h1>
       <p class="lead muted" style="max-width:230mm">Every course and tutorial in the official Claude Academy
       curriculum, completed before this companion was written. Not all of them issue anything to show:
-      {total} did, {certs} of those carry a Skilljar verification record, and {shown} carry a Claude
-      Academy badge that verifies on Anthropic\'s own domain.</p>
+      {total} did, {certs} of those carry a Skilljar verification record, and {badged} carry a Claude
+      Academy badge that verifies on Anthropic\'s own domain, {shown} badges in all because one course
+      issued two.</p>
 
       <p style="margin:0 0 1.5mm;font-size:8.2pt;letter-spacing:0.06em;
       text-transform:uppercase;color:#8a857c;font-weight:600">The {shown} Claude Academy badges</p>

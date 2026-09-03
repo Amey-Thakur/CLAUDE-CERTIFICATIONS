@@ -48,6 +48,18 @@
     "issued": "22 August 2026"
   },
   {
+    "slug": "introduction-to-agent-skills",
+    "title": "Introduction to agent skills",
+    "code": "f568ff531665f510978b957c865f2af4",
+    "issued": "18 March 2026"
+  },
+  {
+    "slug": "introduction-to-subagents",
+    "title": "Introduction to subagents",
+    "code": "7c8ad2d367ff550c18bfb458cfcf5bd5",
+    "issued": "27 March 2026"
+  },
+  {
     "slug": "claude-with-amazon-bedrock",
     "title": "Claude with Amazon Bedrock",
     "code": "8fb5e32058c121d343c34e341f56f375",
@@ -112,6 +124,13 @@
     "title": "Teaching AI Fluency",
     "code": "59092b63e1969a2cb07ac14a57bd13ed",
     "issued": "22 August 2026"
+  },
+  {
+    "slug": "ai-fluency-for-creative-work-22-august",
+    "title": "AI Fluency for Creative Work",
+    "code": "427635f5a6ca3fd34ed84bbdf7fb0275",
+    "issued": "22 August 2026",
+    "course": "ai-fluency-for-creative-work"
   },
   {
     "slug": "ai-fluency-for-creative-work",

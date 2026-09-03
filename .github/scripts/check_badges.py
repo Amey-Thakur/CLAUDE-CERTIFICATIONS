@@ -21,8 +21,9 @@ ROOT = Path(__file__).resolve().parent.parent.parent
 BADGES = ROOT / "certificates" / "badges"
 
 WORDS = {
-    "nineteen": 19, "twenty": 20, "twenty-one": 21, "twenty-two": 22,
-    "eighteen": 18, "seventeen": 17,
+    "seventeen": 17, "eighteen": 18, "nineteen": 19, "twenty": 20,
+    "twenty-one": 21, "twenty-two": 22, "twenty-three": 23,
+    "twenty-four": 24, "twenty-five": 25, "twenty-six": 26,
 }
 
 
@@ -57,32 +58,29 @@ def main():
             problems.append(f"{rel} shows badges with no image: {', '.join(extra)}")
 
     # The prose counts, each of which has drifted at least once.
+    #
+    # What is counted is the number of badges, which since 1 September 2026 is
+    # not the number of courses that have one: AI Fluency for Creative Work
+    # issued twice, so twenty-three courses hold twenty-four badges. Both
+    # numbers appear in these sentences and the earlier patterns, written when
+    # they were the same number, read whichever came first. So the phrase
+    # looked for is the count standing immediately before the word "badges".
     word = spelled(n)
-    checks = [
-        ("README.md",
-         re.compile(r"and \*\*(\d+)\*\* were issued as a digital completion badge"),
-         str(n)),
-        ("certificates/README.md",
-         re.compile(r"^(\S+) courses were also issued as a digital completion badge", re.M),
-         word.capitalize() if word else None),
-        (".github/pages/index.md",
-         re.compile(r"(\S+) courses were also issued as a digital completion badge"),
-         word.capitalize() if word else None),
-        (".github/pages/certificates-header.md",
-         re.compile(r"(\S+) issued a completion badge"),
-         word),
-    ]
-    for rel, pattern, expected in checks:
+    COUNT = re.compile(r"(\*\*\d+\*\*|[A-Za-z]+(?:-[A-Za-z]+)?)\s+badges\b")
+    for rel in ("README.md", "certificates/README.md", ".github/pages/index.md",
+                ".github/pages/certificates-header.md"):
         text = (ROOT / rel).read_text(encoding="utf-8")
-        m = pattern.search(text)
-        if not m:
-            problems.append(f"{rel}: could not find the badge count sentence")
+        found = [m.group(1).strip("*") for m in COUNT.finditer(text)]
+        wanted = {str(n), word or str(n)}
+        if not found:
+            problems.append(f"{rel}: no sentence states how many badges there are")
             continue
-        found = m.group(1)
-        ok = found.lower() == str(expected).lower()
-        print(f"  {rel}: prose says '{found}'{'' if ok else f' (expected {expected})'}")
-        if not ok:
-            problems.append(f"{rel} says '{found}', but there are {n} badges")
+        agreeing = [f for f in found if f.lower() in wanted]
+        shown = ", ".join(f"'{f}'" for f in dict.fromkeys(found))
+        print(f"  {rel}: prose says {shown}"
+              f"{'' if agreeing else f' (expected {n} or {word})'}")
+        if not agreeing:
+            problems.append(f"{rel} says {shown}, but there are {n} badges")
 
     for p in problems:
         print(f"  FAIL  {p}")
