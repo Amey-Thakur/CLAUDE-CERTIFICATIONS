@@ -100,4 +100,4 @@ Skip it and keep moving. The blueprint is finite and the items are independent; 
 
 ---
 
-Facts last verified against the official sources on 2026-09-01. [Study guide](README.md) · [Notes](notes.md) · [Practice questions](practice-questions.md) · [Mock exam](mock-exam-1.md) · [Repository index](../README.md)
+Facts last verified against the official sources on 2026-09-03. [Study guide](README.md) · [Notes](notes.md) · [Practice questions](practice-questions.md) · [Mock exam](mock-exam-1.md) · [Repository index](../README.md)

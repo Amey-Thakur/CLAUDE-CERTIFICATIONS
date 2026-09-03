@@ -59,7 +59,7 @@ def main():
 
     # The prose counts, each of which has drifted at least once.
     #
-    # What is counted is the number of badges, which since 1 September 2026 is
+    # What is counted is the number of badges, which since 3 September 2026 is
     # not the number of courses that have one: AI Fluency for Creative Work
     # issued twice, so twenty-three courses hold twenty-four badges. Both
     # numbers appear in these sentences and the earlier patterns, written when

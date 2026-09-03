@@ -83,4 +83,4 @@ Delivery moved to Pearson VUE and badging to Credly on June 30, 2026. If you reg
 
 ---
 
-Facts last verified against the official sources on 2026-09-01. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-09-03. [Repository index](../README.md)
