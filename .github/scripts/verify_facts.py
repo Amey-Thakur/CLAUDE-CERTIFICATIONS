@@ -43,7 +43,7 @@ TRACKS = {
 
 # Published on Partner Academy rather than in any mirrored PDF, so this script
 # cannot reach them. They are not unverified: each was read off Anthropic's own
-# certification policy page on 3 September 2026, and the sentence that carries
+# certification policy page on 4 September 2026, and the sentence that carries
 # it is quoted here so the next check knows what it is looking for.
 #
 #   https://anthropic-partners.skilljar.com/page/policies-certifications
@@ -217,7 +217,7 @@ def main():
 
     print(f"  {checked} published figures checked, all present and matching.")
     print("\n  Not in the mirrored PDFs. Read off Anthropic's certification "
-          "policy and FAQ pages on 3 September 2026, and quoted in this file:")
+          "policy and FAQ pages on 4 September 2026, and quoted in this file:")
     for item, quote in CONFIRMED_ON_THE_SITE:
         print(f"    - {item}")
         print(f"        \"{quote}\"")

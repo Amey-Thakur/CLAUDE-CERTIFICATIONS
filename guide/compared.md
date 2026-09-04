@@ -125,4 +125,4 @@ is not.
 
 ---
 
-Facts last verified against the official sources on 2026-09-03. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-09-04. [Repository index](../README.md)
