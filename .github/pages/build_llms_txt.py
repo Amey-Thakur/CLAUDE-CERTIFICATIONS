@@ -90,7 +90,8 @@ def main() -> int:
         f"{n_questions} original practice questions, {n_cards} flashcards, and a printable companion. "
         "Free, open source, and built only from published material.",
         "",
-        "Maintained by Amey Thakur, who has completed all 22 Academy courses. "
+        "Maintained by Amey Thakur, who has completed every course in the "
+        "Claude Academy catalog. "
         "This is a community resource and is not affiliated with or endorsed by Anthropic. "
         "The official program lives on Anthropic Partner Academy and exams are delivered by Pearson VUE.",
         "",
@@ -127,6 +128,9 @@ def main() -> int:
         "importable into Anki, Quizlet, or RemNote.",
         f"- [Printable companion]({REPO}/raw/main/claude-certifications-companion.pdf): "
         f"the whole guide as a {companion_pages()}-page A4 PDF.",
+        f"- [Study archive]({REPO}/raw/main/Claude%20Certifications%20Study%20Guide.pdf): "
+        "the four study guides, mock exams, cheat sheets and program guide "
+        "gathered into one PDF.",
         f"- [Certificates]({BASE}/certificates/index.html): the maintainer's 22 course certificates "
         "with verification links and completion dates.",
         "",
