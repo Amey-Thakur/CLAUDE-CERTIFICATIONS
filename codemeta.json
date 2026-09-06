@@ -1,50 +1,75 @@
 {
-  "@context": "https://w3id.org/codemeta/3.0",
-  "@type": "SoftwareSourceCode",
-  "name": "Claude Certifications",
-  "description": "Study guide for all four Anthropic Claude certifications: Associate Foundations (CCAO-F), Developer Foundations (CCDV-F), Architect Foundations (CCAR-F) and Architect Professional (CCAR-P). Official exam guides, blueprints with domain weights, cheat sheets, 320 practice questions, three mock exams per exam, 110 flashcards, and a printable companion.",
-  "version": "1.10.2",
-  "dateCreated": "2026-07-27",
-  "dateModified": "2026-09-05",
-  "license": "https://spdx.org/licenses/MIT",
-  "codeRepository": "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS",
-  "issueTracker": "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/issues",
-  "url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/",
-  "programmingLanguage": [
-    "Python",
-    "JavaScript"
-  ],
-  "operatingSystem": [
-    "Windows",
-    "macOS",
-    "Linux"
-  ],
-  "applicationCategory": "Education",
-  "keywords": [
-    "anthropic",
-    "claude",
-    "claude-certification",
-    "anthropic-certification",
-    "exam-guide",
-    "study-guide",
-    "learning-path",
-    "exam-preparation",
-    "claude-code",
-    "claude-api",
-    "model-context-protocol",
-    "ccao-f",
-    "ccdv-f",
-    "ccar-f",
-    "ccar-p"
-  ],
-  "author": [
-    {
-      "@type": "Person",
-      "givenName": "Amey",
-      "familyName": "Thakur",
-      "email": "ameythakur20@gmail.com",
-      "url": "https://github.com/Amey-Thakur"
-    }
-  ],
-  "readme": "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/blob/main/README.md"
+    "@context": "https://w3id.org/codemeta/3.0",
+    "@type": "SoftwareSourceCode",
+    "name": "Claude Certifications",
+    "description": "Study guide for all four Anthropic Claude certifications: Associate Foundations (CCAO-F), Developer Foundations (CCDV-F), Architect Foundations (CCAR-F) and Architect Professional (CCAR-P). Official exam guides, blueprints with domain weights, cheat sheets, 320 practice questions, three mock exams per exam, 110 flashcards, and a printable companion.",
+    "identifier": "CLAUDE-CERTIFICATIONS",
+    "license": "https://spdx.org/licenses/MIT",
+    "programmingLanguage": [
+        "Python",
+        "JavaScript"
+    ],
+    "author": [
+        {
+            "@type": "Person",
+            "givenName": "Amey",
+            "familyName": "Thakur",
+            "email": "ameythakur20@gmail.com",
+            "url": "https://github.com/Amey-Thakur"
+        }
+    ],
+    "dateCreated": "2026-07-27",
+    "dateReleased": "2026-09-05",
+    "codeRepository": "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS",
+    "developmentStatus": "complete",
+    "applicationCategory": "Education",
+    "keywords": [
+        "anthropic",
+        "claude",
+        "claude-certification",
+        "anthropic-certification",
+        "exam-guide",
+        "study-guide",
+        "learning-path",
+        "exam-preparation",
+        "claude-code",
+        "claude-api",
+        "model-context-protocol",
+        "ccao-f",
+        "ccdv-f",
+        "ccar-f",
+        "ccar-p",
+        "Anthropic",
+        "Anthropic Certification",
+        "Ccao F",
+        "Ccar F",
+        "Ccar P",
+        "Ccdv F",
+        "Claude",
+        "Claude AI",
+        "Claude API",
+        "Claude Certification",
+        "Claude Code",
+        "Exam Guide",
+        "Exam Preparation",
+        "Learning Path",
+        "Model Context Protocol",
+        "Study Guide",
+        "Certificates",
+        "Amey Thakur",
+        "amey",
+        "ameythakur",
+        "amey-thakur",
+        "ameyarc"
+    ],
+    "url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/",
+    "version": "1.10.2",
+    "dateModified": "2026-09-05",
+    "issueTracker": "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/issues",
+    "operatingSystem": [
+        "Windows",
+        "macOS",
+        "Linux"
+    ],
+    "readme": "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/blob/main/README.md"
 }
