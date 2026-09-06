@@ -51,6 +51,8 @@ Every exam: 120 minutes, closed book, proctored by Pearson VUE online or at a te
 >
 > Prefer one file? The whole guide is a printable companion: [claude-certifications-companion.pdf](https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/releases/latest/download/claude-certifications-companion.pdf), thirty-three pages in five parts: choose your exam, know it, prepare, sit it, and keep going.
 
+<br>
+
 > [!IMPORTANT]
 > **The study material in one document: [Claude Certifications Study Guide](Claude%20Certifications%20Study%20Guide.pdf)**
 >
