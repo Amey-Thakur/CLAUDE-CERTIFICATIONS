@@ -63,17 +63,17 @@ CONFIRMED_ON_THE_SITE = [
     ("Credly badging",
      "On June 30, 2026, certification moved to Pearson for exam delivery and "
      "to Credly for digital badging"),
+    ("four attempts per exam in a rolling 12 months",
+     "You can take the same exam up to four times in any 12-month period"),
 ]
 
-# Confirmed by Amey, who holds the Partner Academy account, and not printed on
-# either public page: the policy page gives the growing waiting periods and
-# says the attempt count resets on a new exam version, but never states the
-# ceiling. Searched on 3 Sep 2026 across both pages and all three mirrored
-# policy PDFs and found nowhere. It is true; it is simply not public. Do not
-# delete it for being unsourced here.
-HELD_BY_THE_ACCOUNT_HOLDER = [
-    "maximum four attempts per exam in a rolling 12 months",
-]
+# Held here when a fact is true but not published anywhere citable.
+#
+# The four-attempt ceiling used to live here. It was searched for on
+# 3 Sep 2026 across both public pages and all three mirrored policy PDFs and
+# was in none of them. On 5 Sep 2026 the policies page states it outright,
+# so it moved up to the sourced list. Nothing is unsourced at present.
+HELD_BY_THE_ACCOUNT_HOLDER = []
 
 
 def text_of(pdf):
@@ -217,13 +217,16 @@ def main():
 
     print(f"  {checked} published figures checked, all present and matching.")
     print("\n  Not in the mirrored PDFs. Read off Anthropic's certification "
-          "policy and FAQ pages on 4 September 2026, and quoted in this file:")
+          "policy and FAQ pages on 5 September 2026, and quoted in this file:")
     for item, quote in CONFIRMED_ON_THE_SITE:
         print(f"    - {item}")
         print(f"        \"{quote}\"")
-    print("\n  Not published anywhere public. Confirmed by the account holder:")
-    for item in HELD_BY_THE_ACCOUNT_HOLDER:
-        print(f"    - {item}")
+    if HELD_BY_THE_ACCOUNT_HOLDER:
+        print("\n  Not published anywhere public. Confirmed by the account holder:")
+        for item in HELD_BY_THE_ACCOUNT_HOLDER:
+            print(f"    - {item}")
+    else:
+        print("\n  Nothing is carried unsourced.")
     return 0
 
 
