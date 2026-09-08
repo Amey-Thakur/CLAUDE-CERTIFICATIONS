@@ -89,7 +89,7 @@ AI Fluency:
 | AI Fluency for educators, pK-12 educators, students, nonprofits, small businesses, and builders | Role-specific adaptations of the framework |
 | Teaching AI Fluency | Teaching and assessing AI Fluency in instructor-led settings |
 
-Partner-exclusive content, such as the [Partner Basecamp](https://anthropic-partners.skilljar.com/partner-basecamp) program, the CPN Connect broadcast library, and model launch briefings, requires a partner sign-in and is visible from the [Academy home page](https://anthropic-partners.skilljar.com/).
+Partner-exclusive content, such as the [Partner Basecamp](https://anthropic-partners.skilljar.com/partner-basecamp) program, the CPN Connect broadcast library, model launch briefings, and [Working with Claude Fable 5.1](https://anthropic-partners.skilljar.com/working-with-claude-fable-51), requires a partner sign-in and is visible from the [Academy home page](https://anthropic-partners.skilljar.com/). None of it is on the public Claude Academy, and none of it is exam preparation, so the course tables above do not carry it.
 
 ## Partner badges
 
@@ -106,4 +106,4 @@ This is the repository's recommendation, not an official rule:
 
 ---
 
-Facts last verified against the official sources on 2026-09-05. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-09-08. [Repository index](../README.md)

@@ -71,7 +71,7 @@ CONFIRMED_ON_THE_SITE = [
 #
 # The four-attempt ceiling used to live here. It was searched for on
 # 3 Sep 2026 across both public pages and all three mirrored policy PDFs and
-# was in none of them. On 5 Sep 2026 the policies page states it outright,
+# was in none of them. On 5 Sep 2026 the policies page began stating it outright,
 # so it moved up to the sourced list. Nothing is unsourced at present.
 HELD_BY_THE_ACCOUNT_HOLDER = []
 
@@ -217,7 +217,7 @@ def main():
 
     print(f"  {checked} published figures checked, all present and matching.")
     print("\n  Not in the mirrored PDFs. Read off Anthropic's certification "
-          "policy and FAQ pages on 5 September 2026, and quoted in this file:")
+          "policy and FAQ pages on 8 September 2026, and quoted in this file:")
     for item, quote in CONFIRMED_ON_THE_SITE:
         print(f"    - {item}")
         print(f"        \"{quote}\"")
