@@ -116,7 +116,7 @@ Every fact, domain weight, rule, and glossary term in this repository, as a deck
 This is here so you can check the material rather than trust it. Every claim in this repository traces to an official source; these show the curriculum behind it was worked through rather than summarized from the outside. Every badge below links to its own verification page.
 
 > [!NOTE]
-> **Two badges, one course.** AI Fluency for Creative Work was issued a completion badge on 22 August 2026 and again on 27 August 2026. Both verify on Anthropic's own domain, so both are shown: twenty-four badges across twenty-three courses.
+> **Two badges, one course.** AI Fluency for Creative Work was issued a completion badge on 22 August 2026 and again on 27 August 2026. Both verify on Anthropic's own domain, so both are shown: twenty-five badges across twenty-four courses.
 
 <div align="center">
 
@@ -234,6 +234,14 @@ This is here so you can check the material rather than trust it. Every claim in 
 <a href="https://academy.claude.com/verify/296e047c54c8ed404a99a7151c65ddf6" title="Verify Deploying Claude Enterprise with Confidence on Claude Academy"><img src="certificates/badges/deploying-claude-enterprise-with-confidence.png" width="100%" alt="Claude Academy completion badge for Deploying Claude Enterprise with Confidence, issued to Amey Thakur"></a>
 <br><sub><b>Deploying Claude Enterprise with Confidence</b><br><a href="https://academy.claude.com/verify/296e047c54c8ed404a99a7151c65ddf6">Verify</a></sub>
 </td>
+</tr>
+<tr>
+<td align="center" width="33%">
+<a href="https://academy.claude.com/verify/19e7b159384e4cd4ef30b6102dbc59f5" title="Verify Building Effective Human Agent Teams (Beta) on Claude Academy"><img src="certificates/badges/building-effective-human-agent-teams.png" width="100%" alt="Claude Academy completion badge for Building Effective Human Agent Teams (Beta), issued to Amey Thakur"></a>
+<br><sub><b>Building Effective Human Agent Teams (Beta)</b><br><a href="https://academy.claude.com/verify/19e7b159384e4cd4ef30b6102dbc59f5">Verify</a></sub>
+</td>
+<td width="33%"></td>
+<td width="33%"></td>
 </tr>
 </table>
 

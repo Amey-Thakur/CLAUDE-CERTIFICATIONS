@@ -1,6 +1,6 @@
 # Anthropic courses
 
-Every course behind the certification program, one entry each: what it teaches, where to take it, which exam it serves, and the maintainer's completion certificate as proof each one is real and finishable. All 24 are free on the public [Claude Academy](https://academy.claude.com/), no partner account needed; partners see the same courses with prep-path structure on [Partner Academy](https://anthropic-partners.skilljar.com/), and several are also on [Coursera](https://www.coursera.org/partners/anthropic).
+Every course behind the certification program, one entry each: what it teaches, where to take it, which exam it serves, and the maintainer's completion certificate as proof each one is real and finishable. All 25 are free on the public [Claude Academy](https://academy.claude.com/), no partner account needed; partners see the same courses with prep-path structure on [Partner Academy](https://anthropic-partners.skilljar.com/), and several are also on [Coursera](https://www.coursera.org/partners/anthropic).
 
 [![Every official Anthropic course and the certification exam it serves](../.github/assets/card-courses.png)](../.github/assets/card-courses.png "View the course map at full size")
 
@@ -55,6 +55,7 @@ The collaboration framework: working with AI effectively, efficiently, ethically
 | AI Fluency for Creative Work | The framework applied to creative practice, keeping authorship deliberate | [Enroll](https://academy.claude.com/courses/ai-fluency-for-creative-work) | [PDF](../certificates/ai-fluency-for-creative-work.pdf) · [Verify](https://verify.skilljar.com/c/pgq495ktrqqs) |
 | Teaching AI Fluency | Teaching and assessing AI Fluency in instructor-led settings | [Enroll](https://academy.claude.com/courses/teaching-ai-fluency) | [PDF](../certificates/teaching-ai-fluency.pdf) · [Verify](https://verify.skilljar.com/c/qsd5j744a2pc) · [Badge](https://academy.claude.com/verify/59092b63e1969a2cb07ac14a57bd13ed) |
 | AI Fluency for pK-12 Train the Trainer | A ready-to-run workshop kit for educators leading AI fluency sessions for colleagues, built with the American Federation of Teachers | [Enroll](https://academy.claude.com/courses/ai-fluency-for-pk-12-train-the-trainer) | Not yet taken |
+| Building Effective Human Agent Teams (Beta) | Moving a team from single-player AI to multiplayer: how the work changes, how a multiplayer agent differs from a chatbot, the team norms that support one, and four principles for healthy human-agent teams | [Enroll](https://academy.claude.com/courses/building-effective-human-agent-teams) | [Badge](https://academy.claude.com/verify/19e7b159384e4cd4ef30b6102dbc59f5) |
 
 ## Suggested order
 

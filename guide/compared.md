@@ -60,7 +60,7 @@ percent. Most certification blueprints list domains without saying how much each
 is worth, which leaves candidates to guess where to spend their time. See
 [the weights](learning-paths.md).
 
-**Every preparation course is free.** All twenty-four Claude Academy courses
+**Every preparation course is free.** All twenty-five Claude Academy courses
 cost nothing and need no partner account. You can learn the entire syllabus
 before deciding whether to certify, which is not true of programs that gate
 their training behind a subscription.

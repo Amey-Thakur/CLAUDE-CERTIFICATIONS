@@ -519,15 +519,17 @@ def proof_page(label):
     # repository held twenty-one.
     badges = json.loads(
         (ROOT / "certificates" / "badges" / "badges.json").read_text(encoding="utf-8"))
-    # Eight to a row, and the count has to divide by it exactly: a grid that
-    # ends on a short row reads as unfinished. It was seven when there were
-    # twenty-one badges. Twenty-four leaves a short row at seven, and eight
-    # keeps the same three rows while making each badge slightly smaller, so
-    # the grid grows no taller than the measurement this page was tuned to.
-    per_row = 8
-    if len(badges) % per_row:
-        raise SystemExit(f"{len(badges)} badges do not fill rows of {per_row}; "
-                         f"choose a divisor of the count for the badge grid")
+    # Three rows, always. That is the height this page was measured for, and it
+    # is what the row length exists to protect: seven at twenty-one badges,
+    # eight at twenty-four, nine at twenty-five. Each step makes the badges
+    # slightly smaller and keeps the grid the same height.
+    #
+    # The row length no longer has to divide the count exactly. Where it does
+    # not, the last row is padded with empty tiles below, because a short row
+    # lets its badges stretch wider than every other badge on the page.
+    per_row = -(-len(badges) // 3)
+    if per_row * 3 < len(badges):
+        raise SystemExit(f"{len(badges)} badges will not fit three rows")
     tiles = ""
     for badge in badges:
         image = ROOT / "certificates" / "badges" / f"{badge['slug']}.png"
@@ -539,6 +541,8 @@ def proof_page(label):
                   f' issued to Amey Thakur"'
                   f' style="width:100%;border:1px solid #e0ddd4;'
                   f'border-radius:1mm;display:block">')
+    for _ in range(per_row * 3 - len(badges)):
+        tiles += '<span style="display:block"></span>'
     shown = len(badges)
     # Badges and courses that have one are different numbers: AI Fluency for
     # Creative Work issued twice, on 22 and 27 August 2026.

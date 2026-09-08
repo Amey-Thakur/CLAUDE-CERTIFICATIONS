@@ -49,10 +49,6 @@ def load():
         problems.append(f"{slug} is listed but has no image")
     for slug in sorted(have - want):
         problems.append(f"{slug}.png exists but is not listed")
-    if len(badges) % COLUMNS:
-        problems.append(
-            f"{len(badges)} badges do not fill rows of {COLUMNS}; the gallery "
-            f"would end on a short row of {len(badges) % COLUMNS}")
     return badges, problems
 
 
@@ -74,11 +70,22 @@ def cell(badge, prefix, shape):
 
 
 def gallery(badges, prefix, shape):
+    """Rows of COLUMNS, with the last row padded so the table stays square.
+
+    A count that does not divide by COLUMNS would otherwise end on a short row,
+    and a short row in an HTML table lets the remaining cells stretch to fill
+    the width. The badges in that row would be wider than every other badge.
+    Empty cells of the same width hold the shape instead.
+    """
+    width = f"{round(100 / COLUMNS)}%"
     lines = ["<table>"]
     for i in range(0, len(badges), COLUMNS):
         lines.append("<tr>")
-        for badge in badges[i:i + COLUMNS]:
+        chunk = badges[i:i + COLUMNS]
+        for badge in chunk:
             lines.append(cell(badge, prefix, shape))
+        for _ in range(COLUMNS - len(chunk)):
+            lines.append(f'<td width="{width}"></td>')
         lines.append("</tr>")
     lines.append("</table>")
     return "\n".join(lines)
@@ -92,8 +99,10 @@ def main():
     if problems:
         return 1
 
-    rows = len(badges) // COLUMNS
-    print(f"  {len(badges)} badges, {rows} rows of {COLUMNS}")
+    rows = -(-len(badges) // COLUMNS)
+    short = len(badges) % COLUMNS
+    tail = f", the last padded to {COLUMNS}" if short else ""
+    print(f"  {len(badges)} badges, {rows} rows of {COLUMNS}{tail}")
 
     stale = []
     for rel, (prefix, shape) in GALLERIES.items():
