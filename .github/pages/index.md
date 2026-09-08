@@ -227,7 +227,7 @@ Twenty-two Claude Academy course completion certificates behind this program, ea
 
 </div>
 
-**[All twenty-two certificates, with their PDFs and Skilljar records](certificates/README.md)**
+**[All twenty-two certificates and twenty-five badges, with their PDFs, Skilljar records and verification links](certificates/README.md)**
 
 A course completion certificate is not a certification credential. The courses are free and self-paced; the four certifications require a proctored Pearson VUE exam and are issued separately as Credly badges.
 
