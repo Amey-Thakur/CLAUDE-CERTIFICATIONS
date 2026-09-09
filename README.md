@@ -87,7 +87,7 @@ Not sure which fits? Read [how the certifications connect](guide/learning-paths.
 
 - Your exam's own **study guide** and **notes**, linked in the table above
 - [Study strategy](guide/study-strategy.md), for a working plan rather than a reading list
-- [The 24 official courses](guide/courses.md), with [per-course notes](guide/course-notes.md) and [official resources](guide/resources.md)
+- [The 25 official courses](guide/courses.md), with [per-course notes](guide/course-notes.md) and [official resources](guide/resources.md)
 - [The practice engine](guide/quiz.md): shuffled, timed and scored, drawn from 320 original questions
 
 Clone the repository and open Claude Code inside it, and the built-in
