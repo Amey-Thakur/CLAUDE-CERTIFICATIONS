@@ -1,6 +1,6 @@
 # Course notes
 
-What I took away from each of the 22 courses, and which exam domains it serves. These are working notes, not summaries of the course material: enough to decide what to take, in what order, and what to watch for while taking it. Enrollment links and certificates are in [Anthropic courses](courses.md).
+What I took away from each of the 24 courses I have taken, and which exam domains it serves where it serves one. These are working notes, not summaries of the course material: enough to decide what to take, in what order, and what to watch for while taking it. Enrollment links and certificates are in [Anthropic courses](courses.md).
 
 ## How the courses map to the exams
 
@@ -48,6 +48,8 @@ flowchart LR
 
 **Claude on Google Cloud.** The same ground on Vertex AI. Take whichever matches your work; take both only if you advise across clouds.
 
+**Deploying Claude Enterprise with Confidence.** Not a platform course, despite sitting in this section. It is the five organization-wide decisions behind an Enterprise rollout: structure and identity, access, governance, spend, and visibility. No exam tests any of it. Take it if you are the person who will be asked how a deployment gets governed and paid for, and skip it if you are studying rather than rolling out. It issues a badge and no certificate.
+
 ## AI Fluency
 
 **AI Fluency: Framework & Foundations.** The framework the whole family builds on: collaborating with AI effectively, efficiently, ethically, and safely. It reads as soft material and is not. The Associate exam's two heaviest domains, output evaluation and governance, are this framework applied under pressure.
@@ -60,6 +62,8 @@ flowchart LR
 
 **Teaching AI Fluency.** For teaching and assessing the framework in instructor-led settings. Outside exam scope, valuable if you train others, and the clearest sign that you have genuinely absorbed the framework is being able to teach it.
 
+**Building Effective Human Agent Teams (Beta).** Five lessons and a quiz on moving a team from single-player AI to multiplayer: how the work changes, how a multiplayer agent differs from a chatbot, the team norms that support one, and four principles for healthy human-agent teams. Written for the person leading the team rather than the one building the agent, which makes it the odd one out on this page. Nothing in it is examined. Take it if you are accountable for how a team adopts this rather than for what it ships. Marked Beta, and it issues a badge and no certificate.
+
 ## How I would sequence them
 
 Everyone: Claude 101, then AI Fluency: Framework & Foundations, then AI Capabilities and Limitations.
@@ -67,6 +71,8 @@ Everyone: Claude 101, then AI Fluency: Framework & Foundations, then AI Capabili
 Associate candidates stop there and add Claude Cowork plus the role-specific AI Fluency edition that matches their work.
 
 Developer and Architect candidates continue: Building with the Claude API, Introduction to MCP, Claude Code 101, Claude Code in Action, agent skills, subagents. Architect Professional candidates add MCP Advanced Topics and the cloud course matching their platform.
+
+Neither Deploying Claude Enterprise with Confidence nor Building Effective Human Agent Teams belongs in that order. Neither is exam preparation, and both are worth taking when the work calls for them rather than when a paper does.
 
 The [prep paths on Partner Academy](learning-paths.md#certification-prep-courses) sequence these officially per exam; this is the order I would use if I were starting again.
 
