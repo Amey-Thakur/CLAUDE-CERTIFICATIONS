@@ -254,9 +254,9 @@ This is here so you can check the material rather than trust it. Every claim in 
 | Track | Certificates | Academy badges | What it covers |
 | --- | :---: | :---: | --- |
 | [Claude platform](certificates/README.md#claude-platform) | 5 | 5 | Claude 101, the platform, Claude Code, and Cowork |
-| [Developer and integration](certificates/README.md#developer-and-integration) | 5 | 3 | The API, Model Context Protocol, and building agents |
+| [Developer and integration](certificates/README.md#developer-and-integration) | 5 | 5 | The API, Model Context Protocol, and building agents |
 | [Deployment platforms](certificates/README.md#deployment-platforms) | 2 | 3 | Claude on Amazon Bedrock, Google Cloud Vertex AI, and Claude Enterprise rollout |
-| [AI Fluency](certificates/README.md#ai-fluency) | 10 | 10 | The framework, and its versions for builders, educators, students, nonprofits and small businesses |
+| [AI Fluency](certificates/README.md#ai-fluency) | 10 | 12 | The framework, and its versions for builders, educators, students, nonprofits and small businesses |
 
 > [!NOTE]
 > **A course certificate is not a certification credential, and this section claims only the first.** The 22 courses above are free, self-paced, and open to anyone on the public [Claude Academy](https://academy.claude.com/). The four certifications are separate: each requires a proctored Pearson VUE exam, a passing score of 720 of 1,000, and Claude Partner Network membership to register, and each is issued as a Credly badge that is valid for 12 months. The two are verified on different systems and should never be presented as the same thing.

@@ -14,7 +14,7 @@ The repository's value is that its facts match the official program. The volatil
 | Course catalog and prep paths | guide/learning-paths.md | [All courses](https://anthropic-partners.skilljar.com/page/all-courses), [prep courses](https://anthropic-partners.skilljar.com/page/claude-certification-exam-prep-courses) |
 | OnVUE requirements | guide/registration.md | [Setup page](https://anthropic-partners.skilljar.com/page/computer-and-network-setup) |
 
-Every documentation page carries a "facts last verified" date in its footer. Update that date only after actually re-checking the page's facts against the sources above.
+Every page that states official facts carries a "facts last verified" date in its footer. Update that date only after actually re-checking the page's facts against the sources above. Pages that are this repository's own tooling or recommendation carry no date, because they assert nothing official to verify; their footers say so instead.
 
 ## Routine
 

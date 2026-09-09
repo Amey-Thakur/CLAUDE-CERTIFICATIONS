@@ -78,12 +78,12 @@ Course completion certificates are distinct from the certification credentials t
 <td align="center" width="33%">
 <a href="introduction-to-agent-skills.pdf"><img src="previews/introduction-to-agent-skills.png" alt="Introduction to agent skills certificate of completion issued to Amey Thakur" width="270"></a><br>
 <b>Introduction to agent skills</b><br>
-<sub><a href="introduction-to-agent-skills.pdf">PDF</a> · <a href="https://verify.skilljar.com/c/2jxpxwmqdcyp">Verify</a> · Completed March 18, 2026</sub>
+<sub><a href="introduction-to-agent-skills.pdf">PDF</a> · <a href="https://verify.skilljar.com/c/2jxpxwmqdcyp">Verify</a> · <a href="https://academy.claude.com/verify/f568ff531665f510978b957c865f2af4">Badge</a> · Completed March 18, 2026</sub>
 </td>
 <td align="center" width="33%">
 <a href="introduction-to-subagents.pdf"><img src="previews/introduction-to-subagents.png" alt="Introduction to subagents certificate of completion issued to Amey Thakur" width="270"></a><br>
 <b>Introduction to subagents</b><br>
-<sub><a href="introduction-to-subagents.pdf">PDF</a> · <a href="https://verify.skilljar.com/c/yrz3errg7n2g">Verify</a> · Completed March 27, 2026</sub>
+<sub><a href="introduction-to-subagents.pdf">PDF</a> · <a href="https://verify.skilljar.com/c/yrz3errg7n2g">Verify</a> · <a href="https://academy.claude.com/verify/7c8ad2d367ff550c18bfb458cfcf5bd5">Badge</a> · Completed March 27, 2026</sub>
 </td>
 </tr>
 </table>
