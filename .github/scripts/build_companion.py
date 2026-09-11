@@ -922,6 +922,37 @@ def build_html():
             f"<style>{CSS}</style></head><body>{''.join(numbered)}</body></html>")
 
 
+# Chrome stamps the moment of rendering into the PDF's info dictionary, as
+# CreationDate and ModDate. Comparing two renders of the same pages found no
+# other difference in the file. Left alone, that made every re-render store a
+# new copy of the whole PDF in git history, and stale the launch kit's mirror,
+# even when nothing a reader can see had changed.
+DATE_FIELD = re.compile(rb"/(CreationDate|ModDate) \((D:[^)]*)\)")
+
+
+def keep_if_unchanged(previous):
+    """Keep the committed PDF when a new render differs from it only in time.
+
+    The old file's timestamps are written into the new render. If the result is
+    then the old file byte for byte, the old bytes are put back and git has
+    nothing to store. Any other difference, in text, layout, images or links,
+    leaves the fresh render and its new timestamps in place.
+    """
+    if previous is None:
+        return False
+    stamps = {m.group(1): m.group(2) for m in DATE_FIELD.finditer(previous)}
+    if not stamps:
+        return False
+    fresh = OUT_PDF.read_bytes()
+    restamped = DATE_FIELD.sub(
+        lambda m: b"/" + m.group(1) + b" (" + stamps.get(m.group(1), m.group(2)) + b")",
+        fresh)
+    if restamped != previous:
+        return False
+    OUT_PDF.write_bytes(previous)
+    return True
+
+
 def main() -> int:
     OUT_HTML.write_text(build_html(), encoding="utf-8")
     print(f"wrote {OUT_HTML.name}")
@@ -931,12 +962,15 @@ def main() -> int:
         if chrome is None:
             print("No Chrome found; skipping PDF. Set CHROME_PATH to override.")
             return 0
+        previous = OUT_PDF.read_bytes() if OUT_PDF.exists() else None
         subprocess.run(
             [str(chrome), "--headless", "--disable-gpu", "--no-pdf-header-footer",
              f"--print-to-pdf={OUT_PDF}", OUT_HTML.as_uri()],
             capture_output=True, check=False,
         )
         if OUT_PDF.exists():
+            if keep_if_unchanged(previous):
+                print(f"{OUT_PDF.name}: content unchanged, kept the committed file")
             print(f"{OUT_PDF.name}: {OUT_PDF.stat().st_size // 1024} KB")
             record_build("companion", [
                 __file__, Path(__file__).with_name("build_images.py"),
