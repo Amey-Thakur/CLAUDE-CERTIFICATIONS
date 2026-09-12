@@ -43,7 +43,7 @@ TRACKS = {
 
 # Published on Partner Academy rather than in any mirrored PDF, so this script
 # cannot reach them. They are not unverified: each was read off Anthropic's own
-# certification policy and FAQ pages on 11 September 2026, and the sentence that carries
+# certification policy and FAQ pages on 12 September 2026, and the sentence that carries
 # it is quoted here so the next check knows what it is looking for.
 #
 #   https://anthropic-partners.skilljar.com/page/policies-certifications
@@ -115,6 +115,15 @@ def official(track):
     if not facts["weights"]:
         facts["weights"] = [float(x) for x in re.findall(
             r"Domain\s*\d[^\n]{0,70}?\|?\s*(\d{1,2}\.\d)%", t)]
+    if not facts["weights"]:
+        # A third shape. The blueprint table extracts one cell per line, so
+        # a row reads number, then name, then a whole-number percentage.
+        # Architect Foundations is the only guide laid out this way, and
+        # because the two patterns above miss it this script reported it as
+        # having no published weights. It publishes five, summing to 100,
+        # and they were going unchecked.
+        facts["weights"] = [float(x) for x in re.findall(
+            r"\n\d\n[A-Z][^\n]{3,70}\n(\d{1,2})%", t)]
     return facts
 
 
@@ -217,7 +226,7 @@ def main():
 
     print(f"  {checked} published figures checked, all present and matching.")
     print("\n  Not in the mirrored PDFs. Read off Anthropic's certification "
-          "policy and FAQ pages on 11 September 2026, and quoted in this file:")
+          "policy and FAQ pages on 12 September 2026, and quoted in this file:")
     for item, quote in CONFIRMED_ON_THE_SITE:
         print(f"    - {item}")
         print(f"        \"{quote}\"")

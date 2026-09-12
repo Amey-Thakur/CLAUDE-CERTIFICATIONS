@@ -25,7 +25,7 @@
     ".github/assets/roadmap.png": "f1b64a5d6626c695",
     ".github/scripts/build_companion.py": "ef55201afd812720",
     ".github/scripts/build_images.py": "799aaa0ad2247047",
-    "certificates/README.md": "80d36434f77c73d2",
+    "certificates/README.md": "265b1ec28db0d2f3",
     "certificates/badges/ai-capabilities-and-limitations.png": "216a7278a9980590",
     "certificates/badges/ai-fluency-for-builders.png": "d462adba500d4692",
     "certificates/badges/ai-fluency-for-creative-work-22-august.png": "7c265fe9e3d83ce4",
@@ -51,7 +51,7 @@
     "certificates/badges/introduction-to-subagents.png": "3e348a7231403323",
     "certificates/badges/model-context-protocol-advanced-topics.png": "7ff1346dd557786a",
     "certificates/badges/teaching-ai-fluency.png": "818e654a245c88c5",
-    "guide/glossary.md": "52b7e7d51ab4b229"
+    "guide/glossary.md": "d719415a60aea590"
   },
   "images": {
     ".github/assets/avatar.jpg": "23071e456e9f2d1c",
