@@ -69,4 +69,4 @@ The [progress tracker](tracker.md) keeps this checklist for you in the browser, 
 
 ---
 
-Facts last verified against the official sources on 2026-09-12. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-09-13. [Repository index](../README.md)
