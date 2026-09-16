@@ -125,4 +125,4 @@ with a link to the official source.
 
 ---
 
-Facts last verified against the official sources on 2026-09-13. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-09-16. [Repository index](../README.md)
