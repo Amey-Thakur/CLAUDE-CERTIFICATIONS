@@ -158,4 +158,4 @@ They share a number, which is exactly why they get muddled.
 
 ---
 
-Facts last verified against the official sources on 2026-09-22. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-09-24. [Repository index](../README.md)
