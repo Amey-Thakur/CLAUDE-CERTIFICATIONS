@@ -9,14 +9,14 @@
 
 # Course completion certificates
 
-**Every one of the twenty-six things Claude Academy publishes behind the certification program, completed by [Amey Thakur](https://github.com/Amey-Thakur).** Twenty-five courses and a tutorial. Twenty-two of them issued a certificate and twenty-four issued a completion badge, twenty-five badges in all because one course issued two. The rest issue neither, which is why the galleries are shorter than the catalog.
+**Every one of the twenty-seven things Claude Academy publishes behind the certification program, completed by [Amey Thakur](https://github.com/Amey-Thakur).** Twenty-six courses and a tutorial. Twenty-two of them issued a certificate and twenty-five issued a completion badge, twenty-six badges in all because one course issued two. The rest issue neither, which is why the galleries are shorter than the catalog.
 
 Every certificate links to its issued PDF and its Skilljar verification record, which carries the completion date shown.
 
 </div>
 
 > [!NOTE]
-> **Two badges, one course.** AI Fluency for Creative Work was issued a completion badge on 22 August 2026 and again on 27 August 2026. Both verify on Anthropic's own domain, so both are shown: twenty-five badges across twenty-four courses.
+> **Two badges, one course.** AI Fluency for Creative Work was issued a completion badge on 22 August 2026 and again on 27 August 2026. Both verify on Anthropic's own domain, so both are shown: twenty-six badges across twenty-five courses.
 
 Course completion certificates are distinct from the certification credentials themselves, which are issued as Credly badges after a proctored exam. Source copies live in the maintainer's [ACHIEVEMENTS repository](https://github.com/Amey-Thakur/ACHIEVEMENTS#anthropic-courses); course descriptions and enrollment links are in [Anthropic courses](../guide/courses.md).
 
@@ -172,7 +172,7 @@ Course completion certificates are distinct from the certification credentials t
 
 Twenty-four courses were also issued a digital completion badge on
 [Claude Academy](https://academy.claude.com), Anthropic's learning platform, and
-there are twenty-five badges because AI Fluency for Creative Work issued twice,
+there are twenty-six badges because AI Fluency for Creative Work issued twice,
 on 22 and 27 August 2026. The rest: one on 18 March 2026, one on 27 March 2026,
 twenty on 22 August 2026, one on 30 August 2026, and one on 8 September 2026. These verify separately
 from the certificate PDFs above, on Anthropic's own domain rather than through
@@ -304,7 +304,10 @@ badge and no certificate, which is why the two counts differ. Every badge below 
 <a href="https://academy.claude.com/verify/19e7b159384e4cd4ef30b6102dbc59f5" title="Verify Building Effective Human Agent Teams (Beta) on Claude Academy"><img src="badges/building-effective-human-agent-teams.png" width="100%" alt="Claude Academy completion badge for Building Effective Human Agent Teams (Beta), issued to Amey Thakur"></a>
 <br><sub><b>Building Effective Human Agent Teams (Beta)</b><br><a href="https://academy.claude.com/verify/19e7b159384e4cd4ef30b6102dbc59f5">Verify</a> · <code>19e7b159384e…</code></sub>
 </td>
-<td width="33%"></td>
+<td align="center" width="33%">
+<a href="https://academy.claude.com/verify/1457c145d13c12616f01f80a990a7fe7" title="Verify Introduction to Claude Tag on Claude Academy"><img src="badges/introduction-to-claude-tag.png" width="100%" alt="Claude Academy completion badge for Introduction to Claude Tag, issued to Amey Thakur"></a>
+<br><sub><b>Introduction to Claude Tag</b><br><a href="https://academy.claude.com/verify/1457c145d13c12616f01f80a990a7fe7">Verify</a> · <code>1457c145d13c…</code></sub>
+</td>
 <td width="33%"></td>
 </tr>
 </table>
@@ -315,4 +318,4 @@ badge and no certificate, which is why the two counts differ. Every badge below 
 
 ---
 
-Facts last verified against the official sources on 2026-09-24. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-09-25. [Repository index](../README.md)

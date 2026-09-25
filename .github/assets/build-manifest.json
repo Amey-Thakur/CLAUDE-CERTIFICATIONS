@@ -25,7 +25,7 @@
     ".github/assets/roadmap.png": "f1b64a5d6626c695",
     ".github/scripts/build_companion.py": "ef55201afd812720",
     ".github/scripts/build_images.py": "799aaa0ad2247047",
-    "certificates/README.md": "afcf1ca0ce983d5b",
+    "certificates/README.md": "01b5bc3f88a8ffa8",
     "certificates/badges/ai-capabilities-and-limitations.png": "216a7278a9980590",
     "certificates/badges/ai-fluency-for-builders.png": "d462adba500d4692",
     "certificates/badges/ai-fluency-for-creative-work-22-august.png": "7c265fe9e3d83ce4",
@@ -47,11 +47,12 @@
     "certificates/badges/deploying-claude-enterprise-with-confidence.png": "d5f628427e743a44",
     "certificates/badges/introduction-to-agent-skills.png": "1baf265d8a9c3375",
     "certificates/badges/introduction-to-claude-cowork.png": "b72750225e8f4b78",
+    "certificates/badges/introduction-to-claude-tag.png": "488b21a3f0a6a302",
     "certificates/badges/introduction-to-model-context-protocol.png": "30d753a87d163d95",
     "certificates/badges/introduction-to-subagents.png": "3e348a7231403323",
     "certificates/badges/model-context-protocol-advanced-topics.png": "7ff1346dd557786a",
     "certificates/badges/teaching-ai-fluency.png": "818e654a245c88c5",
-    "guide/glossary.md": "f412f5ce95c2b912"
+    "guide/glossary.md": "51d73b7f0ec837a9"
   },
   "images": {
     ".github/assets/avatar.jpg": "23071e456e9f2d1c",

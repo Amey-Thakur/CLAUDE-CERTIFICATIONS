@@ -1,6 +1,6 @@
 # Anthropic courses
 
-Every course behind the certification program, one entry each: what it teaches, where to take it, which exam it serves, and the maintainer's completion certificate as proof each one is real and finishable. All 25 are free on the public [Claude Academy](https://academy.claude.com/), no partner account needed; partners see the same courses with prep-path structure on [Partner Academy](https://anthropic-partners.skilljar.com/), and several are also on [Coursera](https://www.coursera.org/partners/anthropic).
+Every course behind the certification program, one entry each: what it teaches, where to take it, which exam it serves, and the maintainer's completion certificate as proof each one is real and finishable. All 26 are free on the public [Claude Academy](https://academy.claude.com/), no partner account needed; partners see the same courses with prep-path structure on [Partner Academy](https://anthropic-partners.skilljar.com/), and several are also on [Coursera](https://www.coursera.org/partners/anthropic).
 
 [![Every official Anthropic course and the certification exam it serves](../.github/assets/card-courses.png)](../.github/assets/card-courses.png "View the course map at full size")
 
@@ -15,6 +15,7 @@ For everyday and platform fluency, and the backbone of [Associate – Foundation
 | Claude Code 101 | Claude Code in the daily development workflow | [Enroll](https://academy.claude.com/courses/claude-code-101) | [PDF](../certificates/claude-code-101.pdf) · [Verify](https://verify.skilljar.com/c/wbf7fherdhsx) · [Badge](https://academy.claude.com/verify/47482157d8dbc48e39d22aaa49d6d9b1) |
 | Claude Code in Action | Long, hands-off Claude Code sessions you can trust: steer, configure, automate, and verify | [Enroll](https://academy.claude.com/courses/claude-code-in-action) | [PDF](../certificates/claude-code-in-action.pdf) · [Verify](https://verify.skilljar.com/c/m96ks77aqbfb) · [Badge](https://academy.claude.com/verify/7f0839f0576b57f38658e8784e4c9a83) |
 | Introduction to Claude Cowork | The Cowork task loop, plugins and skills, file and research workflows, and steering multi-step work | [Enroll](https://academy.claude.com/courses/introduction-to-claude-cowork) | [PDF](../certificates/introduction-to-claude-cowork.pdf) · [Verify](https://verify.skilljar.com/c/n63skaqkpxs8) · [Badge](https://academy.claude.com/verify/7e0320325938630d9536a61078cc69a9) |
+| Introduction to Claude Tag | Claude Tag in a team's Slack workspace: where to hand it work, steering and correcting it so a fix holds for the whole channel, and giving it a standing job | [Enroll](https://academy.claude.com/courses/introduction-to-claude-tag) | [Badge](https://academy.claude.com/verify/1457c145d13c12616f01f80a990a7fe7) |
 
 ## Developer and integration
 
@@ -65,4 +66,4 @@ This is the repository's recommendation: start with Claude 101 and Claude Platfo
 
 ---
 
-Facts last verified against the official sources on 2026-09-24. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-09-25. [Repository index](../README.md)

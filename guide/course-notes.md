@@ -1,6 +1,6 @@
 # Course notes
 
-What I took away from each of the 24 courses I have taken, and which exam domains it serves where it serves one. These are working notes, not summaries of the course material: enough to decide what to take, in what order, and what to watch for while taking it. Enrollment links and certificates are in [Anthropic courses](courses.md).
+What I took away from each of the 25 courses I have taken, and which exam domains it serves where it serves one. These are working notes, not summaries of the course material: enough to decide what to take, in what order, and what to watch for while taking it. Enrollment links and certificates are in [Anthropic courses](courses.md).
 
 ## How the courses map to the exams
 
@@ -29,6 +29,8 @@ flowchart LR
 **Claude Code in Action.** The one that changes how you work. It covers steering long sessions, configuration, automation, and verification, which is precisely the Architect Foundations domain on Claude Code configuration and workflows. Take it with a real repository open and configure as you go; the material rewards doing rather than watching.
 
 **Introduction to Claude Cowork.** The task loop, plugins and skills, and how to steer multi-step work responsibly. Most relevant to Associate candidates and to anyone whose day job is documents and research rather than code.
+
+**Introduction to Claude Tag.** Eleven lessons and a quiz on Claude Tag, which puts Claude inside a team's Slack workspace. It covers where to hand it work, which of a DM, a private channel and a public channel each suit, how to correct it so the correction holds for everyone in the channel rather than for you alone, and how to give it a standing job that runs on a schedule or as a reply it offers without being tagged. Written for the person using it in their channels rather than the admin installing it, who is sent to a separate setup guide. Nothing in it is examined. Marked beta, and it issues a badge and no certificate.
 
 ## Developer and integration
 
@@ -78,4 +80,4 @@ The [prep paths on Partner Academy](learning-paths.md#certification-prep-courses
 
 ---
 
-Facts last verified against the official sources on 2026-09-24. These notes are the maintainer's own. Course facts come from the [official catalog](courses.md). [Repository index](../README.md)
+Facts last verified against the official sources on 2026-09-25. These notes are the maintainer's own. Course facts come from the [official catalog](courses.md). [Repository index](../README.md)

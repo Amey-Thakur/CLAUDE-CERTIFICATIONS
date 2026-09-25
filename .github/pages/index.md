@@ -80,7 +80,7 @@ Not sure which fits? Read [how the certifications connect](guide/learning-paths.
 
 - Your exam's own **study guide** and **notes**, linked in the table above
 - [Study strategy](guide/study-strategy.md), for a working plan rather than a reading list
-- [The 25 official courses](guide/courses.md), with [per-course notes](guide/course-notes.md) and [official resources](guide/resources.md)
+- [The 26 official courses](guide/courses.md), with [per-course notes](guide/course-notes.md) and [official resources](guide/resources.md)
 - [The practice engine](guide/quiz.md): shuffled, timed and scored, drawn from 320 original questions
 
 ### 3. Book and sit
@@ -91,10 +91,10 @@ Not sure which fits? Read [how the certifications connect](guide/learning-paths.
 
 ## The maintainer's certificates
 
-Twenty-two Claude Academy course completion certificates behind this program, each with its issued PDF and Skilljar verification record. Twenty-four courses were also issued a digital completion badge on [Claude Academy](https://academy.claude.com), verifiable on Anthropic's own domain, and there are twenty-five badges because one course issued twice. Every badge below links to its own verification page.
+Twenty-two Claude Academy course completion certificates behind this program, each with its issued PDF and Skilljar verification record. Twenty-five courses were also issued a digital completion badge on [Claude Academy](https://academy.claude.com), verifiable on Anthropic's own domain, and there are twenty-six badges because one course issued twice. Every badge below links to its own verification page.
 
 > [!NOTE]
-> **Two badges, one course.** AI Fluency for Creative Work was issued a completion badge on 22 August 2026 and again on 27 August 2026. Both verify on Anthropic's own domain, so both are shown: twenty-five badges across twenty-four courses.
+> **Two badges, one course.** AI Fluency for Creative Work was issued a completion badge on 22 August 2026 and again on 27 August 2026. Both verify on Anthropic's own domain, so both are shown: twenty-six badges across twenty-five courses.
 
 <div align="center">
 
@@ -218,7 +218,10 @@ Twenty-two Claude Academy course completion certificates behind this program, ea
 <a href="https://academy.claude.com/verify/19e7b159384e4cd4ef30b6102dbc59f5" title="Verify Building Effective Human Agent Teams (Beta) on Claude Academy"><img src="certificates/badges/building-effective-human-agent-teams.png" width="100%" alt="Claude Academy completion badge for Building Effective Human Agent Teams (Beta), issued to Amey Thakur"></a>
 <br><sub><b>Building Effective Human Agent Teams (Beta)</b><br><a href="https://academy.claude.com/verify/19e7b159384e4cd4ef30b6102dbc59f5">Verify</a></sub>
 </td>
-<td width="33%"></td>
+<td align="center" width="33%">
+<a href="https://academy.claude.com/verify/1457c145d13c12616f01f80a990a7fe7" title="Verify Introduction to Claude Tag on Claude Academy"><img src="certificates/badges/introduction-to-claude-tag.png" width="100%" alt="Claude Academy completion badge for Introduction to Claude Tag, issued to Amey Thakur"></a>
+<br><sub><b>Introduction to Claude Tag</b><br><a href="https://academy.claude.com/verify/1457c145d13c12616f01f80a990a7fe7">Verify</a></sub>
+</td>
 <td width="33%"></td>
 </tr>
 </table>
@@ -227,7 +230,7 @@ Twenty-two Claude Academy course completion certificates behind this program, ea
 
 </div>
 
-**[All twenty-two certificates and twenty-five badges, with their PDFs, Skilljar records and verification links](certificates/README.md)**
+**[All twenty-two certificates and twenty-six badges, with their PDFs, Skilljar records and verification links](certificates/README.md)**
 
 A course completion certificate is not a certification credential. The courses are free and self-paced; the four certifications require a proctored Pearson VUE exam and are issued separately as Credly badges.
 

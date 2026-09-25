@@ -41,6 +41,36 @@ CHROME = [
 SELECTORS = ["div[class*='badge']", "svg", "img"]
 
 
+CONSENT_HIDE = (
+    "[id*='cookie'],[class*='cookie'],[id*='consent'],[class*='consent'],"
+    "[aria-label*='ookie'],[aria-label*='onsent']{display:none !important}"
+)
+
+
+def dismiss_consent(page):
+    """Decline the cookie banner before photographing anything.
+
+    The banner is a fixed overlay, and an element screenshot photographs
+    whatever is painted over the element, so the banner lands in the bottom
+    corner of the badge and hides the issue date. It appeared after the first
+    twenty-five badges were captured, which is why they do not have it.
+
+    Declining is also the right default: nothing here needs the cookies.
+    """
+    for label in ("Reject all", "Reject All", "Reject", "Decline"):
+        try:
+            button = page.get_by_text(label, exact=True).first
+            if button.is_visible(timeout=1200):
+                button.click(timeout=3000)
+                page.wait_for_timeout(700)
+                break
+        except Exception:
+            continue
+    # Whatever survived the click, or was never clickable, is hidden outright.
+    page.add_style_tag(content=CONSENT_HIDE)
+    page.wait_for_timeout(400)
+
+
 def capture(slug, code):
     from PIL import Image
     from playwright.sync_api import sync_playwright
@@ -53,6 +83,7 @@ def capture(slug, code):
                           device_scale_factor=SCALE, color_scheme="dark")
         page.goto(VERIFY + code, wait_until="networkidle", timeout=90000)
         page.wait_for_timeout(1800)
+        dismiss_consent(page)
         shot = None
         for selector in SELECTORS:
             found = page.query_selector_all(selector)
