@@ -30,12 +30,17 @@ maintained home is the new one.
 Completion badges already verified on `academy.claude.com` before the move, and
 still do.
 
-### September: the catalog grew to twenty-five courses
+### September: the catalog grew to twenty-six courses
 
 **Building Effective Human Agent Teams (Beta)** was added: five lessons and a
 quiz on moving a team from single-player AI to multiplayer, aimed at team leads
-rather than developers. It issues a completion badge and no certificate, which
-is why the badge count now runs one ahead of the certificate count twice over.
+rather than developers. It issues a completion badge and no certificate.
+
+**Introduction to Claude Tag** followed later in the month: eleven lessons and
+a quiz on Claude inside a team's Slack workspace, written for the person using
+it in their channels rather than the admin installing it. Marked beta. It also
+issues a completion badge and no certificate, which is why the badge count now
+runs ahead of the certificate count on four courses.
 
 Partner Academy also lists **Working with Claude Fable 5.1**, on where that
 model sits and how to move a client build onto it. It returns 404 on the public

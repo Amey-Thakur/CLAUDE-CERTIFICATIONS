@@ -5,7 +5,7 @@ Every video on this page is published by Anthropic on its own [YouTube channel](
 On the website each video plays inline. On GitHub the thumbnails link out to YouTube.
 
 > [!TIP]
-> Video is a supplement, not a substitute. The [25 official courses](courses.md) are the curriculum and the [exam guides](official-sources.md) define what is tested. Use these when a topic has not landed from reading, and when you want to hear how Anthropic's own engineers describe a decision.
+> Video is a supplement, not a substitute. The [26 official courses](courses.md) are the curriculum and the [exam guides](official-sources.md) define what is tested. Use these when a topic has not landed from reading, and when you want to hear how Anthropic's own engineers describe a decision.
 
 ## AI Fluency, the complete course
 

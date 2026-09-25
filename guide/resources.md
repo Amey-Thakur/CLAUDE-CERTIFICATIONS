@@ -4,7 +4,7 @@ Everything here is published by Anthropic or its official partners. Third-party 
 
 ## Courses
 
-All 25 official courses, with descriptions, enrollment links, and exam relevance, are cataloged in [Anthropic courses](courses.md). The platforms that host them:
+All 26 official courses, with descriptions, enrollment links, and exam relevance, are cataloged in [Anthropic courses](courses.md). The platforms that host them:
 
 | Resource | What it is |
 | --- | --- |
