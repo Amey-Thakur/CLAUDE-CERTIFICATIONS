@@ -80,4 +80,4 @@ The [prep paths on Partner Academy](learning-paths.md#certification-prep-courses
 
 ---
 
-Facts last verified against the official sources on 2026-09-25. These notes are the maintainer's own. Course facts come from the [official catalog](courses.md). [Repository index](../README.md)
+Facts last verified against the official sources on 2026-09-26. These notes are the maintainer's own. Course facts come from the [official catalog](courses.md). [Repository index](../README.md)
