@@ -170,17 +170,18 @@ Course completion certificates are distinct from the certification credentials t
 
 ## Claude Academy completion badges
 
-Twenty-four courses were also issued a digital completion badge on
+Twenty-five courses were also issued a digital completion badge on
 [Claude Academy](https://academy.claude.com), Anthropic's learning platform, and
 there are twenty-six badges because AI Fluency for Creative Work issued twice,
 on 22 and 27 August 2026. The rest: one on 18 March 2026, one on 27 March 2026,
-twenty on 22 August 2026, one on 30 August 2026, and one on 8 September 2026. These verify separately
-from the certificate PDFs above, on Anthropic's own domain rather than through
-Skilljar.
+nineteen on 22 August 2026, one on 30 August 2026, one on 8 September 2026, and
+one on 25 September 2026. These verify separately from the certificate PDFs
+above, on Anthropic's own domain rather than through Skilljar.
 
 Twenty-two of those courses also appear as a certificate above. Deploying Claude
-Enterprise with Confidence and Building Effective Human Agent Teams issued a
-badge and no certificate, which is why the two counts differ. Every badge below links to its verification page.
+Enterprise with Confidence, Building Effective Human Agent Teams and
+Introduction to Claude Tag issued a badge and no certificate, which is why the
+two counts differ. Every badge below links to its verification page.
 
 <div align="center">
 
@@ -318,4 +319,4 @@ badge and no certificate, which is why the two counts differ. Every badge below 
 
 ---
 
-Facts last verified against the official sources on 2026-09-26. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-09-27. [Repository index](../README.md)

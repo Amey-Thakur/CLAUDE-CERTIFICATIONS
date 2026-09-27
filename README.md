@@ -256,7 +256,7 @@ This is here so you can check the material rather than trust it. Every claim in 
 
 | Track | Certificates | Academy badges | What it covers |
 | --- | :---: | :---: | --- |
-| [Claude platform](certificates/README.md#claude-platform) | 5 | 5 | Claude 101, the platform, Claude Code, and Cowork |
+| [Claude platform](certificates/README.md#claude-platform) | 5 | 6 | Claude 101, the platform, Claude Code, Cowork, and Tag |
 | [Developer and integration](certificates/README.md#developer-and-integration) | 5 | 5 | The API, Model Context Protocol, and building agents |
 | [Deployment platforms](certificates/README.md#deployment-platforms) | 2 | 3 | Claude on Amazon Bedrock, Google Cloud Vertex AI, and Claude Enterprise rollout |
 | [AI Fluency](certificates/README.md#ai-fluency) | 10 | 12 | The framework, and its versions for builders, educators, students, nonprofits and small businesses |
@@ -303,6 +303,6 @@ Contributions that keep facts current are welcome; see [CONTRIBUTING.md](.github
 Repository text is <a href="LICENSE">MIT licensed</a>; mirrored documents and logo artwork keep their own provenance
 (<a href="guide/official-sources.md">sources</a>, <a href=".github/assets/logos/README.md">logos</a>).</sub>
 
-<sub>Facts last verified against the official sources on 2026-09-26.</sub>
+<sub>Facts last verified against the official sources on 2026-09-27.</sub>
 
 </div>
