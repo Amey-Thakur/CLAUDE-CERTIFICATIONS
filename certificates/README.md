@@ -319,4 +319,4 @@ two counts differ. Every badge below links to its verification page.
 
 ---
 
-Facts last verified against the official sources on 2026-09-27. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-09-28. [Repository index](../README.md)
