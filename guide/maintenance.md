@@ -18,7 +18,7 @@ Every page that states official facts carries a "facts last verified" date in it
 
 ## Routine
 
-**Weekly, automated.** The link-check workflow runs on a schedule and flags dead links. Treat a newly dead official link as a signal that Anthropic moved or changed something, not just as a link to fix.
+**Weekly, automated.** The link-check workflow runs on a schedule and flags dead links. Treat a newly dead official link as a signal that Anthropic moved or changed something, not just as a link to fix. The same workflow runs `check_refresh.py`, which re-reads the six facts that are published on Anthropic's certification pages rather than in any mirrored PDF and confirms each is still worded as this repository quotes it. A link check can only establish that those pages answer at all.
 
 **Monthly, manual.** Run the resource updater and review what changed:
 
@@ -27,6 +27,18 @@ python .github/scripts/update_resources.py
 ```
 
 The script re-downloads every mirrored official PDF, verifies each file is a valid PDF, and reports which files changed by hash. If an exam guide changed, diff the exam facts (version, item counts, domains, weights, fees) against the matching documentation page, update the page, update its footer date, and note the change in the next release.
+
+**Before moving a "facts last verified" date.** That footer claims the facts were re-checked on the day it names, so run all three of these and only then move it.
+
+| Command | What it establishes |
+| --- | --- |
+| `python .github/scripts/verify_facts.py` | every figure published in the mirrored exam guides still matches the documentation |
+| `python .github/scripts/update_resources.py --check` | no mirrored PDF has changed upstream |
+| `python .github/scripts/check_refresh.py --links` | the six quoted policy sentences are still on the pages they were read from, the published catalog still matches [courses.md](courses.md), and all 48 verification links resolve |
+
+`check_refresh.py` reads the catalog as the union of `/all`, `/collections/ai-fluency` and the five `/products/*` pages, because a course can be live and absent from `/all`, and two of them are. Three of its behaviors are deliberate and worth knowing before trusting a green run. A listing page that returns no course links at all is reported as a failure to read the catalog rather than as a catalog with nothing new in it, because that is what a move to client-rendered cards would look like. A documented course missing from every listing is reported with whatever its own page answers, never assumed withdrawn. And exit 2 means a page could not be read, which is never the same thing as a fact having changed.
+
+The date then moves in the footer of every page that states official facts, plus the `# Date:` comment in `CITATION.cff` and `dateModified` in `codemeta.json`. Three kinds of date must not move with it, because they record when something happened rather than when it was checked: `date-released` and `dateReleased`, which are the tag's publish date and are governed by `check_metadata.py`, and the badge issue dates in `certificates/badges/badges.json`. Touching the certificates gallery or [glossary.md](glossary.md) marks the companion stale, so rerun `build_companion.py --render`; where no text changed it reports "content unchanged, kept the committed file" and leaves the PDF byte-identical.
 
 **When Anthropic announces changes.** Program changes have historically landed as dated cutovers (the June 30, 2026 Pearson migration; the August 31, 2026 Global Premier discount expiry). Dated facts like these are written into the pages deliberately so that stale ones are findable: search the docs for the current year to audit them.
 

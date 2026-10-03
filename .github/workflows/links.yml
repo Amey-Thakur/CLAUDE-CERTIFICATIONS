@@ -24,3 +24,23 @@ jobs:
           fail: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+  published-facts:
+    name: Quoted facts are still on the pages they came from
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: "3.12"
+      # Six facts are published on Anthropic's certification pages rather than
+      # in any mirrored PDF, and lychee can only say those pages answer 200.
+      # This confirms each quoted sentence is still on them.
+      #
+      # It belongs here and not in checks.yml because it depends on the outside
+      # world: checks.yml is everything verifiable from the repository alone, so
+      # an upstream outage must not turn it red on an unrelated pull request.
+      # The verification links are left to lychee above, so --links is not
+      # passed; the script exits 2 rather than 1 when a page cannot be reached
+      # at all, which distinguishes an outage from a withdrawn fact.
+      - run: python .github/scripts/check_refresh.py

@@ -46,9 +46,15 @@ TRACKS = {
 # certification policy and FAQ pages on 3 October 2026, and the sentence that carries
 # it is quoted here so the next check knows what it is looking for.
 #
-#   https://anthropic-partners.skilljar.com/page/policies-certifications
-#   https://anthropic-partners.skilljar.com/page/faq-certifications
-#
+# The two page names are data rather than a comment because check_refresh.py
+# reads them from here: it fetches both pages and confirms every sentence below
+# is still on them, which is the one part of this file's closing claim that can
+# be checked by a script instead of by eye.
+OFFICIAL_PAGES = {
+    "policies": "https://anthropic-partners.skilljar.com/page/policies-certifications",
+    "faq": "https://anthropic-partners.skilljar.com/page/faq-certifications",
+}
+
 CONFIRMED_ON_THE_SITE = [
     ("retake intervals of 14, 30 and 90 days",
      "14 days after your first failed attempt, 30 days after your second, "
