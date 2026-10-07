@@ -1,4 +1,4 @@
-<div align="center">
+<div align="center">..
 
 <a href="https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/" title="Open the website"><img src=".github/assets/logos/claude-symbol.svg" alt="Claude symbol, links to the website" width="80"></a>
 
