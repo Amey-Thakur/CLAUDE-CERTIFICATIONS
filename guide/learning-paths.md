@@ -93,7 +93,15 @@ Partner-exclusive content, such as the [Partner Basecamp](https://anthropic-part
 
 ## Partner badges
 
-Separate from certifications, partners can earn specialty badges. The [Claude Code partner badge](https://anthropic-partners.skilljar.com/path/partner-badge-claude-code) is a ten-course path covering deployment architecture, extensibility, security and governance, and delivery methodology, with a capstone. Badges are listed on the [partner badges page](https://anthropic-partners.skilljar.com/page/partner-badges).
+Separate from certifications, partners can earn specialty badges. The [Claude Code partner badge](https://anthropic-partners.skilljar.com/path/partner-badge-claude-code) covers deployment architecture, extensibility, security and governance, and delivery methodology, and ends in a scenario-based capstone assessment. Its eight courses are Product Foundations, Installation and Environments, Deployment Architecture, Configuration and Customization, Extensibility, Security and Governance, Administration and Measurement, and Delivery Methodology. Badges are listed on the [partner badges page](https://anthropic-partners.skilljar.com/page/partner-badges).
+
+Two official pages disagree on that count, so the discrepancy is recorded rather than resolved: the path page says eight courses and lists eight, while the tile for the badge on the partner badges page says ten. Eight is used here because it is what the path itself contains.
+
+## Role paths with no exam behind them
+
+Academy publishes role paths that lead to no certification, so a path in the navigation is not evidence of an exam. [Claude Forward Deployed Engineer](https://anthropic-partners.skilljar.com/path/claude-fde) is nine courses: AI Fluency for Builders, Claude Platform & Model Foundations, Claude Platform 101, Claude Code 101, Claude Code in Action, Introduction to Model Context Protocol, Introduction to agent skills, Delivery Methodology, and Driving enterprise adoption of Claude. Three of those, Claude Platform & Model Foundations, Delivery Methodology and Driving enterprise adoption of Claude, are partner-only and are not in the public catalog above.
+
+There is no Forward Deployed Engineer exam, so the four certifications across three certified roles described at the top of this page are unchanged by it.
 
 ## Suggested sequencing
 
@@ -106,4 +114,4 @@ This is the repository's recommendation, not an official rule:
 
 ---
 
-Facts last verified against the official sources on 2026-10-08. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-10-14. [Repository index](../README.md)

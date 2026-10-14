@@ -14,6 +14,23 @@ Every entry below is dated, says what changed, and says who it still affects.
 
 ## 2026
 
+### October: a fourth role path, and a Claude Code badge
+
+Partner Academy's navigation gained two entries that are not certifications.
+[Claude Forward Deployed Engineer](https://anthropic-partners.skilljar.com/path/claude-fde)
+is a nine-course role path, three of whose courses are partner-only, and the
+[Claude Code partner badge](https://anthropic-partners.skilljar.com/path/partner-badge-claude-code)
+is an eight-course path ending in a scenario-based capstone. Both are listed in
+[Learning paths and courses](learning-paths.md).
+
+**Who this affects.** Nobody preparing for an exam. There is no Forward Deployed
+Engineer certification, and a badge is not a certification, so the program is
+still four exams across three certified roles at unchanged prices. A role path
+appearing in the navigation is not evidence that an exam exists behind it.
+
+The two pages describing the badge disagree on its length: the path says eight
+courses and lists eight, the badge tile says ten.
+
 ### August: the academy moved to a new home
 
 `anthropic.com/learn` now redirects permanently to
@@ -130,4 +147,4 @@ with a link to the official source.
 
 ---
 
-Facts last verified against the official sources on 2026-10-08. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-10-14. [Repository index](../README.md)
