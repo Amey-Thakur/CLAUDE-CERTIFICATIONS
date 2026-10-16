@@ -929,25 +929,42 @@ def build_html():
 # even when nothing a reader can see had changed.
 DATE_FIELD = re.compile(rb"/(CreationDate|ModDate) \((D:[^)]*)\)")
 
+# Chrome also stamps its own version, into /Creator as HeadlessChrome/N.0.0.0
+# and into /Producer as Skia/PDF mN. A browser upgrade therefore changed the
+# file while all 33 pages of text stayed byte for byte identical, which is how
+# a Chrome 153 to 155 upgrade on 15 October 2026 nearly stored a 2 MB blob for
+# no reader-visible change. Neither field describes the document, so both are
+# normalized the same way the dates are.
+#
+# The value has to be matched with PDF string escaping in mind: /Creator holds
+# a whole user agent, including a literal "\(KHTML, like Gecko\)", so a plain
+# [^)]* stops inside it and rewrites only a fragment.
+TOOL_FIELD = re.compile(rb"/(Creator|Producer) \(((?:[^()\\]|\\.)*)\)")
+
 
 def keep_if_unchanged(previous):
-    """Keep the committed PDF when a new render differs from it only in time.
+    """Keep the committed PDF when a new render differs only in who rendered it.
 
-    The old file's timestamps are written into the new render. If the result is
-    then the old file byte for byte, the old bytes are put back and git has
-    nothing to store. Any other difference, in text, layout, images or links,
-    leaves the fresh render and its new timestamps in place.
+    The old file's timestamps and renderer version are written into the new
+    render. If the result is then the old file byte for byte, the old bytes are
+    put back and git has nothing to store. Any other difference, in text,
+    layout, images or links, leaves the fresh render in place with its own
+    stamps.
     """
     if previous is None:
         return False
-    stamps = {m.group(1): m.group(2) for m in DATE_FIELD.finditer(previous)}
-    if not stamps:
+    old = {}
+    for pattern in (DATE_FIELD, TOOL_FIELD):
+        old.update({m.group(1): m.group(2) for m in pattern.finditer(previous)})
+    if not old:
         return False
+
     fresh = OUT_PDF.read_bytes()
-    restamped = DATE_FIELD.sub(
-        lambda m: b"/" + m.group(1) + b" (" + stamps.get(m.group(1), m.group(2)) + b")",
-        fresh)
-    if restamped != previous:
+    for pattern in (DATE_FIELD, TOOL_FIELD):
+        fresh = pattern.sub(
+            lambda m: b"/" + m.group(1) + b" (" + old.get(m.group(1), m.group(2)) + b")",
+            fresh)
+    if fresh != previous:
         return False
     OUT_PDF.write_bytes(previous)
     return True

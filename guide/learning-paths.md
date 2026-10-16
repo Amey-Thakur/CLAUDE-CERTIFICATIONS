@@ -114,4 +114,4 @@ This is the repository's recommendation, not an official rule:
 
 ---
 
-Facts last verified against the official sources on 2026-10-14. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-10-15. [Repository index](../README.md)
