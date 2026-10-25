@@ -14,6 +14,26 @@ Every entry below is dated, says what changed, and says who it still affects.
 
 ## 2026
 
+### October: the exams are published in Japanese
+
+The certification FAQ now states that "the exam and prep content are available in
+English and Japanese", and documents how to move an appointment already booked
+in English onto the Japanese version: cancel it in the Pearson account and
+schedule the Japanese one, under the same 48-hour rule as any other change.
+
+**Who this affects.** Anyone who reads Japanese more comfortably than English,
+and anyone who read this repository before this entry appeared. Three pages here
+said the exam was English only, which was true when it was written and is not
+true now. Browser translation tools are still prohibited during proctoring, so
+the readable languages are those two and no others.
+
+The same FAQ section also names the delivery restrictions, now recorded under
+[Availability](policies.md#availability): no OnVUE online proctoring on an ID
+from Belarus, Cuba, North Korea, Russia, Syria or a restricted region of
+Ukraine, and delivery to residents of Iran suspended from 8 September 2026 under
+the OFAC General License G suspension. These are Pearson's restrictions, so they
+move without the exam policy PDF moving.
+
 ### October: a fourth role path, and a Claude Code badge
 
 Partner Academy's navigation gained two entries that are not certifications.
@@ -147,4 +167,4 @@ with a link to the official source.
 
 ---
 
-Facts last verified against the official sources on 2026-10-19. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-10-24. [Repository index](../README.md)

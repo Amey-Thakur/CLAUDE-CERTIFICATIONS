@@ -93,7 +93,7 @@ Points worth noting before you schedule:
 
 - Sample rationales reward removing unneeded agent capabilities outright under least privilege rather than logging or confirming their use, ordering static prompt content first and enabling prompt caching to cut both latency and cost, and suspecting the retrieval and indexing layer first when a RAG system degrades after a document refresh.
 - Stakeholder Communication & Lifecycle Management at 14% is unusual among technical certifications. Discovery, documentation, and expectation management are scored material.
-- The exam is closed book, in English only, with no practice exam available.
+- The exam is closed book, in English or Japanese, with no practice exam available.
 
 ## Related certifications
 
@@ -103,4 +103,4 @@ Points worth noting before you schedule:
 
 ---
 
-Facts last verified against the official sources on 2026-10-19. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-10-24. [Repository index](../README.md)

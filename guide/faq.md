@@ -69,7 +69,7 @@ Delivery moved to Pearson VUE and badging to Credly on June 30, 2026. If you reg
 
 **How should I prepare?** Start with the exam guide for your certification; it lists the domains and task statements and is the authoritative scope. Then use the [prep courses](learning-paths.md#certification-prep-courses), which vary in coverage by certification.
 
-**Other languages?** Exam and prep content are English only, and translation tools are prohibited during proctoring.
+**Other languages?** Exam and prep content are available in English and Japanese. Browser translation tools are prohibited during proctoring, so a language you can read has to be one of those two. An appointment already booked in English can be moved to the Japanese version by cancelling it in the Pearson account and scheduling the Japanese one, subject to the same 48-hour rule as any other change.
 
 **Can my organization track certifications?** Partner Portal shows the organization's total certification count, updated weekly. A per-person breakdown is not currently available to partners.
 
@@ -83,4 +83,4 @@ Delivery moved to Pearson VUE and badging to Credly on June 30, 2026. If you reg
 
 ---
 
-Facts last verified against the official sources on 2026-10-19. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-10-24. [Repository index](../README.md)

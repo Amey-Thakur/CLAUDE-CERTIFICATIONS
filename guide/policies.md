@@ -109,7 +109,12 @@ where the two differ the PDF governs.
 
 ## Availability
 
-Exams are not available everywhere; Anthropic may exclude specific countries or regions.
+Exams are not available everywhere; Anthropic may exclude specific countries or regions. The certification FAQ names the current restrictions, and they are specific enough to matter before you pay:
+
+- A government-issued ID from Belarus, Cuba, North Korea, Russia, Syria, or a restricted region of Ukraine is not accepted for OnVUE online proctoring. Checking in online with one means being turned away, so those candidates must book a Pearson test center instead.
+- Exam delivery for residents of Iran is suspended, online and at test centers both, from 8 September 2026, following the suspension of General License G by the United States Treasury Department's Office of Foreign Assets Control.
+
+These are Pearson's delivery restrictions rather than the exam policy's, so they can change without the policy PDF changing. Check the [certification FAQ](https://anthropic-partners.skilljar.com/page/faq-certifications) before booking if any of it might apply to you.
 
 ## The June 30, 2026 platform migration
 
@@ -123,4 +128,4 @@ Exam delivery moved to Pearson VUE and badging moved to Credly on June 30, 2026.
 
 ---
 
-Facts last verified against the official sources on 2026-10-19. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-10-24. [Repository index](../README.md)

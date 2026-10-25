@@ -59,4 +59,4 @@ The [Academy courses](courses.md) are themselves video curricula; for structured
 
 ---
 
-Facts last verified against the official sources on 2026-10-19. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-10-24. [Repository index](../README.md)

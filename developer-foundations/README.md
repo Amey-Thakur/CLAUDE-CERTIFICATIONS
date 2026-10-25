@@ -135,7 +135,7 @@ Points worth noting before you schedule:
 
 - The two smallest domains, Claude Code (3.1%) and Eval, Testing, and Debugging (2.6%), together are under 6% of the exam. Budget study time accordingly, not by topic familiarity.
 - Sample rationales reward the Message Batches API for high-volume latency-tolerant work, isolation of untrusted content plus least-privilege guardrails against prompt injection, and MCP servers for reusable cross-application tools.
-- The exam is closed book, in English only, with no practice exam available.
+- The exam is closed book, in English or Japanese, with no practice exam available.
 
 ## Related certifications
 
@@ -145,4 +145,4 @@ Points worth noting before you schedule:
 
 ---
 
-Facts last verified against the official sources on 2026-10-19. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-10-24. [Repository index](../README.md)
