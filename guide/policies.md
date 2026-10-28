@@ -128,4 +128,4 @@ Exam delivery moved to Pearson VUE and badging moved to Credly on June 30, 2026.
 
 ---
 
-Facts last verified against the official sources on 2026-10-26. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-10-27. [Repository index](../README.md)
