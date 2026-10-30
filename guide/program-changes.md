@@ -14,6 +14,25 @@ Every entry below is dated, says what changed, and says who it still affects.
 
 ## 2026
 
+### October: the catalog grew to twenty-seven courses
+
+**Tool use with the Messages API** was added, on
+[Claude Academy](https://academy.claude.com/courses/tool-use-with-the-messages-api)
+and on the Partner Academy platform product page. It is for people whose tool
+use already runs and breaks in specific ways: wrong tool choice, rejected
+calls, stalled responses, input tokens that grow with every tool result. Eight
+main lessons, one problem each, worked through a fictional consultancy, with no
+code written on the page. A graded quiz issues a completion badge, and
+Claude Platform 101 is named as the prerequisite.
+
+**Who this affects.** Developer – Foundations and Architect candidates, since
+tool use sits in the heavy domains of both. It is not listed as prep for any
+exam, so the exam guides remain the authoritative scope.
+
+Found by the daily catalog check, which reads the union of the Academy listing
+pages: the published count went to twenty-seven while this repository
+documented twenty-six.
+
 ### October: the exams are published in Japanese
 
 The certification FAQ now states that "the exam and prep content are available in
@@ -167,4 +186,4 @@ with a link to the official source.
 
 ---
 
-Facts last verified against the official sources on 2026-10-27. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-10-30. [Repository index](../README.md)

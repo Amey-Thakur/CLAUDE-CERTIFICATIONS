@@ -1,6 +1,6 @@
 # Anthropic courses
 
-Every course behind the certification program, one entry each: what it teaches, where to take it, which exam it serves, and the maintainer's completion certificate as proof each one is real and finishable. All 26 are free on the public [Claude Academy](https://academy.claude.com/), no partner account needed; partners see the same courses with prep-path structure on [Partner Academy](https://anthropic-partners.skilljar.com/), and several are also on [Coursera](https://www.coursera.org/partners/anthropic).
+Every course behind the certification program, one entry each: what it teaches, where to take it, which exam it serves, and the maintainer's completion certificate as proof each one is real and finishable. All 27 are free on the public [Claude Academy](https://academy.claude.com/), no partner account needed; partners see the same courses with prep-path structure on [Partner Academy](https://anthropic-partners.skilljar.com/), and several are also on [Coursera](https://www.coursera.org/partners/anthropic).
 
 [![Every official Anthropic course and the certification exam it serves](../.github/assets/card-courses.png)](../.github/assets/card-courses.png "View the course map at full size")
 
@@ -24,6 +24,7 @@ The core technical curriculum for [Developer – Foundations](../developer-found
 | Course | What it teaches | Take it | Certificate |
 | --- | --- | --- | --- |
 | Building with the Claude API | The full span of working with Anthropic models through the API: messages, tools, streaming, and production patterns | [Enroll](https://academy.claude.com/courses/building-with-the-claude-api) | [PDF](../certificates/building-with-the-claude-api.pdf) · [Verify](https://verify.skilljar.com/c/ydxcdgiomob6) · [Badge](https://academy.claude.com/verify/f6a1826e7f9054f5e41bf340a402fe58) |
+| Tool use with the Messages API | Fixing tool use that already runs: wrong tool choice, rejected calls, stalled responses, and input tokens that grow with every result, one problem per lesson | [Enroll](https://academy.claude.com/courses/tool-use-with-the-messages-api) | No record here yet |
 | Introduction to Model Context Protocol | MCP servers and clients from scratch in Python: tools, resources, and prompts | [Enroll](https://academy.claude.com/courses/introduction-to-model-context-protocol) | [PDF](../certificates/introduction-to-model-context-protocol.pdf) · [Verify](https://verify.skilljar.com/c/mbuap2cnv3pp) · [Badge](https://academy.claude.com/verify/0377c528acb2ecff93695ef9a9b56369) |
 | Model Context Protocol: Advanced Topics | Sampling, notifications, file system access, and transports for production MCP servers | [Enroll](https://academy.claude.com/courses/model-context-protocol-advanced-topics) | [PDF](../certificates/model-context-protocol-advanced-topics.pdf) · [Verify](https://verify.skilljar.com/c/ktyatn8th58j) · [Badge](https://academy.claude.com/verify/f7904c762c678c6e136bc866545a47e4) |
 | Introduction to agent skills | Building, configuring, and sharing Skills in Claude Code, from first Skill to team distribution | [Enroll](https://academy.claude.com/courses/introduction-to-agent-skills) | [PDF](../certificates/introduction-to-agent-skills.pdf) · [Verify](https://verify.skilljar.com/c/2jxpxwmqdcyp) · [Badge](https://academy.claude.com/verify/f568ff531665f510978b957c865f2af4) |
@@ -66,4 +67,4 @@ This is the repository's recommendation: start with Claude 101 and Claude Platfo
 
 ---
 
-Facts last verified against the official sources on 2026-10-27. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-10-30. [Repository index](../README.md)
