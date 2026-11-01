@@ -289,6 +289,8 @@ Ask questions, share how your exam went, and compare preparation notes in [Discu
 
 Preparing someone else? The [share kit](guide/share.md) has the links, ready-to-use copy, and images.
 
+These exams are about using Claude well. If you also want the mechanisms underneath, **[AI Engineering](https://github.com/Amey-Thakur/AI-ENGINEERING)** builds one from a classifier to a transformer block in plain Python, on the standard library alone, with every number reproduced by the code beside it.
+
 Contributions that keep facts current are welcome; see [CONTRIBUTING.md](.github/CONTRIBUTING.md).
 
 ---
