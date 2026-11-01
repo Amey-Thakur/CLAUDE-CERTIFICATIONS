@@ -35,9 +35,14 @@ OUT_PDF = ROOT / "claude-certifications-companion.pdf"
 # divide the count; the width stays put.
 #
 # 214mm held until the twenty-seventh badge, when the course listing gained a
-# line and page 31 ran 0.32mm past the bottom. The grid is three rows deep, so
-# a millimetre off the width buys about 0.23mm of height back.
-GRID_MM = 210
+# line and page 31 ran past the bottom. The grid is three rows deep, so a
+# millimetre off the width buys about 0.23mm of height back.
+#
+# Size it against the Linux runner, not this machine. At 210mm the page cleared
+# locally and still ran 0.83mm over in CI, because the fonts there set slightly
+# taller: the margin that matters is the one in the workflow. 200mm leaves
+# roughly 1.5mm spare on Linux.
+GRID_MM = 200
 
 
 REPO_URL = f"https://{REPO}"
