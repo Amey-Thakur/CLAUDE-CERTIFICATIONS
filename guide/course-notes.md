@@ -1,6 +1,6 @@
 # Course notes
 
-What I took away from each of the 25 courses I have taken, and which exam domains it serves where it serves one. These are working notes, not summaries of the course material: enough to decide what to take, in what order, and what to watch for while taking it. Enrollment links and certificates are in [Anthropic courses](courses.md).
+What I took away from each of the 26 courses I have taken, and which exam domains it serves where it serves one. These are working notes, not summaries of the course material: enough to decide what to take, in what order, and what to watch for while taking it. Enrollment links and certificates are in [Anthropic courses](courses.md).
 
 ## How the courses map to the exams
 
@@ -36,6 +36,8 @@ flowchart LR
 
 **Building with the Claude API.** The core Developer course and the highest-value hour on this list, because Applications and integration is a third of that exam. Pay closest attention to the parts you would otherwise skim: streaming, batch versus realtime, prompt caching, and error handling. Those are exam-heavy and easy to assume you already know.
 
+**Tool use with the Messages API.** Assumes tool use already runs in your code and fixes it one failure at a time across eight lessons: Claude choosing the wrong tool, the backend rejecting a call, a response that stalls, and input tokens that grow with every tool result. Each lesson works one problem through a fictional consultancy, and you write no code on the page, so the value comes from applying each fix to your own tools afterwards. It does not teach the first round trip, and it sends you to Claude Platform 101 if you have never written the loop by hand. The subject sits inside the Developer exam's Applications and integration domain, but the course is not listed in any prep path. A graded quiz issues a badge, and there is no certificate.
+
 **Introduction to Model Context Protocol.** Builds a server and a client in Python from nothing, which is the fastest way to make MCP concrete. Both Architect exams test MCP judgment (tool descriptions, error shapes, when a server is the right unit of reuse) and that judgment is difficult to fake without having built one.
 
 **Model Context Protocol: Advanced Topics.** Sampling, notifications, file system access, and transports. Skip it for the Associate exam. Take it for Architect Professional, where integration and protocol selection carry the most weight.
@@ -62,6 +64,8 @@ flowchart LR
 
 **AI Fluency for educators**, **for pK-12 Educators**, **for students**, **for nonprofits**, **for Small Businesses**, and **for Creative Work.** Six role-specific editions of the same framework. Take the one matching your context; they do not stack, and taking several adds repetition rather than depth.
 
+**AI Fluency for pK-12 Train the Trainer.** Not another edition of the framework but a workshop kit for running sessions with colleagues, built with the American Federation of Teachers. Worth taking only if you are going to deliver the material to other people; if you just want the framework for yourself, take the pK-12 Educators edition instead. Nothing in it is examined, and it is the one thing in the catalog that issues neither a certificate nor a badge.
+
 **Teaching AI Fluency.** For teaching and assessing the framework in instructor-led settings. Outside exam scope, valuable if you train others, and the clearest sign that you have genuinely absorbed the framework is being able to teach it.
 
 **Building Effective Human Agent Teams (Beta).** Five lessons and a quiz on moving a team from single-player AI to multiplayer: how the work changes, how a multiplayer agent differs from a chatbot, the team norms that support one, and four principles for healthy human-agent teams. Written for the person leading the team rather than the one building the agent, which makes it the odd one out on this page. Nothing in it is examined. Take it if you are accountable for how a team adopts this rather than for what it ships. Marked Beta, and it issues a badge and no certificate.
@@ -80,4 +84,4 @@ The [prep paths on Partner Academy](learning-paths.md#certification-prep-courses
 
 ---
 
-Facts last verified against the official sources on 2026-10-30. These notes are the maintainer's own. Course facts come from the [official catalog](courses.md). [Repository index](../README.md)
+Facts last verified against the official sources on 2026-11-01. These notes are the maintainer's own. Course facts come from the [official catalog](courses.md). [Repository index](../README.md)

@@ -20,10 +20,16 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent.parent
 BADGES = ROOT / "certificates" / "badges"
 
+# The spelled forms the prose may use. The list has to run ahead of the badge
+# count: when the twenty-seventh badge arrived, spelled(27) returned None and
+# every page that correctly said "twenty-seven badges" was reported as
+# disagreeing with the twenty-seven badges on disk.
 WORDS = {
     "seventeen": 17, "eighteen": 18, "nineteen": 19, "twenty": 20,
     "twenty-one": 21, "twenty-two": 22, "twenty-three": 23,
     "twenty-four": 24, "twenty-five": 25, "twenty-six": 26,
+    "twenty-seven": 27, "twenty-eight": 28, "twenty-nine": 29,
+    "thirty": 30, "thirty-one": 31, "thirty-two": 32,
 }
 
 

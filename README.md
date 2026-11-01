@@ -111,12 +111,12 @@ Every fact, domain weight, rule, and glossary term in this repository, as a deck
 
 ## Credentials behind this guide
 
-**All 27 of the Claude Academy courses and tutorials** behind the certification program, completed and independently verifiable. Not every one issues something to show: **22** carry a Skilljar verification record with a completion date, and **25** were issued a digital completion badge on [Claude Academy](https://academy.claude.com), Anthropic's own domain, **26** badges in all because one course issued twice.
+**All 27 of the Claude Academy courses and tutorials** behind the certification program, completed and independently verifiable. Not every one issues something to show: **22** carry a Skilljar verification record with a completion date, and **26** were issued a digital completion badge on [Claude Academy](https://academy.claude.com), Anthropic's own domain, **27** badges in all because one course issued twice.
 
 This is here so you can check the material rather than trust it. Every claim in this repository traces to an official source; these show the curriculum behind it was worked through rather than summarized from the outside. Every badge below links to its own verification page.
 
 > [!NOTE]
-> **Two badges, one course.** AI Fluency for Creative Work was issued a completion badge on 22 August 2026 and again on 27 August 2026. Both verify on Anthropic's own domain, so both are shown: twenty-six badges across twenty-five courses.
+> **Two badges, one course.** AI Fluency for Creative Work was issued a completion badge on 22 August 2026 and again on 27 August 2026. Both verify on Anthropic's own domain, so both are shown: twenty-seven badges across twenty-six courses.
 
 <div align="center">
 
@@ -244,20 +244,23 @@ This is here so you can check the material rather than trust it. Every claim in 
 <a href="https://academy.claude.com/verify/1457c145d13c12616f01f80a990a7fe7" title="Verify Introduction to Claude Tag on Claude Academy"><img src="certificates/badges/introduction-to-claude-tag.png" width="100%" alt="Claude Academy completion badge for Introduction to Claude Tag, issued to Amey Thakur"></a>
 <br><sub><b>Introduction to Claude Tag</b><br><a href="https://academy.claude.com/verify/1457c145d13c12616f01f80a990a7fe7">Verify</a></sub>
 </td>
-<td width="33%"></td>
+<td align="center" width="33%">
+<a href="https://academy.claude.com/verify/ac91804e4cdffd691da6e75dc697c659" title="Verify Tool use with the Messages API on Claude Academy"><img src="certificates/badges/tool-use-with-the-messages-api.png" width="100%" alt="Claude Academy completion badge for Tool use with the Messages API, issued to Amey Thakur"></a>
+<br><sub><b>Tool use with the Messages API</b><br><a href="https://academy.claude.com/verify/ac91804e4cdffd691da6e75dc697c659">Verify</a></sub>
+</td>
 </tr>
 </table>
 
 <!-- badges:end -->
 
-**[All 22 certificates and 26 badges, with their PDFs, Skilljar records and verification links](certificates/README.md)**
+**[All 22 certificates and 27 badges, with their PDFs, Skilljar records and verification links](certificates/README.md)**
 
 </div>
 
 | Track | Certificates | Academy badges | What it covers |
 | --- | :---: | :---: | --- |
 | [Claude platform](certificates/README.md#claude-platform) | 5 | 6 | Claude 101, the platform, Claude Code, Cowork, and Tag |
-| [Developer and integration](certificates/README.md#developer-and-integration) | 5 | 5 | The API, Model Context Protocol, and building agents |
+| [Developer and integration](certificates/README.md#developer-and-integration) | 5 | 6 | The API, tool use, Model Context Protocol, and building agents |
 | [Deployment platforms](certificates/README.md#deployment-platforms) | 2 | 3 | Claude on Amazon Bedrock, Google Cloud Vertex AI, and Claude Enterprise rollout |
 | [AI Fluency](certificates/README.md#ai-fluency) | 10 | 12 | The framework, and its versions for builders, educators, students, nonprofits and small businesses |
 
@@ -303,6 +306,6 @@ Contributions that keep facts current are welcome; see [CONTRIBUTING.md](.github
 Repository text is <a href="LICENSE">MIT licensed</a>; mirrored documents and logo artwork keep their own provenance
 (<a href="guide/official-sources.md">sources</a>, <a href=".github/assets/logos/README.md">logos</a>).</sub>
 
-<sub>Facts last verified against the official sources on 2026-10-30.</sub>
+<sub>Facts last verified against the official sources on 2026-11-01.</sub>
 
 </div>

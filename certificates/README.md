@@ -9,14 +9,14 @@
 
 # Course completion certificates
 
-**Twenty-seven of the twenty-eight things Claude Academy publishes behind the certification program, completed by [Amey Thakur](https://github.com/Amey-Thakur).** Twenty-six courses and a tutorial, against a catalog of twenty-seven courses and a tutorial: Tool use with the Messages API was published in October 2026 and has no completion record here yet. Of the twenty-seven, twenty-two issued a certificate and twenty-five issued a completion badge, twenty-six badges in all because one course issued two. The rest issue neither, which is why the galleries are shorter than the catalog.
+**Every one of the twenty-seven things Claude Academy publishes behind the certification program, completed by [Amey Thakur](https://github.com/Amey-Thakur).** Twenty-six courses and the tutorial. Twenty-six of them issued a completion badge, twenty-seven badges in all because one course issued two, and twenty-two also issued a certificate. AI Fluency for pK-12 Train the Trainer issues neither, which is why the galleries are shorter than the catalog.
 
 Every certificate links to its issued PDF and its Skilljar verification record, which carries the completion date shown.
 
 </div>
 
 > [!NOTE]
-> **Two badges, one course.** AI Fluency for Creative Work was issued a completion badge on 22 August 2026 and again on 27 August 2026. Both verify on Anthropic's own domain, so both are shown: twenty-six badges across twenty-five courses.
+> **Two badges, one course.** AI Fluency for Creative Work was issued a completion badge on 22 August 2026 and again on 27 August 2026. Both verify on Anthropic's own domain, so both are shown: twenty-seven badges across twenty-six courses.
 
 Course completion certificates are distinct from the certification credentials themselves, which are issued as Credly badges after a proctored exam. Source copies live in the maintainer's [ACHIEVEMENTS repository](https://github.com/Amey-Thakur/ACHIEVEMENTS#anthropic-courses); course descriptions and enrollment links are in [Anthropic courses](../guide/courses.md).
 
@@ -170,18 +170,20 @@ Course completion certificates are distinct from the certification credentials t
 
 ## Claude Academy completion badges
 
-Twenty-five courses were also issued a digital completion badge on
+Twenty-six courses were also issued a digital completion badge on
 [Claude Academy](https://academy.claude.com), Anthropic's learning platform, and
-there are twenty-six badges because AI Fluency for Creative Work issued twice,
+there are twenty-seven badges because AI Fluency for Creative Work issued twice,
 on 22 and 27 August 2026. The rest: one on 18 March 2026, one on 27 March 2026,
-nineteen on 22 August 2026, one on 30 August 2026, one on 8 September 2026, and
-one on 25 September 2026. These verify separately from the certificate PDFs
-above, on Anthropic's own domain rather than through Skilljar.
+nineteen on 22 August 2026, one on 30 August 2026, one on 8 September 2026, one
+on 25 September 2026, and one on 1 November 2026. These verify separately from
+the certificate PDFs above, on Anthropic's own domain rather than through
+Skilljar.
 
 Twenty-two of those courses also appear as a certificate above. Deploying Claude
-Enterprise with Confidence, Building Effective Human Agent Teams and
-Introduction to Claude Tag issued a badge and no certificate, which is why the
-two counts differ. Every badge below links to its verification page.
+Enterprise with Confidence, Building Effective Human Agent Teams, Introduction
+to Claude Tag and Tool use with the Messages API issued a badge and no
+certificate, which is why the two counts differ. Every badge below links to its
+verification page.
 
 <div align="center">
 
@@ -309,7 +311,10 @@ two counts differ. Every badge below links to its verification page.
 <a href="https://academy.claude.com/verify/1457c145d13c12616f01f80a990a7fe7" title="Verify Introduction to Claude Tag on Claude Academy"><img src="badges/introduction-to-claude-tag.png" width="100%" alt="Claude Academy completion badge for Introduction to Claude Tag, issued to Amey Thakur"></a>
 <br><sub><b>Introduction to Claude Tag</b><br><a href="https://academy.claude.com/verify/1457c145d13c12616f01f80a990a7fe7">Verify</a> · <code>1457c145d13c…</code></sub>
 </td>
-<td width="33%"></td>
+<td align="center" width="33%">
+<a href="https://academy.claude.com/verify/ac91804e4cdffd691da6e75dc697c659" title="Verify Tool use with the Messages API on Claude Academy"><img src="badges/tool-use-with-the-messages-api.png" width="100%" alt="Claude Academy completion badge for Tool use with the Messages API, issued to Amey Thakur"></a>
+<br><sub><b>Tool use with the Messages API</b><br><a href="https://academy.claude.com/verify/ac91804e4cdffd691da6e75dc697c659">Verify</a> · <code>ac91804e4cdf…</code></sub>
+</td>
 </tr>
 </table>
 
@@ -319,4 +324,4 @@ two counts differ. Every badge below links to its verification page.
 
 ---
 
-Facts last verified against the official sources on 2026-10-30. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-11-01. [Repository index](../README.md)

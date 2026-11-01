@@ -29,11 +29,15 @@ OUT_HTML = ASSETS / "companion.html"
 OUT_PDF = ROOT / "claude-certifications-companion.pdf"
 
 # The badge grid's width on the proof page, chosen against the measurement in
-# check_companion_layout.py rather than by eye. 214mm is the widest the grid
-# goes while the course listing under it still clears the footer, with a few
+# check_companion_layout.py rather than by eye. It is the widest the grid goes
+# while the course listing under it still clears the footer, with a few
 # millimetres spare for font differences between machines. The badges per row
 # divide the count; the width stays put.
-GRID_MM = 214
+#
+# 214mm held until the twenty-seventh badge, when the course listing gained a
+# line and page 31 ran 0.32mm past the bottom. The grid is three rows deep, so
+# a millimetre off the width buys about 0.23mm of height back.
+GRID_MM = 210
 
 
 REPO_URL = f"https://{REPO}"

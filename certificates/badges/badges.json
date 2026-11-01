@@ -158,5 +158,12 @@
     "code": "1457c145d13c12616f01f80a990a7fe7",
     "issued": "25 September 2026",
     "track": "Claude platform"
+  },
+  {
+    "slug": "tool-use-with-the-messages-api",
+    "title": "Tool use with the Messages API",
+    "code": "ac91804e4cdffd691da6e75dc697c659",
+    "track": "Developer and integration",
+    "issued": "1 November 2026"
   }
 ]

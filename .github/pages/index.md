@@ -91,10 +91,10 @@ Not sure which fits? Read [how the certifications connect](guide/learning-paths.
 
 ## The maintainer's certificates
 
-Twenty-two Claude Academy course completion certificates behind this program, each with its issued PDF and Skilljar verification record. Twenty-five courses were also issued a digital completion badge on [Claude Academy](https://academy.claude.com), verifiable on Anthropic's own domain, and there are twenty-six badges because one course issued twice. Every badge below links to its own verification page.
+Twenty-two Claude Academy course completion certificates behind this program, each with its issued PDF and Skilljar verification record. Twenty-six courses were also issued a digital completion badge on [Claude Academy](https://academy.claude.com), verifiable on Anthropic's own domain, and there are twenty-seven badges because one course issued twice. Every badge below links to its own verification page.
 
 > [!NOTE]
-> **Two badges, one course.** AI Fluency for Creative Work was issued a completion badge on 22 August 2026 and again on 27 August 2026. Both verify on Anthropic's own domain, so both are shown: twenty-six badges across twenty-five courses.
+> **Two badges, one course.** AI Fluency for Creative Work was issued a completion badge on 22 August 2026 and again on 27 August 2026. Both verify on Anthropic's own domain, so both are shown: twenty-seven badges across twenty-six courses.
 
 <div align="center">
 
@@ -222,7 +222,10 @@ Twenty-two Claude Academy course completion certificates behind this program, ea
 <a href="https://academy.claude.com/verify/1457c145d13c12616f01f80a990a7fe7" title="Verify Introduction to Claude Tag on Claude Academy"><img src="certificates/badges/introduction-to-claude-tag.png" width="100%" alt="Claude Academy completion badge for Introduction to Claude Tag, issued to Amey Thakur"></a>
 <br><sub><b>Introduction to Claude Tag</b><br><a href="https://academy.claude.com/verify/1457c145d13c12616f01f80a990a7fe7">Verify</a></sub>
 </td>
-<td width="33%"></td>
+<td align="center" width="33%">
+<a href="https://academy.claude.com/verify/ac91804e4cdffd691da6e75dc697c659" title="Verify Tool use with the Messages API on Claude Academy"><img src="certificates/badges/tool-use-with-the-messages-api.png" width="100%" alt="Claude Academy completion badge for Tool use with the Messages API, issued to Amey Thakur"></a>
+<br><sub><b>Tool use with the Messages API</b><br><a href="https://academy.claude.com/verify/ac91804e4cdffd691da6e75dc697c659">Verify</a></sub>
+</td>
 </tr>
 </table>
 
@@ -230,7 +233,7 @@ Twenty-two Claude Academy course completion certificates behind this program, ea
 
 </div>
 
-**[All twenty-two certificates and twenty-six badges, with their PDFs, Skilljar records and verification links](certificates/README.md)**
+**[All twenty-two certificates and twenty-seven badges, with their PDFs, Skilljar records and verification links](certificates/README.md)**
 
 A course completion certificate is not a certification credential. The courses are free and self-paced; the four certifications require a proctored Pearson VUE exam and are issued separately as Credly badges.
 

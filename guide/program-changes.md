@@ -186,4 +186,4 @@ with a link to the official source.
 
 ---
 
-Facts last verified against the official sources on 2026-10-30. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-11-01. [Repository index](../README.md)
