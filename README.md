@@ -111,7 +111,7 @@ Every fact, domain weight, rule, and glossary term in this repository, as a deck
 
 ## Credentials behind this guide
 
-**All 27 of the Claude Academy courses and tutorials** behind the certification program, completed and independently verifiable. Not every one issues something to show: **22** carry a Skilljar verification record with a completion date, and **26** were issued a digital completion badge on [Claude Academy](https://academy.claude.com), Anthropic's own domain, **27** badges in all because one course issued twice.
+**27 of the 28 Claude Academy courses and tutorials** behind the certification program, completed and independently verifiable; Introduction to evals was published in November 2026 and has no completion record here yet. Not every one issues something to show: **22** carry a Skilljar verification record with a completion date, and **26** were issued a digital completion badge on [Claude Academy](https://academy.claude.com), Anthropic's own domain, **27** badges in all because one course issued twice.
 
 This is here so you can check the material rather than trust it. Every claim in this repository traces to an official source; these show the curriculum behind it was worked through rather than summarized from the outside. Every badge below links to its own verification page.
 
@@ -308,6 +308,6 @@ Contributions that keep facts current are welcome; see [CONTRIBUTING.md](.github
 Repository text is <a href="LICENSE">MIT licensed</a>; mirrored documents and logo artwork keep their own provenance
 (<a href="guide/official-sources.md">sources</a>, <a href=".github/assets/logos/README.md">logos</a>).</sub>
 
-<sub>Facts last verified against the official sources on 2026-11-01.</sub>
+<sub>Facts last verified against the official sources on 2026-11-03.</sub>
 
 </div>

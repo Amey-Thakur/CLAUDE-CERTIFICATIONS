@@ -14,6 +14,31 @@ Every entry below is dated, says what changed, and says who it still affects.
 
 ## 2026
 
+### November: Introduction to evals, and a badge for tool use
+
+**Introduction to evals** was published on
+[Claude Academy](https://academy.claude.com/courses/introduction-to-evals),
+taking the catalog to twenty-eight. Four main lessons on building a graded eval
+over your own cases, so a model and a prompt are chosen from evidence rather
+than impression and keep being checked after release. It stays with prompts
+that run as a single call to the Messages API, does not cover evaluating agents
+or measuring latency, and names Claude Platform 101 as the prerequisite. The
+code is Python plus one GitHub Actions workflow. A graded quiz issues a badge.
+
+**Who this affects.** Developer and Architect candidates: evaluation is a named
+domain in both Architect blueprints, and this is the first course in the
+catalog devoted to it. It is not listed as prep for any exam, so the exam
+guides remain the authoritative scope.
+
+**Tool use with the Messages API** issued its completion badge
+on 1 November 2026, so that course moved from published to recorded here.
+
+Also on 3 November, **Introduction to subagents stopped appearing on any
+listing page** while remaining live at its own URL. That is a listing change,
+not a withdrawal, and the course is still documented here. It is the third
+course to do this, after Model Context Protocol: Advanced Topics and Teaching
+AI Fluency.
+
 ### October: the catalog grew to twenty-seven courses
 
 **Tool use with the Messages API** was added, on
@@ -186,4 +211,4 @@ with a link to the official source.
 
 ---
 
-Facts last verified against the official sources on 2026-11-01. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-11-03. [Repository index](../README.md)
