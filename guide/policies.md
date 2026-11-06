@@ -9,11 +9,11 @@ Your certification belongs to you, not your employer. It stays with you if you c
 ## Scheduling, rescheduling, and cancellation
 
 - Register and pay on the certification's page; Pearson VUE emails scheduling instructions afterward.
-- Reschedule or cancel free of charge until 24 hours before the appointment; cancellation in that window is fully refunded.
-- Inside 24 hours, or on a no-show, the fee is forfeited.
+- Reschedule or cancel free of charge until 48 hours before the appointment; cancellation in that window is fully refunded.
+- Inside 48 hours, or on a no-show, the fee is forfeited.
 
 > [!WARNING]
-> Reschedule or cancel at least 24 hours before your appointment. Inside that window, and on a no-show, the full fee is forfeited.
+> Reschedule or cancel at least 48 hours before your appointment. Inside that window, and on a no-show, the full fee is forfeited.
 
 [![How Claude certification scoring, retakes, and renewal work](../.github/assets/card-scoring.png)](../.github/assets/card-scoring.png "View the scoring summary at full size")
 
@@ -128,4 +128,4 @@ Exam delivery moved to Pearson VUE and badging moved to Credly on June 30, 2026.
 
 ---
 
-Facts last verified against the official sources on 2026-11-04. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-11-05. [Repository index](../README.md)

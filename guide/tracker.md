@@ -14,7 +14,7 @@ Tick a domain when you could answer a scenario question about it without notes, 
 
 The milestones come from the preparation guidance in the official exam guides. The one people skip is building something real, and it is the one that separates candidates who pass comfortably from candidates who find the scenarios unfamiliar.
 
-When the bar is high and a [mock exam](quiz.md) agrees, book. Rescheduling is free until 24 hours before the appointment, so an early booking costs nothing and gives you a deadline.
+When the bar is high and a [mock exam](quiz.md) agrees, book. Rescheduling is free until 48 hours before the appointment, so an early booking costs nothing and gives you a deadline.
 
 ---
 

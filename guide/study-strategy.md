@@ -9,7 +9,7 @@ Everything on this page is recommendation, written from having worked through th
 3. **Turn the blueprint into a checklist.** Copy the domain objectives into a document and mark each one red, yellow, or green for your current confidence. Study red items first, weighted by the domain percentages. The weights differ sharply between exams; the [Developer blueprint](../developer-foundations/README.md#skills-measured) even publishes per-skill weights, which makes time allocation mechanical.
 4. **Do the work, not just the reading.** All four guides say the same thing in their preparation sections: build something real. The exams test judgment in scenarios, and judgment comes from having hit the tradeoffs yourself.
 5. **Use the sample questions as calibration, not practice.** There is no practice exam. Each guide has three or more official samples with rationales. The rationales matter more than the questions: they show what the exam considers a wrong answer and why. To drill beyond the samples without touching the NDA, generate your own questions from the blueprint using [Practice with Claude](practice.md).
-6. **Book the exam once your checklist is mostly green.** An open purchase has no scheduling deadline, and rescheduling is free until 24 hours out, so booking early costs nothing and sets a deadline.
+6. **Book the exam once your checklist is mostly green.** An open purchase has no scheduling deadline, and rescheduling is free until 48 hours out, so booking early costs nothing and sets a deadline.
 
 > [!IMPORTANT]
 > The exam guide for your certification is the authoritative scope. Every guide states it plainly: if a topic is not in the blueprint, it is not on the exam. Study the blueprint before any course.
@@ -52,7 +52,7 @@ The [progress tracker](tracker.md) keeps this checklist for you in the browser, 
 - [ ] Corporate network domains cleared with IT, or a personal machine and network arranged
 - [ ] Know the shutdown list: browsers, Zoom, Teams, Outlook, Discord, remote-access tools, and the Claude desktop app
 - [ ] Private room arranged, desk clear, second monitor disconnected
-- [ ] Reschedule decision made no later than 24 hours out, since after that the fee is forfeited
+- [ ] Reschedule decision made no later than 48 hours out, since after that the fee is forfeited
 
 ## During the exam
 
@@ -69,4 +69,4 @@ The [progress tracker](tracker.md) keeps this checklist for you in the browser, 
 
 ---
 
-Facts last verified against the official sources on 2026-11-04. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-11-05. [Repository index](../README.md)

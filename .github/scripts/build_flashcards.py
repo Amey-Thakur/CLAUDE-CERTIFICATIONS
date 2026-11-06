@@ -90,7 +90,7 @@ def shared_cards():
         ("What happens if a credential lapses", "You must pass the full exam again at full fee", "policy shared"),
         ("Retake waiting periods after failed attempts", "14 days after the first, 30 after the second, 90 after the third", "policy shared"),
         ("Maximum attempts per exam per rolling 12 months", "Four", "policy shared"),
-        ("Free cancellation or reschedule window", "At least 24 hours before the appointment; inside that, the fee is forfeited", "policy shared"),
+        ("Free cancellation or reschedule window", "At least 48 hours before the appointment; inside that, the fee is forfeited", "policy shared"),
         ("Who delivers the exams", "Pearson VUE, online proctored through OnVUE or at a test center", "facts shared"),
         ("Where does the digital badge come from", "Credly, by email after a pass", "facts shared"),
         ("Which exam does not count toward partner tier eligibility", "Claude Certified Associate", "facts shared"),

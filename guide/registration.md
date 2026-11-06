@@ -45,7 +45,7 @@ The name on your Pearson registration must exactly match the name on the governm
 
 ## Rescheduling and cancelling
 
-You can reschedule or cancel up to 24 hours before the appointment. Inside 24 hours, or if you do not show up, the exam fee is forfeited.
+You can reschedule or cancel up to 48 hours before the appointment. Inside 48 hours, or if you do not show up, the exam fee is forfeited.
 
 ## Preparing your computer for an online proctored exam
 
@@ -94,7 +94,9 @@ The check that stops people at the door is not technical. It is the name on the 
 
 - **The name on your Pearson VUE profile must match your government-issued ID exactly.** You are asked to confirm this during registration, before you schedule.
 - **A mismatch at check-in means you do not test.** Pearson will refuse entry, and under their policy the fee is forfeited.
-- **Request a name correction more than 24 hours before the exam.** Inside that window there may not be time to apply it.
+- **You get one self-service name update a year.** The exam profile allows a single change per twelve months, so check it against the ID before confirming rather than after. Enter the name in Latin letters with its accents, exactly as the ID shows it, including a middle name if the ID carries one.
+- **How long the update takes to land depends on where you sit.** For an online proctored exam the profile syncs in near real time. For a test center it syncs once a day, so make the change at least 24 hours ahead or it may not be there at check-in.
+- **If the annual update is spent, support can still correct it, but not as a right.** Email [certifications-support@anthropic.com](mailto:certifications-support@anthropic.com) from the address the exam is registered under, with the subject line "Exam Profile Name Correction Request". These are judged case by case and approval is not guaranteed, so allow 24 to 48 hours.
 - **A correction requested after a refused entry does not undo the forfeit.** You pay again to reschedule, so fix the name the day you register rather than the day you sit.
 - **Bring a valid, unexpired government-issued ID**, whether you test online or at a test center. Pearson publishes the accepted forms.
 
@@ -143,4 +145,4 @@ flowchart TD
 
 ---
 
-Facts last verified against the official sources on 2026-11-04. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-11-05. [Repository index](../README.md)

@@ -570,7 +570,7 @@
   },
   {
    "front": "Free cancellation or reschedule window",
-   "back": "At least 24 hours before the appointment; inside that, the fee is forfeited",
+   "back": "At least 48 hours before the appointment; inside that, the fee is forfeited",
    "tags": [
     "policy",
     "shared"

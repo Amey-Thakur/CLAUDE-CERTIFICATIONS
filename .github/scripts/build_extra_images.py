@@ -153,7 +153,7 @@ def exam_day_card():
             "Check your partner discount appears at checkout",
         ]),
         (OLIVE, "The night before", [
-            "Reschedule free of charge only until 24 hours out",
+            "Reschedule free of charge only until 48 hours out",
             "Clear the desk, unplug the second monitor, book the room",
             "Charge the machine and locate your government-issued ID",
             "Reread the exam guide blueprint one last time",
@@ -341,7 +341,7 @@ def study_plan_card():
     out.append(f'<text x="94" y="672" font-size="12" font-weight="700" fill="{FAINT}" letter-spacing="0.8">THE TWO RULES THAT MATTER MOST</text>')
     out.append(f'<text x="94" y="698" font-size="13.5" fill="{BODY}">Study by domain weight, not by what interests you  ·  build something real, because the exams test judgment and judgment comes from hitting the tradeoffs yourself</text>')
 
-    out.append(f'<text x="70" y="754" font-size="13.5" fill="{MUTED}">Book the exam once the checklist is mostly green. Rescheduling is free until 24 hours out, so an early booking costs nothing and sets a deadline.</text>')
+    out.append(f'<text x="70" y="754" font-size="13.5" fill="{MUTED}">Book the exam once the checklist is mostly green. Rescheduling is free until 48 hours out, so an early booking costs nothing and sets a deadline.</text>')
     out.append(footer(W, 782, "Method from the official preparation guidance"))
     out.append("</svg>")
     return chr(10).join(out)
@@ -458,8 +458,8 @@ def registration_card():
         (TEAL, "Scheduling", [
             "Choose online proctoring or a test center",
             "Choose online proctoring or a Pearson test center",
-            "Reschedule or cancel free until 24 hours out",
-            "Inside 24 hours, or a no-show, the fee is forfeited",
+            "Reschedule or cancel free until 48 hours out",
+            "Inside 48 hours, or a no-show, the fee is forfeited",
         ]),
         (PLUM, "What a mismatch costs", [
             "Pearson refuses entry, and you do not test",

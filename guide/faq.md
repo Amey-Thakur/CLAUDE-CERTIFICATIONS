@@ -24,7 +24,7 @@ Condensed from the [official certification FAQ](https://anthropic-partners.skill
 
 **Technical requirements?** Run [Pearson's system test](https://system-test.onvue.com/system_test?customer=pearson_vue&clientcode=ANTHROPIC&locale=en_US) before exam day and clear the corporate-network requirements in [Registration and scheduling](registration.md#preparing-your-computer-for-an-online-proctored-exam).
 
-**Can I reschedule or cancel?** Free until 24 hours before the appointment, with a full refund for cancellation. Later than that, or a no-show, forfeits the fee.
+**Can I reschedule or cancel?** Free until 48 hours before the appointment, with a full refund for cancellation. Later than that, or a no-show, forfeits the fee.
 
 ## Pricing and discounts
 
@@ -83,4 +83,4 @@ Delivery moved to Pearson VUE and badging to Credly on June 30, 2026. If you reg
 
 ---
 
-Facts last verified against the official sources on 2026-11-04. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-11-05. [Repository index](../README.md)

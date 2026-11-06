@@ -121,7 +121,7 @@ The full deck below, for reading, printing, or checking one fact quickly. It is 
 | What happens if a credential lapses | You must pass the full exam again at full fee |
 | Retake waiting periods after failed attempts | 14 days after the first, 30 after the second, 90 after the third |
 | Maximum attempts per exam per rolling 12 months | Four |
-| Free cancellation or reschedule window | At least 24 hours before the appointment; inside that, the fee is forfeited |
+| Free cancellation or reschedule window | At least 48 hours before the appointment; inside that, the fee is forfeited |
 | How is the exam scored, in one phrase | Criterion-referenced: against a fixed standard, not against other candidates |
 | What does the score report show beyond pass or fail | The scaled score and percent-correct per domain |
 | Is there an official practice exam | No. The previous platform's was retired in the Pearson migration; the exam guides' sample questions are the only official items |

@@ -463,8 +463,8 @@ def hard_won_page(label):
          "Fourteen days before a second attempt, thirty before a third, ninety before a fourth, and four "
          "attempts maximum in a rolling twelve months. That waiting period, not the fee, is what hurts."),
         ("Book earlier than you feel ready",
-         "Rescheduling is free until twenty-four hours before. An early booking costs nothing and supplies the "
-         "deadline that makes the studying happen. Inside twenty-four hours the fee is gone."),
+         "Rescheduling is free until forty-eight hours before. An early booking costs nothing and supplies the "
+         "deadline that makes the studying happen. Inside forty-eight hours the fee is gone."),
         ("Most failed sittings are logistics",
          "Run the OnVUE system test on the machine and the network you will actually use, not a different one. "
          "A corporate network that blocks a single domain will end the exam after you have paid for it."),
@@ -697,7 +697,7 @@ def preparing():
             scenarios, and judgment comes from having hit the tradeoffs yourself.</li>
             <li><strong>Use the official sample questions as calibration.</strong> The rationales matter more than the
             answers: they show what the exam considers wrong, and why.</li>
-            <li><strong>Book once the checklist is mostly green.</strong> Rescheduling is free until 24 hours out, so
+            <li><strong>Book once the checklist is mostly green.</strong> Rescheduling is free until 48 hours out, so
             an early booking costs nothing and sets a deadline.</li>
           </ol>
         </div>
