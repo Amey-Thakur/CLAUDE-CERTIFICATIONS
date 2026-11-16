@@ -40,7 +40,7 @@ The script re-downloads every mirrored official PDF, verifies each file is a val
 
 The date then moves in the footer of every page that states official facts, plus the `# Date:` comment in `CITATION.cff` and `dateModified` in `codemeta.json`. Three kinds of date must not move with it, because they record when something happened rather than when it was checked: `date-released` and `dateReleased`, which are the tag's publish date and are governed by `check_metadata.py`, and the badge issue dates in `certificates/badges/badges.json`. Touching the certificates gallery or [glossary.md](glossary.md) marks the companion stale, so rerun `build_companion.py --render`; where no text changed it reports "content unchanged, kept the committed file" and leaves the PDF byte-identical.
 
-**When Anthropic announces changes.** Program changes have historically landed as dated cutovers (the June 30, 2026 Pearson migration; the August 31, 2026 Global Premier discount expiry). Dated facts like these are written into the pages deliberately so that stale ones are findable: search the docs for the current year to audit them.
+**When Anthropic announces changes.** Program changes have historically landed as dated cutovers (the June 30, 2026 move to Pearson and Credly; the November 12, 2026 move of payment and scheduling to Pearson). Dated facts like these are written into the pages deliberately so that stale ones are findable: search the docs for the current year to audit them.
 
 ## Regenerating the derived files
 

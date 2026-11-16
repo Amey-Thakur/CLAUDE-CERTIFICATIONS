@@ -14,6 +14,38 @@ Every entry below is dated, says what changed, and says who it still affects.
 
 ## 2026
 
+### November 12: payment and scheduling moved to Pearson
+
+At 8am PT on November 12, 2026, registration stopped finishing on Partner
+Academy. You now start on the certification page there, select Register, and
+continue to Pearson, where you pay and book in the same pass. The partner
+discount is applied at Pearson's checkout and the price is locked when you
+schedule.
+
+**Who this affects.** Everyone registering from now on, and anyone holding an
+unbooked registration from before. Four things changed with it:
+
+- **The free reschedule window is no longer one number.** It is one hour before
+  an online proctored exam, and 48 hours before a test center exam. Later than
+  that, or a no-show, forfeits the fee. Rescheduling keeps the price you paid.
+- **An unbooked registration bought before the cutover still lasts five years.**
+  Registering after it means paying and scheduling together, so there is no
+  unbooked registration to carry.
+- **If you paid before November 12, you do not pay again.** Open the exam in
+  Partner Academy and go to your Pearson account from there; the checkout total
+  should read $0. If it does not, do not check out.
+- **Cancelling a Pearson-paid exam starts an automatic refund**, 7 to 10
+  business days. A purchase made through Partner Academy before the cutover is
+  refunded by Anthropic and can take a few days longer.
+
+Appeals changed shape too: open a case with Pearson support within 14 days and
+keep the case number, then escalate to
+[certifications-support@anthropic.com](mailto:certifications-support@anthropic.com)
+with that number if Pearson's review does not settle it.
+
+A voucher storefront for buying in bulk is described as in progress, with no
+date. It is recorded here as announced, not as available.
+
 ### November: Introduction to evals, and a badge for tool use
 
 **Introduction to evals** was published on
@@ -142,13 +174,18 @@ Train the Trainer**, built with the American Federation of Teachers.
 certification, and the guides say so explicitly. It matters only if you are
 working through the catalog.
 
-### August 31: the Global Premier discount ends
+### August 31: the Global Premier discount was due to end, and did not
 
-Through August 31, 2026, Global Premier partners paid nothing. From September 1
-the standard 50% partner discount applies.
+Through August 31, 2026, Global Premier partners paid nothing, and the standard
+50% partner discount was to apply from September 1. It was extended instead:
+the FAQ now puts the 100% discount at **through December 31, 2026**, with the
+standard 50% afterward. Recorded here rather than deleted, because the original
+deadline was published and people planned around it.
 
-**Who this affects.** Global Premier partners who were planning to sit an exam
-in the autumn. Booking before the deadline was worth the full fee.
+**Who this affects.** Global Premier partners, who still pay nothing until the
+end of the year. The lesson for everyone else is that a published deadline in
+this program can move, so check the FAQ rather than a date written down here
+when the money matters.
 
 ### July: exam guides published at version 1.0
 
@@ -211,4 +248,4 @@ with a link to the official source.
 
 ---
 
-Facts last verified against the official sources on 2026-11-12. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-11-16. [Repository index](../README.md)

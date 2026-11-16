@@ -8,12 +8,12 @@ Your certification belongs to you, not your employer. It stays with you if you c
 
 ## Scheduling, rescheduling, and cancellation
 
-- Register and pay on the certification's page; Pearson VUE emails scheduling instructions afterward.
-- Reschedule or cancel free of charge until 48 hours before the appointment; cancellation in that window is fully refunded.
-- Inside 48 hours, or on a no-show, the fee is forfeited.
+- Start on the certification's page in Partner Academy, then continue to Pearson, where you pay and book in the same pass.
+- Reschedule or cancel free of charge until one hour before an online proctored exam, or 48 hours before a test center exam; cancelling in that window is refunded.
+- Later than that, or on a no-show, the fee is forfeited.
 
 > [!WARNING]
-> Reschedule or cancel at least 48 hours before your appointment. Inside that window, and on a no-show, the full fee is forfeited.
+> Reschedule or cancel at least one hour before an online proctored exam, or 48 hours before a test center exam. Later than that, and on a no-show, the full fee is forfeited.
 
 [![How Claude certification scoring, retakes, and renewal work](../.github/assets/card-scoring.png)](../.github/assets/card-scoring.png "View the scoring summary at full size")
 
@@ -63,7 +63,7 @@ Exam content is confidential. Taking an exam commits you not to share, reproduce
 
 ## Appeals
 
-- You can appeal a certification decision within 14 days of being notified, or within 14 days of your exam date for a result concern. Appeals go to Pearson VUE support.
+- You can appeal a certification decision within 14 days of being notified, or within 14 days of your exam date for a result concern. Open a case with Pearson support and keep the case number; if Pearson's review does not settle it, email [certifications-support@anthropic.com](mailto:certifications-support@anthropic.com) quoting that number.
 - Appeals cover declined certifications, invalidated results, suspensions, revocations, program bars, and failed results you believe should have passed, including faulty questions or an exam that did not match the published guide.
 - A disputed question does not by itself change a pass or fail. If a faulty question is confirmed to have affected your result, the remedy is a free retake, not a changed score.
 - Technical problems during the exam and account issues go to support, not appeals.
@@ -128,4 +128,4 @@ Exam delivery moved to Pearson VUE and badging moved to Credly on June 30, 2026.
 
 ---
 
-Facts last verified against the official sources on 2026-11-12. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-11-16. [Repository index](../README.md)

@@ -24,13 +24,13 @@ Condensed from the [official certification FAQ](https://anthropic-partners.skill
 
 **Technical requirements?** Run [Pearson's system test](https://system-test.onvue.com/system_test?customer=pearson_vue&clientcode=ANTHROPIC&locale=en_US) before exam day and clear the corporate-network requirements in [Registration and scheduling](registration.md#preparing-your-computer-for-an-online-proctored-exam).
 
-**Can I reschedule or cancel?** Free until 48 hours before the appointment, with a full refund for cancellation. Later than that, or a no-show, forfeits the fee.
+**Can I reschedule or cancel?** Free until one hour before an online proctored exam, or 48 hours before a test center exam, with a refund for cancellation. Later than that, or a no-show, forfeits the fee.
 
 ## Pricing and discounts
 
 **What do exams cost?** In USD before discounts: Associate 99, Developer Foundations 125, Architect Foundations 125, Architect Professional 175. Payment is by credit card at registration.
 
-**What discounts exist?** Registered-tier partners pay full price. Select, Preferred, and Global Premier partners get 50% off automatically at checkout. Through August 31, 2026, Global Premier partners get 100% off; the standard 50% applies afterward.
+**What discounts exist?** Registered-tier partners pay full price. Select, Preferred, and Global Premier partners get 50% off automatically at checkout. Through December 31, 2026, Global Premier partners get 100% off; the standard 50% applies afterward.
 
 **My discount is not showing.** Verify you are signed in with your company email. If the price is still wrong, your domain is probably not linked to the partner record; email [partner-support@anthropic.com](mailto:partner-support@anthropic.com) and allow 7 to 10 days before you register.
 
@@ -83,4 +83,4 @@ Delivery moved to Pearson VUE and badging to Credly on June 30, 2026. If you reg
 
 ---
 
-Facts last verified against the official sources on 2026-11-12. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-11-16. [Repository index](../README.md)

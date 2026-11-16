@@ -27,16 +27,19 @@ If you see "You aren't signed in with a partner company employee email", check t
 You must be at least 18 years old to sit a Claude certification exam.
 
 > [!NOTE]
-> **A registration stays valid for five years.** Once you buy an exam there is no
-> deadline to schedule it, so an unused registration does not lapse at the end of
-> the year. Source: the official [certifications FAQ](https://anthropic-partners.skilljar.com/page/faq-certifications).
+> **The five-year registration applies only to purchases made before the
+> cutover.** If you registered before 8am PT on 12 November 2026 and have not
+> booked, that registration stays valid for five years and you can schedule
+> whenever you like. Registering after the cutover means paying and scheduling
+> in the same pass at Pearson, so there is no unbooked registration to carry.
+> Source: the official [certifications FAQ](https://anthropic-partners.skilljar.com/page/faq-certifications).
 
 ## Registering
 
 1. Open the page for your certification from the [certifications overview](https://anthropic-partners.skilljar.com/page/partner-certifications).
 2. Download and read the exam guide, the [terms and conditions](certification-terms-and-conditions.pdf), and the [exam policy](anthropic-certification-exam-policy.pdf). Registering constitutes acceptance of all three.
-3. Register and pay by credit card. Any partner-tier discount is applied automatically at checkout. If a discount you expect is missing, see the [FAQ on pricing](faq.md#pricing-and-discounts) before paying.
-4. Follow the confirmation email to create your Pearson VUE account and sign in.
+3. Select Register. Since 12 November 2026 this hands you to Pearson, where you pay and book in one pass; you no longer pay on Partner Academy. Any partner-tier discount is applied automatically at Pearson's checkout, and the price is locked when you schedule.
+4. Check the total before paying. If a discount you expect is missing, do not check out: sign out of Partner Academy, sign back in and start again, and see the [FAQ on pricing](faq.md#pricing-and-discounts). If you paid before the cutover, the total should read $0 and you should not pay twice.
 5. Schedule your session: pick a date, and choose online proctoring or a test center.
 
 The name on your Pearson registration must exactly match the name on the government-issued photo ID you will present. To correct a name, email [certifications-support@anthropic.com](mailto:certifications-support@anthropic.com) before scheduling.
@@ -45,7 +48,7 @@ The name on your Pearson registration must exactly match the name on the governm
 
 ## Rescheduling and cancelling
 
-You can reschedule or cancel up to 48 hours before the appointment. Inside 48 hours, or if you do not show up, the exam fee is forfeited.
+You can reschedule or cancel free of charge up to one hour before an online proctored exam, or up to 48 hours before a test center exam. Later than that, or if you do not show up, the exam fee is forfeited. Rescheduling keeps the price you paid, including any discount.
 
 ## Preparing your computer for an online proctored exam
 
@@ -145,4 +148,4 @@ flowchart TD
 
 ---
 
-Facts last verified against the official sources on 2026-11-12. [Repository index](../README.md)
+Facts last verified against the official sources on 2026-11-16. [Repository index](../README.md)

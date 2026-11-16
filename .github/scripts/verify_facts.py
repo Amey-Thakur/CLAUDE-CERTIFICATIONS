@@ -43,7 +43,7 @@ TRACKS = {
 
 # Published on Partner Academy rather than in any mirrored PDF, so this script
 # cannot reach them. They are not unverified: each was read off Anthropic's own
-# certification policy and FAQ pages on 12 November 2026, and the sentence that carries
+# certification policy and FAQ pages on 16 November 2026, and the sentence that carries
 # it is quoted here so the next check knows what it is looking for.
 #
 # The two page names are data rather than a comment because check_refresh.py
@@ -64,8 +64,11 @@ CONFIRMED_ON_THE_SITE = [
     ("free renewal assessment",
      "you can renew it for free by passing an open-book online assessment on "
      "Anthropic Partner Academy"),
-    ("Pearson VUE delivery",
-     "Exams are delivered through Pearson VUE"),
+    # Reworded on the policies page at the 16 November 2026 cutover, from
+    # "delivered through Pearson VUE" to "delivered through Pearson". The fact
+    # did not change, only the name used for the provider.
+    ("Pearson delivery",
+     "Exams are delivered through Pearson"),
     ("Credly badging",
      "On June 30, 2026, certification moved to Pearson for exam delivery and "
      "to Credly for digital badging"),
@@ -232,7 +235,7 @@ def main():
 
     print(f"  {checked} published figures checked, all present and matching.")
     print("\n  Not in the mirrored PDFs. Read off Anthropic's certification "
-          "policy and FAQ pages on 12 November 2026, and quoted in this file:")
+          "policy and FAQ pages on 16 November 2026, and quoted in this file:")
     for item, quote in CONFIRMED_ON_THE_SITE:
         print(f"    - {item}")
         print(f"        \"{quote}\"")

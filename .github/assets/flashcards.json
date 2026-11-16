@@ -570,7 +570,7 @@
   },
   {
    "front": "Free cancellation or reschedule window",
-   "back": "At least 48 hours before the appointment; inside that, the fee is forfeited",
+   "back": "One hour before an online exam, 48 hours before a test center exam; later than that, the fee is forfeited",
    "tags": [
     "policy",
     "shared"

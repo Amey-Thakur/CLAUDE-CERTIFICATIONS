@@ -19,7 +19,7 @@
         }
     ],
     "dateCreated": "2026-07-27",
-    "dateReleased": "2026-09-03",
+    "dateReleased": "2026-11-16",
     "codeRepository": "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS",
     "developmentStatus": "complete",
     "applicationCategory": "Education",
@@ -106,8 +106,8 @@
         "Claude Agent SDK"
     ],
     "url": "https://amey-thakur.github.io/CLAUDE-CERTIFICATIONS/",
-    "version": "1.10.2",
-    "dateModified": "2026-11-12",
+    "version": "1.11.0",
+    "dateModified": "2026-11-16",
     "issueTracker": "https://github.com/Amey-Thakur/CLAUDE-CERTIFICATIONS/issues",
     "operatingSystem": [
         "Windows",
