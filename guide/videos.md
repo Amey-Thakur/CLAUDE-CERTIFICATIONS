@@ -96,7 +96,7 @@ Headless mode and automation, which the Developer blueprint names explicitly.
 
 [![Building headless automation with Claude Code, an Anthropic conference session](https://img.youtube.com/vi/dRsjO-88nBs/hqdefault.jpg)](https://www.youtube.com/watch?v=dRsjO-88nBs)
 
-Also worth watching: [Designing Claude Code](https://www.youtube.com/watch?v=vLIDHi-1PVU) on why the tool works the way it does, [Building and prototyping with Claude Code](https://www.youtube.com/watch?v=DAQJvGjlgVM), [The future of agentic coding](https://www.youtube.com/watch?v=iF9iV4xponk), and [a conversation on Claude Code](https://www.youtube.com/watch?v=Yf_1w00qIKc).
+Also worth watching: [Designing Claude Code](https://www.youtube.com/watch?v=vLIDHi-1PVU) on why the tool works the way it does, [The future of agentic coding](https://www.youtube.com/watch?v=iF9iV4xponk), and [a conversation on Claude Code](https://www.youtube.com/watch?v=Yf_1w00qIKc).
 
 ## The Claude API and MCP
 
@@ -170,7 +170,7 @@ Anthropic's channel is organized into playlists. These are the ones with study v
 Industry playlists ([Financial Services](https://www.youtube.com/playlist?list=PLf2m23nhTg1PTXjULcWHgzJn1oBvC6NuV), [Life Sciences](https://www.youtube.com/playlist?list=PLf2m23nhTg1MtnZze0DPJA6RQv3zrNzL-)) are useful context for customer conversations but are not on any blueprint.
 
 > [!NOTE]
-> Video titles and playlist contents change as Anthropic publishes. Links were last checked on 31 August 2026, and the [weekly link check](maintenance.md) catches any that break.
+> Video titles and playlist contents change as Anthropic publishes. Every link here was checked on 16 November 2026 by the [weekly link check](maintenance.md), which is also what found that *Building and prototyping with Claude Code* had been taken down; it was removed from the list that day.
 
 ---
 
