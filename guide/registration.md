@@ -1,13 +1,13 @@
 # Registration and scheduling
 
-Exams are purchased through Anthropic Partner Academy and delivered by Pearson VUE, either online proctored through OnVUE or at a Pearson test center. This page covers the full path from registration to exam day, including the computer and network preparation that most often causes problems.
+Exams start on Anthropic Partner Academy, are purchased and scheduled at Pearson, and are delivered either online proctored through OnVUE or at a Pearson test center. Payment moved to Pearson on 12 November 2026. This page covers the full path from registration to exam day, including the computer and network preparation that most often causes problems.
 
 Official references: the [exam registration guide](exam-registration-guide.pdf) (PDF with screenshots of every step) and the [computer and network setup page](https://anthropic-partners.skilljar.com/page/computer-and-network-setup).
 
 ```mermaid
 flowchart LR
-    A[Certification page on Partner Academy] --> B[Register and pay]
-    B --> C[Create Pearson VUE account]
+    A[Certification page on Partner Academy] --> B[Select Register]
+    B --> C[Pay at Pearson checkout]
     C --> D[Schedule: online or test center]
     D --> E[System test and machine prep]
     E --> F[Sit the exam]
@@ -42,7 +42,7 @@ You must be at least 18 years old to sit a Claude certification exam.
 4. Check the total before paying. If a discount you expect is missing, do not check out: sign out of Partner Academy, sign back in and start again, and see the [FAQ on pricing](faq.md#pricing-and-discounts). If you paid before the cutover, the total should read $0 and you should not pay twice.
 5. Schedule your session: pick a date, and choose online proctoring or a test center.
 
-The name on your Pearson registration must exactly match the name on the government-issued photo ID you will present. To correct a name, email [certifications-support@anthropic.com](mailto:certifications-support@anthropic.com) before scheduling.
+The name on your Pearson registration must exactly match the name on the government-issued photo ID you will present. You can correct it yourself in your exam profile before you schedule; the limits and timings are below.
 
 [![What to get right before you register: partner email domain, the name on your Pearson profile matching your photo ID, scheduling, and what a mismatch at check-in costs](../.github/assets/card-registration.png)](../.github/assets/card-registration.png "View the registration summary at full size")
 
